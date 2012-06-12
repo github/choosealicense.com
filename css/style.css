@@ -475,6 +475,13 @@ footer {
   display: block;
 }
 
+body .get-started .license {
+  display: block;
+  clear: both;
+  margin-top: 100px;
+  white-space: pre;
+}
+
 
 /*{"mac":"1:f62e28c9d2690d30deadc5b72c666983e1aeb59fef77e77e681994cde7884352","k":"0.14.1","version":"10919011","created":"2012-05-11T15:32:43Z"}*/
 /*
