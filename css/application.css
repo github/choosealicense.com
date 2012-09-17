@@ -1,0 +1,287 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  background: #f5f1ec url(/images/bg.jpg);
+  color: #7e7974;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+a {
+  color: #149ad4;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+a.button {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-color: #ceccc9 #b6b4b1 #a6a4a2 #b6b4b1;
+  border-style: solid;
+  border-width: 1px;
+  color: #443b34;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px, rgba(255, 255, 255, 0.8) 0 1px 0 0 inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px, rgba(255, 255, 255, 0.8) 0 1px 0 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px, rgba(255, 255, 255, 0.8) 0 1px 0 0 inset;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e7e5e0), color-stop(100%, #d5d3cf));
+  background-image: -webkit-linear-gradient(#e7e5e0, #d5d3cf);
+  background-image: -moz-linear-gradient(#e7e5e0, #d5d3cf);
+  background-image: -o-linear-gradient(#e7e5e0, #d5d3cf);
+  background-image: linear-gradient(#e7e5e0, #d5d3cf);
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 5px 10px;
+  text-align: center;
+}
+a.button:hover {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e7e5e0), color-stop(100%, #d0ceca));
+  background-image: -webkit-linear-gradient(#e7e5e0, #d0ceca);
+  background-image: -moz-linear-gradient(#e7e5e0, #d0ceca);
+  background-image: -o-linear-gradient(#e7e5e0, #d0ceca);
+  background-image: linear-gradient(#e7e5e0, #d0ceca);
+}
+
+h1 {
+  color: #443a33;
+  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+h5 {
+  color: #443a33;
+  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+strong {
+  color: #443b34;
+  font-weight: bold;
+}
+
+#container {
+  margin: 40px auto;
+  width: 780px;
+}
+
+#home {
+  padding-top: 20px;
+  text-align: center;
+}
+#home h1 {
+  font-size: 63px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+#home h2 {
+  color: #149ad4;
+  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 27px;
+  font-weight: 900;
+  line-height: 70px;
+  margin-bottom: 45px;
+  vertical-align: middle;
+}
+#home h2 span {
+  color: #e9e6e2;
+  font-size: 70px;
+  padding: 0 5px;
+  position: relative;
+  top: 10px;
+}
+
+ul#situations li {
+  width: 240px;
+  float: left;
+  margin-left: 27px;
+  text-align: center;
+}
+ul#situations li.whatever {
+  margin-left: 0;
+  margin-top: 16px;
+}
+ul#situations li.reciprocity {
+  margin-top: 3px;
+}
+ul#situations li h3 {
+  color: #443a33;
+  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 0 auto 20px auto;
+  width: 200px;
+}
+ul#situations li a.button {
+  margin-top: 20px;
+}
+
+table.license {
+  font-size: 13px;
+  line-height: 1.3;
+  margin-bottom: 40px;
+}
+table.license th {
+  border-bottom: solid 1px #d9d7d2;
+  padding: 5px 10px;
+}
+table.license th.name {
+  border-right: solid 1px #d9d7d2;
+  width: 150px;
+}
+table.license th.name a {
+  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 28px;
+  font-weight: 900;
+}
+table.license th.summary {
+  color: #7e7974;
+}
+table.license td {
+  border-bottom: solid 1px #e9e6e2;
+  padding: 4px 10px;
+}
+table.license td.label {
+  border-right: solid 1px #d9d7d2;
+  font-weight: bold;
+}
+table.license td ul li {
+  background-position: 0 1px;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  float: left;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin-right: 15px;
+  padding-left: 16px;
+}
+table.license td ul.required li {
+  background-image: url(/images/blue-dot@2x.png);
+}
+table.license td ul.permitted li {
+  background-image: url(/images/green-dot@2x.png);
+}
+table.license td ul.forbidden li {
+  background-image: url(/images/red-dot@2x.png);
+}
+table.license tr:nth-child(2n) td {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+div.license {
+  font-size: 16px;
+  float: left;
+  width: 540px;
+}
+
+div.sidebar {
+  float: right;
+  width: 220px;
+}
+div.sidebar a.button {
+  margin-top: -110px;
+  width: 100%;
+}
+div.sidebar .how-to-apply {
+  background-color: rgba(255, 255, 255, 0.33);
+  border: solid 1px #e9e6e1;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  color: #7e7974;
+  font-size: 12px;
+  margin-top: -15px;
+  padding: 16px;
+}
+div.sidebar .how-to-apply p {
+  line-height: 1.5;
+}
+div.sidebar .how-to-apply p:last-child {
+  margin-bottom: 0;
+}
