@@ -27,6 +27,18 @@ ol, ul {
   list-style: none;
 }
 
+div.license ul, div.license ol {
+  margin: 15px 20px;
+}
+
+div.license ul {
+  list-style-type: disc;
+}
+
+div.license ol {
+  list-style-type: decimal;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -289,4 +301,11 @@ div.sidebar .how-to-apply p {
 }
 div.sidebar .how-to-apply p:last-child {
   margin-bottom: 0;
+}
+
+div.sidebar div.source {
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 10px;
 }
