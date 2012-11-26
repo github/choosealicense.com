@@ -184,14 +184,19 @@ ul#situations li.reciprocity {
   margin-top: 3px;
 }
 ul#situations li h3 {
+  margin: 0 auto 20px auto;
+  width: 200px;
+}
+
+ul#situations li h3 a {
+  text-decoration: none;
   color: #443a33;
   font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 22px;
   font-weight: 900;
   line-height: 1.1;
-  margin: 0 auto 20px auto;
-  width: 200px;
 }
+
 ul#situations li a.button {
   margin-top: 20px;
 }
