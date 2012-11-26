@@ -275,6 +275,19 @@ div.license {
   width: 540px;
 }
 
+div.license dt, div.license h2, div.license h3 {
+  font-weight: bold;
+}
+
+div.license blockquote {
+  font-family: courier;
+  margin: 20px;
+}
+
+div.license h2 {
+  font-size: 1.1em;
+}
+
 div.sidebar {
   float: right;
   width: 220px;
@@ -308,4 +321,9 @@ div.sidebar div.source {
   line-height: 1.5;
   text-align: center;
   margin-top: 10px;
+}
+
+div.sidebar div.boilerplate {
+  font-family: 'courier new', courier;
+  font-size: 0.7em;
 }
