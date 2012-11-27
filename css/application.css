@@ -327,3 +327,43 @@ div.sidebar div.boilerplate {
   font-family: 'courier new', courier;
   font-size: 0.7em;
 }
+
+#footer {
+  border-top: 1px solid #e9e6e1;
+  margin-top: 30px;
+  padding-top: 20px;
+  color: #7e7974;
+  font-size: 12px;
+  text-align: left;
+  line-height: 1.5;
+}
+#footer a {
+  color: #443a33;
+  font-weight: normal;
+}
+#footer p {
+  float: left;
+}
+#footer nav {
+  float: right;
+}
+#footer nav a {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
