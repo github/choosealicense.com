@@ -27,18 +27,6 @@ ol, ul {
   list-style: none;
 }
 
-div.license ul, div.license ol {
-  margin: 15px 20px;
-}
-
-div.license ul {
-  list-style-type: disc;
-}
-
-div.license ol {
-  list-style-type: decimal;
-}
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -163,7 +151,7 @@ strong {
 
 #container {
   margin: 40px auto;
-  width: 780px;
+  width: 810px;
 }
 
 #home {
@@ -280,28 +268,20 @@ table.license tr:nth-child(2n) td {
 }
 
 div.license {
-  font-size: 16px;
+  font-size: 15px;
   float: left;
-  width: 540px;
+  width: 570px;
 }
 
-div.license dt, div.license h2, div.license h3 {
-  font-weight: bold;
-}
-
-div.license blockquote {
-  font-family: courier;
-  margin: 20px;
-}
-
-div.license h2 {
-  font-size: 1.1em;
+div.license pre {
+  white-space: pre-wrap;
 }
 
 div.sidebar {
   float: right;
   width: 220px;
 }
+
 div.sidebar a.button {
   margin-top: -110px;
   width: 100%;
