@@ -151,7 +151,7 @@ strong {
 
 #container {
   margin: 40px auto;
-  width: 810px;
+  width: 900px;
 }
 
 #home {
@@ -180,6 +180,10 @@ strong {
   top: 10px;
 }
 
+ul#situations {
+  width: 800px;
+  margin: 0 auto;
+}
 ul#situations li {
   width: 240px;
   float: left;
@@ -270,7 +274,7 @@ table.license tr:nth-child(2n) td {
 div.license {
   font-size: 15px;
   float: left;
-  width: 570px;
+  width: 660px;
 }
 
 div.license pre {
