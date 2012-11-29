@@ -133,6 +133,16 @@ h1 {
   margin-bottom: 25px;
 }
 
+h2 {
+  color: #443a33;
+  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 h5 {
   color: #443a33;
   font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
