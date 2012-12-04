@@ -281,7 +281,7 @@ div.license {
 }
 
 div.license pre {
-  white-space: pre-wrap;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
 }
 
 div.sidebar {
