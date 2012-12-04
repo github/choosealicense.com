@@ -7,6 +7,10 @@
     <link href='../../favicon.ico' rel='shortcut icon' type='image/x-icon'>
     <link href='http://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link type="text/css" href="../../css/application.css" media="screen" rel="stylesheet">
+    <link type="text/css" href="../../css/jquery.qtip.css" media="screen" rel="stylesheet">
+    <script type="text/javascript" src="../../javascripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../../javascripts/app.js"></script>
+    <script type="text/javascript" src="../../javascripts/jquery.qtip.min.js"></script>
     <script type="text/javascript" src="../../javascripts/modernizr.js"></script>
     <!--[if (gte IE 6)&(lte IE 8)]>
       <script src='../../javascripts/selectivizr-min.js' type='text/javascript'></script>
@@ -34,9 +38,9 @@
           <td class='label'>Required</td>
           <td>
             <ul class='required'>
-              <li>Copyright inclusion</li>
-              <li>License inclusion</li>
-              <li>Include header</li>
+              <li title="You must retain the original copyright.">Copyright inclusion</li>
+              <li title="Must include full text of license in modified software.">License inclusion</li>
+              <li title="Must state significant changes made to software.">Include header</li>
             </ul>
           </td>
         </tr>
@@ -44,11 +48,11 @@
           <td class='label'>Permitted</td>
           <td>
             <ul class='permitted'>
-              <li>Commercial use</li>
-              <li>Modification</li>
-              <li>Distribution</li>
-              <li>Sublicensing</li>
-              <li>Warranty</li>
+              <li title="This software can be used for commercial purposes in derivative works.">Commercial use</li>
+              <li title="This software can be modified.">Modification</li>
+              <li title="The software may be distributed.">Distribution</li>
+              <li title="This software allows you to give partial production/distribution rights to third parties not included in the license.">Sublicensing</li>
+              <li title="You can place a warranty on the software.">Warranty</li>
             </ul>
           </td>
         </tr>
@@ -56,8 +60,8 @@
           <td class='label'>Forbidden</td>
           <td>
             <ul class='forbidden'>
-              <li>Liability</li>
-              <li>Use Trademark</li>
+              <li title="Software is released without warranty and the software/license owner cannot be charged for damages.">Liability</li>
+              <li title="You may NOT use contributors' names, logos or trademarks.">Use Trademark</li>
             </ul>
           </td>
         </tr>
