@@ -281,7 +281,8 @@ div.license {
 }
 
 div.license pre {
-  font-family: Consolas, "Monaco", Courier, monospace;
+  font-family: Consolas, Monaco, Courier, monospace;
+  font-size: 14px;
 }
 
 div.sidebar {
