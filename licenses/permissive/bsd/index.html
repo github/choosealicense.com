@@ -7,6 +7,9 @@
     <link href='../../../favicon.ico' rel='shortcut icon' type='image/x-icon'>
     <link href='http://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link type="text/css" href="../../../css/application.css" media="screen" rel="stylesheet">
+    <script type="text/javascript" src="../../../javascripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../../../javascripts/clipboard.js"></script>
+    <script type="text/javascript" src="../../../javascripts/ZeroClipboard.js"></script>
     <script type="text/javascript" src="../../../javascripts/modernizr.js"></script>
     <!--[if (gte IE 6)&(lte IE 8)]>
       <script src='../../../javascripts/selectivizr-min.js' type='text/javascript'></script>
@@ -22,7 +25,7 @@
       <h1>BSD (2-Clause) License</h1>
       <div class="cf">
         <div class='license'>
-          <pre>
+          <pre id="license-text">
 Copyright (c) {year}, {copyright holder}
 All rights reserved.
 
@@ -51,7 +54,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
           </pre>
         </div>
         <div class='sidebar'>
-          <a href="#" class="button">Copy license text to clipboard</a>
+          <a href="#" id="clipboard-button" data-clipboard-target="license-text" class="button">Copy license text to clipboard</a>
           <div class='how-to-apply'>
             <h5>How to apply this license</h5>
             <p>
