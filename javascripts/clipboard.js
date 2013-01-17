@@ -5,7 +5,7 @@ $(document).ready(function() {
   
   // Hook up copy to clipboard buttons
   var clip = new ZeroClipboard( $("#clipboard-button"), {
-    moviePath: "/javascripts/ZeroClipboard.swf"
+    moviePath: "../../javascripts/ZeroClipboard.swf"
   } );
 
   clip.on( 'mouseover', function(client, args) {

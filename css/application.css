@@ -55,7 +55,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  background: #f5f1ec url(/images/bg.jpg);
+  background: #f5f1ec url(../images/bg.jpg);
   color: #7e7974;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -262,13 +262,13 @@ table.license td ul li:hover {
   color: #443a33;
 }
 table.license td ul.required li {
-  background-image: url(/images/blue-dot@2x.png);
+  background-image: url(../images/blue-dot@2x.png);
 }
 table.license td ul.permitted li {
-  background-image: url(/images/green-dot@2x.png);
+  background-image: url(../images/green-dot@2x.png);
 }
 table.license td ul.forbidden li {
-  background-image: url(/images/red-dot@2x.png);
+  background-image: url(../images/red-dot@2x.png);
 }
 table.license tr:nth-child(2n) td {
   background-color: rgba(0, 0, 0, 0.02);
@@ -321,7 +321,7 @@ div.sidebar div.source {
 }
 div.sidebar div.source a {
   padding-left: 20px;
-  background: transparent url(/images/source@2x.png) 0 1px no-repeat;
+  background: transparent url(../images/source@2x.png) 0 1px no-repeat;
   background-size: 16px 12px;
 }
 
@@ -408,4 +408,8 @@ div.sidebar div.boilerplate {
 /* For IE 6/7 (trigger hasLayout) */
 .cf {
     zoom:1;
+}
+
+#see-more {
+  margin-top: 20px;
 }
