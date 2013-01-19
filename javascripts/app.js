@@ -4,7 +4,8 @@ var annotations = {
     'modifications' : 'This software may be modified.',
     'distribution' : 'You may distribute this software.',
     'sublicense' : 'You may grant a sublicense to modify and distribute this software to third parties not included in the license.',
-    'warranty' : 'You may place a warranty on the software.'
+    'warranty' : 'You may place a warranty on the software.',
+    'private-use' : 'You may use and modify the software without distributing it.'
   },
 
   forbidden: {
@@ -19,7 +20,8 @@ var annotations = {
     'include-license' : 'Include the full text of the license with the code.',
     'document-changes' : 'Indicate significant changes made to the code.',
     'disclose-source' : 'Source code must be made available when distributing the software.',
-    'nonstatic-linkage' : 'The library must be linked in a way that allows it to be replaced with a similar library.'
+    'nonstatic-linkage' : 'The library must be linked in a way that allows it to be replaced with a similar library.',
+    'rename' : 'You must change the name of the software if you modify it.'
   }
 }
   
