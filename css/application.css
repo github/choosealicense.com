@@ -319,6 +319,9 @@ strong {
 .sidebar .how-to-apply p:last-child {
   margin-bottom: 0;
 }
+.sidebar .note {
+  font-style: italic;
+}
 
 .sidebar .source {
   font-size: 12px;
