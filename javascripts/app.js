@@ -14,7 +14,7 @@ var annotations = {
     'no-liability' : 'Software is provided without warranty and the software author/license owner cannot be held liable for damages.',
     'no-sublicense' : 'You may not grant a sublicense to modify and distribute this software to third parties not included in the license.',
   },
-  
+
   required: {
     'include-copyright' : 'Include the original copyright with the code.',
     'include-license' : 'Include the full text of the license with the code.',
@@ -24,7 +24,6 @@ var annotations = {
     'rename' : 'You must change the name of the software if you modify it.'
   }
 }
-  
 
 var qtip_position = {
   my: 'top center',
@@ -37,9 +36,9 @@ $(document).ready(function() {
     for (var annotation in categoryAnnotations) {
       $('table.license ul.' + category + ' li.' + annotation).attr('title', categoryAnnotations[annotation]);
     }
-  }  
+  }
 
-  $('table.license ul.required li').qtip({
+  $('.license .required li').qtip({
     content: {
       text: false,
       title: {
@@ -52,7 +51,7 @@ $(document).ready(function() {
     }
   });
 
-  $('table.license ul.permitted li').qtip({
+  $('.license .permitted li').qtip({
     content: {
       text: false,
       title: {
@@ -65,7 +64,7 @@ $(document).ready(function() {
     }
   });
 
-  $('table.license ul.forbidden li').qtip({
+  $('.license .forbidden li').qtip({
     content: {
       text: false,
       title: {

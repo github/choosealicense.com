@@ -71,7 +71,7 @@ a:hover {
   text-decoration: underline;
 }
 
-a.button {
+.button {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -103,7 +103,7 @@ a.button {
   padding: 5px 10px;
   text-align: center;
 }
-a.button:hover {
+.button:hover {
   text-decoration: none;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e7e5e0), color-stop(100%, #d0ceca));
   background-image: -webkit-linear-gradient(#e7e5e0, #d0ceca);
@@ -149,21 +149,21 @@ strong {
   font-weight: bold;
 }
 
-#container {
+.container {
   margin: 40px auto;
   width: 900px;
 }
 
-#home {
+.home {
   padding-top: 20px;
   text-align: center;
 }
-#home h1 {
+.home h1 {
   font-size: 63px;
   line-height: 1.1;
   margin-bottom: 25px;
 }
-#home h2 {
+.home h2 {
   color: #149ad4;
   font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 27px;
@@ -172,7 +172,7 @@ strong {
   margin-bottom: 45px;
   vertical-align: middle;
 }
-#home h2 span {
+.home h2 span {
   color: #e9e6e2;
   font-size: 70px;
   padding: 0 5px;
@@ -180,29 +180,29 @@ strong {
   top: 10px;
 }
 
-ul#situations {
+.situations {
   width: 800px;
   margin: 0 auto;
 }
-ul#situations li {
+.situations li {
   width: 240px;
   float: left;
   margin-left: 27px;
   text-align: center;
 }
-ul#situations li.whatever {
+.situations .whatever {
   margin-left: 0;
   margin-top: 16px;
 }
-ul#situations li.reciprocity {
+.situations .reciprocity {
   margin-top: 3px;
 }
-ul#situations li h3 {
+.situations h3 {
   margin: 0 auto 20px auto;
   width: 200px;
 }
 
-ul#situations li h3 a {
+.situations h3 a {
   text-decoration: none;
   color: #443a33;
   font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
@@ -211,8 +211,11 @@ ul#situations li h3 a {
   line-height: 1.1;
 }
 
-.see-more {
+.situations .button {
   margin-top: 20px;
+}
+
+.callout {
   background-color: rgba(255, 255, 255, 0.33);
   border: solid 1px #e9e6e1;
   -webkit-border-radius: 3px;
@@ -223,41 +226,40 @@ ul#situations li h3 a {
   color: #7e7974;
   padding: 16px;
 }
-
-ul#situations li a.button {
+.see-more {
   margin-top: 20px;
 }
 
-table.license {
+.license-grid {
   font-size: 13px;
   line-height: 1.3;
   margin-bottom: 40px;
 }
-table.license th {
+.license-grid th {
   border-bottom: solid 1px #d9d7d2;
   padding: 5px 10px;
 }
-table.license th.name {
+.license-grid .name {
   border-right: solid 1px #d9d7d2;
   width: 150px;
 }
-table.license th.name a {
+.license-grid .name a {
   font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 28px;
   font-weight: 900;
 }
-table.license th.summary {
+.license-grid .summary {
   color: #7e7974;
 }
-table.license td {
+.license-grid td {
   border-bottom: solid 1px #e9e6e2;
   padding: 4px 10px;
 }
-table.license td.label {
+.license-grid .label {
   border-right: solid 1px #d9d7d2;
   font-weight: bold;
 }
-table.license td ul li {
+.license-grid li {
   background-position: 0 1px;
   background-repeat: no-repeat;
   background-size: 12px 12px;
@@ -271,79 +273,70 @@ table.license td ul li {
   margin-right: 15px;
   padding-left: 16px;
 }
-table.license td ul li:hover {
+.license-grid li:hover {
   color: #443a33;
 }
-table.license td ul.required li {
+.license-grid .required li {
   background-image: url(../images/blue-dot@2x.png);
 }
-table.license td ul.permitted li {
+.license-grid .permitted li {
   background-image: url(../images/green-dot@2x.png);
 }
-table.license td ul.forbidden li {
+.license-grid .forbidden li {
   background-image: url(../images/red-dot@2x.png);
 }
-table.license tr:nth-child(2n) td {
+.license-grid tr:nth-child(2n) td {
   background-color: rgba(0, 0, 0, 0.02);
 }
 
-div.license {
+.license-body {
   font-size: 15px;
   float: left;
   width: 660px;
 }
 
-div.license pre {
+.license-body pre {
   font-family: Consolas, Monaco, Courier, monospace;
   font-size: 14px;
 }
 
-div.sidebar {
+.sidebar {
   float: right;
   width: 220px;
 }
 
-div.sidebar a.button {
+.sidebar a.button {
   margin-top: -110px;
   width: 100%;
 }
-div.sidebar .how-to-apply {
-  background-color: rgba(255, 255, 255, 0.33);
-  border: solid 1px #e9e6e1;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-  color: #7e7974;
+.sidebar .how-to-apply {
   font-size: 12px;
   margin-top: -15px;
-  padding: 16px;
 }
-div.sidebar .how-to-apply p {
+.sidebar .how-to-apply p {
   line-height: 1.5;
 }
-div.sidebar .how-to-apply p:last-child {
+.sidebar .how-to-apply p:last-child {
   margin-bottom: 0;
 }
 
-div.sidebar div.source {
+.sidebar .source {
   font-size: 12px;
   text-align: center;
   margin-top: 10px;
 }
-div.sidebar div.source a {
+.sidebar .source a {
   padding-left: 20px;
   background: transparent url(../images/source@2x.png) 0 1px no-repeat;
   background-size: 16px 12px;
 }
 
-div.sidebar div.boilerplate {
+.sidebar .boilerplate {
   font-family: 'courier new', courier;
   font-size: 0.7em;
 }
 
-#footer {
+.site-footer {
   border-top: 1px solid #e9e6e1;
   margin-top: 30px;
   padding-top: 20px;
@@ -352,17 +345,17 @@ div.sidebar div.boilerplate {
   text-align: left;
   line-height: 1.5;
 }
-#footer a {
+.site-footer a {
   color: #443a33;
   font-weight: normal;
 }
-#footer p {
+.site-footer p {
   float: left;
 }
-#footer nav {
+.site-footer nav {
   float: right;
 }
-#footer nav a {
+.site-footer nav a {
   display: inline-block;
   margin-left: 20px;
 }
@@ -422,4 +415,3 @@ div.sidebar div.boilerplate {
 .cf {
     zoom:1;
 }
-
