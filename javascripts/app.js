@@ -34,11 +34,11 @@ $(document).ready(function() {
   for (var category in annotations) {
     var categoryAnnotations = annotations[category];
     for (var annotation in categoryAnnotations) {
-      $('table.license ul.' + category + ' li.' + annotation).attr('title', categoryAnnotations[annotation]);
+      $('.license-rules ul.license-' + category + ' li.' + annotation).attr('title', categoryAnnotations[annotation]);
     }
   }
 
-  $('.license .required li').qtip({
+  $('.license-required li').qtip({
     content: {
       text: false,
       title: {
@@ -51,7 +51,7 @@ $(document).ready(function() {
     }
   });
 
-  $('.license .permitted li').qtip({
+  $('.license-permitted li').qtip({
     content: {
       text: false,
       title: {
@@ -64,7 +64,7 @@ $(document).ready(function() {
     }
   });
 
-  $('.license .forbidden li').qtip({
+  $('.license-forbidden li').qtip({
     content: {
       text: false,
       title: {
