@@ -211,6 +211,19 @@ ul#situations li h3 a {
   line-height: 1.1;
 }
 
+.see-more {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.33);
+  border: solid 1px #e9e6e1;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  color: #7e7974;
+  padding: 16px;
+}
+
 ul#situations li a.button {
   margin-top: 20px;
 }
@@ -410,6 +423,3 @@ div.sidebar div.boilerplate {
     zoom:1;
 }
 
-#see-more {
-  margin-top: 20px;
-}
