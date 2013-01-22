@@ -228,6 +228,9 @@ strong {
 }
 .see-more {
   margin-top: 20px;
+  display: inline-block;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .license-grid {
