@@ -16,8 +16,8 @@ licenses.
 * Politics Free - Let's just not get into it.
 * Well designed, but that goes without saying.
 * The homepage should have just enough to help 99% of folks make a decision.
-* For the 1%, the site will contain a license chooser similar to 
-the [creative commons license chooser](http://creativecommons.org/choose/)
+* For the 1%, the site will contain a list of licenses common for specific 
+communities and situations.
 * Not comprehensive. Seems like an odd goal, but there are a bajillion 
 (I counted) licenses out there. We're going to have to filter that down to a 
 small list of those that matter.
