@@ -127,7 +127,7 @@ h2 {
   font-size: 18px;
   font-weight: 900;
   line-height: 1.1;
-  margin-top: 20px;
+  margin-top: 24px;
   margin-bottom: 10px;
 }
 
@@ -191,11 +191,11 @@ strong {
 }
 
 .situations {
-  width: 800px;
+  width: 900px;
   margin: 0 auto;
 }
 .situations li {
-  width: 240px;
+  width: 280px;
   float: left;
   margin-left: 27px;
   text-align: center;
@@ -209,7 +209,7 @@ strong {
 }
 .situations h3 {
   margin: 0 auto 20px auto;
-  width: 200px;
+  width: 220px;
 }
 
 .situations h3 a {
@@ -254,12 +254,15 @@ strong {
 }
 .license-rules .name {
   border-right: solid 1px #d9d7d2;
-  width: 150px;
+  width: 180px;
 }
 .license-rules .name a {
   font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 28px;
   font-weight: 900;
+}
+.license-rules .name small a {
+  font-size: 16px;
 }
 .license-rules .summary {
   color: #7e7974;
@@ -344,7 +347,6 @@ strong {
 }
 
 .sidebar .source {
-  /*text-align: right;*/
   margin-top: 4px;
 }
 .sidebar .source a {
@@ -384,6 +386,15 @@ strong {
 .site-footer nav a {
   display: inline-block;
   margin-left: 20px;
+}
+
+.bullets {
+  margin-bottom: 1em;
+}
+
+.bullets li {
+  list-style: disc;
+  margin-left: 2em;
 }
 
 /* Qtip styles */
