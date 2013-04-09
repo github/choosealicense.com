@@ -164,3 +164,6 @@ pip-log.txt
 
 # .NET crap
 .config
+
+#jekyll
+_site

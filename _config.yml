@@ -1,0 +1,57 @@
+title: ChooseALicense.com
+
+rules:
+
+  required:
+    include-copyright:
+      description: Include the original copyright with the code.
+      label:  Copyright inclusion
+    include-license: 
+      description: Include the full text of the license with the code.
+      label: License inclusion
+    document-changes: 
+      description: Indicate significant changes made to the code.
+      label: State Changes
+    disclose-source:
+      description: Source code must be made available when distributing the software.
+      label: Disclose Source
+    nonstatic-linkage:
+      description: The library must be linked in a way that allows it to be replaced with a similar library
+      label: Nonstatic Linkage
+    rename: 
+      description: You must change the name of the software if you modify it.
+      label: Rename
+
+  permitted:
+    commercial-use: 
+      description: This software and derivatives may be used for commercial purposes.
+      label: Commercial Use
+    modifications: 
+      description: This software may be modified.
+      label: Modification
+    distribution: 
+      description: You may distribute this software.
+      label: Distribution
+    sublicense: 
+      description: You may grant a sublicense to modify and distribute this software to third parties not included in the license.
+      label: Sublicensing
+    warranty: 
+      description: You may place a warranty on the software.
+      label: Warranty
+    private-use: 
+      description: You may use and modify the software without distributing it.
+      label: Private Use
+
+  forbidden:
+    no-warranty:
+      description: Software is released without warranty and the software/license owner cannot be charged for damages.
+      label: Liability
+    trademark-use:
+      description: "You may NOT use the names, logos, or trademarks of contributors."
+      label: Use Trademark
+    no-liability: 
+      description: Software is provided without warranty and the software author/license owner cannot be held liable for damages.
+      label: Liability
+    no-sublicense: 
+      description: You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
+      label: Sublicensing
