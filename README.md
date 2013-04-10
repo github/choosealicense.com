@@ -43,3 +43,19 @@ review the content before we post it live.
 3. `script/bootstrap`
 4. `script/server`
 5. Open [localhost:4000](http://localhost:4000) in your favorite browser
+
+# Adding a license
+
+Licenses sit in the `/licenses` folder as markdown (`.md`) files. Each license has YAML front matter describing the license's properties. The body of the markdown file should be the text of the license. The available metadata fields are:
+
+* `title` - The name of the license
+* `layout` - This should be `license`
+* `permalink` - The url to the license relative to `/licenses/`
+* `source` - URL to the license source text
+* `note` - The note field in the sidebar (optional)
+* `how` - How to use the license, also in the sidebar
+* `required`, `permitted`, `forbidden` - bulleted list of rules applicable to the license (see below)
+
+# Rules 
+
+* Rules (the license's properties) are stored as a bulleted list within the licenses YAML front matter. A full list of rules can be found in the repository's `_config.yml` file. Each rule has a name e.g., `include-copyright`, a human-readable label, e.g., `Copyright inclusion`, and a description `Include the original copyright with the code`. To add a new rule, simply add it to config.yml and reference it in the appropriate license. 
