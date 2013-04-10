@@ -38,26 +38,8 @@ review the content before we post it live.
 
 # Run It On Your Machine
 
-```
-git clone https://github.com/github/choosealicense.com
-cd choosealicense.com
-```
-
-The site uses relative links so you can easily click on documents to view 
-them, though default documents (index.html) won't work.
-
-Or you can also use a simple local webserver:
-
-
-```
-python -m SimpleHTTPServer
-open http://localhost:8000/
-```
-
-or if you have IIS Express on Windows
-
-```
-CD "c:\Program Files (x86)\IIS Express\"
-iisexpress /path:c:\path\to\choosealicense.com /port:8000
-open http://localhost:8000/
-```
+1. `git clone https://github.com/github/choosealicense.com`
+2. `cd choosealicense.com`
+3. `script/bootstrap`
+4. `script/server`
+5. Open [localhost:4000](http://localhost:4000) in your favorite browser
