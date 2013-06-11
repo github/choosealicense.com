@@ -241,25 +241,36 @@ strong {
   display: inline-block;
   padding-left: 80px;
   padding-right: 80px;
+  font-weight: bold;
+}
+.see-more p:last-child {
+  margin-bottom: 0.3em;
 }
 
 .license-rules {
   font-size: 13px;
   line-height: 1.3;
   margin-bottom: 40px;
+  width: 100%;
 }
 .license-rules th {
   border-bottom: solid 1px #d9d7d2;
-  padding: 5px 10px;
+  padding: 5px 10px 12px 10px;
+  vertical-align: bottom;
+}
+.license-rules th.summary {
+  line-height: 1.4;
 }
 .license-rules .name {
   border-right: solid 1px #d9d7d2;
-  width: 180px;
+  padding-left: 0;
+  width: 280px;
 }
 .license-rules .name a {
   font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 28px;
   font-weight: 900;
+  line-height: 1.1;
 }
 .license-rules .name small a {
   font-size: 16px;
