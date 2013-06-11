@@ -34,7 +34,7 @@
         <div class='license-body'>
           <pre id="license-text">
 
-{{ content | replace:"<<","&lt;&lt;" }}
+{{ content | replace:"<<","[" | replace:">>","]" }}
         
           </pre><!-- /license-text -->
         </div><!-- /license-body -->
