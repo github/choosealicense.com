@@ -57,7 +57,7 @@ rules:
       label: Sublicensing
     modifications:
       description: This software may not be modified.
-      label: Modficiation
+      label: Modification
     distribution:
       description: You may not distribute this software.
       label: Distribution
