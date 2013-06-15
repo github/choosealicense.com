@@ -1,7 +1,7 @@
 ---
 layout: license
 title: Artistic License 2.0
-permalink: /artistic/
+permalink: artistic/
 
 source: http://opensource.org/licenses/Artistic-2.0
 
