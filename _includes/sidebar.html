@@ -4,7 +4,7 @@
     <div class='how-to-apply callout'>
       <h5>How to apply this license</h5>
       <p>
-        {{ page.how }}
+        {{ page.how | replace:"<<","[" | replace:">>","]" }}
       </p>
       {% if page.note %}
       <p class="note">
