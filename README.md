@@ -22,20 +22,6 @@ communities and situations.
 (I counted) licenses out there. We're going to have to filter that down to a 
 small list of those that matter.
 
-# Design
-
-I think v1 of the site could be a completely static JavaScript site. No need 
-for a back end until we actually need it.
-
-# Community
-
-We plan to build out the skeleton of the site privately first, but then open 
-it up to accept contributions.
-
-Phil will look into whether various open source foundations and lawyers would 
-be interested in being involved. Probably makes good sense to have a lawyer 
-review the content before we post it live.
-
 # Run It On Your Machine
 
 1. `git clone https://github.com/github/choosealicense.com`
