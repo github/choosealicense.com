@@ -5,7 +5,7 @@ permalink: apache/
 
 featured: true
 
-description: A permissive license that also provides an express grant of patent rights from the contributor to the recipient.
+description: A permissive license that also provides an express grant of patent rights from contributors to users.
 
 note: The Apache Foundation recommends taking the additional step of adding a boilerplate notice to the header of each source file. You can find the notice at the very end of the license in the appendix.
 
