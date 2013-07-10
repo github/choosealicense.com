@@ -5,7 +5,7 @@ permalink: gpl-v3/
 
 featured: true
 
-description: GPL is the most widely used free software license and is fully reciprocal. Derived works must be distributed under the same license.
+description: GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
