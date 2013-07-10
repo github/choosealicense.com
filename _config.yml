@@ -4,11 +4,8 @@ rules:
 
   required:
     include-copyright:
-      description: Include the original copyright with the code.
-      label:  Copyright inclusion
-    include-license: 
-      description: Include the full text of the license with the code.
-      label: License inclusion
+      description: Include a copy of the license and copyright with the code.
+      label:  License and copyright notice
     document-changes: 
       description: Indicate significant changes made to the code.
       label: State Changes
