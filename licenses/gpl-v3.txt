@@ -21,6 +21,7 @@ permitted:
   - modifications
   - distribution
   - warranty
+  - patent-grant
 
 forbidden:
   - no-liability

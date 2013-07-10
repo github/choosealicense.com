@@ -23,9 +23,12 @@ permitted:
   - distribution
   - sublicense
   - warranty
+  - patent-grant
   
 forbidden:
   - trademark-use
+  - no-liability
+
 ---
 
 Apache License

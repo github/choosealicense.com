@@ -19,10 +19,10 @@ permitted:
   - modifications
   - sublicense
   - warranty
+  - patent-grant
 
 forbidden:
   - no-liability
-  - trademark-use
 
 ---
 Eclipse Public License - v 1.0

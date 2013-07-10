@@ -38,6 +38,9 @@ rules:
     private-use: 
       description: You may use and modify the software without distributing it.
       label: Private Use
+    patent-grant:
+      description: While all open source licenses have an implicit grant of patent rights, this license provides an express grant of patent rights from the contributor to the recipient.
+      label: Patent Grant
 
   forbidden:
     no-warranty:

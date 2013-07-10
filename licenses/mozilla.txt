@@ -17,6 +17,7 @@ permitted:
   - distribution
   - sublicense
   - warranty
+  - patent-grant
 
 forbidden:
   - no-liability
