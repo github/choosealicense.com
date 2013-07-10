@@ -4,7 +4,7 @@ permalink: public-domain/
 class: license-types
 title: Public Domain (CC0)
 
-description: You disclaim all rights to the code and dedicate it to the public domain allowing others to do anything with the work they wish even without attributing you. However, because laws vary in different countries, the Creative Commons has a CC0 license that licenses the work as close to the spirit of public domain everywhere.
+description: You disclaim all rights to the code and dedicate it to the public domain allowing others to do anything with the work they wish, even without attributing you. However, because laws vary in different countries, the Creative Commons has a CC0 license that licenses the work as close to the spirit of public domain everywhere.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. You can alternatively use the [Creative Commons CC0 tool](http://creativecommons.org/choose/zero/) to generate HTML with embedded metadata to mark your work as CC0.
 
