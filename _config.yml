@@ -13,7 +13,7 @@ rules:
       description: Source code must be made available when distributing the software. In the case of LGPL only the source for the library (and not the entire program) must be made available.
       label: Disclose Source
     library-usage:
-      description: The library may be used within a proprietary application. 
+      description: The library may be used within a non-open-source application. 
       label: Library usage
     rename: 
       description: You must change the name of the software if you modify it.
