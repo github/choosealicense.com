@@ -11,13 +11,15 @@ note: The Free Software Foundation recommends taking the additional step of addi
 
 required:
   - include-copyright
-  - nonstatic-linkage
+  - library-usage
+  - disclose-source
 
 permitted:
   - commercial-use
   - modifications
   - distribution
   - sublicense
+  - patent-grant
 
 forbidden:
   - no-liability

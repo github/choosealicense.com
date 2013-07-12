@@ -10,7 +10,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 source: http://www.eclipse.org/legal/epl-v10.html
 
 required:
-  - disclose-source
+  - include-copyright
   - include-license
 
 permitted:
@@ -18,11 +18,10 @@ permitted:
   - distribution
   - modifications
   - sublicense
-  - warranty
+  - patent-grant
 
 forbidden:
   - no-liability
-  - trademark-use
 
 ---
 Eclipse Public License - v 1.0

@@ -10,14 +10,13 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 required:
   - disclose-source
   - include-copyright
-  - include-license
 
 permitted:
   - commercial-use
   - modifications
   - distribution
   - sublicense
-  - warranty
+  - patent-grant
 
 forbidden:
   - no-liability

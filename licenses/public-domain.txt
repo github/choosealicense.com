@@ -18,6 +18,7 @@ permitted:
   - sublicense
 
 forbidden:
+  - no-liability
 
 ---
 
