@@ -32,9 +32,6 @@ rules:
     sublicense: 
       description: You may grant a sublicense to modify and distribute this software to third parties not included in the license.
       label: Sublicensing
-    warranty: 
-      description: You may place a warranty on the software.
-      label: Warranty
     private-use: 
       description: You may use and modify the software without distributing it.
       label: Private Use

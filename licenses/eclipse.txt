@@ -18,7 +18,6 @@ permitted:
   - distribution
   - modifications
   - sublicense
-  - warranty
   - patent-grant
 
 forbidden:
