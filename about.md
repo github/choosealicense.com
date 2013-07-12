@@ -20,11 +20,11 @@ If you already know what you&#8217;re doing and have a license you prefer to use
 
 This site is not a comprehensive directory of open source licenses. If you&#8217;re looking for a comprehensive list, we recommend the <a href="http://opensource.org/licenses/">Open Source Initiative</a> website.
 
-We think there are too many options, which adds to the confusion. On the homepage, we break it down into just three licenses. For the vast majority of projects, these are probably the only three you will need to choose from. Just in case you have specific needs not covered by those three, we also highlight a few other licenses to consider.
+We think there are too many options, which adds to the confusion. On the homepage, we break it down into just three licenses. The vast majority of projects will likely be fine choosing from one of these three. Just in case you have specific needs not covered by those three, we also highlight a [few other licenses to consider](/licenses/).
 
 ## Help us improve it
 
-Choosealicense.com isn't just about open source, the site itself is open source as well. See something you think could be done better? Feel free to [fork the project](https://github.com/github/choosealicense.com) on GitHub and submit a pull request. We'd welcome your improvements.
+Choosealicense.com isn&#8217;t just about open source, the site itself is open source as well. See something you think could be done better? Feel free to [fork the project](https://github.com/github/choosealicense.com) on GitHub and submit a pull request. We'd welcome your improvements.
 
 ## Disclaimer
 
