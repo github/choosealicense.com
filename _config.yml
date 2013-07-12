@@ -43,11 +43,8 @@ rules:
       label: Patent Grant
 
   forbidden:
-    no-warranty:
-      description: Software is released without warranty and the software/license owner cannot be charged for damages.
-      label: Liability
     trademark-use:
-      description: "While this may be implicitly true of all licenses, this license explicitly states that you may NOT use the names, logos, or trademarks of contributors."
+      description: While this may be implicitly true of all licenses, this license explicitly states that you may NOT use the names, logos, or trademarks of contributors.
       label: Use Trademark
     no-liability: 
       description: Software is provided without warranty and the software author/license owner cannot be held liable for damages.
