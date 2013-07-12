@@ -6,7 +6,7 @@ title: Public Domain (CC0)
 
 description: Because copyright attaches automatically in many countries, the Creative Commons CC0 License is recommended to ensure that your work is available everywhere under terms that most closely follow the spirit of a public domain work.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. You can alternatively use the [Creative Commons CC0 tool](http://creativecommons.org/choose/zero/) to generate HTML with embedded metadata to mark your work as CC0.
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. You can alternatively use the <a href="http://creativecommons.org/choose/zero/">Creative Commons CC0 tool</a> to generate HTML with embedded metadata to mark your work as CC0.
 
 required: 
 
