@@ -51,7 +51,7 @@ rules:
       label: Use Trademark
     no-liability: 
       description: Software is provided without warranty and the software author/license owner cannot be held liable for damages.
-      label: Liability
+      label: Hold Liable
     no-sublicense: 
       description: You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
       label: Sublicensing
