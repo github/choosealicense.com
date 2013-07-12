@@ -4,7 +4,7 @@ rules:
 
   required:
     include-copyright:
-      description: Include a copy of the license and copyright with the code.
+      description: Include a copy of the license and copyright notice with the code.
       label:  License and copyright notice
     document-changes: 
       description: Indicate significant changes made to the code.
