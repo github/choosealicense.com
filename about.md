@@ -6,7 +6,7 @@ permalink: /about/
 
 <ol class='breadcrumbs'>
   <li>
-    <a href="../../../">Home</a>
+    <a href="/">Home</a>
   </li>
 </ol>
 
