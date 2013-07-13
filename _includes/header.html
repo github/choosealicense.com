@@ -27,17 +27,7 @@
   <body class="{{ page.layout }} {{ page.class }}">
     <div class='container'>
 
-      {% unless page.hide_breadcrumbs == true %}
-        <ol class='breadcrumbs'>
-          <li>
-            {% if page.layout == "license" %}
-              <a href="/">Home</a> / <a href="/licenses/">Licenses</a>
-            {% else %}
-              <a href="/">Home</a>
-            {% endif %}
-          </li>
-        </ol>
-      {% endunless %}
+      {% include breadcrumbs.html %}
 
       {% if page.title %}
         <h1>{{ page.title }}</h1>
