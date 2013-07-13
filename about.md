@@ -4,12 +4,6 @@ layout: default
 permalink: /about/
 ---
 
-<ol class='breadcrumbs'>
-  <li>
-    <a href="/">Home</a>
-  </li>
-</ol>
-
 # What&#8217;s this about?
 
 We want to help developers choose a license for their source code.

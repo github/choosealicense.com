@@ -20,6 +20,14 @@
   <body class="{{ page.layout }} {{ page.class }}">
     <div class='container'>
 
+      {% unless page.class == "home" %}
+      <ol class='breadcrumbs'>
+        <li>
+          <a href="/">Home</a>
+        </li>
+      </ol>
+      {% endunless %}
+
 {{ content }}
 
       <footer class="site-footer cf">
