@@ -14,14 +14,12 @@ required:
 
 permitted:
   - commercial-use
-  - modification
+  - modifications
   - distribution
   - sublicense
-  - warranty
 
 forbidden:
   - no-liability
-  - trademark-use
 
 ---
 

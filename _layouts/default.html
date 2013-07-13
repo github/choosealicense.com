@@ -1,5 +1,13 @@
 {% include header.html %}
 
+      {% unless page.class == "home" %}
+      <ol class='breadcrumbs'>
+        <li>
+          <a href="/">Home</a>
+        </li>
+      </ol>
+      {% endunless %}
+
 {{ content }}
 
 {% include footer.html %}
