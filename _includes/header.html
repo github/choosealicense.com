@@ -6,6 +6,10 @@
 
     <meta charset='utf-8'>
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% endif %}
 
     <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
     <link href='http://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
