@@ -2,9 +2,8 @@
 title: About
 layout: default
 permalink: /about/
+title: What&#8217;s this about?
 ---
-
-# What&#8217;s this about?
 
 We want to help developers choose a license for their source code.
 
