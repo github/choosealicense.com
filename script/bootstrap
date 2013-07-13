@@ -5,5 +5,8 @@ set -e
 echo "bundling installin'"
 bundle install
 
+echo "npm installin'"
+npm install coffee-script
+
 echo
 echo "You're all set. Just run script/server and you can play license roulette!"
