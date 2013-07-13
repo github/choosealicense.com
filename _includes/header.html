@@ -27,7 +27,7 @@
   <body class="{{ page.layout }} {{ page.class }}">
     <div class='container'>
 
-{% if page.layout == "default" and page.class != "home" %}
+{% if page.layout == "default" and page.hide_breadcrumbs != true %}
   <ol class='breadcrumbs'>
     <li>
       <a href="/">Home</a>
