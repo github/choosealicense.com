@@ -1,6 +1,6 @@
 ---
 layout: license
-permalink: public-domain/
+permalink: /licenses/public-domain/
 class: license-types
 title: Public Domain (CC0)
 

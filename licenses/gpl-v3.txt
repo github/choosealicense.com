@@ -1,7 +1,7 @@
 ---
 title: GPL v3
 layout: license
-permalink: gpl-v3/
+permalink: /licenses/gpl-v3/
 
 featured: true
 

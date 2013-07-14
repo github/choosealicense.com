@@ -36,7 +36,7 @@ Licenses sit in the `/licenses` folder as markdown (`.md`) files. Each license h
 
 * `title` - The name of the license
 * `layout` - This should be `license`
-* `permalink` - The url to the license relative to `/licenses/`
+* `permalink` - The absolute URL to the license, beginning with `/licenses/`
 * `source` - URL to the license source text
 * `note` - The note field in the sidebar (optional)
 * `how` - How to use the license, also in the sidebar
