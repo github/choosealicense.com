@@ -1,7 +1,7 @@
 ---
 title: Affero GPL
 layout: license
-permalink: agpl/
+permalink: /licenses/agpl/
 source: http://www.gnu.org/licenses/gpl-3.0-standalone.html
 
 note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.

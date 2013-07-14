@@ -1,7 +1,7 @@
 ---
 title: Apache v2 License
 layout: license
-permalink: apache/
+permalink: /licenses/apache/
 
 featured: true
 

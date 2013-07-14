@@ -1,7 +1,7 @@
 ---
 title: GPL v2
 layout: license
-permalink: gpl-v2/
+permalink: /licenses/gpl-v2/
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
