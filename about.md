@@ -5,7 +5,7 @@ permalink: /about/
 title: What&#8217;s this about?
 ---
 
-We want to help developers choose a license for their source code.
+GitHub wants to help developers choose a license for their source code.
 
 If you already know what you&#8217;re doing and have a license you prefer to use, that&#8217;s great! We&#8217;re not here to change your mind. But if you are bewildered by the large number of OSS license choices, maybe we can help.
 
