@@ -1,5 +1,7 @@
 title: ChooseALicense.com
 relative_permalinks: false
+markdown: redcarpet
+
 rules:
 
   required:
