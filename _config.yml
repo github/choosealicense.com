@@ -60,4 +60,7 @@ rules:
     sublicense:
       description: You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
       label: Sublicensing
+    private-use:
+      description: You may not use or modify the software without distributing it.
+      label: Private Use
 
