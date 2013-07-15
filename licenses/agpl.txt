@@ -4,6 +4,8 @@ layout: license
 permalink: /licenses/agpl/
 source: http://www.gnu.org/licenses/gpl-3.0-standalone.html
 
+description: The Affero version of the GPL includes clauses that require source code to be available to users who interact with the software over a network. For example, if one creates a derivative work of a web server program, he or she must provide source code to those who connect to it.
+
 note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
