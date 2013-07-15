@@ -1,0 +1,8 @@
+#bootstrap and build
+before_script: "./script/bootstrap"
+script: "./script/cibuild"
+
+#environment
+language: ruby
+rvm: 
+  - 1.9.3

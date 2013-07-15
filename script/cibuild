@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+echo "compiling javascript..."
+./node_modules/.bin/coffee -c javascripts/app.coffee
+
+echo "building the site..."
+bundle exec jekyll build --trace

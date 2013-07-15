@@ -3,6 +3,7 @@
 set -e
 
 echo "bundling installin'"
+gem install bundler
 bundle install
 
 echo "npm installin'"
