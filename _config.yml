@@ -12,7 +12,7 @@ rules:
       description: Indicate significant changes made to the code.
       label: State Changes
     disclose-source:
-      description: Source code must be made available when distributing the software. In the case of LGPL, the source for the library (and not the entire program) must be made available.
+      description: Source code must be made available when distributing the software. In the case of LGPL, the source for the library (and not the entire program) must be made available. In the case of the Affero GPL (AGPL), the definition of distributing is expanded to include networked access.
       label: Disclose Source
     library-usage:
       description: The library may be used within a non-open-source application. 
