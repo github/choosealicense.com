@@ -21,7 +21,6 @@ permitted:
 forbidden:
   - no-liability
   - no-sublicense
-  - private-use
 
 using:
   Some Project: "#"
