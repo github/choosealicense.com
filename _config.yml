@@ -61,3 +61,7 @@ rules:
       description: You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
       label: Sublicensing
 
+exclude:
+  - CNAME
+  - Gemfile*
+  - script
