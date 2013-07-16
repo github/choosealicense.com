@@ -4,7 +4,7 @@ Like a Choose Your Own Adventure site, but only much less interesting.
 
 # Intro
 
-A lot of repositories on GitHub.com don't have a license. GitHub could slap on 
+A lot of repositories on GitHub.com don't have a license. GitHub provides
 a license chooser, but if you don't know anything about licenses, how are you 
 supposed to make an informed decision.
 
