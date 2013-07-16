@@ -1,8 +1,8 @@
 ---
 comment: \
-	because the for loop is being filtered by layout, the normal rindex0 check 
-	for the trailing comma doesn't work. Count the number of licenses and manually
-	increment an index to see if we're on the true last iteration.
+  because the for loop is being filtered by layout, the normal rindex0 check 
+  for the trailing comma doesn't work. Count the number of licenses and manually
+  increment an index to see if we're on the true last iteration.
 ---
 {% assign count = 0 %}{% for page in site.pages %}{% if page.layout == "license" %}{% assign count = count | plus: 1 %}{% endif %}{% endfor %}{% assign i = 0 %}
 [
