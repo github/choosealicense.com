@@ -56,7 +56,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   background: #f5f1ec url(../images/bg.jpg);
-  color: #7e7974;
+  color: #5c5855;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.4;
@@ -233,7 +233,7 @@ strong {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  color: #7e7974;
+  color: #5c5855;
   padding: 16px;
 }
 .see-more {
@@ -276,7 +276,7 @@ strong {
   font-size: 16px;
 }
 .license-rules .summary {
-  color: #7e7974;
+  color: #5c5855;
 }
 .license-rules td {
   border-bottom: solid 1px #e9e6e2;
@@ -379,7 +379,7 @@ strong {
   border-top: 1px solid #e9e6e1;
   margin-top: 30px;
   padding-top: 20px;
-  color: #7e7974;
+  color: #5c5855;
   font-size: 12px;
   text-align: left;
   line-height: 1.5;
