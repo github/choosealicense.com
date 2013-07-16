@@ -4,7 +4,7 @@ permalink: /licenses/public-domain/
 class: license-types
 title: Public Domain (Unlicense)
 
-description: The Unlicense is a template to waive copyright interest in software you've written and dedicate it to the public domain. It combines a copyright waiver patterned after the successful public domain project SQLite with the no-warranty statement from the widely-used MIT/X11 license.
+description: Because copyright is automatic in most countries, the Unlicense is a template to waive interest in software you've written and dedicate it to the public domain. Use the Unlicense to opt out of copyright entirely. It also includes the no-warranty statement from the MIT/X11 license.
 
 how: Create a text file (typically named UNLICENSE or UNLICENSE.txt) in the root of your source code and copy the text of the license disclaimer into the file.
 
