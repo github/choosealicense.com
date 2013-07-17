@@ -1,5 +1,26 @@
 class Choosealicense
 
+  # Checks if Flash is available in the client.
+  flashAvailable: ->
+    if ActiveXObject?
+      !!(new ActiveXObject('ShockwaveFlash.ShockwaveFlash'))
+    else
+      !!navigator.mimeTypes["application/x-shockwave-flash"]
+
+  # Selects the content of a given element
+  selectText: (element) ->
+    if document.body.createTextRange
+      range = document.body.createTextRange();
+      range.moveToElementText(element);
+      range.select();
+    else if window.getSelection
+      selection = window.getSelection()
+      range = document.createRange()
+
+      range.selectNodeContents(element)
+      selection.removeAllRanges();
+      selection.addRange(range);
+
   # Qtip position attributes for tooltips
   qtip_position:
     my: "top center"
@@ -14,7 +35,7 @@ class Choosealicense
   # fire on document.ready
   constructor: ->
     @initTooltips()
-    @initClipboard() if ZeroClipboard?
+    @initClipboard()
 
   # Init tooltip action
   initTooltips: ->
@@ -37,19 +58,32 @@ class Choosealicense
 
     false
 
+  # Initializes ZeroClipboard
+  initZeroClipboard: ->
+      # Backup the clipboard button's original text.
+      $(".js-clipboard-button").data "clipboard-prompt", $(".js-clipboard-button").text()
+
+      # Hook up copy to clipboard buttons
+      clip = new ZeroClipboard $(".js-clipboard-button"),
+        moviePath: "/javascripts/ZeroClipboard.swf"
+      clip.on "mouseout", @clipboardMouseout
+      clip.on "complete", @clipboardComplete
+      clip
+
+  # Initializes an alternative way to copy the license for non-flash compatible
+  # browsers
+  initAlternativeClipboard: ->
+    $(".js-clipboard-button").click (e) =>
+      target = "#" + $(e.target).data("clipboard-target")
+      @selectText $(target)[0]
+
   # if Zero Clipboard is present, bind to button and init
   initClipboard: ->
+    if ZeroClipboard? && @flashAvailable()
+      @initZeroClipboard()
+    else
+      @initAlternativeClipboard()
 
-    # Backup the clipboard button's original text.
-    $(".js-clipboard-button").data "clipboard-prompt", $(".js-clipboard-button").text()
-  
-    # Hook up copy to clipboard buttons
-    clip = new ZeroClipboard $(".js-clipboard-button"),
-      moviePath: "/javascripts/ZeroClipboard.swf"
-    clip.on "mouseout", @clipboardMouseout
-    clip.on "complete", @clipboardComplete
-    clip
-  
   # Callback to restore the clipboard button's original text
   clipboardMouseout: (client, args) ->
     @innerText = $(this).data("clipboard-prompt")
