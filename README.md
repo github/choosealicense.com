@@ -41,6 +41,16 @@ Licenses sit in the `/licenses` folder as markdown (`.md`) files. Each license h
 * `note` - The note field in the sidebar (optional)
 * `how` - How to use the license, also in the sidebar
 * `required`, `permitted`, `forbidden` - bulleted list of rules applicable to the license (see below)
+* `filename` - The filename to be created on GitHub.com when a repository is initialized with this license.
+
+The licenses on choosealicense.com are regularly imported to GitHub.com to be used as the list of licenses available when creating a repository. When we create a repository, we will replace certain strings in the license with variables from the repository. These can be used to create accurate copyright notices. The available variables are:
+
+* `[fullname]` - The full name or username of the repository owner
+* `[login]` - The repository owner's username
+* `[email]` - The repository owner's primary email address
+* `[project]` - The repository name
+* `[description]` - The description of the repository
+* `[year]` - The current year
 
 # Rules 
 
