@@ -7,7 +7,7 @@ source: http://opensource.org/licenses/Artistic-2.0
 
 description: A license that&#8217;s heavily favored by the Perl community.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [copyright holders] with the name (or names) of the copyright holders.
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
 required:
   - include-copyright
@@ -25,7 +25,7 @@ forbidden:
 ---
 
 Artistic License 2.0
-Copyright (c) 2000-2006, The Perl Foundation.
+Copyright (c) [year] [fullname]
 
 Everyone is permitted to copy and distribute verbatim copies of this license
 document, but changing it is not allowed.
