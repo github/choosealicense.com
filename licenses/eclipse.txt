@@ -11,7 +11,7 @@ source: http://www.eclipse.org/legal/epl-v10.html
 
 required:
   - disclose-source
-  - include-copyright
+  - include-copyright-source
 
 permitted:
   - commercial-use

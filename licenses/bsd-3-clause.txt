@@ -8,7 +8,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 source: http://opensource.org/licenses/BSD-3-Clause
 
 required:
-  - include-copyright
+  - include-copyright-source
 
 permitted:
   - commercial-use
