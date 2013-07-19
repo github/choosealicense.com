@@ -5,9 +5,12 @@ markdown: redcarpet
 rules:
 
   required:
-    include-copyright:
-      description: Include a copy of the license and copyright notice with the code.
-      label:  License and copyright notice
+    include-copyright-source:
+      description: Include a copy of the license and copyright notice with the source code.
+      label: License and copyright notice with source
+    include-copyright-binary:
+      description: Include a copy of the license and copyright notice with any binaries.
+      label: Notice in binary distribution 
     document-changes: 
       description: Indicate significant changes made to the code.
       label: State Changes

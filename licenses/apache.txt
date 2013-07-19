@@ -14,7 +14,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 source: http://www.apache.org/licenses/LICENSE-2.0.html
 
 required:
-  - include-copyright
+  - include-copyright-source
   - document-changes
 
 permitted:
