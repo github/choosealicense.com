@@ -3,11 +3,11 @@ layout: license
 title: LGPL v2.1
 permalink: /licenses/lgpl-v2.1/
 
-description: Primarily used for software libraries, LGPL requires that derived works be licensed under the same license, but works that only link to it do not fall under this restriction.
+description: 기본적으로 소프트웨어 라이브러리를 위해 사용되어지는 라이선스입니다. LGPL은 그로부터 파생된 소프트웨어에 대하여 동일한 라이선스가 적용되도록 요구하고 있습니다. 그러나, 단지 라이브러리 수준에서 링크만 되어 사용된다면 이러한 제약조건의 영향을 받지 않습니다.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
+how: 소스코드 루트에 텍스트 파일 (일반적으로 LICENSE 혹은 LICENSE.TXT)을 만들고 그 파일에 라이선스의 원문 텍스트를 복사합니다.
 
-note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
+note: 자유 소프트웨어 재단은 각 파일의 상단에 재사용 가능함을 알리는 라이선스 내용을 추가하는 단계를 가지도록 권고합니다. 관련된 구문은 라이선스의 끝부분에서 찾아볼 수 있습니다.
 
 required:
   - include-copyright

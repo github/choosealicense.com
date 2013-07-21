@@ -3,11 +3,11 @@ layout: license
 title: LGPL v3
 permalink: /licenses/lgpl-v3/
 
-description: Version 3 of the LGPL is an additional set of permissions to the <a href="/licenses/gpl-v3">GPL v3 license</a> that requires that derived works be licensed under the same license, but works that only link to it do not fall under this restriction.
+description: LGPL V3은 GPL V3 라이선스에 대한 허가사항들의 추가 집합입니다. 이 라이선스로부터 파생된 소프트웨어들은 동일한 라이선스가 적용되어야 합니다. 그러나, 단지 라이브러리 수준에서 링크만 되어 사용된다면 이러한 제약조건의 영향을 받지 않습니다.
 
-how: This license is an additional set of permissions to the <a href="/licenses/gpl-v3">GPL v3</a> license. Follow the instructions to apply the GPL v3 license. Then either paste this text to the bottom of that file OR add a separate file (typically named COPYING.lesser or LICENSE.lesser) in the root of your source code and copy the text.
+how: 이 라이선스는 <a href="/licenses/gpl-v3">GPL v3</a> 라이선스에 대한 허가사항의 추가 집합입니다. 먼저 <a href="/licenses/gpl-v3">GPL v3</a> 라이선스의 지침을 따라 적용 하십시오. 그런 다음 소스코드의 루트에 있는 기존 파일(LICENSE 혹은 LICENSE.TXT)에 혹은 별도의 파일에 (일반적으로 COPYING.lesser 또는 LICENSE.lesser ) 라이선스전문을 붙여넣기 합니다.
 
-note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
+note: 자유 소프트웨어 재단은 각 파일의 상단에 재사용 가능함을 알리는 라이선스 내용을 추가하는 단계를 가지도록 권고합니다. 관련된 구문은 라이선스의 끝부분에서 찾아볼 수 있습니다.
 
 required:
   - include-copyright

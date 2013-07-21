@@ -3,9 +3,9 @@ layout: license
 title: Eclipse Public License v1.0
 permalink: /licenses/eclipse/
 
-description: Used by the Eclipse foundation for its software, this license includes reciprocal requirements in some cases.
+description: 이클립스 재단(Eclipse Foundation)에서 자신의 소프트웨어인 이클립스에 사용하기 위해 만들어진 라이선스입니다. 이 라이선스는 어떤 경우에는 소스코드 공개 요구 사항을 가지고 있습니다.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
+how: 소스코드 루트에 텍스트 파일 (일반적으로 LICENSE 혹은 LICENSE.TXT)을 만들고 그 파일에 라이선스의 원문 텍스트를 복사합니다.
 
 source: http://www.eclipse.org/legal/epl-v10.html
 

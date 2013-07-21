@@ -5,11 +5,11 @@ permalink: /licenses/apache/
 
 featured: true
 
-description: A permissive license that also provides an express grant of patent rights from contributors to users.
+description: 관용적인 라이선스일 뿐만 아니라 소스코드 기여자들이 사용자들에게 기여자들이 소유한 특허권을 명시적으로 제공합니다.
 
-note: The Apache Foundation recommends taking the additional step of adding a boilerplate notice to the header of each source file. You can find the notice at the very end of the license in the appendix.
+note: 아파치 재단은 각 파일의 상단에 재사용 가능함을 알리는 라이선스 내용을 추가하는 단계를 가지도록 권고합니다. 관련 구문은 라이선스의 끝부분 부록(Appendix) 에서 찾아볼 수 있습니다.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
+how: 소스코드 루트에 텍스트 파일 (일반적으로 LICENSE 혹은 LICENSE.TXT)을 만들고 그 파일에 라이선스의 원문 텍스트를 복사합니다.
 
 source: http://www.apache.org/licenses/LICENSE-2.0.html
 
