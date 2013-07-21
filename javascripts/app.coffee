@@ -28,9 +28,9 @@ class Choosealicense
 
   # Annotation categories as defined in `_config.yml`
   categories:
-    required: "Required"
-    permitted: "Permitted"
-    forbidden: "Forbidden"
+    required: "요구사항"
+    permitted: "허가사항"
+    forbidden: "금지사항"
 
   # fire on document.ready
   constructor: ->
