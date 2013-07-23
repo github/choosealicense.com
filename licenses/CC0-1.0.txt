@@ -1,8 +1,8 @@
 ---
 layout: license
-permalink: /licenses/CC0-1.0/
+permalink: /licenses/public-domain/
 class: license-types
-title: Creative Commons Zero v1.0 Universal
+title: Public Domain (CC0)
 
 description: Because copyright attaches automatically in many countries, the Creative Commons CC0 License is recommended to ensure that your work is available everywhere under terms that most closely follow the spirit of a public domain work.
 
