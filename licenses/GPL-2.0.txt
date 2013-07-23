@@ -1,5 +1,5 @@
 ---
-title: GNU General Public License v2.0
+title: GNU GPL v2.0
 layout: license
 permalink: /licenses/GPL-2.0/
 

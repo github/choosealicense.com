@@ -1,6 +1,6 @@
 ---
 layout: license
-title: GNU Lesser General Public License v3.0
+title: GNU LGPL v3.0
 permalink: /licenses/LGPL-3.0/
 
 description: Version 3 of the LGPL is an additional set of permissions to the <a href="/licenses/GPL-3.0">GPL v3 license</a> that requires that derived works be licensed under the same license, but works that only link to it do not fall under this restriction.
