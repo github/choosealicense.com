@@ -21,7 +21,7 @@ permitted:
   - distribution
 
 forbidden:
-  - no-liabilityThe Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
+  - no-liability
   - no-sublicense
 
 using:
