@@ -68,4 +68,5 @@ exclude:
   - script
 
 
-base-url : /choosealicense.com
+base-url: http://liks79.github.io/choosealicense.com
+
