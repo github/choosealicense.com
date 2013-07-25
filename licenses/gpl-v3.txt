@@ -2,6 +2,9 @@
 title: GPL v3
 layout: license
 permalink: /licenses/gpl-v3/
+source: http://opensource.org/licenses/gpl-3.0.html
+korean: https://www.olis.or.kr/ossdownfile/license/1072_KO.pdf
+
 
 description: GPL은 가장 널리 사용되는 자유 소프트웨어 라이선스이며 강력한 카피레프트 요구사항을 가지고 있습니다. GPL로 부터 파생된 소프트웨어를 배포 할 때, 해당 소프트웨어의 소스 코드는 GPL과 동일한 라이선스 조건을 따라야 합니다.
 

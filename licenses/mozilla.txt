@@ -2,6 +2,8 @@
 layout: license
 title: Mozilla Public License Version 2.0
 permalink: /licenses/mozilla/
+source: http://www.mozilla.org/MPL/2.0/
+korean: https://www.olis.or.kr/ossdownfile/license/1007_KO.pdf
 
 description: The Mozilla Public License (MPL 2.0) 은 모질라 재단(Mozilla foundation)에서 관리되고 있습니다. 이 라이선스는 관용적인 BSD 라이선스와 상호 호혜적인(소스코드 공개) GPL 라이선스와의 절충을 시도한 라이선스입니다.
 

@@ -2,8 +2,8 @@
 layout: license
 title: Artistic License 2.0
 permalink: /licenses/artistic/
-
 source: http://opensource.org/licenses/Artistic-2.0
+korean: https://www.olis.or.kr/ossdownfile/license/1017_KO.pdf
 
 description: 펄 커뮤니티에 의해 많은 인기를 얻고 있는 라이선스.
 

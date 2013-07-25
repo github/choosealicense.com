@@ -2,6 +2,8 @@
 layout: license
 title: MIT License
 permalink: /licenses/mit/
+source : http://opensource.org/licenses/MIT
+korean : https://www.olis.or.kr/ossdownfile/license/1006_KO.pdf
 
 featured: true
 

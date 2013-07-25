@@ -2,6 +2,9 @@
 layout: license
 title: LGPL v2.1
 permalink: /licenses/lgpl-v2.1/
+source: http://opensource.org/licenses/lgpl-2.1.php
+korean: https://www.olis.or.kr/ossdownfile/license/1005_KO.pdf
+
 
 description: 기본적으로 소프트웨어 라이브러리를 위해 사용되어지는 라이선스입니다. LGPL은 그로부터 파생된 소프트웨어에 대하여 동일한 라이선스가 적용되도록 요구하고 있습니다. 그러나, 단지 라이브러리 수준에서 링크만 되어 사용된다면 이러한 제약조건의 영향을 받지 않습니다.
 

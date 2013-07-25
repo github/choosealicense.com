@@ -2,6 +2,8 @@
 title: Apache v2 License
 layout: license
 permalink: /licenses/apache/
+source: http://www.apache.org/licenses/LICENSE-2.0.html
+korean: https://www.olis.or.kr/ossdownfile/license/1002_KO.pdf
 
 featured: true
 
@@ -11,7 +13,6 @@ note: 아파치 재단은 각 파일의 상단에 재사용 가능함을 알리�
 
 how: 소스코드 루트에 텍스트 파일 (일반적으로 LICENSE 혹은 LICENSE.TXT)을 만들고 그 파일에 라이선스의 원문 텍스트를 복사합니다.
 
-source: http://www.apache.org/licenses/LICENSE-2.0.html
 
 required:
   - include-copyright

@@ -2,10 +2,12 @@
 layout: license
 title: BSD (3-Clause) License
 permalink: /licenses/bsd-3-clause/
+source: http://opensource.org/licenses/BSD-3-Clause
+korean: https://www.olis.or.kr/ossdownfile/license/1003_KO.pdf
+
 
 how: 소스코드 루트에 텍스트 파일 (일반적으로 LICENSE 혹은 LICENSE.TXT)을 만들고 그 파일에 라이선스의 원문 텍스트를 복사합니다. <<year>>를 현재 연도로 변환하고 <<fullname>>을 저작권자들의 이름으로 변환합니다. 그리고 {organization}부분을 이 프로젝트를 후원하는 조직및 단체로 변환 합니다. 
 
-source: http://opensource.org/licenses/BSD-3-Clause
 
 required:
   - include-copyright

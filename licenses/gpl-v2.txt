@@ -2,6 +2,8 @@
 title: GPL v2
 layout: license
 permalink: /licenses/gpl-v2/
+source: http://opensource.org/licenses/gpl-2.0.php
+korean: https://www.olis.or.kr/ossdownfile/license/1004_KO.pdf
 
 featured: true
 

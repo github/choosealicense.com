@@ -2,6 +2,8 @@
 layout: license
 title: LGPL v3
 permalink: /licenses/lgpl-v3/
+source: http://opensource.org/licenses/lgpl-3.0.html
+korean: https://www.olis.or.kr/ossdownfile/license/1073_KO.pdf
 
 description: LGPL V3은 GPL V3 라이선스에 대한 허가사항들의 추가 집합입니다. 이 라이선스로부터 파생된 소프트웨어들은 동일한 라이선스가 적용되어야 합니다. 그러나, 단지 라이브러리 수준에서 링크만 되어 사용된다면 이러한 제약조건의 영향을 받지 않습니다.
 

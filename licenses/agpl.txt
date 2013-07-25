@@ -3,6 +3,7 @@ title: Affero GPL
 layout: license
 permalink: /licenses/agpl/
 source: http://www.gnu.org/licenses/agpl-3.0.txt
+korean: https://www.olis.or.kr/ossdownfile/license/1069_KO.pdf
 
 description: Affero GPL은 GPL 중에서도 가장 강력한 카피레프트 요구사항을 가지고 있습니다. Affero GPL로 부터 파생된 소프트웨어를 배포 할 때(Affero GPL에서는 네트워크를 이용한 서비스 제공도 배포에 해당 됩니다.), 해당 소프트웨어의 소스 코드는 Affero GPL과 동일한 라이선스 조건을 따라야 합니다. 
 
