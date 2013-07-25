@@ -11,34 +11,17 @@
     <meta name="description" content="{{ page.description | strip_html }}">
     {% endif %}
 
-    <link href='/choosealicense.com/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <link href='{{ site.base-url }}/favicon.ico' rel='shortcut icon' type='image/x-icon'>
     <link href='http://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link type="text/css" href="/choosealicense.com/css/application.css" media="screen" rel="stylesheet">
-    <link type="text/css" href="/choosealicense.com/css/jquery.qtip.css" media="screen" rel="stylesheet">
+    <link type="text/css" href="{{ site.base-url }}/css/application.css" media="screen" rel="stylesheet">
+    <link type="text/css" href="{{ site.base-url }}/css/jquery.qtip.css" media="screen" rel="stylesheet">
 
-    <script type="text/javascript" src="/choosealicense.com/javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="{{ site.base-url }}/javascripts/modernizr.js"></script>
     
     <!--[if (gte IE 6)&(lte IE 8)]>
       <script src='/javascripts/selectivizr-min.js' type='text/javascript'></script>
     <![endif]-->
     
-    <!-- Piwik -->
-    <script type="text/javascript">
-      var _paq = _paq || [];
-      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-      _paq.push(["setCookieDomain", "*.liks79.github.io"]);
-      _paq.push(["setDomains", ["*.liks79.github.io"]]);
-      _paq.push(["trackPageView"]);
-      _paq.push(["enableLinkTracking"]);
-    
-      (function() {
-        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://www.codingstar.net/piwik/";
-        _paq.push(["setTrackerUrl", u+"piwik.php"]);
-        _paq.push(["setSiteId", "3"]);
-        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
     <!-- End Piwik Code -->
     
   </head>
