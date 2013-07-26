@@ -28,9 +28,9 @@ class Choosealicense
 
   # Annotation categories as defined in `_config.yml`
   categories:
-    required: "Required"
-    permitted: "Permitted"
-    forbidden: "Forbidden"
+    required: "要求"
+    permitted: "允許"
+    forbidden: "禁止"
 
   # fire on document.ready
   constructor: ->
@@ -90,7 +90,7 @@ class Choosealicense
 
   # Post-copy user feedback callback
   clipboardComplete: (client, args) ->
-    @innerText = "Copied!"
+    @innerText = "複製好啦！"
 
 $ ->
   new Choosealicense()

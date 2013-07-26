@@ -33,9 +33,9 @@
     };
 
     Choosealicense.prototype.categories = {
-      required: "Required",
-      permitted: "Permitted",
-      forbidden: "Forbidden"
+      required: "要求",
+      permitted: "許可",
+      forbidden: "禁止"
     };
 
     function Choosealicense() {
@@ -104,7 +104,7 @@
     };
 
     Choosealicense.prototype.clipboardComplete = function(client, args) {
-      return this.innerText = "Copied!";
+      return this.innerText = "複製好啦！";
     };
 
     return Choosealicense;
