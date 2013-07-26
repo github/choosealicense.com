@@ -3,10 +3,11 @@ layout: license
 permalink: /licenses/public-domain/
 class: license-types
 title: Public Domain (Unlicense)
+filename: UNLICENSE
 
-description: 저작권은 대부분의 국가에서 자동적으로 획득되기 때문에, Unlicense 템플릿은 여러분이 작성하고 헌신한 소프트웨어에 대한 권리와 이해관계를 포기하고 공공영역에 헌정하기 위해 사용하는 템플릿입니다. 완전히 저작권을 배제하기 위해 Unlicense를 사용합니다. 이 라이선스는 MIT/X11 라이선스로부터 가져온 무보증 구문 또한 포함하고 있습니다.
+description: Because copyright is automatic in most countries, <a href="http://unlicense.org">the Unlicense</a> is a template to waive copyright interest in software you've written and dedicate it to the public domain. Use the Unlicense to opt out of copyright entirely. It also includes the no-warranty statement from the MIT/X11 license.
 
-how: 소스 코드의 루트에 텍스트 파일 (일반적으로  UNLICENSE 혹은 UNLICENSE.txt 이름을 가진)을 만들고 그 파일에 라이선스 포기내용을 복사합니다.
+how: Create a text file (typically named UNLICENSE or UNLICENSE.txt) in the root of your source code and copy the text of the license disclaimer into the file.
 
 required: 
 
@@ -44,4 +45,4 @@ OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
-For more information, please refer to <<http://unlicense.org/>>
+For more information, please refer to <http://unlicense.org>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='ko'>
+<html lang='en'>
   <head>
 
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title}}</title>
@@ -11,18 +11,16 @@
     <meta name="description" content="{{ page.description | strip_html }}">
     {% endif %}
 
-    <link href='{{ site.base-url }}/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
     <link href='http://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link type="text/css" href="{{ site.base-url }}/css/application.css" media="screen" rel="stylesheet">
-    <link type="text/css" href="{{ site.base-url }}/css/jquery.qtip.css" media="screen" rel="stylesheet">
+    <link type="text/css" href="/css/application.css" media="screen" rel="stylesheet">
+    <link type="text/css" href="/css/jquery.qtip.css" media="screen" rel="stylesheet">
 
-    <script type="text/javascript" src="{{ site.base-url }}/javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="/javascripts/modernizr.js"></script>
     
     <!--[if (gte IE 6)&(lte IE 8)]>
-      <script src='{{ site.base-url }}/javascripts/selectivizr-min.js' type='text/javascript'></script>
+      <script src='/javascripts/selectivizr-min.js' type='text/javascript'></script>
     <![endif]-->
-    
-    <!-- End Piwik Code -->
     
   </head>
   <body class="{{ page.layout }} {{ page.class }}">

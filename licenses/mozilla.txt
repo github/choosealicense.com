@@ -2,12 +2,10 @@
 layout: license
 title: Mozilla Public License Version 2.0
 permalink: /licenses/mozilla/
-source: http://www.mozilla.org/MPL/2.0/
-korean: https://www.olis.or.kr/ossdownfile/license/1007_KO.pdf
 
-description: The Mozilla Public License (MPL 2.0) 은 모질라 재단(Mozilla foundation)에서 관리되고 있습니다. 이 라이선스는 관용적인 BSD 라이선스와 상호 호혜적인(소스코드 공개) GPL 라이선스와의 절충을 시도한 라이선스입니다.
+description: The Mozilla Public License (MPL 2.0) is maintained by the Mozilla foundation. This license attempts to be a compromise between the permissive BSD license and the reciprocal GPL license.
 
-how: 소스코드 루트에 텍스트 파일 (일반적으로 LICENSE 혹은 LICENSE.TXT)을 만들고 그 파일에 라이선스의 원문 텍스트를 복사합니다.
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
 required:
   - disclose-source

@@ -1,13 +1,12 @@
       <footer class="site-footer cf">
         <nav>
-          <a href="{{ site.base-url }}/about/">About</a>
-          <a href="{{ site.base-url }}/terms-of-service/">Terms of Service</a>
+          <a href="/about/">About</a>
+          <a href="/terms-of-service/">Terms of Service</a>
         </nav>
         <p>
-          여러분의 프로젝트에 적용할 소프트웨어 라이선스를 채택하기 전에 법률 전문가와 상담하시기 바랍니다.<br>
-          이 사이트의 컨텐츠는 <a href="http://creativecommons.org/licenses/by/3.0/">
-          Creative Commons Attribution 3.0 Unported License</a>를 따릅니다.<br><br>
-          Korean translator : Jou Sung-Shik &lt;<a href="http://github.com/liks79">http://github.com/liks79</a>&gt;</p>
+          Please consult a legal expert before adopting a software license for your project.<br>
+          This site is licensed under the <a href="http://creativecommons.org/licenses/by/3.0/">
+          Creative Commons Attribution 3.0 Unported License</a>.</p>
         </p>
         <div id="with-♥">
           Demystified with &lt;3 by <a href="http://github.com">GitHub, Inc.</a>
@@ -16,15 +15,15 @@
 
     </div><!-- /container -->
 
-    <script type="text/javascript" src="{{ site.base-url }}/javascripts/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="{{ site.base-url }}/javascripts/jquery.qtip.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.qtip.min.js"></script>
 
     {% if page.layout == "license" %}
-      <script type="text/javascript" src="{{ site.base-url }}/javascripts/ZeroClipboard.js"></script>
+      <script type="text/javascript" src="/javascripts/ZeroClipboard.js"></script>
     {% endif %}
 
-    <script type="text/javascript" src="{{ site.base-url }}/javascripts/annotations.js"></script>
-    <script type="text/javascript" src="{{ site.base-url }}/javascripts/app.js"></script>
+    <script type="text/javascript" src="/javascripts/annotations.js"></script>
+    <script type="text/javascript" src="/javascripts/app.js"></script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -36,24 +35,5 @@
       ga('send', 'pageview');
     </script>
 
-    <!-- Piwik -->
-    <script type="text/javascript">
-      var _paq = _paq || [];
-      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-      _paq.push(["setCookieDomain", "*.liks79.github.io"]);
-      _paq.push(["setDomains", ["*.liks79.github.io"]]);
-      _paq.push(["trackPageView"]);
-      _paq.push(["enableLinkTracking"]);
-    
-      (function() {
-        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://www.codingstar.net/piwik/";
-        _paq.push(["setTrackerUrl", u+"piwik.php"]);
-        _paq.push(["setSiteId", "3"]);
-        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-
-    
   </body>
 </html>

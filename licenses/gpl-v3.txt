@@ -2,15 +2,12 @@
 title: GPL v3
 layout: license
 permalink: /licenses/gpl-v3/
-source: http://opensource.org/licenses/gpl-3.0.html
-korean: https://www.olis.or.kr/ossdownfile/license/1072_KO.pdf
 
+description: GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license.
 
-description: GPL은 가장 널리 사용되는 자유 소프트웨어 라이선스이며 강력한 카피레프트 요구사항을 가지고 있습니다. GPL로 부터 파생된 소프트웨어를 배포 할 때, 해당 소프트웨어의 소스 코드는 GPL과 동일한 라이선스 조건을 따라야 합니다.
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
-how: 소스코드 루트에 텍스트 파일 (일반적으로 LICENSE 혹은 LICENSE.TXT)을 만들고 그 파일에 라이선스의 원문 텍스트를 복사합니다.
-
-note: 자유 소프트웨어 재단은 각 파일의 상단에 재사용 가능함을 알리는 라이선스 내용을 추가하는 단계를 가지도록 권고합니다. 관련된 구문은 라이선스의 끝부분에서 찾아볼 수 있습니다.
+note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
 
 required:
   - include-copyright
@@ -31,7 +28,7 @@ forbidden:
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
- Copyright (C) 2007 Free Software Foundation, Inc. {http://fsf.org/}
+ Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
  Everyone is permitted to copy and distribute verbatim copies
  of this license document, but changing it is not allowed.
 
@@ -675,14 +672,14 @@ the "copyright" line and a pointer to where the full notice is found.
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program.  If not, see {http://www.gnu.org/licenses/}.
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 Also add information on how to contact you by electronic and paper mail.
 
   If the program does terminal interaction, make it output a short
 notice like this when it starts in an interactive mode:
 
-    <<project>>  Copyright (C) <<year>>  <<fullname>>
+    {project}  Copyright (C) {year}  {fullname}
     This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
     This is free software, and you are welcome to redistribute it
     under certain conditions; type `show c' for details.
@@ -694,11 +691,11 @@ might be different; for a GUI interface, you would use an "about box".
   You should also get your employer (if you work as a programmer) or school,
 if any, to sign a "copyright disclaimer" for the program, if necessary.
 For more information on this, and how to apply and follow the GNU GPL, see
-{http://www.gnu.org/licenses/}.
+<http://www.gnu.org/licenses/>.
 
   The GNU General Public License does not permit incorporating your program
 into proprietary programs.  If your program is a subroutine library, you
 may consider it more useful to permit linking proprietary applications with
 the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
-{http://www.gnu.org/philosophy/why-not-lgpl.html}.
+<http://www.gnu.org/philosophy/why-not-lgpl.html>.

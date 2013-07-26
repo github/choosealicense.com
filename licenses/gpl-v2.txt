@@ -2,16 +2,12 @@
 title: GPL v2
 layout: license
 permalink: /licenses/gpl-v2/
-source: http://opensource.org/licenses/gpl-2.0.php
-korean: https://www.olis.or.kr/ossdownfile/license/1004_KO.pdf
 
 featured: true
 
-description: GPL은 가장 널리 사용되는 자유 소프트웨어 라이선스이며 강력한 카피레프트 요구사항을 가지고 있습니다. GPL로 부터 파생된 소프트웨어를 배포 할 때, 해당 소프트웨어의 소스 코드는 GPL과 동일한 라이선스 조건을 따라야 합니다.
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
-how: 소스코드 루트에 텍스트 파일 (일반적으로 LICENSE 혹은 LICENSE.TXT)을 만들고 그 파일에 라이선스의 원문 텍스트를 복사합니다.
-
-note: 자유 소프트웨어 재단은 각 파일의 상단에 재사용 가능함을 알리는 라이선스 내용을 추가하는 단계를 가지도록 권고합니다. 관련된 구문은 라이선스의 끝부분에서 찾자볼 수 있습니다.
+note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
 
 required:
   - include-copyright
@@ -33,7 +29,7 @@ forbidden:
                     GNU GENERAL PUBLIC LICENSE
                        Version 2, June 1991
 
- Copyright (C) 1989, 1991 Free Software Foundation, Inc.,
+ Copyright (C) 1989, 1991 Free Software Foundation, Inc., <http://fsf.org/>
  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  Everyone is permitted to copy and distribute verbatim copies
  of this license document, but changing it is not allowed.
@@ -322,8 +318,8 @@ to attach them to the start of each source file to most effectively
 convey the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
-    <<description>>
-    Copyright (C) <<year>>  <<fullname>>
+    {description}
+    Copyright (C) {year}  {fullname}
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

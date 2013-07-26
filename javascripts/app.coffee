@@ -28,9 +28,9 @@ class Choosealicense
 
   # Annotation categories as defined in `_config.yml`
   categories:
-    required: "요구사항"
-    permitted: "허가사항"
-    forbidden: "금지사항"
+    required: "Required"
+    permitted: "Permitted"
+    forbidden: "Forbidden"
 
   # fire on document.ready
   constructor: ->
@@ -65,7 +65,7 @@ class Choosealicense
 
       # Hook up copy to clipboard buttons
       clip = new ZeroClipboard $(".js-clipboard-button"),
-        moviePath: "../../javascripts/ZeroClipboard.swf"
+        moviePath: "/javascripts/ZeroClipboard.swf"
       clip.on "mouseout", @clipboardMouseout
       clip.on "complete", @clipboardComplete
       clip

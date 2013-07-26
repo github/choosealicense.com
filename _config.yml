@@ -6,67 +6,62 @@ rules:
 
   required:
     include-copyright:
-      description: 라이선스의 원문 사본을 포함하고 코드에대한 저작권을 고지한다.
-      label:  라이선스와 저작권 고지
+      description: Include a copy of the license and copyright notice with the code.
+      label:  License and copyright notice
     document-changes: 
-      description: 코드에 반영된 중요한 변경내역을 표시한다.
-      label: 변경사항의 기술
+      description: Indicate significant changes made to the code.
+      label: State Changes
     disclose-source:
-      description: 소프트웨어를 배포 할 때 소스코드가 함께 제공되어야 합니다. LGPL의 경우, 라이브러리 (전체 프로그램이 아닌)에 대한 소스코드를 반드시 사용가능한 상태로 제공해야합니다.
-      label: 소스코드의 공개
+      description: Source code must be made available when distributing the software. In the case of LGPL, the source for the library (and not the entire program) must be made available.
+      label: Disclose Source
     library-usage:
-      description: 라이브러리형태로 사용할 경우 오픈소스 어플리케이션이 아닌 경우에도 사용이 가능하다. 
-      label: 라이브러리 사용
+      description: The library may be used within a non-open-source application. 
+      label: Library usage
     rename: 
-      description: 수정하였을 경우 반드시 소프트웨어의 이름을 변경해야만 한다.
-      label: 이름변경
+      description: You must change the name of the software if you modify it.
+      label: Rename
 
   permitted:
     commercial-use: 
-      description: 이 소프트웨어와 파생된 결과물들에 대해서 상업적 목적으로 사용이 가능합니다.
-      label: 상업적 사용
+      description: This software and derivatives may be used for commercial purposes.
+      label: Commercial Use
     modifications: 
       description: This software may be modified.
-      description: 이 소프트웨어는 변경이 가능합니다.
-      label: 변경
+      label: Modification
     distribution: 
-      description: 이 소프트웨어를 배포하는 것이 가능합니다.
-      label: 배포
+      description: You may distribute this software.
+      label: Distribution
     sublicense: 
-      description: 라이선스에 포함되어 있지 않은 제 3자에게 이 소프트웨어를 수정하고 배포하는 것에 대하여 원래의 라이선스이외의 권리사항을 추가할 수 있습니다.
-      label: 하위 라이선스
+      description: You may grant a sublicense to modify and distribute this software to third parties not included in the license.
+      label: Sublicensing
     private-use: 
-      description: 배포하지 않는 조건에 한하여 소프트웨어를 사용하고 수정할 수 있습니다.
-      label: 개인적인 사용
+      description: You may use and modify the software without distributing it.
+      label: Private Use
     patent-grant:
-      description: 이 라이선스는 기여자로부터의 특허권 부여를 소프트웨어를 받는 사람에게 명시해야 합니다.
-      label: 특허권 부여
+      description: This license provides an express grant of patent rights from the contributor to the recipient.
+      label: Patent Grant
 
   forbidden:
     trademark-use:
-      description: 이 라이선스는 해당 소프트웨어의 이름과 로고 혹은 기여자의 트레이드마크의 사용금지를 명시적으로 기술하고 있습니다. 이것은 일반적으로 거의 모든 라이선스들에서 암묵적인 사실입니다.
-      label: 상표권의 사용
+      description: While this may be implicitly true of all licenses, this license explicitly states that you may NOT use the names, logos, or trademarks of contributors.
+      label: Use Trademark
     no-liability: 
-      description: 소프트웨어는 품질보증없이 제공되며 소프트웨어의 저자/라이선스의 소유자는 법적인 손해에 대한 책임을 지지 않습니다.
-      label: 법적책임사항 유지
+      description: Software is provided without warranty and the software author/license owner cannot be held liable for damages.
+      label: Hold Liable
     no-sublicense: 
-      description: 여러분은 이 소프트웨어를 제 3자가 수정하고 배포하는 것에 대하여 원래의 라인선스에 포함되어 있지 않은 추가적인 권리사항을 부여 할 수 없습니다. 
-      label: 하위 라이선스
+      description: You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
+      label: Sublicensing
     modifications:
-      description: 이 소프트웨어는 변경되어서는 안됩니다.
-      label: 변경
+      description: This software may not be modified.
+      label: Modification
     distribution:
-      description: 이 소프트웨어는 배포되어서는 안됩니다.
-      label: 배포
+      description: You may not distribute this software.
+      label: Distribution
     sublicense:
-      description: 여러분은 이 소프트웨어를 제 3자가 수정하고 배포하는 것에 대하여 원래의 라인선스에 포함되어 있지 않은 추가적인 권리사항을 부여 할 수 있습니다. 
-      label: 하위 라이선스
+      description: You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
+      label: Sublicensing
 
 exclude:
   - CNAME
   - Gemfile*
   - script
-
-
-base-url: /choosealicense.com
-
