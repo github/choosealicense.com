@@ -2,6 +2,7 @@
 title: GPL v3
 layout: license
 permalink: /licenses/gpl-v3/
+source: http://opensource.org/licenses/GPL-3.0
 
 description: GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license.
 
