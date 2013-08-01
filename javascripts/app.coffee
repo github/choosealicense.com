@@ -90,7 +90,7 @@ class Choosealicense
 
   # Post-copy user feedback callback
   clipboardComplete: (client, args) ->
-    @innerText = "Copied!"
+    @innerText = "복사되었습니다!"
 
 $ ->
   new Choosealicense()
