@@ -5,9 +5,10 @@ class: license-types
 title: Public Domain (Unlicense)
 filename: UNLICENSE
 
-description: Because copyright is automatic in most countries, <a href="http://unlicense.org">the Unlicense</a> is a template to waive copyright interest in software you've written and dedicate it to the public domain. Use the Unlicense to opt out of copyright entirely. It also includes the no-warranty statement from the MIT/X11 license.
+description: 由於大多數國家版權是自動獲得的， <a href="http://unlicense.org">Unlicense</a>提供一個模板，方便妳放棄版權，將妳的作品置於公共領域。同樣，這個模板包含無保證條款。注意，有些國家和地區（例如中國大陸）的法律不允許放棄版權！
 
-how: Create a text file (typically named UNLICENSE or UNLICENSE.txt) in the root of your source code and copy the text of the license disclaimer into the file.
+
+how: 創建一個文本文件，一般命名爲UNLICENSE或UNLICENSE.txt，放在根目錄下，將下面的內容複製進去。
 
 required: 
 

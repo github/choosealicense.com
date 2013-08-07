@@ -6,60 +6,60 @@ rules:
 
   required:
     include-copyright:
-      description: Include a copy of the license and copyright notice with the code.
-      label:  License and copyright notice
+      description: 代碼中需包含許可和版權聲明。
+      label:  代碼和版權聲明
     document-changes: 
-      description: Indicate significant changes made to the code.
-      label: State Changes
+      description: 表明對代碼作的較大的修改
+      label: 說明改動
     disclose-source:
-      description: Source code must be made available when distributing the software. In the case of LGPL, the source for the library (and not the entire program) must be made available.
-      label: Disclose Source
+      description: 分發軟件的時候必須發佈源代碼。 如果是LGPL的話，庫（而不是整個程序）的源代碼必須發佈。
+      label: 發佈源代碼
     library-usage:
-      description: The library may be used within a non-open-source application. 
-      label: Library usage
+      description: 可以在非開源軟件中使用此庫。 
+      label: 庫的使用
     rename: 
-      description: You must change the name of the software if you modify it.
-      label: Rename
+      description: 如果妳修改了代碼，妳必須給軟件換一個名字。
+      label: 改名
 
   permitted:
     commercial-use: 
-      description: This software and derivatives may be used for commercial purposes.
-      label: Commercial Use
+      description: 該軟件及其衍生品可商用。
+      label: 商用
     modifications: 
-      description: This software may be modified.
-      label: Modification
+      description: 可以改動軟件
+      label: 改動
     distribution: 
-      description: You may distribute this software.
-      label: Distribution
+      description: 可以分發軟件
+      label: 分發
     sublicense: 
-      description: You may grant a sublicense to modify and distribute this software to third parties not included in the license.
-      label: Sublicensing
+      description: 妳可以轉授權第三方未包括在本許可中的改動和分發的許可。
+      label: 再許可
     private-use: 
-      description: You may use and modify the software without distributing it.
-      label: Private Use
+      description: 妳可以修改、使用這個軟件，而不必發佈。
+      label: 私用
     patent-grant:
-      description: This license provides an express grant of patent rights from the contributor to the recipient.
-      label: Patent Grant
+      description: 包含要求專利所有者授權收到本許可之人使用專利的條款 
+      label: 專利授權
 
   forbidden:
     trademark-use:
-      description: While this may be implicitly true of all licenses, this license explicitly states that you may NOT use the names, logos, or trademarks of contributors.
-      label: Use Trademark
+      description: 本許可明確指出妳不能使用代碼貢獻者的姓名、標識、商標。
+      label: 使用商標
     no-liability: 
-      description: Software is provided without warranty and the software author/license owner cannot be held liable for damages.
-      label: Hold Liable
+      description: 軟件不提供保證，不可因損失而追究軟件作者責任。
+      label: 歸責
     no-sublicense: 
-      description: You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
-      label: Sublicensing
+      description: 不得轉授權第三方本許可中未包含的許可。 
+      label: 再許可
     modifications:
-      description: This software may not be modified.
-      label: Modification
+      description: 不得對軟件進行改動。 
+      label: 改動
     distribution:
-      description: You may not distribute this software.
-      label: Distribution
+      description: 不得分發此軟件。
+      label: 分發
     sublicense:
-      description: You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
-      label: Sublicensing
+      description: 不得轉授權第三方未包括在本許可中的改動和分發的許可。
+      label: 再許可
 
 exclude:
   - CNAME

@@ -5,11 +5,12 @@ permalink: /licenses/apache/
 
 featured: true
 
-description: A permissive license that also provides an express grant of patent rights from contributors to users.
+description: 提供專利條款的寬鬆許可
 
-note: The Apache Foundation recommends taking the additional step of adding a boilerplate notice to the header of each source file. You can find the notice at the very end of the license in the appendix.
+note: Apache基金會建議在每個文件的開始寫上相應的聲明（具體寫法見許可文本的附錄）。 
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
+how: 創建一個文本文件（一般命名爲LICENSE或LICENSE.txt），將許可文本複製上去，然後將此文件放置於根目錄下。
+
 
 source: http://www.apache.org/licenses/LICENSE-2.0.html
 

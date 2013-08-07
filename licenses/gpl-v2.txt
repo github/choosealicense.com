@@ -5,9 +5,9 @@ permalink: /licenses/gpl-v2/
 
 featured: true
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
+how: 創建一個文本文件（一般命名爲LICENSE或LICENSE.txt），將許可文本複製上去，然後將此文件放置於根目錄下。
 
-note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
+note: 自由軟件基金會建議在每個文件的開始寫上相應的聲明（具體寫法見許可文本的最後部分）。 
 
 required:
   - include-copyright

@@ -3,11 +3,12 @@ title: GPL v3
 layout: license
 permalink: /licenses/gpl-v3/
 
-description: GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license.
+description: GPL是使用最廣泛的自由軟件許可，基於使用該許可的程序的衍生作品必須以相同的許可發佈。
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
+how: 創建一個文本文件（一般命名爲LICENSE或LICENSE.txt），將許可文本複製上去，然後將此文件放置於根目錄下。
 
-note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
+note: 自由軟件基金會建議在每個文件的開始寫上相應的聲明（具體寫法見許可文本的最後部分）。 
+
 
 required:
   - include-copyright

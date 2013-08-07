@@ -1,26 +1,34 @@
 <div class='sidebar'>
 
-  <a href="#" data-clipboard-target="license-text" class="js-clipboard-button button">Copy license text to clipboard</a>
+  <a href="#" data-clipboard-target="license-text" class="js-clipboard-button button">複製許可文本到剪貼板</a>
     <div class='how-to-apply callout'>
-      <h5>How to apply this license</h5>
+      <h5>如何適用許可</h5>
       <p>
         {{ page.how }}
       </p>
       {% if page.note %}
       <p class="note">
-        <strong>Note: </strong> {{ page.note }}
+        <strong>注意：</strong> {{ page.note }}
       </p>
       {% endif %}
     </div>
     <div class="source">
-      <a href="{{ page.source}}">Source</a>
+      <a href="{{ page.source}}">源代碼</a>
     </div>
 
      <div class="license-rules license-rules-sidebar">
 
       {% assign types = "required|permitted|forbidden" | split: "|" %}
       {% for type in types %}
-        <h3>{{ type | capitalize }}</h3>
+        {% if type == "required" %}
+            <h3>要求</h3>
+        {% endif %}
+        {% if type == "permitted" %}
+            <h3>允許</h3>
+        {% endif %}
+        {% if type == "forbidden" %}
+            <h3>禁止</h3>
+        {% endif %}
         <ul class="license-{{ type }}">
           {% for req in page[type] %}
             <li class="{{ req }}">{{ site.rules[type][req].label }}</li>
