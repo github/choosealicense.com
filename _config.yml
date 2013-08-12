@@ -65,3 +65,4 @@ exclude:
   - CNAME
   - Gemfile*
   - script
+  - vendor
