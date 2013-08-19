@@ -5,7 +5,7 @@ permalink: /licenses/artistic/
 
 source: http://opensource.org/licenses/Artistic-2.0
 
-description: A license that&#8217;s heavily favored by the Perl community.
+description: A license that&#8217;s heavily favored by the Perl community. Provided that modified versions do not prevent the user from running the standard version, this license does not require distributions of modified versions to provide the source code.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
