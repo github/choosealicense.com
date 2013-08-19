@@ -12,7 +12,6 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 required:
   - include-copyright
   - document-changes
-  - disclose-source
 permitted:
   - commercial-use
   - modifications
