@@ -12,7 +12,6 @@ how: Create a text file (typically named UNLICENSE or UNLICENSE.txt) in the root
 required: 
 
 permitted:
-  - private-use
   - commercial-use
   - modifications
   - distribution

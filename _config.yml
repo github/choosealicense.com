@@ -34,9 +34,6 @@ rules:
     sublicense: 
       description: You may grant a sublicense to modify and distribute this software to third parties not included in the license.
       label: Sublicensing
-    private-use: 
-      description: You may use and modify the software without distributing it.
-      label: Private Use
     patent-grant:
       description: This license provides an express grant of patent rights from the contributor to the recipient.
       label: Patent Grant
