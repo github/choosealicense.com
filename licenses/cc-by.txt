@@ -5,7 +5,7 @@ permalink: /licenses/cc-by/
 
 featured: false
 
-description: The most permissive Creative Commons License made for content only.  
+description: A license that allows for distribution and modification of work made for content only, allowing commercial-use.  
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
 required:

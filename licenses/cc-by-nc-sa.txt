@@ -5,7 +5,7 @@ permalink: /licenses/cc-by-nc-sa/
 
 featured: false
 
-description: The least permissive Creative Commons License made for content only.  
+description: A license that allows for distribution (under the same license) and modification of work made for content only, forbidding commercial-use.  
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
 required:

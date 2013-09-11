@@ -5,7 +5,7 @@ permalink: /licenses/cc-by-sa/
 
 featured: false
 
-description: A license for content that requires attribution and distribution under the same license
+description: A license that allows for distribution (under the same license) and modification of work made for content only, allowing commercial-use.  
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
 required:
