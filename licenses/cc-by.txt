@@ -1,7 +1,7 @@
 ---
 layout: license
 title: Creative Commons Attribution 3.0 Unported
-permalink: /licenses/cc-by
+permalink: /licenses/cc-by/
 
 featured: false
 
