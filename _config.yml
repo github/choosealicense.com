@@ -63,6 +63,9 @@ rules:
     sublicense:
       description: You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
       label: Sublicensing
+    commercial-use: 
+      description: This software and derivatives may be used for commercial purposes.
+      label: Commercial Use
 
 exclude:
   - CNAME
