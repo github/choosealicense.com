@@ -11,9 +11,14 @@ If you already know what you&#8217;re doing and have a license you prefer to use
 
 ## Not comprehensive
 
-This site is not a comprehensive directory of open source licenses. If you&#8217;re looking for a comprehensive list, we recommend the <a href="http://opensource.org/licenses/">Open Source Initiative</a> website.
+This site is not a comprehensive directory of open source licenses.  We think there are too many options, which adds to the confusion. On the homepage, we break it down into just three licenses. The vast majority of projects will likely be fine choosing from one of these three. Just in case you have specific needs not covered by those three, we also highlight a [few other licenses to consider](/licenses/).  Additional resources:
 
-We think there are too many options, which adds to the confusion. On the homepage, we break it down into just three licenses. The vast majority of projects will likely be fine choosing from one of these three. Just in case you have specific needs not covered by those three, we also highlight a [few other licenses to consider](/licenses/).
+<ul class="bullets">
+  <li><a href="http://opensource.org/licenses/">Open Source Initiative</a> - comprehensive list of open source licenses</li>
+  <li><a href="http://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses">Comparison of free and open-source software licenses</a> on Wikipedia</li>
+  <li><a href="http://www.oss-watch.ac.uk/apps/licdiff/">License differentiator</a> from <a href="http://www.oss-watch.ac.uk/">OSS Watch</a></li>
+  <li><a href="http://www.tldrlegal.com/">TLDRLegal</a></li>
+</ul>
 
 ## Help us improve it
 
