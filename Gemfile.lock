@@ -9,7 +9,7 @@ GEM
       highline (~> 1.6.11)
     directory_watcher (1.4.1)
     fast-stemmer (1.0.2)
-    github-pages (1)
+    github-pages (4)
       RedCloth (= 4.2.9)
       jekyll (= 1.1.2)
       kramdown (= 1.0.2)
