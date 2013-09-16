@@ -1,7 +1,7 @@
 ---
 layout: license
 title: MIT License
-permalink: /licenses/mit/
+permalink: /licenses/MIT/
 
 featured: true
 
