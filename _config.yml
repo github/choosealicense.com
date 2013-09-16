@@ -1,6 +1,6 @@
 title: ChooseALicense.com
 relative_permalinks: false
-markdown: redcarpet
+markdown: kramdown
 
 rules:
 
@@ -8,33 +8,33 @@ rules:
     include-copyright:
       description: Include a copy of the license and copyright notice with the code.
       label:  License and copyright notice
-    document-changes: 
+    document-changes:
       description: Indicate significant changes made to the code.
       label: State Changes
     disclose-source:
       description: Source code must be made available when distributing the software. In the case of LGPL, the source for the library (and not the entire program) must be made available.
       label: Disclose Source
     library-usage:
-      description: The library may be used within a non-open-source application. 
+      description: The library may be used within a non-open-source application.
       label: Library usage
-    rename: 
+    rename:
       description: You must change the name of the software if you modify it.
       label: Rename
 
   permitted:
-    commercial-use: 
+    commercial-use:
       description: This software and derivatives may be used for commercial purposes.
       label: Commercial Use
-    modifications: 
+    modifications:
       description: This software may be modified.
       label: Modification
-    distribution: 
+    distribution:
       description: You may distribute this software.
       label: Distribution
-    sublicense: 
+    sublicense:
       description: You may grant a sublicense to modify and distribute this software to third parties not included in the license.
       label: Sublicensing
-    private-use: 
+    private-use:
       description: You may use and modify the software without distributing it.
       label: Private Use
     patent-grant:
@@ -45,10 +45,10 @@ rules:
     trademark-use:
       description: While this may be implicitly true of all licenses, this license explicitly states that you may NOT use the names, logos, or trademarks of contributors.
       label: Use Trademark
-    no-liability: 
+    no-liability:
       description: Software is provided without warranty and the software author/license owner cannot be held liable for damages.
       label: Hold Liable
-    no-sublicense: 
+    no-sublicense:
       description: You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
       label: Sublicensing
     modifications:
