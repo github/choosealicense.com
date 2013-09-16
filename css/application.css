@@ -190,37 +190,38 @@ strong {
   top: 10px;
 }
 
-.situations {
+.triptych {
   width: 900px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
-.situations li {
+.triptych li {
   width: 280px;
   float: left;
   margin-left: 27px;
   text-align: center;
 }
-.situations .whatever {
+.triptych li:first-child {
   margin-left: 0;
-  margin-top: 16px;
 }
-.situations .copyleft {
-  margin-top: 3px;
-}
-.situations h3 {
-  margin: 0 auto 20px auto;
-  width: 220px;
-}
-
-.situations h3 a {
+.triptych li > a {
   text-decoration: none;
+}
+.triptych h3 {
   color: #443a33;
   font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 22px;
   font-weight: 900;
   line-height: 1.1;
+  margin: 0 auto 20px auto;
+  width: 220px;
 }
 
+.situations .whatever {
+  margin-top: 16px;
+}
+.situations .copyleft {
+  margin-top: 3px;
+}
 .situations .button {
   margin-top: 20px;
 }
@@ -235,16 +236,6 @@ strong {
   border-radius: 3px;
   color: #5c5855;
   padding: 16px;
-}
-.see-more {
-  margin-top: 20px;
-  display: inline-block;
-  padding-left: 80px;
-  padding-right: 80px;
-  font-weight: bold;
-}
-.see-more p:last-child {
-  margin-bottom: 0.3em;
 }
 
 .license-rules {
