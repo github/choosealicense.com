@@ -2,6 +2,7 @@
 layout: license
 title: MIT License
 permalink: /licenses/mit/
+source: http://opensource.org/licenses/mit-license.php
 
 featured: true
 

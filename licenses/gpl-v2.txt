@@ -2,6 +2,7 @@
 title: GPL v2
 layout: license
 permalink: /licenses/gpl-v2/
+source: http://opensource.org/licenses/GPL-2.0
 
 featured: true
 
