@@ -161,7 +161,7 @@ strong {
 
 .container {
   margin: 40px auto;
-  width: 900px;
+  width: 940px;
 }
 
 .home {
@@ -232,7 +232,6 @@ strong {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
-  -o-border-radius: 3px;
   border-radius: 3px;
   color: #5c5855;
   padding: 16px;
@@ -316,12 +315,19 @@ strong {
 .license-body {
   font-size: 15px;
   float: left;
-  width: 660px;
+  width: 700px;
 }
 
 .license-body pre {
   font-family: Consolas, Monaco, Courier, monospace;
   font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #e9e6e1;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  padding: 20px;
 }
 
 .sidebar {
@@ -350,6 +356,7 @@ strong {
 
 .sidebar .source {
   margin-top: 4px;
+  margin-bottom: 30px;
 }
 .sidebar .source a {
   padding-left: 20px;
