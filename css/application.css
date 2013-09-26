@@ -226,17 +226,6 @@ strong {
   margin-top: 20px;
 }
 
-.callout {
-  background-color: rgba(255, 255, 255, 0.33);
-  border: solid 1px #e9e6e1;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
-  color: #5c5855;
-  padding: 16px;
-}
-
 .license-rules {
   font-size: 13px;
   line-height: 1.3;
