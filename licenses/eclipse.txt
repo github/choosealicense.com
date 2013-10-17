@@ -3,7 +3,15 @@ layout: license
 title: Eclipse Public License v1.0
 permalink: /licenses/eclipse/
 
-description: Used by the Eclipse foundation for its software, this license includes reciprocal requirements in some cases.
+description: This commercially-friendly copyleft license provides the ability to commercially license binaries; a modern royalty-free patent license grant; and the ability for linked works to use other licenses, including commercial ones.
+
+using:
+ The Eclipse Foundation: "http://www.eclipse.org"
+ OpenDaylight: "http://www.opendaylight.org/"
+ Clojure: "http://clojure.org/"
+ JUnit: "http://junit.org/"
+ Ruby: "https://github.com/jruby/jruby"
+ Mondrian: "http://en.wikipedia.org/wiki/Mondrian_OLAP_server"
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
