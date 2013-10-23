@@ -6,3 +6,8 @@ script: "./script/cibuild"
 language: ruby
 rvm: 
   - 2.0.0
+
+branches:
+  only:
+    - gh-pages
+    - /.*/
