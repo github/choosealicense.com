@@ -30,3 +30,12 @@ changes, type in a commit message, and click the `Propose File Change` button.
 That’s it!
 
 For more advanced changes, check out [the bootstrap instructions](https://github.com/github/choosealicense.com#run-it-on-your-machine) in the [project's readme](https://github.com/github/choosealicense.com/blob/master/README.md).
+
+## Testing
+
+[HTML::Proofer](https://github.com/gjtorikian/html-proofer) is set up to validate all links within the project.  You can run this locally to ensure that your changes are valid:
+
+```shell
+bundle install
+bundle exec rake test
+```
