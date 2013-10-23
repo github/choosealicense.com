@@ -26,6 +26,7 @@ This site is not a comprehensive directory of open source licenses.  We think th
 * [gem-licenses](https://github.com/dblock/gem-licenses)
 * [LicenseFinder](https://github.com/pivotal/LicenseFinder)
 * [License Maven Plugin](http://mojo.codehaus.org/license-maven-plugin/)
+* [AddALicense.com](http://www.addalicense.com/)
 {: .bullets}
 
 ## Help us improve it
