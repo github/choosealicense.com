@@ -2,6 +2,7 @@
 title: GPL v2
 layout: license
 permalink: /licenses/gpl-v2/
+source: http://www.gnu.org/licenses/gpl-2.0.txt
 
 featured: true
 
