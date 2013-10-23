@@ -6,4 +6,4 @@ echo "compiling javascript..."
 ./node_modules/.bin/coffee -c javascripts/app.coffee
 
 echo "building the site..."
-bundle exec jekyll build --trace
+bundle exec rake test
