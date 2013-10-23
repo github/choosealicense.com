@@ -36,6 +36,6 @@ For more advanced changes, check out [the bootstrap instructions](https://github
 [HTML::Proofer](https://github.com/gjtorikian/html-proofer) is set up to validate all links within the project.  You can run this locally to ensure that your changes are valid:
 
 ```shell
-bundle install
-bundle exec rake test
+./script/bootstrap
+./script/cibuild
 ```
