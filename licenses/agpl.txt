@@ -22,9 +22,6 @@ forbidden:
   - no-liability
   - no-sublicense
 
-using:
-  Some Project: "#"
-
 ---
 
                     GNU AFFERO GENERAL PUBLIC LICENSE
