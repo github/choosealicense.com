@@ -1,6 +1,7 @@
 ---
 layout: license
 title: Eclipse Public License v1.0
+family-title: Eclipse
 permalink: /licenses/eclipse/
 
 description: This commercially-friendly copyleft license provides the ability to commercially license binaries; a modern royalty-free patent license grant; and the ability for linked works to use other licenses, including commercial ones.

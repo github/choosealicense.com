@@ -1,6 +1,8 @@
 ---
 layout: license
 title: LGPL v3
+family-title: LGPL
+hide-from-license-list: true
 permalink: /licenses/lgpl-v3/
 source: http://www.gnu.org/licenses/lgpl-3.0.txt
 

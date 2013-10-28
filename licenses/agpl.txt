@@ -1,5 +1,7 @@
 ---
 title: Affero GPL
+family-title: GPL
+hide-from-license-list: true
 layout: license
 permalink: /licenses/agpl/
 source: http://www.gnu.org/licenses/agpl-3.0.txt

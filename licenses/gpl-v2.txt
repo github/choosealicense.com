@@ -1,8 +1,12 @@
 ---
 title: GPL v2
+family-title: GPL
+hide-from-license-list: false
 layout: license
 permalink: /licenses/gpl-v2/
 source: http://www.gnu.org/licenses/gpl-2.0.txt
+
+description: GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. There are multiple variants of the GPL each with different requirements, <a href="gpl-v2/">GPL v2</a>, <a href="gpl-v3/">GPL v3</a>, and <a href="agpl/">Affero GPL</a>. 
 
 featured: true
 

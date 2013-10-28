@@ -1,6 +1,7 @@
 ---
 layout: license
 title: Mozilla Public License Version 2.0
+family-title: Mozilla
 permalink: /licenses/mozilla/
 source: http://www.mozilla.org/MPL/2.0/
 
