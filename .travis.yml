@@ -11,3 +11,6 @@ branches:
   only:
     - gh-pages
     - /.*/
+
+notifications:
+  email: false
