@@ -4,11 +4,16 @@ title: LGPL v2.1
 permalink: /licenses/lgpl-v2.1/
 source: http://www.gnu.org/licenses/lgpl-2.1.txt
 
-description: Primarily used for software libraries, LGPL requires that derived works be licensed under the same license, but works that only link to it do not fall under this restriction.
+description: Primarily used for software libraries, LGPL requires that
+derived works be licensed under the same license, but works that only link to
+it do not fall under this restriction.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root
+of your source code and copy the text of the license into the file.
 
-note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
+note: The Free Software Foundation recommends taking the additional step of
+adding a boilerplate notice to the top of each file. The boilerplate can be
+found at the end of the license.
 
 required:
   - include-copyright
@@ -514,7 +519,8 @@ convey the exclusion of warranty; and each file should have at least the
 
     You should have received a copy of the GNU Lesser General Public
     License along with this library; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
+    USA
 
 Also add information on how to contact you by electronic and paper mail.
 
@@ -523,7 +529,8 @@ school, if any, to sign a "copyright disclaimer" for the library, if
 necessary.  Here is a sample; alter the names:
 
   Yoyodyne, Inc., hereby disclaims all copyright interest in the
-  library `Frob' (a library for tweaking knobs) written by James Random Hacker.
+  library `Frob' (a library for tweaking knobs) written by James Random
+  Hacker.
 
   {signature of Ty Coon}, 1 April 1990
   Ty Coon, President of Vice
