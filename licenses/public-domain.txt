@@ -11,7 +11,7 @@ description: Because copyright is automatic in most countries, <a href="http://u
 
 how: Create a text file (typically named UNLICENSE or UNLICENSE.txt) in the root of your source code and copy the text of the license disclaimer into the file.
 
-required: 
+required:
 
 permitted:
   - private-use

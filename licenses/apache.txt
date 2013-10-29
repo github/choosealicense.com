@@ -23,7 +23,7 @@ permitted:
   - distribution
   - sublicense
   - patent-grant
-  
+
 forbidden:
   - trademark-use
   - no-liability
