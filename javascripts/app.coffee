@@ -3,7 +3,7 @@ class Choosealicense
   # Checks if Flash is available in the client.
   flashAvailable: ->
     if ActiveXObject?
-      !!(new ActiveXObject('ShockwaveFlash.ShockwaveFlash'))
+      !!(new ActiveXObject("ShockwaveFlash.ShockwaveFlash"))
     else
       !!navigator.mimeTypes["application/x-shockwave-flash"]
 

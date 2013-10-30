@@ -9,12 +9,12 @@ class: license-types
 {% for page in site.pages %}
   {% if page.layout == "license" %}
     {% if page.featured %}
-    <table class='license-rules'>
+    <table class="license-rules">
       <tr>
-        <th class='name'>
+        <th class="name">
           <a href="{{ page.permalink }}">{{ page.title }}</a>
         </th>
-        <th class='summary'>
+        <th class="summary">
          {{ page.description }} <a href="{{ page.permalink }}">View full license »</a>
         </th>
       </tr>
@@ -45,12 +45,12 @@ class: license-types
 {% for page in site.pages %}
   {% if page.layout == "license" %}
     {% if page.featured != true %}
-    <table class='license-rules'>
+    <table class="license-rules">
       <tr>
-        <th class='name'>
+        <th class="name">
           <a href="{{ page.permalink }}">{{ page.title }}</a>
         </th>
-        <th class='summary'>
+        <th class="summary">
          {{ page.description }} <a href="{{ page.permalink }}">View full license »</a>
         </th>
       </tr>
