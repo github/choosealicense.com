@@ -5,7 +5,7 @@
   Choosealicense = (function() {
     Choosealicense.prototype.flashAvailable = function() {
       if (typeof ActiveXObject !== "undefined" && ActiveXObject !== null) {
-        return !!(new ActiveXObject('ShockwaveFlash.ShockwaveFlash'));
+        return !!(new ActiveXObject("ShockwaveFlash.ShockwaveFlash"));
       } else {
         return !!navigator.mimeTypes["application/x-shockwave-flash"];
       }
