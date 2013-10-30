@@ -21,6 +21,7 @@ permitted:
   - distribution
   - sublicense
   - patent-grant
+  - private-use
 
 forbidden:
   - no-liability
