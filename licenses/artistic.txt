@@ -23,9 +23,9 @@ forbidden:
   - no-liability
   - trademark-use
 ---
-		       The Artistic License 2.0
+               The Artistic License 2.0
 
-	       Copyright (c) [year] [fullname]
+           Copyright (c) [year] [fullname]
 
      Everyone is permitted to copy and distribute verbatim copies
       of this license document, but changing it is not allowed.
@@ -134,15 +134,15 @@ you do at least ONE of the following:
     make the Source form of the Modified Version available to others
     under
 
-	(i)  the Original License or
+    (i)  the Original License or
 
-	(ii)  a license that permits the licensee to freely copy,
-	modify and redistribute the Modified Version using the same
-	licensing terms that apply to the copy that the licensee
-	received, and requires that the Source form of the Modified
-	Version, and of any works derived from it, be made freely
-	available in that license fees are prohibited but Distributor
-	Fees are allowed.
+    (ii)  a license that permits the licensee to freely copy,
+    modify and redistribute the Modified Version using the same
+    licensing terms that apply to the copy that the licensee
+    received, and requires that the Source form of the Modified
+    Version, and of any works derived from it, be made freely
+    available in that license fees are prohibited but Distributor
+    Fees are allowed.
 
 
 Distribution of Compiled Forms of the Standard Version
@@ -224,4 +224,3 @@ LAW. UNLESS REQUIRED BY LAW, NO COPYRIGHT HOLDER OR CONTRIBUTOR WILL
 BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
 DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-

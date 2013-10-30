@@ -5,21 +5,21 @@ Like a Choose Your Own Adventure site, but only much less interesting.
 # Intro
 
 A lot of repositories on GitHub.com don't have a license. GitHub provides
-a license chooser, but if you don't know anything about licenses, how are you 
+a license chooser, but if you don't know anything about licenses, how are you
 supposed to make an informed decision.
 
-ChooseALicense.com is designed to help people make an informed decision about 
-licenses. 
+ChooseALicense.com is designed to help people make an informed decision about
+licenses.
 
 # Immediate Goals
 
 * Politics Free - Let's just not get into it.
 * Well designed, but that goes without saying.
 * The homepage should have just enough to help 99% of folks make a decision.
-* For the 1%, the site will contain a list of licenses common for specific 
+* For the 1%, the site will contain a list of licenses common for specific
 communities and situations.
-* Not comprehensive. Seems like an odd goal, but there are a bajillion 
-(I counted) licenses out there. We're going to have to filter that down to a 
+* Not comprehensive. Seems like an odd goal, but there are a bajillion
+(I counted) licenses out there. We're going to have to filter that down to a
 small list of those that matter.
 
 # Run It On Your Machine
@@ -52,10 +52,10 @@ The licenses on choosealicense.com are regularly imported to GitHub.com to be us
 * `[description]` - The description of the repository
 * `[year]` - The current year
 
-# Rules 
+# Rules
 
-* Rules (the license's properties) are stored as a bulleted list within the licenses YAML front matter. A full list of rules can be found in the repository's `_config.yml` file. Each rule has a name e.g., `include-copyright`, a human-readable label, e.g., `Copyright inclusion`, and a description `Include the original copyright with the code`. To add a new rule, simply add it to config.yml and reference it in the appropriate license. 
+* Rules (the license's properties) are stored as a bulleted list within the licenses YAML front matter. A full list of rules can be found in the repository's `_config.yml` file. Each rule has a name e.g., `include-copyright`, a human-readable label, e.g., `Copyright inclusion`, and a description `Include the original copyright with the code`. To add a new rule, simply add it to config.yml and reference it in the appropriate license.
 
 # License
 
-The content of this project itself is licensed under the [Creative Commons Attribution 3.0 license](http://creativecommons.org/licenses/by/3.0/us/deed.en_US), and the underlying source code used to format and display that content is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php). 
+The content of this project itself is licensed under the [Creative Commons Attribution 3.0 license](http://creativecommons.org/licenses/by/3.0/us/deed.en_US), and the underlying source code used to format and display that content is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).
