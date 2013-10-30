@@ -7,9 +7,7 @@ layout: nil
 body {
   background: #f5f1ec url(../images/bg.jpg);
   color: #5c5855;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.4;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -17,6 +15,7 @@ a {
   font-weight: bold;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
@@ -62,43 +61,36 @@ a:hover {
   background-image: linear-gradient(#e7e5e0, #d0ceca);
 }
 
-h1 {
-  color: #443a33;
+h1, h2, h3, h5 {
   font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
-  font-size: 40px;
   font-weight: 900;
   line-height: 1.1;
+}
+
+h1 {
+  color: #443a33;
+  font-size: 40px;
   margin-bottom: 25px;
 }
 
 h2 {
   color: #443a33;
   opacity: 0.8;
-  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 24px;
-/*  font-size: 18px; */
-  font-weight: 900;
-  line-height: 1.1;
   margin-top: 24px;
   margin-bottom: 10px;
 }
 
 h3 {
   color: #443a33;
-  font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 15px;
-  font-weight: 900;
-  line-height: 1.1;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
 h5 {
   color: #443a33;
-  font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 14px;
-  font-weight: 900;
-  line-height: 1.1;
   margin-bottom: 15px;
 }
 
@@ -123,21 +115,22 @@ strong {
   padding-top: 20px;
   text-align: center;
 }
+
 .home h1 {
   font-size: 63px;
   line-height: 1.1;
   margin-bottom: 25px;
 }
+
 .home h2 {
   color: #149ad4;
-  font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 27px;
-  font-weight: 900;
   line-height: 70px;
   margin-bottom: 45px;
   vertical-align: middle;
   opacity: 1;
 }
+
 .home h2 span {
   color: #e9e6e2;
   font-size: 70px;
@@ -150,24 +143,25 @@ strong {
   width: 900px;
   margin: 0 auto 20px;
 }
+
 .triptych li {
   width: 280px;
   float: left;
   margin-left: 27px;
   text-align: center;
 }
+
 .triptych li:first-child {
   margin-left: 0;
 }
+
 .triptych li > a {
   text-decoration: none;
 }
+
 .triptych h3 {
   color: #443a33;
-  font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 22px;
-  font-weight: 900;
-  line-height: 1.1;
   margin: 0 auto 20px auto;
   width: 220px;
 }
@@ -175,9 +169,11 @@ strong {
 .situations .whatever {
   margin-top: 16px;
 }
+
 .situations .copyleft {
   margin-top: 3px;
 }
+
 .situations .button {
   margin-top: 20px;
 }
@@ -205,10 +201,7 @@ strong {
 }
 
 .license-family-name {
-  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 28px;
-  font-weight: 900;
-  line-height: 1.1;
 }
 
 .license-family-description {
@@ -222,36 +215,41 @@ strong {
   margin-bottom: 12px;
   width: 100%;
 }
+
 .license-rules th,
 .license-rules td {
   width: 33%;
 }
+
 .license-rules th {
   font-size: 15px;
   padding: 5px 10px 5px 0;
   vertical-align: bottom;
 }
+
 .license-rules th.summary {
   line-height: 1.4;
 }
+
 .license-rules .name {
   border-right: solid 1px #d9d7d2;
   padding-left: 0;
   width: 280px;
 }
+
 .license-rules .name a {
-  font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 28px;
-  font-weight: 900;
-  line-height: 1.1;
 }
+
 .license-rules .name small a {
   font-size: 16px;
 }
+
 .license-rules td {
   padding: 4px 0 12px 0;
   vertical-align: top;
 }
+
 .license-rules .label {
   font-weight: bold;
 }
@@ -263,15 +261,19 @@ strong {
   margin-bottom: 5px;
   padding-left: 16px;
 }
+
 .license-rules li:hover {
   color: #443a33;
 }
+
 .license-required li {
   background-image: url(../images/blue-dot@2x.png);
 }
+
 .license-permitted li {
   background-image: url(../images/green-dot@2x.png);
 }
+
 .license-forbidden li {
   background-image: url(../images/red-dot@2x.png);
 }
@@ -309,16 +311,20 @@ strong {
   margin-top: -110px;
   width: 100%;
 }
+
 .sidebar .how-to-apply {
   font-size: 12px;
   margin-top: -15px;
 }
+
 .sidebar .how-to-apply p {
   line-height: 1.5;
 }
+
 .sidebar .how-to-apply p:last-child {
   margin-bottom: 0;
 }
+
 .sidebar .note {
   font-style: italic;
 }
@@ -327,6 +333,7 @@ strong {
   margin-top: 4px;
   margin-bottom: 30px;
 }
+
 .sidebar .source a {
   padding-left: 20px;
   background: transparent url(../images/source@2x.png) 0 1px no-repeat;
@@ -334,8 +341,7 @@ strong {
 }
 
 .sidebar .boilerplate {
-  font-family: 'courier new', courier;
-  font-size: 0.7em;
+  font: 0.7em "Courier new", courier;
 }
 
 .projects-with-license li {
@@ -351,17 +357,21 @@ strong {
   text-align: left;
   line-height: 1.5;
 }
+
 .site-footer a {
   color: #443a33;
   font-weight: normal;
 }
+
 .site-footer p {
   float: left;
   margin-top: 0;
 }
+
 .site-footer nav {
   float: right;
 }
+
 .site-footer nav a {
   display: inline-block;
   margin-left: 20px;
