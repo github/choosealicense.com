@@ -17,6 +17,7 @@ permitted:
   - commercial-use
   - modifications
   - distribution
+  - private-use
 
 forbidden:
   - no-liability

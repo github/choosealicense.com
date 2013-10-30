@@ -17,6 +17,7 @@ permitted:
   - modifications
   - distribution
   - sublicense
+  - private-use
 
 forbidden:
   - no-liability

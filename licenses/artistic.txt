@@ -11,12 +11,14 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 required:
   - include-copyright
   - document-changes
+
 permitted:
   - commercial-use
   - modifications
   - distribution
   - sublicense
   - private-use
+
 forbidden:
   - no-liability
   - trademark-use

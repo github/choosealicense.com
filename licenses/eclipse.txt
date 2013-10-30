@@ -27,6 +27,7 @@ permitted:
   - modifications
   - sublicense
   - patent-grant
+  - private-use
 
 forbidden:
   - no-liability
