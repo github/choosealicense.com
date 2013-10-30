@@ -6,23 +6,23 @@ permalink: /terms-of-service/
 ---
 
 ### 1. Introduction
-Welcome to Choosealicense.com (the “Site”). The Site is operated by GitHub, Inc. (“GitHub” or “we”), a Delaware corporation headquartered in lovely San Francisco, California. This document – the Site’s terms of service – is an agreement between you, the beloved user, and GitHub. It’s referred to as the “Terms” or the “Agreement.” 
-These Terms govern your use of the Site and this Site only. The Terms neither relate to any other GitHub website, service or property nor your use of any other GitHub website, service or property. For example, these Terms don’t govern your use of www.github.com. 
+Welcome to Choosealicense.com (the “Site”). The Site is operated by GitHub, Inc. (“GitHub” or “we”), a Delaware corporation headquartered in lovely San Francisco, California. This document – the Site’s terms of service – is an agreement between you, the beloved user, and GitHub. It’s referred to as the “Terms” or the “Agreement.”
+These Terms govern your use of the Site and this Site only. The Terms neither relate to any other GitHub website, service or property nor your use of any other GitHub website, service or property. For example, these Terms don’t govern your use of www.github.com.
 
 ### 2. Agreement to the Terms
 
 Terms of service agreements are contracts. That means that this Agreement is a contract between you and GitHub for the limited purpose of laying out what our respective rights and obligations are with respect to Choosealicense.com.
-If there’s something in these Terms you don’t agree with or don’t understand, please don’t use the Site. By accessing or using the Site, you signal your agreement with and consent to the Terms. By accessing or using any Website or Service you also represent that you have the legal authority to accept the Terms on behalf of yourself and any party you represent in connection with your use of any Website or Service. 
+If there’s something in these Terms you don’t agree with or don’t understand, please don’t use the Site. By accessing or using the Site, you signal your agreement with and consent to the Terms. By accessing or using any Website or Service you also represent that you have the legal authority to accept the Terms on behalf of yourself and any party you represent in connection with your use of any Website or Service.
 
-Unless otherwise agreed to in writing with GitHub, your use of any Website or Service will always be subject to, at a minimum, the terms and conditions set out in this document. 
+Unless otherwise agreed to in writing with GitHub, your use of any Website or Service will always be subject to, at a minimum, the terms and conditions set out in this document.
 
 ### 3. No legal advice is being provided
 
-GitHub is a lot of things, but it’s not a law firm. GitHub does not provide legal advice. Using the Site or sending us an email about the Site does not create an attorney-client relationship. Use of Choosealicense.com does not constitute legal advice nor does it create an attorney-client relationship. If you have any questions about the Site or its content, you should consult with your own legal counsel before moving forward with your project. In fact, you should always consult with your own lawyer before making any decisions that might have legal ramifications or that may impact your legal rights. 
+GitHub is a lot of things, but it’s not a law firm. GitHub does not provide legal advice. Using the Site or sending us an email about the Site does not create an attorney-client relationship. Use of Choosealicense.com does not constitute legal advice nor does it create an attorney-client relationship. If you have any questions about the Site or its content, you should consult with your own legal counsel before moving forward with your project. In fact, you should always consult with your own lawyer before making any decisions that might have legal ramifications or that may impact your legal rights.
 
 GitHub created the Site to help users get started with their open source projects. And we do hope it helps. But please keep in mind that we’re not lawyers (at least not most of us) and that we make mistakes like everyone else. For that reason, GitHub provides the Site on an “as-is” basis. GitHub makes no warranties regarding any information or licenses provided on or through the Site, and disclaims liability for damages resulting from use of the Site.
 
-The next few sections of these Terms go into greater detail on these disclaimers and lack of warranties. They’re in caps so that you notice them.  
+The next few sections of these Terms go into greater detail on these disclaimers and lack of warranties. They’re in caps so that you notice them.
 
 ### 4. DISCLAIMER OF WARRANTIES
 
@@ -36,7 +36,7 @@ THE GITHUB PARTIES SHALL NOT BE RESPONSIBLE OR LIABLE WHATSOEVER IN ANY MANNER F
 
 ### 6. Indemnification for breach of the Terms
 
-You agree to indemnify and hold harmless the GitHub Parties (defined above) from and against any and all loss, expenses, damages, and costs, including without limitation reasonable attorneys fees, resulting, whether directly or indirectly, from your violation of the Terms. 
+You agree to indemnify and hold harmless the GitHub Parties (defined above) from and against any and all loss, expenses, damages, and costs, including without limitation reasonable attorneys fees, resulting, whether directly or indirectly, from your violation of the Terms.
 
 ### 7. Termination of this Agreement
 
@@ -45,12 +45,12 @@ The disclaimer of warranties, the limitation of liability and the jurisdiction a
 
 ### 8. Miscellaneous Terms
 
-These Terms are governed by and construed by the laws of the State of California, in the United States, exclusive of its choice of law rules. 
+These Terms are governed by and construed by the laws of the State of California, in the United States, exclusive of its choice of law rules.
 
-The parties agree that any disputes or proceedings between GitHub and you concerning these Terms or the Site shall be brought in a federal or state court of competent jurisdiction sitting in the Northern District of California, and hereby consent to the personal jurisdiction and venue of such court. Either party’s failure to insist on or enforce strict performance of any of the Terms shall not be construed as a waiver of any provision or right. 
+The parties agree that any disputes or proceedings between GitHub and you concerning these Terms or the Site shall be brought in a federal or state court of competent jurisdiction sitting in the Northern District of California, and hereby consent to the personal jurisdiction and venue of such court. Either party’s failure to insist on or enforce strict performance of any of the Terms shall not be construed as a waiver of any provision or right.
 
-If any term or part of the Terms is held to be invalid or unenforceable by any law or regulation or final determination of a competent court or tribunal, that provision will be deemed severable and will not affect the validity and enforceability of any remaining provisions. 
+If any term or part of the Terms is held to be invalid or unenforceable by any law or regulation or final determination of a competent court or tribunal, that provision will be deemed severable and will not affect the validity and enforceability of any remaining provisions.
 
-The parties agree that no joint venture, partnership, employment, or agency relationship exists between you and GitHub as a result of these Terms or your use of the Site. 
+The parties agree that no joint venture, partnership, employment, or agency relationship exists between you and GitHub as a result of these Terms or your use of the Site.
 
-These Terms constitute the entire agreement between you and GitHub relating to the Site and supersede all prior, contemporaneous and future communications (with the exception of future amendments to the Terms as made available by GitHub from time to time) between you and GitHub. A printed version of the Terms and of any notice given in electronic form shall be admissible in judicial or administrative proceedings based on or relating to the Terms to the same extent and subject to the same conditions as other business documents and records originally generating and maintained in printed form. 
+These Terms constitute the entire agreement between you and GitHub relating to the Site and supersede all prior, contemporaneous and future communications (with the exception of future amendments to the Terms as made available by GitHub from time to time) between you and GitHub. A printed version of the Terms and of any notice given in electronic form shall be admissible in judicial or administrative proceedings based on or relating to the Terms to the same extent and subject to the same conditions as other business documents and records originally generating and maintained in printed form.
