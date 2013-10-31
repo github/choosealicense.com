@@ -18,7 +18,7 @@
     <![endif]-->
 
   </head>
-  <body class="{{ page.layout }} {{ page.class }}">
+  <body class="{{ page.layout }}{% if page.class %} {{ page.class }}{% endif %}">
     <div class="container">
 
       {% include breadcrumbs.html %}
