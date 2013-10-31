@@ -50,23 +50,29 @@ layout: nil
     Choosealicense.prototype.initTooltips = function () {
       var category, label, rules, text, _ref;
       for (category in annotations) {
-        rules = annotations[category];
-        for (label in rules) {
-          text = rules[label];
-          $(".license-rules ul.license-" + category + " li." + label).attr("title", text);
+        if (annotations.hasOwnProperty(category)) {
+          rules = annotations[category];
+          for (label in rules) {
+            if (rules.hasOwnProperty(label)) {
+              text = rules[label];
+              $(".license-rules ul.license-" + category + " li." + label).attr("title", text);
+            }
+          }
         }
       }
       _ref = this.categories;
       for (category in _ref) {
-        label = _ref[category];
-        $(".license-" + category + " li").qtip({
-          content: {
-            text: false,
-            title: { text: label }
-          },
-          position: this.qtip_position,
-          style: { classes: "qtip-shadow qtip-" + category }
-        });
+        if (_ref.hasOwnProperty(category)) {
+          label = _ref[category];
+          $(".license-" + category + " li").qtip({
+            content: {
+              text: false,
+              title: { text: label }
+            },
+            position: this.qtip_position,
+            style: { classes: "qtip-shadow qtip-" + category }
+          });
+        }
       }
       return false;
     };
@@ -102,7 +108,8 @@ layout: nil
     };
 
     Choosealicense.prototype.clipboardComplete = function() {
-      return this.innerText = "Copied!";
+      var result = this.innerText = "Copied!";
+      return result;
     };
 
     return Choosealicense;
