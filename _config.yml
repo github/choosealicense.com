@@ -62,8 +62,14 @@ rules:
       label: Sublicensing
 
 exclude:
+  - app.coffee
+  - CONTRIBUTING.md
   - CNAME
-  - Gemfile*
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - licenses.json
+  - Rakefile
+  - README.md
   - script
   - vendor
-  - app.coffee

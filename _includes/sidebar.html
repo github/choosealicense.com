@@ -1,46 +1,46 @@
 <div class="sidebar">
 
   <a href="#" data-clipboard-target="license-text" class="js-clipboard-button button">Copy license text to clipboard</a>
-    <div class="how-to-apply">
-      <h5>How to apply this license</h5>
-      <p>
-        {{ page.how }}
-      </p>
-      {% if page.note %}
-      <p class="note">
-        <strong>Note: </strong> {{ page.note }}
-      </p>
-      {% endif %}
-    </div>
-    {% if page.source %}
-    <div class="source">
-      <a href="{{ page.source }}">Source</a>
-    </div>
+  <div class="how-to-apply">
+    <h5>How to apply this license</h5>
+    <p>
+      {{ page.how }}
+    </p>
+    {% if page.note %}
+    <p class="note">
+      <strong>Note: </strong> {{ page.note }}
+    </p>
     {% endif %}
+  </div>
+  {% if page.source %}
+  <div class="source">
+    <a href="{{ page.source }}">Source</a>
+  </div>
+  {% endif %}
 
-     <div class="license-rules license-rules-sidebar">
+   <div class="license-rules license-rules-sidebar">
 
-      {% assign types = "required|permitted|forbidden" | split: "|" %}
-      {% for type in types %}
-        <h3>{{ type | capitalize }}</h3>
-        <ul class="license-{{ type }}">
-          {% for req in page[type] %}
-            <li class="{{ req }}">{{ site.rules[type][req].label }}</li>
-          {% endfor %}
-        </ul>
-      {% endfor %}
-
-    </div>
-
-    {% if page.using %}
-    <div class="projects-with-license">
-      <h3>Who's using this license?</h3>
-      <ul>
-        {% for using in page.using %}
-          <li><a href="{{ using[1] }}" target="_blank">{{ using[0] }}</a></li>
+    {% assign types = "required|permitted|forbidden" | split: "|" %}
+    {% for type in types %}
+      <h3>{{ type | capitalize }}</h3>
+      <ul class="license-{{ type }}">
+        {% for req in page[type] %}
+          <li class="{{ req }}">{{ site.rules[type][req].label }}</li>
         {% endfor %}
       </ul>
-    </div>
-    {% endif %}
+    {% endfor %}
 
-  </div><!-- /sidebar -->
+  </div>
+
+  {% if page.using %}
+  <div class="projects-with-license">
+    <h3>Who's using this license?</h3>
+    <ul>
+      {% for using in page.using %}
+        <li><a href="{{ using[1] }}" target="_blank">{{ using[0] }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+</div><!-- /sidebar -->
