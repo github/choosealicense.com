@@ -2,9 +2,6 @@
 
 set -e
 
-echo "compiling javascript..."
-./node_modules/.bin/coffee -c javascripts/app.coffee
-
 echo "spinning up the server..."
 bundle exec jekyll serve -w
 
