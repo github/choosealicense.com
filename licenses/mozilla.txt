@@ -4,12 +4,9 @@ title: Mozilla Public License Version 2.0
 permalink: /licenses/mozilla/
 source: http://www.mozilla.org/MPL/2.0/
 
-description: The Mozilla Public License (MPL 2.0) is maintained by the Mozilla
-foundation. This license attempts to be a compromise between the permissive
-BSD license and the reciprocal GPL license.
+description: The Mozilla Public License (MPL 2.0) is maintained by the Mozilla foundation. This license attempts to be a compromise between the permissive BSD license and the reciprocal GPL license.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root
-of your source code and copy the text of the license into the file.
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
 required:
   - disclose-source

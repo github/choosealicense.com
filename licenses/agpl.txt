@@ -4,12 +4,9 @@ layout: license
 permalink: /licenses/agpl/
 source: http://www.gnu.org/licenses/agpl-3.0.txt
 
-note: The Free Software Foundation recommends taking the additional step of
-adding a boilerplate notice to the top of each file. The boilerplate can be
-found at the end of the license.
+note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root
-of your source code and copy the text of the license into the file.
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
 required:
   - include-copyright

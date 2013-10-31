@@ -6,14 +6,9 @@ source: http://opensource.org/licenses/MIT
 
 featured: true
 
-description:  A permissive license that is short and to the point. It lets
-people do anything with your code with proper attribution and without
-warranty.
+description:  A permissive license that is short and to the point. It lets people do anything with your code with proper attribution and without warranty.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root
-of your source code and copy the text of the license into the file. Replace
-[year] with the current year and [fullname] with the name (or names) of the
-copyright holders.
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
 required:
   - include-copyright
