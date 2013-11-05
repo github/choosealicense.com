@@ -34,7 +34,9 @@ Open [localhost:4000](http://localhost:4000) in your favorite browser
 
 # Adding a license
 
-Licenses sit in the `/licenses` folder as Markdown (`.md`) files. Each license has YAML front matter describing the license's properties. The body of the Markdown file should be the text of the license. The available metadata fields are:
+The text of the license should be wrapped to a 78 character width.
+
+Licenses sit in the `/licenses` folder. Each license has YAML front matter describing the license's properties. The body of the file should be the text of the license in plain text. The available metadata fields are:
 
 * `title` - The name of the license
 * `layout` - This should be `license`
