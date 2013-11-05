@@ -1,8 +1,8 @@
 ---
 layout: license
-permalink: /licenses/public-domain/
+permalink: /licenses/unlicense/
 class: license-types
-title: Public Domain (Unlicense)
+title: Public Domain Dedication (Unlicense)
 filename: UNLICENSE
 
 source: http://unlicense.org/UNLICENSE
