@@ -123,8 +123,9 @@ h1 {
 
 h2 {
   color: #443a33;
+  opacity: 0.8;
   font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 900;
   line-height: 1.1;
   margin-top: 24px;
@@ -181,6 +182,7 @@ strong {
   line-height: 70px;
   margin-bottom: 45px;
   vertical-align: middle;
+  opacity: 1;
 }
 .home h2 span {
   color: #e9e6e2;
@@ -226,7 +228,19 @@ strong {
   margin-top: 20px;
 }
 
+.license-family-name {
+  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.license-family-description {
+  color: #5c5855;
+}
+
 .license-rules {
+  border-top: solid 1px #e9e6e2;
   font-size: 13px;
   line-height: 1.3;
   margin-bottom: 40px;
@@ -240,22 +254,8 @@ strong {
 .license-rules th.summary {
   line-height: 1.4;
 }
-.license-rules .name {
-  border-right: solid 1px #d9d7d2;
-  padding-left: 0;
-  width: 140px;
-}
-.license-rules .name a {
-  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: 28px;
-  font-weight: 900;
-  line-height: 1.1;
-}
 .license-rules .name small a {
   font-size: 16px;
-}
-.license-rules .summary {
-  color: #5c5855;
 }
 .license-rules td {
   border-bottom: solid 1px #e9e6e2;
