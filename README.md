@@ -32,7 +32,7 @@ small list of those that matter.
 
 # Adding a license
 
-Licenses sit in the `/licenses` folder as markdown (`.md`) files. Each license has YAML front matter describing the license's properties. The body of the markdown file should be the text of the license. The available metadata fields are:
+Licenses sit in the `/licenses` folder. Each license has YAML front matter describing the license's properties. The body of the markdown file should be the text of the license in plain text. The available metadata fields are:
 
 * `title` - The name of the license
 * `layout` - This should be `license`
