@@ -11,25 +11,45 @@ class: license-types
 {% for page in site.pages %}
   {% if page.layout == "license" %}
     {% if page.featured %}
-    <h3 class="license-family-name"><a href="{{ page.permalink }}">{% if page.family-title %}{{ page.family-title }}{% else %}{{ page.title }}{% endif %}</a></h3>
+    <div class="license-family cf">
+      <div class="license-family-heading">
+        <h3 class="license-family-name"><a href="{{ page.permalink }}">{% if page.family-title %}{{ page.family-title }}{% else %}{{ page.title }}{% endif %}</a></h3>
 
-    <p class="license-family-description">{{ page.description }} <a href="{{ page.permalink }}">View full license »</a></p>
+        <p class="license-family-description">{{ page.description }}</p>
+      </div>
 
-    <table class='license-rules'>
-      {% assign types = "required|permitted|forbidden" | split: "|" %}
-      {% for type in types %}
-      <tr>
-        <td class="label">{{ type | capitalize }}</td>
-        <td>
-          <ul class="license-{{ type }}">
-            {% for req in page[type] %}
-              <li class="{{ req }}">{{ site.rules[type][req].label }}</li>
-            {% endfor %}
+      <div class="license-details">
+        <div class="license-variations">
+          {% comment %} always show this div, even w/o variations, for proper spacing {% endcomment %}
+          <ul class="nav-pills">
+            <li class="active"><a href="#">GPL v2</a></li>
+            <li><a href="#">GPL v3</a></li>
+            <li><a href="#">Affero GPL</a></li>
           </ul>
-        </td>
-      </tr>
-      {% endfor %}
-    </table>
+        </div>
+        <table class='license-rules'>
+          <tr>
+          {% assign types = "required|permitted|forbidden" | split: "|" %}
+          {% for type in types %}
+            <th class="label">{{ type | capitalize }}</th>
+          {% endfor %}
+          </tr>
+          <tr>
+          {% for type in types %}
+            <td>
+              <ul class="license-{{ type }}">
+                {% for req in page[type] %}
+                  <li class="{{ req }}">{{ site.rules[type][req].label }}</li>
+                {% endfor %}
+              </ul>
+            </td>
+          {% endfor %}
+          </tr>
+        </table>
+        <p class="small"><a href="{{ page.permalink }}">View full GPL v2 license »</a></p>
+      </div>
+    </div>
+
     {% endif %}
   {% endif %}
 {% endfor %}

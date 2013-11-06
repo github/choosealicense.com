@@ -228,6 +228,26 @@ strong {
   margin-top: 20px;
 }
 
+.license-family {
+  clear: both;
+  margin-bottom: 50px;
+}
+
+.license-family-heading {
+  float: left;
+  width: 35%;
+}
+
+.license-details {
+  float: right;
+  width: 55%;
+}
+
+.license-variations {
+  height: 31px;
+  padding-top: 23px;
+}
+
 .license-family-name {
   font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 28px;
@@ -240,15 +260,19 @@ strong {
 }
 
 .license-rules {
-  border-top: solid 1px #e9e6e2;
+  border-bottom: solid 1px #d9d7d2;
   font-size: 13px;
   line-height: 1.3;
-  margin-bottom: 40px;
+  margin-bottom: 12px;
   width: 100%;
 }
+.license-rules th,
+.license-rules td {
+  width: 33%;
+}
 .license-rules th {
-  border-bottom: solid 1px #d9d7d2;
-  padding: 5px 10px 12px 10px;
+  font-size: 15px;
+  padding: 5px 10px 5px 0;
   vertical-align: bottom;
 }
 .license-rules th.summary {
@@ -258,25 +282,18 @@ strong {
   font-size: 16px;
 }
 .license-rules td {
-  border-bottom: solid 1px #e9e6e2;
-  padding: 4px 10px;
+  padding: 4px 0 12px 0;
+  vertical-align: top;
 }
 .license-rules .label {
-  border-right: solid 1px #d9d7d2;
   font-weight: bold;
 }
 .license-rules li {
   background-position: 0 1px;
   background-repeat: no-repeat;
   background-size: 12px 12px;
-  float: left;
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
   margin-right: 15px;
+  margin-bottom: 5px;
   padding-left: 16px;
 }
 .license-rules li:hover {
@@ -290,9 +307,6 @@ strong {
 }
 .license-forbidden li {
   background-image: url(../images/red-dot@2x.png);
-}
-.license-rules tr:nth-child(2n) td {
-  background-color: rgba(0, 0, 0, 0.02);
 }
 
 .license-rules-sidebar li {
@@ -393,6 +407,26 @@ strong {
 .bullets li {
   list-style: disc;
   margin-left: 2em;
+}
+
+.nav-pills > li {
+  float: left;
+  display: block;
+  margin-right: 10px;
+}
+
+.nav-pills > li > a {
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.nav-pills > li.active > a {
+  background-color: #149ad4;
+  color: #f7f4ef;
+}
+
+.small {
+  font-size: 90%;
 }
 
 /* Qtip styles */
