@@ -425,6 +425,14 @@ strong {
   color: #f7f4ef;
 }
 
+.variation-tab {
+  display: none;
+}
+
+.variation-tab.active {
+  display: block;
+}
+
 .small {
   font-size: 90%;
 }

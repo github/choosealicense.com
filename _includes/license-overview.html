@@ -1,0 +1,49 @@
+<div class="license-family cf">
+  <div class="license-family-heading">
+    <h3 class="license-family-name"><a href="{{ page.permalink }}">{% if page.family-title %}{{ page.family-title }}{% else %}{{ page.title }}{% endif %}</a></h3>
+
+    <p class="license-family-description">{{ page.description }}</p>
+  </div>
+
+  <div class="license-details">
+    <div class="license-variations js-license-variations">
+      <!-- always show this div, even w/o variations, for proper spacing -->
+      <ul class="nav-pills js-nav-pills">
+        <li class="active"><a href="#" data-selected-tab="variation-gpl-v2">GPL v2</a></li>
+        <li><a href="#" data-selected-tab="variation-gpl-v3">GPL v3</a></li>
+        <li><a href="#" data-selected-tab="variation-affero-gpl">Affero GPL</a></li>
+      </ul>
+    </div>
+    <div class="variation-tab variation-gpl-v2 js-variation-tab active">
+      <table class='license-rules'>
+        <tr>
+        {% assign types = "required|permitted|forbidden" | split: "|" %}
+        {% for type in types %}
+          <th class="label">{{ type | capitalize }}</th>
+        {% endfor %}
+        </tr>
+        <tr>
+        {% for type in types %}
+          <td>
+            <ul class="license-{{ type }}">
+              {% for req in page[type] %}
+                <li class="{{ req }}">{{ site.rules[type][req].label }}</li>
+              {% endfor %}
+            </ul>
+          </td>
+        {% endfor %}
+        </tr>
+      </table>
+      <p class="small"><a href="{{ page.permalink }}">View full GPL v2 license »</a></p>
+    </div>
+    <div class="variation-tab variation-gpl-v3 js-variation-tab">
+      GPL v3 table
+      <p class="small"><a href="{{ page.permalink }}">View full GPL v3 license »</a></p>
+    </div>
+    <div class="variation-tab variation-affero-gpl js-variation-tab">
+      Affero GPL table
+      <p class="small"><a href="{{ page.permalink }}">View full Affero GPL license »</a></p>
+    </div>
+  </div>
+</div>
+
