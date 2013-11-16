@@ -17,11 +17,11 @@ permitted:
   - commercial-use
   - modifications
   - distribution
-  - sublicense
   - private-use
 
 forbidden:
   - no-liability
+  - sublicense
 
 ---
 CC0 1.0 Universal
