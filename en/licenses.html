@@ -1,0 +1,73 @@
+---
+layout: default_en
+permalink: /en/licenses/
+class: license-types
+---
+
+<h1>Featured</h1>
+
+{% for page in site.pages %}
+  {% if page.layout == "license_en" %}
+    {% if page.featured %}
+    <table class="license-rules">
+      <tr>
+        <th class="name">
+          <a href="{{ page.permalink }}">{{ page.title }}</a>
+        </th>
+        <th class="summary">
+         {{ page.description }} <a href="{{ page.permalink }}">View full license »</a>
+        </th>
+      </tr>
+      {% assign types = "required|permitted|forbidden" | split: "|" %}
+      {% for type in types %}
+      <tr>
+        <td class="label">{{ type | capitalize }}</td>
+        <td>
+          <ul class="license-{{ type }}">
+            {% for req in page[type] %}
+              <li class="{{ req }}">{{ site.rules[type][req].label }}</li>
+            {% endfor %}
+          </ul>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<h2>Other licenses</h2>
+<p>
+  Some communities tend to have specific licenses preferred by the
+  community. For example, Perl developers often choose the Artistic License.
+</p>
+
+{% for page in site.pages %}
+  {% if page.layout == "license_en" %}
+    {% if page.featured != true %}
+    <table class="license-rules">
+      <tr>
+        <th class="name">
+          <a href="{{ page.permalink }}">{{ page.title }}</a>
+        </th>
+        <th class="summary">
+         {{ page.description }} <a href="{{ page.permalink }}">View full license »</a>
+        </th>
+      </tr>
+      {% assign types = "required|permitted|forbidden" | split: "|" %}
+      {% for type in types %}
+      <tr>
+        <td class="label">{{ type | capitalize }}</td>
+        <td>
+          <ul class="license-{{ type }}">
+            {% for req in page[type] %}
+              <li class="{{ req }}">{{ site.rules[type][req].label }}</li>
+            {% endfor %}
+          </ul>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% endif %}
+  {% endif %}
+{% endfor %}

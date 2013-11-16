@@ -1,0 +1,11 @@
+{% unless page.hide_breadcrumbs == true %}
+  <ol class="breadcrumbs">
+    <li>
+      {% if page.layout == "license" %}
+        <a href="/en/">Home</a> / <a href="/en/licenses/">Licenses</a>
+      {% else %}
+        <a href="/en/">Home</a>
+      {% endif %}
+    </li>
+  </ol>
+{% endunless %}

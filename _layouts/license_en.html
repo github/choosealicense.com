@@ -1,0 +1,16 @@
+{% include header_en.html %}
+
+      <div class="cf">
+        <div class="license-body">
+          <pre id="license-text">
+
+{{ content | replace:"<","[" | replace:">","]" }}
+
+          </pre><!-- /license-text -->
+        </div><!-- /license-body -->
+
+{% include sidebar.html %}
+
+      </div><!-- /cf -->
+
+{% include footer_en.html %}
