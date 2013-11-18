@@ -1,6 +1,7 @@
 ---
 title: GPL v3
-family-title: GPL
+category: GPL
+slug: gpl-v3
 hide-from-license-list: true
 layout: license
 permalink: /licenses/gpl-v3/

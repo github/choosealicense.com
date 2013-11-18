@@ -3,6 +3,8 @@ layout: license
 permalink: /licenses/public-domain/
 class: license-types
 title: Public Domain (Unlicense)
+category: Public Domain
+slug: unlicense
 filename: UNLICENSE
 
 source: http://unlicense.org/UNLICENSE

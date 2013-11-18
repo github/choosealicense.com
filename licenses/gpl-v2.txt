@@ -1,6 +1,7 @@
 ---
 title: GPL v2
-family-title: GPL
+category: GPL
+slug: gpl-v2
 hide-from-license-list: false
 layout: license
 permalink: /licenses/gpl-v2/

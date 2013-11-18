@@ -1,7 +1,8 @@
 ---
 layout: license
 title: MIT License
-family-title: Apache
+category: mit
+slug: mit
 permalink: /licenses/mit/
 source: http://opensource.org/licenses/MIT
 

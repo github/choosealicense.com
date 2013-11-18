@@ -1,7 +1,8 @@
 ---
 layout: license
 title: LGPL v2.1
-family-title: LGPL
+category: LGPL
+slug: lgpl-v2.1
 permalink: /licenses/lgpl-v2.1/
 source: http://www.gnu.org/licenses/lgpl-2.1.txt
 

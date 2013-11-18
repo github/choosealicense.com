@@ -1,7 +1,8 @@
 ---
 layout: license
 title: Artistic License 2.0
-family-title: Artistic
+category: Artistic
+slug: artistic
 permalink: /licenses/artistic/
 source: http://www.perlfoundation.org/attachment/legal/artistic-2_0.txt
 
