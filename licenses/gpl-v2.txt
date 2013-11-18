@@ -25,6 +25,7 @@ permitted:
   - modifications
   - distribution
   - patent-grant
+  - private-use
 
 forbidden:
   - no-liability

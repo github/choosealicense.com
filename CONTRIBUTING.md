@@ -4,13 +4,13 @@ We love Pull Requests! Your contributions help make ChooseALicense.com great.
 
 ## Getting Started
 
-So you want to contribute to ChooseALicense. Great! We welcome any help we can 
-get. But first, please make sure you understand what 
+So you want to contribute to ChooseALicense. Great! We welcome any help we can
+get. But first, please make sure you understand what
 [this site is all about](http://choosealicense.com/about).
 
 It’s not a comprehensive list of all possible licenses.
 
-If you understand the goals of this site and still want to suggest a change, 
+If you understand the goals of this site and still want to suggest a change,
 please:
 
 * Make sure you have a [GitHub account](https://github.com/signup/free)
@@ -20,12 +20,12 @@ please:
 
 ## Making Changes
 
-The easiest way to make a change is to simply edit a file from your browser. 
+The easiest way to make a change is to simply edit a file from your browser.
 When you click the edit button, it will fork the repository under your account.
 Note what issue/issues your patch fixes in the commit message.
 
-For example, to [change this file](https://github.com/github/choosealicense.com/blob/master/CONTRIBUTING.md), 
-find it in the GitHub repository. Then click the `Edit` button. Make your 
+For example, to [change this file](https://github.com/github/choosealicense.com/blob/master/CONTRIBUTING.md),
+find it in the GitHub repository. Then click the `Edit` button. Make your
 changes, type in a commit message, and click the `Propose File Change` button.
 That’s it!
 

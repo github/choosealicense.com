@@ -114,7 +114,7 @@ a:hover {
 
 h1 {
   color: #443a33;
-  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 40px;
   font-weight: 900;
   line-height: 1.1;
@@ -126,6 +126,7 @@ h2 {
   opacity: 0.8;
   font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 24px;
+/*  font-size: 18px; */
   font-weight: 900;
   line-height: 1.1;
   margin-top: 24px;
@@ -134,7 +135,7 @@ h2 {
 
 h3 {
   color: #443a33;
-  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 15px;
   font-weight: 900;
   line-height: 1.1;
@@ -144,7 +145,7 @@ h3 {
 
 h5 {
   color: #443a33;
-  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 14px;
   font-weight: 900;
   line-height: 1.1;
@@ -176,7 +177,7 @@ strong {
 }
 .home h2 {
   color: #149ad4;
-  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 27px;
   font-weight: 900;
   line-height: 70px;
@@ -210,7 +211,7 @@ strong {
 }
 .triptych h3 {
   color: #443a33;
-  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 22px;
   font-weight: 900;
   line-height: 1.1;
@@ -277,6 +278,17 @@ strong {
 }
 .license-rules th.summary {
   line-height: 1.4;
+}
+.license-rules .name {
+  border-right: solid 1px #d9d7d2;
+  padding-left: 0;
+  width: 280px;
+}
+.license-rules .name a {
+  font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.1;
 }
 .license-rules .name small a {
   font-size: 16px;

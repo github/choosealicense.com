@@ -66,3 +66,4 @@ exclude:
   - Gemfile*
   - script
   - vendor
+  - app.coffee

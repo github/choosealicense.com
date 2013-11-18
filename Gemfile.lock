@@ -14,25 +14,24 @@ GEM
       mime-types (~> 1.18)
     fast-stemmer (1.0.2)
     ffi (1.9.0)
-    github-pages (4)
+    github-pages (8)
       RedCloth (= 4.2.9)
-      jekyll (= 1.1.2)
+      jekyll (= 1.2.0)
       kramdown (= 1.0.2)
       liquid (= 2.5.1)
       maruku (= 0.6.1)
       rdiscount (= 1.6.8)
       redcarpet (= 2.2.2)
-    highline (1.6.19)
-    html-proofer (0.1.1)
+    highline (1.6.20)
+    html-proofer (0.2.3)
       colored (~> 1.2)
       nokogiri (= 1.6.0)
       typhoeus (~> 0.6.3)
-    jekyll (1.1.2)
+    jekyll (1.2.0)
       classifier (~> 1.3)
       colorator (~> 0.1)
       commander (~> 4.1.3)
       directory_watcher (~> 1.4.1)
-      kramdown (~> 1.0.2)
       liquid (~> 2.5.1)
       maruku (~> 0.5)
       pygments.rb (~> 0.5.0)
@@ -43,7 +42,7 @@ GEM
     maruku (0.6.1)
       syntax (>= 1.0.0)
     mime-types (1.25)
-    mini_portile (0.5.1)
+    mini_portile (0.5.2)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
     posix-spawn (0.3.6)
@@ -63,6 +62,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ffi (= 1.9.0)
   github-pages
   html-proofer
   rake
