@@ -248,6 +248,7 @@ strong {
 .license-variations {
   height: 31px;
   padding-top: 23px;
+  margin-left: -10px;
 }
 
 .license-family-name {
