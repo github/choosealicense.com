@@ -1,6 +1,9 @@
 ---
 layout: license
 title: BSD 2-Clause license
+category: BSD
+tab-slug: bsd
+hide-from-license-list: false
 permalink: /licenses/bsd/
 
 description: A permissive license that comes in two variants, the <a href="/licenses/bsd">BSD 2-Clause</a> and <a href="/licenses/bsd-3-clause">BSD 3-Clause</a>. Both have very minute differences to the MIT license.

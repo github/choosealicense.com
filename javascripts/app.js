@@ -40,6 +40,7 @@
     function Choosealicense() {
       this.initTooltips();
       this.initClipboard();
+      this.initLicenseVariationNav();
     }
 
     Choosealicense.prototype.initTooltips = function() {
@@ -104,6 +105,19 @@
 
     Choosealicense.prototype.clipboardComplete = function(client, args) {
       return this.innerText = "Copied!";
+    };
+
+    Choosealicense.prototype.initLicenseVariationNav = function() {
+      return $(".js-nav-pills a").click(function(e) {
+        var nav, selectedTab;
+        selectedTab = $(this).data('selected-tab');
+        nav = $(this).closest('.js-nav-pills');
+        nav.find('li').removeClass('active');
+        nav.closest('.js-license-variations').siblings('.js-variation-tab').removeClass('active');
+        $(this).parent('li').addClass('active');
+        $('.' + selectedTab).addClass('active');
+        return e.preventDefault();
+      });
     };
 
     return Choosealicense;

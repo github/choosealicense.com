@@ -1,5 +1,6 @@
 ---
 title: Apache v2 License
+category: Apache
 layout: license
 permalink: /licenses/apache/
 
