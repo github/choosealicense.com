@@ -6,7 +6,7 @@ tab-slug: lgpl-v2.1
 permalink: /licenses/lgpl-v2.1/
 source: http://www.gnu.org/licenses/lgpl-2.1.txt
 
-description: Primarily used for software libraries, LGPL requires that derived works be licensed under the same license, but works that only link to it do not fall under this restriction. There are two commonly used versions of the LGPL: <a href="lgpl-v2/">LGPL v2.1</a> and <a href="lgpl-v3/">LGPL v3</a>. 
+description: Primarily used for software libraries, LGPL requires that derived works be licensed under the same license, but works that only link to it do not fall under this restriction. There are two commonly used versions of the LGPL.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
