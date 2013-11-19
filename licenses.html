@@ -4,34 +4,14 @@ permalink: licenses/
 class: license-types
 ---
 
-<h1>Featured</h1>
+<h1>Licenses</h1>
+
+<h2>Featured Licenses</h2>
 
 {% for page in site.pages %}
   {% if page.layout == "license" %}
     {% if page.featured %}
-    <table class='license-rules'>
-      <tr>
-        <th class='name'>
-          <a href="{{ page.permalink }}">{% if page.family-title %}{{ page.family-title }}{% else %}{{ page.title }}{% endif %}</a>
-        </th>
-        <th class='summary'>
-         {{ page.description }} <a href="{{ page.permalink }}">View full license »</a>
-        </th>
-      </tr>
-      {% assign types = "required|permitted|forbidden" | split: "|" %}
-      {% for type in types %}
-      <tr>
-        <td class="label">{{ type | capitalize }}</td>
-        <td>
-          <ul class="license-{{ type }}">
-            {% for req in page[type] %}
-              <li class="{{ req }}">{{ site.rules[type][req].label }}</li>
-            {% endfor %}
-          </ul>
-        </td>
-      </tr>
-      {% endfor %}
-    </table>
+      {% include license-overview.html %}
     {% endif %}
   {% endif %}
 {% endfor %}
@@ -45,29 +25,7 @@ class: license-types
 {% for page in site.pages %}
   {% if page.layout == "license" %}
     {% if page.featured != true and page.hide-from-license-list != true %}
-    <table class='license-rules'>
-      <tr>
-        <th class='name'>
-          <a href="{{ page.permalink }}">{% if page.family-title %}{{ page.family-title }}{% else %}{{ page.title }}{% endif %}</a>
-        </th>
-        <th class='summary'>
-         {{ page.description }} <a href="{{ page.permalink }}">View full license »</a>
-        </th>
-      </tr>
-      {% assign types = "required|permitted|forbidden" | split: "|" %}
-      {% for type in types %}
-      <tr>
-        <td class="label">{{ type | capitalize }}</td>
-        <td>
-          <ul class="license-{{ type }}">
-            {% for req in page[type] %}
-              <li class="{{ req }}">{{ site.rules[type][req].label }}</li>
-            {% endfor %}
-          </ul>
-        </td>
-      </tr>
-      {% endfor %}
-    </table>
+      {% include license-overview.html %}
     {% endif %}
   {% endif %}
 {% endfor %}

@@ -1,8 +1,10 @@
 ---
 layout: license
-permalink: /licenses/public-domain/
+title: The Unlicense
+category: Public Domain Dedication
+tab-slug: unlicense
+permalink: /licenses/unlicense/
 class: license-types
-title: Public Domain (Unlicense)
 filename: UNLICENSE
 
 source: http://unlicense.org/UNLICENSE
@@ -11,14 +13,14 @@ description: Because copyright is automatic in most countries, <a href="http://u
 
 how: Create a text file (typically named UNLICENSE or UNLICENSE.txt) in the root of your source code and copy the text of the license disclaimer into the file.
 
-required: 
+required:
 
 permitted:
-  - private-use
   - commercial-use
   - modifications
   - distribution
   - sublicense
+  - private-use
 
 forbidden:
   - no-liability

@@ -1,6 +1,6 @@
 ---
 title: Apache v2 License
-family-title: Apache
+category: Apache
 layout: license
 permalink: /licenses/apache/
 
@@ -24,7 +24,9 @@ permitted:
   - distribution
   - sublicense
   - patent-grant
-  
+
+  - private-use
+
 forbidden:
   - trademark-use
   - no-liability
@@ -232,4 +234,3 @@ forbidden:
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
-
