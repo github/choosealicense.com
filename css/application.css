@@ -19,7 +19,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-html {
+html {  
   line-height: 1;
 }
 
@@ -240,8 +240,9 @@ strong {
 }
 
 .license-details {
-  float: right;
+  float: left;
   width: 55%;
+  padding-left: 20px;
 }
 
 .license-variations {
