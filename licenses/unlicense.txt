@@ -2,7 +2,7 @@
 layout: license
 title: The Unlicense
 category: Public Domain Dedication
-slug: unlicense
+tab-slug: unlicense
 permalink: /licenses/unlicense/
 class: license-types
 filename: UNLICENSE

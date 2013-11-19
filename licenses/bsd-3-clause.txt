@@ -2,7 +2,7 @@
 layout: license
 title: BSD (3-Clause) License
 category: BSD
-slug: bsd-3
+tab-slug: bsd-3
 hide-from-license-list: true
 permalink: /licenses/bsd-3-clause/
 

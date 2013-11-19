@@ -2,7 +2,7 @@
 layout: license
 title: BSD 2-Clause license
 category: BSD
-slug: bsd
+tab-slug: bsd
 hide-from-license-list: false
 permalink: /licenses/bsd/
 

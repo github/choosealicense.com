@@ -1,7 +1,6 @@
 ---
 title: Apache v2 License
 category: Apache
-slug: apache
 layout: license
 permalink: /licenses/apache/
 

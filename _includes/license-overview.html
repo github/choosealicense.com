@@ -8,17 +8,19 @@
   <div class="license-details">
     <div class="license-variations js-license-variations">
       <!-- always show this div, even w/o variations, for proper spacing -->
+      {% if page.tab-slug %}
       <ul class="nav-pills js-nav-pills">
         {% for variation in site.pages %}
           {% if variation.category and variation.category == page.category %}
-        <li{% if page.slug == variation.slug %} class="active"{% endif %}><a href="#{{ variation.slug }}" data-selected-tab="variation-{{ variation.slug }}">{{ variation.title }}</a></li>
+        <li{% if page.tab-slug == variation.tab-slug %} class="active"{% endif %}><a href="#{{ variation.tab-slug }}" data-selected-tab="variation-{{ variation.tab-slug }}">{{ variation.title }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
+      {% endif %}
     </div>
     {% for variation in site.pages %}
       {% if variation.category and variation.category == page.category %}
-    <div class="variation-tab variation-{{ variation.slug }} js-variation-tab{% if page.slug == variation.slug %} active{% endif %}">
+    <div class="variation-tab variation-{{ variation.tab-slug }} js-variation-tab{% if page.tab-slug == variation.tab-slug %} active{% endif %}">
       <table class='license-rules'>
         <tr>
         {% assign types = "required|permitted|forbidden" | split: "|" %}
