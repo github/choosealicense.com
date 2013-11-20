@@ -2,7 +2,7 @@
 layout: license
 title: LGPL v2.1
 category: LGPL
-tab-slug: lgpl-v2.1
+tab-slug: lgpl-v2_1
 permalink: /licenses/lgpl-v2.1/
 source: http://www.gnu.org/licenses/lgpl-2.1.txt
 
