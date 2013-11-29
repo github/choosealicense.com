@@ -10,16 +10,16 @@ class Choosealicense
   # Selects the content of a given element
   selectText: (element) ->
     if document.body.createTextRange
-      range = document.body.createTextRange();
-      range.moveToElementText(element);
-      range.select();
+      range = document.body.createTextRange()
+      range.moveToElementText(element)
+      range.select()
     else if window.getSelection
       selection = window.getSelection()
       range = document.createRange()
 
       range.selectNodeContents(element)
-      selection.removeAllRanges();
-      selection.addRange(range);
+      selection.removeAllRanges()
+      selection.addRange(range)
 
   # Qtip position attributes for tooltips
   qtip_position:
@@ -61,15 +61,15 @@ class Choosealicense
 
   # Initializes ZeroClipboard
   initZeroClipboard: ->
-      # Backup the clipboard button's original text.
-      $(".js-clipboard-button").data "clipboard-prompt", $(".js-clipboard-button").text()
+    # Backup the clipboard button's original text.
+    $(".js-clipboard-button").data "clipboard-prompt", $(".js-clipboard-button").text()
 
-      # Hook up copy to clipboard buttons
-      clip = new ZeroClipboard $(".js-clipboard-button"),
-        moviePath: "/javascripts/ZeroClipboard.swf"
-      clip.on "mouseout", @clipboardMouseout
-      clip.on "complete", @clipboardComplete
-      clip
+    # Hook up copy to clipboard buttons
+    clip = new ZeroClipboard $(".js-clipboard-button"),
+      moviePath: "/javascripts/ZeroClipboard.swf"
+    clip.on "mouseout", @clipboardMouseout
+    clip.on "complete", @clipboardComplete
+    clip
 
   # Initializes an alternative way to copy the license for non-flash compatible
   # browsers
