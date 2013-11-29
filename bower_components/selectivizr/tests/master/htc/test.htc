@@ -1,0 +1,6 @@
+<public:attach event="ondocumentready" onevent="test()" />
+<script type="text/javascript">
+	function test() {
+		this.style.background="#0c0"
+	}
+</script>

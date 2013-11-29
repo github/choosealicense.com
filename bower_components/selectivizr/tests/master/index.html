@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+<head>
+	<title>Selectivizr test suite</title>
+	<meta charset="utf-8">
+	<script>
+
+		// selector engines available for testing.
+		var engines = {
+			"NWMatcher": {
+				"EDGE": "https://github.com/dperini/nwmatcher/raw/master/src/nwmatcher.js",
+				"1.2.3": "http://nwevents.googlecode.com/files/nwmatcher-1.2.3-min.js",
+				"1.2.2": "http://nwevents.googlecode.com/files/nwmatcher-1.2.2-min.js"
+			},
+			"DOMAssistant": {
+				"2.8": "http://domassistant.googlecode.com/files/DOMAssistant-2.8.js",
+				"2.7": "http://domassistant.googlecode.com/files/DOMAssistant-2.7.4.js"
+			},
+			"MooTools": {
+				"1.3.1": "http://mootools.net/download/get/mootools-core-1.3.1-full-nocompat-yc.js",
+				"1.3": "http://mootools.net/download/get/mootools-core-1.3-full-nocompat-yc.js",
+				"1.2.5": "http://mootools.net/download/get/mootools-1.2.5-core-yc.js"
+			},
+			"JQuery": {
+				"1.5": "http://code.jquery.com/jquery-1.5.min.js",
+				"1.4": "http://code.jquery.com/jquery-1.4.min.js",
+				"1.3": "http://code.jquery.com/jquery-1.3.min.js"
+			},
+			"Dojo": {
+				"1.5": "http://ajax.googleapis.com/ajax/libs/dojo/1.5/dojo/dojo.xd.js"
+			},
+			"Prototype": {
+				"1.7.0.0": "https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js",
+				"1.6.1": "https://ajax.googleapis.com/ajax/libs/prototype/1.6.1/prototype.js"
+			},
+			"Yahoo! YUI": {
+				"2.8.2": "http://yui.yahooapis.com/combo?2.8.2r1/build/yahoo/yahoo-min.js&2.8.2r1/build/dom/dom-min.js&2.8.2r1/build/selector/selector-min.js"
+			}
+		};
+		
+		// if no test engine is been specified, use this one as a default:
+		var defaultEngine = engines["NWMatcher"]["1.2.3"];
+		
+	</script>
+	<link rel="stylesheet" href="css/master.css" >
+	<script src="js/test.js"></script>
+	<script src="../../selectivizr.js"></script>
+</head>
+<body>
+	<h1>Selectivizr test suite</h1>
+
+	<div id="tests">
+	
+		<form method="get">
+			<p>
+				<label>Selector Engine: <select id="library" name="library"><option value="">No engine</option></select></label>
+				<input type="submit" value="Reload">
+			</p>
+		</form>
+		
+		<h2>selectivizr parsing / implementation tests</h2>
+		<p>This group of tests have been designed to designed to check various internal functions to ensure that
+			selectivizr is correctly parsing style sheet content. The results of these tests are NOT dependant on
+			the choice of selector library and should therefore always pass.</p>
+			
+		<h3>@import syntax tests</h3>
+		<table border="1" width="100%">
+			<tr id="import-url-quoted-double">
+				<td>@import url("...")</td>
+				<td>Testing @import rule with url wrapped in double quotes and prefixed with the url() qualifier
+			</tr>
+			<tr id="import-url-quoted-single">
+				<td>@import url('...')</td>
+				<td>Testing @import rule with url wrapped in single quotes and prefixed with the url() qualifier
+			</tr>
+			<tr id="import-url-unquoted">
+				<td>@import url(...)</td>
+				<td>Testing @import rule with url without quotes and prefixed with the url() qualifier
+			</tr>
+			<tr id="import-quoted-double">
+				<td>@import "..."</td>
+				<td>Testing @import rule with url wrapped in double quotes without the url() qualifier
+			</tr>
+			<tr id="import-quoted-single">
+				<td>@import '...'</td>
+				<td>Testing @import rule with url wrapped in single quotes without the url() qualifier
+			</tr>
+			<tr id="import-url-relative">
+				<td>@import url("../file.css")</td>
+				<td>Testing @import rule with a relative path
+			</tr>
+			<tr id="import-url-root-relative">
+				<td>@import url("/path/file.css")</td>
+				<td>Testing @import rule with a root-relative path (see note in 'master.css')
+			</tr>
+			<tr id="import-url-fully-qualfied">
+				<td>@import url("http://domain/path/file.css")</td>
+				<td>Testing @import rule with a fully qualified path (see note in 'master.css')
+			</tr>
+			<tr id="import-url-protocol-relative">
+				<td>@import url("//domain/path/file.css")</td>
+				<td>Testing @import rule with a protocol relative path
+			</tr>
+			<tr id="import-print">
+				<td>@import url("...") print</td>
+				<td>Testing @import rule with a print media type
+			</tr>
+			<tr id="import-screen">
+				<td>@import url("...") screen</td>
+				<td>Testing @import rule with a screen media type
+			</tr>
+		</table>
+
+		<h3>url syntax tests</h3>
+		<table border="1" width="100%">
+			<tr id="url-quoted-double">
+				<td>background: url("...")</td>
+				<td>Testing css property containing a url wrapped in double quotes and prefixed with the url() qualifier</td>
+			</tr>
+			<tr id="url-quoted-single">
+				<td>background: url('...')</td>
+				<td>Testing css property containing a url wrapped in single quotes and prefixed with the url() qualifier</td>
+			</tr>
+			<tr id="url-unquoted">
+				<td>background: url(...)</td>
+				<td>Testing css property containing a url without quotes and prefixed with the url() qualifier</td>
+			</tr>
+			<tr id="url-nows">
+				<td>background:url(...)</td>
+				<td>Testing css property containing a url without white-space between the property and value</td>
+			</tr>
+			<tr id="url-data">
+				<td>background: url("data:...")</td>
+				<td>Testing css property containing a url that uses the data scheme</td>
+			</tr>
+			<tr id="url-remote">
+				<td>background: url("http://domain/test.png")</td>
+				<td>Testing css property referring to an asset on an external domain</td>
+			</tr>
+			<tr id="url-htc">
+				<td>background: url("js/test.htc")</td>
+				<td>Testing behavior url resolves relative to the document url</td>
+			</tr>
+		</table>
+
+		<h3>iframe tests</h3>
+		<table border="1" width="100%">
+			<tr>
+				<td><iframe src="html/iframe.html" frameborder="0" scrolling="no" ></iframe></td>
+			</tr>
+			<tr>
+				<td><iframe src="html/iframe-query.html?dummyurl=/body/x" frameborder="0" scrolling="no" ></iframe></td>
+			</tr>
+			<tr>
+				<td><iframe src="html/iframe-hash.html#/test/" frameborder="0" scrolling="no" ></iframe></td>
+			</tr>
+			<tr>
+				<td><iframe src="html/domready-postload.html" frameborder="0" scrolling="no" ></iframe></td>
+			</tr>
+		</table>
+
+
+		<h2>Selector engine tests</h2>
+		<p>These tests are designed to identify problems or unsupported features with specific selector engines.</p>
+			
+		<h3>Attribute selectors</h3>
+		<table border="1" width="100%" id="attr">
+			<tr id="attr-whitespace-list" rel="a1 b2 c3">
+				<td>E[foo~="bar"]</td>
+				<td>Check attribute "foo" contains value "bar" in a list of whitespace-separated values</td>
+			</tr>
+			<tr id="attr-whitespace-list2" rel="b2">
+				<td>E[foo~="bar"]</td>
+				<td>Check attribute "foo" contains the value "bar" when "bar" is the only value in the list</td>
+			</tr>
+			<tr id="attr-hyphen-list" rel="a1-b2-c3">
+				<td>E[foo|="bar"]</td>
+				<td>Check attribute "foo" begins with the value "bar" in a list of hyphen-separated values</td>
+			</tr>
+			<tr id="attr-beginswith" rel="test">
+				<td>E[foo^="bar"]</td>
+				<td>Check attribute "foo" begins with the value "bar"</td>
+			</tr>
+			<tr id="attr-endswith" rel="test">
+				<td>E[foo$="bar"]</td>
+				<td>Check attribute "foo" ends with the value "bar"</td>
+			</tr>
+			<tr id="attr-contains" rel="test">
+				<td>E[foo*="bar"]</td>
+				<td>Check attribute "foo" contains the value "bar"</td>
+			</tr>
+			<tr id="attr-beginswith2" rel="">
+				<td>E[foo^=""]</td>
+				<td>Check library catches native IE selector bug when testing against empty attribute value</td>
+			</tr>
+
+			<tr id="attr-endswith2" rel="">
+				<td>E[foo$=""]</td>
+				<td>Check library catches native IE selector bug when testing against empty attribute value</td>
+			</tr>
+
+			<tr id="attr-contains2" rel="">
+				<td>E[foo*=""]</td>
+				<td>Check library catches native IE selector bug when testing against empty attribute value</td>
+			</tr>	
+		</table>
+		
+		<h3>UI pseudo-class tests</h3>
+		<table border="1" width="100%" id="ui">
+			<tr id="hover">
+				<td>:hover</td>
+			</tr>
+			<tr id="not-hover">
+				<td>:not(:hover)</td>
+			</tr>
+			<tr>
+				<td><input class="ui" id="focus" type="text" value=""><span>:focus</span></td>
+			</tr>
+			<tr>
+				<td><input class="ui" id="not-focus" type="text" value=""><span>:not(:focus)</span></td>
+			</tr>
+			<tr>
+				<td><input class="ui" id="enabled" type="button" value="button"><span>:enabled</span></td>
+			</tr>
+			<tr>
+				<td><input class="ui" id="disabled" type="button" value="button" disabled><span>:disabled</span></td>
+			</tr>
+			<tr>
+				<td><input class="ui" id="checked" type="checkbox" checked="checked"><span>:checked</span></td>
+			</tr>
+			<tr>
+				<td><input class="ui" id="not-checked" type="checkbox"><span>:not(:checked)</span></td>
+			</tr>
+		</table>
+		<!--[if IE 6]>
+			<p class="warn">Please note: :focus, :enabled, :disabled and :checked will show as failures in IE6. This
+			is an issue with the test tool, not selectivizr.</p>
+		<![endif]-->
+		
+		<h3>Pseudo-class tests</h3>
+		<table border="1" width="100%">
+			<tr id="root">
+				<td>:root</td>
+			</tr>
+			<tr id="target">
+				<td>:target</td>
+			</tr>
+		</table>
+		<table border="1" width="100%" id="empty">
+			<tr>
+				<td><b class="empty"></b><span>:empty</span></td>
+			</tr>
+			<tr>
+				<td><b class="empty"><!-- comment --></b><span>:empty (with HTML comment)</span></td>
+			</tr>
+			<!-- IE incorrectly collapses whitespace so this test will always pass 
+			<tr>
+				<td><b class="empty"> </b><span>:empty (whitespace)</span></td>
+			</tr>
+			-->
+			<tr>
+				<td><b class="not-empty"> &nbsp; </b><span>:not(:empty)</span></td>
+			</tr>
+			<tr>
+				<td><b class="not-empty"><a></a></b><span>:not(:empty) (empty child tag)</span></td>
+			</tr>
+			<!-- IE collapses whitespace so this test will always fail
+			<tr>
+				<td><b class="not-empty"> </b><span>:not(:empty) (whitespace)</span></td>
+			</tr>
+			-->
+		</table>
+		<table border="1" width="100%" id="xxx-child">
+			<tr id="first-child">
+				<td>:first-child</td>
+			</tr>
+			<tr id="not-first-child">
+				<td>:not(:first-child)</td>
+			</tr>
+			<tr id="nth-child">
+				<td>:nth-child(x)</td>
+			</tr>
+			<tr id="not-nth-child">
+				<td>:not(:nth-child(x))</td>
+			</tr>
+			<tr>
+				<td id="only-child">:only-child</td>
+			</tr>
+			<tr>
+				<td id="only-child2">:only-child (with HTML comment)</td>
+				<!-- comment -->
+			</tr>
+			<tr id="not-only-child">
+				<td>:not(:only-child)</td>
+			</tr>
+			<tr id="nth-last-child">
+				<td>:nth-last-child(x)</td>
+			</tr>
+			<tr id="not-nth-last-child">
+				<td>:not(:nth-last-child(x))</td>
+			</tr>
+			<tr id="not-last-child">
+				<td>:not(:last-child)</td>
+			</tr>
+			<tr id="last-child">
+				<td>:last-child</td>
+			</tr>
+		</table>
+		
+		<!--<h2>xxx-of-type pseudo-class tests</h2>-->
+		<table border="1" width="100%" id="xxx-type">
+			<caption></caption>
+			<tr id="first-of-type">
+				<td>:first-of-type</td>
+			</tr>
+			<tr id="not-first-of-type">
+				<td>:not(:first-of-type)</td>
+			</tr>
+			<tr id="nth-of-type">
+				<td>:nth-of-type(x)</td>
+			</tr>
+			<tr id="not-nth-of-type">
+				<td>:not(:nth-of-type(x))</td>
+			</tr>
+			<tr>
+				<td id="only-of-type">:only-of-type</td>
+			</tr>
+			<tr>
+				<td id="only-of-type2">:only-of-type (with HTML comment)</td>
+				<!-- comment -->
+			</tr>
+			<tr id="not-only-of-type">
+				<td>:not(:only-of-type)</td>
+			</tr>
+			<tr id="nth-last-of-type">
+				<td>:nth-last-of-type(x)</td>
+			</tr>
+			<tr id="not-nth-last-of-type">
+				<td>:not(:nth-last-of-type(x))</td>
+			</tr>
+			<tr id="not-last-of-type">
+				<td>:not(:last-of-type)</td>
+			</tr>
+			<tr id="last-of-type">
+				<td>:last-of-type</td>
+			</tr>
+		</table>
+
+		<h3>HTML5 element tests</h3>
+		<table border="1" width="100%" id="xxx-type-html5">
+			<caption></caption>
+			<tr id="html5-first-of-type">
+				<td><header>:first-of-type</header></td>
+			</tr>
+			<tr id="html5-not-first-of-type">
+				<td><header></header><header>:not(:first-of-type)<header></td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+</html>

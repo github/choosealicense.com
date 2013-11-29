@@ -1,0 +1,12 @@
+{
+  "name": "choosealicense.com",
+  "homepage": "http://choosealicense.com",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "1.10.2",
+    "qtip2": "2.1.1",
+    "selectivizr": "keithclark/selectivizr#ed2f5e3e56f059ad256cc921e24ecc0e1855f18a",
+    "zeroclipboard": "1.2.1"
+  }
+}

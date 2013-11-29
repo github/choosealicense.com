@@ -1,0 +1,168 @@
+
+/* base styles for the test page 
+------------------------------------------------------------------------------------ */
+
+@import url("common.css");
+
+
+/* import syntax checks 
+------------------------------------------------------------------------------------ */
+
+@import url("import-url-quoted-double.css");
+@import url('import-url-quoted-single.css');
+@import url(import-url-unquoted.css);
+@import "import-quoted-double.css";
+@import "import-quoted-single.css";
+@import url("nested/import-url-relative-path.css");
+
+/* 
+ * The following urls will be specific to your own server configuration and will fail  
+ * if used "out of the box". To test root-relative and fully qualifed url's you will 
+ * need to adjust the paths below:
+ */
+
+@import url("/selectivizr-git/tests/master/css/import-url-root-relative-path.css");
+@import url("http://iis/selectivizr-git/tests/master/css/import-url-fully-qualified-path.css");
+@import url("//iis/selectivizr-git/tests/master/css/import-url-protocol-relative-path.css");
+
+/* Check that media types are honoured and their defined styles don't mix */
+@import url("import-print.css") print;
+@import url("import-screen.css") screen;
+
+#import-print {
+	background: #0c0;
+}
+
+#import-screen {
+	background: #c00;
+}
+
+body {
+	padding: 10px;
+}
+
+
+/* url tests
+------------------------------------------------------------------------------------ */
+
+#url-data {
+	background: #c00 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAA3NCSVQICAjb4U/gAAAABlBMVEUAzAD///+JPJoHAAAACXBIWXMAAAsSAAALEgHS3X78AAAAFnRFWHRDcmVhdGlvbiBUaW1lADEyLzIwLzEwJjOU9gAAABh0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzT7MfTgAAAAxJREFUCJljYCANAAAAMAABQ5S3ZwAAAABJRU5ErkJggg==");
+}
+
+#url-remote {
+	background: #c00 url("https://github.com/keithclark/selectivizr/raw/master/tests/master/css/nested/test.png");
+}
+
+#url-htc {
+	behavior: url(htc/test.htc);
+}
+											
+/* pseudo-class tests
+------------------------------------------------------------------------------------ */
+
+#target:target,
+html:root #root
+											{ background: #0c0 }
+
+#empty b { display: block; height:24px;}
+#empty span { margin-top:-24px; }
+
+.empty:empty,
+.not-empty:not(:empty)					
+											{ background: #0c0 }
+
+#first-child:first-child,
+#not-first-child:not(:first-child),
+#last-child:last-child,
+#not-last-child:not(:last-child),
+#nth-child:nth-child(3),
+#not-nth-child:not(:nth-child(3)),
+#only-child:only-child,
+#only-child2:only-child,
+#nth-last-child:nth-last-child(4),
+#not-nth-last-child:not(:nth-last-child(4)),
+#not-only-child:not(:only-child)
+											{ background: #0c0 }
+																				
+#first-of-type:first-of-type,
+#not-first-of-type:not(:first-of-type),
+#last-of-type:last-of-type,
+#not-last-of-type:not(:last-of-type),
+#nth-of-type:nth-of-type(3),
+#not-nth-of-type:not(:nth-of-type(3)),
+#only-of-type:only-of-type,
+#only-of-type2:only-of-type,
+#not-only-of-type:not(:only-of-type),
+#nth-last-of-type:nth-last-of-type(4),
+#not-nth-last-of-type:not(:nth-last-of-type(4))
+											{ background: #0c0 }
+
+
+/* UI pseudo-class tests
+------------------------------------------------------------------------------------ */
+																			
+#hover:hover,
+#not-hover:not(:hover)
+											{ background: #0c0 } 
+
+/* IE6 doesn't support the '+' combinator so these will always fail so they have been 
+split from the rules declared above. Need to find a way to get these tests running 
+without using the '+' combinator so they run in IE6 */
+
+#checked:checked+span,
+#not-checked:not(:checked)+span,
+#enabled:enabled+span,
+#disabled:disabled+span,
+#focus:focus+span,
+#not-focus:not(:focus)+span
+											{ background: #0c0 }
+
+
+/* attribute selector tests
+------------------------------------------------------------------------------------ */
+																
+#attr-whitespace-list[rel~="b2"],
+#attr-whitespace-list2[rel~="b2"],
+#attr-hyphen-list[rel|="a1"],
+#attr-beginswith[rel^="te"],
+#attr-endswith[rel$="st"],
+#attr-contains[rel*="es"],
+#attr-beginswith2 td,
+#attr-endswith2 td,
+#attr-contains2 td
+											{ background: #0c0 }
+
+/* test if native atribute selectors are broken in IE7/8 */
+#attr-beginswith2[rel^=""] td,
+#attr-endswith2[rel$=""] td,
+#attr-contains2[rel*=""] td
+											{ background: #c00 }
+											
+
+/* url syntax tests
+------------------------------------------------------------------------------------ */
+											
+#url-quoted-double { background: url("nested/test.png")}
+#url-quoted-single { background: url('nested/test.png')}
+#url-unquoted { background: url(nested/test.png)}
+
+
+/* html5 tests
+------------------------------------------------------------------------------------ */
+
+#html5-first-of-type header:first-of-type,
+#html5-not-first-of-type header:not(:first-of-type),
+#html5-2 header[role='banner'] {
+	display: block;
+	background:#0c0
+}
+
+
+/* misc
+------------------------------------------------------------------------------------ */
+
+/* expose selectors that give false positives (i.e. jQuery 1.3) */
+#xxx-type tr:only-of-type:nth-of-type(2),
+#only-of-type:only-of-type:nth-of-type(2),
+#only-of-type2:only-of-type:nth-of-type(2),
+html:root:not(html:root) #root	{ background:#c00}

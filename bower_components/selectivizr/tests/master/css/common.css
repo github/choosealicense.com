@@ -1,0 +1,72 @@
+/* selectivizr test suite common CSS styles
+------------------------------------------------------------------------------------ */
+
+body {
+	padding: 0;
+	margin: 0;
+	font: 12px/24px Arial;
+}
+
+h2 {
+	font-size:160%;
+	margin: 0;
+	padding: 2em 0 0 0;
+}
+h3 {
+	font-size:120%;
+	margin: 0;
+	padding: 1.5em 0 0.25em 0;
+	border-bottom: 1px solid #666;
+	color: #444;
+}
+p {
+	color: #444;
+	line-height:1.4em;
+}
+table {
+	border: none;
+	border-spacing: 0px;
+	width: 100%;
+}
+td, th {
+	border: none;
+	padding: 0;
+	text-indent: 5px;
+	border-bottom: 1px solid #666;
+}
+tr {
+	background: #c00;
+}
+span {
+	display: block;
+}
+td,span {
+	height: 24px;
+}
+form select {
+	width: 200px;
+}
+.ui {
+	position: absolute;
+	right: 10px;
+	max-width: 60px;
+}
+td:first-child:not(:only-child) {
+	width: 300px;
+}
+iframe {
+	display: block;
+	width: 100%;
+	height: 24px;
+}
+
+b {
+	display: none;
+}
+
+.warn {
+	background: #fc6;
+	padding: 4px 8px;
+	color: #000;
+	font-weight: bold;
+}

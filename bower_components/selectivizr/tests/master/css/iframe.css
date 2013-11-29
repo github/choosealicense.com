@@ -1,0 +1,10 @@
+/* iframe test: content styles
+------------------------------------------------------------------------------------ */
+
+tr:only-child {
+	background: #0c0;
+}
+
+td:first-child:not(:only-child) {
+	width: 300px;
+}
