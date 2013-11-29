@@ -178,16 +178,16 @@ strong {
 .home h2 {
   color: #149ad4;
   font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
-  font-size: 27px;
+  font-size: 23px;
   font-weight: 900;
   line-height: 70px;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   vertical-align: middle;
   opacity: 1;
 }
 .home h2 span {
   color: #e9e6e2;
-  font-size: 70px;
+  font-size: 65px;
   padding: 0 5px;
   position: relative;
   top: 10px;
@@ -217,6 +217,23 @@ strong {
   line-height: 1.1;
   margin: 0 auto 20px auto;
   width: 220px;
+}
+
+.see-more {
+}
+.see-more li {
+  float: none;
+  width: auto;
+  margin: 0;
+  padding-left: 50px;
+  text-align: left;
+}
+.see-more li p span {
+  color: #443a33;
+  font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 1.1;
 }
 
 .situations .whatever {
