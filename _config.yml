@@ -1,3 +1,4 @@
+---
 title: ChooseALicense.com
 relative_permalinks: false
 markdown: kramdown
@@ -5,65 +6,65 @@ markdown: kramdown
 rules:
 
   required:
-    include-copyright:
-      description: Include a copy of the license and copyright notice with the code.
-      label:  License and copyright notice
-    document-changes:
-      description: Indicate significant changes made to the code.
-      label: State Changes
-    disclose-source:
-      description: Source code must be made available when distributing the software. In the case of LGPL, the source for the library (and not the entire program) must be made available.
-      label: Disclose Source
-    library-usage:
-      description: The library may be used within a non-open-source application.
-      label: Library usage
-    rename:
-      description: You must change the name of the software if you modify it.
-      label: Rename
+  - description: Include a copy of the license and copyright notice with the code.
+    label: License and copyright notice
+    tag: include-copyright
+  - description: Indicate significant changes made to the code.
+    label: State Changes
+    tag: document-changes
+  - description: Source code must be made available when distributing the software. In the case of LGPL, the source for the library (and not the entire program) must be made available.
+    label: Disclose Source
+    tag: disclose-source
+  - description: The library may be used within a non-open-source application.
+    label: Library usage
+    tag: library-usage
+  - description: You must change the name of the software if you modify it.
+    label: Rename
+    tag: rename
 
   permitted:
-    commercial-use:
-      description: This software and derivatives may be used for commercial purposes.
-      label: Commercial Use
-    modifications:
-      description: This software may be modified.
-      label: Modification
-    distribution:
-      description: You may distribute this software.
-      label: Distribution
-    sublicense:
-      description: You may grant a sublicense to modify and distribute this software to third parties not included in the license.
-      label: Sublicensing
-    private-use:
-      description: You may use and modify the software without distributing it.
-      label: Private Use
-    patent-grant:
-      description: This license provides an express grant of patent rights from the contributor to the recipient.
-      label: Patent Grant
+  - description: This software and derivatives may be used for commercial purposes.
+    label: Commercial Use
+    tag: commercial-use
+  - description: This software may be modified.
+    label: Modification
+    tag: modifications
+  - description: You may distribute this software.
+    label: Distribution
+    tag: distribution
+  - description: You may grant a sublicense to modify and distribute this software to third parties not included in the license.
+    label: Sublicensing
+    tag: sublicense
+  - description: You may use and modify the software without distributing it.
+    label: Private Use
+    tag: private-use
+  - description: This license provides an express grant of patent rights from the contributor to the recipient.
+    label: Patent Grant
+    tag: patent-grant
 
   forbidden:
-    trademark-use:
-      description: While this may be implicitly true of all licenses, this license explicitly states that you may NOT use the names, logos, or trademarks of contributors.
-      label: Use Trademark
-    no-liability:
-      description: Software is provided without warranty and the software author/license owner cannot be held liable for damages.
-      label: Hold Liable
-    no-sublicense:
-      description: You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
-      label: Sublicensing
-    modifications:
-      description: This software may not be modified.
-      label: Modification
-    distribution:
-      description: You may not distribute this software.
-      label: Distribution
-    sublicense:
-      description: You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
-      label: Sublicensing
+  - description: While this may be implicitly true of all licenses, this license explicitly states that you may NOT use the names, logos, or trademarks of contributors.
+    label: Use Trademark
+    tag: trademark-use
+  - description: Software is provided without warranty and the software author/license owner cannot be held liable for damages.
+    label: Hold Liable
+    tag: no-liability
+  - description: You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
+    label: Sublicensing
+    tag: no-sublicense
+  - description: This software may not be modified.
+    label: Modification
+    tag: modifications
+  - description: You may not distribute this software.
+    label: Distribution
+    tag: distribution
+  - description: You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
+    label: Sublicensing
+    tag: sublicense
 
 exclude:
-  - CNAME
-  - Gemfile*
-  - script
-  - vendor
-  - app.coffee
+- CNAME
+- Gemfile*
+- script
+- vendor
+- app.coffee
