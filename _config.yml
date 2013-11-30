@@ -20,6 +20,9 @@ rules:
     rename:
       description: You must change the name of the software if you modify it.
       label: Rename
+    attribution:
+      description: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work).
+      label: Attribution
 
   permitted:
     commercial-use:
@@ -60,6 +63,9 @@ rules:
     sublicense:
       description: You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
       label: Sublicensing
+    commercial-use: 
+      description: This software and derivatives may be used for commercial purposes.
+      label: Commercial Use
 
 exclude:
   - CNAME
