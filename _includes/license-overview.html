@@ -29,15 +29,19 @@
         {% endfor %}
         </tr>
         <tr>
-        {% for type in types %}
-          <td>
-            <ul class="license-{{ type }}">
-              {% for req in variation[type] %}
-                <li class="{{ req }}">{{ site.rules[type][req].label }}</li>
-              {% endfor %}
-            </ul>
-          </td>
-        {% endfor %}
+          {% for type in types %}
+            <td>
+              <ul class="license-{{ type }}">
+                {% assign rules = site.rules[type] | sort: 'label' %}
+                {% for rule_obj in rules %}
+                  {% assign req = rule_obj.tag %}
+                  {% if variation[type] contains req %}
+                    <li class="{{ req }}">{{ rule_obj.label }}</li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </td>
+          {% endfor %}
         </tr>
       </table>
       <p class="small"><a href="{{ variation.permalink }}">View full {{ variation.title }} license »</a></p>
