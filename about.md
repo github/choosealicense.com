@@ -35,4 +35,4 @@ Choosealicense.com isn't just about open source, the site itself is open source 
 
 ## Disclaimer
 
-We are not lawyers. Well most of us anyways. It is not the goal of this site to provide legal advice. The goal of this site is to provide a starting point to help you make an informed choice by providing information on popular open source licenses. If you have any questions regarding the right license for your code or any other legal issues relating to it, it's always best to consult with a professional.
+We are not lawyers. Well, most of us anyway. It is not the goal of this site to provide legal advice. The goal of this site is to provide a starting point to help you make an informed choice by providing information on popular open source licenses. If you have any questions regarding the right license for your code or any other legal issues relating to it, it's always best to consult with a professional.
