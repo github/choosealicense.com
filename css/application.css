@@ -292,11 +292,13 @@ strong {
 .license-body pre {
   font-family: Consolas, Monaco, Courier, monospace;
   font-size: 14px;
+  background-color: #fff;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid #e9e6e1;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
+  -o-border-radius: 3px;
   border-radius: 3px;
   padding: 20px;
 }
@@ -382,7 +384,7 @@ strong {
 }
 
 .bullets li {
-  list-style: disc;
+  list-style-type: disc;
   margin-left: 2em;
 }
 
@@ -459,12 +461,12 @@ strong {
 /* For modern browsers */
 .cf:before,
 .cf:after {
-    content:"";
-    display:table;
+    content: "";
+    display: table;
 }
 
 .cf:after {
-    clear:both;
+    clear: both;
 }
 
 /* For IE 6/7 (trigger hasLayout) */
