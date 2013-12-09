@@ -459,18 +459,18 @@ strong {
 }
 
 /* For modern browsers */
-.cf:before,
-.cf:after {
+.clearfix:before,
+.clearfix:after {
     content: "";
     display: table;
 }
 
-.cf:after {
+.clearfix:after {
     clear: both;
 }
 
 /* For IE 6/7 (trigger hasLayout) */
-.cf {
+.clearfix {
     zoom:1;
 }
 
