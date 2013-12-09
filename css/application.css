@@ -419,43 +419,45 @@ strong {
 {% include css/jquery.qtip.min.css %}
 
 /* Qtip styles */
-.qtip-required {
-  background-color: #d0ebf6 ! important;
-  border-color: #149ad4 ! important;
-  color: #0d648a ! important;
-  font-size: 12px ! important;
-  line-height: 1.3 ! important;
+
+.qtip-required,
+.qtip-permitted,
+.qtip-forbidden {
+  font-size: 12px;
+  line-height: 1.3;
 }
 
-.qtip-required .qtip-titlebar{
-  background-color: #149ad4 ! important;
-  color: #fff ! important;
+.qtip-required {
+  background-color: #d0ebf6;
+  border-color: #149ad4;
+  color: #0d648a;
+}
+
+.qtip-required .qtip-titlebar {
+  background-color: #149ad4;
+  color: #fff;
 }
 
 .qtip-permitted {
-  background-color: #d8f4d7 ! important;
-  border-color: #3dc637 ! important;
-  color: #298625 ! important;
-  font-size: 12px ! important;
-  line-height: 1.3 ! important;
+  background-color: #d8f4d7;
+  border-color: #3dc637;
+  color: #298625;
 }
 
-.qtip-permitted .qtip-titlebar{
-  background-color: #3dc637 ! important;
-  color: #fff ! important;
+.qtip-permitted .qtip-titlebar {
+  background-color: #3dc637;
+  color: #fff;
 }
 
 .qtip-forbidden {
-  background-color: #f4d9d8 ! important;
-  border-color: #c6403d ! important;
-  color: #812a28 ! important;
-  font-size: 12px ! important;
-  line-height: 1.3 ! important;
+  background-color: #f4d9d8;
+  border-color: #c6403d;
+  color: #812a28;
 }
 
-.qtip-forbidden .qtip-titlebar{
-  background-color: #c6403d ! important;
-  color: #fff ! important;
+.qtip-forbidden .qtip-titlebar {
+  background-color: #c6403d;
+  color: #fff;
 }
 
 /* For modern browsers */
