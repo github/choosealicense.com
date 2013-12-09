@@ -3,6 +3,7 @@ layout: nil
 ---
 
 {% include css/normalize.min.css %}
+{% include css/jquery.qtip.min.css %}
 
 body {
   background: #f5f1ec url(../images/bg.jpg);
@@ -415,8 +416,6 @@ strong {
 .small {
   font-size: 90%;
 }
-
-{% include css/jquery.qtip.min.css %}
 
 /* Qtip styles */
 
