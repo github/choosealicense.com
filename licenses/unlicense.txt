@@ -19,11 +19,11 @@ permitted:
   - commercial-use
   - modifications
   - distribution
-  - sublicense
   - private-use
 
 forbidden:
   - no-liability
+  - sublicense
 
 ---
 This is free and unencumbered software released into the public domain.
