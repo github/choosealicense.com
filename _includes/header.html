@@ -4,18 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title}}</title>
-    {% if page.description %}
-    <meta name="description" content="{{ page.description | strip_html }}">
-    {% endif %}
-
-    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    {% if page.description %}<meta name="description" content="{{ page.description | strip_html }}">{% endif %}
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Chivo:900">
-    <link rel="stylesheet" href="/css/application.css" media="screen">
+    <link rel="stylesheet" href="/css/application.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <script src="/js/modernizr.js"></script>
     <!--[if (gte IE 6)&(lte IE 8)]>
       <script src="/js/selectivizr-min.js"></script>
     <![endif]-->
-
   </head>
   <body class="{{ page.layout }}{% if page.class %} {{ page.class }}{% endif %}">
     <div class="container">
