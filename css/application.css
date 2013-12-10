@@ -45,9 +45,6 @@ a:hover {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
   font-size: 12px;
   font-weight: normal;
   padding: 5px 10px;
@@ -468,11 +465,6 @@ strong {
 
 .clearfix:after {
     clear: both;
-}
-
-/* For IE 6/7 (trigger hasLayout) */
-.clearfix {
-    zoom:1;
 }
 
 .with-love { float: right; clear: right; }
