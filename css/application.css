@@ -199,12 +199,18 @@ strong {
 }
 
 .license-details {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   float: left;
   width: 55%;
   padding-left: 20px;
 }
 
 .license-variations {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   height: 31px;
   padding-top: 23px;
   margin-left: -10px;
@@ -242,6 +248,9 @@ strong {
 }
 
 .license-rules .name {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   border-right: solid 1px #d9d7d2;
   padding-left: 0;
   width: 280px;
