@@ -96,13 +96,13 @@ class Choosealicense
   # Initializes pill navigation for license variations
   initLicenseVariationNav: ->
     $(".js-nav-pills a").click (e) ->
-      selectedTab = $(this).data('selected-tab')
-      nav = $(this).closest('.js-nav-pills')
-      nav.find('li').removeClass('active')
-      nav.closest('.js-license-variations').siblings('.js-variation-tab').removeClass('active')
+      selectedTab = $(this).data("selected-tab")
+      nav = $(this).closest(".js-nav-pills")
+      nav.find("li").removeClass("active")
+      nav.closest(".js-license-variations").siblings(".js-variation-tab").removeClass("active")
 
-      $(this).parent('li').addClass('active')
-      $('.' + selectedTab).addClass('active')
+      $(this).parent("li").addClass("active")
+      $("." + selectedTab).addClass("active")
 
       e.preventDefault()
 
