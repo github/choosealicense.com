@@ -7,7 +7,7 @@ layout: license
 permalink: /licenses/gpl-v2/
 source: http://www.gnu.org/licenses/gpl-2.0.txt
 
-description: GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. There are multiple variants of the GPL each with different requirements.
+description: GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. There are multiple variants of the GPL, each with different requirements.
 
 featured: true
 
