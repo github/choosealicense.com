@@ -32,7 +32,7 @@ small list of those that matter.
 
 # Adding a license
 
-Licenses sit in the `/licenses` folder as markdown (`.md`) files. Each license has YAML front matter describing the license's properties. The body of the markdown file should be the text of the license. The available metadata fields are:
+Licenses sit in the `/licenses` folder. Each license has YAML front matter describing the license's properties. The body of the markdown file should be the text of the license in plain text. The available metadata fields are:
 
 * `title` - The name of the license
 * `layout` - This should be `license`
@@ -42,6 +42,8 @@ Licenses sit in the `/licenses` folder as markdown (`.md`) files. Each license h
 * `how` - How to use the license, also in the sidebar
 * `required`, `permitted`, `forbidden` - bulleted list of rules applicable to the license (see below)
 * `filename` - The filename to be created on GitHub.com when a repository is initialized with this license.
+
+The text of the license should be wrapped to a 78 character width.
 
 The licenses on choosealicense.com are regularly imported to GitHub.com to be used as the list of licenses available when creating a repository. When we create a repository, we will replace certain strings in the license with variables from the repository. These can be used to create accurate copyright notices. The available variables are:
 
