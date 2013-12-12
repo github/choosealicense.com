@@ -75,7 +75,7 @@
       var clip;
       $(".js-clipboard-button").data("clipboard-prompt", $(".js-clipboard-button").text());
       clip = new ZeroClipboard($(".js-clipboard-button"), {
-        moviePath: "/javascripts/ZeroClipboard.swf"
+        moviePath: "/bower_components/zeroclipboard/ZeroClipboard.swf"
       });
       clip.on("mouseout", this.clipboardMouseout);
       clip.on("complete", this.clipboardComplete);

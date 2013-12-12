@@ -68,3 +68,5 @@ exclude:
 - script
 - vendor
 - app.coffee
+- test
+- tests

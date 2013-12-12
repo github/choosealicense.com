@@ -1,0 +1,68 @@
+{
+  "name": "zeroclipboard",
+  "title": "ZeroClipboard",
+  "version": "1.2.1",
+  "description": "The ZeroClipboard library provides an easy way to copy text to the clipboard using an invisible Adobe Flash movie and a JavaScript interface.",
+  "keywords": [
+    "flash",
+    "clipboard",
+    "copy",
+    "cut",
+    "paste",
+    "zclip",
+    "clip",
+    "clippy"
+  ],
+  "homepage": "http://zeroclipboard.org/",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/zeroclipboard/zeroclipboard/blob/master/LICENSE"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Jon Rohan",
+      "url": "http://jonrohan.me/"
+    },
+    {
+      "name": "James M. Greene",
+      "email": "james.m.greene@gmail.com",
+      "url": "http://jamesgreene.net/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeroclipboard/zeroclipboard.git"
+  },
+  "dependencies": {
+    "send": "0"
+  },
+  "devDependencies": {
+    "nodeunit": "~0.8.1",
+    "jsdom": "~0.8.3",
+    "jquery": "1.8.3",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "qunitjs": "~1.12.0",
+    "qunit-composite": "~1.0.1",
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jshint": "~0.6.3",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-qunit": "~0.2.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-chmod": "~1.0.3",
+    "grunt-mxmlc": "~0.2.0",
+    "grunt-template": "~0.2.0"
+  },
+  "main": "./ZeroClipboard.js",
+  "component": {
+    "scripts": {
+      "zeroclipboard": "ZeroClipboard.js"
+    }
+  },
+  "scripts": {
+    "test": "grunt travis --verbose"
+  }
+}

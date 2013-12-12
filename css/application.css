@@ -2,9 +2,6 @@
 layout: nil
 ---
 
-{% include css/normalize.min.css %}
-{% include css/jquery.qtip.min.css %}
-
 body {
   background: #f5f1ec url(../images/bg.jpg);
   color: #5c5855;

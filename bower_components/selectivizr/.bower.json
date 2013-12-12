@@ -1,0 +1,12 @@
+{
+  "name": "selectivizr",
+  "homepage": "https://github.com/keithclark/selectivizr",
+  "_release": "ed2f5e3e56",
+  "_resolution": {
+    "type": "commit",
+    "commit": "ed2f5e3e56f059ad256cc921e24ecc0e1855f18a"
+  },
+  "_source": "git://github.com/keithclark/selectivizr.git",
+  "_target": "ed2f5e3e56f059ad256cc921e24ecc0e1855f18a",
+  "_originalSource": "keithclark/selectivizr"
+}

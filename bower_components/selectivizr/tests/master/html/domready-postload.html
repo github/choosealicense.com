@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<style>@import "../css/common.css";</style>
+	<link rel="stylesheet" href="../css/iframe.css">
+	<script>document.write("<script src='" + window.top.selectedEngine + "'></scr" + "ipt>");</script>
+	<script>
+		window.onload = function() {
+			var s = document.createElement("script")
+			s.type="text/javascript"
+			s.src="../../../selectivizr.js"
+			document.body.appendChild(s)
+		}
+	</script>
+</head>
+<body>
+		<table>
+			<tr>
+				<td>Post DOMReady injection</td>
+				<td>Testing that selectivizr runs if dynamically injected into a page after DOMReady</td>
+			</tr>
+		</table>
+</body>
+</html>
