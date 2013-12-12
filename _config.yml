@@ -63,8 +63,14 @@ rules:
     tag: sublicense
 
 exclude:
+- app.coffee
 - CNAME
-- Gemfile*
+- CONTRIBUTING.md
+- Gemfile
+- Gemfile.lock
+- LICENSE.md
+- licenses.json
+- Rakefile
+- README.md
 - script
 - vendor
-- app.coffee
