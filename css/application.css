@@ -1,65 +1,11 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-html {  
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-a img {
-  border: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
+---
+layout: nil
+---
 
 body {
   background: #f5f1ec url(../images/bg.jpg);
   color: #5c5855;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.4;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -67,6 +13,7 @@ a {
   font-weight: bold;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
@@ -112,43 +59,36 @@ a:hover {
   background-image: linear-gradient(#e7e5e0, #d0ceca);
 }
 
-h1 {
-  color: #443a33;
+h1, h2, h3, h5 {
   font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
-  font-size: 40px;
   font-weight: 900;
   line-height: 1.1;
+}
+
+h1 {
+  color: #443a33;
+  font-size: 40px;
   margin-bottom: 25px;
 }
 
 h2 {
   color: #443a33;
   opacity: 0.8;
-  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 24px;
-/*  font-size: 18px; */
-  font-weight: 900;
-  line-height: 1.1;
   margin-top: 24px;
   margin-bottom: 10px;
 }
 
 h3 {
   color: #443a33;
-  font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 15px;
-  font-weight: 900;
-  line-height: 1.1;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
 h5 {
   color: #443a33;
-  font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 14px;
-  font-weight: 900;
-  line-height: 1.1;
   margin-bottom: 15px;
 }
 
@@ -156,9 +96,12 @@ p {
   margin-bottom: 1em;
 }
 
+ol, ul { padding: 0; margin: 0; list-style-type: none; }
+
+th, td { text-align: left; font-weight: normal; }
+
 strong {
   color: #443b34;
-  font-weight: bold;
 }
 
 .container {
@@ -170,21 +113,22 @@ strong {
   padding-top: 20px;
   text-align: center;
 }
+
 .home h1 {
   font-size: 63px;
   line-height: 1.1;
   margin-bottom: 25px;
 }
+
 .home h2 {
   color: #149ad4;
-  font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 27px;
-  font-weight: 900;
   line-height: 70px;
   margin-bottom: 45px;
   vertical-align: middle;
   opacity: 1;
 }
+
 .home h2 span {
   color: #e9e6e2;
   font-size: 70px;
@@ -197,24 +141,25 @@ strong {
   width: 900px;
   margin: 0 auto 20px;
 }
+
 .triptych li {
   width: 280px;
   float: left;
   margin-left: 27px;
   text-align: center;
 }
+
 .triptych li:first-child {
   margin-left: 0;
 }
+
 .triptych li > a {
   text-decoration: none;
 }
+
 .triptych h3 {
   color: #443a33;
-  font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 22px;
-  font-weight: 900;
-  line-height: 1.1;
   margin: 0 auto 20px auto;
   width: 220px;
 }
@@ -222,9 +167,11 @@ strong {
 .situations .whatever {
   margin-top: 16px;
 }
+
 .situations .copyleft {
   margin-top: 3px;
 }
+
 .situations .button {
   margin-top: 20px;
 }
@@ -252,10 +199,7 @@ strong {
 }
 
 .license-family-name {
-  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 28px;
-  font-weight: 900;
-  line-height: 1.1;
 }
 
 .license-family-description {
@@ -269,36 +213,41 @@ strong {
   margin-bottom: 12px;
   width: 100%;
 }
+
 .license-rules th,
 .license-rules td {
   width: 33%;
 }
+
 .license-rules th {
   font-size: 15px;
   padding: 5px 10px 5px 0;
   vertical-align: bottom;
 }
+
 .license-rules th.summary {
   line-height: 1.4;
 }
+
 .license-rules .name {
   border-right: solid 1px #d9d7d2;
   padding-left: 0;
   width: 280px;
 }
+
 .license-rules .name a {
-  font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 28px;
-  font-weight: 900;
-  line-height: 1.1;
 }
+
 .license-rules .name small a {
   font-size: 16px;
 }
+
 .license-rules td {
   padding: 4px 0 12px 0;
   vertical-align: top;
 }
+
 .license-rules .label {
   font-weight: bold;
 }
@@ -310,22 +259,25 @@ strong {
   margin-bottom: 5px;
   padding-left: 16px;
 }
+
 .license-rules li:hover {
   color: #443a33;
 }
+
 .license-required li {
   background-image: url(../images/blue-dot@2x.png);
 }
+
 .license-permitted li {
   background-image: url(../images/green-dot@2x.png);
 }
+
 .license-forbidden li {
   background-image: url(../images/red-dot@2x.png);
 }
 
 .license-rules-sidebar li {
   float: none;
-  display: block;
   padding-bottom: 3px;
 }
 
@@ -338,11 +290,13 @@ strong {
 .license-body pre {
   font-family: Consolas, Monaco, Courier, monospace;
   font-size: 14px;
+  background-color: #fff;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid #e9e6e1;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
+  -o-border-radius: 3px;
   border-radius: 3px;
   padding: 20px;
 }
@@ -357,16 +311,20 @@ strong {
   margin-top: -110px;
   width: 100%;
 }
+
 .sidebar .how-to-apply {
   font-size: 12px;
   margin-top: -15px;
 }
+
 .sidebar .how-to-apply p {
   line-height: 1.5;
 }
+
 .sidebar .how-to-apply p:last-child {
   margin-bottom: 0;
 }
+
 .sidebar .note {
   font-style: italic;
 }
@@ -375,6 +333,7 @@ strong {
   margin-top: 4px;
   margin-bottom: 30px;
 }
+
 .sidebar .source a {
   padding-left: 20px;
   background: transparent url(../images/source@2x.png) 0 1px no-repeat;
@@ -382,8 +341,7 @@ strong {
 }
 
 .sidebar .boilerplate {
-  font-family: 'courier new', courier;
-  font-size: 0.7em;
+  font: 0.7em "Courier new", courier;
 }
 
 .projects-with-license li {
@@ -399,16 +357,21 @@ strong {
   text-align: left;
   line-height: 1.5;
 }
+
 .site-footer a {
   color: #443a33;
   font-weight: normal;
 }
+
 .site-footer p {
   float: left;
+  margin-top: 0;
 }
+
 .site-footer nav {
   float: right;
 }
+
 .site-footer nav a {
   display: inline-block;
   margin-left: 20px;
@@ -419,7 +382,7 @@ strong {
 }
 
 .bullets li {
-  list-style: disc;
+  list-style-type: disc;
   margin-left: 2em;
 }
 
@@ -452,59 +415,61 @@ strong {
 }
 
 /* Qtip styles */
-.qtip-required {
-  background-color: #d0ebf6 ! important;
-  border-color: #149ad4 ! important;
-  color: #0d648a ! important;
-  font-size: 12px ! important;
-  line-height: 1.3 ! important;
+
+.qtip-required,
+.qtip-permitted,
+.qtip-forbidden {
+  font-size: 12px;
+  line-height: 1.3;
 }
 
-.qtip-required .qtip-titlebar{
-  background-color: #149ad4 ! important;
-  color: #fff ! important;
+.qtip-required {
+  background-color: #d0ebf6;
+  border-color: #149ad4;
+  color: #0d648a;
+}
+
+.qtip-required .qtip-titlebar {
+  background-color: #149ad4;
+  color: #fff;
 }
 
 .qtip-permitted {
-  background-color: #d8f4d7 ! important;
-  border-color: #3dc637 ! important;
-  color: #298625 ! important;
-  font-size: 12px ! important;
-  line-height: 1.3 ! important;
+  background-color: #d8f4d7;
+  border-color: #3dc637;
+  color: #298625;
 }
 
-.qtip-permitted .qtip-titlebar{
-  background-color: #3dc637 ! important;
-  color: #fff ! important;
+.qtip-permitted .qtip-titlebar {
+  background-color: #3dc637;
+  color: #fff;
 }
 
 .qtip-forbidden {
-  background-color: #f4d9d8 ! important;
-  border-color: #c6403d ! important;
-  color: #812a28 ! important;
-  font-size: 12px ! important;
-  line-height: 1.3 ! important;
+  background-color: #f4d9d8;
+  border-color: #c6403d;
+  color: #812a28;
 }
 
-.qtip-forbidden .qtip-titlebar{
-  background-color: #c6403d ! important;
-  color: #fff ! important;
+.qtip-forbidden .qtip-titlebar {
+  background-color: #c6403d;
+  color: #fff;
 }
 
 /* For modern browsers */
-.cf:before,
-.cf:after {
-    content:"";
-    display:table;
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
 }
 
-.cf:after {
-    clear:both;
+.clearfix:after {
+    clear: both;
 }
 
 /* For IE 6/7 (trigger hasLayout) */
-.cf {
+.clearfix {
     zoom:1;
 }
 
-#with-♥ { float: right; clear: right;}
+.with-love { float: right; clear: right; }

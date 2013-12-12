@@ -6,7 +6,7 @@
  * Released under the MIT, GPL licenses
  * http://jquery.org/license
  *
- * Date: Wed Sep 11 2013 11:17 GMT+0100+0100
+ * Date: Wed Sep 11 2013 11:28 GMT+0100+0100
  * Plugins: None
  * Styles: None
  */

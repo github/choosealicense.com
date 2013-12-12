@@ -1,7 +1,7 @@
 {
     "name": "qtip2",
     "description": "Introducing... qTip2. The second generation of the advanced qTip plugin for the ever popular jQuery framework.",
-    "version": "2.1.1",
+    "version": "2.2.0",
     "homepage": "http://qtip2.com",
     "location": "https://github.com/qTip2/bower",
     "repository": {

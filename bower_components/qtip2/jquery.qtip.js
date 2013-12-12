@@ -1,12 +1,12 @@
 /*
- * qTip2 - Pretty powerful tooltips - v2.1.1
+ * qTip2 - Pretty powerful tooltips - v2.2.0
  * http://qtip2.com
  *
  * Copyright (c) 2013 Craig Michael Thompson
  * Released under the MIT, GPL licenses
  * http://jquery.org/license
  *
- * Date: Wed Sep 11 2013 11:17 GMT+0100+0100
+ * Date: Mon Nov 25 2013 11:54 GMT+0000
  * Plugins: tips modal viewport svg imagemap ie6
  * Styles: basic css3
  */
@@ -124,6 +124,10 @@ BROWSER = {
 }
 PROTOTYPE = QTip.prototype;
 
+PROTOTYPE._when = function(deferreds) {
+	return $.when.apply($, deferreds);
+};
+
 PROTOTYPE.render = function(show) {
 	if(this.rendered || this.destroyed) { return this; } // If tooltip has already been rendered, exit
 
@@ -209,7 +213,7 @@ PROTOTYPE.render = function(show) {
 	this._assignEvents();
 
 	// When deferreds have completed
-	$.when.apply($, deferreds).then(function() {
+	this._when(deferreds).then(function() {
 		// tooltiprender event
 		self._trigger('render');
 
@@ -257,7 +261,9 @@ PROTOTYPE.destroy = function(immediate) {
 		this._unassignEvents();
 
 		// Remove api object and ARIA attributes
-		target.removeData(NAMESPACE).removeAttr(ATTR_ID)
+		target.removeData(NAMESPACE)
+			.removeAttr(ATTR_ID)
+			.removeAttr(ATTR_HAS)
 			.removeAttr('aria-describedby');
 
 		// Reset old title attribute if removed
@@ -278,7 +284,7 @@ PROTOTYPE.destroy = function(immediate) {
 	}
 
 	// If an immediate destory is needed
-	if(immediate !== TRUE && this.rendered) {
+	if((immediate !== TRUE || this.triggering === 'hide') && this.rendered) {
 		this.tooltip.one('tooltiphidden', $.proxy(process, this));
 		!this.triggering && this.hide();
 	}
@@ -600,24 +606,31 @@ PROTOTYPE.set = function(option, value) {
 
 	// Append new content if its a DOM array and show it if hidden
 	if(content.jquery && content.length > 0) {
-		element.children().detach().end().append( content.css({ display: 'block', visibility: 'visible' }) );
+		element.empty().append(
+			content.css({ display: 'block', visibility: 'visible' })
+		);
 	}
 
 	// Content is a regular string, insert the new content
 	else { element.html(content); }
 
-	// If imagesLoaded is included, ensure images have loaded and return promise
+	// Wait for content to be loaded, and reposition
+	return this._waitForContent(element).then(function(images) {
+		if(images.images && images.images.length && self.rendered && self.tooltip[0].offsetWidth > 0) {
+			self.reposition(cache.event, !images.length);
+		}
+	});
+};
+
+PROTOTYPE._waitForContent = function(element) {
+	var cache = this.cache;
+	
+	// Set flag
 	cache.waiting = TRUE;
 
-	return ( $.fn.imagesLoaded ? element.imagesLoaded() : $.Deferred().resolve($([])) )
-		.done(function(images) {
-			cache.waiting = FALSE;
-
-			// Reposition if rendered
-			if(images.length && self.rendered && self.tooltip[0].offsetWidth > 0) {
-				self.reposition(cache.event, !images.length);
-			}
-		})
+	// If imagesLoaded is included, ensure images have loaded and return promise
+	return ( $.fn.imagesLoaded ? element.imagesLoaded() : $.Deferred().resolve([]) )
+		.done(function() { cache.waiting = FALSE; })
 		.promise();
 };
 
@@ -725,14 +738,14 @@ PROTOTYPE._removeTitle = function(reposition)
 		
 		// If the passed event has no coordinates (such as a scroll event)
 		else if(!event || !event.pageX) {
-			// Use cached event for resize/scroll events
-			if(event && (event.type === 'resize' || event.type === 'scroll')) {
-				event = cache.event;
+			// Use the mouse origin that caused the show event, if distance hiding is enabled
+			if((!adjust.mouse || this.options.show.distance) && cache.origin && cache.origin.pageX) {
+				event =  cache.origin;
 			}
 
-			// Use the mouse origin that caused the show event, if distance hiding is enabled
-			else if((!adjust.mouse || this.options.show.distance) && cache.origin && cache.origin.pageX) {
-				event =  cache.origin;
+			// Use cached event for resize/scroll events
+			else if(!event || (event && (event.type === 'resize' || event.type === 'scroll'))) {
+				event = cache.event;
 			}
 		}
 
@@ -758,8 +771,13 @@ PROTOTYPE._removeTitle = function(reposition)
 	// Target wasn't mouse or absolute...
 	else {
 		// Check if event targetting is being used
-		if(target === 'event' && event && event.target && event.type !== 'scroll' && event.type !== 'resize') {
-			cache.target = $(event.target);
+		if(target === 'event') {
+			if(event && event.target && event.type !== 'scroll' && event.type !== 'resize') {
+				cache.target = $(event.target);
+			}
+			else if(!event.target) {
+				cache.target = this.elements.target;
+			}
 		}
 		else if(target !== 'event'){
 			cache.target = $(target.jquery ? target : this.elements.target);
@@ -789,7 +807,7 @@ PROTOTYPE._removeTitle = function(reposition)
 		}
 
 		// Check if the target is an SVG element
-		else if(PLUGINS.svg && target[0].ownerSVGElement) {
+		else if(PLUGINS.svg && target && target[0].ownerSVGElement) {
 			pluginCalculations = PLUGINS.svg(this, target, at, PLUGINS.viewport ? method : FALSE);
 		}
 
@@ -974,7 +992,7 @@ PROTOTYPE.toggle = function(state, event) {
 		posOptions = this.options.position,
 		contentOptions = this.options.content,
 		width = this.tooltip.css('width'),
-		visible = this.tooltip[0].offsetWidth > 0,
+		visible = this.tooltip.is(':visible'),
 		animate = state || opts.target.length === 1,
 		sameTarget = !event || opts.target.length < 2 || cache.target[0] === event.target,
 		identicalState, allow, showEvent, delay, after;
@@ -987,6 +1005,9 @@ PROTOTYPE.toggle = function(state, event) {
 
 	// Fire tooltip(show/hide) event and check if destroyed
 	allow = !identicalState ? !!this._trigger(type, [90]) : NULL;
+
+	// Check to make sure the tooltip wasn't destroyed in the callback
+	if(this.destroyed) { return this; }
 
 	// If the user didn't stop the method prematurely and we're showing the tooltip, focus it
 	if(allow !== FALSE && state) { this.focus(event); }
@@ -1149,8 +1170,14 @@ PROTOTYPE.blur = function(event) {
 ;PROTOTYPE.disable = function(state) {
 	if(this.destroyed) { return this; }
 
-	if('boolean' !== typeof state) {
+	// If 'toggle' is passed, toggle the current state
+	if(state === 'toggle') {
 		state = !(this.rendered ? this.tooltip.hasClass(CLASS_DISABLED) : this.disabled);
+	}
+
+	// Disable if no state passed
+	else if('boolean' !== typeof state) {
+		state = TRUE;
 	}
 
 	if(this.rendered) {
@@ -1396,11 +1423,42 @@ PROTOTYPE._trigger = function(type, args, event) {
 	var callback = $.Event('tooltip'+type);
 	callback.originalEvent = (event && $.extend({}, event)) || this.cache.event || NULL;
 
-	this.triggering = TRUE;
+	this.triggering = type;
 	this.tooltip.trigger(callback, [this].concat(args || []));
 	this.triggering = FALSE;
 
 	return !callback.isDefaultPrevented();
+};
+
+PROTOTYPE._bindEvents = function(showEvents, hideEvents, showTarget, hideTarget, showMethod, hideMethod) {
+	// If hide and show targets are the same...
+	if(hideTarget.add(showTarget).length === hideTarget.length) {
+		var toggleEvents = [];
+
+		// Filter identical show/hide events
+		hideEvents = $.map(hideEvents, function(type) {
+			var showIndex = $.inArray(type, showEvents);
+
+			// Both events are identical, remove from both hide and show events
+			// and append to toggleEvents
+			if(showIndex > -1) {
+				toggleEvents.push( showEvents.splice( showIndex, 1 )[0] );
+				return;
+			}
+
+			return type;
+		});
+
+		// Toggle events are special case of identical show/hide events, which happen in sequence
+		toggleEvents.length && this._bind(showTarget, toggleEvents, function(event) {
+			var state = this.rendered ? this.tooltip[0].offsetWidth > 0 : false;
+			(state ? hideMethod : showMethod).call(this, event);
+		});
+	}
+
+	// Apply show/hide/toggle events
+	this._bind(showTarget, showEvents, showMethod);
+	this._bind(hideTarget, hideEvents, hideMethod);
 };
 
 PROTOTYPE._assignInitialEvents = function(event) {
@@ -1445,16 +1503,14 @@ PROTOTYPE._assignInitialEvents = function(event) {
 		);
 	}
 
-	// Bind events to target
-	this._bind(showTarget, showEvents, hoverIntent);
-	if(options.show.event !== options.hide.event) {
-		this._bind(hideTarget, hideEvents, function() { clearTimeout(this.timers.show); });
-	}
+	// Filter and bind events
+	this._bindEvents(showEvents, hideEvents, showTarget, hideTarget, hoverIntent, function() {
+		clearTimeout(this.timers.show);
+	});
 
 	// Prerendering is enabled, create tooltip now
 	if(options.show.ready || options.prerender) { hoverIntent.call(this, event); }
 };
-
 
 // Event assignment method
 PROTOTYPE._assignEvents = function() {
@@ -1472,8 +1528,8 @@ PROTOTYPE._assignEvents = function() {
 		windowTarget = $(window),
 
 		showEvents = options.show.event ? $.trim('' + options.show.event).split(' ') : [],
-		hideEvents = options.hide.event ? $.trim('' + options.hide.event).split(' ') : [],
-		toggleEvents = [];
+		hideEvents = options.hide.event ? $.trim('' + options.hide.event).split(' ') : [];
+
 
 	// Assign passed event callbacks
 	$.each(options.events, function(name, callback) {
@@ -1528,25 +1584,8 @@ PROTOTYPE._assignEvents = function() {
 		this._bind(hideTarget.add(tooltip), QTIP.inactiveEvents, inactiveMethod, '-inactive');
 	}
 
-	// Apply hide events (and filter identical show events)
-	hideEvents = $.map(hideEvents, function(type) {
-		var showIndex = $.inArray(type, showEvents);
-
-		// Both events and targets are identical, apply events using a toggle
-		if((showIndex > -1 && hideTarget.add(showTarget).length === hideTarget.length)) {
-			toggleEvents.push( showEvents.splice( showIndex, 1 )[0] ); return;
-		}
-
-		return type;
-	});
-
-	// Apply show/hide/toggle events
-	this._bind(showTarget, showEvents, showMethod);
-	this._bind(hideTarget, hideEvents, hideMethod);
-	this._bind(showTarget, toggleEvents, function(event) {
-		(this.tooltip[0].offsetWidth > 0 ? hideMethod : showMethod).call(this, event);
-	});
-
+	// Filter and bind events
+	this._bindEvents(showEvents, hideEvents, showTarget, hideTarget, showMethod, hideMethod);
 
 	// Mouse movement bindings
 	this._bind(showTarget.add(tooltip), 'mousemove', function(event) {
@@ -1776,6 +1815,9 @@ QTIP = $.fn.qtip = function(options, notation, newValue)
 	}
 };
 
+// Expose class
+$.qtip = QTip;
+
 // Populated in render method
 QTIP.api = {};
 ;$.each({
@@ -1848,7 +1890,7 @@ if(!$.ui) {
 }
 
 ;// qTip version
-QTIP.version = '2.1.1';
+QTIP.version = '2.2.0';
 
 // Base ID for all qTips
 QTIP.nextid = 0;
@@ -1930,7 +1972,7 @@ QTIP.defaults = {
 	}
 };
 
-;var TIP, createVML, 
+;var TIP, 
 
 // .bind()/.on() namespace
 TIPNS = '.qtip-tip',
@@ -1945,9 +1987,6 @@ IMPORTANT = ' !important',
 
 // Check if the browser supports <canvas/> elements
 HASCANVAS = !!document.createElement('canvas').getContext,
-
-// Fetch device pixel ratio
-PIXEL_RATIO = window.devicePixelRatio || 1,
 
 // Invalid colour values used in parseColours()
 INVALID = /rgba?\(0, 0, 0(, 0)?\)|transparent|#123456/i;
@@ -1984,12 +2023,22 @@ function intCss(elem, prop) {
 
 // VML creation (for IE only)
 if(!HASCANVAS) {
-	createVML = function(tag, props, style) {
+	var createVML = function(tag, props, style) {
 		return '<qtipvml:'+tag+' xmlns="urn:schemas-microsoft.com:vml" class="qtip-vml" '+(props||'')+
 			' style="behavior: url(#default#VML); '+(style||'')+ '" />';
 	};
 }
 
+// Canvas only definitions
+else {
+	var PIXEL_RATIO = window.devicePixelRatio || 1,
+		BACKING_STORE_RATIO = (function() {
+			var context = document.createElement('canvas').getContext('2d');
+			return context.backingStorePixelRatio || context.webkitBackingStorePixelRatio || context.mozBackingStorePixelRatio || 
+					context.msBackingStorePixelRatio || context.oBackingStorePixelRatio || 1;
+		}()),
+		SCALE = PIXEL_RATIO / BACKING_STORE_RATIO;
+}
 
 
 function Tip(qtip, options) {
@@ -2203,8 +2252,8 @@ $.extend(Tip.prototype, {
 			curSize = this.size,
 			mimic = options.mimic,
 			round = Math.round,
-			color, precedance, context, scale, scaledSize,
-			coords, bigCoords, translate, newSize, border, backingStoreRatio;
+			color, precedance, context,
+			coords, bigCoords, translate, newSize, border, BACKING_STORE_RATIO;
 
 		// Re-determine tip if not already set
 		if(!corner) { corner = this.qtip.cache.corner || this.corner; }
@@ -2237,8 +2286,8 @@ $.extend(Tip.prototype, {
 			// Grab border width
 			border = this.border = this._parseWidth(corner, corner[corner.precedance]);
 
-			// If border width isn't zero, use border color as fill (1.0 style tips)
-			if(options.border && border < 1) { color[0] = color[1]; }
+			// If border width isn't zero, use border color as fill if it's not invalid (1.0 style tips)
+			if(options.border && border < 1 && !INVALID.test(color[1])) { color[0] = color[1]; }
 
 			// Set border width (use detected border width if options.border is true)
 			this.border = border = options.border !== TRUE ? options.border : border;
@@ -2276,15 +2325,12 @@ $.extend(Tip.prototype, {
 			context.restore(); context.save();
 			context.clearRect(0,0,6000,6000);
 			
-			backingStoreRatio = context.webkitBackingStorePixelRatio || context.mozBackingStorePixelRatio || context.msBackingStorePixelRatio || context.oBackingStorePixelRatio || context.backingStorePixelRatio || 1;
-			scale = PIXEL_RATIO / backingStoreRatio;
-
 			// Calculate coordinates
-			coords = this._calculateTip(mimic, curSize, scale);
-			bigCoords = this._calculateTip(mimic, this.size, scale);
+			coords = this._calculateTip(mimic, curSize, SCALE);
+			bigCoords = this._calculateTip(mimic, this.size, SCALE);
 
 			// Set the canvas size using calculated size
-			inner.attr(WIDTH, newSize[0] * scale).attr(HEIGHT, newSize[1] * scale);
+			inner.attr(WIDTH, newSize[0] * SCALE).attr(HEIGHT, newSize[1] * SCALE);
 			inner.css(WIDTH, newSize[0]).css(HEIGHT, newSize[1]);
 
 			// Draw the outer-stroke tip
@@ -2293,7 +2339,7 @@ $.extend(Tip.prototype, {
 			context.fill();
 
 			// Draw the actual tip
-			context.translate(translate[0] * scale, translate[1] * scale);
+			context.translate(translate[0] * SCALE, translate[1] * SCALE);
 			this._drawCoords(context, coords);
 			context.fillStyle = color[0];
 			context.fill();
@@ -2768,7 +2814,7 @@ $.extend(Modal.prototype, {
 				if(oEvent && event.type === 'tooltiphide' && /mouse(leave|enter)/.test(oEvent.type) && $(oEvent.relatedTarget).closest(OVERLAY.elem[0]).length) {
 					try { event.preventDefault(); } catch(e) {}
 				}
-				else if(!oEvent || (oEvent && !oEvent.solo)) {
+				else if(!oEvent || (oEvent && oEvent.type !== 'tooltipsolo')) {
 					this.toggle(event, event.type === 'tooltipshow', duration);
 				}
 			}
@@ -2896,40 +2942,36 @@ $.extend(TRUE, QTIP.defaults, {
 		container = posOptions.container,
 		cache = api.cache,
 		adjusted = { left: 0, top: 0 },
-		fixed, newMy, newClass;
+		fixed, newMy, newClass, containerOffset, containerStatic,
+		viewportWidth, viewportHeight, viewportScroll, viewportOffset;
 
-	// If viewport is not a jQuery element, or it's the window/document or no adjustment method is used... return
+	// If viewport is not a jQuery element, or it's the window/document, or no adjustment method is used... return
 	if(!viewport.jquery || target[0] === window || target[0] === document.body || adjust.method === 'none') {
 		return adjusted;
 	}
 
+	// Cach container details
+	containerOffset = container.offset() || adjusted;
+	containerStatic = container.css('position') === 'static';
+
 	// Cache our viewport details
 	fixed = tooltip.css('position') === 'fixed';
-	viewport = {
-		elem: viewport,
-		width: viewport[0] === window ? viewport.width() : viewport.outerWidth(FALSE),
-		height: viewport[0] === window ? viewport.height() : viewport.outerHeight(FALSE),
-		scrollleft: fixed ? 0 : viewport.scrollLeft(),
-		scrolltop: fixed ? 0 : viewport.scrollTop(),
-		offset: viewport.offset() || { left: 0, top: 0 }
-	};
-	container = {
-		elem: container,
-		scrollLeft: container.scrollLeft(),
-		scrollTop: container.scrollTop(),
-		offset: container.offset() || { left: 0, top: 0 }
-	};
+	viewportWidth = viewport[0] === window ? viewport.width() : viewport.outerWidth(FALSE);
+	viewportHeight = viewport[0] === window ? viewport.height() : viewport.outerHeight(FALSE);
+	viewportScroll = { left: fixed ? 0 : viewport.scrollLeft(), top: fixed ? 0 : viewport.scrollTop() };
+	viewportOffset = viewport.offset() || adjusted;
 
 	// Generic calculation method
 	function calculate(side, otherSide, type, adjust, side1, side2, lengthName, targetLength, elemLength) {
 		var initialPos = position[side1],
-			mySide = my[side], atSide = at[side],
+			mySide = my[side],
+			atSide = at[side],
 			isShift = type === SHIFT,
-			viewportScroll = -container.offset[side1] + viewport.offset[side1] + viewport['scroll'+side1],
 			myLength = mySide === side1 ? elemLength : mySide === side2 ? -elemLength : -elemLength / 2,
 			atLength = atSide === side1 ? targetLength : atSide === side2 ? -targetLength : -targetLength / 2,
-			overflow1 = viewportScroll - initialPos,
-			overflow2 = initialPos + elemLength - viewport[lengthName] - viewportScroll,
+			sideOffset = viewportScroll[side1] + viewportOffset[side1] - (containerStatic ? 0 : containerOffset[side1]),
+			overflow1 = sideOffset - initialPos,
+			overflow2 = initialPos + elemLength - (lengthName === WIDTH ? viewportWidth : viewportHeight) - sideOffset,
 			offset = myLength - (my.precedance === side || mySide === my[otherSide] ? atLength : 0) - (atSide === CENTER ? targetLength / 2 : 0);
 
 		// shift
@@ -2939,13 +2981,20 @@ $.extend(TRUE, QTIP.defaults, {
 			// Adjust position but keep it within viewport dimensions
 			position[side1] += overflow1 > 0 ? overflow1 : overflow2 > 0 ? -overflow2 : 0;
 			position[side1] = Math.max(
-				-container.offset[side1] + viewport.offset[side1],
+				-containerOffset[side1] + viewportOffset[side1],
 				initialPos - offset,
 				Math.min(
-					Math.max(-container.offset[side1] + viewport.offset[side1] + viewport[lengthName], initialPos + offset),
-					position[side1]
+					Math.max(
+						-containerOffset[side1] + viewportOffset[side1] + (lengthName === WIDTH ? viewportWidth : viewportHeight),
+						initialPos + offset
+					),
+					position[side1],
+
+					// Make sure we don't adjust complete off the element when using 'center'
+					mySide === 'center' ? initialPos - myLength : 1E9
 				)
 			);
+
 		}
 
 		// flip/flipinvert
@@ -2989,7 +3038,8 @@ $.extend(TRUE, QTIP.defaults, {
 	}
 
 	return adjusted;
-};;PLUGINS.polys = {
+};
+;PLUGINS.polys = {
 	// POLY area coordinate calculator
 	//	Special thanks to Ed Cradock for helping out with this.
 	//	Uses a binary search algorithm to find suitable coordinates.
@@ -3108,27 +3158,16 @@ $.extend(TRUE, QTIP.defaults, {
 	var doc = $(document),
 		elem = svg[0],
 		root = $(elem.ownerSVGElement),
-		xScale = 1, yScale = 1,
+		ownerDocument = elem.ownerDocument,
+		strokeWidth2 = (parseInt(svg.css('stroke-width'), 10) || 0) / 2,
 		complex = true,
-		rootWidth, rootHeight,
-		mtx, transformed, viewBox,
+		frameOffset, mtx, transformed, viewBox,
 		len, next, i, points,
 		result, position, dimensions;
 
 	// Ascend the parentNode chain until we find an element with getBBox()
 	while(!elem.getBBox) { elem = elem.parentNode; }
 	if(!elem.getBBox || !elem.parentNode) { return FALSE; }
-
-	// Determine dimensions where possible
-	rootWidth = root.attr('width') || root.width() || parseInt(root.css('width'), 10);
-	rootHeight = root.attr('height') || root.height() || parseInt(root.css('height'), 10);
-
-	// Add stroke characteristics to scaling
-	var strokeWidth2 = (parseInt(svg.css('stroke-width'), 10) || 0) / 2;
-	if(strokeWidth2) {
-		xScale += strokeWidth2 / rootWidth;
-		yScale += strokeWidth2 / rootHeight;
-	}
 
 	// Determine which shape calculation to use
 	switch(elem.nodeName) {
@@ -3191,17 +3230,21 @@ $.extend(TRUE, QTIP.defaults, {
 			position.left = transformed.x;
 			position.top = transformed.y;
 		}
+	}
 
-		// Calculate viewBox characteristics
-		if(root.viewBox && (viewBox = root.viewBox.baseVal) && viewBox.width && viewBox.height) {
-			xScale *= rootWidth / viewBox.width;
-			yScale *= rootHeight / viewBox.height;
+	// Check the element is not in a child document, and if so, adjust for frame elements offset
+	if(ownerDocument !== document) {
+		var frameOffset = $((ownerDocument.defaultView || ownerDocument.parentWindow).frameElement).offset();
+		if(frameOffset) {
+			position.left += frameOffset.left;
+			position.top += frameOffset.top;
 		}
 	}
 
-	// Adjust by scroll offset
-	position.left += doc.scrollLeft();
-	position.top += doc.scrollTop();
+	// Adjust by scroll offset of owner document
+	ownerDocument = $(ownerDocument);
+	position.left += ownerDocument.scrollLeft();
+	position.top += ownerDocument.scrollTop();
 
 	return result;
 };;PLUGINS.imagemap = function(api, area, corner, adjustMethod)
@@ -3210,8 +3253,8 @@ $.extend(TRUE, QTIP.defaults, {
 
 	var shape = area.attr('shape').toLowerCase().replace('poly', 'polygon'),
 		image = $('img[usemap="#'+area.parent('map').attr('name')+'"]'),
-		coordsString = area.attr('coords'),
-		coordsArray = coordsString.split(','),
+		coordsString = $.trim(area.attr('coords')),
+		coordsArray = coordsString.replace(/,$/, '').split(','),
 		imageOffset, coords, i, next, result, len;
 
 	// If we can't find the image using the map...
