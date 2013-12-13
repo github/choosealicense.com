@@ -6,7 +6,7 @@ layout: nil
 {% include css/jquery.qtip.min.css %}
 
 body {
-  background: #f5f1ec url(../images/bg.jpg);
+  background: #f5f1ec url(../img/bg.jpg);
   color: #5c5855;
   font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -265,15 +265,15 @@ strong {
 }
 
 .license-required li {
-  background-image: url(../images/blue-dot@2x.png);
+  background-image: url(../img/blue-dot@2x.png);
 }
 
 .license-permitted li {
-  background-image: url(../images/green-dot@2x.png);
+  background-image: url(../img/green-dot@2x.png);
 }
 
 .license-forbidden li {
-  background-image: url(../images/red-dot@2x.png);
+  background-image: url(../img/red-dot@2x.png);
 }
 
 .license-rules-sidebar li {
@@ -336,7 +336,7 @@ strong {
 
 .sidebar .source a {
   padding-left: 20px;
-  background: transparent url(../images/source@2x.png) 0 1px no-repeat;
+  background: transparent url(../img/source@2x.png) 0 1px no-repeat;
   background-size: 16px 12px;
 }
 
