@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Chivo:900">
     <link rel="stylesheet" href="/css/application.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <script src="/js/modernizr.js"></script>
-    <!--[if (gte IE 6)&(lte IE 8)]>
-      <script src="/js/selectivizr-min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+    <script src="/js/selectivizr-min.js"></script>
     <![endif]-->
   </head>
   <body class="{{ page.layout }}{% if page.class %} {{ page.class }}{% endif %}">
