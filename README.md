@@ -6,7 +6,7 @@ Like a Choose Your Own Adventure site, but only much less interesting.
 
 A lot of repositories on GitHub.com don't have a license. GitHub provides
 a license chooser, but if you don't know anything about licenses, how are you
-supposed to make an informed decision.
+supposed to make an informed decision?
 
 ChooseALicense.com is designed to help people make an informed decision about
 licenses.
@@ -16,10 +16,10 @@ licenses.
 * Politics Free - Let's just not get into it.
 * Well designed, but that goes without saying.
 * The homepage should have just enough to help 99% of folks make a decision.
-* For the 1%, the site will contain a list of licenses common for specific
+* For the 1%, the site will contain a list of licenses common to specific
 communities and situations.
-* Not comprehensive. Seems like an odd goal, but there are a bajillion
-(I counted) licenses out there. We're going to have to filter that down to a
+* Not comprehensive. Seems like an odd goal, but there are a bajillion 
+licenses out there. We're going to have to filter that down to a
 small list of those that matter.
 
 # Run It On Your Machine
@@ -34,7 +34,7 @@ Open [localhost:4000](http://localhost:4000) in your favorite browser
 
 # Adding a license
 
-Licenses sit in the `/licenses` folder as markdown (`.md`) files. Each license has YAML front matter describing the license's properties. The body of the markdown file should be the text of the license. The available metadata fields are:
+Licenses sit in the `/licenses` folder as Markdown (`.md`) files. Each license has YAML front matter describing the license's properties. The body of the Markdown file should be the text of the license. The available metadata fields are:
 
 * `title` - The name of the license
 * `layout` - This should be `license`
