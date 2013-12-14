@@ -6,7 +6,7 @@ layout: nil
 {% include css/jquery.qtip.min.css %}
 
 body {
-  background: #f5f1ec url(../img/bg.jpg);
+  background-image: url(../img/bg.jpg);
   color: #5c5855;
   font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -19,44 +19,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-.button {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border-color: #ceccc9 #b6b4b1 #a6a4a2 #b6b4b1;
-  border-style: solid;
-  border-width: 1px;
-  color: #443b34;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px, rgba(255, 255, 255, 0.8) 0 1px 0 0 inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px, rgba(255, 255, 255, 0.8) 0 1px 0 0 inset;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px, rgba(255, 255, 255, 0.8) 0 1px 0 0 inset;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e7e5e0), color-stop(100%, #d5d3cf));
-  background-image: -webkit-linear-gradient(#e7e5e0, #d5d3cf);
-  background-image: -moz-linear-gradient(#e7e5e0, #d5d3cf);
-  background-image: -o-linear-gradient(#e7e5e0, #d5d3cf);
-  background-image: linear-gradient(#e7e5e0, #d5d3cf);
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 12px;
-  font-weight: normal;
-  padding: 5px 10px;
-  text-align: center;
-}
-.button:hover {
-  text-decoration: none;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e7e5e0), color-stop(100%, #d0ceca));
-  background-image: -webkit-linear-gradient(#e7e5e0, #d0ceca);
-  background-image: -moz-linear-gradient(#e7e5e0, #d0ceca);
-  background-image: -o-linear-gradient(#e7e5e0, #d0ceca);
-  background-image: linear-gradient(#e7e5e0, #d0ceca);
 }
 
 h1, h2, h3, h5 {
@@ -110,7 +72,6 @@ strong {
 }
 
 .home {
-  padding-top: 20px;
   text-align: center;
 }
 
@@ -146,7 +107,6 @@ strong {
   width: 280px;
   float: left;
   margin-left: 27px;
-  text-align: center;
 }
 
 .triptych li:first-child {
@@ -185,7 +145,6 @@ strong {
 .three-arrows { background-position: 0 0;      width: 72px; height: 57px; }
 .lightbulb    { background-position: 0 -57px;  width: 43px; height: 72px; }
 .circular     { background-position: 0 -129px; width: 72px; height: 69px; }
-
 
 
 .license-family {
@@ -355,6 +314,44 @@ strong {
   font: 0.7em "Courier new", courier;
 }
 
+.button {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-color: #ceccc9 #b6b4b1 #a6a4a2 #b6b4b1;
+  border-style: solid;
+  border-width: 1px;
+  color: #443b34;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px, rgba(255, 255, 255, 0.8) 0 1px 0 0 inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px, rgba(255, 255, 255, 0.8) 0 1px 0 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px, rgba(255, 255, 255, 0.8) 0 1px 0 0 inset;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e7e5e0), color-stop(100%, #d5d3cf));
+  background-image: -webkit-linear-gradient(#e7e5e0, #d5d3cf);
+  background-image: -moz-linear-gradient(#e7e5e0, #d5d3cf);
+  background-image: -o-linear-gradient(#e7e5e0, #d5d3cf);
+  background-image: linear-gradient(#e7e5e0, #d5d3cf);
+  display: inline-block;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 5px 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button:hover {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e7e5e0), color-stop(100%, #d0ceca));
+  background-image: -webkit-linear-gradient(#e7e5e0, #d0ceca);
+  background-image: -moz-linear-gradient(#e7e5e0, #d0ceca);
+  background-image: -o-linear-gradient(#e7e5e0, #d0ceca);
+  background-image: linear-gradient(#e7e5e0, #d0ceca);
+}
+
 .projects-with-license li {
   padding-bottom: 3px;
 }
@@ -389,11 +386,10 @@ strong {
 }
 
 .bullets {
-  margin-bottom: 1em;
+  list-style-type: disc;
 }
 
-.bullets li {
-  list-style-type: disc;
+.bullets > li {
   margin-left: 2em;
 }
 
@@ -424,6 +420,7 @@ strong {
 .small {
   font-size: 90%;
 }
+
 
 /* Qtip styles */
 
