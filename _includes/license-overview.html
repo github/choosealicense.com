@@ -21,7 +21,7 @@
     {% for variation in site.pages %}
       {% if variation.category and variation.category == page.category %}
     <div id="{{ variation.tab-slug }}" class="variation-tab variation-{{ variation.tab-slug }} js-variation-tab{% if page.tab-slug == variation.tab-slug %} active{% endif %}">
-      <table class='license-rules'>
+      <table class="license-rules">
         <tr>
         {% assign types = "required|permitted|forbidden" | split: "|" %}
         {% for type in types %}
@@ -32,7 +32,7 @@
           {% for type in types %}
             <td>
               <ul class="license-{{ type }}">
-                {% assign rules = site.rules[type] | sort: 'label' %}
+                {% assign rules = site.rules[type] | sort: "label" %}
                 {% for rule_obj in rules %}
                   {% assign req = rule_obj.tag %}
                   {% if variation[type] contains req %}

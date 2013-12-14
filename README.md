@@ -24,11 +24,13 @@ small list of those that matter.
 
 # Run It On Your Machine
 
-1. `git clone https://github.com/github/choosealicense.com`
-2. `cd choosealicense.com`
-3. `script/bootstrap`
-4. `script/server`
-5. Open [localhost:4000](http://localhost:4000) in your favorite browser
+```bash
+git clone https://github.com/github/choosealicense.com.git
+cd choosealicense.com
+script/bootstrap
+script/server
+```
+Open [localhost:4000](http://localhost:4000) in your favorite browser
 
 # Adding a license
 
@@ -54,7 +56,7 @@ The licenses on choosealicense.com are regularly imported to GitHub.com to be us
 
 # Rules
 
-* Rules (the license's properties) are stored as a bulleted list within the licenses YAML front matter. A full list of rules can be found in the repository's `_config.yml` file. Each rule has a name e.g., `include-copyright`, a human-readable label, e.g., `Copyright inclusion`, and a description `Include the original copyright with the code`. To add a new rule, simply add it to config.yml and reference it in the appropriate license.
+Rules (the license's properties) are stored as a bulleted list within the licenses YAML front matter. A full list of rules can be found in the repository's `_config.yml` file. Each rule has a name e.g., `include-copyright`, a human-readable label, e.g., `Copyright inclusion`, and a description `Include the original copyright with the code`. To add a new rule, simply add it to `config.yml` and reference it in the appropriate license.
 
 # License
 
