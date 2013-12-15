@@ -176,6 +176,18 @@ strong {
   margin-top: 20px;
 }
 
+.triptych-sprite {
+  background-image: url(../img/home-sprite.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.three-arrows { background-position: 0 0;      width: 72px; height: 57px; }
+.lightbulb    { background-position: 0 -57px;  width: 43px; height: 72px; }
+.circular     { background-position: 0 -129px; width: 72px; height: 69px; }
+
+
+
 .license-family {
   clear: both;
   margin-bottom: 50px;
@@ -468,3 +480,17 @@ strong {
 }
 
 .with-love { float: right; clear: right; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2.0),
+ only screen and (min--moz-device-pixel-ratio: 2.0),
+ only screen and (-o-min-device-pixel-ratio: 200/100),
+ only screen and (min-device-pixel-ratio: 2.0) {
+  .three-arrows,
+  .lightbulb,
+  .circular {
+    background-image: url(../img/home-sprite@2x.png);
+    -webkit-background-size: 72px 198px;
+    -moz-background-size: 72px 198px;
+    background-size: 72px 198px;
+  }
+}
