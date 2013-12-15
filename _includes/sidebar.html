@@ -14,7 +14,10 @@
   </div>
   {% if page.source %}
   <div class="source">
-    <a href="{{ page.source }}">Source</a>
+    <a href="{{ page.source }}">
+      <span class="license-sprite"></span>
+      Source
+    </a>
   </div>
   {% endif %}
 
@@ -28,7 +31,10 @@
       {% for rule_obj in rules %}
         {% assign req = rule_obj.tag %}
         {% if page[type] contains req %}
-          <li class="{{ req }}">{{ rule_obj.label }}</li>
+          <li class="{{ req }}">
+            <span class="license-sprite"></span>
+            {{ rule_obj.label }}
+          </li>
         {% endif %}
       {% endfor %}
     </ul>

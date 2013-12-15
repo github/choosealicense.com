@@ -36,7 +36,10 @@
                 {% for rule_obj in rules %}
                   {% assign req = rule_obj.tag %}
                   {% if variation[type] contains req %}
-                    <li class="{{ req }}">{{ rule_obj.label }}</li>
+                    <li class="{{ req }}">
+                      <span class="license-sprite"></span>
+                      {{ rule_obj.label }}
+                    </li>
                   {% endif %}
                 {% endfor %}
               </ul>
