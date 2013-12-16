@@ -20,7 +20,7 @@
     </div>
     {% for variation in site.pages %}
       {% if variation.category and variation.category == page.category %}
-    <div id="{{ variation.tab-slug }}" class="variation-tab variation-{{ variation.tab-slug }} js-variation-tab{% if page.tab-slug == variation.tab-slug %} active{% endif %}">
+    <div {% if variation.tab-slug %}id="{{ variation.tab-slug }}" {% endif %}class="variation-tab {% if variation.tab-slug %}variation-{{ variation.tab-slug }}{% endif %} js-variation-tab{% if page.tab-slug == variation.tab-slug %} active{% endif %}">
       <table class="license-rules">
         <tr>
         {% assign types = "required|permitted|forbidden" | split: "|" %}
@@ -50,4 +50,3 @@
     {% endfor %}
   </div>
 </div>
-
