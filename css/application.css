@@ -263,30 +263,26 @@ strong {
 .license-rules .label {
   font-weight: bold;
 }
+
 .license-rules li {
-  background-position: 0 1px;
-  background-repeat: no-repeat;
-  background-size: 12px 12px;
   margin-right: 15px;
   margin-bottom: 5px;
-  padding-left: 16px;
 }
 
 .license-rules li:hover {
   color: #443a33;
 }
 
-.license-required li {
-  background-image: url(../img/blue-dot@2x.png);
+.license-sprite {
+  background-image: url(../img/license-sprite.png);
+  background-repeat: no-repeat;
+  display: inline-block;
 }
 
-.license-permitted li {
-  background-image: url(../img/green-dot@2x.png);
-}
-
-.license-forbidden li {
-  background-image: url(../img/red-dot@2x.png);
-}
+.sidebar .source span   { background-position: 0 0;     width: 16px; height: 12px; }
+.license-forbidden span { background-position: -16px 0; width: 12px; height: 12px; }
+.license-permitted span { background-position: -28px 0; width: 12px; height: 12px; }
+.license-required span  { background-position: -40px 0; width: 12px; height: 12px; }
 
 .license-rules-sidebar li {
   float: none;
@@ -344,12 +340,6 @@ strong {
 .sidebar .source {
   margin-top: 4px;
   margin-bottom: 30px;
-}
-
-.sidebar .source a {
-  padding-left: 20px;
-  background: transparent url(../img/source@2x.png) 0 1px no-repeat;
-  background-size: 16px 12px;
 }
 
 .sidebar .boilerplate {
@@ -493,4 +483,12 @@ strong {
     -moz-background-size: 72px 198px;
     background-size: 72px 198px;
   }
+
+  .license-sprite {
+    background-image: url(../img/license-sprite@2x.png);
+    -webkit-background-size: 52px 12px;
+    -moz-background-size: 52px 12px;
+    background-size: 52px 12px;
+  }
+
 }
