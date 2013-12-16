@@ -18,7 +18,7 @@ licenses.
 * The homepage should have just enough to help 99% of folks make a decision.
 * For the 1%, the site will contain a list of licenses common to specific
 communities and situations.
-* Not comprehensive. Seems like an odd goal, but there are a bajillion 
+* Not comprehensive. Seems like an odd goal, but there are a bajillion
 licenses out there. We're going to have to filter that down to a
 small list of those that matter.
 
@@ -30,11 +30,15 @@ cd choosealicense.com
 script/bootstrap
 script/server
 ```
-Open [localhost:4000](http://localhost:4000) in your favorite browser
+Open `http://localhost:4000` in your favorite browser.
 
 # Adding a license
 
-Licenses sit in the `/licenses` folder as Markdown (`.md`) files. Each license has YAML front matter describing the license's properties. The body of the Markdown file should be the text of the license. The available metadata fields are:
+The text of the license should be wrapped to a 78 character width.
+
+Licenses sit in the `/licenses` folder. Each license has YAML front matter
+describing the license's properties. The body of the file should be the text
+of the license in plain text. The available metadata fields are:
 
 * `title` - The name of the license
 * `layout` - This should be `license`
@@ -45,7 +49,11 @@ Licenses sit in the `/licenses` folder as Markdown (`.md`) files. Each license h
 * `required`, `permitted`, `forbidden` - bulleted list of rules applicable to the license (see below)
 * `filename` - The filename to be created on GitHub.com when a repository is initialized with this license.
 
-The licenses on choosealicense.com are regularly imported to GitHub.com to be used as the list of licenses available when creating a repository. When we create a repository, we will replace certain strings in the license with variables from the repository. These can be used to create accurate copyright notices. The available variables are:
+The licenses on choosealicense.com are regularly imported to GitHub.com to be
+used as the list of licenses available when creating a repository. When we
+create a repository, we will replace certain strings in the license with
+variables from the repository. These can be used to create accurate copyright
+notices. The available variables are:
 
 * `[fullname]` - The full name or username of the repository owner
 * `[login]` - The repository owner's username
@@ -56,8 +64,17 @@ The licenses on choosealicense.com are regularly imported to GitHub.com to be us
 
 # Rules
 
-Rules (the license's properties) are stored as a bulleted list within the licenses YAML front matter. A full list of rules can be found in the repository's `_config.yml` file. Each rule has a name e.g., `include-copyright`, a human-readable label, e.g., `Copyright inclusion`, and a description `Include the original copyright with the code`. To add a new rule, simply add it to `config.yml` and reference it in the appropriate license.
+Rules (the license's properties) are stored as a bulleted list within the
+licenses YAML front matter. A full list of rules can be found in the
+repository's `_config.yml` file. Each rule has a name e.g.,
+`include-copyright`, a human-readable label, e.g., `Copyright inclusion`,
+and a description `Include the original copyright with the code`.
+To add a new rule, simply add it to `config.yml` and reference it in the
+appropriate license.
 
 # License
 
-The content of this project itself is licensed under the [Creative Commons Attribution 3.0 license](http://creativecommons.org/licenses/by/3.0/us/deed.en_US), and the underlying source code used to format and display that content is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).
+The content of this project itself is licensed under the
+[Creative Commons Attribution 3.0 license](http://creativecommons.org/licenses/by/3.0/us/deed.en_US),
+and the underlying source code used to format and display that content
+is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).
