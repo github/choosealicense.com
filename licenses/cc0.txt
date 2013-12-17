@@ -24,7 +24,6 @@ permitted:
 
 forbidden:
   - no-liability
-  - sublicense
 
 ---
 CC0 1.0 Universal
@@ -67,18 +66,18 @@ to, the following:
 
   iii. publicity and privacy rights pertaining to a person's image or likeness
   depicted in a Work;
-  
+
   iv. rights protecting against unfair competition in regards to a Work,
   subject to the limitations in paragraph 4(a), below;
 
   v. rights protecting the extraction, dissemination, use and reuse of data in
   a Work;
-  
+
   vi. database rights (such as those arising under Directive 96/9/EC of the
   European Parliament and of the Council of 11 March 1996 on the legal
   protection of databases, and under any national implementation thereof,
   including any amended or successor version of such directive); and
-  
+
   vii. other similar, equivalent or corresponding rights throughout the world
   based on applicable law or treaty, and any national implementations thereof.
 
