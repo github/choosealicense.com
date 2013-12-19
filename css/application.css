@@ -492,3 +492,5 @@ strong {
   }
 
 }
+
+{% include css/responsive.css %}
