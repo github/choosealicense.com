@@ -17,13 +17,13 @@ source: http://www.apache.org/licenses/LICENSE-2.0.html
 required:
   - include-copyright
   - document-changes
+  - patent-grant
 
 permitted:
   - commercial-use
   - modifications
   - distribution
   - sublicense
-  - patent-grant
 
   - private-use
 
