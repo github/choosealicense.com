@@ -19,6 +19,7 @@ This site is not a comprehensive directory of open source licenses.  We think th
 * [Comparison of free and open-source software licenses](http://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses) on Wikipedia
 * [License differentiator](http://www.oss-watch.ac.uk/apps/licdiff/) from [OSS Watch](http://www.oss-watch.ac.uk/)
 * [TLDRLegal](http://www.tldrlegal.com/)
+* [The Open Source Software Collaboration Counseling](http://www.osscc.net/)
 {: .bullets}
 
 ### Tools
