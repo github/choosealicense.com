@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title}}</title>
+    <title>{% if page.title %}{{ page.title | markdownify | strip_html }} - {% endif %}{{ site.title}}</title>
     {% if page.description %}<meta name="description" content="{{ page.description | strip_html }}">{% endif %}
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Chivo:900">
     <link rel="stylesheet" href="/css/application.css">
@@ -18,5 +18,5 @@
       {% include breadcrumbs.html %}
 
       {% if page.title %}
-        <h1>{{ page.title }}</h1>
+        <h1>{{ page.title | markdownify | strip_html }}</h1>
       {% endif %}
