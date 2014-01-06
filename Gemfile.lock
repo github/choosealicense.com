@@ -13,7 +13,7 @@ GEM
       ffi (>= 1.3.0)
       mime-types (~> 1.18)
     fast-stemmer (1.0.2)
-    ffi (1.9.0)
+    ffi (1.9.3)
     github-pages (12)
       RedCloth (= 4.2.9)
       jekyll (= 1.4.2)
@@ -76,7 +76,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  ffi (= 1.9.0)
   github-pages
   html-proofer
   rake
