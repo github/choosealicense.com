@@ -13,11 +13,7 @@ featured: true
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
-note: As with any free license, you should put near the top of each source
-file a copyright notice and a license notice for the license you are
-using.  Without this, the code can get disconnected from its license
-when someone copies it into another program or another file; then people
-will not know how they can use that code.
+note: As with any free license, you should put near the top of each source file a copyright notice and a license notice for the license you are using.  Without this, the code can get disconnected from its license when someone copies it into another program or another file; then people will not know how they can use that code.
 
 required:
   - include-copyright
