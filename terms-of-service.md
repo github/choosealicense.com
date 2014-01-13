@@ -2,7 +2,6 @@
 title: Terms of Service
 layout: default
 permalink: /terms-of-service/
-
 ---
 
 ### 1. Introduction
