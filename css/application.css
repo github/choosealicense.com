@@ -104,7 +104,7 @@ strong {
   margin-left: 27px;
 }
 
-.triptych .first-li {
+.triptych li:first-child {
   margin-left: 0;
 }
 
