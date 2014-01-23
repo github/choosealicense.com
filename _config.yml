@@ -2,6 +2,7 @@
 title: ChooseALicense.com
 relative_permalinks: false
 markdown: kramdown
+url: "http://choosealicense.com"
 
 rules:
 
