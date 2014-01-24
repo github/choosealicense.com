@@ -2,7 +2,7 @@
 title: About
 layout: default
 permalink: /about/
-title: What’s this about?
+title: What's this about?
 ---
 
 GitHub wants to help developers choose a license for their source code.
