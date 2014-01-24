@@ -2,7 +2,7 @@
 
       <div class="clearfix">
         <div class="license-body">
-          <pre id="license-text">{{ content | markdownify | strip_html }}</pre>
+          <pre id="license-text">{{ content | replace:"<", "&lt;" | replace:">", "&gt;" }}</pre>
         </div> <!-- /license-body -->
 
 {% include sidebar.html %}
