@@ -27,7 +27,6 @@
             ],
             "files": [
                 "jquery.min.js",
-                "jquery.min.map",
                 "jquery-migrate.js",
                 "jquery-migrate.min.js"
             ]
