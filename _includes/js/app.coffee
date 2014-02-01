@@ -66,7 +66,7 @@ class Choosealicense
 
     # Hook up copy to clipboard buttons
     clip = new ZeroClipboard $(".js-clipboard-button"),
-      moviePath: "/js/ZeroClipboard.swf"
+      moviePath: "/assets/vendor/zeroclipboard/ZeroClipboard.swf"
     clip.on "mouseout", @clipboardMouseout
     clip.on "complete", @clipboardComplete
     clip
