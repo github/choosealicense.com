@@ -44,6 +44,5 @@
   },
   "_source": "git://github.com/qTip2/bower.git",
   "_target": "~2.2.0",
-  "_originalSource": "qtip2",
-  "_direct": true
+  "_originalSource": "qtip2"
 }

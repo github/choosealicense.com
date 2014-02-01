@@ -22,6 +22,5 @@
   },
   "_source": "git://github.com/aFarkas/html5shiv.git",
   "_target": "~3.7.0",
-  "_originalSource": "html5shiv",
-  "_direct": true
+  "_originalSource": "html5shiv"
 }

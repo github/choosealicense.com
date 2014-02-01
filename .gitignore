@@ -2,8 +2,9 @@
 /_site
 /node_modules
 /.bundle
-_includes/js/vendor/zeroclipboard/docs
-_includes/js/vendor/zeroclipboard/src
-_includes/js/vendor/zeroclipboard/test
-_includes/js/vendor/selectivizr/tests
-_includes/js/vendor/qtip2/basic
+assets/vendor/zeroclipboard/docs
+assets/vendor/zeroclipboard/src
+assets/vendor/zeroclipboard/test
+assets/vendor/selectivizr/tests
+assets/vendor/qtip2/basic
+/vendor
