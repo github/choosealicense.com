@@ -27,6 +27,7 @@ This site is not a comprehensive directory of open source licenses.  We think th
 * [LicenseFinder](https://github.com/pivotal/LicenseFinder)
 * [License Maven Plugin](http://mojo.codehaus.org/license-maven-plugin/)
 * [AddALicense.com](http://www.addalicense.com/)
+* [license-generator](https://github.com/arshad/license-generator)
 {: .bullets}
 
 ## Help us improve it
