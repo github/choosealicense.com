@@ -1,29 +1,26 @@
-      <footer class="site-footer cf">
+      <footer class="site-footer clearfix">
         <nav>
           <a href="/about/">About</a>
           <a href="/terms-of-service/">Terms of Service</a>
         </nav>
         <p>
-          Please consult a legal expert before adopting a software license for your project.<br>
+          If you have questions or issues, it is always best to consult a legal professional.<br>
           This site is licensed under the <a href="http://creativecommons.org/licenses/by/3.0/">
-          Creative Commons Attribution 3.0 Unported License</a>.</p>
+          Creative Commons Attribution 3.0 Unported License</a>.
         </p>
-        <div id="with-♥">
+        <div class="with-love">
           Demystified with &lt;3 by <a href="http://github.com">GitHub, Inc.</a>
         </div>
       </footer>
 
-    </div><!-- /container -->
+    </div> <!-- /container -->
 
-    <script type="text/javascript" src="/javascripts/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery.qtip.min.js"></script>
-
-    {% if page.layout == "license" %}
-      <script type="text/javascript" src="/javascripts/ZeroClipboard.js"></script>
+    {% if page.layout == "license" or page.class == "license-types" %}
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/assets/vendor/qtip2/jquery.qtip.min.js"></script>
+    <script src="/assets/vendor/zeroclipboard/ZeroClipboard.min.js"></script>
+    <script src="/assets/js/javascript.js"></script>
     {% endif %}
-
-    <script type="text/javascript" src="/javascripts/annotations.js"></script>
-    <script type="text/javascript" src="/javascripts/app.js"></script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

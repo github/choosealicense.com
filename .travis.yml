@@ -4,5 +4,13 @@ script: "./script/cibuild"
 
 #environment
 language: ruby
-rvm: 
-  - 1.9.3
+rvm:
+  - 2.0.0
+
+branches:
+  only:
+    - gh-pages
+    - /.*/
+
+notifications:
+  email: false

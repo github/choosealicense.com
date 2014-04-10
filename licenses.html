@@ -2,36 +2,17 @@
 layout: default
 permalink: licenses/
 class: license-types
+title: Licenses
 ---
 
-<h1>Featured</h1>
+<h2>Featured Licenses</h2>
 
-{% for page in site.pages %}
+{% assign sorted_pages = site.pages | sort: 'path' %}
+
+{% for page in sorted_pages %}
   {% if page.layout == "license" %}
     {% if page.featured %}
-    <table class='license-rules'>
-      <tr>
-        <th class='name'>
-          <a href="{{ page.permalink }}">{{ page.title }}</a>
-        </th>
-        <th class='summary'>
-         {{ page.description }} <a href="{{ page.permalink }}">View full license »</a>
-        </th>
-      </tr>
-      {% assign types = "required|permitted|forbidden" | split: "|" %}
-      {% for type in types %}
-      <tr>
-        <td class="label">{{ type | capitalize }}</td>
-        <td>
-          <ul class="license-{{ type }}">
-            {% for req in page[type] %}
-              <li class="{{ req }}">{{ site.rules[type][req].label }}</li>
-            {% endfor %}
-          </ul>
-        </td>
-      </tr>
-      {% endfor %}
-    </table>
+      {% include license-overview.html %}
     {% endif %}
   {% endif %}
 {% endfor %}
@@ -42,32 +23,10 @@ class: license-types
   community. For example, Perl developers often choose the Artistic License.
 </p>
 
-{% for page in site.pages %}
+{% for page in sorted_pages %}
   {% if page.layout == "license" %}
-    {% if page.featured != true %}
-    <table class='license-rules'>
-      <tr>
-        <th class='name'>
-          <a href="{{ page.permalink }}">{{ page.title }}</a>
-        </th>
-        <th class='summary'>
-         {{ page.description }} <a href="{{ page.permalink }}">View full license »</a>
-        </th>
-      </tr>
-      {% assign types = "required|permitted|forbidden" | split: "|" %}
-      {% for type in types %}
-      <tr>
-        <td class="label">{{ type | capitalize }}</td>
-        <td>
-          <ul class="license-{{ type }}">
-            {% for req in page[type] %}
-              <li class="{{ req }}">{{ site.rules[type][req].label }}</li>
-            {% endfor %}
-          </ul>
-        </td>
-      </tr>
-      {% endfor %}
-    </table>
+    {% if page.featured != true and page.hide-from-license-list != true %}
+      {% include license-overview.html %}
     {% endif %}
   {% endif %}
 {% endfor %}

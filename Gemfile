@@ -1,5 +1,9 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
+ruby File.read(".ruby-version").strip
 
-gem "jekyll",     '=1.0.3'
-gem 'liquid',     '=2.5.0'
-gem 'redcarpet',  '=2.2.2'
+gem "github-pages"
+
+group :test do
+  gem "html-proofer"
+  gem "rake"
+end

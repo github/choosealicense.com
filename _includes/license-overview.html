@@ -1,0 +1,55 @@
+<div class="license-family clearfix">
+  <div class="license-family-heading">
+    <h3 class="license-family-name"><a href="{{ page.permalink }}">{% if page.category %}{{ page.category }}{% else %}{{ page.title }}{% endif %}</a></h3>
+
+    <p class="license-family-description">{{ page.description }}</p>
+  </div>
+
+  <div class="license-details">
+    <div class="license-variations js-license-variations">
+      <!-- always show this div, even w/o variations, for proper spacing -->
+      {% if page.tab-slug %}
+      <ul class="nav-pills js-nav-pills">
+        {% for variation in site.pages %}
+          {% if variation.category and variation.category == page.category %}
+        <li{% if page.tab-slug == variation.tab-slug %} class="active"{% endif %}><a href="#{{ variation.tab-slug }}" data-selected-tab="variation-{{ variation.tab-slug }}">{{ variation.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    {% for variation in site.pages %}
+      {% if variation.category and variation.category == page.category %}
+    <div {% if variation.tab-slug %}id="{{ variation.tab-slug }}" {% endif %}class="variation-tab {% if variation.tab-slug %}variation-{{ variation.tab-slug }}{% endif %} js-variation-tab{% if page.tab-slug == variation.tab-slug %} active{% endif %}">
+      <table class="license-rules">
+        <tr>
+        {% assign types = "required|permitted|forbidden" | split: "|" %}
+        {% for type in types %}
+          <th class="label">{{ type | capitalize }}</th>
+        {% endfor %}
+        </tr>
+        <tr>
+          {% for type in types %}
+            <td>
+              <ul class="license-{{ type }}">
+                {% assign rules = site.rules[type] | sort: "label" %}
+                {% for rule_obj in rules %}
+                  {% assign req = rule_obj.tag %}
+                  {% if variation[type] contains req %}
+                    <li class="{{ req }}">
+                      <span class="license-sprite"></span>
+                      {{ rule_obj.label }}
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </td>
+          {% endfor %}
+        </tr>
+      </table>
+      <p class="small"><a href="{{ variation.permalink }}">View full {{ variation.title }} license »</a></p>
+    </div>
+        {% endif %}
+    {% endfor %}
+  </div>
+</div>

@@ -1,16 +1,12 @@
 {% include header.html %}
 
-      <div class="cf">
-        <div class='license-body'>
-          <pre id="license-text">
-
-{{ content | replace:"<","[" | replace:">","]" }}
-        
-          </pre><!-- /license-text -->
-        </div><!-- /license-body -->
+      <div class="clearfix">
+        <div class="license-body">
+          <pre id="license-text">{{ content | replace:"<", "&lt;" | replace:">", "&gt;" }}</pre>
+        </div> <!-- /license-body -->
 
 {% include sidebar.html %}
 
-      </div><!-- /cf -->
+      </div> <!-- /clearfix -->
 
 {% include footer.html %}
