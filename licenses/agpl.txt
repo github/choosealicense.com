@@ -20,6 +20,7 @@ permitted:
   - commercial-use
   - modifications
   - distribution
+  - patent-grant
   - private-use
 
 forbidden:
