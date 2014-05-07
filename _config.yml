@@ -75,3 +75,6 @@ exclude:
 - README.md
 - script
 - bundle
+
+gems:
+- jekyll-sitemap
