@@ -4,7 +4,7 @@ title: ISC license
 permalink: /licenses/isc/
 source: http://opensource.org/licenses/isc-license
 
-description: A permissive license written by the Internet Systems Consortium (ISC).  It is functionally equivalent to the <a href="/license/bsd">BSD 2-Clause</a> with the language that was made unnecessary by the Berne convention removed.
+description: A permissive license written by the Internet Systems Consortium (ISC).  It is functionally equivalent to the <a href="/licenses/bsd">BSD 2-Clause</a> with the language that was made unnecessary by the Berne convention removed.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.  [email] is optional but recommended.
 note: Because of the general brevity and simplicity of the ISC license it is generally recommended to copy the entire text of the license into a comment at the top of every file.
