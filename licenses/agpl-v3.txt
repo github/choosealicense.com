@@ -1,7 +1,7 @@
 ---
 title: Affero GPL
 category: GPL
-tab-slug: agpl
+tab-slug: agpl-v3
 hide-from-license-list: true
 layout: license
 permalink: /licenses/agpl-v3/
