@@ -1,0 +1,45 @@
+---
+title: Affero GPL
+category: GPL
+tab-slug: agpl-v2
+hide-from-license-list: true
+layout: license
+permalink: /licenses/agpl-v2/
+source: http://www.affero.org/agpl2.html
+
+note: The GNU Affero General Public License version 3 has been released. It follows the same basic structure as version 1 of the Affero GPL, but it is based on version 3 of the GNU GPL, and you can combine modules released under GPLv3 and the GNU AGPLv3. If you were thinking about releasing your software under this license, we recommend you use the GNU AGPLv3 instead.
+
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
+
+required:
+  - include-copyright
+  - document-changes
+  - disclose-source
+
+permitted:
+  - commercial-use
+  - modifications
+  - distribution
+  - private-use
+
+forbidden:
+  - no-liability
+  - no-sublicense
+
+---
+
+AFFERO GENERAL PUBLIC LICENSE
+Version 2, November 2007
+
+Copyright © 2007 Affero Inc.
+510 Third Street - Suite 225, San Francisco, CA 94107, USA
+
+This is version 2 of the Affero General Public License. It gives each licensee
+permission to distribute the Program or a work based on the Program (as defined
+in version 1 of the Affero GPL) under the GNU Affero General Public License,
+version 3 or any later version.
+
+If the Program was licensed under version 1 of the Affero GPL "or any later
+version", no additional obligations are imposed on any author or copyright
+holder of the Program as a result of a licensee's choice to follow this
+version 2 of the Affero GPL.
