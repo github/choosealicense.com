@@ -17,8 +17,8 @@ rules:
     label: Disclose Source
     tag: disclose-source
   - description: Users who interact with the software via network are given the right to receive a copy of the corresponding source code.
-    label: SaaS is Distribution
-    tag: saas-disclose
+    label: Network Use is Distribution
+    tag: network-use-disclose
   - description: The library may be used within a non-open-source application.
     label: Library usage
     tag: library-usage
