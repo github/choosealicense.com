@@ -70,7 +70,6 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - LICENSE.md
-- licenses.json
 - Rakefile
 - README.md
 - script
