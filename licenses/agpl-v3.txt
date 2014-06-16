@@ -16,6 +16,7 @@ required:
   - include-copyright
   - document-changes
   - disclose-source
+  - saas-disclose
 
 permitted:
   - commercial-use
