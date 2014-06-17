@@ -6,6 +6,7 @@ hide-from-license-list: true
 layout: license
 permalink: /licenses/agpl-v3/
 source: http://www.gnu.org/licenses/agpl-3.0.txt
+redirect_from: /licenses/agpl/
 
 note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
 
