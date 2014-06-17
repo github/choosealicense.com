@@ -1,8 +1,10 @@
 ---
 layout: license
+title: Public Domain (Unlicense)
+category: Public Domain Dedication
+tab-slug: unlicense
 permalink: /licenses/Unlicense/
 class: license-types
-title: Public Domain (Unlicense)
 filename: UNLICENSE
 
 source: http://unlicense.org/UNLICENSE
