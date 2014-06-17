@@ -76,4 +76,5 @@ exclude:
 - bundle
 
 gems:
-- jekyll-sitemap
+  - jekyll-sitemap
+  - jekyll-redirect-from
