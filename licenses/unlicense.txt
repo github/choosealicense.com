@@ -3,7 +3,7 @@ layout: license
 title: Public Domain (Unlicense)
 category: Public Domain Dedication
 tab-slug: unlicense
-permalink: /licenses/Unlicense/
+permalink: /licenses/unlicense/
 class: license-types
 filename: UNLICENSE
 
