@@ -67,16 +67,18 @@ rules:
     tag: sublicense
 
 exclude:
-- app.coffee
-- CNAME
-- CONTRIBUTING.md
-- Gemfile
-- Gemfile.lock
-- LICENSE.md
-- Rakefile
-- README.md
-- script
-- bundle
+  - app.coffee
+  - CNAME
+  - CONTRIBUTING.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - Rakefile
+  - README.md
+  - script
+  - bundle
+  - test
+  - tests
 
 gems:
   - jekyll-sitemap

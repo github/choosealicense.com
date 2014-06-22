@@ -1,6 +1,6 @@
 ---
 layout: license
-title: The Unlicense
+title: Public Domain (Unlicense)
 category: Public Domain Dedication
 tab-slug: unlicense
 permalink: /licenses/unlicense/
@@ -16,10 +16,11 @@ how: Create a text file (typically named UNLICENSE or UNLICENSE.txt) in the root
 required:
 
 permitted:
+  - private-use
   - commercial-use
   - modifications
   - distribution
-  - private-use
+  - sublicense
 
 forbidden:
   - no-liability
