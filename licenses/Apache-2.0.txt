@@ -3,7 +3,7 @@ title: Apache License 2.0
 category: Apache
 layout: license
 permalink: /licenses/apache-2.0/
-redirect_fom: /licenses/apache/
+redirect_from: /licenses/apache/
 
 featured: true
 
