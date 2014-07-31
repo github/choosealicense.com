@@ -1,3 +1,6 @@
+---
+---
+
 class Choosealicense
 
   # Checks if Flash is available in the client.
@@ -42,7 +45,7 @@ class Choosealicense
   initTooltips: ->
 
     # Dynamically add annotations as title attribute to rule list items
-    for category, rules of annotations
+    for category, rules of window.annotations
       for label, text of rules
         $(".license-rules ul.license-#{category} li.#{label}").attr "title", text
 
