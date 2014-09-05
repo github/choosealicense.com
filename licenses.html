@@ -7,14 +7,9 @@ title: Licenses
 
 <h2>Featured Licenses</h2>
 
-{% assign sorted_pages = site.pages | sort: 'path' %}
-
-{% for page in sorted_pages %}
-  {% if page.layout == "license" %}
-    {% if page.featured %}
-      {% include license-overview.html %}
-    {% endif %}
-  {% endif %}
+{% assign featured_licenses = site.licenses | where:"featured",true %}
+{% for license in featured_licenses | sort: 'path' %}
+  {% include license-overview.html %}
 {% endfor %}
 
 <h2>Other licenses</h2>
@@ -22,11 +17,7 @@ title: Licenses
   Some communities tend to have specific licenses preferred by the
   community. For example, Perl developers often choose the Artistic License.
 </p>
-
-{% for page in sorted_pages %}
-  {% if page.layout == "license" %}
-    {% if page.featured != true and page.hide-from-license-list != true %}
-      {% include license-overview.html %}
-    {% endif %}
-  {% endif %}
+{% assign licenses = site.licenses | where:"featured",false | where:"hide-from-license-list",false %}
+{% for license in licenses %}
+  {% include license-overview.html %}
 {% endfor %}
