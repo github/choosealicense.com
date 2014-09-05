@@ -20,7 +20,7 @@
     <script src="/assets/vendor/qtip2/jquery.qtip.min.js"></script>
     <script src="/assets/vendor/zeroclipboard/ZeroClipboard.min.js"></script>
     <script>
-      var window.annotations = {{ site.data.rules | jsonify }};
+      window.annotations = {{ site.data.rules | jsonify }};
     </script>
     <script src="/assets/js/app.js"></script>
     {% endif %}

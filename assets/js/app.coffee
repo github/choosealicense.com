@@ -46,8 +46,8 @@ class Choosealicense
 
     # Dynamically add annotations as title attribute to rule list items
     for category, rules of window.annotations
-      for label, text of rules
-        $(".license-rules ul.license-#{category} li.#{label}").attr "title", text
+      for rule in rules
+        $(".license-rules ul.license-#{category} li.#{rule["tag"]}").attr "title", rule["description"]
 
     # Init tooltips on all rule list items
     for category, label of @categories
