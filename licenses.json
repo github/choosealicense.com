@@ -1,3 +1,4 @@
 ---
 ---
-{{ site.licensees | jsonify }}
+
+{{ site.licenses | jsonify }}
