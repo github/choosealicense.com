@@ -32,7 +32,9 @@ exclude:
   - vendor/bundle
   - test
   - tests
-
+  - assets/vendor/selectivizr/tests
+  - assets/vendor/zeroclipboard/test
+  
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
