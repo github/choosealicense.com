@@ -13,7 +13,6 @@ licenses.
 
 # Immediate Goals
 
-* Politics Free - Let's just not get into it.
 * Well designed, but that goes without saying.
 * The homepage should have just enough to help 99% of folks make a decision.
 * For the 1%, the site will contain a list of licenses common to specific
