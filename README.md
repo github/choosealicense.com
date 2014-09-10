@@ -13,6 +13,7 @@ licenses.
 
 # Immediate Goals
 
+* Non-partisan. Our goal is to help you find a license that meets *your* goals.
 * Well designed, but that goes without saying.
 * The homepage should have just enough to help 99% of folks make a decision.
 * For the 1%, the site will contain a list of licenses common to specific
