@@ -90,11 +90,11 @@ class Choosealicense
 
   # Callback to restore the clipboard button's original text
   clipboardMouseout: (client, args) ->
-    @innerText = $(this).data("clipboard-prompt")
+    @textContent = $(this).data("clipboard-prompt")
 
   # Post-copy user feedback callback
   clipboardComplete: (client, args) ->
-    @innerText = "Copied!"
+    @textContent = "Copied!"
 
   # Initializes pill navigation for license variations
   initLicenseVariationNav: ->
