@@ -88,13 +88,16 @@ class Choosealicense
     else
       @initAlternativeClipboard()
 
+  # Check which text selection method is available
+  textMethod = if document.body.textContent then "textContent" else "innerText"
+
   # Callback to restore the clipboard button's original text
   clipboardMouseout: (client, args) ->
-    @textContent = $(this).data("clipboard-prompt")
+    @[textMethod] = $(this).data("clipboard-prompt")
 
   # Post-copy user feedback callback
   clipboardComplete: (client, args) ->
-    @textContent = "Copied!"
+    @[textMethod] = "Copied!"
 
   # Initializes pill navigation for license variations
   initLicenseVariationNav: ->
