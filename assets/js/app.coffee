@@ -47,7 +47,7 @@ class Choosealicense
     # Dynamically add annotations as title attribute to rule list items
     for category, rules of window.annotations
       for rule in rules
-        $(".license-rules ul.license-#{category} li.#{rule["tag"]}").attr "title", rule["description"]
+        $(".license-rules ul.license-#{category} li.#{rule.tag}").attr "title", rule.description
 
     # Init tooltips on all rule list items
     for category, label of @categories
@@ -89,11 +89,11 @@ class Choosealicense
       @initAlternativeClipboard()
 
   # Callback to restore the clipboard button's original text
-  clipboardMouseout: (client, args) ->
+  clipboardMouseout: () ->
     $(this).empty().html($(this).data("clipboard-prompt"))
 
   # Post-copy user feedback callback
-  clipboardComplete: (client, args) ->
+  clipboardComplete: () ->
     $(this).empty().html("Copied!")
 
   # Initializes pill navigation for license variations
