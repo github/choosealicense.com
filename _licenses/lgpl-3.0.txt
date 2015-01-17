@@ -10,9 +10,9 @@ permalink: /licenses/lgpl-3.0/
 
 description: Version 3 of the LGPL is an additional set of permissions to the <a href="/licenses/GPL-3.0">GPL v3 license</a> that requires that derived works be licensed under the same license, but works that only link to it do not fall under this restriction.
 
-how: This license is an additional set of permissions to the <a href="/licenses/gpl-3.0">GPL v3</a> license. Follow the instructions to apply the GPL v3 license. Then either paste this text to the bottom of that file OR add a separate file (typically named COPYING.lesser or LICENSE.lesser) in the root of your source code and copy the text.
+how: This license is an additional set of permissions to the <a href="/licenses/gpl-3.0">GPL v3</a> license. Follow the instructions to apply the GPL v3. Then either paste this text to the bottom of the created file OR add a separate file (typically named COPYING.lesser or LICENSE.lesser) in the root of your source code and copy the text.
 
-note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
+note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the <a href="/licenses/gpl-3.0">GPL v3 license</a>. Insert the word “Lesser” before “General” in all three places in the boilerplate notice to make sure that you refer to the LGPL v3 and not the GPL v3.
 
 required:
   - include-copyright
