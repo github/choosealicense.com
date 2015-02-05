@@ -8,7 +8,7 @@ A lot of repositories on GitHub.com don't have a license. GitHub provides
 a license chooser, but if you don't know anything about licenses, how are you
 supposed to make an informed decision?
 
-ChooseALicense.com is designed to help people make an informed decision about
+[ChooseALicense.com](http://www.choosealicense.com "Choose A Licence website") is designed to help people make an informed decision about
 licenses.
 
 # Immediate Goals
