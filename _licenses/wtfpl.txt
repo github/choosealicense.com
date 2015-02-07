@@ -1,0 +1,40 @@
+---
+layout: license
+title: WTFPL
+category: Public Domain Dedication
+permalink: /licenses/wtfpl/
+source: http://www.wtfpl.net/
+
+featured: false
+
+description: A permissive license that is short and to the point. It lets people do anything with your code with proper attribution and without warranty.
+
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
+
+required:
+
+permitted:
+  - commercial-use
+  - modifications
+  - distribution
+  - sublicense
+  - private-use
+  - patent grant
+
+forbidden:
+
+---
+
+        DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+                    Version 2, December 2004 
+
+ Copyright (C) 2004 Sam Hocevar
+
+ Everyone is permitted to copy and distribute verbatim or modified 
+ copies of this license document, and changing it is allowed as long 
+ as the name is changed. 
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
+
+  0. You just DO WHAT THE FUCK YOU WANT TO.
