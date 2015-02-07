@@ -7,9 +7,9 @@ source: http://www.wtfpl.net/
 
 featured: false
 
-description: A permissive license that is short and to the point. It lets people do anything with your code with proper attribution and without warranty.
+description: The WTFPL is a very permissive license for software and other scientific or artistic works that offers a great degree of freedom.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
+how: Copy/paste the full text of the WTFPL and distribute it with your work. A common file name for the license file is COPYING. If the work features multiple licenses, it is usual to call the file COPYING.WTFPL. Replace [year] and [fullname] with the current year and the full name of the copyright holder.
 
 required:
 
@@ -38,3 +38,8 @@ forbidden:
    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
 
   0. You just DO WHAT THE FUCK YOU WANT TO.
+
+Copyright © [year] [fullname]
+This work is free. You can redistribute it and/or modify it under the
+terms of the Do What The Fuck You Want To Public License, Version 2,
+as published by Sam Hocevar. See the COPYING file for more details.
