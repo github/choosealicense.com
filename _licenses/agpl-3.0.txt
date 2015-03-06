@@ -8,7 +8,7 @@ permalink: /licenses/agpl-3.0/
 source: http://www.gnu.org/licenses/agpl-3.0.txt
 redirect_from: /licenses/agpl/
 
-description: "GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. The AGPL is distinguished from GPLv2 and GPLv3 in that hosted services using the code are considered distribution and trigger the copyleft requirements."
+description: "The GPL family of licenses is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. The AGPL family of licenses is distinguished from GPLv2 and GPLv3 in that hosted services using the code are considered distribution and trigger the copyleft requirements."
 
 note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
 
