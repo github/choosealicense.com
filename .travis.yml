@@ -18,3 +18,6 @@ notifications:
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+sudo: false
+cache: bundler

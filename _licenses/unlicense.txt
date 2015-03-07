@@ -1,6 +1,6 @@
 ---
 layout: license
-title: Public Domain (Unlicense)
+title: The Unlicense
 category: Public Domain Dedication
 tab-slug: unlicense
 permalink: /licenses/unlicense/
@@ -24,6 +24,8 @@ permitted:
 
 forbidden:
   - no-liability
+
+required: []
 
 ---
 This is free and unencumbered software released into the public domain.

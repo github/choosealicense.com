@@ -1,5 +1,5 @@
 ---
-title: GNU GPL v3.0
+title: GNU General Public License v3.0
 category: GPL
 tab-slug: gpl-v3
 hide-from-license-list: true

@@ -1,6 +1,6 @@
 ---
 layout: license
-title: Simplified BSD
+title: BSD 2-clause "Simplified" License
 category: BSD
 tab-slug: bsd
 hide-from-license-list: true

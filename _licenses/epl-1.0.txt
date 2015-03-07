@@ -1,6 +1,6 @@
 ---
 layout: license
-title: Eclipse Public License v1.0
+title: Eclipse Public License 1.0
 category: Eclipse
 redirect_from: /licenses/eclipse/
 permalink: /licenses/epl-1.0/
