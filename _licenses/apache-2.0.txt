@@ -18,7 +18,7 @@ source: http://www.apache.org/licenses/LICENSE-2.0.html
 required:
   - include-copyright
   - document-changes
-
+  
 permitted:
   - commercial-use
   - modifications

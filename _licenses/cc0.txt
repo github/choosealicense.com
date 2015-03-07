@@ -25,6 +25,8 @@ permitted:
 forbidden:
   - no-liability
 
+required: []
+
 ---
 CC0 1.0 Universal
 
