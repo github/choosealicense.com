@@ -1,5 +1,5 @@
 ---
-title: GNU Affero GPL v3.0
+title: GNU Affero General Public License v3.0
 category: GPL
 tab-slug: agpl-v3
 hide-from-license-list: true

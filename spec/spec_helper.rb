@@ -1,4 +1,6 @@
 require 'jekyll'
+require 'open-uri'
+require 'json'
 
 def config_file
   File.expand_path "./_config.yml", source
@@ -15,7 +17,7 @@ def config
 end
 
 def licenses
-  site.collections["licenses"].docs.map { |l| l.data }
+  site.collections["licenses"].docs.map { |l| l.data.merge("id" => l.basename(".txt")) }
 end
 
 def site
@@ -33,4 +35,13 @@ end
 
 def rule?(tag, group)
   rules[group].any? { |r| r["tag"] == tag }
+end
+
+def spdx_list
+  url = "https://raw.githubusercontent.com/sindresorhus/spdx-license-list/master/spdx.json"
+  $spdx ||= JSON.parse(open(url).read)
+end
+
+def find_spdx(license)
+  spdx_list.find { |name, properties| name.downcase == license }
 end

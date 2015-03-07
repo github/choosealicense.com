@@ -1,5 +1,5 @@
 ---
-title: GNU GPL v2.0
+title: GNU General Public License v2.0
 category: GPL
 tab-slug: gpl-v2
 hide-from-license-list: false

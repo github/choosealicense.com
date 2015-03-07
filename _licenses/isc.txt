@@ -1,6 +1,6 @@
 ---
 layout: license
-title: ISC license
+title: ISC License
 permalink: /licenses/isc/
 source: http://opensource.org/licenses/isc-license
 category: BSD

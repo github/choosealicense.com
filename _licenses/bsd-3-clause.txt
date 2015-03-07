@@ -1,6 +1,6 @@
 ---
 layout: license
-title: New BSD
+title: BSD 3-clause "New" or "Revised" License
 category: BSD
 tab-slug: bsd-3
 hide-from-license-list: true
