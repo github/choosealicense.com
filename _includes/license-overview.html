@@ -16,7 +16,13 @@
       <ul class="nav-pills js-nav-pills">
         {% for variation in site.licenses %}
           {% if variation.category and variation.category == license.category %}
-        <li{% if license.tab-slug == variation.tab-slug %} class="active"{% endif %}><a href="#{{ variation.tab-slug }}" data-selected-tab="variation-{{ variation.tab-slug }}">{{ variation.title }}</a></li>
+        <li{% if license.tab-slug == variation.tab-slug %} class="active"{% endif %}><a href="#{{ variation.tab-slug }}" data-selected-tab="variation-{{ variation.tab-slug }}">
+          {% if variation.nickname != nil %}
+            {{ variation.nickname }}
+          {% else %}
+            {{ variation.title }}
+          {% endif %}
+        </a></li>
           {% endif %}
         {% endfor %}
       </ul>

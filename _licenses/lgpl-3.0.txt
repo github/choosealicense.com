@@ -1,6 +1,7 @@
 ---
 layout: license
 title: GNU Lesser General Public License v3.0
+nickname: GNU LGPL v3.0
 category: LGPL
 tab-slug: lgpl-v3
 hide-from-license-list: true

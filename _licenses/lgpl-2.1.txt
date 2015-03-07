@@ -1,6 +1,7 @@
 ---
 layout: license
 title: GNU Lesser General Public License v2.1
+nickname: GNU LGPL v2.1
 category: LGPL
 tab-slug: lgpl-v2_1
 redirect_from: /licenses/lgpl-v2.1/
