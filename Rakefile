@@ -9,6 +9,6 @@ end
 
 task :test do
   sh "bundle exec jekyll build --trace"
-  HTML::Proofer.new("./_site").run
+  HTML::Proofer.new("./_site", :check_html => true).run
   Rake::Task["spec"].invoke
 end
