@@ -1,6 +1,7 @@
 ---
 layout: license
 title: BSD 3-clause "New" or "Revised" License
+nickname: New BSD
 category: BSD
 tab-slug: bsd-3
 hide-from-license-list: true
