@@ -9,3 +9,4 @@ assets/vendor/selectivizr/tests
 assets/vendor/qtip2/basic
 /vendor
 Gemfile.lock
+/.sass-cache
