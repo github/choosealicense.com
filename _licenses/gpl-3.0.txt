@@ -1,6 +1,6 @@
 ---
 title: GNU General Public License v3.0
-nickname: GNU GPL v2.0
+nickname: GNU GPL v3.0
 category: GPL
 tab-slug: gpl-v3
 hide-from-license-list: true
