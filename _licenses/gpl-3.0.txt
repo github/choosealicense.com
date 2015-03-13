@@ -1,10 +1,10 @@
 ---
 title: GNU General Public License v3.0
 nickname: GNU GPL v3.0
-category: GPL
 tab-slug: gpl-v3
-variant: true
 redirect_from: /licenses/gpl-v3/
+category: GPL
+variant: true
 source: http://www.gnu.org/licenses/gpl-3.0.txt
 
 description: GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license.
@@ -30,6 +30,7 @@ forbidden:
   - no-sublicense
 
 ---
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
