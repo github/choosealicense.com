@@ -34,7 +34,11 @@ exclude:
   - tests
   - assets/vendor/selectivizr/tests
   - assets/vendor/zeroclipboard/test
-  
+
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
+
+sass:
+    sass_dir: _sass
+    style: :compressed

@@ -1,3 +1,9 @@
+---
+---
+
+@import "normalize";
+@import "jquery.qtip";
+
 body {
   background-image: url(../img/bg.jpg);
   color: #5c5855;
@@ -22,7 +28,7 @@ h1, h2, h3, h5 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 25px;
 }
 
