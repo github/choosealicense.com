@@ -24,12 +24,12 @@ The easiest way to make a change is to simply edit a file from your browser.
 When you click the edit button, it will fork the repository under your account.
 Note what issue/issues your patch fixes in the commit message.
 
-For example, to [change this file](https://github.com/github/choosealicense.com/blob/master/CONTRIBUTING.md),
+For example, to [change this file](/CONTRIBUTING.md),
 find it in the GitHub repository. Then click the `Edit` button. Make your
 changes, type in a commit message, and click the `Propose File Change` button.
 That’s it!
 
-For more advanced changes, check out [the bootstrap instructions](https://github.com/github/choosealicense.com#run-it-on-your-machine) in the [project's readme](https://github.com/github/choosealicense.com/blob/master/README.md).
+For more advanced changes, check out [the bootstrap instructions](https://github.com/github/choosealicense.com#run-it-on-your-machine) in the [project's readme](/README.md).
 
 ## Testing
 
