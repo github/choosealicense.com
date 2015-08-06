@@ -17,7 +17,8 @@ defaults:
     values:
       layout: license
       featured: false
-      "hide-from-license-list": false
+      hidden: false
+      variant: false
 
 exclude:
   - app.coffee
