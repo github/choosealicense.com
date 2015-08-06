@@ -1,6 +1,9 @@
 ---
-title: Open Font License
 layout: license
+title: SIL Open Font License
+nickname: SIL OFL v1.1
+tab-slug: sil-ofl
+hide-from-license-list: true
 permalink: /licenses/ofl/
 
 source: http://scripts.sil.org/OFL_web
@@ -26,7 +29,7 @@ forbidden:
 
 ---
 
-Copyright (c) [year] [fullname (email)] [with Reserved Font Name 'Something']
+Copyright (c) [year] [fullname] ([email])
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
