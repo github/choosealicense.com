@@ -4,6 +4,7 @@ title: SIL Open Font License
 nickname: SIL OFL v1.1
 tab-slug: sil-ofl
 hide-from-license-list: true
+hidden: true
 permalink: /licenses/ofl/
 
 source: http://scripts.sil.org/OFL_web
