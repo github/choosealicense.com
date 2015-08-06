@@ -1,12 +1,15 @@
 ---
 layout: license
-title: BSD (3-Clause) License
+title: BSD 3-clause "New" or "Revised" License
+nickname: New BSD
 category: BSD
 tab-slug: bsd-3
 hide-from-license-list: true
 permalink: /licenses/bsd-3-clause/
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Replace {organization} with the organization, if any, that sponsors this work.
+description: A permissive license that comes in two variants, the <a href="/licenses/bsd">BSD 2-Clause</a> and <a href="/licenses/bsd-3-clause">BSD 3-Clause</a>. Both have very minute differences to the MIT license. The three clause variant prohibits others from using the name of the project or its contributors to promote derivative works without written consent.
+
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Replace [project] with the project organization, if any, that sponsors this work.
 
 source: http://opensource.org/licenses/BSD-3-Clause
 
@@ -39,7 +42,7 @@ modification, are permitted provided that the following conditions are met:
   this list of conditions and the following disclaimer in the documentation
   and/or other materials provided with the distribution.
 
-* Neither the name of the {organization} nor the names of its
+* Neither the name of [project] nor the names of its
   contributors may be used to endorse or promote products derived from
   this software without specific prior written permission.
 

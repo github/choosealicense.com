@@ -8,12 +8,12 @@ A lot of repositories on GitHub.com don't have a license. GitHub provides
 a license chooser, but if you don't know anything about licenses, how are you
 supposed to make an informed decision?
 
-ChooseALicense.com is designed to help people make an informed decision about
+[ChooseALicense.com](http://www.choosealicense.com "Choose A Licence website") is designed to help people make an informed decision about
 licenses.
 
 # Immediate Goals
 
-* Politics Free - Let's just not get into it.
+* Non-partisan. Our goal is to help you find a license that meets *your* goals.
 * Well designed, but that goes without saying.
 * The homepage should have just enough to help 99% of folks make a decision.
 * For the 1%, the site will contain a list of licenses common to specific
@@ -65,11 +65,10 @@ notices. The available variables are:
 # Rules
 
 Rules (the license's properties) are stored as a bulleted list within the
-licenses YAML front matter. A full list of rules can be found in the
-repository's `_config.yml` file. Each rule has a name e.g.,
-`include-copyright`, a human-readable label, e.g., `Copyright inclusion`,
-and a description `Include the original copyright with the code`.
-To add a new rule, simply add it to `config.yml` and reference it in the
+licenses YAML front matter. A full list of rules can be found in `_data/rules.yml`.
+Each rule has a name e.g., `include-copyright`, a human-readable label, e.g.,
+`Copyright inclusion`, and a description `Include the original copyright with the code`.
+To add a new rule, simply add it to `_data/rules.yml` and reference it in the
 appropriate license.
 
 # License

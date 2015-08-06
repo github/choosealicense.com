@@ -6,4 +6,5 @@ gem "github-pages"
 group :test do
   gem "html-proofer"
   gem "rake"
+  gem "rspec"
 end

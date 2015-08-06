@@ -6,9 +6,7 @@
     <title>{% if page.title %}{{ page.title | markdownify | strip_html | strip_newlines }} - {% endif %}{{ site.title}}</title>
     {% if page.description %}<meta name="description" content="{{ page.description | strip_html | strip_newlines }}">{% endif %}
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Chivo:900">
-    <link rel="stylesheet" href="/assets/vendor/normalize-css/normalize.css">
-    <link rel="stylesheet" href="/assets/vendor/qtip2/jquery.qtip.min.css">
-    <link rel="stylesheet" href="/assets/css/application.css">
+    <link rel="stylesheet" href="/assets/css/application.css?v={{ site.github.build_revision }}">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <!--[if lt IE 9]>
     <script src="/assets/vendor/html5shiv/dist/html5shiv.js"></script>

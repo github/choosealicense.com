@@ -1,8 +1,9 @@
 ---
-title: Apache v2 License
+title: Apache License 2.0
 category: Apache
 layout: license
-permalink: /licenses/apache/
+permalink: /licenses/apache-2.0/
+redirect_from: /licenses/apache/
 
 featured: true
 
@@ -17,7 +18,7 @@ source: http://www.apache.org/licenses/LICENSE-2.0.html
 required:
   - include-copyright
   - document-changes
-
+  
 permitted:
   - commercial-use
   - modifications

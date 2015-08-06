@@ -16,13 +16,16 @@ how: Create a text file (typically named UNLICENSE or UNLICENSE.txt) in the root
 required:
 
 permitted:
+  - private-use
   - commercial-use
   - modifications
   - distribution
-  - private-use
+  - sublicense
 
 forbidden:
   - no-liability
+
+required: []
 
 ---
 This is free and unencumbered software released into the public domain.

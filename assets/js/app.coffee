@@ -1,3 +1,6 @@
+---
+---
+
 class Choosealicense
 
   # Checks if Flash is available in the client.
@@ -42,9 +45,9 @@ class Choosealicense
   initTooltips: ->
 
     # Dynamically add annotations as title attribute to rule list items
-    for category, rules of annotations
-      for label, text of rules
-        $(".license-rules ul.license-#{category} li.#{label}").attr "title", text
+    for category, rules of window.annotations
+      for rule in rules
+        $(".license-rules ul.license-#{category} li.#{rule["tag"]}").attr "title", rule["description"]
 
     # Init tooltips on all rule list items
     for category, label of @categories
@@ -87,11 +90,11 @@ class Choosealicense
 
   # Callback to restore the clipboard button's original text
   clipboardMouseout: (client, args) ->
-    @innerText = $(this).data("clipboard-prompt")
+    @textContent = $(this).data("clipboard-prompt")
 
   # Post-copy user feedback callback
   clipboardComplete: (client, args) ->
-    @innerText = "Copied!"
+    @textContent = "Copied!"
 
   # Initializes pill navigation for license variations
   initLicenseVariationNav: ->

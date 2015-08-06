@@ -1,6 +1,7 @@
 ---
 layout: license
-title: CC0 1.0 Universal
+title: Creative Commons Zero v1.0 Universal
+nickname: CC0 1.0 Universal
 category: Public Domain Dedication
 tab-slug: cc0
 permalink: /licenses/cc0/
@@ -24,6 +25,8 @@ permitted:
 
 forbidden:
   - no-liability
+
+required: []
 
 ---
 CC0 1.0 Universal
