@@ -1,13 +1,11 @@
 ---
 layout: license
 permalink: /licenses/odbl/
-category: ODbL
-class: license-types
 title: Open Database License
 
 source: http://opendatacommons.org/licenses/odbl/1.0/
 
-description: The <a href="http://opendatacommons.org/licenses/odbl/1.0/">Open Database License (ODbL)</a> is a license agreement intended to allow users to freely share, modify, and use this Database while maintaining this same freedom for others.
+description: The Open Database License (ODbL) is a license agreement intended to allow users to freely share, modify, and use this Database while maintaining this same freedom for others.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the  into the file.
 
@@ -569,6 +567,3 @@ applicable copyright law and Database Rights in the relevant
 jurisdiction includes additional rights not granted under this License,
 these additional rights are granted in this License in order to meet the
 terms of this License.
-
-For more information, please see
-<http://opendatacommons.org/wp-content/uploads/2009/06/odbl-10.txt>
