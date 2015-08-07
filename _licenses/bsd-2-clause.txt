@@ -4,7 +4,7 @@ title: BSD 2-clause "Simplified" License
 nickname: Simplified BSD
 category: BSD
 tab-slug: bsd
-hide-from-license-list: true
+variant: true
 redirect_from: /licenses/bsd/
 permalink: /licenses/bsd-2-clause/
 
