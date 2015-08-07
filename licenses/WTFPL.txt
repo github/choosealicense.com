@@ -1,11 +1,12 @@
 ---
 layout: license
-title: Do What the Fuck You Want to Public License
+title: Do What the F*** You Want to Public License
 category: WTFPL
 permalink: /licenses/wtfpl/
+hidden: true
 source: http://www.wtfpl.net/
 
-description: The easiest licence out there. It gives the user permissions to do whatever the fuck they want with your code.
+description: The easiest licence out there. It gives the user permissions to do whatever they want with your code.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. 
 
