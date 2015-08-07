@@ -10,7 +10,7 @@ description: The Open Font License (OFL) is maintained by SIL International. It 
 
 note: This license doesn't require source provision, but recommends it. All files derived from OFL files must remain licensed under the OFL.
 
-how: Create a text file (typically named OFL.txt) in the root of your font source and copy the text of the license into the file. Replace [year] with the current year and [fullname (email)] with the name and contact email address of each copyright holder. You may take the additional step of appending a Reserved Font Name notice. This option requires anyone making modifications to change the font's name, and is not ideal for web fonts (which all users will modify by changing formats and subsetting for their own needs.)
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your font source and copy the text of the license into the file. Replace [year] with the current year and [fullname] ([email]) with the name and contact email address of each copyright holder. You may take the additional step of appending a Reserved Font Name notice. This option requires anyone making modifications to change the font's name, and is not ideal for web fonts (which all users will modify by changing formats and subsetting for their own needs.)
 
 required:
   - include-copyright
@@ -46,7 +46,7 @@ with others.
 
 The OFL allows the licensed fonts to be used, studied, modified and
 redistributed freely as long as they are not sold by themselves. The
-fonts, including any derivative works, can be bundled, embedded, 
+fonts, including any derivative works, can be bundled, embedded,
 redistributed and/or sold with any software provided that any reserved
 names are not used by derivative works. The fonts and derivatives,
 however, cannot be released under any other type of license. The
