@@ -17,7 +17,7 @@ required:
 - description: You must change the name of the software if you modify it.
   label: Rename
   tag: rename
-- description: You must change the name of the software if you modify it and any Reserved Font Names are declared.
+- description: You must change the name of the software if you modify it and any Reserved Font Names are declared (Reserved Font Names are dedicated font names explicitely added after the copyright statement that an author wishes to keep for the canonical version. This allows this font author to permit any modifications to derivatives by other designers as long as they don't conflict with the name of original version and the corresponding reserved names. Document reflow issues, changes in coverage and features, unexpected bugs and support burdens with the derivatives are then clearly distinct from the canonical version because they have different unique names. In collaborative projects they may be multiple RFNs added by various authors.)
   label: Rename when Reserved Font Name(s) declared
   tag: rename-if-reserved-font-names-declared
 
@@ -66,6 +66,6 @@ forbidden:
 - description: You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
   label: Sublicensing
   tag: sublicense
-- description: You may not sell this software on its own. But you can sell as a bundle with other any software. Or sell your time as a developer.
+- description: You may not sell this software on its own, but you can sell it as a bundle with any other software or sell your time as a developer.
   label: Selling on its own
   tag: no-selling-on-its-own
