@@ -3,37 +3,43 @@ layout: license
 title: SIL Open Font License 1.1
 hidden: true
 permalink: /licenses/ofl/
+redirect_from: /licenses/ofl-1.1/
+filename: OFL.txt
 
 source: http://scripts.sil.org/OFL_web
 
-description: The Open Font License (OFL) is maintained by SIL International. It is designed to honour the values of both the Free Software and Typeface Design communities. It is used for many open font projects created by independent font developers, small foundries as well as big corporations like Adobe, Google and Mozilla.
+description: The Open Font License (OFL) is maintained by SIL International. It is designed to honor the values of both the Free Software and Typeface Design communities. It is used for many open font projects created by independent font developers, small foundries as well as big corporations like Adobe, Google and Mozilla.
 
-note: This license doesn't require source provision, but recommends it (including publishing build scripts and related documentation). All files derived from OFL files inherit the license and must remain licensed under the OFL.
+note: This license doesn't require source provision, but recommends it via best practices (including build scripts and related documentation). All files derived from OFL files inherit the license and must remain under the OFL.
 
-how: Create a text file (typically named OFL.txt) in the root of your font source and copy the text of the license into the file. Fill in the header by replacing [year] with the relevant years, [fullname] with your full name and ([email]) with your contact email address. As a copyright holder, you may choose to declare a Reserved Font Name by adding with Reserved Font Name &lt;Reserved Font Name&gt; next to your copyright statement. This is an optional feature which requires other developers making modifications to change the font name and pick their own unique name to prevent collisions, see the [OFL-FAQ](http://scripts.sil.org/OFL-FAQ_web) for more details. You can choose not to use it. As you develop an open font collaboratively in a public repository, you can use a development name that is different from the release name which users expect to be stable. 
+how: Create a text file (typically OFL.txt) in the root of your source and copy the text of the license into the file. Fill in the header with [year], [fullname] and [email] with your information as the copyright holder (you can also add a URL to your upstream project website). As a copyright holder, you may choose to declare one - or more - Reserved Font Name(s) by adding "with Reserved Font Name &lt;Reserved Font Name&gt;" under your copyright statement. This is an optional feature which requires other developers who make modifications to change the font name and pick their own unique name to prevent collisions and respect your canonical branch. When developing an open font collaboratively in a public repository, you can also use a development name that is different from the release name which users expect to be stable. Documenting changes in a FONTLOG.txt file is recommended. See the <a href="http://scripts.sil.org/OFL-FAQ_web">OFL-FAQ</a> for more details and practical tips.
 
 required:
   - include-copyright
-  - document-changes
+  - rename-if-reserved-font-names-declared
 
 permitted:
   - private-use
   - commercial-use
   - modifications
   - distribution
+  - embedding
+  - bundling
 
 forbidden:
   - no-liability
   - trademark-use
   - no-sublicense
+  - no-selling-on-its-own
 
 ---
 
-Copyright (c) [year], [fullname] ([email])
+Copyright (c) [year], [fullname] ([URL]|[email] )
+[optional line: with Reserved Font Name "<Reserved Font Name>"]
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
-[http://scripts.sil.org/OFL](http://scripts.sil.org/OFL)
+http://scripts.sil.org/OFL
 
 -----------------------------------------------------------
 SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
