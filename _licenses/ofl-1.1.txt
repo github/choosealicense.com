@@ -1,33 +1,41 @@
 ---
 layout: license
-title: SIL Open Font License
+title: SIL Open Font License 1.1
 hidden: true
 permalink: /licenses/ofl/
+redirect_from: /licenses/ofl-1.1/
+filename: OFL.txt
 
 source: http://scripts.sil.org/OFL_web
 
-description: The Open Font License (OFL) is maintained by SIL International. It attempts to be a compromise between the values of the free software and typeface design communities. It is used for almost all open source font projects, including those by Adobe, Google and Mozilla.
+description: The Open Font License (OFL) is a mild copyleft license made specifically for typeface design and font engineering. Unlike other licenses, it provides unique features dedicated to the needs of font designers and script engineers. It enables font authors to release their work under a well-established common libre license that allows use, bundling, embedding, modification and redistribution. It encourages shared value and is not limited to any specific computing platform or environment. It has been validated by the Debian, FSF and OSI. It is already used by many open font projects created by independent font developers, small foundries as well as big corporations like Adobe, Google and Mozilla. 
 
-note: This license doesn't require source provision, but recommends it. All files derived from OFL files must remain licensed under the OFL.
+note: This license doesn't require source provision (i.e. providing every single source file in every format used - including intermediary files and opaque proprietary formats - with the corresponding buildpath), but highly recommends it via best practices (providing the most preferred forms for modification including build scripts and related documentation). Everything derived from OFL files inherits the license and must remain under the OFL.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your font source and copy the text of the license into the file. Replace [year] with the current year and [fullname] ([email]) with the name and contact email address of each copyright holder. You may take the additional step of appending a Reserved Font Name notice. This option requires anyone making modifications to change the font's name, and is not ideal for web fonts (which all users will modify by changing formats and subsetting for their own needs.)
+how: Create a text file (typically OFL.txt) in the root of your source and copy the text of the license into the file. Fill in the header with [year], [fullname] and [email] with your information as the copyright holder (you can also add a URL to your upstream project website). As a copyright holder, you may choose to declare one - or more - Reserved Font Name(s) by adding "with Reserved Font Name &lt;Reserved Font Name&gt;" under your copyright statement. This is an optional feature which requires other developers who make modifications to change the font name and pick their own unique name to prevent collisions and respect your canonical branch. When developing an open font collaboratively in a public repository, you can also use a development name that is different from the release name which users expect to be stable. Documenting changes in a FONTLOG.txt file is recommended. See the <a href="http://scripts.sil.org/OFL-FAQ_web">OFL-FAQ</a> for more details and practical tips.
 
 required:
   - include-copyright
+  - rename-if-reserved-font-names-declared
 
 permitted:
   - private-use
   - commercial-use
   - modifications
   - distribution
+  - embedding
+  - bundling
 
 forbidden:
   - no-liability
   - trademark-use
+  - no-sublicense
+  - no-selling-on-its-own
 
 ---
 
-Copyright (c) [year] [fullname] ([email])
+Copyright (c) [year], [fullname] ([URL]|[email] )
+[optional line: with Reserved Font Name "<Reserved Font Name>"]
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
@@ -72,7 +80,7 @@ new environment.
 "Author" refers to any designer, engineer, programmer, technical
 writer or other person who contributed to the Font Software.
 
-PERMISSION & CONDITIONS
+PERMISSION &amp; CONDITIONS
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of the Font Software, to use, study, copy, merge, embed, modify,
 redistribute, and sell modified and unmodified copies of the Font

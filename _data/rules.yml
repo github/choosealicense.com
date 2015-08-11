@@ -17,6 +17,9 @@ required:
 - description: You must change the name of the software if you modify it.
   label: Rename
   tag: rename
+- description: You must change the name of the software if you modify it and any Reserved Font Names are declared (Reserved Font Names are dedicated font names explicitely added after the copyright statement that an author wishes to keep for the canonical version. This allows this font author to permit any modifications to derivatives by other designers as long as they don't conflict with the name of original version and the corresponding reserved names. Document reflow issues, changes in coverage and features, unexpected bugs and support burdens with the derivatives are then clearly distinct from the canonical version because they have different unique names. In collaborative projects they may be multiple RFNs added by various authors.)
+  label: Rename when Reserved Font Name(s) declared
+  tag: rename-if-reserved-font-names-declared
 
 permitted:
 - description: This software and derivatives may be used for commercial purposes.
@@ -37,6 +40,12 @@ permitted:
 - description: This license provides an express grant of patent rights from the contributor to the recipient.
   label: Patent Grant
   tag: patent-grant
+- description: This software may be bundled together with any other software.
+  label: Bundling
+  tag: bundling
+- description: This software may be embedded within any other document.
+  label: Embedding
+  tag: embedding
 
 forbidden:
 - description: While this may be implicitly true of all licenses, this license explicitly states that you may NOT use the names, logos, or trademarks of contributors.
@@ -57,3 +66,6 @@ forbidden:
 - description: You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
   label: Sublicensing
   tag: sublicense
+- description: You may not sell this software on its own, but you can sell it as a bundle with any other software or sell your time as a developer.
+  label: Selling on its own
+  tag: no-selling-on-its-own
