@@ -6,7 +6,7 @@ layout: license
 permalink: /licenses/ms-rl/
 source: http://opensource.org/licenses/ms-rl
 redirect_from: /licenses/ms/
-tab-slug: ms-rl
+hidden: true 
 
 description: "Microsoft Open Source licensing"
 
