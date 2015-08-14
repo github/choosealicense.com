@@ -7,8 +7,7 @@ permalink: /licenses/ms-pl/
 source: http://opensource.org/licenses/ms-pl
 redirect_from: /licenses/ms/
 description: "Microsoft Open Source"
-hide-from-license-list: true
-tab-slug: ms-pl
+hidden: true  
 
 required:
   - include-copyright
