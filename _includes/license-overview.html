@@ -14,8 +14,8 @@
       <!-- always show this div, even w/o variations, for proper spacing -->
       {% if license.tab-slug %}
       <ul class="nav-pills js-nav-pills">
-        {% for variation in site.licenses %}
-          {% if variation.category and variation.category == license.category %}
+        {% assign variations = site.licenses | where:"hidden",false | where:"category",license.category %}
+        {% for variation in variations %}
         <li{% if license.tab-slug == variation.tab-slug %} class="active"{% endif %}><a href="#{{ variation.tab-slug }}" data-selected-tab="variation-{{ variation.tab-slug }}">
           {% if variation.nickname != nil %}
             {{ variation.nickname }}
@@ -23,13 +23,12 @@
             {{ variation.title }}
           {% endif %}
         </a></li>
-          {% endif %}
         {% endfor %}
       </ul>
       {% endif %}
     </div>
-    {% for variation in site.licenses %}
-      {% if variation.category and variation.category == license.category %}
+    {% assign variations = site.licenses | where:"hidden",false | where:"category",license.category %}
+    {% for variation in variations %}
     <div {% if variation.tab-slug %}id="{{ variation.tab-slug }}" {% endif %}class="variation-tab {% if variation.tab-slug %}variation-{{ variation.tab-slug }}{% endif %} js-variation-tab{% if license.tab-slug == variation.tab-slug %} active{% endif %}">
       <table class="license-rules">
         <tr>
@@ -59,7 +58,6 @@
       </table>
       <p class="small"><a href="{{ variation.permalink }}">View full {{ variation.title }} license »</a></p>
     </div>
-        {% endif %}
     {% endfor %}
   </div>
 </div>
