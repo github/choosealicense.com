@@ -1,8 +1,16 @@
 <div class="license-family clearfix">
   <div class="license-family-heading">
     <h3 class="license-family-name">
-      <a href="{{ license.permalink }}">
-        {% if license.category %}{{ license.category }}{% else %}{{ license.title }}{% endif %}
+      <a href="{{ license.url }}">
+        {% if license.category %}
+          {{ license.category }}
+        {% else %}
+          {% if license.nickname %}
+            {{ license.nickname }}
+          {% else %}
+            {{ license.title }}
+          {% endif %}
+        {% endif %}
       </a>
     </h3>
 
@@ -12,7 +20,7 @@
   <div class="license-details">
     <div class="license-variations js-license-variations">
       <!-- always show this div, even w/o variations, for proper spacing -->
-      {% if license.tab-slug %}
+      {% if license.category %}
       <ul class="nav-pills js-nav-pills">
         {% assign variations = site.licenses | where:"hidden",false | where:"category",license.category %}
         {% for variation in variations %}
@@ -27,7 +35,13 @@
       </ul>
       {% endif %}
     </div>
-    {% assign variations = site.licenses | where:"hidden",false | where:"category",license.category %}
+    
+    {% if license.category %}
+      {% assign variations = site.licenses | where:"hidden",false | where:"category",license.category %}
+    {% else %}
+      {% assign variations = site.licenses | where:"title",license.title %}
+    {% endif %}
+
     {% for variation in variations %}
     <div {% if variation.tab-slug %}id="{{ variation.tab-slug }}" {% endif %}class="variation-tab {% if variation.tab-slug %}variation-{{ variation.tab-slug }}{% endif %} js-variation-tab{% if license.tab-slug == variation.tab-slug %} active{% endif %}">
       <table class="license-rules">
@@ -56,7 +70,7 @@
           {% endfor %}
         </tr>
       </table>
-      <p class="small"><a href="{{ variation.permalink }}">View full {{ variation.title }} license »</a></p>
+      <p class="small"><a href="{{ variation.url }}">View full {{ variation.title }} license »</a></p>
     </div>
     {% endfor %}
   </div>

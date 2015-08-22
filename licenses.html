@@ -9,7 +9,7 @@ title: Licenses
 
 {% assign featured_licenses = site.licenses | where:"featured",true %}
 {% for license in featured_licenses | sort: 'path' %}
-  {% include license-overview.html %}
+  {% include license-overview.html license=license %}
 {% endfor %}
 
 <h2>Other licenses</h2>
@@ -19,5 +19,5 @@ title: Licenses
 </p>
 {% assign licenses = site.licenses | where:"featured",false | where:"hidden",false | where:"variant",false %}
 {% for license in licenses %}
-  {% include license-overview.html %}
+  {% include license-overview.html license=license %}
 {% endfor %}

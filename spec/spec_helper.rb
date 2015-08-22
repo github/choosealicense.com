@@ -17,7 +17,11 @@ def config
 end
 
 def licenses
-  site.collections["licenses"].docs.map { |l| l.data.merge("id" => l.basename(".txt")) }
+  site.collections["licenses"].docs.map { |l| l.to_liquid.merge("id" => l.basename(".txt")) }
+end
+
+def categories
+  licenses.map { |l| l["category"] }.compact.uniq
 end
 
 def site
@@ -31,6 +35,14 @@ end
 
 def rules
   site.data["rules"]
+end
+
+def fields
+  site.data["fields"]
+end
+
+def meta
+  site.data["meta"]
 end
 
 def rule?(tag, group)

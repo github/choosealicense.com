@@ -1,13 +1,9 @@
 ---
-layout: license
 title: The Unlicense
+source: http://unlicense.org/UNLICENSE
+
 category: Public Domain Dedication
 tab-slug: unlicense
-permalink: /licenses/unlicense/
-class: license-types
-filename: UNLICENSE
-
-source: http://unlicense.org/UNLICENSE
 
 description: Because copyright is automatic in most countries, <a href="http://unlicense.org">the Unlicense</a> is a template to waive copyright interest in software you've written and dedicate it to the public domain. Use the Unlicense to opt out of copyright entirely. It also includes the no-warranty statement from the MIT/X11 license.
 
