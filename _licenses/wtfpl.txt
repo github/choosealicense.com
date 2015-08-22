@@ -1,8 +1,5 @@
 ---
-layout: license
 title: "Do What The F*ck You Want To Public License"
-category: WTFPL
-permalink: /licenses/wtfpl/
 hidden: true
 source: http://www.wtfpl.net/
 

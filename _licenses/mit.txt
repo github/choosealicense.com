@@ -1,10 +1,6 @@
 ---
-layout: license
 title: MIT License
-category: MIT
-permalink: /licenses/mit/
 source: http://opensource.org/licenses/MIT
-
 featured: true
 
 description: A permissive license that is short and to the point. It lets people do anything with your code with proper attribution and without warranty.

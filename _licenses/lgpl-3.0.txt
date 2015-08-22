@@ -1,5 +1,4 @@
 ---
-layout: license
 title: GNU Lesser General Public License v3.0
 nickname: GNU LGPL v3.0
 category: LGPL
@@ -7,7 +6,6 @@ tab-slug: lgpl-v3
 variant: true
 redirect_from: /licenses/lgpl-v3/
 source: http://www.gnu.org/licenses/lgpl-3.0.txt
-permalink: /licenses/lgpl-3.0/
 
 description: Version 3 of the LGPL is an additional set of permissions to the <a href="/licenses/GPL-3.0">GPL v3 license</a> that requires that derived works be licensed under the same license, but works that only link to it do not fall under this restriction.
 
