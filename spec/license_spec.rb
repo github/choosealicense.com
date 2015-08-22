@@ -31,21 +31,5 @@ licenses.each do |license|
         end
       end
     end
-
-    ["permitted", "required", "forbidden"].each do |group|
-      describe "#{group} properties" do
-        it "should list the properties" do
-          expect(license[group]).to_not be_nil
-        end
-
-        license[group].to_a.each do |tag|
-          describe "#{tag} tag" do
-            it "should be a valid tag" do
-              expect(rule?(tag,group)).to be(true)
-            end
-          end
-        end
-      end
-    end
   end
 end

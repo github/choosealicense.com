@@ -16,7 +16,7 @@ licenses.each do |license|
       missing = required - raw_fields.keys
       expect(missing).to be_empty
     end
-
+    
     if license["category"]
       it "should contain the required license variant fields" do
         missing = ["category", "tab-slug"] - license.keys

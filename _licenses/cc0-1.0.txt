@@ -20,7 +20,7 @@ permitted:
   - modifications
   - distribution
   - private-use
-
+  
 forbidden:
   - no-liability
 
