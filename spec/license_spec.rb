@@ -7,7 +7,6 @@ LICENSE_WHITELIST = %w[
   wtfpl
 ]
 
-
 licenses.each do |license|
   describe "The #{license["title"]} license" do
     describe "SPDX compliance" do
