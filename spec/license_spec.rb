@@ -2,14 +2,6 @@ require 'spec_helper'
 
 licenses.each do |license|
   describe "The #{license["title"]} license" do
-    it "should have a title" do
-      expect(license["title"]).to_not be_nil
-    end
-
-    it "should have a description" do
-      expect(license["description"]).to_not be_nil
-    end
-
     describe "SPDX compliance" do
       # "No license" isn't really a license, so no need to test
       unless license["id"] == "no-license"

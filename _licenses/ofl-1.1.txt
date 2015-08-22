@@ -1,8 +1,7 @@
 ---
-layout: license
 title: SIL Open Font License 1.1
 hidden: true
-permalink: /licenses/ofl/
+redirect_from: /licenses/ofl/
 
 source: http://scripts.sil.org/OFL_web
 

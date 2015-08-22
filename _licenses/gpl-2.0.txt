@@ -1,13 +1,11 @@
 ---
 title: GNU General Public License v2.0
 nickname: GNU GPL v2.0
-category: GPL
-tab-slug: gpl-v2
-variant: false
-layout: license
-permalink: /licenses/gpl-2.0/
 redirect_from: /licenses/gpl-v2/
 source: http://www.gnu.org/licenses/gpl-2.0.txt
+
+category: GPL
+tab-slug: gpl-v2
 
 description: GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. There are multiple variants of the GPL, each with different requirements.
 

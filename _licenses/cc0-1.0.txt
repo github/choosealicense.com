@@ -1,13 +1,11 @@
 ---
-layout: license
 title: Creative Commons Zero v1.0 Universal
 nickname: CC0 1.0 Universal
-category: Public Domain Dedication
+redirect_from: /licenses/cc0/
+
 tab-slug: cc0
-permalink: /licenses/cc0/
-class: license-types
+category: Public Domain Dedication
 variant: true
-filename: LICENSE
 
 source: http://creativecommons.org/publicdomain/zero/1.0/
 

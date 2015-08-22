@@ -1,10 +1,7 @@
 ---
-layout: license
 title: Artistic License 2.0
-category: Artistic
 redirect_from: /licenses/artistic/
 source: http://www.perlfoundation.org/attachment/legal/artistic-2_0.txt
-permalink: /licenses/artistic-2.0/
 
 description: Heavily favored by the Perl community, the Artistic license requires that modified versions of the software do not prevent users from running the standard version.
 
