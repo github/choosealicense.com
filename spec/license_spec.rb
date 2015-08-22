@@ -5,6 +5,7 @@ LICENSE_WHITELIST = %w[
   unlicense
   cc0-1.0
   wtfpl
+  bsd-3-clause-clear
 ]
 
 licenses.each do |license|
