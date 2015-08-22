@@ -1,5 +1,13 @@
 require 'spec_helper'
 
+# List of licenses that need not be OSI approved
+LICENSE_WHITELIST = %w[
+  unlicense
+  cc0-1.0
+  wtfpl
+]
+
+
 licenses.each do |license|
   describe "The #{license["title"]} license" do
     describe "SPDX compliance" do
@@ -15,10 +23,11 @@ licenses.each do |license|
         end
 
         # CC0 and Unlicense are not OSI approved, but that's okay
-        unless license["id"] == "unlicense" || license["id"] == "cc0-1.0"
+        unless LICENSE_WHITELIST.include? license["id"]
           it "should be OSI approved" do
             spdx = find_spdx(license["id"])
-            expect(spdx[1]["osiApproved"]).to eql(true)
+            approved = spdx[1]["osiApproved"]
+            expect(approved).to eql(true)
           end
         end
       end
