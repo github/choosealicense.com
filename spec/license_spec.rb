@@ -21,6 +21,14 @@ licenses.each do |license|
           spdx = find_spdx(license["id"])
           expect(spdx[1]["name"].gsub(/ only$/,"")).to eql(license["title"])
         end
+
+        # CC0 and Unlicense are not OSI approved, but that's okay
+        unless license["id"] == "unlicense" || license["id"] == "cc0-1.0"
+          it "should be OSI approved" do
+            spdx = find_spdx(license["id"])
+            expect(spdx[1]["osiApproved"]).to eql(true)
+          end
+        end
       end
     end
 
