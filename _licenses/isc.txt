@@ -7,7 +7,7 @@ tab-slug: isc
 
 description: A permissive license lets people do anything with your code with proper attribution and without warranty. The ISC license is functionally equivalent to the <a href="/licenses/bsd">BSD 2-Clause</a> and <a href="/licenses/mit">MIT</a> licenses, removing some language that is no longer necessary.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.  [email] is optional but recommended.
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
 required:
   - include-copyright
@@ -24,7 +24,7 @@ forbidden:
 
 ---
 
-Copyright (c) [year], [fullname] <[email]>
+Copyright (c) [year], [fullname]
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
