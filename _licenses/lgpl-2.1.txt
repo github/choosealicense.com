@@ -1,12 +1,11 @@
 ---
-layout: license
 title: GNU Lesser General Public License v2.1
 nickname: GNU LGPL v2.1
+redirect_from: /licenses/lgpl-v2.1/
+source: http://www.gnu.org/licenses/lgpl-2.1.txt
+
 category: LGPL
 tab-slug: lgpl-v2_1
-redirect_from: /licenses/lgpl-v2.1/
-permalink: /licenses/lgpl-2.1/
-source: http://www.gnu.org/licenses/lgpl-2.1.txt
 
 description: Primarily used for software libraries, LGPL requires that derived works be licensed under the same license, but works that only link to it do not fall under this restriction. There are two commonly used versions of the LGPL.
 

@@ -1,12 +1,10 @@
 ---
-layout: license
 title: BSD 2-clause "Simplified" License
 nickname: Simplified BSD
 category: BSD
 tab-slug: bsd
 variant: true
 redirect_from: /licenses/bsd/
-permalink: /licenses/bsd-2-clause/
 
 description: A permissive license that comes in two variants, the <a href="/licenses/bsd">BSD 2-Clause</a> and <a href="/licenses/bsd-3-clause">BSD 3-Clause</a>. Both have very minute differences to the MIT license.
 

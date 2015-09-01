@@ -4,8 +4,6 @@ nickname: GNU GPL v3.0
 category: GPL
 tab-slug: gpl-v3
 variant: true
-layout: license
-permalink: /licenses/gpl-3.0/
 redirect_from: /licenses/gpl-v3/
 source: http://www.gnu.org/licenses/gpl-3.0.txt
 
