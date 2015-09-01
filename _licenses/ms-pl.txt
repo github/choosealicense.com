@@ -1,13 +1,12 @@
 ---
-title: Microsoft Public License
-nickname: Ms-PL
-category: Microsoft
 layout: license
-permalink: /licenses/ms-pl/
-source: http://opensource.org/licenses/ms-pl
-redirect_from: /licenses/ms/
-description: "Microsoft Open Source"
+title: Microsoft Public License
 hidden: true  
+permalink: /licenses/ms-pl/
+
+source: http://opensource.org/licenses/ms-pl
+
+description: "Microsoft Open Source"
 
 required:
   - include-copyright
