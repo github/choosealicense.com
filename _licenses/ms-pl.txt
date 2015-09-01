@@ -1,12 +1,12 @@
 ---
-layout: license
 title: Microsoft Public License
 hidden: true  
-permalink: /licenses/ms-pl/
 
 source: http://opensource.org/licenses/ms-pl
 
 description: "Microsoft Open Source"
+
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
 required:
   - include-copyright
