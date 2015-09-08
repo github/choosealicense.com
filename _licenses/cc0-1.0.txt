@@ -3,7 +3,7 @@ title: Creative Commons Zero v1.0 Universal
 nickname: CC0 1.0 Universal
 tab-slug: cc0
 redirect_from: /licenses/cc0/
-category: Public Domain Dedication
+family: Public Domain Dedication
 variant: true
 source: http://creativecommons.org/publicdomain/zero/1.0/
 

@@ -2,7 +2,7 @@
 title: BSD 3-clause "New" or "Revised" License
 nickname: New BSD
 tab-slug: bsd-3
-category: BSD
+family: BSD
 variant: true
 source: http://opensource.org/licenses/BSD-3-Clause
 

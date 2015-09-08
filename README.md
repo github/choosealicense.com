@@ -53,7 +53,7 @@ Licenses sit in the `/_licenses` folder. The text of the license should be wrapp
 * `featured` - Whether the license should be featured on the main page (defaults to false)
 * `nickname` - A shorter, human-readable license name where the SPDX license name is long
 * `variant` - Whether the license is a variant of a family of licenses (e.g., GPL)
-* `category` - If part of a license family, the name of the license family (e.g., `GPL`)
+* `family` - If part of a license family, the name of the license family (e.g., `GPL`)
 * `tab-slug` - If part of a license family, a license slug containing only `a-z`, `0-9`, and `_` characters
 
 ### Auto-populated fields

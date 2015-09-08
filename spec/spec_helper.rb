@@ -20,8 +20,8 @@ def licenses
   site.collections["licenses"].docs.map { |l| l.to_liquid.merge("id" => l.basename(".txt")) }
 end
 
-def categories
-  licenses.map { |l| l["category"] }.compact.uniq
+def families
+  licenses.map { |l| l["family"] }.compact.uniq
 end
 
 def site

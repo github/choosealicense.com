@@ -17,14 +17,14 @@ licenses.each do |license|
       expect(missing).to be_empty
     end
     
-    if license["category"]
+    if license["family"]
       it "should contain the required license variant fields" do
-        missing = ["category", "tab-slug"] - license.keys
+        missing = ["family", "tab-slug"] - license.keys
         expect(missing).to be_empty
       end
     else
       it "should not contain license family specific fields" do
-        extra = ["variant", "category", "tab-slug"].select{ |f| raw_fields.keys.include?(f) }
+        extra = ["variant", "family", "tab-slug"].select{ |f| raw_fields.keys.include?(f) }
         expect(extra).to be_empty
       end
     end
