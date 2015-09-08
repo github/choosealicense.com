@@ -21,7 +21,9 @@ permitted:
 forbidden:
   - no-liability
   - trademark-use
+
 ---
+
                The Artistic License 2.0
 
            Copyright (c) [year] [fullname]

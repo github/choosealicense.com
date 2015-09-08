@@ -1,15 +1,14 @@
 ---
 title: SIL Open Font License 1.1
-hidden: true
 redirect_from: /licenses/ofl/
-
+hidden: true
 source: http://scripts.sil.org/OFL_web
 
 description: The Open Font License (OFL) is maintained by SIL International. It attempts to be a compromise between the values of the free software and typeface design communities. It is used for almost all open source font projects, including those by Adobe, Google and Mozilla.
 
-note: This license doesn't require source provision, but recommends it. All files derived from OFL files must remain licensed under the OFL.
-
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your font source and copy the text of the license into the file. Replace [year] with the current year and [fullname] ([email]) with the name and contact email address of each copyright holder. You may take the additional step of appending a Reserved Font Name notice. This option requires anyone making modifications to change the font's name, and is not ideal for web fonts (which all users will modify by changing formats and subsetting for their own needs.)
+
+note: This license doesn't require source provision, but recommends it. All files derived from OFL files must remain licensed under the OFL.
 
 required:
   - include-copyright
