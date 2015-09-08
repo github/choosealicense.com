@@ -1,16 +1,15 @@
 ---
 title: Apache License 2.0
+nickname: Apache
 redirect_from: /licenses/apache/
 featured: true
-nickname: Apache
+source: http://www.apache.org/licenses/LICENSE-2.0.html
 
 description: A permissive license that also provides an express grant of patent rights from contributors to users.
 
-note: The Apache Foundation recommends taking the additional step of adding a boilerplate notice to the header of each source file. You can find the notice at the very end of the license in the appendix.
-
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
-source: http://www.apache.org/licenses/LICENSE-2.0.html
+note: The Apache Foundation recommends taking the additional step of adding a boilerplate notice to the header of each source file. You can find the notice at the very end of the license in the appendix.
 
 required:
   - include-copyright
@@ -22,7 +21,6 @@ permitted:
   - distribution
   - sublicense
   - patent-grant
-
   - private-use
 
 forbidden:
