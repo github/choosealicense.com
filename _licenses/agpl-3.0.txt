@@ -1,17 +1,17 @@
 ---
 title: GNU Affero General Public License v3.0
 nickname: GNU Affero GPL v3.0
-category: GPL
 tab-slug: agpl-v3
+redirect_from: /licenses/agpl/
+category: GPL
 variant: true
 source: http://www.gnu.org/licenses/agpl-3.0.txt
-redirect_from: /licenses/agpl/
 
 description: "The GPL family of licenses is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. The AGPL family of licenses is distinguished from GPLv2 and GPLv3 in that hosted services using the code are considered distribution and trigger the copyleft requirements."
 
-note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
-
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
+
+note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
 
 required:
   - include-copyright
