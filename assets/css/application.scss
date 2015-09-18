@@ -5,6 +5,7 @@
 @import "jquery.qtip";
 
 body {
+  background: #fafafa;
   color: #5c5855;
   font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -20,7 +21,7 @@ a:hover {
 }
 
 h1, h2, h3, h5 {
-  color: #443a33;
+  color: #444;
   font-family: Chivo, "Helvetica Neue", Helvetica, Arial, serif;
   font-weight: 900;
   line-height: 1.1;
@@ -58,7 +59,7 @@ ol, ul { padding: 0; margin: 0; list-style-type: none; }
 th, td { text-align: left; font-weight: normal; }
 
 strong {
-  color: #443b34;
+  color: #444;
 }
 
 .container {
@@ -84,7 +85,7 @@ strong {
 }
 
 .home h2 span {
-  color: #e9e6e2;
+  color: #f1f1f1;
   font-size: 70px;
   padding: 0 5px;
   position: relative;
@@ -172,11 +173,11 @@ strong {
 }
 
 .license-family-description {
-  color: #5c5855;
+  color: #555;
 }
 
 .license-rules {
-  border-bottom: solid 1px #d9d7d2;
+  border-bottom: solid 1px #ddd;
   font-size: 13px;
   line-height: 1.3;
   margin-bottom: 12px;
@@ -202,7 +203,7 @@ strong {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  border-right: solid 1px #d9d7d2;
+  border-right: solid 1px #ddd;
   padding-left: 0;
   width: 280px;
 }
@@ -230,7 +231,7 @@ strong {
 }
 
 .license-rules li:hover {
-  color: #443a33;
+  color: #444;
 }
 
 .license-sprite {
@@ -259,8 +260,7 @@ strong {
   font-family: Consolas, Monaco, Courier, monospace;
   font-size: 14px;
   background-color: #fff;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid #e9e6e1;
+  border: 1px solid #eee;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -315,18 +315,18 @@ strong {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border-color: #ceccc9 #b6b4b1 #a6a4a2 #b6b4b1;
+  border-color: #ccc #bbb #aaa #bbb;
   border-style: solid;
   border-width: 1px;
-  color: #443b34;
+  color: #444;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px, rgba(255, 255, 255, 0.8) 0 1px 0 0 inset;
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px, rgba(255, 255, 255, 0.8) 0 1px 0 0 inset;
   box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px, rgba(255, 255, 255, 0.8) 0 1px 0 0 inset;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e7e5e0), color-stop(100%, #d5d3cf));
-  background-image: -webkit-linear-gradient(#e7e5e0, #d5d3cf);
-  background-image: -moz-linear-gradient(#e7e5e0, #d5d3cf);
-  background-image: -o-linear-gradient(#e7e5e0, #d5d3cf);
-  background-image: linear-gradient(#e7e5e0, #d5d3cf);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eee), color-stop(100%, #ddd));
+  background-image: -webkit-linear-gradient(#eee, #ddd);
+  background-image: -moz-linear-gradient(#eee, #ddd);
+  background-image: -o-linear-gradient(#eee, #ddd);
+  background-image: linear-gradient(#eee, #ddd);
   display: inline-block;
   font-size: 12px;
   font-weight: normal;
@@ -337,11 +337,11 @@ strong {
 
 .button:hover {
   text-decoration: none;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e7e5e0), color-stop(100%, #d0ceca));
-  background-image: -webkit-linear-gradient(#e7e5e0, #d0ceca);
-  background-image: -moz-linear-gradient(#e7e5e0, #d0ceca);
-  background-image: -o-linear-gradient(#e7e5e0, #d0ceca);
-  background-image: linear-gradient(#e7e5e0, #d0ceca);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eee), color-stop(100%, #ccc));
+  background-image: -webkit-linear-gradient(#eee, #ccc);
+  background-image: -moz-linear-gradient(#eee, #ccc);
+  background-image: -o-linear-gradient(#eee, #ccc);
+  background-image: linear-gradient(#eee, #ccc);
 }
 
 .projects-with-license li {
@@ -349,17 +349,17 @@ strong {
 }
 
 .site-footer {
-  border-top: 1px solid #e9e6e1;
+  border-top: 1px solid #eee;
   margin-top: 30px;
   padding-top: 20px;
-  color: #5c5855;
+  color: #555;
   font-size: 12px;
   text-align: left;
   line-height: 1.5;
 }
 
 .site-footer a {
-  color: #443a33;
+  color: #444;
   font-weight: normal;
 }
 
