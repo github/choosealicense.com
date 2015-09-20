@@ -1,3 +1,12 @@
 .DS_Store
 /_site
 /node_modules
+/.bundle
+assets/vendor/zeroclipboard/docs
+assets/vendor/zeroclipboard/src
+assets/vendor/zeroclipboard/test
+assets/vendor/selectivizr/tests
+assets/vendor/qtip2/basic
+/vendor
+Gemfile.lock
+/.sass-cache

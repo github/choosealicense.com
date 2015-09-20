@@ -1,0 +1,112 @@
+selectivizr - change log
+========================
+
+
+v1.0.2
+------
+
+ * BUG - fixed Google Closure Compiler issue that added 2 global vars - sorry about that!
+ * NEW - removed the eval() from determineSelectorMethod()
+ * BUG - selectivizr incorrectly detects Yahoo! profiler as YUI selector library
+ * NEW - selectivizr can now be "lazy-loaded"
+ * NEW - switched DOMReady back to Diego Perini's (new) ContentLoaded.
+ * BUG - asset urls using the 'data:' scheme (i.e. background-image) resolved to a path (Chris Korhonen)
+ * BUG - resolveUrl() failed if the context url contained a hash followed by a '/' (Zee Agency)
+ * BUG - IE version detection wasn't IE>9 friendly (reported by Paul Irish)
+
+
+
+v1.0.1
+------
+
+ * BUG - @import urls not wrapped with "url()" are now correctly processed 
+ * BUG - relative urls are now correctly resolved
+ * BUG - patched [*=""] selector in IE8 (returns elements it shouldn't)
+
+
+
+v1.0.0
+------
+
+ie-css3.js is now stable enough to be released with out a beta suffix - say hello to selectivizr v1!
+ 
+
+
+v0.9.7b
+-------
+
+ * NEW - Complete rewrite of the stylesheet parser.
+ * NEW - :not() pseudo support.
+ * NEW - Attribute selector support in IE6 [att] [att="x"] [att~="x"] [att^="x"] [att$="x"] [att*="x"] and [att|="x"]
+ * NEW - Fixes native empty attribute selector support in IE7 [att^=""] [att$=""] [att*=""] and IE8 [att^=""] [att$=""]
+ * BUG - :enabled and :disabled elements now change state properly. (Uses polling)
+ * BUG - Emulation no longer fails in IE6 when more than 2 classes are applied to an element
+
+
+
+v0.9.6b
+-------
+
+ * BUG - IE8 :target pseudo-class emulation fails with jQuery (but not with Sizzle) (reported by Tom Law)
+ * BUG - ie-css3.js won't run if page is in an iframe (switched DOM Load detection to Dean Edwards defered script method)
+ * BUG - A selector that begins with a attribute selector incorrected parsed (reported by Stephanie Sullivan)
+
+
+
+v0.9.5b
+-------
+
+ * NEW - Reworked DOM Load detection (using a cut down version of Diego Perini's ContentLoaded technique)
+ * NEW - Enabled Dojo detection (lowest priority) - Warning: some of Dojo's CSS3 selectors seem very buggy! 
+ * BUG - Fixed mixed content warning when using over SSL
+ * NEW - :target pseudo for IE8 when running standards mode. Sorry, no support for pre-IE8 or quirks mode
+ * NWMatcher now higher priority that DOMAssistant when auto-detecting best library
+ * Internal rewrites / refactoring - more features, but a smaller file :o) 
+
+
+
+v0.9.4b
+-------
+  
+ * NEW - added support for :hover (for IE 5.5 - 6) and :focus (for IE 5.5 - 7)
+ * NEW - added support for ::first-child and ::first-letter (suggested by Philip Renich)
+ * BUG - style sheets without href values shouldn't get parsed (reported by Jeff Smith)
+ * BUG - remotely hosted style sheets are now ignored when used in @imports
+ * BUG - @import rules now honor the <base> href if its specified (reported by Andrea and Tim)
+ * BUG - various minor bug fixes 
+
+
+
+v0.9.3b
+-------
+
+ * No longer dependent on DOMAssistant.
+ * Auto-detects best suited selector library from these:
+   - DOMAssistant (recommended)
+   - NWmatcher
+   - Prototype
+   - YUI 2
+   - MooTools
+   - Sizzle / jQuery
+ * NEW - pseudo selectors :enabled, :disabled, :checked and :root.
+ * BUG - Fixed IE 5.5/6 issue with illegal character in replacement class name.
+ * BUG - Fixed extra spaces issue with modified class names.
+ * BUG - Stopped triggering a DOM redraw when there are no className changes
+ * Dynamic building of CSS_PSEUDOS regexp based on IE version so we only patch what's needed.
+ * XHR compatability test (reported from twitter.com/kangax).
+ * Reworked DOMLoaded detection.
+
+ 
+
+v0.9.2b
+-------
+
+ * CSS parser updated to crawl @import statements (suggested by Andy "Malarkey" Clarke). 
+ * @font rules support.
+ 
+
+
+v0.9.1b
+-------
+
+ * Public beta release.
