@@ -2,14 +2,6 @@
 ---
 
 class Choosealicense
-
-  # Checks if Flash is available in the client.
-  flashAvailable: ->
-    if ActiveXObject?
-      !!(new ActiveXObject("ShockwaveFlash.ShockwaveFlash"))
-    else
-      !!navigator.mimeTypes["application/x-shockwave-flash"]
-
   # Selects the content of a given element
   selectText: (element) ->
     if document.body.createTextRange
@@ -63,7 +55,7 @@ class Choosealicense
     false
 
   # Initializes ZeroClipboard
-  initZeroClipboard: ->
+  initClipboard: ->
     # Backup the clipboard button's original text.
     $(".js-clipboard-button").data "clipboard-prompt", $(".js-clipboard-button").text()
 
@@ -72,21 +64,11 @@ class Choosealicense
       moviePath: "/assets/vendor/zeroclipboard/ZeroClipboard.swf"
     clip.on "mouseout", @clipboardMouseout
     clip.on "complete", @clipboardComplete
-    clip
 
-  # Initializes an alternative way to copy the license for non-flash compatible
-  # browsers
-  initAlternativeClipboard: ->
+    # Fallback if flash is not available
     $(".js-clipboard-button").click (e) =>
       target = "#" + $(e.target).data("clipboard-target")
       @selectText $(target)[0]
-
-  # if Zero Clipboard is present, bind to button and init
-  initClipboard: ->
-    if ZeroClipboard? && @flashAvailable()
-      @initZeroClipboard()
-    else
-      @initAlternativeClipboard()
 
   # Callback to restore the clipboard button's original text
   clipboardMouseout: (client, args) ->
