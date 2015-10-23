@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title | markdownify | strip_html | strip_newlines }} - {% endif %}{{ site.title}}</title>
-    {% if page.description %}<meta name="description" content="{{ page.description | strip_html | strip_newlines }}">{% endif %}
+
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Chivo:900">
     <link rel="stylesheet" href="/assets/css/application.css?v={{ site.github.build_revision }}">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -13,6 +12,8 @@
     <script src="/assets/vendor/selectivizr/selectivizr.js"></script>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    {% include seo.html %}
   </head>
   <body class="{{ page.layout }}{% if page.class %} {{ page.class }}{% endif %}">
     <div class="container">

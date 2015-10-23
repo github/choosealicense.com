@@ -1,5 +1,5 @@
 ---
-title: ChooseALicense.com
+title: Choose a License
 relative_permalinks: false
 markdown: kramdown
 url: "http://choosealicense.com"
@@ -43,3 +43,7 @@ gems:
 sass:
     sass_dir: _sass
     style: :compressed
+
+twitter:
+  username: "@github"
+  account_id: "13334762"
