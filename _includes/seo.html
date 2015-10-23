@@ -7,7 +7,7 @@
     {% if page.description %}
       {% assign seo_description = page.description | strip_html | strip_newlines %}
     {% else %}
-      {% assign seo_description = site.tagline | strip_html | strip_newlines %}
+      {% assign seo_description = site.description | strip_html | strip_newlines %}
     {% endif %}
 
     <!-- le seo -->
