@@ -14,11 +14,12 @@
     <title>{{ seo_title }}</title>
     <meta property="og:title" content="{{ seo_title }}"/>
     <meta property="og:site_name" content="{{ site.title }}"/>
+    <title itemprop='name'>{{ site.title }}</title>
 
     <meta name="description" content="{{ seo_description }}">
     <meta property='og:description' content="{{ seo_description }}"/>
 
-    <link rel="canonical" href="{{ site.github.url }}{{ page.url }}"/>
+    <link rel="canonical" href="{{ site.github.url }}{{ page.url }}" itemprop="url"/>
     <meta property='og:url' content='{{ site.github.url }}{{ page.url }}'/>
     <meta property='og:locale' content='en_us'/>
 
