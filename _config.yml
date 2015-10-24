@@ -1,5 +1,6 @@
 ---
-title: ChooseALicense.com
+title: Choose a License
+description: Non-judgmental guidance on choosing a license for your open source project
 relative_permalinks: false
 markdown: kramdown
 url: "http://choosealicense.com"
@@ -43,3 +44,6 @@ gems:
 sass:
     sass_dir: _sass
     style: :compressed
+
+twitter:
+  username: "@github"

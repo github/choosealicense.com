@@ -2,7 +2,7 @@
 title: Terms of Service
 layout: default
 permalink: /terms-of-service/
-
+description: Terms governing your use of choosealicense.com
 ---
 
 ### 1. Introduction
