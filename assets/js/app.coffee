@@ -54,21 +54,15 @@ class Choosealicense
 
     false
 
-  # Initializes ZeroClipboard
+  # Initializes Clipboard.js
   initClipboard: ->
     # Backup the clipboard button's original text.
     $(".js-clipboard-button").data "clipboard-prompt", $(".js-clipboard-button").text()
 
     # Hook up copy to clipboard buttons
-    clip = new ZeroClipboard $(".js-clipboard-button"),
-      moviePath: "/assets/vendor/zeroclipboard/ZeroClipboard.swf"
+    clip = new Clipboard ".js-clipboard-button"
     clip.on "mouseout", @clipboardMouseout
     clip.on "complete", @clipboardComplete
-
-    # Fallback if flash is not available
-    $(".js-clipboard-button").click (e) =>
-      target = "#" + $(e.target).data("clipboard-target")
-      @selectText $(target)[0]
 
   # Callback to restore the clipboard button's original text
   clipboardMouseout: (client, args) ->
