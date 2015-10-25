@@ -35,7 +35,7 @@ exclude:
   - test
   - tests
   - assets/vendor/selectivizr/tests
-  - assets/vendor/zeroclipboard/test
+  - assets/vendor/clipboard/test
 
 gems:
   - jekyll-sitemap
