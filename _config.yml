@@ -40,7 +40,8 @@ exclude:
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
-
+  - jekyll-seo-tag
+  
 sass:
     sass_dir: _sass
     style: :compressed
