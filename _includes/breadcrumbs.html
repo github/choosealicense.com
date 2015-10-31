@@ -31,7 +31,7 @@
       "position": {% if page.layout == "license" %}3{% else %}2{% endif %},
       "item": {
         "@id": "{{ site.github.url }}{{ page.url }}",
-        "name": "{{ page.title }}"
+        "name": {{ page.title | jsonify }}
       }
     }]
   }
