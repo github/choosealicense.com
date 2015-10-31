@@ -1,7 +1,7 @@
 ---
 title: Mozilla Public License 2.0
 redirect_from: /licenses/mozilla/
-source: http://www.mozilla.org/MPL/2.0/
+source: https://www.mozilla.org/media/MPL/2.0/index.txt
 
 description: The Mozilla Public License (MPL 2.0) is maintained by the Mozilla foundation. This license attempts to be a compromise between the permissive BSD license and the reciprocal GPL license.
 
