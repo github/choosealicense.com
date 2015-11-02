@@ -35,8 +35,8 @@ permitted:
   label: Private Use
   tag: private-use
 - description: This license provides an express grant of patent rights from the contributor to the recipient.
-  label: Patent Grant
-  tag: patent-grant
+  label: Patent Use
+  tag: patent-use
 
 forbidden:
 - description: While this may be implicitly true of all licenses, this license explicitly states that you may NOT use the names, logos, or trademarks of contributors.

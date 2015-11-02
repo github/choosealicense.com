@@ -91,7 +91,7 @@ The license properties (rules) are stored as a bulleted list within the licenses
 * `distribution` - You may distribute this software.
 * `sublicense` - You may grant a sublicense to modify and distribute this software to third parties not included in the license.
 * `private-use` - You may use and modify the software without distributing it.
-* `patent-grant` - This license provides an express grant of patent rights from the contributor to the recipient.
+* `patent-use` - This license provides an express grant of patent rights from the contributor to the recipient.
 
 #### Forbidden
 
