@@ -1,0 +1,19 @@
+{
+  "name": "choosealicense.com",
+  "version": "0.0.1",
+  "homepage": "choosealicense.com",
+  "authors": [
+    "GitHub Inc."
+  ],
+  "description": "A site to provide non-judgmental guidance on choosing a license for your open source project",
+  "main": "index.html",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~1.11.0",
+    "html5shiv": "~3.7.0",
+    "selectivizr": "~1.0.2",
+    "qtip2": "~2.2.0",
+    "normalize-css": "~3.0.0",
+    "clipboard": "~1.4.3"
+  }
+}

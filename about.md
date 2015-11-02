@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /about/
-title: What’s this about?
+title: What's this about?
 ---
 
 GitHub wants to help developers choose a license for their source code.
@@ -17,7 +17,7 @@ This site is not a comprehensive directory of open source licenses.  We think th
 * [Open Source Initiative](http://opensource.org/licenses/) - comprehensive list of open source licenses
 * [Comparison of free and open-source software licenses](http://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses) on Wikipedia
 * [License differentiator](http://www.oss-watch.ac.uk/apps/licdiff/) from [OSS Watch](http://www.oss-watch.ac.uk/)
-* [TLDRLegal](http://www.tldrlegal.com/)
+* [TLDRLegal](https://tldrlegal.com/)
 {: .bullets}
 
 ### Tools

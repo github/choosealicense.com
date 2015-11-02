@@ -2,3 +2,11 @@
 /_site
 /node_modules
 /.bundle
+assets/vendor/clipboard/src
+assets/vendor/clipboard/test
+assets/vendor/selectivizr/tests
+assets/vendor/qtip2/basic
+/vendor
+Gemfile.lock
+/.sass-cache
+.ruby-version

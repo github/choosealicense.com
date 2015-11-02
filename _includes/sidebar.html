@@ -1,6 +1,6 @@
 <div class="sidebar">
 
-  <a href="#" data-clipboard-target="license-text" data-proofer-ignore="true" class="js-clipboard-button button">Copy license text to clipboard</a>
+  <a href="#" data-clipboard-target="#license-text" data-proofer-ignore="true" class="js-clipboard-button button">Copy license text to clipboard</a>
   <div class="how-to-apply">
     <h5>How to apply this license</h5>
     <p>
@@ -27,7 +27,7 @@
   {% for type in types %}
     <h3>{{ type | capitalize }}</h3>
     <ul class="license-{{ type }}">
-      {% assign rules = site.rules[type] | sort: "label" %}
+      {% assign rules = site.data.rules[type] | sort: "label" %}
       {% for rule_obj in rules %}
         {% assign req = rule_obj.tag %}
         {% if page[type] contains req %}
