@@ -20,6 +20,7 @@ required:
 
 permitted:
   - commercial-use
+  - sublicense
   - modifications
   - distribution
   - patent-grant
@@ -27,7 +28,6 @@ permitted:
 
 forbidden:
   - no-liability
-  - no-sublicense
 
 ---
 
