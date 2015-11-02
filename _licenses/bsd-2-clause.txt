@@ -3,7 +3,7 @@ title: BSD 2-clause "Simplified" License
 nickname: Simplified BSD
 tab-slug: bsd
 redirect_from: /licenses/bsd/
-category: BSD
+family: BSD
 variant: true
 source: http://opensource.org/licenses/BSD-2-Clause
 

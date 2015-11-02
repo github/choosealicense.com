@@ -3,7 +3,7 @@ title: GNU Lesser General Public License v3.0
 nickname: GNU LGPL v3.0
 tab-slug: lgpl-v3
 redirect_from: /licenses/lgpl-v3/
-category: LGPL
+family: LGPL
 variant: true
 source: http://www.gnu.org/licenses/lgpl-3.0.txt
 

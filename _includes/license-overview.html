@@ -2,8 +2,8 @@
   <div class="license-family-heading">
     <h3 class="license-family-name">
       <a href="{{ license.url }}">
-        {% if license.category %}
-          {{ license.category }}
+        {% if license.family %}
+          {{ license.family }}
         {% else %}
           {% if license.nickname %}
             {{ license.nickname }}
@@ -20,9 +20,9 @@
   <div class="license-details">
     <div class="license-variations js-license-variations">
       <!-- always show this div, even w/o variations, for proper spacing -->
-      {% if license.category %}
+      {% if license.family %}
       <ul class="nav-pills js-nav-pills">
-        {% assign variations = site.licenses | where:"hidden",false | where:"category",license.category %}
+        {% assign variations = site.licenses | where:"hidden",false | where:"family",license.family %}
         {% for variation in variations %}
         <li{% if license.tab-slug == variation.tab-slug %} class="active"{% endif %}><a href="#{{ variation.tab-slug }}" data-selected-tab="variation-{{ variation.tab-slug }}">
           {% if variation.nickname != nil %}
@@ -36,8 +36,8 @@
       {% endif %}
     </div>
     
-    {% if license.category %}
-      {% assign variations = site.licenses | where:"hidden",false | where:"category",license.category %}
+    {% if license.family %}
+      {% assign variations = site.licenses | where:"hidden",false | where:"family",license.family %}
     {% else %}
       {% assign variations = site.licenses | where:"title",license.title %}
     {% endif %}

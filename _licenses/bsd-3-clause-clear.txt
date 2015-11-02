@@ -3,7 +3,7 @@ title: BSD 3-clause Clear License
 nickname: Clear BSD
 hidden: true
 
-category: BSD
+family: BSD
 tab-slug: bsd-3-clear
 variant: true
 

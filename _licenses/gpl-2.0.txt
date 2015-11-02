@@ -3,7 +3,7 @@ title: GNU General Public License v2.0
 nickname: GNU GPL v2.0
 tab-slug: gpl-v2
 redirect_from: /licenses/gpl-v2/
-category: GPL
+family: GPL
 featured: true
 source: http://www.gnu.org/licenses/gpl-2.0.txt
 

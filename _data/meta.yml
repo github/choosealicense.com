@@ -59,7 +59,7 @@
   description: Whether the license is a variant of a family of licenses (e.g., GPL)
   required: false
 
-- name: category
+- name: family
   description: If part of a license family, the name of the license family (e.g., `GPL`)
   required: false
 

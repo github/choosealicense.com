@@ -21,8 +21,8 @@ class Choosealicense
     my: "top center"
     at: "bottom center"
 
-  # Annotation categories as defined in `_config.yml`
-  categories:
+  # Annotation rule types as defined in `_config.yml`
+  ruletypes:
     required: "Required"
     permitted: "Permitted"
     forbidden: "Forbidden"
@@ -37,20 +37,20 @@ class Choosealicense
   initTooltips: ->
 
     # Dynamically add annotations as title attribute to rule list items
-    for category, rules of window.annotations
+    for ruletype, rules of window.annotations
       for rule in rules
-        $(".license-rules ul.license-#{category} li.#{rule["tag"]}").attr "title", rule["description"]
+        $(".license-rules ul.license-#{ruletype} li.#{rule["tag"]}").attr "title", rule["description"]
 
     # Init tooltips on all rule list items
-    for category, label of @categories
-      $(".license-#{category} li").qtip
+    for ruletype, label of @ruletypes
+      $(".license-#{ruletype} li").qtip
         content:
           text: false
           title:
             text: label
         position: @qtip_position
         style:
-          classes: "qtip-shadow qtip-#{category}"
+          classes: "qtip-shadow qtip-#{ruletype}"
 
     false
 
