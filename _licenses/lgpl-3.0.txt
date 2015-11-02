@@ -23,7 +23,7 @@ permitted:
   - modifications
   - distribution
   - sublicense
-  - patent-grant
+  - patent-use
   - private-use
 
 forbidden:

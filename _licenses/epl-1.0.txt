@@ -24,7 +24,7 @@ permitted:
   - distribution
   - modifications
   - sublicense
-  - patent-grant
+  - patent-use
   - private-use
 
 forbidden:

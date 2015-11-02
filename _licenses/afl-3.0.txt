@@ -17,7 +17,7 @@ permitted:
   - distribution
   - sublicense
   - private-use
-  - patent-grant
+  - patent-use
 
 forbidden:
   - trademark-use
