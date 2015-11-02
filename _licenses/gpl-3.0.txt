@@ -27,7 +27,6 @@ permitted:
 
 forbidden:
   - no-liability
-  - no-sublicense
 
 ---
 
