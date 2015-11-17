@@ -4,7 +4,7 @@ nickname: GNU GPL v3.0
 tab-slug: gpl-v3
 redirect_from: /licenses/gpl-v3/
 family: GPL
-variant: true
+featured: true
 source: http://www.gnu.org/licenses/gpl-3.0.txt
 
 description: GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license.
