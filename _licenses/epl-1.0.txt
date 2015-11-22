@@ -8,12 +8,12 @@ description: This commercially-friendly copyleft license provides the ability to
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
 using:
-  The Eclipse Foundation: "http://www.eclipse.org"
-  OpenDaylight: "http://www.opendaylight.org/"
-  Clojure: "http://clojure.org/"
-  JUnit: "http://junit.org/"
-  Ruby: "https://github.com/jruby/jruby"
-  Mondrian: "http://en.wikipedia.org/wiki/Mondrian_OLAP_server"
+  - The Eclipse Foundation: "http://www.eclipse.org"
+  - OpenDaylight: "http://www.opendaylight.org/"
+  - Clojure: "http://clojure.org/"
+  - JUnit: "http://junit.org/"
+  - Ruby: "https://github.com/jruby/jruby"
+  - Mondrian: "http://en.wikipedia.org/wiki/Mondrian_OLAP_server"
 
 required:
   - disclose-source
