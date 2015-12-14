@@ -22,7 +22,6 @@ permitted:
 
 forbidden:
   - no-liability
-  - trademark-use
 
 ---
 
