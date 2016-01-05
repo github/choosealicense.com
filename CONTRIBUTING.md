@@ -10,9 +10,9 @@ get. But first, please make sure you understand what
 
 ## Adding new licenses
 
-Choosealicense.com is intended to demystifying license choices, not present all of them. As such, there are seveal requirements for a license to be listed on the site:
+Choosealicense.com is intended to demystify license choices, not present all of them. As such, there are several requirements for a license to be listed on the site:
 
-1. The license must have [an SPDX identifier](https://spdx.org/licenses/). If you're license isn't register with SPDX, please [request that it be added](https://spdx.org/spdx-license-list/request-new-license-or-exception).
+1. The license must have [an SPDX identifier](https://spdx.org/licenses/). If your license isn't registered with SPDX, please [request that it be added](https://spdx.org/spdx-license-list/request-new-license-or-exception).
 2. The license must be listed on one of the following approved lists of licenses:
   * [List of OSI approved licenses](https://opensource.org/licenses/alphabetical)
   * [GNU's list of free licenses](https://www.gnu.org/licenses/license-list.en.html) (*note: the license must be listed in one of thre three "free" categories*)
