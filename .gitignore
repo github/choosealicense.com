@@ -10,3 +10,4 @@ assets/vendor/qtip2/basic
 Gemfile.lock
 /.sass-cache
 .ruby-version
+/tmp

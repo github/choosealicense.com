@@ -1,6 +1,8 @@
 require 'jekyll'
 require 'open-uri'
 require 'json'
+require 'open-uri'
+require 'nokogiri'
 
 def config_file
   File.expand_path "./_config.yml", source
@@ -54,6 +56,54 @@ def spdx_list
   $spdx ||= JSON.parse(open(url).read)
 end
 
+def spdx_ids
+  spdx_list.map { |name, properties| name.downcase }
+end
+
 def find_spdx(license)
   spdx_list.find { |name, properties| name.downcase == license }
+end
+
+def osi_approved?(id)
+  spdx = find_spdx(id)
+  return false unless spdx
+  spdx[1]["osiApproved"]
+end
+
+def fsf_approved_licenses
+  $fsf_approved_licenses ||= begin
+    url = "https://www.gnu.org/licenses/license-list.en.html"
+    doc = Nokogiri::HTML(open(url).read)
+    list = doc.css(".green dt")
+    licenses = {}
+    list.each do |license|
+      a = license.css("a").find { |link| !link.text.nil? && !link.text.empty? && link.attr("id") }
+      next if a.nil?
+      id = a.attr("id").downcase
+      name = a.text.strip
+      licenses[id] = name
+    end
+    licenses
+  end
+end
+
+def fsf_approved?(id)
+  fsf_approved_licenses.keys.include?(id)
+end
+
+def od_approved_licenses
+  $od_approved_licenses ||= begin
+    url = "http://licenses.opendefinition.org/licenses/groups/od.json"
+    data = open(url).read
+    data = JSON.parse(data)
+    licenses = {}
+    data.each do |id, meta|
+      licenses[id.downcase] = meta["title"]
+    end
+    licenses
+  end
+end
+
+def od_approved?(id)
+  od_approved_licenses.keys.include?(id)
 end

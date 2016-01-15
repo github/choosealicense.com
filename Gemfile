@@ -7,4 +7,5 @@ group :test do
   gem "html-proofer"
   gem "rake"
   gem "rspec"
+  gem "nokogiri"
 end
