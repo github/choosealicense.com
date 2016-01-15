@@ -64,10 +64,15 @@ def find_spdx(license)
   spdx_list.find { |name, properties| name.downcase == license }
 end
 
-def osi_approved?(id)
-  spdx = find_spdx(id)
-  return false unless spdx
-  spdx[1]["osiApproved"]
+def osi_approved_licenses
+  $osi_approved_licenses ||= begin
+    licenses = {}
+    list = spdx_list.select { |id, meta| meta["osiApproved"] }
+    list.each do |id, meta|
+      licenses[id.downcase] = meta["name"]
+    end
+    licenses
+  end
 end
 
 def fsf_approved_licenses
@@ -87,10 +92,6 @@ def fsf_approved_licenses
   end
 end
 
-def fsf_approved?(id)
-  fsf_approved_licenses.keys.include?(id)
-end
-
 def od_approved_licenses
   $od_approved_licenses ||= begin
     url = "http://licenses.opendefinition.org/licenses/groups/od.json"
@@ -104,6 +105,6 @@ def od_approved_licenses
   end
 end
 
-def od_approved?(id)
-  od_approved_licenses.keys.include?(id)
+def approved_licenses
+  (osi_approved_licenses.keys + fsf_approved_licenses.keys + od_approved_licenses.keys).flatten.uniq.sort
 end
