@@ -1,12 +1,12 @@
 ---
-title: GOC General Open Control License v3.0
+title: GOC General Open Control License v1.0
 nickname: GOC v1.0
 tab-slug: goc-v1
 family: GOC
 featured: true
 source: https://github.com/JTechMe/GOC-General-Open-Control-Licence-v1.0/blob/master/LICENSE.txt
 
-description: GOC is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license.
+description: The GOC License is designed to provide you with a simple and understandable license agreement that is flexible yet durable.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
