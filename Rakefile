@@ -9,8 +9,8 @@ end
 
 task :test do
   sh "bundle exec jekyll build --trace"
-  HTML::Proofer.new("./_site", :check_html => true).run
   Rake::Task["spec"].invoke
+  HTML::Proofer.new("./_site", :check_html => true).run
 end
 
 task :approved_licenses do
@@ -20,7 +20,7 @@ task :approved_licenses do
   puts "#{approved.count} approved licenses:"
   puts approved.join(", ")
   puts "\n"
-  
+
   potential = approved - licenses.map { |l| l["id"] }
   puts "#{potential.count} potential additions:"
   puts potential.join(", ")
