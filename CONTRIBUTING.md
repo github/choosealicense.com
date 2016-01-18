@@ -6,17 +6,26 @@ We love Pull Requests! Your contributions help make ChooseALicense.com great.
 
 So you want to contribute to ChooseALicense. Great! We welcome any help we can
 get. But first, please make sure you understand what
-[this site is all about](http://choosealicense.com/about).
+[this site is all about](http://choosealicense.com/about). It’s not a comprehensive list of all possible licenses.
 
-It’s not a comprehensive list of all possible licenses.
+## Adding a license
 
-If you understand the goals of this site and still want to suggest a change,
-please:
+Choosealicense.com is intended to demystify license choices, not present all of them. As such, there are several requirements for a license to be listed on the site:
 
-* Make sure you have a [GitHub account](https://github.com/signup/free)
-* Submit a ticket for your issue, assuming one does not already exist.
-  * Clearly describe the issue including steps to reproduce when it is a bug.
-  * Make sure you fill in the earliest version that you know has the issue.
+1. The license must have [an SPDX identifier](https://spdx.org/licenses/). If your license isn't registered with SPDX, please [request that it be added](https://spdx.org/spdx-license-list/request-new-license-or-exception).
+2. The license must be listed on one of the following approved lists of licenses:
+  * [List of OSI approved licenses](https://opensource.org/licenses/alphabetical)
+  * [GNU's list of free licenses](https://www.gnu.org/licenses/license-list.en.html) (*note: the license must be listed in one of thre three "free" categories*)
+  * [Open Definition's list of conformant licenses](http://opendefinition.org/licenses/) (non-code)
+3. A [GitHub code search](https://github.com/search?q=MIT+filename%3ALICENSE&type=Code) must reveal at least *1,000* public repositories using the license
+
+If your proposed license meets the above criteria, here's a few other things to keep in mind as you propose the license's addition:
+
+* Licenses live in the `/_licenses` folder.
+* Each license has both [required and optional metadata](https://github.com/github/choosealicense.com#license-metadata) that should be included.
+* The text of the license should be wrapped to a 78 character width.
+* The body of the file should be the text of the license in plain text.
+* Almost without exception, new licenses should be added as hidden (`hidden: true` in the YAML front matter), such that they are directly linkable and detectable, but not otherwise listed.
 
 ## Making Changes
 
