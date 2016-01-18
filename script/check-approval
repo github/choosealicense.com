@@ -1,0 +1,56 @@
+#!/usr/bin/env ruby
+# Checks if a given license meets the approval criteria to be added to choosealicense.com
+# See https://github.com/github/choosealicense.com/blob/gh-pages/CONTRIBUTING.md#adding-a-license
+# Usage: script/check-approval [SPDX LICENSE ID]
+
+require_relative '../spec/spec_helper'
+require 'terminal-table'
+require 'colored'
+
+# Display usage instructions
+if ARGV.count != 1
+  puts File.open(__FILE__).read.scan(/^# .*/)[0...3].join("\n").gsub(/^# /,"")
+end
+
+class TrueClass
+  def to_s
+    "Yes".green
+  end
+end
+
+class FalseClass
+  def to_s
+    "No".red
+  end
+end
+
+license = ARGV[0].downcase.strip
+approvals = {
+  "OSI": osi_approved_licenses,
+  "FSF": fsf_approved_licenses,
+  "OD":  od_approved_licenses
+}
+
+id, spdx = find_spdx(license)
+rows = []
+
+if spdx.nil?
+  id = "Invalid".red
+  name = "None".red
+else
+  id = id.green
+  name = spdx["name"].green
+end
+
+rows << ["SPDX ID", id]
+rows << ["SPDX Name", name]
+
+approvals.each do |name, licenses|
+  rows << ["#{name} approved", licenses.include?(license)]
+end
+
+rows << :separator
+elligible = !!(spdx && approved_licenses.include?(license))
+rows << ["Elligible", elligible]
+
+puts Terminal::Table.new title: "License: #{license}", rows: rows

@@ -166,12 +166,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  colored
   github-pages
   html-proofer (= 2.5.2)
   jekyll-seo-tag
   nokogiri
   rake
   rspec
+  terminal-table
 
 BUNDLED WITH
    1.11.2
