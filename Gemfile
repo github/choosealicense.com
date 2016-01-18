@@ -6,6 +6,7 @@ gem "jekyll-seo-tag"
 group :development do
   gem 'colored'
   gem 'terminal-table'
+  gem 'fuzzy_match'
 end
 
 group :test do

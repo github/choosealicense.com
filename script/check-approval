@@ -6,6 +6,7 @@
 require_relative '../spec/spec_helper'
 require 'terminal-table'
 require 'colored'
+require 'fuzzy_match'
 
 # Display usage instructions
 if ARGV.count != 1
@@ -56,3 +57,14 @@ rows << ["Eligible", eligible]
 puts Terminal::Table.new title: "License: #{license}", rows: rows
 puts
 puts "Code search: https://github.com/search?q=#{license}+filename%3ALICENSE&type=Code"
+
+if spdx.nil?
+  puts
+  puts "SPDX ID not found. Some possible matches:"
+  puts
+  
+  fm = FuzzyMatch.new(spdx_ids)
+  matches = fm.find_all_with_score(license)
+  matches = matches[0...5].map { |record, _dice, _levin| record }
+  matches.each { |l| puts "* #{l}" }
+end
