@@ -19,12 +19,6 @@ licenses.each do |license|
     end
 
     context "industry approval" do
-
-      # FSF approved the Clear BSD, but doesn't use its SPDX ID or Name
-      if license["id"] == "bsd-3-clause-clear"
-        let(:id) { "clearbsd" }
-      end
-
       it "should be approved by OSI or FSF or OD" do
         expect(approved_licenses).to include(id), "See https://git.io/vzCTV."
       end

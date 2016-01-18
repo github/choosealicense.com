@@ -88,6 +88,12 @@ def fsf_approved_licenses
       name = a.text.strip
       licenses[id] = name
     end
+
+    # FSF approved the Clear BSD, but doesn't use its SPDX ID or Name
+    if licenses.keys.include? "clearbsd"
+      licenses["bsd-3-clause-clear"] = licenses["clearbsd"]
+    end
+
     licenses
   end
 end
