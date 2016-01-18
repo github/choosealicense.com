@@ -50,8 +50,8 @@ approvals.each do |name, licenses|
 end
 
 rows << :separator
-elligible = !!(spdx && approved_licenses.include?(license))
-rows << ["Elligible", elligible]
+eligible = !!(spdx && approved_licenses.include?(license))
+rows << ["Eligible", eligible]
 
 puts Terminal::Table.new title: "License: #{license}", rows: rows
 puts
