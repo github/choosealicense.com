@@ -97,7 +97,7 @@ The license properties (rules) are stored as a bulleted list within the licenses
 
 #### Forbidden
 
-* `trademark-use` - While this may be implicitly true of all licenses, this license explicitly states that you may NOT use the names, logos, or trademarks of contributors.
+* `trademark-use` - While this may be implicitly true of all licenses, this license explicitly states that it does NOT grant you any rights in the trademarks or other marks of contributors.
 * `no-liability` - Software is provided without warranty and the software author/license owner cannot be held liable for damages.
 * `no-sublicense` - You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
 * `modifications` - This software may not be modified.
