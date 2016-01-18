@@ -8,7 +8,7 @@ So you want to contribute to ChooseALicense. Great! We welcome any help we can
 get. But first, please make sure you understand what
 [this site is all about](http://choosealicense.com/about). It’s not a comprehensive list of all possible licenses.
 
-## Adding new licenses
+## Adding a license
 
 Choosealicense.com is intended to demystify license choices, not present all of them. As such, there are several requirements for a license to be listed on the site:
 
@@ -19,7 +19,13 @@ Choosealicense.com is intended to demystify license choices, not present all of 
   * [Open Definition's list of conformant licenses](http://opendefinition.org/licenses/) (non-code)
 3. A [GitHub code search](https://github.com/search?q=MIT+filename%3ALICENSE&type=Code) must reveal at least *1,000* public repositories using the license
 
-If your proposed license meets the above criteria, please follow [these instructions for adding a new license](https://github.com/github/choosealicense.com#adding-a-license). Almost without exception, new licenses should be added as hidden (`hidden: true` in the YAML front matter), such that they are directly linkable and detectable, but not otherwise listed.
+If your proposed license meets the above criteria, here's a few other things to keep in mind as you propose the license's addition:
+
+* Licenses live in the `/_licenses` folder.
+* Each license has both [required and optional metadata](https://github.com/github/choosealicense.com#license-metadata) that should be included.
+* The text of the license should be wrapped to a 78 character width.
+* The body of the file should be the text of the license in plain text.
+* Almost without exception, new licenses should be added as hidden (`hidden: true` in the YAML front matter), such that they are directly linkable and detectable, but not otherwise listed.
 
 ## Making Changes
 

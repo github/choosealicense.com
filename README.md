@@ -12,7 +12,7 @@ A lot of repositories on GitHub.com don't have a license. GitHub provides a lice
 
 ## Immediate Goals
 
-* Non-judgemental. Our goal is to help you find a license that meets *your* goals.
+* Non-judgmental. Our goal is to help you find a license that meets *your* goals.
 * Well designed, but that goes without saying.
 * The homepage should have just enough to help 99% of folks make a decision.
 * For the 1%, the site will contain a list of licenses common to specific communities and situations.
@@ -28,11 +28,9 @@ script/server
 ```
 Open `http://localhost:4000` in your favorite browser.
 
-## Adding a license
+## License metadata
 
-Licenses sit in the `/_licenses` folder. The text of the license should be wrapped to a 78 character width. Each license has YAML front matter describing the license's properties. The body of the file should be the text of the license in plain text. The available metadata fields are:
-
-### YAML front matter
+Licenses sit in the `/_licenses` folder. Each license has YAML front matter describing the license's properties. The body of the file contains the text of the license in plain text. The available metadata fields are:
 
 #### Required fields
 
