@@ -28,6 +28,10 @@ script/server
 ```
 Open `http://localhost:4000` in your favorite browser.
 
+## Adding a license
+
+For information on adding a license, see [the CONTRIBUTING file](https://github.com/github/choosealicense.com/blob/gh-pages/CONTRIBUTING.md#adding-a-license).
+
 ## License metadata
 
 Licenses sit in the `/_licenses` folder. Each license has YAML front matter describing the license's properties. The body of the file contains the text of the license in plain text. The available metadata fields are:
