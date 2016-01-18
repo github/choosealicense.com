@@ -26,6 +26,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     fast-stemmer (1.0.2)
     ffi (1.9.10)
+    fuzzy_match (2.1.0)
     gemoji (2.1.0)
     github-pages (43)
       RedCloth (= 4.2.9)
@@ -166,12 +167,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  colored
+  fuzzy_match
   github-pages
   html-proofer (= 2.5.2)
   jekyll-seo-tag
   nokogiri
   rake
   rspec
+  terminal-table
 
 BUNDLED WITH
    1.11.2
