@@ -19,7 +19,14 @@ def config
 end
 
 def licenses
-  site.collections["licenses"].docs.map { |l| l.to_liquid.merge("id" => l.basename(".txt")) }
+  site.collections["licenses"].docs.map do |license|
+    id = File.basename(license.basename, ".txt")
+    license.to_liquid.merge("id" => id)
+  end
+end
+
+def license_ids
+  licenses.map { |l| l["id"] }
 end
 
 def families

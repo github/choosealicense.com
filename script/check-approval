@@ -50,8 +50,11 @@ approvals.each do |name, licenses|
   rows << ["#{name} approved", licenses.include?(license)]
 end
 
+current = license_ids.include?(license)
+rows << ["Current license", current]
+
 rows << :separator
-eligible = !!(spdx && approved_licenses.include?(license))
+eligible = !!(!current && spdx && approved_licenses.include?(license))
 rows << ["Eligible", eligible]
 
 puts Terminal::Table.new title: "License: #{license}", rows: rows
@@ -62,7 +65,7 @@ if spdx.nil?
   puts
   puts "SPDX ID not found. Some possible matches:"
   puts
-  
+
   fm = FuzzyMatch.new(spdx_ids)
   matches = fm.find_all_with_score(license)
   matches = matches[0...5].map { |record, _dice, _levin| record }
