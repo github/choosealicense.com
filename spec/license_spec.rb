@@ -20,7 +20,7 @@ licenses.each do |license|
 
     context "industry approval" do
 
-      # FSF approved the clear BSD, but doesn't use it's SPDX ID or Name
+      # FSF approved the Clear BSD, but doesn't use its SPDX ID or Name
       if license["id"] == "bsd-3-clause-clear"
         let(:id) { "clearbsd" }
       end
