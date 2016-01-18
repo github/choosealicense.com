@@ -54,3 +54,5 @@ elligible = !!(spdx && approved_licenses.include?(license))
 rows << ["Elligible", elligible]
 
 puts Terminal::Table.new title: "License: #{license}", rows: rows
+puts
+puts "Code search: https://github.com/search?q=#{license}+filename%3ALICENSE&type=Code"
