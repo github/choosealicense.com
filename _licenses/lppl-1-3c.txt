@@ -3,48 +3,9 @@ title: LaTeX Project Public License v1.3c
 redirect_from: /licenses/lppl/
 source: https://latex-project.org/lppl/lppl-1-3c.html
 
-description: The LaTeX Project Public License (LPPL) is the primary license 
-under which the LaTeX kernel and the base LaTeX packages are distributed. 
+description: The LaTeX Project Public License (LPPL) is the primary license under which the LaTeX kernel and the base LaTeX packages are distributed. 
 
-how: To use this license, place in each of the components of your work both 
-an explicit copyright notice including your name and the year the work was 
-authored and/or last substantially modified. Include also a statement that 
-the distribution and/or modification of that component is constrained by the 
-conditions in this license.
-
-Here is an example of such a notice and statement:
-
-  %% pig.dtx
-  %% Copyright 2005 M. Y. Name
-  %
-  % This work may be distributed and/or modified under the
-  % conditions of the LaTeX Project Public License, either version 1.3
-  % of this license or (at your option) any later version.
-  % The latest version of this license is in
-  %   http://www.latex-project.org/lppl.txt
-  % and version 1.3 or later is part of all distributions of LaTeX
-  % version 2005/12/01 or later.
-  %
-  % This work has the LPPL maintenance status `maintained'.
-  % 
-  % The Current Maintainer of this work is M. Y. Name.
-  %
-  % This work consists of the files pig.dtx and pig.ins
-  % and the derived file pig.sty.
-
-Given such a notice and statement in a file, the conditions
-given in this license document would apply, with the `Work' referring
-to the three files `pig.dtx', `pig.ins', and `pig.sty' (the last being
-generated from `pig.dtx' using `pig.ins'), the `Base Interpreter'
-referring to any `LaTeX-Format', and both `Copyright Holder' and
-`Current Maintainer' referring to the person `M. Y. Name'.
-
-If you do not want the Maintenance section of LPPL to apply to your
-Work, change `maintained' above into `author-maintained'.  
-However, we recommend that you use `maintained', as the Maintenance
-section was added in order to ensure that your Work remains useful to
-the community even when you can no longer maintain and support it
-yourself.
+how: To use this license, place in each of the components of your work both an explicit copyright notice including your name and the year the work was authored and/or last substantially modified. Include also a statement that the distribution and/or modification of that component is constrained by the conditions in this license.
 
 required:
   - include-copyright
