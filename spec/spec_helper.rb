@@ -19,10 +19,20 @@ def config
 end
 
 def licenses
-  site.collections["licenses"].docs.map do |license|
-    id = File.basename(license.basename, ".txt")
-    license.to_liquid.merge("id" => id)
+  $licenses ||= begin
+    site.collections["licenses"].docs.map do |license|
+      id = File.basename(license.basename, ".txt")
+      license.to_liquid.merge("id" => id)
+    end
   end
+end
+
+def hidden_licenses
+  licenses.select { |l| l["hidden"] }
+end
+
+def shown_licenses
+  licenses.select { |l| !l["hidden"] }
 end
 
 def license_ids

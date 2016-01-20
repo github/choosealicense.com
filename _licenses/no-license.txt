@@ -20,6 +20,7 @@ forbidden:
   - distribution
   - sublicense
 
+hidden: false
 ---
 
 Copyright [year] [fullname]

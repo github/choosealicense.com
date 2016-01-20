@@ -22,6 +22,7 @@ forbidden:
 
 required: []
 
+hidden: false
 ---
 
 This is free and unencumbered software released into the public domain.

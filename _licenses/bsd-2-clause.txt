@@ -24,6 +24,7 @@ permitted:
 forbidden:
   - no-liability
 
+hidden: false
 ---
 
 Copyright (c) [year], [fullname]

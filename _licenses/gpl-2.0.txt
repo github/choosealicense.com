@@ -29,6 +29,7 @@ forbidden:
   - no-liability
   - no-sublicense
 
+hidden: false
 ---
 
                     GNU GENERAL PUBLIC LICENSE
