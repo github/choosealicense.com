@@ -22,6 +22,7 @@ Choosealicense.com is intended to demystify license choices, not present all of 
 If your proposed license meets the above criteria, here's a few other things to keep in mind as you propose the license's addition:
 
 * Licenses live in the `/_licenses` folder.
+* The license files should be in the format of `_licensees/[spdx-id].txt`
 * Each license has both [required and optional metadata](https://github.com/github/choosealicense.com#license-metadata) that should be included.
 * The text of the license should be wrapped to a 78 character width.
 * The body of the file should be the text of the license in plain text.
