@@ -20,6 +20,7 @@ permitted:
 forbidden:
   - no-liability
 
+hidden: false
 ---
 
 The MIT License (MIT)

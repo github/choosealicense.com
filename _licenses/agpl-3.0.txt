@@ -30,6 +30,7 @@ forbidden:
   - no-liability
   - no-sublicense
 
+hidden: false
 ---
 
                     GNU AFFERO GENERAL PUBLIC LICENSE

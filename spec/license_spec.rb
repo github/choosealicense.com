@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe "licenses" do
+
   licenses.each do |license|
 
     # "No license" isn't really a license, so no need to test
