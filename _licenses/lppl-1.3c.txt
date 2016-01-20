@@ -2,7 +2,6 @@
 title: LaTeX Project Public License v1.3c
 nickname: LPPL-1.3c
 tab-slug: lppl-v1.3c
-redirect_from: /licenses/lppl-v1.3c/
 family: LPPL
 source: https://latex-project.org/lppl/lppl-1-3c.html
 
