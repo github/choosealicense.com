@@ -16,6 +16,7 @@ describe "licenses" do
 
       it "uses its SPDX name" do
         spdx = find_spdx(id)
+        expect(spdx).to_not be_nil
         expect(spdx[1]["name"].gsub(/ only$/,"")).to eql(license["title"])
       end
 
