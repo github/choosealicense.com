@@ -1,6 +1,5 @@
 ---
 title: Microsoft Reciprocal License
-hidden: true  
 
 source: http://opensource.org/licenses/ms-pl
 

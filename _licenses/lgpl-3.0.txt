@@ -28,6 +28,7 @@ permitted:
 forbidden:
   - no-liability
 
+hidden: false
 ---
 
                    GNU LESSER GENERAL PUBLIC LICENSE

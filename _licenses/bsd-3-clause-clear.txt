@@ -1,7 +1,6 @@
 ---
 title: BSD 3-clause Clear License
 nickname: Clear BSD
-hidden: true
 
 family: BSD
 tab-slug: bsd-3-clear
