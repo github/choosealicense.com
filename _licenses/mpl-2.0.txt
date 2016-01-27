@@ -23,6 +23,7 @@ forbidden:
   - no-liability
   - trademark-use
 
+hidden: false
 ---
 
 Mozilla Public License Version 2.0
