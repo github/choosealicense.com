@@ -7,7 +7,7 @@ family: EUPL
 featured: false
 source: https://joinup.ec.europa.eu/community/eupl/og_page/european-union-public-licence-eupl-v11
 
-description: The “European Union Public Licence” (EUPL) is the first European Free/Open Source Software (F/OSS) licence. It has been created on the initiative of the European Commission. It is now approved by the European Commission in 22 official languages of the European Union.
+description: The “European Union Public Licence” (EUPL) is a copyleft free/open source software license created on the initiative of and approved by the European Commission in 22 official languages of the European Union.
 
 how: Create a text file (typically named COPYING or LICENCE.txt) in the root of your source code and copy the text of the license into the file.
 
