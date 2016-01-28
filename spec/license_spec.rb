@@ -1,26 +1,30 @@
 require 'spec_helper'
 
-licenses.each do |license|
+describe "licenses" do
 
-  # "No license" isn't really a license, so no need to test
-  next if license["id"] == "no-license"
+  licenses.each do |license|
 
-  describe "The #{license["title"]} license" do
+    # "No license" isn't really a license, so no need to test
+    next if license["id"] == "no-license"
 
-    let(:id) { license["id"]  }
+    context "The #{license["title"]} license" do
 
-    it "has an SPDX ID" do
-      expect(spdx_ids).to include(id)
-    end
+      let(:id) { license["id"]  }
 
-    it "uses its SPDX name" do
-      spdx = find_spdx(id)
-      expect(spdx[1]["name"].gsub(/ only$/,"")).to eql(license["title"])
-    end
+      it "has an SPDX ID" do
+        expect(spdx_ids).to include(id)
+      end
 
-    context "industry approval" do
-      it "should be approved by OSI or FSF or OD" do
-        expect(approved_licenses).to include(id), "See https://git.io/vzCTV."
+      it "uses its SPDX name" do
+        spdx = find_spdx(id)
+        expect(spdx).to_not be_nil
+        expect(spdx[1]["name"].gsub(/ only$/,"")).to eql(license["title"])
+      end
+
+      context "industry approval" do
+        it "should be approved by OSI or FSF or OD" do
+          expect(approved_licenses).to include(id), "See https://git.io/vzCTV."
+        end
       end
     end
   end

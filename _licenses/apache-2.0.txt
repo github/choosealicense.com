@@ -27,6 +27,7 @@ forbidden:
   - trademark-use
   - no-liability
 
+hidden: false
 ---
 
                                  Apache License
