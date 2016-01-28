@@ -4,9 +4,6 @@ describe "licenses" do
 
   licenses.each do |license|
 
-    # "No license" isn't really a license, so no need to test
-    next if license["id"] == "no-license"
-
     context "The #{license["title"]} license" do
 
       let(:id) { license["id"]  }
