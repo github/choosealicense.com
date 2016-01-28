@@ -1,4 +1,4 @@
-﻿---
+---
 title: European Union Public License 1.1
 nickname: EUPL-1.1
 tab-slug: eupl-v1.1
