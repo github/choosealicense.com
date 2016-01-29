@@ -12,6 +12,10 @@ def source
   File.expand_path("../", File.dirname(__FILE__))
 end
 
+def licenses_path
+  File.expand_path "_licenses", source
+end
+
 def config
   config = Jekyll::Configuration.new.read_config_file config_file
   config = Jekyll::Utils.deep_merge_hashes(config, {:source => source})
