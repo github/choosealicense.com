@@ -1,16 +1,13 @@
 require 'spec_helper'
 
-describe "license file" do
-
-  bom = "\xEF\xBB\xBF".each_byte.to_a
-
-  files = Dir["_licenses/*.txt"]
-
-  files.each do |fn|
-    first3 = File.open(fn) {|f| f.read(3)}
-
-    it "#{fn} should not have a byte order mark" do
-      expect(first3.each_byte.to_a).not_to eq(bom)
+describe "byte order marks" do
+  Dir["#{licenses_path}/*.txt"].each do |file|
+    context "the #{File.basename(file, ".txt")} license" do
+      it "does not begin with a byte order mark" do
+        bom = !!(File.open(file).read =~ /\A\xEF\xBB\xBF/)
+        msg = "License file begins with a Byte Order Mark. See http://stackoverflow.com/a/1068700."
+        expect(bom).to eql(false), msg
+      end
     end
   end
 end
