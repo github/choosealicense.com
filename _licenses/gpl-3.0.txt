@@ -27,6 +27,7 @@ permitted:
 
 forbidden:
   - no-liability
+  - no-sublicense
 
 hidden: false
 ---

@@ -21,12 +21,12 @@ permitted:
   - commercial-use
   - modifications
   - distribution
-  - sublicense
   - patent-use
   - private-use
 
 forbidden:
   - no-liability
+  - no-sublicense
 
 hidden: false
 ---
