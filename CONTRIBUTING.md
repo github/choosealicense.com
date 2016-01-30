@@ -15,7 +15,7 @@ Choosealicense.com is intended to demystify license choices, not present all of 
 1. The license must have [an SPDX identifier](https://spdx.org/licenses/). If your license isn't registered with SPDX, please [request that it be added](https://spdx.org/spdx-license-list/request-new-license-or-exception).
 2. The license must be listed on one of the following approved lists of licenses:
   * [List of OSI approved licenses](https://opensource.org/licenses/alphabetical)
-  * [GNU's list of free licenses](https://www.gnu.org/licenses/license-list.en.html) (*note: the license must be listed in one of thre three "free" categories*)
+  * [GNU's list of free licenses](https://www.gnu.org/licenses/license-list.en.html) (*note: the license must be listed in one of the three "free" categories*)
   * [Open Definition's list of conformant licenses](http://opendefinition.org/licenses/) (non-code)
 3. A [GitHub code search](https://github.com/search?q=MIT+filename%3ALICENSE&type=Code) must reveal at least *1,000* public repositories using the license
 
