@@ -13,7 +13,6 @@ permitted:
   - commercial-use
   - modifications
   - distribution
-  - sublicense
   - private-use
   - patent-use
 

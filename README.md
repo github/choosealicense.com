@@ -91,7 +91,6 @@ The license properties (rules) are stored as a bulleted list within the licenses
 * `commercial-use` - This software and derivatives may be used for commercial purposes.
 * `modifications` - This software may be modified.
 * `distribution` - You may distribute this software.
-* `sublicense` - You may grant a sublicense to modify and distribute this software to third parties not included in the license.
 * `private-use` - You may use and modify the software without distributing it.
 * `patent-use` - This license provides an express grant of patent rights from the contributor to the recipient.
 
@@ -99,10 +98,8 @@ The license properties (rules) are stored as a bulleted list within the licenses
 
 * `trademark-use` - While this may be implicitly true of all licenses, this license explicitly states that it does NOT grant you any rights in the trademarks or other marks of contributors.
 * `no-liability` - Software is provided without warranty and the software author/license owner cannot be held liable for damages.
-* `no-sublicense` - You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
 * `modifications` - This software may not be modified.
 * `distribution` - You may not distribute this software.
-* `sublicense` - You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
 
 ## License
 

@@ -15,7 +15,6 @@ permitted:
   - commercial-use
   - modifications
   - distribution
-  - sublicense
 
 forbidden:
   - no-liability
