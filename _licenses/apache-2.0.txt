@@ -19,7 +19,6 @@ permitted:
   - commercial-use
   - modifications
   - distribution
-  - sublicense
   - patent-use
   - private-use
 

@@ -28,9 +28,6 @@ permitted:
 - description: You may distribute this software.
   label: Distribution
   tag: distribution
-- description: You may grant a sublicense to modify and distribute this software to third parties not included in the license.
-  label: Sublicensing
-  tag: sublicense
 - description: You may use and modify the software without distributing it.
   label: Private Use
   tag: private-use
@@ -45,15 +42,9 @@ forbidden:
 - description: Software is provided without warranty and the software author/license owner cannot be held liable for damages.
   label: Hold Liable
   tag: no-liability
-- description: You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
-  label: Sublicensing
-  tag: no-sublicense
 - description: This software may not be modified.
   label: Modification
   tag: modifications
 - description: You may not distribute this software.
   label: Distribution
   tag: distribution
-- description: You may not grant a sublicense to modify and distribute this software to third parties not included in the license.
-  label: Sublicensing
-  tag: sublicense

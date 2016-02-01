@@ -23,7 +23,6 @@ permitted:
   - commercial-use
   - distribution
   - modifications
-  - sublicense
   - patent-use
   - private-use
 
