@@ -40,11 +40,11 @@
   required: false
 
 - name: hidden
-  description: Whether the license is hidden from the license list (defaults to false)
+  description: Whether the license is hidden from the license list (defaults to true)
   required: false
 
 - name: redirect_from
-  description: Relative path(s) to redirect to the license from
+  description: Relative path(s) to redirect to the license from, to prevent breaking old URLs
   required: false
 
 - name: featured
@@ -52,11 +52,11 @@
   required: false
 
 - name: nickname
-  description: A shorter, human-readable license name where the SPDX license name is long
+  description: A shorter, human-readable license name where the SPDX license name (`title` above) is long
   required: false
 
 - name: variant
-  description: Whether the license is a variant of a family of licenses (e.g., GPL)
+  description: Whether the license is a variant of a family of licenses (defaults to false)
   required: false
 
 - name: family
@@ -64,5 +64,5 @@
   required: false
 
 - name: tab-slug
-  description: If part of a license family, a license slug containing only `a-z`, `0-9`, and `_` characters
+  description: If part of a license family, a license slug containing only `a-z`, `0-9`, and `_` characters, used for internal links on the licenses page
   required: false
