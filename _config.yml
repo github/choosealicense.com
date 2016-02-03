@@ -41,6 +41,7 @@ gems:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-seo-tag
+  - jekyll-coffeescript
 
 sass:
     sass_dir: _sass

@@ -11,6 +11,7 @@ task :test do
   sh "bundle exec jekyll build --trace"
   Rake::Task["spec"].invoke
   HTML::Proofer.new("./_site", :check_html => true,
+                    :validation => { :ignore_script_embeds => true },
                     :href_swap => { %r{http://choosealicense.com} => "" }).run
 end
 
