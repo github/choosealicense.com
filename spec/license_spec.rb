@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "licenses" do
 
   it "matches the number of files in the _licenses folder" do
-    expect(licenses.count).to eql(Dir["#{licenses_path}/*.txt"].count)
+    expect(licenses.count).to eql(Dir["#{licenses_path}/*.html"].count)
   end
 
   licenses.each do |license|

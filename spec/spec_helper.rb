@@ -25,7 +25,7 @@ end
 def licenses
   $licenses ||= begin
     site.collections["licenses"].docs.map do |license|
-      id = File.basename(license.basename, ".txt")
+      id = File.basename(license.basename, ".html")
       license.to_liquid.merge("id" => id)
     end
   end
