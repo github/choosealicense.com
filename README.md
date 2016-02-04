@@ -83,7 +83,6 @@ The license properties (rules) are stored as a bulleted list within the licenses
 * `document-changes` - Indicate significant changes made to the code.
 * `disclose-source` - Source code must be made available when distributing the software. In the case of LGPL and OSL 3.0, the source for the library (and not the entire program) must be made available.
 * `network-use-disclose` - Users who interact with the software via network are given the right to receive a copy of the corresponding source code.
-* `library-usage` - The library may be used within a non-open-source application.
 * `rename` - You must change the name of the software if you modify it.
 
 #### Permitted

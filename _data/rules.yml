@@ -11,9 +11,6 @@ required:
 - description: Users who interact with the software via network are given the right to receive a copy of the corresponding source code.
   label: Network Use is Distribution
   tag: network-use-disclose
-- description: The library may be used within a non-open-source application.
-  label: Library usage
-  tag: library-usage
 - description: You must change the name of the software if you modify it.
   label: Rename
   tag: rename
