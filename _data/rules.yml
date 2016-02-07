@@ -5,7 +5,7 @@ required:
 - description: Indicate significant changes made to the code.
   label: State Changes
   tag: document-changes
-- description: Source code must be made available when distributing the software. In the case of LGPL and OSL 3.0, the source for the library (and not the entire program) must be made available.
+- description: Source code must be made available when distributing the software.
   label: Disclose Source
   tag: disclose-source
 - description: Users who interact with the software via network are given the right to receive a copy of the corresponding source code.
@@ -14,6 +14,9 @@ required:
 - description: You must change the name of the software if you modify it.
   label: Rename
   tag: rename
+- description: Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used.
+  label: Same License
+  tag: same-license
 
 permitted:
 - description: This software and derivatives may be used for commercial purposes.
