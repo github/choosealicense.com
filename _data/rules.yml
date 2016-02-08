@@ -42,9 +42,3 @@ forbidden:
 - description: Software is provided without warranty and the software author/license owner cannot be held liable for damages.
   label: Hold Liable
   tag: no-liability
-- description: This software may not be modified.
-  label: Modification
-  tag: modifications
-- description: You may not distribute this software.
-  label: Distribution
-  tag: distribution
