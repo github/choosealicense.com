@@ -5,32 +5,32 @@
 
 require 'yaml'
 
-fields = YAML.load_file("_data/fields.yml")
-meta   = YAML.load_file("_data/meta.yml")
-rules  = YAML.load_file("_data/rules.yml")
+fields = YAML.load_file('_data/fields.yml')
+meta   = YAML.load_file('_data/meta.yml')
+rules  = YAML.load_file('_data/rules.yml')
 
 puts "\n### Fields\n\n"
 fields.each do |field|
-  puts "* `#{field["name"]}` - #{field["description"]}"
+  puts "* `#{field['name']}` - #{field['description']}"
 end
 
 puts "\n### YAML front matter\n"
-meta = meta.group_by { |m| m["required"] }
+meta = meta.group_by { |m| m['required'] }
 
 puts "\n#### Required fields\n\n"
-meta[true].each do |meta|
-  puts "* `#{meta["name"]}` - #{meta["description"]}"
+meta[true].each do |field|
+  puts "* `#{field['name']}` - #{field['description']}"
 end
 
 puts "\n#### Optional fields\n\n"
-meta[false].each do |meta|
-  puts "* `#{meta["name"]}` - #{meta["description"]}"
+meta[false].each do |field|
+  puts "* `#{field['name']}` - #{field['description']}"
 end
 
 puts "\n### Rules\n"
-rules.each do |group, rules|
+rules.each do |group, group_rules|
   puts "\n#### #{group.capitalize}\n\n"
-  rules.each do |rule|
-    puts "* `#{rule["tag"]}` - #{rule["description"]}"
+  group_rules.each do |rule|
+    puts "* `#{rule['tag']}` - #{rule['description']}"
   end
 end
