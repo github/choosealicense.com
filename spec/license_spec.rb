@@ -29,16 +29,19 @@ describe "licenses" do
       end
 
       context "minimum permissions" do
-        permissions = license["permitted"]
+        let(:permissions) { license["permitted"] }
         it "should allow commercial use" do
           expect(permissions).to include("commercial-use")
         end
+
         it "should allow modification" do
           expect(permissions).to include("modifications")
         end
+
         it "should allow distribution" do
           expect(permissions).to include("distribution")
         end
+
         it "should allow private use" do
           expect(permissions).to include("private-use")
         end
