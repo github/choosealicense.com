@@ -11,3 +11,4 @@ assets/vendor/qtip2/basic
 .ruby-version
 /tmp
 Gemfile.lock
+.jekyll-metadata
