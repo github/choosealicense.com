@@ -10,3 +10,4 @@ assets/vendor/qtip2/basic
 /.sass-cache
 .ruby-version
 /tmp
+Gemfile.lock
