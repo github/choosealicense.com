@@ -2,6 +2,7 @@ AllCops:
   TargetRubyVersion: 2.1
   Exclude:
     - _site/**/*
+    - vendor/**/*
 
 Metrics/LineLength:
   Enabled: false
