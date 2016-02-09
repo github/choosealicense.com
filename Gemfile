@@ -1,7 +1,7 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "github-pages"
-gem "jekyll-seo-tag"
+gem 'github-pages'
+gem 'jekyll-seo-tag'
 
 group :development do
   gem 'colored'
@@ -11,7 +11,8 @@ end
 
 group :test do
   gem 'html-proofer', '2.5.2'
-  gem "rake"
-  gem "rspec"
-  gem "nokogiri"
+  gem 'rake'
+  gem 'rspec'
+  gem 'nokogiri'
+  gem 'rubocop'
 end
