@@ -19,12 +19,12 @@ describe 'license meta' do
 
       if license['family']
         it 'should contain the required license variant fields' do
-          missing = ['family', 'tab-slug'] - license.keys
+          missing = ['family'] - license.keys
           expect(missing).to be_empty
         end
       else
         it 'should not contain license family specific fields' do
-          extra = ['variant', 'family', 'tab-slug'].select { |f| raw_fields.keys.include?(f) }
+          extra = ['variant', 'family'].select { |f| raw_fields.keys.include?(f) }
           expect(extra).to be_empty
         end
       end
