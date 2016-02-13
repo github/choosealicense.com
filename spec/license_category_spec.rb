@@ -15,7 +15,6 @@ describe 'license categories' do
         expected = family_licenses.count - 1
         expect(variants.count).to eql(expected)
       end
-
     end
   end
 end
