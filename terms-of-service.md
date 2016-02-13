@@ -6,6 +6,7 @@ description: Terms governing your use of choosealicense.com
 ---
 
 ### 1. Introduction
+
 Welcome to Choosealicense.com (the "Site"). The Site is operated by GitHub, Inc. ("GitHub" or "we"), a Delaware corporation headquartered in lovely San Francisco, California. This document – the Site's terms of service – is an agreement between you, the beloved user, and GitHub. It's referred to as the "Terms" or the "Agreement".
 These Terms govern your use of the Site and this Site only. The Terms neither relate to any other GitHub website, service or property nor your use of any other GitHub website, service or property. For example, these Terms don't govern your use of www.github.com.
 

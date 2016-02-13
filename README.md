@@ -26,6 +26,7 @@ cd choosealicense.com
 script/bootstrap
 script/server
 ```
+
 Open `http://localhost:4000` in your favorite browser.
 
 ## Adding a license

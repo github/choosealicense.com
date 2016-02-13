@@ -14,9 +14,9 @@ Choosealicense.com is intended to demystify license choices, not present all of 
 
 1. The license must have [an SPDX identifier](https://spdx.org/licenses/). If your license isn't registered with SPDX, please [request that it be added](https://spdx.org/spdx-license-list/request-new-license-or-exception).
 2. The license must be listed on one of the following approved lists of licenses:
-  * [List of OSI approved licenses](https://opensource.org/licenses/alphabetical)
-  * [GNU's list of free licenses](https://www.gnu.org/licenses/license-list.en.html) (*note: the license must be listed in one of the three "free" categories*)
-  * [Open Definition's list of conformant licenses](http://opendefinition.org/licenses/) (non-code)
+   * [List of OSI approved licenses](https://opensource.org/licenses/alphabetical)
+   * [GNU's list of free licenses](https://www.gnu.org/licenses/license-list.en.html) (*note: the license must be listed in one of the three "free" categories*)
+   * [Open Definition's list of conformant licenses](http://opendefinition.org/licenses/) (non-code)
 3. A [GitHub code search](https://github.com/search?q=MIT+filename%3ALICENSE&type=Code) must reveal at least *1,000* public repositories using the license
 
 If your proposed license meets the above criteria, here's a few other things to keep in mind as you propose the license's addition:
@@ -43,7 +43,7 @@ For more advanced changes, check out [the bootstrap instructions](https://github
 
 ## Testing
 
-[HTML::Proofer](https://github.com/gjtorikian/html-proofer) is set up to validate all links within the project.  You can run this locally to ensure that your changes are valid:
+[HTML::Proofer](https://github.com/gjtorikian/html-proofer) is set up to validate all links within the project. You can run this locally to ensure that your changes are valid:
 
 ```shell
 ./script/bootstrap

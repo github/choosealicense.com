@@ -1,8 +1,7 @@
 ---
-title: About
 layout: default
 permalink: /about/
-title: What's this about?
+title: "What's this about?"
 ---
 
 GitHub wants to help developers choose a license for their source code.
@@ -11,23 +10,25 @@ If you already know what you're doing and have a license you prefer to use, that
 
 ## Not comprehensive
 
-This site is not a comprehensive directory of open source licenses.  We think there are too many options, which adds to the confusion. On the homepage, we break it down into just three licenses. The vast majority of projects will likely be fine choosing from one of these three. Just in case you have specific needs not covered by those three, we also highlight a [few other licenses to consider](/licenses/).
+This site is not a comprehensive directory of open source licenses. We think there are too many options, which adds to the confusion. On the homepage, we break it down into just three licenses. The vast majority of projects will likely be fine choosing from one of these three. Just in case you have specific needs not covered by those three, we also highlight a [few other licenses to consider](/licenses/).
 
 ### Additional resources
+
+{: .bullets}
 
 * [Open Source Initiative](http://opensource.org/licenses/) - comprehensive list of open source licenses
 * [Comparison of free and open-source software licenses](http://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses) on Wikipedia
 * [License differentiator](http://www.oss-watch.ac.uk/apps/licdiff/) from [OSS Watch](http://www.oss-watch.ac.uk/)
 * [TLDRLegal](https://tldrlegal.com/){: data-proofer-ignore="true" }
-{: .bullets}
 
 ### Tools
+
+{: .bullets}
 
 * [gem-licenses](https://github.com/dblock/gem-licenses)
 * [LicenseFinder](https://github.com/pivotal/LicenseFinder)
 * [License Maven Plugin](http://mojo.codehaus.org/license-maven-plugin/)
 * [AddALicense.com](http://www.addalicense.com/)
-{: .bullets}
 
 ## Help us improve it
 
