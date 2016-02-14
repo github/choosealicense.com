@@ -24,7 +24,7 @@
       <ul class="nav-pills js-nav-pills">
         {% assign variations = site.licenses | where:"hidden",false | where:"family",license.family %}
         {% for variation in variations %}
-        <li{% if license.id == variation.id %} class="active"{% endif %}><a href="#{{ variation.id | remove: '.' | remove: '/licenses/' }}" data-selected-tab="variation-{{ variation.id | remove: '.' | remove: '/licenses/' }}">
+        <li{% if license.id == variation.id %} class="active"{% endif %}><a href="#{{ variation.id | remove: '/licenses/' | slugify }}" data-selected-tab="variation-{{ variation.id | remove: '/licenses/' | slugify }}">
           {% if variation.nickname != nil %}
             {{ variation.nickname }}
           {% else %}
@@ -43,7 +43,7 @@
     {% endif %}
 
     {% for variation in variations %}
-    <div {% if variation.id %}id="{{ variation.id | remove: '.' | remove: '/licenses/' }}" {% endif %}class="variation-tab {% if variation.id %}variation-{{ variation.id | remove: '.' | remove: '/licenses/' }}{% endif %} js-variation-tab{% if license.id == variation.id %} active{% endif %}">
+    <div {% if variation.id %}id="{{ variation.id | remove: '/licenses/' | slugify }}" {% endif %}class="variation-tab {% if variation.id %}variation-{{ variation.id | remove: '/licenses/' | slugify }}{% endif %} js-variation-tab{% if license.id == variation.id %} active{% endif %}">
       <table class="license-rules">
         <tr>
         {% assign types = "required|permitted|forbidden" | split: "|" %}
