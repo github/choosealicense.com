@@ -57,7 +57,6 @@ Licenses sit in the `/_licenses` folder. Each license has YAML front matter desc
 * `nickname` - A shorter, human-readable license name where the SPDX license name (`title` above) is long
 * `variant` - Whether the license is a variant of a family of licenses (defaults to false)
 * `family` - If part of a license family, the name of the license family (e.g., `GPL`)
-* `tab-slug` - If part of a license family, a license slug containing only `a-z`, `0-9`, and `_` characters, used for internal links on the licenses page
 
 ### Auto-populated fields
 

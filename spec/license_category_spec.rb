@@ -15,19 +15,6 @@ describe 'license categories' do
         expected = family_licenses.count - 1
         expect(variants.count).to eql(expected)
       end
-
-      family_licenses.each do |license|
-        context "the #{license['title']} license" do
-          it 'should have a unique slug' do
-            dupes = family_licenses.count { |l| l['tab-slug'] == license['tab-slug'] }
-            expect(dupes).to eql(1)
-          end
-
-          it 'should have a valid tab-slug' do
-            expect(license['tab-slug']).to match(/[a-z0-9_]/)
-          end
-        end
-      end
     end
   end
 end

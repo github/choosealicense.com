@@ -62,7 +62,3 @@
 - name: family
   description: If part of a license family, the name of the license family (e.g., `GPL`)
   required: false
-
-- name: tab-slug
-  description: If part of a license family, a license slug containing only `a-z`, `0-9`, and `_` characters, used for internal links on the licenses page
-  required: false

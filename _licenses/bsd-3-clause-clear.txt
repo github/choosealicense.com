@@ -3,7 +3,6 @@ title: BSD 3-clause Clear License
 nickname: Clear BSD
 
 family: BSD
-tab-slug: bsd-3-clear
 variant: true
 
 description: A permissive license that comes in two variants, the <a href="/licenses/bsd">BSD 2-Clause</a> and <a href="/licenses/bsd-3-clause">BSD 3-Clause</a>. Both have very minute differences to the MIT license. The three clause variant prohibits others from using the name of the project or its contributors to promote derivative works without written consent.

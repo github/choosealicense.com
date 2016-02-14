@@ -1,7 +1,6 @@
 ---
 title: GNU Affero General Public License v3.0
 nickname: GNU Affero GPL v3.0
-tab-slug: agpl-v3
 redirect_from: /licenses/agpl/
 family: GPL
 variant: true
