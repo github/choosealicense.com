@@ -1,6 +1,6 @@
 ---
 title: GNU General Public License v2.0
-nickname: GNU GPL v2.0
+nickname: GNU GPLv2
 redirect_from: /licenses/gpl-v2/
 family: GNU GPL
 variant: true

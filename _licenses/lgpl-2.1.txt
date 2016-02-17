@@ -1,6 +1,6 @@
 ---
 title: GNU Lesser General Public License v2.1
-nickname: GNU LGPL v2.1
+nickname: GNU LGPLv2.1
 redirect_from: /licenses/lgpl-v2.1/
 family: GNU LGPL
 variant: true
