@@ -1,6 +1,6 @@
 ---
 title: BSD 2-clause "Simplified" License
-nickname: Simplified BSD
+nickname: BSD 2-Clause
 redirect_from: /licenses/bsd/
 family: BSD
 variant: true
