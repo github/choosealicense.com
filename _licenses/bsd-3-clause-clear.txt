@@ -1,7 +1,5 @@
 ---
 title: BSD 3-clause Clear License
-nickname: Clear BSD
-
 family: BSD
 variant: true
 
