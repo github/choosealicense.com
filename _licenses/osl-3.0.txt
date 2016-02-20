@@ -13,7 +13,7 @@ using:
   - Parsimony: "https://github.com/parsimony/parsimony"
   - PrestaShop: "https://www.prestashop.com"
   - Mulgara: "http://mulgara.org"
-  - AbanteCart: "http://www.abantecart.com/"
+  - AbanteCart: "https://github.com/abantecart/abantecart-src"
 
 required:
   - include-copyright
