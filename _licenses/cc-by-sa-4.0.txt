@@ -3,9 +3,9 @@ title: Creative Commons Attribution Share Alike 4.0
 nickname: CC-BY-SA-4.0
 source: https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt
 
-description: "Similar to [CC-BY-4.0](/licenses/cc-by-sa-4.0/) but requires derivatives be distributed under the same license. Frequently used for media assets and educational materials. A previous version is the default license for Wikipedia and other Wikimedia projects. Not recommended for software."
+description: Similar to <a href='/licenses/cc-by-sa-4.0/'>CC-BY-4.0</a> but requires derivatives be distributed under the same license. Frequently used for media assets and educational materials. A previous version is the default license for Wikipedia and other Wikimedia projects. Not recommended for software.
 
-how: "Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. It is also acceptable to soley supply a link to a copy of the license, usually to the canonical URL for the license <https://creativecommons.org/licenses/by-sa/4.0/>."
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. It is also acceptable to soley supply a link to a copy of the license, usually to the <a href='https://creativecommons.org/licenses/by-sa/4.0/'>canonical URL for the license</a>.
 
 required:
   - include-copyright
