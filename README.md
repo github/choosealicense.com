@@ -100,6 +100,7 @@ The license properties (rules) are stored as a bulleted list within the licenses
 * `no-liability` - Software is provided without warranty and the software author/license owner cannot be held liable for damages.
 * `modifications` - This software may not be modified.
 * `distribution` - You may not distribute this software.
+* `patent-use` -  This license explicitly states that it does NOT grant you any rights in the patents of contributors.
 
 ## License
 

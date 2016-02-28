@@ -20,6 +20,7 @@ permitted:
 forbidden:
   - no-liability
   - trademark-use
+  - patent-use
 ---
 
 Attribution 4.0 International
