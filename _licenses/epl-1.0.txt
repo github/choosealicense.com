@@ -15,19 +15,19 @@ using:
   - Ruby: "https://github.com/jruby/jruby"
   - Mondrian: "http://en.wikipedia.org/wiki/Mondrian_OLAP_server"
 
-required:
+conditions:
   - disclose-source
   - include-copyright
   - same-license
 
-permitted:
+permissions:
   - commercial-use
   - distribution
   - modifications
   - patent-use
   - private-use
 
-forbidden:
+limitations:
   - no-liability
 
 hidden: false

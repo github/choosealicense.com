@@ -6,17 +6,17 @@ description: The Academic Free License is a variant of the Open Source License t
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Files licensed under OSL 3.0 must also include the notice "Licensed under the Academic Free License version 3.0" adjacent to the copyright notice.
 
-required:
+conditions:
   - include-copyright
 
-permitted:
+permissions:
   - commercial-use
   - modifications
   - distribution
   - private-use
   - patent-use
 
-forbidden:
+limitations:
   - trademark-use
   - no-liability
 

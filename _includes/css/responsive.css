@@ -160,13 +160,13 @@
     top: 1px;
     position: relative;
   }
-  .license-rules:not(.license-rules-sidebar) .license-required span {
+  .license-rules:not(.license-rules-sidebar) .license-conditions span {
     background-position: -34px 0;
   }
-  .license-rules:not(.license-rules-sidebar) .license-permitted span {
+  .license-rules:not(.license-rules-sidebar) .license-permissions span {
     background-position: -24px 0px;
   }
-  .license-rules:not(.license-rules-sidebar) .license-forbidden span {
+  .license-rules:not(.license-rules-sidebar) .license-limitations span {
     background-position: -14px 0;
   }
 }

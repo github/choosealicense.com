@@ -10,18 +10,18 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 
 note: The Apache Foundation recommends taking the additional step of adding a boilerplate notice to the header of each source file. You can find the notice at the very end of the license in the appendix.
 
-required:
+conditions:
   - include-copyright
   - document-changes
 
-permitted:
+permissions:
   - commercial-use
   - modifications
   - distribution
   - patent-use
   - private-use
 
-forbidden:
+limitations:
   - trademark-use
   - no-liability
 
