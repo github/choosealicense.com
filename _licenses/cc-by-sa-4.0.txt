@@ -21,6 +21,7 @@ permitted:
 forbidden:
   - no-liability
   - trademark-use
+  - patent-use
 ---
 
 Attribution-ShareAlike 4.0 International

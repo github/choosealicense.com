@@ -20,6 +20,7 @@ permitted:
 
 forbidden:
   - no-liability
+  - patent-use
 
 ---
 

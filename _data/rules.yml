@@ -37,8 +37,11 @@ permitted:
 
 forbidden:
 - description: While this may be implicitly true of all licenses, this license explicitly states that it does NOT grant you any rights in the trademarks or other marks of contributors.
-  label: Use Trademark
+  label: Trademark Use
   tag: trademark-use
 - description: Software is provided without warranty and the software author/license owner cannot be held liable for damages.
   label: Hold Liable
   tag: no-liability
+- description: This license explicitly states that it does NOT grant you any rights in the patents of contributors.
+  label: Patent Use
+  tag: patent-use

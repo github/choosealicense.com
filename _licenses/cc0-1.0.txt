@@ -21,6 +21,7 @@ permitted:
 forbidden:
   - no-liability
   - trademark-use
+  - patent-use
 
 required: []
 
