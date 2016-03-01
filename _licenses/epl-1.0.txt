@@ -13,7 +13,7 @@ using:
   - Clojure: "http://clojure.org/"
   - JUnit: "http://junit.org/"
   - Ruby: "https://github.com/jruby/jruby"
-  - Mondrian: "http://en.wikipedia.org/wiki/Mondrian_OLAP_server"
+  - Mondrian: "https://en.wikipedia.org/wiki/Mondrian_OLAP_server"
 
 conditions:
   - disclose-source
