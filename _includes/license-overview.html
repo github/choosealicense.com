@@ -35,7 +35,7 @@
       </ul>
       {% endif %}
     </div>
-    
+
     {% if license.family %}
       {% assign variations = site.licenses | where:"hidden",false | where:"family",license.family %}
     {% else %}
