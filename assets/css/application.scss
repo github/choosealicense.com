@@ -245,9 +245,9 @@ strong {
 }
 
 .sidebar .source span   { background-position: 0 0;     width: 16px; height: 12px; }
-.license-forbidden span { background-position: -16px 0; width: 12px; height: 12px; }
-.license-permitted span { background-position: -28px 0; width: 12px; height: 12px; }
-.license-required span  { background-position: -40px 0; width: 12px; height: 12px; }
+.license-limitations span { background-position: -16px 0; width: 12px; height: 12px; }
+.license-permissions span { background-position: -28px 0; width: 12px; height: 12px; }
+.license-conditions span  { background-position: -40px 0; width: 12px; height: 12px; }
 
 .license-rules-sidebar li {
   float: none;
@@ -420,25 +420,25 @@ strong {
 
 /* Qtip styles */
 
-.qtip-required,
-.qtip-permitted,
-.qtip-forbidden {
+.qtip-conditions,
+.qtip-permissions,
+.qtip-limitations {
   font-size: 12px;
   line-height: 1.3;
 }
 
-.qtip-required {
+.qtip-conditions {
   background-color: #d0ebf6;
   border-color: #149ad4;
   color: #0d648a;
 }
 
-.qtip-required .qtip-titlebar {
+.qtip-conditions .qtip-titlebar {
   background-color: #149ad4;
   color: #fff;
 }
 
-.qtip-permitted {
+.qtip-permissions {
   background-color: #d8f4d7;
   border-color: #3dc637;
   color: #298625;
@@ -449,13 +449,13 @@ strong {
   color: #fff;
 }
 
-.qtip-forbidden {
+.qtip-limitations {
   background-color: #f4d9d8;
   border-color: #c6403d;
   color: #812a28;
 }
 
-.qtip-forbidden .qtip-titlebar {
+.qtip-limitations .qtip-titlebar {
   background-color: #c6403d;
   color: #fff;
 }

@@ -9,17 +9,17 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 
 note: This license doesn't require source provision, but recommends it. All files derived from OFL files must remain licensed under the OFL.
 
-required:
+conditions:
   - include-copyright
   - same-license
 
-permitted:
+permissions:
   - private-use
   - commercial-use
   - modifications
   - distribution
 
-forbidden:
+limitations:
   - no-liability
 
 ---

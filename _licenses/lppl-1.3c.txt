@@ -11,18 +11,18 @@ how: To use this license, place in each of the components of your work both an e
 
 note: An example boilerplate and more information about how to use the license can be found at the end of the license.
 
-required:
+conditions:
   - include-copyright
   - document-changes 
   - disclose-source
   
-permitted:
+permissions:
   - commercial-use
   - modifications
   - distribution
   - private-use
 
-forbidden:
+limitations:
   - no-liability
   
 ---

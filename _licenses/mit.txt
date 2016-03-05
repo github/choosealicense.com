@@ -7,16 +7,16 @@ description: A permissive license that is short and to the point. It lets people
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
-required:
+conditions:
   - include-copyright
 
-permitted:
+permissions:
   - commercial-use
   - modifications
   - distribution
   - private-use
 
-forbidden:
+limitations:
   - no-liability
 
 hidden: false

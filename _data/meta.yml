@@ -17,16 +17,16 @@
   description: Instructions on how to implement the license
   required: true
 
-- name: required
+- name: conditions
   description: Bulleted list of required rules
   required: true
 
-- name: permitted
+- name: permissions
   description: Bulleted list of permitted rules
   required: true
 
-- name: forbidden
-  description: Bulleted list of forbidden rules
+- name: limitations
+  description: Bulleted list of limited rules
   required: true
 
 # Optional fields
