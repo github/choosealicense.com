@@ -12,17 +12,16 @@ using:
   - .NET Core: https://github.com/dotnet/corefx/blob/master/LICENSE
   - Rails: https://github.com/rails/rails/blob/master/activerecord/MIT-LICENSE
 
-
-required:
+conditions:
   - include-copyright
 
-permitted:
+permissions:
   - commercial-use
   - modifications
   - distribution
   - private-use
 
-forbidden:
+limitations:
   - no-liability
 
 hidden: false

@@ -46,7 +46,7 @@
     <div {% if variation.id %}id="{{ variation.id | remove: '/licenses/' | slugify }}" {% endif %}class="variation-tab {% if variation.id %}variation-{{ variation.id | remove: '/licenses/' | slugify }}{% endif %} js-variation-tab{% if license.id == variation.id %} active{% endif %}">
       <table class="license-rules">
         <tr>
-        {% assign types = "required|permitted|forbidden" | split: "|" %}
+        {% assign types = "permissions|conditions|limitations" | split: "|" %}
         {% for type in types %}
           <th class="label">{{ type | capitalize }}</th>
         {% endfor %}

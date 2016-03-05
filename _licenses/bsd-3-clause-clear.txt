@@ -9,16 +9,16 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 
 source: https://spdx.org/licenses/BSD-3-Clause-Clear.html
 
-required:
+conditions:
   - include-copyright
 
-permitted:
+permissions:
   - commercial-use
   - modifications
   - distribution
   - private-use
 
-forbidden:
+limitations:
   - no-liability
   - patent-use
 

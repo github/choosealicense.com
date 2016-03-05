@@ -7,19 +7,19 @@ description: The Mozilla Public License (MPL 2.0) is maintained by the Mozilla f
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
-required:
+conditions:
   - disclose-source
   - include-copyright
   - same-license
 
-permitted:
+permissions:
   - commercial-use
   - modifications
   - distribution
   - patent-use
   - private-use
 
-forbidden:
+limitations:
   - no-liability
   - trademark-use
 

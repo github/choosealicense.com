@@ -23,7 +23,7 @@
 
   <div class="license-rules license-rules-sidebar">
 
-  {% assign types = "required|permitted|forbidden" | split: "|" %}
+  {% assign types = "permissions|conditions|limitations" | split: "|" %}
   {% for type in types %}
     <h3>{{ type | capitalize }}</h3>
     <ul class="license-{{ type }}">

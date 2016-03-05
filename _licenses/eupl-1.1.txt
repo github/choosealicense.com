@@ -12,21 +12,21 @@ how: Create a text file (typically named COPYING or LICENCE.txt) in the root of 
 
 note: The European Commission recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at https://joinup.ec.europa.eu/sites/default/files/ckeditor_files/files/EUPL%201_1%20Guidelines%20EN%20Joinup.pdf
 
-required:
+conditions:
   - include-copyright
   - disclose-source
   - document-changes
   - network-use-disclose
   - same-license
 
-permitted:
+permissions:
   - commercial-use
   - modifications
   - distribution
   - patent-use
   - private-use
 
-forbidden:
+limitations:
   - no-liability
   - trademark-use
 

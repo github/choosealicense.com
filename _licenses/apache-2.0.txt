@@ -15,18 +15,18 @@ using:
   - Apache: https://svn.apache.org/viewvc/httpd/httpd/trunk/LICENSE?view=markup
   - Swift: https://github.com/apple/swift/blob/master/LICENSE.txt
 
-required:
+conditions:
   - include-copyright
   - document-changes
 
-permitted:
+permissions:
   - commercial-use
   - modifications
   - distribution
   - patent-use
   - private-use
 
-forbidden:
+limitations:
   - trademark-use
   - no-liability
 

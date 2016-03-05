@@ -7,17 +7,17 @@ description: "Microsoft Open Source"
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
-required:
+conditions:
   - include-copyright
 
-permitted:
+permissions:
   - commercial-use
   - modifications
   - distribution
   - patent-use
   - private-use
 
-forbidden:
+limitations:
   - no-liability
   - trademark-use
 ---
