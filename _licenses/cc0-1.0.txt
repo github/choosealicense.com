@@ -2,7 +2,7 @@
 title: Creative Commons Zero v1.0 Universal
 nickname: CC0 1.0 Universal
 redirect_from: /licenses/cc0/
-family: Public Domain Dedication
+family: Public Domain
 variant: true
 source: http://creativecommons.org/publicdomain/zero/1.0/
 
@@ -10,20 +10,18 @@ description: The <a href="http://creativecommons.org/publicdomain/zero/1.0/">Cre
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the CC0 into the file.
 
-conditions:
-
 permissions:
   - commercial-use
   - modifications
   - distribution
   - private-use
 
+conditions: []
+
 limitations:
   - no-liability
   - trademark-use
   - patent-use
-
-conditions: []
 
 hidden: false
 ---
