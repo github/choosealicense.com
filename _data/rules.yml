@@ -1,6 +1,6 @@
 conditions:
 - description: Include a copy of the license and copyright notice with the code.
-  label: License and copyright notice
+  label: License and Copyright Notice
   tag: include-copyright
 - description: Indicate significant changes made to the code.
   label: State Changes
