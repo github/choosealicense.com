@@ -1,22 +1,27 @@
 ---
 title: MIT License
 featured: true
-source: http://opensource.org/licenses/MIT
+source: https://opensource.org/licenses/MIT
 
 description: A permissive license that is short and to the point. It lets people do anything with your code with proper attribution and without warranty.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
-required:
+using:
+  - jQuery: https://github.com/jquery/jquery/blob/master/LICENSE.txt
+  - .NET Core: https://github.com/dotnet/corefx/blob/master/LICENSE
+  - Rails: https://github.com/rails/rails/blob/master/activerecord/MIT-LICENSE
+
+conditions:
   - include-copyright
 
-permitted:
+permissions:
   - commercial-use
   - modifications
   - distribution
   - private-use
 
-forbidden:
+limitations:
   - no-liability
 
 hidden: false

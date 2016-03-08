@@ -15,19 +15,19 @@ using:
   - Mulgara: "http://mulgara.org"
   - AbanteCart: "https://github.com/abantecart/abantecart-src"
 
-required:
+conditions:
   - include-copyright
   - disclose-source
   - same-license
 
-permitted:
+permissions:
   - commercial-use
   - distribution
   - modifications
   - patent-use
   - private-use
 
-forbidden:
+limitations:
   - trademark-use
   - no-liability
 

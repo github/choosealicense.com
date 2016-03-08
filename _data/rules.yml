@@ -1,6 +1,6 @@
-required:
+conditions:
 - description: Include a copy of the license and copyright notice with the code.
-  label: License and copyright notice
+  label: License and Copyright Notice
   tag: include-copyright
 - description: Indicate significant changes made to the code.
   label: State Changes
@@ -18,7 +18,7 @@ required:
   label: Same License
   tag: same-license
 
-permitted:
+permissions:
 - description: This software and derivatives may be used for commercial purposes.
   label: Commercial Use
   tag: commercial-use
@@ -35,10 +35,13 @@ permitted:
   label: Patent Use
   tag: patent-use
 
-forbidden:
+limitations:
 - description: While this may be implicitly true of all licenses, this license explicitly states that it does NOT grant you any rights in the trademarks or other marks of contributors.
-  label: Use Trademark
+  label: Trademark Use
   tag: trademark-use
 - description: Software is provided without warranty and the software author/license owner cannot be held liable for damages.
   label: Hold Liable
   tag: no-liability
+- description: This license explicitly states that it does NOT grant you any rights in the patents of contributors.
+  label: Patent Use
+  tag: patent-use

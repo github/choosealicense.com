@@ -43,9 +43,9 @@ Licenses sit in the `/_licenses` folder. Each license has YAML front matter desc
 * `source` - The URL to the license source text
 * `description` - A human-readable description of the license
 * `how` - Instructions on how to implement the license
-* `required` - Bulleted list of required rules
-* `permitted` - Bulleted list of permitted rules
-* `forbidden` - Bulleted list of forbidden rules
+* `permissions` - Bulleted list of permission rules
+* `conditions` - Bulleted list of condition rules
+* `limitations` - Bulleted list of limitation rules
 
 #### Optional fields
 
@@ -77,7 +77,15 @@ The license properties (rules) are stored as a bulleted list within the licenses
 
 ### Rules
 
-#### Required
+#### Permissions
+
+* `commercial-use` - This software and derivatives may be used for commercial purposes.
+* `modifications` - This software may be modified.
+* `distribution` - You may distribute this software.
+* `private-use` - You may use and modify the software without distributing it.
+* `patent-use` - This license provides an express grant of patent rights from the contributor to the recipient.
+
+#### Conditions
 
 * `include-copyright` - Include a copy of the license and copyright notice with the code.
 * `document-changes` - Indicate significant changes made to the code.
@@ -86,20 +94,11 @@ The license properties (rules) are stored as a bulleted list within the licenses
 * `rename` - You must change the name of the software if you modify it.
 * `same-license` - Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used.
 
-#### Permitted
-
-* `commercial-use` - This software and derivatives may be used for commercial purposes.
-* `modifications` - This software may be modified.
-* `distribution` - You may distribute this software.
-* `private-use` - You may use and modify the software without distributing it.
-* `patent-use` - This license provides an express grant of patent rights from the contributor to the recipient.
-
-#### Forbidden
+#### Limitations
 
 * `trademark-use` - While this may be implicitly true of all licenses, this license explicitly states that it does NOT grant you any rights in the trademarks or other marks of contributors.
 * `no-liability` - Software is provided without warranty and the software author/license owner cannot be held liable for damages.
-* `modifications` - This software may not be modified.
-* `distribution` - You may not distribute this software.
+* `patent-use` -  This license explicitly states that it does NOT grant you any rights in the patents of contributors.
 
 ## License
 
