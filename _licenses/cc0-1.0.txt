@@ -10,7 +10,7 @@ description: The <a href="http://creativecommons.org/publicdomain/zero/1.0/">Cre
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the CC0 into the file.
 
-note: Creative Commons recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be [found on their website](https://wiki.creativecommons.org/wiki/CC0_FAQ#May_I_apply_CC0_to_computer_software.3F_If_so.2C_is_there_a_recommended_implementation.3F).
+note: Creative Commons recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be <a href="https://wiki.creativecommons.org/wiki/CC0_FAQ#May_I_apply_CC0_to_computer_software.3F_If_so.2C_is_there_a_recommended_implementation.3F">found on their website</a>.
 
 permissions:
   - commercial-use
