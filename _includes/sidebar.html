@@ -4,11 +4,11 @@
   <div class="how-to-apply">
     <h5>How to apply this license</h5>
     <p>
-      {{ page.how }}
+      {{ page.how | markdownify }}
     </p>
     {% if page.note %}
     <p class="note">
-      <strong>Note: </strong> {{ page.note }}
+      <strong>Note: </strong> {{ page.note | markdownify }}
     </p>
     {% endif %}
   </div>
