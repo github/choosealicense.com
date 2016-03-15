@@ -9,11 +9,9 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 note: OSL 3.0's author has <a href="http://rosenlaw.com/OSL3.0-explained.htm">provided an explanation</a> behind the creation of the license.
 
 using:
-  - Magento Community Edition: "http://magento.com/"
-  - Parsimony: "https://github.com/parsimony/parsimony"
-  - PrestaShop: "https://www.prestashop.com"
-  - Mulgara: "http://mulgara.org"
-  - AbanteCart: "https://github.com/abantecart/abantecart-src"
+  - appserver.io: https://github.com/appserver-io/appserver/blob/master/LICENSE.txt
+  - Magento 2: https://github.com/magento/magento2/blob/develop/LICENSE.txt
+  - Restyaboard: https://github.com/RestyaPlatform/board/blob/master/LICENSE.txt
 
 conditions:
   - include-copyright
