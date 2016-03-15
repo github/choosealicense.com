@@ -25,6 +25,8 @@ limitations:
 hidden: false
 ---
 
+BSD 2-Clause License
+
 Copyright (c) [year], [fullname]
 All rights reserved.
 
