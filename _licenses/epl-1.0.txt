@@ -1,14 +1,14 @@
 ---
 title: Eclipse Public License 1.0
 redirect_from: /licenses/eclipse/
-source: http://www.eclipse.org/legal/epl-v10.html
+source: https://www.eclipse.org/legal/epl-v10.html
 
 description: This commercially-friendly copyleft license provides the ability to commercially license binaries; a modern royalty-free patent license grant; and the ability for linked works to use other licenses, including commercial ones.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
 using:
-  - The Eclipse Foundation: "http://www.eclipse.org"
+  - The Eclipse Foundation: "https://www.eclipse.org"
   - OpenDaylight: "http://www.opendaylight.org/"
   - Clojure: "http://clojure.org/"
   - JUnit: "http://junit.org/"
