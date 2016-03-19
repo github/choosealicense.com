@@ -1,6 +1,6 @@
 ---
 title: BSD 3-clause "New" or "Revised" License
-nickname: BSD 3-Clause 
+nickname: BSD 3-Clause
 family: BSD
 variant: true
 source: http://opensource.org/licenses/BSD-3-Clause
@@ -23,6 +23,8 @@ limitations:
 
 hidden: false
 ---
+
+BSD 3-Clause License
 
 Copyright (c) [year], [fullname]
 All rights reserved.

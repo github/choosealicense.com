@@ -27,7 +27,7 @@ limitations:
 hidden: false
 ---
 
-The MIT License (MIT)
+MIT License
 
 Copyright (c) [year] [fullname]
 
