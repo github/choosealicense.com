@@ -1,4 +1,4 @@
-require 'html/proofer'
+require 'html-proofer'
 require 'rspec/core/rake_task'
 
 desc 'Run specs'
@@ -10,9 +10,10 @@ end
 task :test do
   sh 'bundle exec jekyll build'
   Rake::Task['spec'].invoke
-  HTML::Proofer.new('./_site', check_html: true,
-                               validation: { ignore_script_embeds: true },
-                               href_swap: { %r{http://choosealicense.com} => '' }).run
+  HTMLProofer.check_directory('./_site',
+                              check_html: true,
+                              validation: { ignore_script_embeds: true },
+                              url_swap: { %r{http://choosealicense.com} => '' }).run
 end
 
 task :approved_licenses do
