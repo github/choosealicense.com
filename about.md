@@ -22,15 +22,6 @@ This site is not a comprehensive directory of open source licenses. We think the
 * [License differentiator](http://www.oss-watch.ac.uk/apps/licdiff/) ([source](https://github.com/ox-it/licdiff)) from [OSS Watch](http://www.oss-watch.ac.uk/)
 * [Free/Libre/Open Source license selection wizard](http://home.ccil.org/~cowan/floss/) by John Cowan
 
-### Tools
-
-{: .bullets}
-
-* [gem-licenses](https://github.com/dblock/gem-licenses)
-* [LicenseFinder](https://github.com/pivotal/LicenseFinder)
-* [License Maven Plugin](http://mojo.codehaus.org/license-maven-plugin/)
-* [AddALicense.com](http://www.addalicense.com/)
-
 ## Help us improve it
 
 Choosealicense.com isn't just about open source, the site itself is open source as well. See something you think could be done better? Feel free to [fork the project](https://github.com/github/choosealicense.com) on GitHub and submit a pull request. We'd welcome your improvements.
