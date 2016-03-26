@@ -16,10 +16,11 @@ This site is not a comprehensive directory of open source licenses. We think the
 
 {: .bullets}
 
-* [Open Source Initiative](https://opensource.org/licenses/) - comprehensive list of open source licenses
-* [Comparison of free and open-source software licenses](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses) on Wikipedia
-* [License differentiator](http://www.oss-watch.ac.uk/apps/licdiff/) from [OSS Watch](http://www.oss-watch.ac.uk/)
-* [TLDRLegal](https://tldrlegal.com/){: data-proofer-ignore="true" }
+* Open Source Initiative's [list of licenses](https://opensource.org/licenses/) approved as conforming to the [Open Source Definition](https://opensource.org/osd)
+* Free Software Foundation's [comments on various licenses](http://www.gnu.org/licenses/license-list.html)
+* [Comparison of free and open-source software licenses](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses) on English Wikipedia
+* [License differentiator](http://www.oss-watch.ac.uk/apps/licdiff/) ([source](https://github.com/ox-it/licdiff)) from [OSS Watch](http://www.oss-watch.ac.uk/)
+* [Free/Libre/Open Source license selection wizard](http://home.ccil.org/~cowan/floss/) by John Cowan
 
 ### Tools
 
