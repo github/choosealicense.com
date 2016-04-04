@@ -3,7 +3,7 @@ title: Microsoft Public License
 
 source: http://opensource.org/licenses/ms-pl
 
-description: "Microsoft Open Source"
+description: An open source license with a patent grant.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
