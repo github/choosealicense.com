@@ -3,7 +3,7 @@ title: BSD 3-clause Clear License
 family: BSD
 variant: true
 
-description: A permissive license that comes in two variants, the <a href="/licenses/bsd">BSD 2-Clause</a> and <a href="/licenses/bsd-3-clause">BSD 3-Clause</a>. Both have very minute differences to the MIT license. The three clause variant prohibits others from using the name of the project or its contributors to promote derivative works without written consent.
+description: A variant of the <a href="/licenses/bsd-3-clause/">BSD 3-Clause License</a> that explicitly does not grant any patent rights.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Replace [project] with the project organization, if any, that sponsors this work.
 

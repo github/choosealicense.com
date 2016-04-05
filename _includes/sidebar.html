@@ -1,8 +1,25 @@
 <div class="sidebar">
 
   <a href="#" data-clipboard-target="#license-text" data-proofer-ignore="true" class="js-clipboard-button button">Copy license text to clipboard</a>
+  
+  <div class="license-description">
+    <h3>Description</h3>
+    <p>
+      {{ page.description }}
+    </p>
+  </div>
+  
+  {% if page.nickname %}
+  <div class="license-nickname">
+    <h3>Nickname</h3>
+    <p>
+      {{ page.nickname }}
+    </p>
+  </div>
+  {% endif %}
+  
   <div class="how-to-apply">
-    <h5>How to apply this license</h5>
+    <h3>How to apply this license</h3>
     <p>
       {{ page.how | markdownify | remove: '<p>' | remove: '</p>' }}
     </p>

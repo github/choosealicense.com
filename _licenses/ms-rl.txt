@@ -3,11 +3,12 @@ title: Microsoft Reciprocal License
 
 source: http://opensource.org/licenses/ms-pl
 
-description: "Microsoft Open Source"
+description: An open source license with a patent grant similar to the <a href="/licenses/ms-pl/">Microsoft Public License</a>, with the additional condition that any source code for any derived file be provided under this license.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
 conditions:
+  - disclose-source
   - include-copyright
   - same-license
 
