@@ -1,3 +1,6 @@
+{% assign id = "/licenses/" | append: include.license-id %}
+{% assign licenses = site.licenses | where:"id", id %}
+{% for license in licenses %}
 <div class="license-family clearfix">
   <div class="license-family-heading">
     <h3 class="license-family-name">
@@ -75,3 +78,4 @@
     {% endfor %}
   </div>
 </div>
+{% endfor %}

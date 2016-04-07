@@ -7,17 +7,10 @@ title: Licenses
 
 <h2>Featured licenses</h2>
 
-{% assign featured_licenses = site.licenses | where:"featured",true %}
-{% for license in featured_licenses | sort: 'path' %}
-  {% include license-overview.html license=license %}
-{% endfor %}
-
-<h2>Other licenses</h2>
-<p>
-  Some communities tend to have specific licenses preferred by the
-  community. For example, Perl developers often choose the Artistic License.
-</p>
-{% assign licenses = site.licenses | where:"featured",false | where:"hidden",false | where:"variant",false %}
-{% for license in licenses %}
-  {% include license-overview.html license=license %}
-{% endfor %}
+{% include license-overview.html license-id="agpl-3.0" %}
+{% include license-overview.html license-id="gpl-3.0" %}
+{% include license-overview.html license-id="lgpl-3.0" %}
+{% include license-overview.html license-id="mpl-2.0" %}
+{% include license-overview.html license-id="apache-2.0" %}
+{% include license-overview.html license-id="mit" %}
+{% include license-overview.html license-id="unlicense" %}
