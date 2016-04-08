@@ -51,7 +51,6 @@ Licenses sit in the `/_licenses` folder. Each license has YAML front matter desc
 
 * `note` - Additional information about the licenses
 * `using` - A list of notable projects using the license in the form of `project_name: "url"`
-* `hidden` - Whether the license is hidden from the license list (defaults to true)
 * `redirect_from` - Relative path(s) to redirect to the license from, to prevent breaking old URLs
 * `nickname` - A shorter, human-readable license name where the SPDX license name (`title` above) is long
 
