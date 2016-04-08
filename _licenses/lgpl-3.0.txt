@@ -2,7 +2,6 @@
 title: GNU Lesser General Public License v3.0
 nickname: GNU LGPLv3
 redirect_from: /licenses/lgpl-v3/
-family: GNU LGPL
 source: http://www.gnu.org/licenses/lgpl-3.0.txt
 
 description: Version 3 of the GNU LGPL is an additional set of permissions to the <a href="/licenses/gpl-3.0/">GNU GPLv3 license</a> that requires that derived works be licensed under the same license, but works that only link to it do not fall under this restriction.
@@ -26,8 +25,6 @@ permissions:
 
 limitations:
   - no-liability
-
-hidden: false
 ---
 
                    GNU LESSER GENERAL PUBLIC LICENSE

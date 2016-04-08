@@ -1,8 +1,6 @@
 ---
 title: BSD 3-clause "New" or "Revised" License
 nickname: BSD 3-Clause
-family: BSD
-variant: true
 source: http://opensource.org/licenses/BSD-3-Clause
 
 description: A permissive license similar to the <a href="/licenses/bsd-2-clause/">BSD 2-Clause License</a>, but with a 3rd clause that prohibits others from using the name of the project or its contributors to promote derived products without written consent.
@@ -20,8 +18,6 @@ permissions:
 
 limitations:
   - no-liability
-
-hidden: false
 ---
 
 BSD 3-Clause License

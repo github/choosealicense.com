@@ -16,18 +16,6 @@ describe 'license meta' do
         missing = required - raw_fields.keys
         expect(missing).to be_empty
       end
-
-      if license['family']
-        it 'should contain the required license variant fields' do
-          missing = %w(family) - license.keys
-          expect(missing).to be_empty
-        end
-      else
-        it 'should not contain license family specific fields' do
-          extra = %w(variant family).select { |f| raw_fields.keys.include?(f) }
-          expect(extra).to be_empty
-        end
-      end
     end
   end
 end

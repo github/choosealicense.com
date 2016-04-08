@@ -1,7 +1,7 @@
 {% assign id = "/licenses/" | append: include.license-id %}
 {% assign licenses = site.licenses | where:"id", id %}
 {% for license in licenses %}
-<div class="license-family clearfix">
+<div class="license-family clearfix" id="{{ include.license-id | slugify }}">
   <div class="license-family-heading">
     <h3 class="license-family-name">
       <a href="{{ license.url }}">

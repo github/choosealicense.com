@@ -40,20 +40,8 @@ def licenses
   end
 end
 
-def hidden_licenses
-  licenses.select { |l| l['hidden'] }
-end
-
-def shown_licenses
-  licenses.select { |l| !l['hidden'] }
-end
-
 def license_ids
   licenses.map { |l| l['id'] }
-end
-
-def families
-  licenses.map { |l| l['family'] }.compact.uniq
 end
 
 def site

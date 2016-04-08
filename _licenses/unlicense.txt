@@ -1,6 +1,5 @@
 ---
 title: The Unlicense
-family: Public Domain
 source: http://unlicense.org/UNLICENSE
 
 description: Because copyright is automatic in most countries, <a href="http://unlicense.org">the Unlicense</a> is a template to waive copyright interest in software you've written and dedicate it to the public domain. Use the Unlicense to opt out of copyright entirely. It also includes the no-warranty statement from the MIT/X11 license.
@@ -17,8 +16,6 @@ conditions: []
 
 limitations:
   - no-liability
-
-hidden: false
 ---
 
 This is free and unencumbered software released into the public domain.

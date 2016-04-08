@@ -1,6 +1,5 @@
 ---
 title: MIT License
-featured: true
 source: https://opensource.org/licenses/MIT
 
 description: A permissive license that is short and to the point. It lets people do anything with your code with proper attribution and without warranty.
@@ -23,8 +22,6 @@ permissions:
 
 limitations:
   - no-liability
-
-hidden: false
 ---
 
 MIT License
