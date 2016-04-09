@@ -5,7 +5,7 @@
   {% if using.size > 0 %}
     {% for used in using limit: 3 %}
       {% assign last = forloop.last %}
-      {% if last %}
+      {% if last and using.size > 1 %}
         and
       {% endif %}
       {% for hash in used %}
