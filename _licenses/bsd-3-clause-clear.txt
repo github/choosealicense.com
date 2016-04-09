@@ -1,7 +1,5 @@
 ---
 title: BSD 3-clause Clear License
-family: BSD
-variant: true
 
 description: A variant of the <a href="/licenses/bsd-3-clause/">BSD 3-Clause License</a> that explicitly does not grant any patent rights.
 
@@ -21,7 +19,6 @@ permissions:
 limitations:
   - no-liability
   - patent-use
-
 ---
 
 The Clear BSD License

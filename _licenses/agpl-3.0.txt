@@ -2,8 +2,6 @@
 title: GNU Affero General Public License v3.0
 nickname: GNU AGPLv3
 redirect_from: /licenses/agpl/
-family: GNU GPL
-variant: true
 source: http://www.gnu.org/licenses/agpl-3.0.txt
 
 description: The GNU GPL family of licenses is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. GNU AGPLv3 is distinguished from GNU GPLv3 in that hosted services using the code are considered distribution and trigger the copyleft requirements.
@@ -28,8 +26,6 @@ permissions:
 
 limitations:
   - no-liability
-
-hidden: false
 ---
 
                     GNU AFFERO GENERAL PUBLIC LICENSE

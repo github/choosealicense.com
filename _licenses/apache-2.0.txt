@@ -1,7 +1,6 @@
 ---
 title: Apache License 2.0
 redirect_from: /licenses/apache/
-featured: true
 source: http://www.apache.org/licenses/LICENSE-2.0.html
 
 description: A permissive license that also provides an express grant of patent rights from contributors to users.
@@ -29,8 +28,6 @@ permissions:
 limitations:
   - trademark-use
   - no-liability
-
-hidden: false
 ---
 
                                  Apache License

@@ -21,8 +21,6 @@ permissions:
 limitations:
   - no-liability
   - trademark-use
-
-hidden: false
 ---
 
 		       The Artistic License 2.0

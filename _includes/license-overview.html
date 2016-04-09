@@ -1,16 +1,15 @@
-<div class="license-family clearfix">
+{% assign id = "/licenses/" | append: include.license-id %}
+{% assign licenses = site.licenses | where:"id", id %}
+{% for license in licenses %}
+<div class="license-family clearfix" id="{{ include.license-id | slugify }}">
   <div class="license-family-heading">
     <h3 class="license-family-name">
       <a href="{{ license.url }}">
-        {% if license.family %}
-          {{ license.family }}
-        {% else %}
           {% if license.nickname %}
             {{ license.nickname }}
           {% else %}
             {{ license.title }}
           {% endif %}
-        {% endif %}
       </a>
     </h3>
 
@@ -18,32 +17,6 @@
   </div>
 
   <div class="license-details">
-    <div class="license-variations js-license-variations">
-      <!-- always show this div, even w/o variations, for proper spacing -->
-      {% if license.family %}
-      <ul class="nav-pills js-nav-pills">
-        {% assign variations = site.licenses | where:"hidden",false | where:"family",license.family %}
-        {% for variation in variations %}
-        <li{% if license.id == variation.id %} class="active"{% endif %}><a href="#{{ variation.id | remove: '/licenses/' | slugify }}" data-selected-tab="variation-{{ variation.id | remove: '/licenses/' | slugify }}">
-          {% if variation.nickname != nil %}
-            {{ variation.nickname }}
-          {% else %}
-            {{ variation.title }}
-          {% endif %}
-        </a></li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-    </div>
-
-    {% if license.family %}
-      {% assign variations = site.licenses | where:"hidden",false | where:"family",license.family %}
-    {% else %}
-      {% assign variations = site.licenses | where:"title",license.title %}
-    {% endif %}
-
-    {% for variation in variations %}
-    <div {% if variation.id %}id="{{ variation.id | remove: '/licenses/' | slugify }}" {% endif %}class="variation-tab {% if variation.id %}variation-{{ variation.id | remove: '/licenses/' | slugify }}{% endif %} js-variation-tab{% if license.id == variation.id %} active{% endif %}">
       <table class="license-rules">
         <tr>
         {% assign types = "permissions|conditions|limitations" | split: "|" %}
@@ -58,7 +31,7 @@
                 {% assign rules = site.data.rules[type] | sort: "label" %}
                 {% for rule_obj in rules %}
                   {% assign req = rule_obj.tag %}
-                  {% if variation[type] contains req %}
+                  {% if license[type] contains req %}
                     <li class="{{ req }}">
                       <span class="license-sprite"></span>
                       {{ rule_obj.label }}
@@ -70,8 +43,7 @@
           {% endfor %}
         </tr>
       </table>
-      <p class="small"><a href="{{ variation.url }}">View full {{ variation.title }} license »</a></p>
-    </div>
-    {% endfor %}
+      <p class="small"><a href="{{ license.url }}">View full {{ license.title }} »</a></p>
   </div>
 </div>
+{% endfor %}

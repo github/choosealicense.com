@@ -26,8 +26,6 @@ permissions:
 
 limitations:
   - no-liability
-
-hidden: false
 ---
 
 Eclipse Public License - v 1.0
