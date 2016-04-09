@@ -12,6 +12,6 @@
         <a href="{{ hash[1] }}">{{ hash[0] }}</a>{% if last == false %},{% endif %}
       {% endfor %}
     {% endfor %}
-    use the {% if license.nickname %}{{ license.nickname }}{% else %}{{ license.title }}{% endif %}.
+    use{% if using.size == 1 %}s{% endif %} the {% if license.nickname %}{{ license.nickname }}{% else %}{{ license.title }}{% endif %}.
   {% endif %}
 {% endfor %}
