@@ -11,9 +11,6 @@ conditions:
 - description: Users who interact with the software via network are given the right to receive a copy of the corresponding source code.
   label: Network Use is Distribution
   tag: network-use-disclose
-- description: You must change the name of the software if you modify it.
-  label: Rename
-  tag: rename
 - description: Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used.
   label: Same License
   tag: same-license
