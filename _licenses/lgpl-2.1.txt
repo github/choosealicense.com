@@ -19,7 +19,6 @@ permissions:
   - commercial-use
   - modifications
   - distribution
-  - patent-use
   - private-use
 
 limitations:
