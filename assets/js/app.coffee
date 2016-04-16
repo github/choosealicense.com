@@ -31,7 +31,6 @@ class Choosealicense
   constructor: ->
     @initTooltips()
     @initClipboard()
-    @initLicenseVariationNav()
 
   # Init tooltip action
   initTooltips: ->
@@ -71,19 +70,6 @@ class Choosealicense
   # Post-copy user feedback callback
   clipboardComplete: (client, args) ->
     @textContent = "Copied!"
-
-  # Initializes pill navigation for license variations
-  initLicenseVariationNav: ->
-    $(".js-nav-pills a").click (e) ->
-      selectedTab = $(this).data("selected-tab")
-      nav = $(this).closest(".js-nav-pills")
-      nav.find("li").removeClass("active")
-      nav.closest(".js-license-variations").siblings(".js-variation-tab").removeClass("active")
-
-      $(this).parent("li").addClass("active")
-      $("." + selectedTab).addClass("active")
-
-      e.preventDefault()
 
 $ ->
   new Choosealicense()

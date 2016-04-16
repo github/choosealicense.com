@@ -163,15 +163,6 @@ strong {
   padding-left: 20px;
 }
 
-.license-variations {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 31px;
-  padding-top: 23px;
-  margin-left: -10px;
-}
-
 .license-family-name {
   font-size: 28px;
   margin-top: 5px;
@@ -378,14 +369,6 @@ strong {
 .nav-pills > li.active > a {
   background-color: #149ad4;
   color: #f7f4ef;
-}
-
-.variation-tab {
-  display: none;
-}
-
-.variation-tab.active {
-  display: block;
 }
 
 .small {
