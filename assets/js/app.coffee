@@ -23,9 +23,9 @@ class Choosealicense
 
   # Annotation rule types as defined in `_config.yml`
   ruletypes:
-    required: "Required"
-    permitted: "Permitted"
-    forbidden: "Forbidden"
+    permissions: "Permission"
+    conditions: "Condition"
+    limitations: "Limitation"
 
   # fire on document.ready
   constructor: ->
