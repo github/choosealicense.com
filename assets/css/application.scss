@@ -144,12 +144,12 @@ strong {
 .circular     { background-position: 0 -129px; width: 72px; height: 69px; }
 
 
-.license-family {
+.license-overview {
   clear: both;
   margin-bottom: 50px;
 }
 
-.license-family-heading {
+.license-overview-heading {
   float: left;
   width: 35%;
 }
@@ -163,21 +163,12 @@ strong {
   padding-left: 20px;
 }
 
-.license-variations {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 31px;
-  padding-top: 23px;
-  margin-left: -10px;
-}
-
-.license-family-name {
+.license-overview-name {
   font-size: 28px;
   margin-top: 5px;
 }
 
-.license-family-description {
+.license-overview-description {
   color: #555;
 }
 
@@ -364,30 +355,6 @@ strong {
   margin-left: 2em;
 }
 
-.nav-pills > li {
-  float: left;
-  display: block;
-  margin-right: 10px;
-}
-
-.nav-pills > li > a {
-  padding: 5px 10px;
-  border-radius: 3px;
-}
-
-.nav-pills > li.active > a {
-  background-color: #149ad4;
-  color: #f7f4ef;
-}
-
-.variation-tab {
-  display: none;
-}
-
-.variation-tab.active {
-  display: block;
-}
-
 .small {
   font-size: 90%;
 }
@@ -419,7 +386,7 @@ strong {
   color: #298625;
 }
 
-.qtip-permitted .qtip-titlebar {
+.qtip-permissions .qtip-titlebar {
   background-color: #3dc637;
   color: #fff;
 }

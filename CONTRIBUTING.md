@@ -28,7 +28,6 @@ If your proposed license meets the above criteria, here's a few other things to 
 * Each license has both [required and optional metadata](https://github.com/github/choosealicense.com#license-metadata) that should be included.
 * The text of the license should be wrapped to a 78 character width.
 * The body of the file should be the text of the license in plain text.
-* Almost without exception, new licenses should be added as hidden (`hidden: true` in the YAML front matter), such that they are directly linkable and detectable, but not otherwise listed.
 
 ## Making Changes
 

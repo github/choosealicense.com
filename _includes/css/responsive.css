@@ -86,10 +86,10 @@
   .home h2 span:last-child {
     right: 35px;
   }
-  .license-family {
+  .license-overview {
     margin-bottom: 20px;
   }
-  .license-family-heading {
+  .license-overview-heading {
     float: none;
     width: 100%;
   }
@@ -97,13 +97,6 @@
     float: none;
     width: 100%;
     padding-left: 0;
-  }
-  .license-variations {
-    height: auto;
-    padding-top: 0;
-  }
-  .license-variations ul {
-    height: 31px;
   }
   .site-footer {
     text-align: center;
