@@ -4,7 +4,7 @@ permalink: existing/
 title: Existing projects and communities
 ---
 
-If you're contributing to or extending an existing project, it's almost always easiest to continue using that project's license. Look for a file called `LICENSE` or `COPYING`, or a notice in the project's `README` to find out what that license is. If you can'd finda license, [ask](/no-license/#for-users).
+If you're contributing to or extending an existing project, it's almost always easiest to continue using that project's license. Look for a file called `LICENSE` or `COPYING`, or a notice in the project's `README` to find out what that license is. If you can't find a license, [ask](/no-license/#for-users).
 
 Depending on how you're building on an existing project and what its license is, using the existing project's license for your own might not just be the easiest thing to do, but a condition on which your permission to build on the existing project rests: see the "same license" condition of [some licenses](/licenses/).
 
