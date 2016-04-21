@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: existing/
+permalink: /existing/
 title: Existing projects and communities
 ---
 
