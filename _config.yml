@@ -41,7 +41,7 @@ gems:
   - jekyll-coffeescript
 
 sass:
-    sass_dir: _sass
+    sass_dir: assets/vendor
     style: :compressed
 
 twitter:
