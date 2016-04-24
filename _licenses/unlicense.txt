@@ -2,7 +2,8 @@
 title: The Unlicense
 source: http://unlicense.org/UNLICENSE
 
-description: Because copyright is automatic in most countries, <a href="http://unlicense.org">the Unlicense</a> is a template to waive copyright interest in software you've written and dedicate it to the public domain. Use the Unlicense to opt out of copyright entirely. It also includes the no-warranty statement from the MIT/X11 license.
+description: A license with no conditions whatsoever. Unlicensed works, modifications, and larger works may be distributed under different terms and without source code.
+
 
 how: Create a text file (typically named UNLICENSE or UNLICENSE.txt) in the root of your source code and copy the text of the license disclaimer into the file.
 

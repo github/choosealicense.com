@@ -2,7 +2,7 @@
 title: MIT License
 source: https://opensource.org/licenses/MIT
 
-description: A permissive license that is short and to the point. It lets people do anything with your code with proper attribution and without warranty.
+description: A short and simple license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 

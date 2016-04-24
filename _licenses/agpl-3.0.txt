@@ -4,7 +4,7 @@ nickname: GNU AGPLv3
 redirect_from: /licenses/agpl/
 source: http://www.gnu.org/licenses/agpl-3.0.txt
 
-description: The GNU GPL family of licenses is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. GNU AGPLv3 is distinguished from GNU GPLv3 in that hosted services using the code are considered distribution and trigger the copyleft requirements.
+description: The license with the strongest conditions for preserving openness. Complete source code of licensed works and modifications, which include larger works using a licensed work, must be made available under the same license when distributed. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights to users. Additionally, when a modified version is used to provide a service over a network, the complete source code of the modified version must be made available to users of the service.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 

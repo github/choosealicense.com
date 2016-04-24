@@ -4,7 +4,7 @@ nickname: GNU GPLv3
 redirect_from: /licenses/gpl-v3/
 source: http://www.gnu.org/licenses/gpl-3.0.txt
 
-description: The GNU GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license.
+description: A license with strong conditions for preserving openness. Complete source code of licensed works and modifications, which include larger works using a licensed work, must be made available under the same license when distributed. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights to users.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
