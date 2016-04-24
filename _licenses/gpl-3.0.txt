@@ -4,7 +4,7 @@ nickname: GNU GPLv3
 redirect_from: /licenses/gpl-v3/
 source: http://www.gnu.org/licenses/gpl-3.0.txt
 
-description: A license with strong conditions for preserving openness. Complete source code of licensed works and modifications, which include larger works using a licensed work, must be made available under the same license when distributed. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights to users.
+description: Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license when distributed. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights to users.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
