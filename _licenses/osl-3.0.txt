@@ -16,6 +16,7 @@ using:
 conditions:
   - include-copyright
   - disclose-source
+  - document-changes
   - network-use-disclose
   - same-license
 
