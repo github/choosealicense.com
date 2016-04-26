@@ -8,6 +8,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 
 conditions:
   - include-copyright
+  - document-changes
 
 permissions:
   - commercial-use

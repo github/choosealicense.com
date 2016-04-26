@@ -13,6 +13,7 @@ note: The Free Software Foundation recommends taking the additional step of addi
 conditions:
   - include-copyright
   - disclose-source
+  - document-changes
   - same-license
 
 permissions:
