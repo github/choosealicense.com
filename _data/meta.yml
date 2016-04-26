@@ -31,6 +31,10 @@
 
 # Optional fields
 
+- name: featured
+  description: Whether the license should be featured on the main page (defaults to false)
+  required: false
+
 - name: note
   description: Additional information about the licenses
   required: false

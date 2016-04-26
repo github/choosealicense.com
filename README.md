@@ -49,6 +49,7 @@ Licenses sit in the `/_licenses` folder. Each license has YAML front matter desc
 
 #### Optional fields
 
+* `featured` - Whether the license should be featured on the main page (defaults to false)
 * `note` - Additional information about the licenses
 * `using` - A list of notable projects using the license in the form of `project_name: "url"`
 * `redirect_from` - Relative path(s) to redirect to the license from, to prevent breaking old URLs
