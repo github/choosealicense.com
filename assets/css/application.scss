@@ -163,6 +163,12 @@ strong {
   padding-left: 20px;
 }
 
+.license-page-details {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .license-overview-name {
   font-size: 28px;
   margin-top: 5px;
@@ -263,6 +269,10 @@ strong {
   -o-border-radius: 3px;
   border-radius: 3px;
   padding: 20px;
+}
+
+.license-nickname {
+  margin-top: 0;
 }
 
 .sidebar {
