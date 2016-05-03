@@ -7,6 +7,8 @@ description: The Mozilla Public License (MPL 2.0) is maintained by the Mozilla f
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
+note: The Mozilla Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license (Exhibit A).
+
 conditions:
   - disclose-source
   - include-copyright
