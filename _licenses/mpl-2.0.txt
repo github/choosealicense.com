@@ -12,7 +12,7 @@ note: The Mozilla Foundation recommends taking the additional step of adding a b
 using:
   - Firefox: http://www.mozilla.org/foundation/licensing.html
   - Thunderbird: http://www.mozilla.org/foundation/licensing.html
-  - LibreOffice: http://www.libreoffice.org/download/license/
+  - LibreOffice: https://cgit.freedesktop.org/libreoffice/core/tree/COPYING.MPL
 
 conditions:
   - disclose-source
