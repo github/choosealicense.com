@@ -1,23 +1,7 @@
 <div class="sidebar">
 
   <a href="#" data-clipboard-target="#license-text" data-proofer-ignore="true" class="js-clipboard-button button">Copy license text to clipboard</a>
-  
-  <div class="license-description">
-    <h3>Description</h3>
-    <p>
-      {{ page.description }}
-    </p>
-  </div>
-  
-  {% if page.nickname %}
-  <div class="license-nickname">
-    <h3>Nickname</h3>
-    <p>
-      {{ page.nickname }}
-    </p>
-  </div>
-  {% endif %}
-  
+    
   <div class="how-to-apply">
     <h3>How to apply this license</h3>
     <p>
@@ -37,27 +21,6 @@
     </a>
   </div>
   {% endif %}
-
-  <div class="license-rules license-rules-sidebar">
-
-  {% assign types = "permissions|conditions|limitations" | split: "|" %}
-  {% for type in types %}
-    <h3>{{ type | capitalize }}</h3>
-    <ul class="license-{{ type }}">
-      {% assign rules = site.data.rules[type] | sort: "label" %}
-      {% for rule_obj in rules %}
-        {% assign req = rule_obj.tag %}
-        {% if page[type] contains req %}
-          <li class="{{ req }}">
-            <span class="license-sprite"></span>
-            {{ rule_obj.label }}
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  {% endfor %}
-
-  </div>
 
   {% if page.using %}
   <div class="projects-with-license">

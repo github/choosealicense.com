@@ -1,8 +1,8 @@
 ---
 ---
 
-@import "normalize";
-@import "jquery.qtip";
+@import "/assets/vendor/normalize-css/normalize.css";
+@import "/assets/vendor/qtip2/jquery.qtip.min.css";
 
 body {
   background: #fafafa;
@@ -80,7 +80,7 @@ strong {
 }
 
 .home h2 {
-  color: #149ad4;
+  color: #687072;
   font-size: 27px;
   line-height: 70px;
   margin-bottom: 45px;
@@ -161,6 +161,12 @@ strong {
   float: left;
   width: 55%;
   padding-left: 20px;
+}
+
+.license-page-details {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .license-overview-name {
@@ -263,6 +269,10 @@ strong {
   -o-border-radius: 3px;
   border-radius: 3px;
   padding: 20px;
+}
+
+.license-nickname {
+  margin-top: 0;
 }
 
 .sidebar {

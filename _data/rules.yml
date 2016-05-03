@@ -2,7 +2,7 @@ conditions:
 - description: Include a copy of the license and copyright notice with the code.
   label: License and Copyright Notice
   tag: include-copyright
-- description: Indicate significant changes made to the code.
+- description: Indicate changes made to the code.
   label: State Changes
   tag: document-changes
 - description: Source code must be made available when distributing the software.

@@ -7,6 +7,13 @@ description: Permissions of this weak copyleft license are conditioned on making
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
+note: The Mozilla Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license (Exhibit A).
+
+using:
+  - Servo: https://github.com/servo/servo/blob/master/LICENSE
+  - TimelineJS3: https://github.com/NUKnightLab/TimelineJS3/blob/master/LICENSE
+  - LibreOffice: https://cgit.freedesktop.org/libreoffice/core/tree/COPYING.MPL
+
 conditions:
   - disclose-source
   - include-copyright
