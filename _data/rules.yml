@@ -33,7 +33,7 @@ permissions:
   tag: patent-use
 
 limitations:
-- description: This license explicitly states that it does NOT grant you any trademark rights, even though trademark rights are not implicitly granted by any common licenses.
+- description: This license explicitly states that it does NOT grant you trademark rights, even though licenses without such a statement probably do not grant you any implicit trademark rights.
   label: Trademark Use
   tag: trademark-use
 - description: Software is provided without warranty and the software author/license owner cannot be held liable for damages.
