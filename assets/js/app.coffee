@@ -38,11 +38,11 @@ class Choosealicense
     # Dynamically add annotations as title attribute to rule list items
     for ruletype, rules of window.annotations
       for rule in rules
-        $(".license-rules ul.license-#{ruletype} li.#{rule["tag"]}").attr "title", rule["description"]
+        $(".license-#{ruletype} .#{rule["tag"]}").attr "title", rule["description"]
 
     # Init tooltips on all rule list items
     for ruletype, label of @ruletypes
-      $(".license-#{ruletype} li").qtip
+      $(".license-#{ruletype} li, .license-#{ruletype} .license-sprite").qtip
         content:
           text: false
           title:
