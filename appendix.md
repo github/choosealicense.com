@@ -19,7 +19,7 @@ All licenses described in the choosealicense.com [repository](https://github.com
         {% continue %}
       {% endif %}
       {% capture seen_tags %}{{ seen_tags | append:rule_obj.tag }}{% endcapture %}
-      <th style="text-align: center; width:7%">{{ rule_obj.label }}</th>
+      <th style="text-align: center; width:7%"><a href="#{{ rule_obj.tag }}">{{ rule_obj.label }}</a></th>
     {% endfor %}
   {% endfor %}
 </tr>
@@ -71,7 +71,7 @@ All licenses described in the choosealicense.com [repository](https://github.com
     {% if seen_tags contains req %}
       {% continue %}
     {% endif %}
-    <dt>{{ rule_obj.label }}</dt>
+    <dt id="{{ req }}">{{ rule_obj.label }}</dt>
     {% capture seen_tags %}{{ seen_tags | append:req }}{% endcapture %}
     {% for t in types %}
       {% for r in site.data.rules[t] | sort: "label" %}
