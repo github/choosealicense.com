@@ -60,7 +60,7 @@ All licenses described in the choosealicense.com [repository](https://github.com
 
 <p>Most open source licenses' grants of permissions are subject to compliance with <b>conditions</b> (<span class="license-conditions"><span class="license-sprite"></span></span>).</p>
 
-<p>Most open source licenses also have <b>limitations</b> (<span class="license-limitations"><span class="license-sprite"></span></span>), including liability and warranties disclaimed by licensors and sometimes expressly excluding patent or trademark from licenses' grants.</p>
+<p>Most open source licenses also have <b>limitations</b> (<span class="license-limitations"><span class="license-sprite"></span></span>) that usually disclaim warranty and liability and sometimes expressly exclude patent or trademark from licenses' grants.</p>
 
 <dl>
 {% assign seen_tags = '' %}
