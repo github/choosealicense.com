@@ -5,7 +5,7 @@ title: Appendix
 class: license-types
 ---
 
-All licenses described in the choosealicense.com [repository](https://github.com/github/choosealicense.com), in a table.
+All licenses described in the choosealicense.com [repository](https://github.com/github/choosealicense.com), in a table. Hover on the circles for more info.
 
 <table border style="font-size: xx-small">
 {% assign types = "permissions|conditions|limitations" | split: "|" %}
