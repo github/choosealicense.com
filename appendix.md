@@ -19,7 +19,7 @@ All licenses described in the choosealicense.com [repository](https://github.com
         {% continue %}
       {% endif %}
       {% capture seen_tags %}{{ seen_tags | append:rule_obj.tag }}{% endcapture %}
-      <th style="text-align: center; width:7%">{{ rule_obj.label }}</th>
+      <th style="text-align: center; width:7%"><a href="#{{ rule_obj.tag }}">{{ rule_obj.label }}</a></th>
     {% endfor %}
   {% endfor %}
 </tr>
@@ -53,3 +53,33 @@ All licenses described in the choosealicense.com [repository](https://github.com
   </tr>
 {% endfor %}
 </table>
+
+## Legend
+
+<p>Open source licenses grant to the public <b>permissions</b> (<span class="license-permissions"><span class="license-sprite"></span></span>) to do things with licensed works copyright or other "intellectual property" laws might otherwise disallow.</p>
+
+<p>Most open source licenses' grants of permissions are subject to compliance with <b>conditions</b> (<span class="license-conditions"><span class="license-sprite"></span></span>).</p>
+
+<p>Most open source licenses also have <b>limitations</b> (<span class="license-limitations"><span class="license-sprite"></span></span>) that usually disclaim warranty and liability and sometimes expressly exclude patent or trademark from licenses' grants.</p>
+
+<dl>
+{% assign seen_tags = '' %}
+{% for type in types %}
+  {% assign rules = site.data.rules[type] | sort: "label" %}
+  {% for rule_obj in rules %}
+    {% assign req = rule_obj.tag %}
+    {% if seen_tags contains req %}
+      {% continue %}
+    {% endif %}
+    <dt id="{{ req }}">{{ rule_obj.label }}</dt>
+    {% capture seen_tags %}{{ seen_tags | append:req }}{% endcapture %}
+    {% for t in types %}
+      {% for r in site.data.rules[t] | sort: "label" %}
+        {% if r.tag == req %}
+          <dd class="license-{{t}}"><span class="license-sprite"></span> {{ r.description }}</dd>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  {% endfor %}
+{% endfor %}
+</dl>
