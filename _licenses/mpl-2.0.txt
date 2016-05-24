@@ -1,5 +1,6 @@
 ---
 title: Mozilla Public License 2.0
+nickname: MPL-2.0
 redirect_from: /licenses/mozilla/
 source: https://www.mozilla.org/media/MPL/2.0/index.txt
 

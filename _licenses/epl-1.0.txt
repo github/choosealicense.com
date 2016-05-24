@@ -1,5 +1,6 @@
 ---
 title: Eclipse Public License 1.0
+nickname: EPL-1.0
 redirect_from: /licenses/eclipse/
 source: https://www.eclipse.org/legal/epl-v10.html
 

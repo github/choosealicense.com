@@ -1,5 +1,6 @@
 ---
 title: SIL Open Font License 1.1
+nickname: OFL-1.1
 redirect_from: /licenses/ofl/
 source: http://scripts.sil.org/OFL_web
 

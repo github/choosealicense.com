@@ -2,8 +2,12 @@
 # The available fields are:
 
 - name: title
-  description: The SPDX-compliant, human-readable license name
+  description: The license full name specified by http://spdx.org/licenses/
   required: true
+
+- name: nickname
+  description: A shorter license name; customary if applicable (e.g., GPLv3) or the SPDX ID (e.g., MPL-2.0)
+  required: required
 
 - name: source
   description: The URL to the license source text
@@ -45,8 +49,4 @@
 
 - name: redirect_from
   description: Relative path(s) to redirect to the license from, to prevent breaking old URLs
-  required: false
-
-- name: nickname
-  description: A shorter, human-readable license name where the SPDX license name (`title` above) is long
   required: false
