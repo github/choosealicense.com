@@ -1,6 +1,6 @@
 ---
 title: Artistic License 2.0
-nickname: Artistic-2.0
+spdx-id: Artistic-2.0
 redirect_from: /licenses/artistic/
 source: http://www.perlfoundation.org/attachment/legal/artistic-2_0.txt
 

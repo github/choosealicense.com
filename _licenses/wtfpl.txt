@@ -1,6 +1,6 @@
 ---
 title: "Do What The F*ck You Want To Public License"
-nickname: WTFPL
+spdx-id: WTFPL
 source: http://www.wtfpl.net/
 
 description: The easiest licence out there. It gives the user permissions to do whatever they want with your code.

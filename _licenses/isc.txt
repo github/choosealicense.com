@@ -1,6 +1,6 @@
 ---
 title: ISC License
-nickname: ISC
+spdx-id: ISC
 source: http://opensource.org/licenses/isc-license
 
 description: A permissive license lets people do anything with your code with proper attribution and without warranty. The ISC license is functionally equivalent to the <a href="/licenses/bsd-2-clause/">BSD 2-Clause</a> and <a href="/licenses/mit/">MIT</a> licenses, removing some language that is no longer necessary.

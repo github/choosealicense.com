@@ -1,6 +1,6 @@
 ---
 title: Microsoft Reciprocal License
-nickname: MS-RL
+spdx-id: MS-RL
 
 source: http://opensource.org/licenses/ms-pl
 

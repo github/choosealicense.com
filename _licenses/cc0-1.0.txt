@@ -1,6 +1,6 @@
 ---
 title: Creative Commons Zero v1.0 Universal
-nickname: CC0-1.0
+spdx-id: CC0-1.0
 redirect_from: /licenses/cc0/
 source: http://creativecommons.org/publicdomain/zero/1.0/
 

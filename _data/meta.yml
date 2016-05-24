@@ -5,8 +5,8 @@
   description: The license full name specified by http://spdx.org/licenses/
   required: true
 
-- name: nickname
-  description: A shorter license name; customary if applicable (e.g., GPLv3) or the SPDX ID (e.g., MPL-2.0)
+- name: spdx-id
+  description: Short identifier specified by http://spdx.org/licenses/
   required: required
 
 - name: source
@@ -37,6 +37,10 @@
 
 - name: featured
   description: Whether the license should be featured on the main page (defaults to false)
+  required: false
+
+- name: nickname
+  description: Customary short name if applicable (e.g, GPLv3)
   required: false
 
 - name: note

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Public License
-nickname: MS-PL
+spdx-id: MS-PL
 
 source: http://opensource.org/licenses/ms-pl
 

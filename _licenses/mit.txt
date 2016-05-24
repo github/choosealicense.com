@@ -1,6 +1,6 @@
 ---
 title: MIT License
-nickname: MIT
+spdx-id: MIT
 source: https://opensource.org/licenses/MIT
 featured: true
 
