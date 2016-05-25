@@ -75,11 +75,11 @@ def spdx_list
 end
 
 def spdx_ids
-  spdx_list.map { |name, _properties| name.downcase }
+  spdx_list.map { |name, _properties| name }
 end
 
 def find_spdx(license)
-  spdx_list.find { |name, _properties| name.casecmp(license).zero? }
+  spdx_list.find { |name, _properties| name == license }
 end
 
 def osi_approved_licenses
