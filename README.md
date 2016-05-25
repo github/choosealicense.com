@@ -39,7 +39,8 @@ Licenses sit in the `/_licenses` folder. Each license has YAML front matter desc
 
 #### Required fields
 
-* `title` - The SPDX-compliant, human-readable license name
+* `title` - The license full name specified by http://spdx.org/licenses/
+* `spdx-id` - Short identifier specified by http://spdx.org/licenses/
 * `source` - The URL to the license source text
 * `description` - A human-readable description of the license
 * `how` - Instructions on how to implement the license
@@ -50,10 +51,10 @@ Licenses sit in the `/_licenses` folder. Each license has YAML front matter desc
 #### Optional fields
 
 * `featured` - Whether the license should be featured on the main page (defaults to false)
+* `nickname` - Customary short name if applicable (e.g, GPLv3)
 * `note` - Additional information about the licenses
 * `using` - A list of notable projects using the license in the form of `project_name: "url"`
 * `redirect_from` - Relative path(s) to redirect to the license from, to prevent breaking old URLs
-* `nickname` - A shorter, human-readable license name where the SPDX license name (`title` above) is long
 
 ### Auto-populated fields
 
