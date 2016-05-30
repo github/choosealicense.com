@@ -10,7 +10,7 @@ All licenses described in the choosealicense.com [repository](https://github.com
 <table border style="font-size: xx-small">
 {% assign types = "permissions|conditions|limitations" | split: "|" %}
 <tr>
-  <th>License</th>
+  <th scope="col" style="text-align: center">License</th>
   {% assign seen_tags = '' %}
   {% for type in types %}
     {% assign rules = site.data.rules[type] | sort: "label" %}
@@ -19,12 +19,12 @@ All licenses described in the choosealicense.com [repository](https://github.com
         {% continue %}
       {% endif %}
       {% capture seen_tags %}{{ seen_tags | append:rule_obj.tag }}{% endcapture %}
-      <th style="text-align: center; width:7%"><a href="#{{ rule_obj.tag }}">{{ rule_obj.label }}</a></th>
+      <th scope="col" style="text-align: center; width:7%"><a href="#{{ rule_obj.tag }}">{{ rule_obj.label }}</a></th>
     {% endfor %}
   {% endfor %}
 </tr>
 {% for license in site.licenses | sort: 'path' %}
-  <tr style="height: 3em"><td><a href="{{ license.id }}">{{ license.title }}</a></td>
+  <tr style="height: 3em"><th scope="row"><a href="{{ license.id }}">{{ license.title }}</a></th>
   {% assign seen_tags = '' %}
   {% for type in types %}
     {% assign rules = site.data.rules[type] | sort: "label" %}
