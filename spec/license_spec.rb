@@ -7,7 +7,7 @@ describe 'licenses' do
 
   licenses.each do |license|
     context "The #{license['title']} license" do
-      let(:id) { license['id'] }
+      let(:id) { license['spdx-lcase'] }
       let(:spdx_id) { license['spdx-id'] }
 
       it 'has an SPDX ID' do

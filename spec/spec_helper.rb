@@ -35,7 +35,7 @@ def licenses
   SpecHelper.licenses ||= begin
     site.collections['licenses'].docs.map do |license|
       id = File.basename(license.basename, '.txt')
-      license.to_liquid.merge('id' => id)
+      license.to_liquid.merge('spdx-lcase' => id)
     end
   end
 end
