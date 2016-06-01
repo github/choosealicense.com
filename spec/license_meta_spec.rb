@@ -3,7 +3,7 @@ require 'spec_helper'
 describe 'license meta' do
   licenses.each do |license|
     # Manually load the raw license so we don't get the defaults
-    raw_fields = SafeYAML.load_file("_licenses/#{license['id']}.txt")
+    raw_fields = SafeYAML.load_file("_licenses/#{license['spdx-lcase']}.txt")
 
     context "The #{license['title']} license" do
       it 'should only contain supported meta fields' do
