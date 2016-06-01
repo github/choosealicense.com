@@ -1,5 +1,6 @@
 ---
 title: GNU Lesser General Public License v2.1
+spdx-id: LGPL-2.1
 nickname: GNU LGPLv2.1
 redirect_from: /licenses/lgpl-v2.1/
 source: http://www.gnu.org/licenses/lgpl-2.1.txt

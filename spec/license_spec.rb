@@ -7,21 +7,26 @@ describe 'licenses' do
 
   licenses.each do |license|
     context "The #{license['title']} license" do
-      let(:id) { license['id'] }
+      let(:spdx_lcase) { license['spdx-lcase'] }
+      let(:spdx_id) { license['spdx-id'] }
 
       it 'has an SPDX ID' do
-        expect(spdx_ids).to include(id)
+        expect(spdx_ids).to include(spdx_id)
+      end
+
+      it 'has an ID that is downcased SPDX ID' do
+        expect(spdx_id.casecmp(spdx_lcase).zero?)
       end
 
       it 'uses its SPDX name' do
-        spdx = find_spdx(id)
+        spdx = find_spdx(spdx_id)
         expect(spdx).to_not be_nil
         expect(spdx[1]['name'].gsub(/ only$/, '')).to eql(license['title'])
       end
 
       context 'industry approval' do
         it 'should be approved by OSI or FSF or OD' do
-          expect(approved_licenses).to include(id), 'See https://git.io/vzCTV.'
+          expect(approved_licenses).to include(spdx_lcase), 'See https://git.io/vzCTV.'
         end
       end
 

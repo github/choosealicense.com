@@ -34,14 +34,10 @@ end
 def licenses
   SpecHelper.licenses ||= begin
     site.collections['licenses'].docs.map do |license|
-      id = File.basename(license.basename, '.txt')
-      license.to_liquid.merge('id' => id)
+      spdx_lcase = File.basename(license.basename, '.txt')
+      license.to_liquid.merge('spdx-lcase' => spdx_lcase)
     end
   end
-end
-
-def license_ids
-  licenses.map { |l| l['id'] }
 end
 
 def site
@@ -75,11 +71,11 @@ def spdx_list
 end
 
 def spdx_ids
-  spdx_list.map { |name, _properties| name.downcase }
+  spdx_list.map { |name, _properties| name }
 end
 
 def find_spdx(license)
-  spdx_list.find { |name, _properties| name.casecmp(license).zero? }
+  spdx_list.find { |name, _properties| name == license }
 end
 
 def osi_approved_licenses

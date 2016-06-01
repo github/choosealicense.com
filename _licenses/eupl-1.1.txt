@@ -1,6 +1,6 @@
 ---
 title: European Union Public License 1.1
-nickname: EUPL-1.1
+spdx-id: EUPL-1.1
 redirect_from: /licenses/eupl-v1.1/
 source: https://joinup.ec.europa.eu/community/eupl/og_page/european-union-public-licence-eupl-v11
 

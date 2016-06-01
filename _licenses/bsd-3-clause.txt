@@ -1,6 +1,6 @@
 ---
 title: BSD 3-clause "New" or "Revised" License
-nickname: BSD 3-Clause
+spdx-id: BSD-3-Clause
 source: http://opensource.org/licenses/BSD-3-Clause
 
 description: A permissive license similar to the <a href="/licenses/bsd-2-clause/">BSD 2-Clause License</a>, but with a 3rd clause that prohibits others from using the name of the project or its contributors to promote derived products without written consent.
@@ -35,7 +35,7 @@ modification, are permitted provided that the following conditions are met:
   this list of conditions and the following disclaimer in the documentation
   and/or other materials provided with the distribution.
 
-* Neither the name of [project] nor the names of its
+* Neither the name of the copyright holder nor the names of its
   contributors may be used to endorse or promote products derived from
   this software without specific prior written permission.
 

@@ -1,5 +1,6 @@
 ---
 title: GNU Lesser General Public License v3.0
+spdx-id: LGPL-3.0
 nickname: GNU LGPLv3
 redirect_from: /licenses/lgpl-v3/
 source: http://www.gnu.org/licenses/lgpl-3.0.txt
