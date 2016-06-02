@@ -12,7 +12,11 @@
       <strong>Note: </strong> {{ page.note | markdownify | remove: '<p>' | remove: '</p>' }}
     </p>
     {% endif %}
+    {% assign xgpl = false %}
+    {% if page.spdx-id contains 'GPL' %}{% assign xgpl = true %}{% endif %}
+    <p class="note"><strong>Optional: </strong> Add <strong><code>{{ page.spdx-id }}</code>{% if xgpl %}+{% endif %}</strong>{% if xgpl %} (or <strong><code>{{ page.spdx-id }}</code></strong> to disallow future versions){% endif %} to your project's package description, if applicable (e.g., <a href="https://docs.npmjs.com/files/package.json#license">Node.js</a>, <a href="http://guides.rubygems.org/specification-reference/#license=">Ruby</a>, and <a href="http://doc.crates.io/manifest.html#package-metadata">Rust</a>). This will ensure the license is displayed in package directories.</p>
   </div>
+
   {% if page.source %}
   <div class="source">
     <a href="{{ page.source }}">
