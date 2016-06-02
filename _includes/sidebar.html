@@ -14,7 +14,7 @@
     {% endif %}
     {% assign xgpl = false %}
     {% if page.spdx-id contains 'GPL' %}{% assign xgpl = true %}{% endif %}
-    <p>You can also add <strong><code>{{ page.spdx-id }}</code>{% if xgpl %}+{% endif %}</strong>{% if xgpl %} (or <strong><code>{{ page.spdx-id }}</code></strong> to disallow future versions){% endif %}, the standard identifier for this license, to your project's package description, if applicable. Examples: <a href="https://docs.npmjs.com/files/package.json#license">Node.js</a>, <a href="http://guides.rubygems.org/specification-reference/#license=">Ruby</a>, and <a href="http://doc.crates.io/manifest.html#package-metadata">Rust</a>.</p>
+    <p class="note">The standard identifier for this license is <strong><code>{{ page.spdx-id }}</code>{% if xgpl %}+{% endif %}</strong>{% if xgpl %} (or <strong><code>{{ page.spdx-id }}</code></strong> to disallow future versions){% endif %}. Optionally, you can add this to your project's package description, if applicable (e.g., <a href="https://docs.npmjs.com/files/package.json#license">Node.js</a>, <a href="http://guides.rubygems.org/specification-reference/#license=">Ruby</a>, and <a href="http://doc.crates.io/manifest.html#package-metadata">Rust</a>). This will ensure the license is displayed in package directories.</p>
   </div>
 
   {% if page.source %}
