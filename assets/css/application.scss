@@ -66,6 +66,10 @@ strong {
   color: #444;
 }
 
+:target {
+  background-color: yellow;
+}
+
 .container {
   margin: 40px auto;
   width: 940px;
