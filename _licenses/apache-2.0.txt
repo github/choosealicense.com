@@ -3,7 +3,6 @@ title: Apache License 2.0
 spdx-id: Apache-2.0
 redirect_from: /licenses/apache/
 source: http://www.apache.org/licenses/LICENSE-2.0.html
-featured: true
 
 description: A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
