@@ -66,6 +66,10 @@ strong {
   color: #444;
 }
 
+:target {
+  background-color: yellow;
+}
+
 .container {
   margin: 40px auto;
   width: 940px;
@@ -146,7 +150,7 @@ strong {
 
 .license-overview {
   clear: both;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .license-overview-heading {
