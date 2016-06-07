@@ -5,7 +5,9 @@ title: Appendix
 class: license-types
 ---
 
-All licenses described in the choosealicense.com [repository](https://github.com/github/choosealicense.com), in a table.
+For reference, all licenses described in the choosealicense.com [repository](https://github.com/github/choosealicense.com), in a table.
+
+If you're here to choose a license, **[start from the home page](/)** to see a few licenses that will work for most cases.
 
 <table border style="font-size: xx-small">
 {% assign types = "permissions|conditions|limitations" | split: "|" %}
@@ -56,11 +58,11 @@ All licenses described in the choosealicense.com [repository](https://github.com
 
 ## Legend
 
-<p>Open source licenses grant to the public <b>permissions</b> (<span class="license-permissions"><span class="license-sprite"></span></span>) to do things with licensed works copyright or other "intellectual property" laws might otherwise disallow.</p>
+<p>Open source licenses grant to the public <span class="license-permissions"><span class="license-sprite"></span></span> <b>permissions</b> to do things with licensed works copyright or other "intellectual property" laws might otherwise disallow.</p>
 
-<p>Most open source licenses' grants of permissions are subject to compliance with <b>conditions</b> (<span class="license-conditions"><span class="license-sprite"></span></span>).</p>
+<p>Most open source licenses' grants of permissions are subject to compliance with <span class="license-conditions"><span class="license-sprite"></span></span> <b>conditions</b>.</p>
 
-<p>Most open source licenses also have <b>limitations</b> (<span class="license-limitations"><span class="license-sprite"></span></span>) that usually disclaim warranty and liability and sometimes expressly exclude patent or trademark from licenses' grants.</p>
+<p>Most open source licenses also have <span class="license-limitations"><span class="license-sprite"></span></span> <b>limitations</b> that usually disclaim warranty and liability and sometimes expressly exclude patent or trademark from licenses' grants.</p>
 
 <dl>
 {% assign seen_tags = '' %}
