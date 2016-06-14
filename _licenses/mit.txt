@@ -3,6 +3,7 @@ title: MIT License
 spdx-id: MIT
 source: https://opensource.org/licenses/MIT
 featured: true
+hidden: false
 
 description: A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 

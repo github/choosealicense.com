@@ -40,6 +40,10 @@ def licenses
   end
 end
 
+def shown_licenses
+  licenses.select { |l| !l['hidden'] }
+end
+
 def site
   SpecHelper.site ||= begin
     site = Jekyll::Site.new(config)

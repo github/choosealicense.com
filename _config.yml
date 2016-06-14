@@ -16,6 +16,7 @@ defaults:
       path: ""
       type: "licenses"
     values:
+      hidden: true
       layout: license
 
 exclude:
