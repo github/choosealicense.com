@@ -39,6 +39,10 @@
   description: Whether the license should be featured on the main page (defaults to false)
   required: false
 
+- name: hidden
+  description: Whether the license is hidden from the license list (defaults to true)
+  required: false
+
 - name: nickname
   description: Customary short name if applicable (e.g, GPLv3)
   required: false

@@ -51,6 +51,7 @@ Licenses sit in the `/_licenses` folder. Each license has YAML front matter desc
 #### Optional fields
 
 * `featured` - Whether the license should be featured on the main page (defaults to false)
+* `hidden` - Whether the license is hidden from the license list (defaults to true)
 * `nickname` - Customary short name if applicable (e.g, GPLv3)
 * `note` - Additional information about the licenses
 * `using` - A list of notable projects using the license in the form of `project_name: "url"`
