@@ -52,7 +52,7 @@
   required: false
 
 - name: using
-  description: 'A list of notable projects using the license in the form of `project_name: "url"`'
+  description: 'A list of up to 3 notable projects using the license with straightforward LICENSE files which serve as examples newcomers can follow and that can be detected by [licensee](https://github.com/benbalter/licensee) in the form of `project_name: license_file_url`'
   required: false
 
 - name: redirect_from
