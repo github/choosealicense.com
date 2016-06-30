@@ -54,7 +54,7 @@ Licenses sit in the `/_licenses` folder. Each license has YAML front matter desc
 * `hidden` - Whether the license is hidden from the license list (defaults to true)
 * `nickname` - Customary short name if applicable (e.g, GPLv3)
 * `note` - Additional information about the licenses
-* `using` - A list of up to 3 notable projects using the license with straightforward LICENSE files which serve as examples newcomers can follow and that can be detected by [licensee](https://github.com/benbalter/licensee) in the form of `project_name: license-file-url`
+* `using` - A list of up to 3 notable projects using the license with straightforward LICENSE files which serve as examples newcomers can follow and that can be detected by [licensee](https://github.com/benbalter/licensee) in the form of `project_name: license_file_url`
 * `redirect_from` - Relative path(s) to redirect to the license from, to prevent breaking old URLs
 
 ### Auto-populated fields
