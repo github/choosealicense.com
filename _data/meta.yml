@@ -52,7 +52,7 @@
   required: false
 
 - name: using
-  description: 'A list of notable projects using the license in the form of `project_name: "url"`'
+  description: 'A list of up to 3 notable projects using the license and a link to each of their LICENSE files in the form of `project_name: "url"`'
   required: false
 
 - name: redirect_from
