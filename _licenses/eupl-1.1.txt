@@ -10,13 +10,6 @@ how: Create a text file (typically named COPYING or LICENCE.txt) in the root of 
 
 note: The European Commission recommends taking the additional step of adding a [boilerplate notice](https://joinup.ec.europa.eu/sites/default/files/ckeditor_files/files/EUPL%201_1%20Guidelines%20EN%20Joinup.pdf#page=17) to the top of each file.
 
-conditions:
-  - include-copyright
-  - disclose-source
-  - document-changes
-  - network-use-disclose
-  - same-license
-
 permissions:
   - commercial-use
   - modifications
@@ -24,9 +17,17 @@ permissions:
   - patent-use
   - private-use
 
+conditions:
+  - include-copyright
+  - disclose-source
+  - document-changes
+  - network-use-disclose
+  - same-license
+
 limitations:
   - no-liability
   - trademark-use
+
 ---
 
 European Union Public Licence

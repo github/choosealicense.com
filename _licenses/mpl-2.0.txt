@@ -16,11 +16,6 @@ using:
   - TimelineJS3: https://github.com/NUKnightLab/TimelineJS3/blob/master/LICENSE
   - LibreOffice: https://cgit.freedesktop.org/libreoffice/core/tree/COPYING.MPL
 
-conditions:
-  - disclose-source
-  - include-copyright
-  - same-license
-
 permissions:
   - commercial-use
   - modifications
@@ -28,9 +23,15 @@ permissions:
   - patent-use
   - private-use
 
+conditions:
+  - disclose-source
+  - include-copyright
+  - same-license
+
 limitations:
   - no-liability
   - trademark-use
+
 ---
 
 Mozilla Public License Version 2.0

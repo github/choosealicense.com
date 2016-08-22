@@ -13,11 +13,6 @@ using:
   - JUnit: https://github.com/junit-team/junit/blob/master/LICENSE-junit.txt
   - openHAB: https://github.com/openhab/openhab/blob/master/LICENSE.TXT
 
-conditions:
-  - disclose-source
-  - include-copyright
-  - same-license
-
 permissions:
   - commercial-use
   - distribution
@@ -25,8 +20,14 @@ permissions:
   - patent-use
   - private-use
 
+conditions:
+  - disclose-source
+  - include-copyright
+  - same-license
+
 limitations:
   - no-liability
+
 ---
 
 Eclipse Public License - v 1.0

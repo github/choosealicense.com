@@ -10,15 +10,15 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 
 note: This license doesn't require source provision, but recommends it. All files derived from OFL files must remain licensed under the OFL.
 
-conditions:
-  - include-copyright
-  - same-license
-
 permissions:
   - private-use
   - commercial-use
   - modifications
   - distribution
+
+conditions:
+  - include-copyright
+  - same-license
 
 limitations:
   - no-liability
