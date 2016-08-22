@@ -7,20 +7,21 @@ description: Permits almost any use subject to providing credit and license noti
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. It is also acceptable to soley supply a link to a copy of the license, usually to the <a href='https://creativecommons.org/licenses/by/4.0/'>canonical URL for the license</a>.
 
-conditions:
-  - include-copyright
-  - document-changes
-
 permissions:
   - commercial-use
   - modifications
   - distribution
   - private-use
 
+conditions:
+  - include-copyright
+  - document-changes
+
 limitations:
   - no-liability
   - trademark-use
   - patent-use
+
 ---
 
 Attribution 4.0 International

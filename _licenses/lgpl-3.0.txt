@@ -12,13 +12,6 @@ how: This license is an additional set of permissions to the <a href="/licenses/
 
 note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the <a href="/licenses/gpl-3.0">GNU GPLv3 license</a>. Insert the word “Lesser” before “General” in all three places in the boilerplate notice to make sure that you refer to the GNU LGPLv3 and not the GNU GPLv3.
 
-conditions:
-  - include-copyright
-  - disclose-source
-  - document-changes
-  - same-license
-
-
 permissions:
   - commercial-use
   - modifications
@@ -26,8 +19,15 @@ permissions:
   - patent-use
   - private-use
 
+conditions:
+  - include-copyright
+  - disclose-source
+  - document-changes
+  - same-license
+
 limitations:
   - no-liability
+
 ---
 
                    GNU LESSER GENERAL PUBLIC LICENSE

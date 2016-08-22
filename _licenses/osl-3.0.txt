@@ -14,19 +14,19 @@ using:
   - Magento 2: https://github.com/magento/magento2/blob/develop/LICENSE.txt
   - Restyaboard: https://github.com/RestyaPlatform/board/blob/master/LICENSE.txt
 
-conditions:
-  - include-copyright
-  - disclose-source
-  - document-changes
-  - network-use-disclose
-  - same-license
-
 permissions:
   - commercial-use
   - distribution
   - modifications
   - patent-use
   - private-use
+
+conditions:
+  - include-copyright
+  - disclose-source
+  - document-changes
+  - network-use-disclose
+  - same-license
 
 limitations:
   - trademark-use

@@ -14,17 +14,18 @@ using:
   - .NET Core: https://github.com/dotnet/corefx/blob/master/LICENSE
   - Rails: https://github.com/rails/rails/blob/master/activerecord/MIT-LICENSE
 
-conditions:
-  - include-copyright
-
 permissions:
   - commercial-use
   - modifications
   - distribution
   - private-use
 
+conditions:
+  - include-copyright
+
 limitations:
   - no-liability
+
 ---
 
 MIT License

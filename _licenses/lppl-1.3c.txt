@@ -9,19 +9,20 @@ how: To use this license, place in each of the components of your work both an e
 
 note: An example boilerplate and more information about how to use the license can be found at the end of the license.
 
-conditions:
-  - include-copyright
-  - document-changes 
-  - disclose-source
-  
 permissions:
   - commercial-use
   - modifications
   - distribution
   - private-use
 
+conditions:
+  - include-copyright
+  - document-changes 
+  - disclose-source
+  
 limitations:
   - no-liability
+
 ---
 
 The LaTeX Project Public License

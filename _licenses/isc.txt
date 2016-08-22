@@ -12,17 +12,18 @@ using:
   - Node.js semver: https://github.com/npm/node-semver/blob/master/LICENSE
   - OpenStreetMap iD: https://github.com/openstreetmap/iD/blob/master/LICENSE
 
-conditions:
-  - include-copyright
-
 permissions:
   - commercial-use
   - distribution
   - modifications
   - private-use
 
+conditions:
+  - include-copyright
+
 limitations:
   - no-liability
+
 ---
 
 ISC License

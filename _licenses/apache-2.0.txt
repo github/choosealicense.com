@@ -17,10 +17,6 @@ using:
   - Apache: https://svn.apache.org/viewvc/httpd/httpd/trunk/LICENSE?view=markup
   - Swift: https://github.com/apple/swift/blob/master/LICENSE.txt
 
-conditions:
-  - include-copyright
-  - document-changes
-
 permissions:
   - commercial-use
   - modifications
@@ -28,9 +24,14 @@ permissions:
   - patent-use
   - private-use
 
+conditions:
+  - include-copyright
+  - document-changes
+
 limitations:
   - trademark-use
   - no-liability
+
 ---
 
                                  Apache License

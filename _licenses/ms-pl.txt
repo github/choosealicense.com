@@ -1,15 +1,11 @@
 ---
 title: Microsoft Public License
 spdx-id: MS-PL
-
 source: http://opensource.org/licenses/ms-pl
 
 description: An open source license with a patent grant.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
-
-conditions:
-  - include-copyright
 
 permissions:
   - commercial-use
@@ -18,9 +14,13 @@ permissions:
   - patent-use
   - private-use
 
+conditions:
+  - include-copyright
+
 limitations:
   - no-liability
   - trademark-use
+
 ---
 
 Microsoft Public License (MS-PL)

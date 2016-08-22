@@ -7,18 +7,19 @@ description: A short permissive license, compatible with GPL. Requires altered s
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
-conditions:
-  - include-copyright
-  - document-changes
-
 permissions:
   - commercial-use
   - modifications
   - distribution
   - private-use
 
+conditions:
+  - include-copyright
+  - document-changes
+
 limitations:
   - no-liability
+
 ---
 
 zlib License
