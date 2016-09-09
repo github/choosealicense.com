@@ -23,7 +23,7 @@ See our [appendix](/appendix) for a table of all of the licenses cataloged in th
 * Linux Foundation's [SPDX License List](https://spdx.org/licenses/)
 * [Comparison of free and open-source software licenses](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses) on English Wikipedia
 * [License differentiator](http://www.oss-watch.ac.uk/apps/licdiff/) ([source](https://github.com/ox-it/licdiff)) from [OSS Watch](http://www.oss-watch.ac.uk/)
-* [Free/Libre/Open Source license selection wizard](http://home.ccil.org/~cowan/floss/) by John Cowan
+* [Free/Libre/Open Source license selection wizard](http://web.archive.org/web/20160801055258/http://home.ccil.org/~cowan/floss/) by John Cowan
 
 ## Help us improve it
 
