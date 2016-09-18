@@ -12,7 +12,7 @@ get. But first, please make sure you understand what
 
 ## Adding a license
 
-Choosealicense.com is intended to demystify license choices, not present or catalog all of them. As such, only a small number are highlighted on the home page and <http://choosealicense.com/licenses> and there are several requirements for a license to be [cataloged](http://choosealicense.com/appendix/) on the site:
+Choosealicense.com is intended to demystify license choices, not present or catalog all of them. As such, only a small number are highlighted on the home page or <http://choosealicense.com/licenses>, and there are several requirements for a license to be [cataloged](http://choosealicense.com/appendix/) on the site:
 
 1. The license must have [an SPDX identifier](https://spdx.org/licenses/). If your license isn't registered with SPDX, please [request that it be added](https://spdx.org/spdx-license-list/request-new-license-or-exception).
 2. The license must be listed on one of the following approved lists of licenses:
