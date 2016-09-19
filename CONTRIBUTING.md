@@ -12,7 +12,7 @@ get. But first, please make sure you understand what
 
 ## Adding a license
 
-Choosealicense.com is intended to demystify license choices, not present all of them. As such, there are several requirements for a license to be listed on the site:
+Choosealicense.com is intended to demystify license choices, not present or catalog all of them. As such, only a small number are highlighted on the home page or <http://choosealicense.com/licenses>, and there are several requirements for a license to be [cataloged](http://choosealicense.com/appendix/) on the site:
 
 1. The license must have [an SPDX identifier](https://spdx.org/licenses/). If your license isn't registered with SPDX, please [request that it be added](https://spdx.org/spdx-license-list/request-new-license-or-exception).
 2. The license must be listed on one of the following approved lists of licenses:
@@ -23,6 +23,7 @@ Choosealicense.com is intended to demystify license choices, not present all of 
 
 If your proposed license meets the above criteria, here's a few other things to keep in mind as you propose the license's addition:
 
+* Is the license already cataloged? See <http://choosealicense.com/appendix/> for a list of all of the licenses known by the site.
 * Licenses live in the `/_licenses` folder.
 * The license files should be in the format of `_licenses/[lowercased-spdx-id].txt` (e.g., `_licenses/mit.txt`)
 * Each license has both [required and optional metadata](https://github.com/github/choosealicense.com#license-metadata) that should be included.
