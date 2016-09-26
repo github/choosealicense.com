@@ -40,7 +40,7 @@
   required: false
 
 - name: hidden
-  description: Whether the license is hidden from the license list (defaults to true)
+  description: Whether the license is neither [popular](https://opensource.org/licenses) nor fills out the [spectrum of licenses](http://choosealicense.com/licenses/) from strongly conditional to unconditional (defaults to true)
   required: false
 
 - name: nickname
