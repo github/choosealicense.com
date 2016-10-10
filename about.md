@@ -19,7 +19,7 @@ See our [appendix](/appendix) for a table of all of the licenses cataloged in th
 {: .bullets}
 
 * Open Source Initiative's [list of licenses](https://opensource.org/licenses/) approved as conforming to the [Open Source Definition](https://opensource.org/osd)
-* Free Software Foundation's [comments on various licenses](http://www.gnu.org/licenses/license-list.html)
+* Free Software Foundation's [comments on various licenses](http://www.gnu.org/licenses/license-list.html) and [advice on how to choose a license](https://www.gnu.org/licenses/license-recommendations.en.html)
 * Linux Foundation's [SPDX License List](https://spdx.org/licenses/)
 * [Comparison of free and open-source software licenses](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses) on English Wikipedia
 * [License differentiator](http://www.oss-watch.ac.uk/apps/licdiff/) ([source](https://github.com/ox-it/licdiff)) from [OSS Watch](http://www.oss-watch.ac.uk/)
