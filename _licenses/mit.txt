@@ -28,7 +28,7 @@ limitations:
 
 ---
 
-MIT License
+The MIT License (MIT)
 
 Copyright (c) [year] [fullname]
 
