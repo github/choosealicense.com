@@ -8,16 +8,9 @@ hidden: false
 
 description: Permissions of this copyleft license are conditioned on making available complete source code of licensed works and modifications under the same license or the GNU GPLv3. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work through interfaces provided by the licensed work may be distributed under different terms and without source code for the larger work.
 
-how: This license is an additional set of permissions to the <a href="/licenses/gpl-3.0">GNU GPLv3</a> license. Follow the instructions to apply the GNU GPLv3. Then either paste this text to the bottom of the created file OR add a separate file (typically named COPYING.lesser or LICENSE.lesser) in the root of your source code and copy the text.
+how: This license is an additional set of permissions to the <a href="/licenses/gpl-3.0">GNU GPLv3</a> license. Follow the instructions to apply the GNU GPLv3. Then add a separate file named COPYING.LESSER in the root of your source code and copy the text.
 
 note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the <a href="/licenses/gpl-3.0">GNU GPLv3 license</a>. Insert the word “Lesser” before “General” in all three places in the boilerplate notice to make sure that you refer to the GNU LGPLv3 and not the GNU GPLv3.
-
-conditions:
-  - include-copyright
-  - disclose-source
-  - document-changes
-  - same-license
-
 
 permissions:
   - commercial-use
@@ -26,8 +19,15 @@ permissions:
   - patent-use
   - private-use
 
+conditions:
+  - include-copyright
+  - disclose-source
+  - document-changes
+  - same-license
+
 limitations:
   - no-liability
+
 ---
 
                    GNU LESSER GENERAL PUBLIC LICENSE

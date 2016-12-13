@@ -4,6 +4,7 @@ spdx-id: LGPL-2.1
 nickname: GNU LGPLv2.1
 redirect_from: /licenses/lgpl-v2.1/
 source: http://www.gnu.org/licenses/lgpl-2.1.txt
+hidden: false
 
 description: Primarily used for software libraries, the GNU LGPL requires that derived works be licensed under the same license, but works that only link to it do not fall under this restriction. There are two commonly used versions of the GNU LGPL.
 
@@ -11,20 +12,21 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 
 note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
 
-conditions:
-  - include-copyright
-  - disclose-source
-  - document-changes
-  - same-license
-
 permissions:
   - commercial-use
   - modifications
   - distribution
   - private-use
 
+conditions:
+  - include-copyright
+  - disclose-source
+  - document-changes
+  - same-license
+
 limitations:
   - no-liability
+
 ---
 
                   GNU LESSER GENERAL PUBLIC LICENSE

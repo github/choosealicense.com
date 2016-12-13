@@ -6,8 +6,12 @@ hidden: false
 
 description: A license with no conditions whatsoever which dedicates works to the public domain. Unlicensed works, modifications, and larger works may be distributed under different terms and without source code.
 
-
 how: Create a text file (typically named UNLICENSE or UNLICENSE.txt) in the root of your source code and copy the text of the license disclaimer into the file.
+
+using:
+  - youtube-dl: https://github.com/rg3/youtube-dl/blob/master/LICENSE
+  - stacktrace.js: https://github.com/stacktracejs/stacktrace.js/blob/master/LICENSE
+  - kakoune: https://github.com/mawww/kakoune/blob/master/UNLICENSE
 
 permissions:
   - private-use
@@ -19,6 +23,7 @@ conditions: []
 
 limitations:
   - no-liability
+
 ---
 
 This is free and unencumbered software released into the public domain.

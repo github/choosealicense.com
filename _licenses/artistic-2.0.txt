@@ -6,11 +6,7 @@ source: http://www.perlfoundation.org/attachment/legal/artistic-2_0.txt
 
 description: Heavily favored by the Perl community, the Artistic license requires that modified versions of the software do not prevent users from running the standard version.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
-
-conditions:
-  - include-copyright
-  - document-changes
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code, and copy the text of the license into the file. Do not replace the copyright notice (year, author), which refers to the license itself, not the licensed project.
 
 permissions:
   - commercial-use
@@ -19,9 +15,14 @@ permissions:
   - patent-use
   - private-use
 
+conditions:
+  - include-copyright
+  - document-changes
+
 limitations:
   - no-liability
   - trademark-use
+
 ---
 
 		       The Artistic License 2.0

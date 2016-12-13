@@ -3,6 +3,7 @@ title: Eclipse Public License 1.0
 spdx-id: EPL-1.0
 redirect_from: /licenses/eclipse/
 source: https://www.eclipse.org/legal/epl-v10.html
+hidden: false
 
 description: This commercially-friendly copyleft license provides the ability to commercially license binaries; a modern royalty-free patent license grant; and the ability for linked works to use other licenses, including commercial ones.
 
@@ -13,11 +14,6 @@ using:
   - JUnit: https://github.com/junit-team/junit/blob/master/LICENSE-junit.txt
   - openHAB: https://github.com/openhab/openhab/blob/master/LICENSE.TXT
 
-conditions:
-  - disclose-source
-  - include-copyright
-  - same-license
-
 permissions:
   - commercial-use
   - distribution
@@ -25,8 +21,14 @@ permissions:
   - patent-use
   - private-use
 
+conditions:
+  - disclose-source
+  - include-copyright
+  - same-license
+
 limitations:
   - no-liability
+
 ---
 
 Eclipse Public License - v 1.0

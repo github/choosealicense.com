@@ -25,7 +25,8 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
     {% endfor %}
   {% endfor %}
 </tr>
-{% for license in site.licenses | sort: 'path' %}
+{% assign licenses = site.licenses sort: "path" %}
+{% for license in licenses %}
   <tr style="height: 3em"><th scope="row"><a href="{{ license.id }}">{{ license.title }}</a></th>
   {% assign seen_tags = '' %}
   {% for type in types %}
@@ -76,7 +77,8 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
     <dt id="{{ req }}">{{ rule_obj.label }}</dt>
     {% capture seen_tags %}{{ seen_tags | append:req }}{% endcapture %}
     {% for t in types %}
-      {% for r in site.data.rules[t] | sort: "label" %}
+      {% assign rs = site.data.rules[t] | sort: "label" %}
+      {% for r in rs %}
         {% if r.tag == req %}
           <dd class="license-{{t}}"><span class="license-sprite"></span> {{ r.description }}</dd>
         {% endif %}

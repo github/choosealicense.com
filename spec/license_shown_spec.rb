@@ -6,7 +6,12 @@ describe 'shown licenses' do
   SHOWN_LICENSES = %w(
     agpl-3.0
     apache-2.0
+    bsd-2-clause
+    bsd-3-clause
+    epl-1.0
+    gpl-2.0
     gpl-3.0
+    lgpl-2.1
     lgpl-3.0
     mit
     mpl-2.0
@@ -14,7 +19,7 @@ describe 'shown licenses' do
   ).freeze
 
   it 'has the expected number of shown licenses' do
-    expect(shown_licenses.count).to eql(7)
+    expect(shown_licenses.count).to eql(12)
   end
 
   shown_licenses.each do |license|

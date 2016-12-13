@@ -2,13 +2,11 @@
 title: BSD 3-clause "New" or "Revised" License
 spdx-id: BSD-3-Clause
 source: http://opensource.org/licenses/BSD-3-Clause
+hidden: false
 
 description: A permissive license similar to the <a href="/licenses/bsd-2-clause/">BSD 2-Clause License</a>, but with a 3rd clause that prohibits others from using the name of the project or its contributors to promote derived products without written consent.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Replace [project] with the project organization, if any, that sponsors this work.
-
-conditions:
-  - include-copyright
 
 permissions:
   - commercial-use
@@ -16,8 +14,12 @@ permissions:
   - distribution
   - private-use
 
+conditions:
+  - include-copyright
+
 limitations:
   - no-liability
+
 ---
 
 BSD 3-Clause License

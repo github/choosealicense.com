@@ -4,6 +4,7 @@ spdx-id: GPL-2.0
 nickname: GNU GPLv2
 redirect_from: /licenses/gpl-v2/
 source: http://www.gnu.org/licenses/gpl-2.0.txt
+hidden: false
 
 description: The GNU GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. There are multiple variants of the GNU GPL, each with different requirements.
 
@@ -15,20 +16,21 @@ using:
   - Linux: https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/tree/COPYING
   - WordPress: https://github.com/WordPress/WordPress/blob/master/license.txt
 
-conditions:
-  - include-copyright
-  - document-changes
-  - disclose-source
-  - same-license
-
 permissions:
   - commercial-use
   - modifications
   - distribution
   - private-use
 
+conditions:
+  - include-copyright
+  - document-changes
+  - disclose-source
+  - same-license
+
 limitations:
   - no-liability
+
 ---
 
                     GNU GENERAL PUBLIC LICENSE

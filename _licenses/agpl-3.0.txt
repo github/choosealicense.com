@@ -12,13 +12,6 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 
 note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
 
-conditions:
-  - include-copyright
-  - document-changes
-  - disclose-source
-  - network-use-disclose
-  - same-license
-
 permissions:
   - commercial-use
   - modifications
@@ -26,8 +19,16 @@ permissions:
   - patent-use
   - private-use
 
+conditions:
+  - include-copyright
+  - document-changes
+  - disclose-source
+  - network-use-disclose
+  - same-license
+
 limitations:
   - no-liability
+
 ---
 
                     GNU AFFERO GENERAL PUBLIC LICENSE
