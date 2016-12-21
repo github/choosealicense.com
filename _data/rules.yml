@@ -16,7 +16,7 @@ permissions:
   tag: patent-use
 
 conditions:
-- description: Include a copy of the license and copyright notice with the code.
+- description: Include a copy of the license and copyright notice with the software.
   label: License and Copyright Notice
   tag: include-copyright
 - description: Indicate changes made to the code.
