@@ -13,6 +13,7 @@ using:
   - OpenStreetMap iD: https://github.com/openstreetmap/iD/blob/master/LICENSE
 
 permissions:
+  - closed-source
   - commercial-use
   - distribution
   - modifications

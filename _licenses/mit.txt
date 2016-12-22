@@ -15,6 +15,7 @@ using:
   - Rails: https://github.com/rails/rails/blob/master/activerecord/MIT-LICENSE
 
 permissions:
+  - closed-source
   - commercial-use
   - modifications
   - distribution
