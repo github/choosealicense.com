@@ -91,7 +91,7 @@ The license properties (rules) are stored as a bulleted list within the licenses
 * `document-changes` - Indicate changes made to the code.
 * `disclose-source` - Source code must be made available when distributing the software.
 * `network-use-disclose` - Users who interact with the software via network are given the right to receive a copy of the corresponding source code.
-* `same-license` - Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used or this condition may only apply to certain kinds of modificaitons.
+* `same-license` - Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used or this condition may only apply to certain kinds of modifications.
 
 #### Limitations
 
