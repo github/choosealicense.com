@@ -20,7 +20,7 @@ conditions:
   - same-license
 
 limitations:
-  - no-liability
+  - warranty
   - trademark-use
 
 ---

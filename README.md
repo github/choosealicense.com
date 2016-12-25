@@ -95,8 +95,9 @@ The license properties (rules) are stored as a bulleted list within the licenses
 #### Limitations
 
 * `trademark-use` - This license explicitly states that it does NOT grant you trademark rights, even though licenses without such a statement probably do not grant you any implicit trademark rights.
-* `no-liability` - Software is provided without warranty and the software author/license owner cannot be held liable for damages.
+* `liability` - This license includes a limitation of liability.
 * `patent-use` -  This license explicitly states that it does NOT grant you any rights in the patents of contributors.
+* `warranty` - The license explicitly states that it does NOT provide any warranty.
 
 ## License
 

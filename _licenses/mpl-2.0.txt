@@ -29,8 +29,9 @@ conditions:
   - same-license
 
 limitations:
-  - no-liability
+  - liability
   - trademark-use
+  - warranty
 
 ---
 
