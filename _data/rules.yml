@@ -6,7 +6,7 @@ permissions:
   label: Modification
   tag: modifications
 - description: You may distribute closed source software based on this software. Pay very close attention to license conditions, especially 'same license', if present, to understand when this permission applies.
-  label: Closed Source Derivatives
+  label: Closed Source
   tag: closed-source
 - description: You may distribute this software.
   label: Distribution
