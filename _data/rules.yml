@@ -31,7 +31,7 @@ conditions:
 - description: Users who interact with the software via network are given the right to receive a copy of the corresponding source code.
   label: Network Use is Distribution
   tag: network-use-disclose
-- description: In some cases a similar or related license may be used or this condition may only apply to certain kinds of modifications.
+- description: Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used or this condition may only apply to certain kinds of modifications.
   label: Same License
   tag: same-license
 
