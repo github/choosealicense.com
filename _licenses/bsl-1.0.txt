@@ -20,7 +20,8 @@ conditions:
   - include-copyright
 
 limitations:
-  - no-liability
+  - liability
+  - warranty
 
 ---
 

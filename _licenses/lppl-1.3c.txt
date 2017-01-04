@@ -22,7 +22,8 @@ conditions:
   - disclose-source
 
 limitations:
-  - no-liability
+  - liability
+  - warranty
 
 ---
 

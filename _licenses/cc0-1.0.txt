@@ -20,9 +20,10 @@ permissions:
 conditions: []
 
 limitations:
-  - no-liability
+  - liability
   - trademark-use
   - patent-use
+  - warranty
 
 ---
 

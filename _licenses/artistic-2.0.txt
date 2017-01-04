@@ -21,8 +21,9 @@ conditions:
   - document-changes
 
 limitations:
-  - no-liability
+  - liability
   - trademark-use
+  - warranty
 
 ---
 
