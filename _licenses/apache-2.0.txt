@@ -18,7 +18,7 @@ using:
   - Swift: https://github.com/apple/swift/blob/master/LICENSE.txt
 
 permissions:
-  - closed-source
+  - closed-derivatives
   - commercial-use
   - modifications
   - distribution

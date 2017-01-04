@@ -17,7 +17,7 @@ using:
   - LibreOffice: https://cgit.freedesktop.org/libreoffice/core/tree/COPYING.MPL
 
 permissions:
-  - closed-source
+  - closed-derivatives
   - commercial-use
   - modifications
   - distribution
