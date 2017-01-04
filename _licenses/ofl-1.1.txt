@@ -21,7 +21,8 @@ conditions:
   - same-license
 
 limitations:
-  - no-liability
+  - liability
+  - warranty
 
 ---
 

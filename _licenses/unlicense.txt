@@ -23,7 +23,8 @@ permissions:
 conditions: []
 
 limitations:
-  - no-liability
+  - liability
+  - warranty
 
 ---
 

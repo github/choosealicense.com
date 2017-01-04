@@ -19,7 +19,7 @@ conditions:
   - include-copyright
 
 limitations:
-  - no-liability
+  - warranty
   - trademark-use
 
 ---

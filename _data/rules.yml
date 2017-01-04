@@ -39,9 +39,12 @@ limitations:
 - description: This license explicitly states that it does NOT grant you trademark rights, even though licenses without such a statement probably do not grant you any implicit trademark rights.
   label: Trademark Use
   tag: trademark-use
-- description: Software is provided without warranty and the software author/license owner cannot be held liable for damages.
-  label: Hold Liable
-  tag: no-liability
+- description: This license includes a limitation of liability.
+  label: Liability
+  tag: liability
 - description: This license explicitly states that it does NOT grant you any rights in the patents of contributors.
   label: Patent Use
   tag: patent-use
+- description: The license explicitly states that it does NOT provide any warranty.
+  label: Warranty
+  tag: warranty
