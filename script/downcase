@@ -1,7 +1,0 @@
-#! /usr/bin/env ruby
-# downcases all licenses in a git-friendly way
-
-Dir['_licenses/*'].each do |file|
-  system "git mv #{file} #{file.downcase}2"
-  system "git mv #{file.downcase}2 #{file.downcase}"
-end
