@@ -4,6 +4,9 @@ AllCops:
     - _site/**/*
     - vendor/**/*
 
+Metrics/BlockLength:
+  Enabled: false
+
 Metrics/LineLength:
   Enabled: false
 
