@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'html-proofer'
 require 'rspec/core/rake_task'
 
