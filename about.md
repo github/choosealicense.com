@@ -24,6 +24,7 @@ See our [appendix](/appendix) for a table of all of the licenses cataloged in th
 * [Comparison of free and open-source software licenses](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses) on English Wikipedia
 * [License differentiator](http://www.oss-watch.ac.uk/apps/licdiff/) ([source](https://github.com/ox-it/licdiff)) from [OSS Watch](http://www.oss-watch.ac.uk/)
 * [Free/Libre/Open Source license selection wizard](http://vrici.lojban.org/~cowan/floss/) by John Cowan
+* [The Legal Side of Open Source](https://opensource.guide/legal/), an Open Source Guide covering licensing and related issues
 
 ## Help us improve it
 
