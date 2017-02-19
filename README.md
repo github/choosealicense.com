@@ -78,7 +78,7 @@ The license properties (rules) are stored as a bulleted list within the licenses
 
 #### Permissions
 
-* `closed-derivatives` - You may distribute proprietary software based on this software. Pay very close attention to license conditions, especially _same license_, if present, to understand when this permission applies.
+* `closed-derivatives` - You may distribute proprietary derivatives of this software. Pay very close attention to license conditions, especially _same license_, if present, to understand when this permission applies.
 * `commercial-use` - This software and derivatives may be used for commercial purposes.
 * `modifications` - This software may be modified.
 * `distribution` - You may distribute this software.

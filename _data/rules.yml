@@ -5,7 +5,7 @@ permissions:
 - description: This software may be modified.
   label: Modification
   tag: modifications
-- description: You may distribute proprietary software based on this software. Pay very close attention to license conditions, especially 'same license', if present, to understand when this permission applies.
+- description: You may distribute proprietary derivatives of this software. Pay very close attention to license conditions, especially 'same license', if present, to understand when this permission applies.
   label: Closed Derivatives
   tag: closed-derivatives
 - description: You may distribute this software.
