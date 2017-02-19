@@ -1,8 +1,11 @@
 AllCops:
-  TargetRubyVersion: 2.1
+  TargetRubyVersion: 2.3
   Exclude:
     - _site/**/*
     - vendor/**/*
+
+Metrics/BlockLength:
+  Enabled: false
 
 Metrics/LineLength:
   Enabled: false

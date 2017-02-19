@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'html-proofer'
 require 'rspec/core/rake_task'
 
@@ -13,7 +14,8 @@ task :test do
   HTMLProofer.check_directory('./_site',
                               check_html: true,
                               validation: { ignore_script_embeds: true },
-                              url_swap: { %r{http://choosealicense.com} => '' }).run
+                              url_swap: { %r{https://choosealicense.com} => '' },
+                              check_img_http: true).run
 end
 
 task :approved_licenses do
