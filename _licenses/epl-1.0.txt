@@ -24,7 +24,7 @@ permissions:
 conditions:
   - disclose-source
   - include-copyright
-  - same-license--source
+  - same-license
 
 limitations:
   - liability
