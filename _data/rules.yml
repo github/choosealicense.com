@@ -31,6 +31,12 @@ conditions:
 - description: Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used.
   label: Same License
   tag: same-license
+- description: Modifications of existing files must be released under the same license when distributing the software. In some cases a similar or related license may be used.
+  label: Same License (File)
+  tag: same-license--file
+- description: Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used, or this condition may not apply to works that use the software as a library.
+  label: Same License (Library)
+  tag: same-license--library
 
 limitations:
 - description: This license explicitly states that it does NOT grant you trademark rights, even though licenses without such a statement probably do not grant you any implicit trademark rights.

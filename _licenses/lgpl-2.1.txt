@@ -22,7 +22,7 @@ conditions:
   - include-copyright
   - disclose-source
   - document-changes
-  - same-license
+  - same-license--library
 
 limitations:
   - liability
