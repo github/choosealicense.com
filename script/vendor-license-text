@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+require 'jekyll'
+require 'open-uri'
+
+site_path = File.expand_path("../", File.dirname(__FILE__))
+config = Jekyll.configuration("source" => site_path)
+site = Jekyll::Site.new(config)
+site.read
+site.collections['licenses'].docs.each do |license|
+  puts "Updating the #{license.data["title"]}..."
+  uri = "https://spdx.org/licenses/#{license.data["spdx-id"]}.json"
+  data = JSON.parse open(uri).read
+
+  raw_content = File.read(license.path)
+  matches = raw_content.match Jekyll::Document::YAML_FRONT_MATTER_REGEXP
+
+  output = matches[1]
+  output << "---\n\n"
+  output << data["standardLicenseTemplate"].gsub(/ +\n/, "\n")
+
+  File.write(license.path, output)
+end
