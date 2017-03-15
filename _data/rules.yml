@@ -1,6 +1,6 @@
 permissions:
 - description: This software and derivatives may be used for commercial purposes.
-  label: Commercial Use
+  label: Commercial use
   tag: commercial-use
 - description: This software may be modified.
   label: Modification
@@ -9,44 +9,44 @@ permissions:
   label: Distribution
   tag: distribution
 - description: You may use and modify the software without distributing it.
-  label: Private Use
+  label: Private use
   tag: private-use
 - description: This license provides an express grant of patent rights from the contributor to the recipient.
-  label: Patent Use
+  label: Patent use
   tag: patent-use
 
 conditions:
 - description: Include a copy of the license and copyright notice with the software.
-  label: License and Copyright Notice
+  label: License and copyright notice
   tag: include-copyright
 - description: Indicate changes made to the code.
-  label: State Changes
+  label: State changes
   tag: document-changes
 - description: Source code must be made available when distributing the software.
-  label: Disclose Source
+  label: Disclose source
   tag: disclose-source
 - description: Users who interact with the software via network are given the right to receive a copy of the corresponding source code.
-  label: Network Use is Distribution
+  label: Network use is distribution
   tag: network-use-disclose
 - description: Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used.
   label: Same License
   tag: same-license
 - description: Modifications of existing files must be released under the same license when distributing the software. In some cases a similar or related license may be used.
-  label: Same License (File)
+  label: Same license (file)
   tag: same-license--file
 - description: Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used, or this condition may not apply to works that use the software as a library.
-  label: Same License (Library)
+  label: Same license (library)
   tag: same-license--library
 
 limitations:
 - description: This license explicitly states that it does NOT grant you trademark rights, even though licenses without such a statement probably do not grant you any implicit trademark rights.
-  label: Trademark Use
+  label: Trademark use
   tag: trademark-use
 - description: This license includes a limitation of liability.
   label: Liability
   tag: liability
 - description: This license explicitly states that it does NOT grant you any rights in the patents of contributors.
-  label: Patent Use
+  label: Patent use
   tag: patent-use
 - description: The license explicitly states that it does NOT provide any warranty.
   label: Warranty
