@@ -31,8 +31,6 @@ limitations:
   - warranty
 
 ---
-Educational Community License, Version 2.0 (ECL-2.0)
-
 Educational Community License
 
 Version 2.0, April 2007
