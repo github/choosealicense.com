@@ -2,8 +2,6 @@
 title: Educational Community License v2.0
 spdx-id: ECL-2.0
 source: https://opensource.org/licenses/ECL-2.0
-featured: false
-hidden: true
 
 description: The Educational Community License version 2.0 ("ECL") consists of the Apache 2.0 license, modified to change the scope of the patent grant in section 3 to be specific to the needs of the education communities using this license.
 
