@@ -14,6 +14,7 @@ using:
   - kakoune: https://github.com/mawww/kakoune/blob/master/UNLICENSE
 
 permissions:
+  - closed-derivatives
   - private-use
   - commercial-use
   - modifications

@@ -15,6 +15,7 @@ using:
   - openHAB: https://github.com/openhab/openhab/blob/master/LICENSE.TXT
 
 permissions:
+  - closed-derivatives
   - commercial-use
   - distribution
   - modifications

@@ -8,6 +8,7 @@ description: The easiest license out there. It gives the user permissions to do 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
 permissions:
+  - closed-derivatives
   - commercial-use
   - modifications
   - distribution

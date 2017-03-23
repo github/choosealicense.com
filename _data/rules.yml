@@ -5,6 +5,9 @@ permissions:
 - description: This software may be modified.
   label: Modification
   tag: modifications
+- description: You may distribute proprietary derivatives of this software. Pay very close attention to license conditions, especially 'same license', if present, to understand when this permission applies.
+  label: Closed Derivatives
+  tag: closed-derivatives
 - description: You may distribute this software.
   label: Distribution
   tag: distribution
@@ -28,7 +31,7 @@ conditions:
 - description: Users who interact with the software via network are given the right to receive a copy of the corresponding source code.
   label: Network use is distribution
   tag: network-use-disclose
-- description: Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used.
+- description: Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used or this condition may only apply to certain kinds of modifications.
   label: Same License
   tag: same-license
 - description: Modifications of existing files must be released under the same license when distributing the software. In some cases a similar or related license may be used.
