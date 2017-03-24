@@ -6,7 +6,7 @@ source: https://opensource.org/licenses/NCSA
 hidden: false
 featured: false
 
-description: The University of Illinois/NCSA Open Source License, or UIUC license, is a permissive free software license, based on the <a href="/license/mit/">MIT/X11 license</a>  and the <a href="/license/bsd-3-clause">BSD 3-clause License</a>. By combining parts of these two licenses, it attempts to be clearer and more concise than either. It's conditions include requiring the preservation of copyright and license notices both in source and in binary distributions and the prohibtion of using the names of the authors or the project organization to promote or endorse derived products.
+description: The University of Illinois/NCSA Open Source License, or UIUC license, is a permissive free software license, based on the <a href="/licenses/mit/">MIT/X11 license</a>  and the <a href="/licenses/bsd-3-clause/">BSD 3-clause License</a>. By combining parts of these two licenses, it attempts to be clearer and more concise than either. It's conditions include requiring the preservation of copyright and license notices both in source and in binary distributions and the prohibtion of using the names of the authors or the project organization to promote or endorse derived products.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Replace [project] with the project organization, if any, that sponsors this work.
 
