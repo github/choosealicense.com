@@ -23,7 +23,6 @@ conditions:
   - include-copyright
 
 limitations:
-  - trademark-use
   - liability
   - warranty
 
