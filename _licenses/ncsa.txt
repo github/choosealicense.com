@@ -31,12 +31,9 @@ limitations:
 
 University of Illinois/NCSA Open Source License 
 
-Copyright (c) [year], [fullname] 
-All rights reserved.
+Copyright (c) [year] [fullname]. All rights reserved. 
 
-Developed by: [fullname]
-              [project]
-              [email]
+Developed by: [fullname] [project] [email]
                   
 Permission is hereby granted, free of charge, to any person 
 obtaining a copy of this software and associated documentation files 
