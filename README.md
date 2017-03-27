@@ -81,14 +81,14 @@ The license properties (rules) are stored as a bulleted list within the licenses
 * `commercial-use` - This software and derivatives may be used for commercial purposes.
 * `modifications` - This software may be modified.
 * `distribution` - This software may be distributed.
-* `private-use` - This software may be used and modifed in private.
+* `private-use` - This software may be used and modified in private.
 * `patent-use` - This license provides an express grant of patent rights from contributors.
 
 #### Conditions
 
 * `include-copyright` - A copy of the license and copyright notice must be included with the software.
 * `document-changes` - Changes made to the code must be documented.
-* `disclose-source` - Source code must be made available the software is distributed.
+* `disclose-source` - Source code must be made available when the software is distributed.
 * `network-use-disclose` - Users who interact with the software via network are given the right to receive a copy of the source code.
 * `same-license` - Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used.
 * `same-license--file` - Modifications of existing files must be released under the same license when distributing the software. In some cases a similar or related license may be used.

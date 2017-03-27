@@ -8,7 +8,7 @@ permissions:
 - description: This software may be distributed.
   label: Distribution
   tag: distribution
-- description: This software may be used and modifed in private.
+- description: This software may be used and modified in private.
   label: Private use
   tag: private-use
 - description: This license provides an express grant of patent rights from contributors.
@@ -22,7 +22,7 @@ conditions:
 - description: Changes made to the code must be documented.
   label: State changes
   tag: document-changes
-- description: Source code must be made available the software is distributed.
+- description: Source code must be made available when the software is distributed.
   label: Disclose source
   tag: disclose-source
 - description: Users who interact with the software via network are given the right to receive a copy of the source code.
