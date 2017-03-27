@@ -80,25 +80,25 @@ The license properties (rules) are stored as a bulleted list within the licenses
 
 * `commercial-use` - This software and derivatives may be used for commercial purposes.
 * `modifications` - This software may be modified.
-* `distribution` - You may distribute this software.
-* `private-use` - You may use and modify the software without distributing it.
-* `patent-use` - This license provides an express grant of patent rights from the contributor to the recipient.
+* `distribution` - This software may be distributed.
+* `private-use` - This software may be used and modified in private.
+* `patent-use` - This license provides an express grant of patent rights from contributors.
 
 #### Conditions
 
-* `include-copyright` - Include a copy of the license and copyright notice with the software.
-* `document-changes` - Indicate changes made to the code.
-* `disclose-source` - Source code must be made available when distributing the software.
-* `network-use-disclose` - Users who interact with the software via network are given the right to receive a copy of the corresponding source code.
+* `include-copyright` - A copy of the license and copyright notice must be included with the software.
+* `document-changes` - Changes made to the code must be documented.
+* `disclose-source` - Source code must be made available when the software is distributed.
+* `network-use-disclose` - Users who interact with the software via network are given the right to receive a copy of the source code.
 * `same-license` - Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used.
 * `same-license--file` - Modifications of existing files must be released under the same license when distributing the software. In some cases a similar or related license may be used.
 * `same-license--library` - Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used, or this condition may not apply to works that use the software as a library.
 
 #### Limitations
 
-* `trademark-use` - This license explicitly states that it does NOT grant you trademark rights, even though licenses without such a statement probably do not grant you any implicit trademark rights.
+* `trademark-use` - This license explicitly states that it does NOT grant trademark rights, even though licenses without such a statement probably do not grant any implicit trademark rights.
 * `liability` - This license includes a limitation of liability.
-* `patent-use` -  This license explicitly states that it does NOT grant you any rights in the patents of contributors.
+* `patent-use` - This license explicitly states that it does NOT grant any rights in the patents of contributors.
 * `warranty` - The license explicitly states that it does NOT provide any warranty.
 
 ## License
