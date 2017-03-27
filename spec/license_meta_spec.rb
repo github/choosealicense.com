@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'spec_helper'
 
 describe 'license meta' do
@@ -8,7 +9,7 @@ describe 'license meta' do
 
     context "The #{license['title']} license" do
       it 'should only contain supported meta fields' do
-        extra_fields = raw_fields.keys - meta.map { |m| m['name'] }
+        extra_fields = raw_fields.keys - (meta.map { |m| m['name'] })
         expect(extra_fields).to be_empty
       end
 
