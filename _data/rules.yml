@@ -29,7 +29,7 @@ conditions:
   label: Network use is distribution
   tag: network-use-disclose
 - description: Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used.
-  label: Same License
+  label: Same license
   tag: same-license
 - description: Modifications of existing files must be released under the same license when distributing the software. In some cases a similar or related license may be used.
   label: Same license (file)
