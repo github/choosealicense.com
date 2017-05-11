@@ -1,7 +1,7 @@
 ---
-title: GNU Affero General Public License v3.0
+title: GNU Affero General Public License v3.0 or later
 spdx-id: AGPL-3.0
-nickname: GNU AGPLv3
+nickname: GNU AGPLv3+
 redirect_from: /licenses/agpl/
 source: http://www.gnu.org/licenses/agpl-3.0.txt
 hidden: false
