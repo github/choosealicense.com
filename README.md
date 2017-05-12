@@ -1,37 +1,20 @@
-# Choosealicense.com
+**[ChooseALicense.com](http://choosealicense.com)** aims to provide **accurate**, **non-judgmental**, and **understandable** information about **open source licenses** in order to **help people make informed decisions** about the projects they start, maintain, contribute to, and use.
 
-[![Build Status](https://travis-ci.org/github/choosealicense.com.png?branch=gh-pages)](https://travis-ci.org/github/choosealicense.com)
+We catalog [select](CONTRIBUTING.md#adding-a-license) open source licenses with a [Jekyll collection](https://jekyllrb.com/docs/collections/) (in `_licenses`). The catalog is used to render [ChooseALicense.com](http://choosealicense.com) and is regularly vendored into [Licensee](https://github.com/benbalter/licensee), which GitHub uses to provide a [license chooser and license detection](https://help.github.com/articles/adding-a-license-to-a-repository/), a [licenses API](https://developer.github.com/v3/licenses/), and to [display license descriptions and metadata](https://github.com/blog/2335-open-source-license-descriptions-and-metadata).
 
-Like a Choose Your Own Adventure site, but only much less interesting.
+The website navigation is
 
-## Intro
+Collaborative
 
-A lot of repositories on GitHub.com don't have a license. GitHub provides a license chooser, but if you don't know anything about licenses, how are you supposed to make an informed decision?
 
-[ChooseALicense.com](http://www.choosealicense.com "Choose A Licence website") is designed to help people make an informed decision about licenses by demystifying license choices through non-judgmental guidance.
+[the CONTRIBUTING file](CONTRIBUTING.md#adding-a-license)
 
-## Immediate Goals
 
-* Non-judgmental. Our goal is to help you find a license that meets *your* goals.
-* Well designed, but that goes without saying.
-* The homepage should have just enough to help 99% of folks make a decision.
-* For the 1%, the site will contain a list of licenses common to specific communities and situations.
-* Not comprehensive. Seems like an odd goal, but there are a bajillion licenses out there. We're going to have to filter that down to a small list of those that matter.
+## License
 
-## Run It On Your Machine
+The content of this project itself is licensed under the [Creative Commons Attribution 3.0 license](http://creativecommons.org/licenses/by/3.0/us/deed.en_US), and the underlying source code used to format and display that content is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).
 
-```bash
-git clone https://github.com/github/choosealicense.com.git
-cd choosealicense.com
-script/bootstrap
-script/server
-```
 
-Open `http://localhost:4000` in your favorite browser.
-
-## Adding a license
-
-For information on adding a license, see [the CONTRIBUTING file](https://github.com/github/choosealicense.com/blob/gh-pages/CONTRIBUTING.md#adding-a-license).
 
 ## License metadata
 
@@ -98,7 +81,3 @@ The license properties (rules) are stored as a bulleted list within the licenses
 * `liability` - This license includes a limitation of liability.
 * `patent-use` -  This license explicitly states that it does NOT grant you any rights in the patents of contributors.
 * `warranty` - The license explicitly states that it does NOT provide any warranty.
-
-## License
-
-The content of this project itself is licensed under the [Creative Commons Attribution 3.0 license](http://creativecommons.org/licenses/by/3.0/us/deed.en_US), and the underlying source code used to format and display that content is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).
