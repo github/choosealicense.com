@@ -1,0 +1,48 @@
+---
+layout: license
+permalink: /licenses/wtfpl/
+class: license-types
+title: Do What The Fuck You Want To Public License
+
+description: When analysing whether a license is free or not, you usually check that it allows free usage, modification and redistribution. Then you check that the additional restrictions do not impair fundamental freedoms. The WTFPL renders this task trivial: it allows everything and has no additional restrictions. How could life be easier? You just DO WHAT THE FUCK YOU WANT TO.
+
+how: Create a text file (typically named COPYING or COPYING.WTFPL in case multiple licenses are used) in your project with the license text, and add the wording you find at the bottom of the license in the copyright statements.
+
+source: http://www.wtfpl.net/about/
+
+required: 
+
+permitted:
+  - private-use
+  - commercial-use
+  - modifications
+  - distribution
+  - sublicense
+
+forbidden:
+  - no-liability
+
+---
+
+        DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+                    Version 2, December 2004 
+
+ Copyright (C) 2004 Sam Hocevar <sam@hocevar.net> 
+
+ Everyone is permitted to copy and distribute verbatim or modified 
+ copies of this license document, and changing it is allowed as long 
+ as the name is changed. 
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
+
+  0. You just DO WHAT THE FUCK YOU WANT TO.
+
+END LICENSE
+
+WORDING
+
+Copyright © 2000 Your Name <your@address>
+This work is free. You can redistribute it and/or modify it under the
+terms of the Do What The Fuck You Want To Public License, Version 2,
+as published by Sam Hocevar. See the COPYING file for more details.
