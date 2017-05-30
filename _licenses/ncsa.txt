@@ -13,7 +13,6 @@ using:
  - ROCR-Runtime: https://github.com/RadeonOpenCompute/ROCR-Runtime/blob/master/LICENSE.txt
  - RLTK: https://github.com/chriswailes/RLTK/blob/master/LICENSE
 
-
 permissions:
   - commercial-use
   - modifications
