@@ -7,6 +7,8 @@ description: The Academic Free License is a variant of the Open Software License
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Files licensed under AFL 3.0 must also include the notice "Licensed under the Academic Free License version 3.0" adjacent to the copyright notice.
 
+using:
+
 permissions:
   - commercial-use
   - modifications

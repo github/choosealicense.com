@@ -8,6 +8,8 @@ description: Heavily favored by the Perl community, the Artistic license require
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code, and copy the text of the license into the file. Do not replace the copyright notice (year, author), which refers to the license itself, not the licensed project.
 
+using:
+
 permissions:
   - commercial-use
   - modifications
