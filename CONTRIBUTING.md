@@ -20,7 +20,7 @@ Choosealicense.com is intended to demystify license choices, not present or cata
    * [GNU's list of free licenses](https://www.gnu.org/licenses/license-list.en.html) (*note: the license must be listed in one of the three "free" categories*)
    * [Open Definition's list of conformant licenses](http://opendefinition.org/licenses/) (non-code)
 3. A [GitHub code search](https://github.com/search?q=MIT+filename%3ALICENSE&type=Code) must reveal at least *1,000* public repositories using the license
-4. 3 notable projects using the license with straightforward LICENSE files which serve as examples newcomers can follow and that could be detected by [licensee](https://github.com/benbalter/licensee) if it knew about the license
+4. Identification of 3 notable projects using the license with straightforward LICENSE files which serve as examples newcomers can follow and that could be detected by [licensee](https://github.com/benbalter/licensee) if it knew about the license
 
 If your proposed license meets the above criteria, here's a few other things to keep in mind as you propose the license's addition:
 
