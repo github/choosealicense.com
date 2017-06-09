@@ -11,6 +11,7 @@ how: Create a text file (typically named UNLICENSE or UNLICENSE.txt) in the root
 using:
   - youtube-dl: https://github.com/rg3/youtube-dl/blob/master/LICENSE
   - kakoune: https://github.com/mawww/kakoune/blob/master/UNLICENSE
+  - docopt.rs: https://github.com/docopt/docopt.rs/blob/master/UNLICENSE
 
 permissions:
   - private-use
