@@ -1,5 +1,5 @@
 ---
-title: PostreSQL License
+title: PostgreSQL License
 spdx-id: PostgreSQL
 source: https://opensource.org/licenses/PostgreSQL
 featured: false
