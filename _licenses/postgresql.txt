@@ -10,8 +10,8 @@ description: A very short, BSD-style license, used specifically for PostgreSQL.
 how: To use it, say that it is The PostgreSQL License, and then substitute the copyright year and name of the copyright holder into the body of the license. Then put the license into a prominent file ("COPYRIGHT", "LICENSE" or "COPYING" are common names for this file) in your software distribution.
 
 using:
-  - PostgreSQL: https://www.postgresql.org/about/licence/
-  - PGAudit: https://github.com/pgaudit/pgaudit/blob/master/LICENSE
+  - pgBadger: https://github.com/dalibo/pgbadger/blob/master/LICENSE
+  - pgAdmin: https://github.com/postgres/pgadmin4/blob/master/LICENSE
   - .NET Access to PostgreSQL: https://github.com/npgsql/npgsql/blob/dev/LICENSE.txt
 
 permissions:
@@ -29,7 +29,7 @@ limitations:
 
 ---
 
-The PostgreSQL Licence (PostgreSQL)
+PostgreSQL Licence
 
 Copyright (c) [year] [fullname]
 
