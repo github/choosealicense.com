@@ -2,8 +2,6 @@
 title: PostgreSQL License
 spdx-id: PostgreSQL
 source: https://opensource.org/licenses/PostgreSQL
-featured: false
-hidden: true
 
 description: A very short, BSD-style license, used specifically for PostgreSQL.  
 
