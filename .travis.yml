@@ -5,7 +5,7 @@ script: "./script/cibuild"
 #environment
 language: ruby
 rvm:
-  - 2.0.0
+  - 2.4.0
 
 branches:
   only:

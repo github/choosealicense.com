@@ -17,7 +17,7 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
   {% for type in types %}
     {% assign rules = site.data.rules[type] | sort: "label" %}
     {% for rule_obj in rules %}
-      {% if seen_tags contains rule_obj.tag %}
+      {% if seen_tags contains rule_obj.tag or rule_obj.tag contains '--' %}
         {% continue %}
       {% endif %}
       {% capture seen_tags %}{{ seen_tags | append:rule_obj.tag }}{% endcapture %}
@@ -33,20 +33,22 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
     {% assign rules = site.data.rules[type] | sort: "label" %}
     {% for rule_obj in rules %}
       {% assign req = rule_obj.tag %}
-      {% if seen_tags contains req %}
+      {% if seen_tags contains req  or rule_obj.tag contains '--' %}
         {% continue %}
       {% endif %}
       {% capture seen_tags %}{{ seen_tags | append:req }}{% endcapture %}
       {% assign seen_req = false %}
       {% for t in types %}
-        {% if license[t] contains req %}
-          <td class="license-{{ t }}" style="text-align:center">
-            <span class="{{ req }}">
-              <span class="license-sprite {{ req }}"></span>
-            </span>
-          </td>
-          {% assign seen_req = true %}
-        {% endif %}
+        {% for r in license[t] %}
+          {% if r contains req %}
+            <td class="license-{{ t }}" style="text-align:center">
+              <span class="{{ r }}">
+                <span class="license-sprite {{ r }}"></span>
+              </span>
+            </td>
+            {% assign seen_req = true %}
+          {% endif %}
+        {% endfor %}
       {% endfor %}
       {% unless seen_req %}
         <td></td>

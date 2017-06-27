@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
+
 # Usage: script/generate-docs
 # Reads in the fields, meta, and rules YAML files and produces markdown output
 # suitable for documenting in the project's README

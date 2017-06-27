@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe 'shown licenses' do
   # Whitelist of popular licenses that are shown (non-hidden)
   # Note: most new licenses that are added should be hidden by default
-  SHOWN_LICENSES = %w(
+  SHOWN_LICENSES = %w[
     agpl-3.0
     apache-2.0
     bsd-2-clause
@@ -16,7 +18,7 @@ describe 'shown licenses' do
     mit
     mpl-2.0
     unlicense
-  ).freeze
+  ].freeze
 
   it 'has the expected number of shown licenses' do
     expect(shown_licenses.count).to eql(12)

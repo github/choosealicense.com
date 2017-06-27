@@ -26,11 +26,12 @@ permissions:
 conditions:
   - disclose-source
   - include-copyright
-  - same-license
+  - same-license--file
 
 limitations:
-  - no-liability
+  - liability
   - trademark-use
+  - warranty
 
 ---
 
