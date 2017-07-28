@@ -7,7 +7,7 @@
 
 - name: spdx-id
   description: Short identifier specified by http://spdx.org/licenses/
-  required: required
+  required: true
 
 - name: source
   description: The URL to the license source text
