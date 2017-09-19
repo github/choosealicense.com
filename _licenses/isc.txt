@@ -10,7 +10,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 using:
   - documentation.js: https://github.com/documentationjs/documentation/blob/master/LICENSE
   - Node.js semver: https://github.com/npm/node-semver/blob/master/LICENSE
-  - OpenStreetMap iD: https://github.com/openstreetmap/iD/blob/master/LICENSE
+  - OpenStreetMap iD: https://github.com/openstreetmap/iD/blob/master/LICENSE.md
 
 permissions:
   - commercial-use

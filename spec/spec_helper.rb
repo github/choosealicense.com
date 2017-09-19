@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'jekyll'
 require 'open-uri'
 require 'json'
@@ -42,7 +43,7 @@ def licenses
 end
 
 def shown_licenses
-  licenses.select { |l| !l['hidden'] }
+  licenses.reject { |l| l['hidden'] }
 end
 
 def site

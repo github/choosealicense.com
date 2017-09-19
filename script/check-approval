@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
+
 # Checks if a given license meets the approval criteria to be added to choosealicense.com
 # See https://github.com/github/choosealicense.com/blob/gh-pages/CONTRIBUTING.md#adding-a-license
 # Usage: script/check-approval [SPDX LICENSE ID]
