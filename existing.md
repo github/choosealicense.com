@@ -14,6 +14,6 @@ Some communities have strong preferences for particular licenses. If you want to
 
 * [Apache](https://www.apache.org/licenses/) requires [Apache License 2.0](/licenses/apache-2.0/)
 * [GNU](https://www.gnu.org/licenses/license-recommendations.html) recommends [GNU GPLv3](/licenses/gpl-3.0/) for most programs
-* [OpenBSD](http://www.openbsd.org/policy.html) prefers [ISC](/licenses/isc/)
+* [OpenBSD](https://www.openbsd.org/policy.html) prefers [ISC](/licenses/isc/)
 
 Communities come in all shapes and sizes. The examples above are *very* well established. If the community you see your project as a part of doesn't have set-in-stone licensing traditions, or you don't see your project as part of any particular community, that's just fine: [make your own choice of an open source license](/).

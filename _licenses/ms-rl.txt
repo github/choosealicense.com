@@ -1,7 +1,7 @@
 ---
 title: Microsoft Reciprocal License
 spdx-id: MS-RL
-source: http://opensource.org/licenses/ms-rl
+source: https://opensource.org/licenses/ms-rl
 
 description: An open source license with a patent grant similar to the <a href="/licenses/ms-pl/">Microsoft Public License</a>, with the additional condition that any source code for any derived file be provided under this license.
 
