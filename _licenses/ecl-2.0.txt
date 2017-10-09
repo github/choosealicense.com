@@ -12,7 +12,7 @@ note: The Apereo Foundation recommends taking the additional step of adding a bo
 using:
   - Sakai: https://github.com/sakaiproject/sakai/blob/master/LICENSE
   - OAE: https://github.com/oaeproject/Hilary/blob/master/LICENSE
-  - Opencast Matterhorn: https://bitbucket.org/opencast-community/matterhorn/src/e5b1684a822c0bd9bb07f3e53b4e1f22932da5ef/LICENSE?fileviewer=file-view-default
+  - Opencast: https://bitbucket.org/opencast-community/opencast/src/905077ba5e6483f8c49869a1fc13bf9268790a79/LICENSE?at=develop
 
 permissions:
   - commercial-use

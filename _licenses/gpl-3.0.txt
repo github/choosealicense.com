@@ -3,7 +3,7 @@ title: GNU General Public License v3.0
 spdx-id: GPL-3.0
 nickname: GNU GPLv3
 redirect_from: /licenses/gpl-v3/
-source: http://www.gnu.org/licenses/gpl-3.0.txt
+source: https://www.gnu.org/licenses/gpl-3.0.txt
 featured: true
 hidden: false
 
@@ -14,7 +14,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
 
 using:
-  - Bash: http://git.savannah.gnu.org/cgit/bash.git/tree/COPYING
+  - Bash: https://git.savannah.gnu.org/cgit/bash.git/tree/COPYING
   - GIMP: https://git.gnome.org/browse/gimp/tree/COPYING
   - Privacy Badger: https://github.com/EFForg/privacybadgerfirefox/blob/master/LICENSE
 
