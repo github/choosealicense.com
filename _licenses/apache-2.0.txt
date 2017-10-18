@@ -2,7 +2,7 @@
 title: Apache License 2.0
 spdx-id: Apache-2.0
 redirect_from: /licenses/apache/
-source: http://www.apache.org/licenses/LICENSE-2.0.html
+source: https://www.apache.org/licenses/LICENSE-2.0.html
 featured: true
 hidden: false
 
