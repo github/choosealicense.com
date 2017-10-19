@@ -504,8 +504,8 @@ safest to attach them to the start of each source file to most effectively
 convey the exclusion of warranty; and each file should have at least the
 "copyright" line and a pointer to where the full notice is found.
 
-    {description}
-    Copyright (C) {year} {fullname}
+    <description>
+    Copyright (C) <year> <fullname>
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -532,7 +532,7 @@ necessary.  Here is a sample; alter the names:
   library `Frob' (a library for tweaking knobs) written by James Random
   Hacker.
 
-  {signature of Ty Coon}, 1 April 1990
+  <signature of Ty Coon>, 1 April 1990
   Ty Coon, President of Vice
 
 That's all there is to it!
