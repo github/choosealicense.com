@@ -11,7 +11,7 @@ note: OSL 3.0's author has <a href="http://rosenlaw.com/OSL3.0-explained.htm">pr
 
 using:
   - appserver.io: https://github.com/appserver-io/appserver/blob/master/LICENSE.txt
-  - Magento 2: https://github.com/magento/magento2/blob/develop/LICENSE.txt
+  - JsonMapper: https://github.com/cweiske/jsonmapper/blob/master/LICENSE
   - Restyaboard: https://github.com/RestyaPlatform/board/blob/master/LICENSE.txt
 
 permissions:
