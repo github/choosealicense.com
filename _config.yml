@@ -35,7 +35,7 @@ exclude:
   - assets/vendor/selectivizr/tests
   - assets/vendor/clipboard/test
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-seo-tag
