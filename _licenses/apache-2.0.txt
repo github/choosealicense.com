@@ -2,7 +2,8 @@
 title: Apache License 2.0
 spdx-id: Apache-2.0
 redirect_from: /licenses/apache/
-source: http://www.apache.org/licenses/LICENSE-2.0.html
+source: https://www.apache.org/licenses/LICENSE-2.0.html
+featured: true
 hidden: false
 
 description: A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
@@ -214,7 +215,7 @@ limitations:
    APPENDIX: How to apply the Apache License to your work.
 
       To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "{}"
+      boilerplate notice, with the fields enclosed by brackets "[]"
       replaced with your own identifying information. (Don't include
       the brackets!)  The text should be enclosed in the appropriate
       comment syntax for the file format. We also recommend that a
@@ -222,7 +223,7 @@ limitations:
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright {yyyy} {name of copyright owner}
+   Copyright [yyyy] [name of copyright owner]
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.

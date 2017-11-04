@@ -1,7 +1,7 @@
 ---
 title: Microsoft Public License
 spdx-id: MS-PL
-source: http://opensource.org/licenses/ms-pl
+source: https://opensource.org/licenses/ms-pl
 
 description: An open source license with a patent grant.
 
