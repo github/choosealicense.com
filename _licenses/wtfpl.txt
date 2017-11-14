@@ -1,7 +1,7 @@
 ---
 title: "Do What The F*ck You Want To Public License"
 spdx-id: WTFPL
-source: http://www.wtfpl.net/
+source: http://www.wtfpl.net/txt/copying/
 
 description: The easiest license out there. It gives the user permissions to do whatever they want with your code.
 
