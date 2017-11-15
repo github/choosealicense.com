@@ -7,7 +7,7 @@
 
 - name: spdx-id
   description: Short identifier specified by http://spdx.org/licenses/
-  required: required
+  required: true
 
 - name: source
   description: The URL to the license source text
@@ -33,6 +33,10 @@
   description: Bulleted list of limited rules
   required: true
 
+- name: using
+  description: 'A list of 3 notable projects using the license with straightforward LICENSE files which serve as examples newcomers can follow and that can be detected by [licensee](https://github.com/benbalter/licensee) in the form of `project_name: license_file_url`'
+  required: true
+
 # Optional fields
 
 - name: featured
@@ -49,10 +53,6 @@
 
 - name: note
   description: Additional information about the licenses
-  required: false
-
-- name: using
-  description: 'A list of up to 3 notable projects using the license with straightforward LICENSE files which serve as examples newcomers can follow and that can be detected by [licensee](https://github.com/benbalter/licensee) in the form of `project_name: license_file_url`'
   required: false
 
 - name: redirect_from

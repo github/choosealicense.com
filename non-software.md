@@ -4,7 +4,7 @@ layout: default
 permalink: /non-software/
 ---
 
-Open source software licenses can be used for non-software works, and often are the best choice. This is particularly the case when the works in question can be edited and versioned as source, e.g., [open source hardware](http://www.oshwa.org/definition/) designs. Choose an [open source license](/licenses/).
+Open source software licenses can be used for non-software works, and often are the best choice. This is particularly the case when the works in question can be edited and versioned as source, e.g., [open source hardware](https://www.oshwa.org/definition/) designs. Choose an [open source license](/licenses/).
 
 ### Data, media, etc.
 
@@ -12,7 +12,7 @@ Open source software licenses can be used for non-software works, and often are 
 
 ### Documentation
 
-Any open source software license or open Creative Commons license is applicable to software documentation. If you use different licenses for your software and its documentation, you may wish to take care that source code examples in the documentation are also licensed under the software license.
+Any open source software license or open license for media (see [above](#data-media-etc)) is applicable to software documentation. If you use different licenses for your software and its documentation, you may wish to take care that source code examples in the documentation are also licensed under the software license.
 
 ### Fonts
 

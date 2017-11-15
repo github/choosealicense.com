@@ -9,6 +9,8 @@ how: To use this license, place in each of the components of your work both an e
 
 note: An example boilerplate and more information about how to use the license can be found at the end of the license.
 
+using:
+
 permissions:
   - commercial-use
   - modifications

@@ -1,6 +1,6 @@
 # Choosealicense.com
 
-[![Build Status](https://travis-ci.org/github/choosealicense.com.png?branch=gh-pages)](https://travis-ci.org/github/choosealicense.com)
+[![Build Status](https://travis-ci.org/github/choosealicense.com.svg?branch=gh-pages)](https://travis-ci.org/github/choosealicense.com)
 
 Like a Choose Your Own Adventure site, but only much less interesting.
 
@@ -44,6 +44,7 @@ Licenses sit in the `/_licenses` folder. Each license has YAML front matter desc
 * `source` - The URL to the license source text
 * `description` - A human-readable description of the license
 * `how` - Instructions on how to implement the license
+* `using` - A list of 3 notable projects using the license with straightforward LICENSE files which serve as examples newcomers can follow and that can be detected by [licensee](https://github.com/benbalter/licensee) in the form of `project_name: license_file_url`
 * `permissions` - Bulleted list of permission rules
 * `conditions` - Bulleted list of condition rules
 * `limitations` - Bulleted list of limitation rules
@@ -54,7 +55,6 @@ Licenses sit in the `/_licenses` folder. Each license has YAML front matter desc
 * `hidden` - Whether the license is neither [popular](https://opensource.org/licenses) nor fills out the [spectrum of licenses](http://choosealicense.com/licenses/) from strongly conditional to unconditional (defaults to true)
 * `nickname` - Customary short name if applicable (e.g, GPLv3)
 * `note` - Additional information about the licenses
-* `using` - A list of up to 3 notable projects using the license with straightforward LICENSE files which serve as examples newcomers can follow and that can be detected by [licensee](https://github.com/benbalter/licensee) in the form of `project_name: license_file_url`
 * `redirect_from` - Relative path(s) to redirect to the license from, to prevent breaking old URLs
 
 ### Auto-populated fields
@@ -80,25 +80,25 @@ The license properties (rules) are stored as a bulleted list within the licenses
 
 * `commercial-use` - This software and derivatives may be used for commercial purposes.
 * `modifications` - This software may be modified.
-* `distribution` - You may distribute this software.
-* `private-use` - You may use and modify the software without distributing it.
-* `patent-use` - This license provides an express grant of patent rights from the contributor to the recipient.
+* `distribution` - This software may be distributed.
+* `private-use` - This software may be used and modified in private.
+* `patent-use` - This license provides an express grant of patent rights from contributors.
 
 #### Conditions
 
-* `include-copyright` - Include a copy of the license and copyright notice with the software.
-* `document-changes` - Indicate changes made to the code.
-* `disclose-source` - Source code must be made available when distributing the software.
-* `network-use-disclose` - Users who interact with the software via network are given the right to receive a copy of the corresponding source code.
+* `include-copyright` - A copy of the license and copyright notice must be included with the software.
+* `document-changes` - Changes made to the code must be documented.
+* `disclose-source` - Source code must be made available when the software is distributed.
+* `network-use-disclose` - Users who interact with the software via network are given the right to receive a copy of the source code.
 * `same-license` - Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used.
 * `same-license--file` - Modifications of existing files must be released under the same license when distributing the software. In some cases a similar or related license may be used.
 * `same-license--library` - Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used, or this condition may not apply to works that use the software as a library.
 
 #### Limitations
 
-* `trademark-use` - This license explicitly states that it does NOT grant you trademark rights, even though licenses without such a statement probably do not grant you any implicit trademark rights.
+* `trademark-use` - This license explicitly states that it does NOT grant trademark rights, even though licenses without such a statement probably do not grant any implicit trademark rights.
 * `liability` - This license includes a limitation of liability.
-* `patent-use` -  This license explicitly states that it does NOT grant you any rights in the patents of contributors.
+* `patent-use` - This license explicitly states that it does NOT grant any rights in the patents of contributors.
 * `warranty` - The license explicitly states that it does NOT provide any warranty.
 
 ## License

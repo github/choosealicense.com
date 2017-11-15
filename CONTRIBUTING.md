@@ -14,12 +14,13 @@ get. But first, please make sure you understand what
 
 Choosealicense.com is intended to demystify license choices, not present or catalog all of them. As such, only a small number are highlighted on the home page or <http://choosealicense.com/licenses>, and there are several requirements for a license to be [cataloged](http://choosealicense.com/appendix/) on the site:
 
-1. The license must have [an SPDX identifier](https://spdx.org/licenses/). If your license isn't registered with SPDX, please [request that it be added](https://spdx.org/spdx-license-list/request-new-license-or-exception).
+1. The license must have [an SPDX identifier](https://spdx.org/licenses/). If your license isn't registered with SPDX, please [request that it be added](https://spdx.org/spdx-license-list/request-new-license).
 2. The license must be listed on one of the following approved lists of licenses:
    * [List of OSI approved licenses](https://opensource.org/licenses/alphabetical)
    * [GNU's list of free licenses](https://www.gnu.org/licenses/license-list.en.html) (*note: the license must be listed in one of the three "free" categories*)
    * [Open Definition's list of conformant licenses](http://opendefinition.org/licenses/) (non-code)
 3. A [GitHub code search](https://github.com/search?q=MIT+filename%3ALICENSE&type=Code) must reveal at least *1,000* public repositories using the license
+4. Identification of 3 notable projects using the license with straightforward LICENSE files which serve as examples newcomers can follow and that could be detected by [licensee](https://github.com/benbalter/licensee) if it knew about the license
 
 If your proposed license meets the above criteria, here's a few other things to keep in mind as you propose the license's addition:
 
@@ -28,6 +29,7 @@ If your proposed license meets the above criteria, here's a few other things to 
 * The license files should be in the format of `_licenses/[lowercased-spdx-id].txt` (e.g., `_licenses/mit.txt`)
 * Each license has both [required and optional metadata](https://github.com/github/choosealicense.com#license-metadata) that should be included.
 * The text of the license should be wrapped to a 78 character width.
+* The text of the license should match the corresponding text found at https://spdx.org/licenses/
 * The body of the file should be the text of the license in plain text.
 
 ## Making Changes

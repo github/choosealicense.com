@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'html-proofer'
 require 'rspec/core/rake_task'
 
@@ -26,7 +27,7 @@ task :approved_licenses do
   puts approved.join(', ')
   puts "\n"
 
-  potential = approved - licenses.map { |l| l['id'] }
+  potential = approved - (licenses.map { |l| l['id'] })
   puts "#{potential.count} potential additions:"
   puts potential.join(', ')
 end

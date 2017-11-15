@@ -25,7 +25,7 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
     {% endfor %}
   {% endfor %}
 </tr>
-{% assign licenses = site.licenses sort: "path" %}
+{% assign licenses = site.licenses | sort: "path" %}
 {% for license in licenses %}
   <tr style="height: 3em"><th scope="row"><a href="{{ license.id }}">{{ license.title }}</a></th>
   {% assign seen_tags = '' %}

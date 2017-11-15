@@ -11,7 +11,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 
 using:
   - jQuery: https://github.com/jquery/jquery/blob/master/LICENSE.txt
-  - .NET Core: https://github.com/dotnet/corefx/blob/master/LICENSE
+  - .NET Core: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT
   - Rails: https://github.com/rails/rails/blob/master/activerecord/MIT-LICENSE
 
 permissions:

@@ -13,8 +13,8 @@ note: The Mozilla Foundation recommends taking the additional step of adding a b
 
 using:
   - Servo: https://github.com/servo/servo/blob/master/LICENSE
+  - Syncthing: https://github.com/syncthing/syncthing/blob/master/LICENSE
   - TimelineJS3: https://github.com/NUKnightLab/TimelineJS3/blob/master/LICENSE
-  - LibreOffice: https://cgit.freedesktop.org/libreoffice/core/tree/COPYING.MPL
 
 permissions:
   - commercial-use
