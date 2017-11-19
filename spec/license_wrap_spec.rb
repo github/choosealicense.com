@@ -11,6 +11,7 @@ describe 'word wrapping' do
         max_line_length = 0
         max_line = ""
         license_text.lines.each do |line|
+          line.chomp!
           if line.length > max_line_length
             max_line_length = line.length
             max_line = line
