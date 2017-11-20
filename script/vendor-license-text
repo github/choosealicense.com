@@ -46,7 +46,7 @@ site.collections['licenses'].docs.each do |license|
     if line.length > 78
       indented_line = line.match(/\A(\s*)(.*)/)
       line_indent = indented_line[1]
-      line_text = indented_line[2] .gsub(/\s+/,' ')
+      line_text = indented_line[2] .gsub(/\s+/, ' ')
       text_width = 78 - line_indent.length
       line = line_text.gsub(/(.{1,#{text_width}})(\s+|\Z)/, "#{line_indent}\\1\n")
     end
