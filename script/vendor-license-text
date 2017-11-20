@@ -16,8 +16,35 @@ site.read
 site.collections['licenses'].docs.each do |license|
   puts "Updating the #{license.data['title']}..."
   html_file = File.join(html_dir, "#{license.data['spdx-id']}.html")
-  txt_file =  File.join(html_dir, "#{license.data['spdx-id']}.txt")
-  pandoc_cmd = "pandoc --columns=78 -f html -t plain -o #{txt_file} #{html_file}"
+  html = File.read(html_file)
+
+  license_key = license.data['spdx-id'].downcase
+
+  if ['bsd-2-clause', 'bsd-3-clause'].include? license_key
+    html = html.gsub(/&lt;year&gt;/, '[year]')
+    html = html.gsub(/&lt;owner&gt;/, '[fullname]')
+  elsif license_key == 'bsd-3-clause-clear'
+    html = html.gsub(/\[xxxx\]-\[xxxx\]/, '[year]')
+    html = html.gsub(/\[Owner Organization\]/, '[fullname]')
+  elsif license_key == 'isc'
+    html = html.gsub(/Copyright.*Consortium/m, 'Copyright (c) [year], [fullname]')
+  elsif license_key == 'mit'
+    html = html.gsub(/&lt;year&gt;/, '[year]')
+    html = html.gsub(/&lt;copyright holders&gt;/, '[fullname]')
+  elsif license_key == 'ncsa'
+    html = html.gsub(/&lt;Year&gt;/, '[year]')
+    html = html.gsub(/&lt;Owner Organization Name&gt;/, '[fullname]')
+    html = html.gsub(/&lt;Name of Development Group&gt;/, '[fullname]')
+    html = html.gsub(/&lt;Name of Institution&gt;/, '[project]')
+    html = html.gsub(%r{&lt;URL for Development Group/Institution&gt;}, '[project_url]')
+    html = html.gsub(/&lt;Name of Development Group, Name of Institution&gt;/, '[fullname], [project]')
+  end
+
+  html_munged_file = File.join(html_dir, "#{license.data['spdx-id']}-munged.html")
+  File.write(html_munged_file, html)
+
+  txt_file = File.join(html_dir, "#{license.data['spdx-id']}.txt")
+  pandoc_cmd = "pandoc --columns=78 -f html -t plain -o #{txt_file} #{html_munged_file}"
   system(pandoc_cmd)
   data = File.read(txt_file)
 
