@@ -16,7 +16,7 @@ site.read
 site.collections['licenses'].docs.each do |license|
   puts "Updating the #{license.data['title']}..."
   text_file = File.join(text_dir, "#{license.data['spdx-id']}.txt")
-  spdx_text = File.read(text_file).gsub(/\s+\n/, "\n")
+  spdx_text = File.read(text_file)
 
   license_key = license.data['spdx-id'].downcase
 
@@ -43,22 +43,21 @@ site.collections['licenses'].docs.each do |license|
   license_text = ''
 
   spdx_text.lines.each do |line|
-    if line.length <= 78
-      license_text += line
-    else
+    if line.length > 78
       indented_line = line.match(/\A(\s*)(.*)/)
       line_indent = indented_line[1]
       line_text = indented_line[2]
       text_width = 78 - line_indent.length
-      license_text += line_text.gsub(/(.{1,#{text_width}})(\s+|\Z)/, "#{line_indent}\\1\n")
+      line = line_text.gsub(/(.{1,#{text_width}})(\s+|\Z)/, "#{line_indent}\\1\n")
     end
+    license_text += line
   end
   raw_content = File.read(license.path)
   matches = raw_content.match Jekyll::Document::YAML_FRONT_MATTER_REGEXP
 
   output = matches[1]
   output << "---\n\n"
-  output << license_text.gsub(/\s+\n/, "\n")
+  output << license_text.gsub(/\s+$/m, "\n")
 
   File.write(license.path, output)
 end
