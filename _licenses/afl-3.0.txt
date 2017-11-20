@@ -39,12 +39,14 @@ Work:
 1) Grant of Copyright License. Licensor grants You a worldwide, royalty-free,
 non-exclusive, sublicensable license, for the duration of the copyright, to do
 the following:
- 	
+
      a) to reproduce the Original Work in copies, either alone or as part of a
      collective work;
+
      b) to translate, adapt, alter, transform, modify, or arrange the Original
      Work, thereby creating derivative works ("Derivative Works") based upon
      the Original Work;
+
      c) to distribute or communicate copies of the Original Work and
      Derivative Works to the public, under any license of your choice that
      does not contradict the terms and conditions, including Licensor’s

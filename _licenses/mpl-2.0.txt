@@ -226,6 +226,7 @@ Mozilla Public License Version 2.0
      jurisdiction.
 
 4. Inability to Comply Due to Statute or Regulation
+
 If it is impossible for You to comply with any of the terms of this License
 with respect to some or all of the Covered Software due to statute, judicial
 order, or regulation then You must: (a) comply with the terms of this License
@@ -264,6 +265,7 @@ detailed for a recipient of ordinary skill to be able to understand it.
      to termination shall survive termination.
 
 6. Disclaimer of Warranty
+
 Covered Software is provided under this License on an "as is" basis, without
 warranty of any kind, either expressed, implied, or statutory, including,
 without limitation, warranties that the Covered Software is free of defects,
@@ -276,6 +278,7 @@ of any Covered Software is authorized under this License except under this
 disclaimer.
 
 7. Limitation of Liability
+
 Under no circumstances and under no legal theory, whether tort (including
 negligence), contract, or otherwise, shall any Contributor, or anyone who
 distributes Covered Software as permitted above, be liable to You for any
@@ -290,6 +293,7 @@ jurisdictions do not allow the exclusion or limitation of incidental or
 consequential damages, so this exclusion and limitation may not apply to You.
 
 8. Litigation
+
 Any litigation relating to this License may be brought only in the courts of a
 jurisdiction where the defendant maintains its principal place of business and
 such litigation shall be governed by laws of that jurisdiction, without
@@ -297,6 +301,7 @@ reference to its conflict-of-law provisions. Nothing in this Section shall
 prevent a party's ability to bring cross-claims or counter-claims.
 
 9. Miscellaneous
+
 This License represents the complete agreement concerning the subject matter
 hereof. If any provision of this License is held to be unenforceable, such
 provision shall be reformed only to the extent necessary to make it

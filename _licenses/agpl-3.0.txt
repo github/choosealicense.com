@@ -76,7 +76,8 @@ letting the public access it on a server without ever releasing its source
 code to the public.
 
 The GNU Affero General Public License is designed specifically to ensure that,
-in such cases, the modified source code becomes available to the community. 
+in such cases, the modified source code becomes available to the community.
+
 It requires the operator of a network server to provide the source code of the
 modified version running there to the users of that server.  Therefore, public
 use of a modified version, on a publicly accessible server, gives the public
@@ -99,7 +100,8 @@ follow.
 "Copyright" also means copyright-like laws that apply to other kinds of works,
 such as semiconductor masks.
 
-"The Program" refers to any copyrightable work licensed under this License. 
+"The Program" refers to any copyrightable work licensed under this License.
+
 Each licensee is addressed as "you".  "Licensees" and "recipients" may be
 individuals or organizations.
 
@@ -151,7 +153,8 @@ used to produce the work, or an object code interpreter used to run it.
 
 The "Corresponding Source" for a work in object code form means all the source
 code needed to generate, install, and (for an executable work) run the object
-code and to modify the work, including scripts to control those activities. 
+code and to modify the work, including scripts to control those activities.
+
 However, it does not include the work's System Libraries, or general-purpose
 tools or generally available free programs which are used unmodified in
 performing those activities but which are not part of the work.  For example,
@@ -295,7 +298,8 @@ the object code work.
 
 A "User Product" is either (1) a "consumer product", which means any tangible
 personal property which is normally used for personal, family, or household
-purposes, or (2) anything designed or sold for incorporation into a dwelling. 
+purposes, or (2) anything designed or sold for incorporation into a dwelling.
+
 In determining whether a product is a consumer product, doubtful cases shall
 be resolved in favor of coverage.  For a particular product received by a
 particular user, "normally used" refers to a typical or common use of that
@@ -573,7 +577,8 @@ GNU Affero General Public License can be used, that proxy's public statement
 of acceptance of a version permanently authorizes you to choose that version
 for the Program.
 
-Later license versions may give you additional or different permissions. 
+Later license versions may give you additional or different permissions.
+
 However, no additional obligations are imposed on any author or copyright
 holder as a result of your choosing to follow a later version.
 
@@ -639,7 +644,8 @@ pointer to where the full notice is found.
 Also add information on how to contact you by electronic and paper mail.
 
 If your software can interact with users remotely through a computer network,
-you should also make sure that it provides a way for users to get its source. 
+you should also make sure that it provides a way for users to get its source.
+
 For example, if your program is a web application, its interface could display
 a "Source" link that leads users to an archive of the code.  There are many
 ways you could offer source, and different solutions will be better for

@@ -29,6 +29,7 @@ limitations:
 ---
 
 The LaTeX Project Public License
+
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 LPPL Version 1.3c 2008-05-04
@@ -39,6 +40,7 @@ Everyone is allowed to distribute verbatim copies of this license document,
 but modification of it is not allowed.
 
 PREAMBLE
+
 ========
 
 The LaTeX Project Public License (LPPL) is the primary license under which the
@@ -65,6 +67,7 @@ goal while meeting these conditions, then read the document `cfgguide.tex' and
 `modguide.tex' in the base LaTeX distribution for suggestions.
 
 DEFINITIONS
+
 ===========
 
 In this license document the following terms are used:
@@ -106,6 +109,7 @@ Interpreter is a `LaTeX-Format' or in the case of files belonging to the
 `LaTeX-format' a program implementing the `TeX language'.
 
 CONDITIONS ON DISTRIBUTION AND MODIFICATION
+
 ===========================================
 
 1. Activities other than distribution and/or modification of the Work are not
@@ -188,6 +192,7 @@ applying some process to that format, does not relax or nullify any sections
 of this license as they pertain to the results of applying that process.
 
 10.
+
      a. A Derived Work may be distributed under a different license provided
      that license itself honors the conditions listed in Clause 6 above, in
      regard to the Work, though it does not have to honor the rest of the
@@ -206,6 +211,7 @@ with the Work by any means.
 complete compliance by all parties with all applicable laws.
 
 NO WARRANTY
+
 ===========
 
 There is no warranty for the Work. Except when otherwise stated in writing,
@@ -228,6 +234,7 @@ or said author or said other party has been advised of the possibility of such
 damages.
 
 MAINTENANCE OF THE WORK
+
 =======================
 
 The Work has the status `author-maintained' if the Copyright Holder explicitly
@@ -293,6 +300,7 @@ as Current Maintainer. You should also announce your new status to the same
 pertinent community as in 2b) above.
 
 WHETHER AND HOW TO DISTRIBUTE WORKS UNDER THIS LICENSE
+
 ======================================================
 
 This section contains important instructions, examples, and recommendations
@@ -300,6 +308,7 @@ for authors who are considering distributing their works under this license.
 These authors are addressed as `you' in this section.
 
 Choosing This License or Another License
+
 ----------------------------------------
 
 If for any part of your work you want or need to use *distribution* conditions
@@ -317,6 +326,7 @@ discussion in `modguide.tex' may still be relevant, and authors intending to
 distribute their works under any license are encouraged to read it.
 
 A Recommendation on Modification Without Distribution
+
 -----------------------------------------------------
 
 It is wise never to modify a component of the Work, even for your own personal
@@ -332,6 +342,7 @@ works provide ways to control the behavior of that work without altering any
 of its licensed components.
 
 How to Use This License
+
 -----------------------
 
 To use this license, place in each of the components of your work both an
@@ -343,21 +354,37 @@ conditions in this license.
 Here is an example of such a notice and statement:
 
      %% pig.dtx
+
      %% Copyright 2005 M. Y. Name
+
      %
+
      % This work may be distributed and/or modified under the
+
      % conditions of the LaTeX Project Public License, either version 1.3
+
      % of this license or (at your option) any later version.
+
      % The latest version of this license is in
+
      % http://www.latex-project.org/lppl.txt
+
      % and version 1.3 or later is part of all distributions of LaTeX
+
      % version 2005/12/01 or later.
+
      %
+
      % This work has the LPPL maintenance status `maintained'.
+
      %
+
      % The Current Maintainer of this work is M. Y. Name.
+
      %
+
      % This work consists of the files pig.dtx and pig.ins
+
      % and the derived file pig.sty.
 
 Given such a notice and statement in a file, the conditions given in this
@@ -374,6 +401,7 @@ that your Work remains useful to the community even when you can no longer
 maintain and support it yourself.
 
 Derived Works That Are Not Replacements
+
 ---------------------------------------
 
 Several clauses of the LPPL specify means to provide reliability and stability
@@ -384,6 +412,7 @@ lines of code are reused for a completely different task), then clauses 6b and
 6d shall not apply.
 
 Important Recommendations
+
 -------------------------
 
 Defining What Constitutes the Work
@@ -399,4 +428,4 @@ notice of each file or by using a line such as:
 in that place. In the absence of an unequivocal list it might be impossible
 for the licensee to determine what is considered by you to comprise the Work
 and, in such a case, the licensee would be entitled to make reasonable
-conjectures as to which files comprise the Work. 
+conjectures as to which files comprise the Work.
