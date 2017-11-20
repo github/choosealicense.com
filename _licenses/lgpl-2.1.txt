@@ -42,7 +42,7 @@ Copyright (C) 1991, 1999 Free Software Foundation, Inc.
 Everyone is permitted to copy and distribute verbatim copies of this license
 document, but changing it is not allowed.
 
-[This is the first released version of the Lesser GPL.  It also counts as the
+[This is the first released version of the Lesser GPL. It also counts as the
 successor of the GNU Library Public License, version 2, hence the version
 number 2.1.]
 
@@ -483,13 +483,13 @@ convey the exclusion of warranty; and each file should have at least the
 
      This library is distributed in the hope that it will be useful, but
      WITHOUT ANY WARRANTY; without even the implied warranty of
-     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser
      General Public License for more details.
 
      You should have received a copy of the GNU Lesser General Public License
      along with this library; if not, write to the Free Software Foundation,
-     Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA Also
-     add information on how to contact you by electronic and paper mail.
+     Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA Also add
+     information on how to contact you by electronic and paper mail.
 
 You should also get your employer (if you work as a programmer) or your
 school, if any, to sign a "copyright disclaimer" for the library, if
