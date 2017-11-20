@@ -20,12 +20,16 @@ site.collections['licenses'].docs.each do |license|
 
   license_key = license.data['spdx-id'].downcase
 
-  if ['bsd-2-clause', 'bsd-3-clause'].include? license_key
+  if license_key == 'afl-3.0'
+    # https://github.com/spdx/license-list/pull/20
+    spdx_text = spdx_text.gsub(/^ 4\)/, '4)')
+  elsif ['bsd-2-clause', 'bsd-3-clause'].include? license_key
     spdx_text = spdx_text.gsub(/<year>/, '[year]')
     spdx_text = spdx_text.gsub(/<owner>/, '[fullname]')
   elsif license_key == 'bsd-3-clause-clear'
     spdx_text = spdx_text.gsub(/\[xxxx\]-\[xxxx\]/, '[year]')
-    spdx_text = spdx_text.gsub(/\[Owner Organization\]/, '[fullname]')
+    spdx_text = spdx_text.sub(/\[Owner Organization\]/, '[fullname]')
+    spdx_text = spdx_text.sub(/\[Owner Organization\]/, 'the copyright holder')
   elsif license_key == 'isc'
     spdx_text = spdx_text.gsub(/Copyright.*Consortium/m, 'Copyright (c) [year], [fullname]')
   elsif license_key == 'mit'

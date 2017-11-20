@@ -70,19 +70,19 @@ copy of the Source Code in an information repository reasonably calculated to
 permit inexpensive and convenient access by You for as long as Licensor
 continues to distribute the Original Work.
 
- 4) Exclusions From License Grant. Neither the names of Licensor, nor the
- names of any contributors to the Original Work, nor any of their trademarks
- or service marks, may be used to endorse or promote products derived from
- this Original Work without express prior permission of the Licensor. Except
- as expressly stated herein, nothing in this License grants any license to
- Licensor’s trademarks, copyrights, patents, trade secrets or any other
- intellectual property. No patent license is granted to make, use, sell, offer
- for sale, have made, or import embodiments of any patent claims other than
- the licensed claims defined in Section 2. No license is granted to the
- trademarks of Licensor even if such marks are included in the Original Work.
- Nothing in this License shall be interpreted to prohibit Licensor from
- licensing under terms different from this License any Original Work that
- Licensor otherwise would have a right to license.
+4) Exclusions From License Grant. Neither the names of Licensor, nor the names
+of any contributors to the Original Work, nor any of their trademarks or
+service marks, may be used to endorse or promote products derived from this
+Original Work without express prior permission of the Licensor. Except as
+expressly stated herein, nothing in this License grants any license to
+Licensor’s trademarks, copyrights, patents, trade secrets or any other
+intellectual property. No patent license is granted to make, use, sell, offer
+for sale, have made, or import embodiments of any patent claims other than the
+licensed claims defined in Section 2. No license is granted to the trademarks
+of Licensor even if such marks are included in the Original Work. Nothing in
+this License shall be interpreted to prohibit Licensor from licensing under
+terms different from this License any Original Work that Licensor otherwise
+would have a right to license.
 
 5) External Deployment. The term "External Deployment" means the use,
 distribution, or communication of the Original Work or Derivative Works in any
