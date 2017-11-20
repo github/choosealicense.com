@@ -18,7 +18,6 @@ describe 'word wrapping' do
           end
         end
         msg = "Longest line is #{max_line_length} characters: #{max_line}"
-        skip msg if max_line_length > 78 && max_line_length < 81
         expect(max_line_length).to be <= 78, msg
       end
     end
