@@ -2,12 +2,7 @@
 # frozen_string_literal: true
 
 require 'jekyll'
-require 'tmpdir'
-
-tmp_dir = Dir.mktmpdir
-git_cmd = "git clone --depth=1 'https://github.com/spdx/license-list-data.git' #{tmp_dir}"
-system(git_cmd)
-html_dir = File.join(tmp_dir, 'html')
+require 'open-uri'
 
 site_path = File.expand_path('../', File.dirname(__FILE__))
 config = Jekyll.configuration('source' => site_path)
@@ -15,18 +10,29 @@ site = Jekyll::Site.new(config)
 site.read
 site.collections['licenses'].docs.each do |license|
   puts "Updating the #{license.data['title']}..."
-  html_file = File.join(html_dir, "#{license.data['spdx-id']}.html")
-  txt_file =  File.join(html_dir, "#{license.data['spdx-id']}.txt")
-  pandoc_cmd = "pandoc --columns=78 -f html -t plain -o #{txt_file} #{html_file}"
-  system(pandoc_cmd)
-  data = File.read(txt_file)
+  uri = "https://spdx.org/licenses/#{license.data['spdx-id']}.json"
+  data = JSON.parse open(uri).read
+  spdx_text = data['standardLicenseTemplate'].gsub(/ +\n/, "\n")
+  license_text = ''
+
+  spdx_text.lines.each do |line|
+    if line.length <= 78
+      license_text += line
+    else
+      indented_line = line.match(/\A(\s*)(.*)/)
+      line_indent = indented_line[1]
+      line_text = indented_line[2]
+      text_width = 78 - line_indent.length
+      license_text += line_text.gsub(/(.{1,#{text_width}})(\s+|\Z)/, "#{line_indent}\\1\n")
+    end
+  end
 
   raw_content = File.read(license.path)
   matches = raw_content.match Jekyll::Document::YAML_FRONT_MATTER_REGEXP
 
   output = matches[1]
   output << "---\n\n"
-  output << data.gsub(/ +\n/, "\n")
+  output << license_text
 
   File.write(license.path, output)
 end

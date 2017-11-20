@@ -140,35 +140,37 @@ the Work unless that component clearly states in the copyright notice that it
 is exempt from that condition. Only the Current Maintainer is allowed to add
 such statements of exemption to a component of the Work.
 
-a. If a component of this Derived Work can be a direct replacement for a
-component of the Work when that component is used with the Base Interpreter,
-then, wherever this component of the Work identifies itself to the user when
-used interactively with that Base Interpreter, the replacement component of
-this Derived Work clearly and unambiguously identifies itself as a modified
-version of this component to the user when used interactively with that Base
-Interpreter.
+     a. If a component of this Derived Work can be a direct replacement for a
+     component of the Work when that component is used with the Base
+     Interpreter, then, wherever this component of the Work identifies itself
+     to the user when used interactively with that Base Interpreter, the
+     replacement component of this Derived Work clearly and unambiguously
+     identifies itself as a modified version of this component to the user
+     when used interactively with that Base Interpreter.
 
-b. Every component of the Derived Work contains prominent notices detailing
-the nature of the changes to that component, or a prominent reference to
-another file that is distributed as part of the Derived Work and that contains
-a complete and accurate log of the changes.
+     b. Every component of the Derived Work contains prominent notices
+     detailing the nature of the changes to that component, or a prominent
+     reference to another file that is distributed as part of the Derived Work
+     and that contains a complete and accurate log of the changes.
 
-c. No information in the Derived Work implies that any persons, including (but
-not limited to) the authors of the original version of the Work, provide any
-support, including (but not limited to) the reporting and handling of errors,
-to recipients of the Derived Work unless those persons have stated explicitly
-that they do provide such support for the Derived Work.
+     c. No information in the Derived Work implies that any persons, including
+     (but not limited to) the authors of the original version of the Work,
+     provide any support, including (but not limited to) the reporting and
+     handling of errors, to recipients of the Derived Work unless those
+     persons have stated explicitly that they do provide such support for the
+     Derived Work.
 
-d. You distribute at least one of the following with the Derived Work:
+     d. You distribute at least one of the following with the Derived Work:
 
-1. A complete, unmodified copy of the Work; if your distribution of a modified
-component is made by offering access to copy the modified component from a
-designated place, then offering equivalent access to copy the Work from the
-same or some similar place meets this condition, even though third parties are
-not compelled to copy the Work along with the modified component;
+          1. A complete, unmodified copy of the Work; if your distribution of
+          a modified component is made by offering access to copy the modified
+          component from a designated place, then offering equivalent access
+          to copy the Work from the same or some similar place meets this
+          condition, even though third parties are not compelled to copy the
+          Work along with the modified component;
 
-2. Information that is sufficient to obtain a complete, unmodified copy of the
-Work.
+          2. Information that is sufficient to obtain a complete, unmodified
+          copy of the Work.
 
 7. If you are not the Current Maintainer of the Work, you may distribute a
 Compiled Work generated from a Derived Work, as long as the Derived Work is
@@ -186,15 +188,15 @@ applying some process to that format, does not relax or nullify any sections
 of this license as they pertain to the results of applying that process.
 
 10.
-a. A Derived Work may be distributed under a different license provided that
-license itself honors the conditions listed in Clause 6 above, in regard to
-the Work, though it does not have to honor the rest of the conditions in this
-license.
+     a. A Derived Work may be distributed under a different license provided
+     that license itself honors the conditions listed in Clause 6 above, in
+     regard to the Work, though it does not have to honor the rest of the
+     conditions in this license.
 
-b. If a Derived Work is distributed under a different license, that Derived
-Work must provide sufficient documentation as part of itself to allow each
-recipient of that Derived Work to honor the restrictions in Clause 6 above,
-concerning changes from the Work.
+     b. If a Derived Work is distributed under a different license, that
+     Derived Work must provide sufficient documentation as part of itself to
+     allow each recipient of that Derived Work to honor the restrictions in
+     Clause 6 above, concerning changes from the Work.
 
 11. This license places no restrictions on works that are unrelated to the
 Work, nor does this license place any restrictions on aggregating such works
@@ -256,13 +258,14 @@ similar search.
 2. If this search is successful, then enquire whether the Work is still
 maintained.
 
-a. If it is being maintained, then ask the Current Maintainer to update their
-communication data within one month.
+     a. If it is being maintained, then ask the Current Maintainer to update
+     their communication data within one month.
 
-b. If the search is unsuccessful or no action to resume active maintenance is
-taken by the Current Maintainer, then announce within the pertinent community
-your intention to take over maintenance. (If the Work is a LaTeX work, this
-could be done, for example, by posting to comp.text.tex.)
+     b. If the search is unsuccessful or no action to resume active
+     maintenance is taken by the Current Maintainer, then announce within the
+     pertinent community your intention to take over maintenance. (If the Work
+     is a LaTeX work, this could be done, for example, by posting to
+     comp.text.tex.)
 
 3a. If the Current Maintainer is reachable and agrees to pass maintenance of
 the Work to you, then this takes effect immediately upon announcement.
@@ -339,23 +342,23 @@ conditions in this license.
 
 Here is an example of such a notice and statement:
 
-%% pig.dtx
-%% Copyright 2005 M. Y. Name
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License, either version 1.3
-% of this license or (at your option) any later version.
-% The latest version of this license is in
-% http://www.latex-project.org/lppl.txt
-% and version 1.3 or later is part of all distributions of LaTeX
-% version 2005/12/01 or later.
-%
-% This work has the LPPL maintenance status `maintained'.
-%
-% The Current Maintainer of this work is M. Y. Name.
-%
-% This work consists of the files pig.dtx and pig.ins
-% and the derived file pig.sty.
+     %% pig.dtx
+     %% Copyright 2005 M. Y. Name
+     %
+     % This work may be distributed and/or modified under the
+     % conditions of the LaTeX Project Public License, either version 1.3
+     % of this license or (at your option) any later version.
+     % The latest version of this license is in
+     % http://www.latex-project.org/lppl.txt
+     % and version 1.3 or later is part of all distributions of LaTeX
+     % version 2005/12/01 or later.
+     %
+     % This work has the LPPL maintenance status `maintained'.
+     %
+     % The Current Maintainer of this work is M. Y. Name.
+     %
+     % This work consists of the files pig.dtx and pig.ins
+     % and the derived file pig.sty.
 
 Given such a notice and statement in a file, the conditions given in this
 license document would apply, with the `Work' referring to the three files
@@ -391,9 +394,9 @@ determine which files constitute the Work. This could, for example, be
 achieved by explicitly listing all the files of the Work near the copyright
 notice of each file or by using a line such as:
 
-% This work consists of all files listed in manifest.txt.
+     % This work consists of all files listed in manifest.txt.
 
 in that place. In the absence of an unequivocal list it might be impossible
 for the licensee to determine what is considered by you to comprise the Work
 and, in such a case, the licensee would be entitled to make reasonable
-conjectures as to which files comprise the Work.
+conjectures as to which files comprise the Work. 
