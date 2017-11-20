@@ -35,7 +35,7 @@ limitations:
 
 ---
 
-Open Software License ("OSL") v 3.0
+Open Software License v. 3.0 (OSL-3.0)
 
 This Open Software License (the "License") applies to any original work of
 authorship (the "Original Work") whose owner (the "Licensor") has placed the
@@ -48,21 +48,21 @@ Licensed under the Open Software License version 3.0
 non-exclusive, sublicensable license, for the duration of the copyright, to do
 the following:
 
-  a) to reproduce the Original Work in copies, either alone or as part of a
-  collective work;
+a) to reproduce the Original Work in copies, either alone or as part of a
+collective work;
 
-  b) to translate, adapt, alter, transform, modify, or arrange the Original
-  Work, thereby creating derivative works ("Derivative Works") based upon the
-  Original Work;
+b) to translate, adapt, alter, transform, modify, or arrange the Original
+Work, thereby creating derivative works ("Derivative Works") based upon the
+Original Work;
 
-  c) to distribute or communicate copies of the Original Work and Derivative
-  Works to the public, with the proviso that copies of Original Work or
-  Derivative Works that You distribute or communicate shall be licensed under
-  this Open Software License;
+c) to distribute or communicate copies of the Original Work and Derivative
+Works to the public, with the proviso that copies of Original Work or
+Derivative Works that You distribute or communicate shall be licensed under
+this Open Software License;
 
-  d) to perform the Original Work publicly; and
+d) to perform the Original Work publicly; and
 
-  e) to display the Original Work publicly.
+e) to display the Original Work publicly.
 
 2) Grant of Patent License. Licensor grants You a worldwide, royalty-free,
 non-exclusive, sublicensable license, under patent claims owned or controlled
@@ -85,7 +85,7 @@ of any contributors to the Original Work, nor any of their trademarks or
 service marks, may be used to endorse or promote products derived from this
 Original Work without express prior permission of the Licensor. Except as
 expressly stated herein, nothing in this License grants any license to
-Licensor's trademarks, copyrights, patents, trade secrets or any other
+Licensor’s trademarks, copyrights, patents, trade secrets or any other
 intellectual property. No patent license is granted to make, use, sell, offer
 for sale, have made, or import embodiments of any patent claims other than the
 licensed claims defined in Section 2. No license is granted to the trademarks
@@ -143,7 +143,7 @@ the activities listed in Section 1, including your right to create Derivative
 Works based upon the Original Work, and doing so without honoring these terms
 and conditions is prohibited by copyright law and international treaty.
 Nothing in this License is intended to affect copyright exceptions and
-limitations (including "fair use" or "fair dealing"). This License shall
+limitations (including “fair use” or “fair dealing”). This License shall
 terminate immediately and You may no longer exercise any of the rights granted
 to You by this License upon your failure to honor the conditions in Section
 1(c).
@@ -192,7 +192,7 @@ ownership of such entity.
 restricted or conditioned by this License or by law, and Licensor promises not
 to interfere with or be responsible for such uses by You.
 
-16) Modification of This License. This License is Copyright © 2005 Lawrence
+16) Modification of This License. This License is Copyright (c) 2005 Lawrence
 Rosen. Permission is granted to copy, distribute, or communicate this License
 without modification. Nothing in this License permits You to modify this
 License as applied to the Original Work or to Derivative Works. However, You
