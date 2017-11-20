@@ -17,6 +17,29 @@ site.collections['licenses'].docs.each do |license|
   puts "Updating the #{license.data['title']}..."
   text_file = File.join(text_dir, "#{license.data['spdx-id']}.txt")
   spdx_text = File.read(text_file).gsub(/\s+\n/, "\n")
+
+  license_key = license.data['spdx-id'].downcase
+
+  if ['bsd-2-clause', 'bsd-3-clause'].include? license_key
+    spdx_text = spdx_text.gsub(/<year>/, '[year]')
+    spdx_text = spdx_text.gsub(/<owner>/, '[fullname]')
+  elsif license_key == 'bsd-3-clause-clear'
+    spdx_text = spdx_text.gsub(/\[xxxx\]-\[xxxx\]/, '[year]')
+    spdx_text = spdx_text.gsub(/\[Owner Organization\]/, '[fullname]')
+  elsif license_key == 'isc'
+    spdx_text = spdx_text.gsub(/Copyright.*Consortium/m, 'Copyright (c) [year], [fullname]')
+  elsif license_key == 'mit'
+    spdx_text = spdx_text.gsub(/<year>/, '[year]')
+    spdx_text = spdx_text.gsub(/<copyright holders>/, '[fullname]')
+  elsif license_key == 'ncsa'
+    spdx_text = spdx_text.gsub(/<Year>/, '[year]')
+    spdx_text = spdx_text.gsub(/<Owner Organization Name>/, '[fullname]')
+    spdx_text = spdx_text.gsub(/<Name of Development Group>/, '[fullname]')
+    spdx_text = spdx_text.gsub(/<Name of Institution>/, '[project]')
+    spdx_text = spdx_text.gsub(%r{<URL for Development Group/Institution>}, '[project_url]')
+    spdx_text = spdx_text.gsub(/<Name of Development Group, Name of Institution>/, '[fullname], [project]')
+  end
+
   license_text = ''
 
   spdx_text.lines.each do |line|
