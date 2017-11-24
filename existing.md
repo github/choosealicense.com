@@ -8,7 +8,7 @@ If you're contributing to or extending an existing project, it's almost always e
 
 Depending on how you're building on an existing project and what its license is, using the existing project's license for your own might not just be the easiest thing to do, but a condition on which your permission to build on the existing project rests: see the "same license" condition of [some licenses](/licenses/).
 
-Some communities have strong preferences for particular licenses. If you want to participate in one of these, it will be easier to use the preferred license even if you're starting a brand new project with no exisiting dependencies. A few examples:
+Some communities have strong preferences for particular licenses. If you want to participate in one of these, it will be easier to use the preferred license even if you're starting a brand new project with no existing dependencies. A few examples:
 
 {: .bullets}
 
