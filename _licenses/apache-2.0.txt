@@ -2,7 +2,7 @@
 title: Apache License 2.0
 spdx-id: Apache-2.0
 redirect_from: /licenses/apache/
-source: http://www.apache.org/licenses/LICENSE-2.0.html
+source: https://www.apache.org/licenses/LICENSE-2.0.html
 featured: true
 hidden: false
 
@@ -13,8 +13,8 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 note: The Apache Foundation recommends taking the additional step of adding a boilerplate notice to the header of each source file. You can find the notice at the very end of the license in the appendix.
 
 using:
-  - Android: https://github.com/android/platform_system_core/blob/master/NOTICE
-  - Apache: https://svn.apache.org/viewvc/httpd/httpd/trunk/LICENSE?view=markup
+  - Elasticsearch: https://github.com/elastic/elasticsearch/blob/master/LICENSE.txt
+  - Kubernetes: https://github.com/kubernetes/kubernetes/blob/master/LICENSE
   - Swift: https://github.com/apple/swift/blob/master/LICENSE.txt
 
 permissions:
@@ -215,7 +215,7 @@ limitations:
    APPENDIX: How to apply the Apache License to your work.
 
       To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "{}"
+      boilerplate notice, with the fields enclosed by brackets "[]"
       replaced with your own identifying information. (Don't include
       the brackets!)  The text should be enclosed in the appropriate
       comment syntax for the file format. We also recommend that a
@@ -223,7 +223,7 @@ limitations:
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright {yyyy} {name of copyright owner}
+   Copyright [yyyy] [name of copyright owner]
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
