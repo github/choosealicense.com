@@ -13,8 +13,8 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 note: The Apache Foundation recommends taking the additional step of adding a boilerplate notice to the header of each source file. You can find the notice at the very end of the license in the appendix.
 
 using:
-  - Android: https://github.com/android/platform_system_core/blob/master/NOTICE
-  - Apache: https://svn.apache.org/viewvc/httpd/httpd/trunk/LICENSE?view=markup
+  - Elasticsearch: https://github.com/elastic/elasticsearch/blob/master/LICENSE.txt
+  - Kubernetes: https://github.com/kubernetes/kubernetes/blob/master/LICENSE
   - Swift: https://github.com/apple/swift/blob/master/LICENSE.txt
 
 permissions:
