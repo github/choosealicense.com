@@ -99,7 +99,7 @@ def fsf_approved_licenses
   SpecHelper.fsf_approved_licenses ||= begin
     url = 'https://www.gnu.org/licenses/license-list.en.html'
     doc = Nokogiri::HTML(open(url).read)
-    list = doc.css('.green dt')
+    list = doc.css('.green dt') + doc.css('.orange dt')
     licenses = {}
     list.each do |license|
       a = license.css('a').find { |link| !link.text.nil? && !link.text.empty? && link.attr('id') }
@@ -112,6 +112,10 @@ def fsf_approved_licenses
     # FSF approved the Clear BSD, but doesn't use its SPDX ID or Name
     if licenses.keys.include? 'clearbsd'
       licenses['bsd-3-clause-clear'] = licenses['clearbsd']
+    end
+    # FSF approved the 4-clause BSD, but doesn't use its SPDX ID or Name
+    if licenses.keys.include? 'originalbsd'
+      licenses['bsd-4-clause'] = licenses['originalbsd']
     end
 
     licenses
