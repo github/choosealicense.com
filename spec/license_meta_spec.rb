@@ -35,7 +35,6 @@ describe 'license meta' do
           'cc-by-4.0',
           'cc-by-sa-4.0',
           'eupl-1.1',
-          'gpl-2.0',
           'lgpl-2.1',
           'lgpl-3.0',
           'lppl-1.3c',
