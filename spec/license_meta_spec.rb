@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'licensee'
 require 'spec_helper'
 
 describe 'license meta' do
@@ -18,6 +19,8 @@ describe 'license meta' do
         missing = required - raw_fields.keys
         expect(missing).to be_empty
       end
+
+      examples = raw_fields['using'] || []
 
       it 'using contains 3 examples' do
         legacy = [
@@ -43,8 +46,32 @@ describe 'license meta' do
           'zlib'
         ]
         skip 'added before 3 using examples required' if legacy.include?(license['slug'])
-        examples = raw_fields['using'] || []
         expect(examples.length).to eq(3)
+      end
+
+      context 'licensee detects using examples' do
+        module Licensee
+          class License
+            class << self
+              def license_dir
+                dir = ::File.dirname(__FILE__)
+                ::File.expand_path '../_licenses', dir
+              end
+            end
+          end
+        end
+
+        examples.each do |example|
+          example_url = example.values[0]
+          if example_url.index('https://github.com/') == 0
+            example_url.gsub!(%r{\Ahttps://github.com/(\w+/\w+)/blob/(\w+/\S+)\z}, 'https://raw.githubusercontent.com/\1/\2')
+          end
+          content = open(example_url).read
+          detected = Licensee::ProjectFiles::LicenseFile.new(content, 'LICENSE').license
+          it example_url do
+            expect(detected.key).to eq(license['slug'])
+          end
+        end
       end
     end
   end
