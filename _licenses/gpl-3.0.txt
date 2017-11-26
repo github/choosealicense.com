@@ -14,9 +14,9 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
 
 using:
+  - Ansible: https://github.com/ansible/ansible/blob/devel/COPYING
   - Bash: https://git.savannah.gnu.org/cgit/bash.git/tree/COPYING
   - GIMP: https://git.gnome.org/browse/gimp/tree/COPYING
-  - Privacy Badger: https://github.com/EFForg/privacybadgerfirefox/blob/master/LICENSE
 
 permissions:
   - commercial-use
