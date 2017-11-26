@@ -64,7 +64,7 @@ describe 'license meta' do
         examples.each do |example|
           example_url = example.values[0]
           if example_url.index('https://github.com/') == 0
-            example_url.gsub!(%r{\Ahttps://github.com/(\w+/\w+)/blob/(\w+/\S+)\z}, 'https://raw.githubusercontent.com/\1/\2')
+            example_url.gsub!(%r{\Ahttps://github.com/([\w-]+/[\w-]+)/blob/([\w-]+/\S+)\z}, 'https://raw.githubusercontent.com/\1/\2')
           end
           content = open(example_url).read
           detected = Licensee::ProjectFiles::LicenseFile.new(content, 'LICENSE').license
