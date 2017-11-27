@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'jekyll'
-require 'open-uri'
 require 'json'
 require 'open-uri'
 require 'nokogiri'
