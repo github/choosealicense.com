@@ -60,20 +60,27 @@ describe 'license meta' do
           end
         end
 
+        slug = license['slug']
+
         examples.each do |example|
           example_url = example.values[0]
-          if example_url.index('https://github.com/') == 0
-            example_url.gsub!(%r{\Ahttps://github.com/([\w-]+/[\w-]+)/blob/([\w-]+/\S+)\z}, 'https://raw.githubusercontent.com/\1/\2')
-          elsif example_url.index('https://git.savannah.gnu.org/') == 0 || example_url.index('https://git.gnome.org/') == 0
-            example_url.gsub!(%r{/tree/}, '/plain/')
-          elsif example_url.index('https://bitbucket.org/') == 0
-            example_url.gsub!(%r{/src/}, '/raw/')
-          end
-          content = open(example_url).read
-          detected = Licensee::ProjectFiles::LicenseFile.new(content, 'LICENSE').license
-          it example_url do
-            skip 'NCSA and PostgreSQL licenses hard to detect' if %(ncsa postgresql).include?(license['slug'])
-            expect(detected.key).to eq(license['slug'])
+
+          context "the #{example_url} URL" do
+            let(:content)  { open(example_url).read }
+            let(:detected) { Licensee::ProjectFiles::LicenseFile.new(content, 'LICENSE').license }
+
+            if example_url.start_with?('https://github.com/')
+              example_url.gsub!(%r{\Ahttps://github.com/([\w-]+/[\w-]+)/blob/([\w-]+/\S+)\z}, 'https://raw.githubusercontent.com/\1/\2')
+            elsif example_url.start_with?('https://git.savannah.gnu.org/', 'https://git.gnome.org/')
+              example_url.gsub!(%r{/tree/}, '/plain/')
+            elsif example_url.start_with?('https://bitbucket.org/')
+              example_url.gsub!(%r{/src/}, '/raw/')
+            end
+
+            it "is a #{slug} license" do
+              skip 'NCSA and PostgreSQL licenses hard to detect' if %(ncsa postgresql).include?(slug)
+              expect(detected.key).to eq(slug)
+            end
           end
         end
       end
