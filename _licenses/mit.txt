@@ -10,9 +10,9 @@ description: A short and simple permissive license with conditions only requirin
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
 using:
-  - jQuery: https://github.com/jquery/jquery/blob/master/LICENSE.txt
+  - Babel: https://github.com/babel/babel/blob/master/LICENSE
   - .NET Core: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT
-  - Rails: https://github.com/rails/rails/blob/master/activerecord/MIT-LICENSE
+  - Rails: https://github.com/rails/rails/blob/master/MIT-LICENSE
 
 permissions:
   - commercial-use
