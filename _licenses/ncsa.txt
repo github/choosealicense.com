@@ -32,8 +32,8 @@ University of Illinois/NCSA Open Source License
 
 Copyright (c) [year] [fullname]. All rights reserved. 
 
-Developed by: [fullname] 
-              [project] 
+Developed by: [project] 
+              [fullname] 
               [project_url]
                   
 Permission is hereby granted, free of charge, to any person 
