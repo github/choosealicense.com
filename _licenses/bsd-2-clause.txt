@@ -1,5 +1,5 @@
 ---
-title: BSD 2-clause "Simplified" License
+title: BSD 2-Clause "Simplified" License
 spdx-id: BSD-2-Clause
 redirect_from: /licenses/bsd/
 source: https://opensource.org/licenses/BSD-2-Clause
