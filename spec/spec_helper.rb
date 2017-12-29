@@ -71,8 +71,13 @@ def rule?(tag, group)
 end
 
 def spdx_list
-  url = 'https://raw.githubusercontent.com/sindresorhus/spdx-license-list/master/spdx.json'
-  SpecHelper.spdx ||= JSON.parse(open(url).read)
+  SpecHelper.spdx ||= begin
+    url = 'https://spdx.org/licenses/licenses.json'
+    list = JSON.parse(open(url).read)['licenses']
+    list.each_with_object({}) do |values, memo|
+      memo[values['licenseId']] = values
+    end
+  end
 end
 
 def spdx_ids
@@ -86,7 +91,7 @@ end
 def osi_approved_licenses
   SpecHelper.osi_approved_licenses ||= begin
     licenses = {}
-    list = spdx_list.select { |_id, meta| meta['osiApproved'] }
+    list = spdx_list.select { |_id, meta| meta['isOsiApproved'] }
     list.each do |id, meta|
       licenses[id.downcase] = meta['name']
     end
