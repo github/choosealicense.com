@@ -1,5 +1,5 @@
 ---
-title: BSD 3-clause "New" or "Revised" License
+title: BSD 3-Clause "New" or "Revised" License
 spdx-id: BSD-3-Clause
 source: https://opensource.org/licenses/BSD-3-Clause
 hidden: false
