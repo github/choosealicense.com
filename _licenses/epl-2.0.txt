@@ -10,7 +10,9 @@ description: This commercially-friendly copyleft license provides the ability to
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
 using:
+  - Eclipse Ditto: https://github.com/eclipse/ditto/blob/master/LICENSE
   - Eclipse SmartHome: https://github.com/eclipse/smarthome/blob/master/LICENSE
+  - SUMO: https://github.com/DLR-TS/sumo/blob/master/COPYING
 
 permissions:
   - commercial-use
