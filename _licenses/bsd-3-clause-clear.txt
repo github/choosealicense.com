@@ -1,5 +1,5 @@
 ---
-title: BSD 3-clause Clear License
+title: BSD 3-Clause Clear License
 spdx-id: BSD-3-Clause-Clear
 source: https://spdx.org/licenses/BSD-3-Clause-Clear.html
 
