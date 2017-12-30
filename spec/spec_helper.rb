@@ -2,6 +2,7 @@
 
 require 'jekyll'
 require 'json'
+require 'licensee'
 require 'open-uri'
 require 'nokogiri'
 
@@ -137,4 +138,15 @@ end
 
 def approved_licenses
   (osi_approved_licenses.keys + fsf_approved_licenses.keys + od_approved_licenses.keys).flatten.uniq.sort
+end
+
+module Licensee
+  class License
+    class << self
+      def license_dir
+        dir = ::File.dirname(__FILE__)
+        ::File.expand_path '../_licenses', dir
+      end
+    end
+  end
 end
