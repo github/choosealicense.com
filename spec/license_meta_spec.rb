@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'licensee'
 require 'spec_helper'
 
 describe 'license meta' do
@@ -49,17 +48,6 @@ describe 'license meta' do
       end
 
       context 'licensee detects using examples' do
-        module Licensee
-          class License
-            class << self
-              def license_dir
-                dir = ::File.dirname(__FILE__)
-                ::File.expand_path '../_licenses', dir
-              end
-            end
-          end
-        end
-
         slug = license['slug']
 
         examples.each do |example|
