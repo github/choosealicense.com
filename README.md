@@ -69,7 +69,7 @@ The licenses on choosealicense.com are regularly imported to GitHub.com to be us
 * `project` - The repository name
 * `description` - The description of the repository
 * `year` - The current year
-* `project_url` - The repository URL or other project website
+* `projecturl` - The repository URL or other project website
 
 ## License properties
 
