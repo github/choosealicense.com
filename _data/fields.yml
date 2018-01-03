@@ -22,5 +22,5 @@
 - name: year
   description: The current year
 
-- name: project_url
+- name: projecturl
   description: The repository URL or other project website
