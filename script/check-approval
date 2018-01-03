@@ -52,6 +52,7 @@ approvals.each do |approver, licenses|
   rows << ["#{approver} approved", licenses.include?(license)]
 end
 
+license_ids = licenses.map { |l| l['id'] }
 current = license_ids.include?(license)
 rows << ['Current license', current]
 
