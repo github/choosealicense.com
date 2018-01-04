@@ -8,9 +8,9 @@ description: The European Union Public Licence (EUPL) is a copyleft free/open so
 how: Indicate “Licensed under the EUPL” following the copyright notice of your source code, for example in a README file or directly in a source code file as a comment.
 
 using:
-  - ZoneMTA: https://github.com/zone-eu/zone-mta/blob/master/LICENSE
-  - WildDuck: https://github.com/nodemailer/wildduck/blob/master/LICENSE
   - AethysRotation: https://github.com/SimCMinMax/AethysRotation/blob/master/LICENSE
+  - WildDuck: https://github.com/nodemailer/wildduck/blob/master/LICENSE
+  - ZoneMTA: https://github.com/zone-eu/zone-mta/blob/master/LICENSE
 
 permissions:
   - commercial-use
