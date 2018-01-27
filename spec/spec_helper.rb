@@ -4,7 +4,6 @@ require 'jekyll'
 require 'json'
 require 'licensee'
 require 'open-uri'
-require 'nokogiri'
 
 module SpecHelper
   class << self
@@ -86,7 +85,7 @@ def spdx_ids
 end
 
 def find_spdx(license)
-  spdx_list.find { |name, _properties| name == license }
+  spdx_list.find { |name, _properties| name.casecmp(license).zero? }
 end
 
 def osi_approved_licenses
@@ -102,23 +101,15 @@ end
 
 def fsf_approved_licenses
   SpecHelper.fsf_approved_licenses ||= begin
-    url = 'https://www.gnu.org/licenses/license-list.en.html'
-    doc = Nokogiri::HTML(open(url).read)
-    list = doc.css('.green dt')
+    url = 'https://wking.github.io/fsf-api/licenses-full.json'
+    object = JSON.parse(open(url).read)
     licenses = {}
-    list.each do |license|
-      a = license.css('a').find { |link| !link.text.nil? && !link.text.empty? && link.attr('id') }
-      next if a.nil?
-      id = a.attr('id').downcase
-      name = a.text.strip
-      licenses[id] = name
+    object.each_value do |meta|
+      next unless (meta.include? 'identifiers') && (meta['identifiers'].include? 'spdx') && (meta.include? 'tags') && (meta['tags'].include? 'libre')
+      meta['identifiers']['spdx'].each do |identifier|
+        licenses[identifier.downcase] = meta['name']
+      end
     end
-
-    # FSF approved the Clear BSD, but doesn't use its SPDX ID or Name
-    if licenses.keys.include? 'clearbsd'
-      licenses['bsd-3-clause-clear'] = licenses['clearbsd']
-    end
-
     licenses
   end
 end
