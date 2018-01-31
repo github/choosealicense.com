@@ -10,7 +10,7 @@ describe 'shown licenses' do
     apache-2.0
     bsd-2-clause
     bsd-3-clause
-    epl-1.0
+    epl-2.0
     gpl-2.0
     gpl-3.0
     lgpl-2.1

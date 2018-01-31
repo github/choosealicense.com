@@ -1,10 +1,9 @@
 # frozen_string_literal: true
 
 require 'jekyll'
-require 'open-uri'
 require 'json'
+require 'licensee'
 require 'open-uri'
-require 'nokogiri'
 
 module SpecHelper
   class << self
@@ -72,8 +71,13 @@ def rule?(tag, group)
 end
 
 def spdx_list
-  url = 'https://raw.githubusercontent.com/sindresorhus/spdx-license-list/master/spdx.json'
-  SpecHelper.spdx ||= JSON.parse(open(url).read)
+  SpecHelper.spdx ||= begin
+    url = 'https://spdx.org/licenses/licenses.json'
+    list = JSON.parse(open(url).read)['licenses']
+    list.each_with_object({}) do |values, memo|
+      memo[values['licenseId']] = values
+    end
+  end
 end
 
 def spdx_ids
@@ -81,13 +85,13 @@ def spdx_ids
 end
 
 def find_spdx(license)
-  spdx_list.find { |name, _properties| name == license }
+  spdx_list.find { |name, _properties| name.casecmp(license).zero? }
 end
 
 def osi_approved_licenses
   SpecHelper.osi_approved_licenses ||= begin
     licenses = {}
-    list = spdx_list.select { |_id, meta| meta['osiApproved'] }
+    list = spdx_list.select { |_id, meta| meta['isOsiApproved'] }
     list.each do |id, meta|
       licenses[id.downcase] = meta['name']
     end
@@ -97,23 +101,15 @@ end
 
 def fsf_approved_licenses
   SpecHelper.fsf_approved_licenses ||= begin
-    url = 'https://www.gnu.org/licenses/license-list.en.html'
-    doc = Nokogiri::HTML(open(url).read)
-    list = doc.css('.green dt')
+    url = 'https://wking.github.io/fsf-api/licenses-full.json'
+    object = JSON.parse(open(url).read)
     licenses = {}
-    list.each do |license|
-      a = license.css('a').find { |link| !link.text.nil? && !link.text.empty? && link.attr('id') }
-      next if a.nil?
-      id = a.attr('id').downcase
-      name = a.text.strip
-      licenses[id] = name
+    object.each_value do |meta|
+      next unless (meta.include? 'identifiers') && (meta['identifiers'].include? 'spdx') && (meta.include? 'tags') && (meta['tags'].include? 'libre')
+      meta['identifiers']['spdx'].each do |identifier|
+        licenses[identifier.downcase] = meta['name']
+      end
     end
-
-    # FSF approved the Clear BSD, but doesn't use its SPDX ID or Name
-    if licenses.keys.include? 'clearbsd'
-      licenses['bsd-3-clause-clear'] = licenses['clearbsd']
-    end
-
     licenses
   end
 end
@@ -133,4 +129,15 @@ end
 
 def approved_licenses
   (osi_approved_licenses.keys + fsf_approved_licenses.keys + od_approved_licenses.keys).flatten.uniq.sort
+end
+
+module Licensee
+  class License
+    class << self
+      def license_dir
+        dir = ::File.dirname(__FILE__)
+        ::File.expand_path '../_licenses', dir
+      end
+    end
+  end
 end
