@@ -54,7 +54,7 @@ describe 'license meta' do
           example_url = example.values[0]
 
           context "the #{example_url} URL" do
-            let(:content)  { open(example_url).read }
+            let(:content)  { OpenURI.open_uri(example_url).read }
             let(:detected) { Licensee::ProjectFiles::LicenseFile.new(content, 'LICENSE').license }
 
             if example_url.start_with?('https://github.com/')
