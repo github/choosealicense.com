@@ -45,8 +45,6 @@ find it in the GitHub repository. Then click the `Edit` button. Make your
 changes, type in a commit message, and click the `Propose File Change` button.
 That’s it!
 
-You will be asked to sign the [GitHub Contributor License Agreement](https://cla.github.com/) for this project when you make your first pull request. 
-
 For more advanced changes, check out [the bootstrap instructions](https://github.com/github/choosealicense.com#run-it-on-your-machine) in the [project's readme](/README.md).
 
 ## Testing
