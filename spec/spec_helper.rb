@@ -73,7 +73,7 @@ end
 def spdx_list
   SpecHelper.spdx ||= begin
     url = 'https://spdx.org/licenses/licenses.json'
-    list = JSON.parse(open(url).read)['licenses']
+    list = JSON.parse(OpenURI.open_uri(url).read)['licenses']
     list.each_with_object({}) do |values, memo|
       memo[values['licenseId']] = values
     end
@@ -102,7 +102,7 @@ end
 def fsf_approved_licenses
   SpecHelper.fsf_approved_licenses ||= begin
     url = 'https://wking.github.io/fsf-api/licenses-full.json'
-    object = JSON.parse(open(url).read)
+    object = JSON.parse(OpenURI.open_uri(url).read)
     licenses = {}
     object.each_value do |meta|
       next unless (meta.include? 'identifiers') && (meta['identifiers'].include? 'spdx') && (meta.include? 'tags') && (meta['tags'].include? 'libre')
@@ -117,7 +117,7 @@ end
 def od_approved_licenses
   SpecHelper.od_approved_licenses ||= begin
     url = 'http://licenses.opendefinition.org/licenses/groups/od.json'
-    data = open(url).read
+    data = OpenURI.open_uri(url).read
     data = JSON.parse(data)
     licenses = {}
     data.each do |id, meta|

@@ -2,6 +2,8 @@
 
 We love Pull Requests! Your contributions help make ChooseALicense.com great.
 
+Contributions to this project are [released](https://help.github.com/articles/github-terms-of-service/#6-contributions-under-repository-license) to the public under the [project's open source license](LICENSE.md).
+
 Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
 ## Getting Started
@@ -42,8 +44,6 @@ For example, to [change this file](/CONTRIBUTING.md),
 find it in the GitHub repository. Then click the `Edit` button. Make your
 changes, type in a commit message, and click the `Propose File Change` button.
 That’s it!
-
-You will be asked to sign the [GitHub Contributor License Agreement](https://cla.github.com/) for this project when you make your first pull request. 
 
 For more advanced changes, check out [the bootstrap instructions](https://github.com/github/choosealicense.com#run-it-on-your-machine) in the [project's readme](/README.md).
 
