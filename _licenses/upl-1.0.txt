@@ -1,5 +1,5 @@
 ---
-title: The Universal Permissive License (UPL), Version 1.0
+title: Universal Permissive License v1.0
 spdx-id: UPL-1.0
 source: https://oss.oracle.com/licenses/upl/
 featured: true
