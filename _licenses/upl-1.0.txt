@@ -12,9 +12,9 @@ how: Insert the license or a link to it along with a copyright notice into your 
 note: It is recommended to add a link to the license and copyright notice at the top of each source file, example text can be found at https://oss.oracle.com/licenses/upl/.
 
 using:
-  - ODPI: https://github.com/oracle/odpi
-  - Souffle: https://github.com/souffle-lang/souffle
-  - Graal: https://github.com/oracle/graal
+  - WebLogic Kubernetes Operator: https://github.com/oracle/weblogic-kubernetes-operator
+  - Oracle Product Images for Docker: https://github.com/oracle/docker-images
+  - Oracle Product Boxes for Vagrant: https://github.com/oracle/vagrant-boxes
 
 permissions:
   - commercial-use
