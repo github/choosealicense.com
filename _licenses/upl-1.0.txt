@@ -30,7 +30,7 @@ limitations:
 
 ---
 
-Copyright (c) <year> <copyright holders>
+Copyright (c) [year] [fullname]
 
 The Universal Permissive License (UPL), Version 1.0
 
