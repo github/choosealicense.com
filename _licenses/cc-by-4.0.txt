@@ -1,5 +1,5 @@
 ---
-title: Creative Commons Attribution 4.0
+title: Creative Commons Attribution 4.0 International
 spdx-id: CC-BY-4.0
 source: https://creativecommons.org/licenses/by/4.0/legalcode.txt
 
