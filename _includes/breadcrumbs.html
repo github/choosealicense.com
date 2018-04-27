@@ -2,9 +2,9 @@
   <ol>
     <li>
       {% if page.layout == "license" %}
-        <a href="/">Home</a> / <a href="/licenses/">Licenses</a>
+        <a href="/">{{ site.data.locale[site.locale].breadcrumb.home }}</a> / <a href="/licenses/">{{ site.data.locale[site.locale].breadcrumb.licenses }}</a>
       {% else %}
-        <a href="/">Home</a>
+        <a href="/">{{ site.data.locale[site.locale].breadcrumb.home }}</a>
       {% endif %}
     </li>
   </ol>

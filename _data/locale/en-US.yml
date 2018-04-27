@@ -1,0 +1,28 @@
+breadcrumb:
+  home: Home
+  licenses: Licenses
+
+sidebar:
+  clipboard: Copy license text to clipboard
+  how_to_apply: How to apply this license
+  note: Note
+  optional: Optional
+  add: Add
+  or: or
+  disallow: to disallow future versions
+  package: to your project's package description, if applicable
+  exempli_gratia: e.g.
+  and: and
+  ensure: This will ensure the license is displayed in package directories.
+  source: Source
+  projects_with_license: Who's using this license?
+
+license_overview:
+  view_full: View full
+
+footer:
+  about: About
+  table_of_contents: Table of Contents
+  licenses: The content of this site is licensed under the <a href="https://creativecommons.org/licenses/by/3.0/">
+  Creative Commons Attribution 3.0 Unported License</a>
+  with_love: Curated with &lt;3 by <a href="https://github.com">GitHub, Inc.</a> and <a href="https://github.com/github/choosealicense.com">You!</a>

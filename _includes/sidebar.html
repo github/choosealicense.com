@@ -1,34 +1,34 @@
 <div class="sidebar">
 
-  <a href="#" data-clipboard-target="#license-text" data-proofer-ignore="true" class="js-clipboard-button button">Copy license text to clipboard</a>
+  <a href="#" data-clipboard-target="#license-text" data-proofer-ignore="true" class="js-clipboard-button button">{{ site.data.locale[site.locale].sidebar.clipboard }}</a>
 
   <div class="how-to-apply">
-    <h3>How to apply this license</h3>
+    <h3>{{ site.data.locale[site.locale].sidebar.how_to_apply }}</h3>
     <p>
       {{ page.how | markdownify | remove: '<p>' | remove: '</p>' }}
     </p>
     {% if page.note %}
     <p class="note">
-      <strong>Note: </strong> {{ page.note | markdownify | remove: '<p>' | remove: '</p>' }}
+      <strong>{{ site.data.locale[site.locale].sidebar.note }}: </strong> {{ page.note | markdownify | remove: '<p>' | remove: '</p>' }}
     </p>
     {% endif %}
     {% assign xgpl = false %}
     {% if page.spdx-id contains 'GPL' %}{% assign xgpl = true %}{% endif %}
-    <p class="note"><strong>Optional: </strong> Add <strong><code>{{ page.spdx-id }}{% if xgpl %}-or-later{% endif %}</code></strong>{% if xgpl %} (or <strong><code>{{ page.spdx-id }}-only</code></strong> to disallow future versions){% endif %} to your project's package description, if applicable (e.g., <a href="https://docs.npmjs.com/files/package.json#license">Node.js</a>, <a href="http://guides.rubygems.org/specification-reference/#license=">Ruby</a>, and <a href="https://doc.rust-lang.org/cargo/reference/manifest.html#package-metadata">Rust</a>). This will ensure the license is displayed in package directories.</p>
+    <p class="note"><strong>{{ site.data.locale[site.locale].sidebar.optional }}: </strong> {{ site.data.locale[site.locale].sidebar.add }} <strong><code>{{ page.spdx-id }}{% if xgpl %}-or-later{% endif %}</code></strong>{% if xgpl %} ({{ site.data.locale[site.locale].sidebar.or }} <strong><code>{{ page.spdx-id }}-only</code></strong> {{ site.data.locale[site.locale].sidebar.disallow }}){% endif %} {{ site.data.locale[site.locale].sidebar.package }} ({{ site.data.locale[site.locale].sidebar.exempli_gratia }}, <a href="https://docs.npmjs.com/files/package.json#license">Node.js</a>, <a href="http://guides.rubygems.org/specification-reference/#license=">Ruby</a>, {{ site.data.locale[site.locale].sidebar.and }} <a href="https://doc.rust-lang.org/cargo/reference/manifest.html#package-metadata">Rust</a>). {{ site.data.locale[site.locale].sidebar.ensure }}</p>
   </div>
 
   {% if page.source %}
   <div class="source">
     <a href="{{ page.source }}">
       <span class="license-sprite"></span>
-      Source
+      {{ site.data.locale[site.locale].sidebar.source }}
     </a>
   </div>
   {% endif %}
 
   {% if page.using %}
   <div class="projects-with-license">
-    <h3>Who's using this license?</h3>
+    <h3>{{ site.data.locale[site.locale].sidebar.projects_with_license }}</h3>
     <ul>
       {% for using in page.using %}
         {% for hash in using %}
