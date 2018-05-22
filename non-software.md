@@ -8,7 +8,7 @@ Open source software licenses can be used for non-software works, and often are 
 
 ### Data, media, etc.
 
-[CC0-1.0](/licenses/cc0-1.0/), [CC-BY-4.0](/licenses/cc-by-4.0/), and [CC-BY-SA-4.0](/licenses/cc-by-sa-4.0/) are [open](http://opendefinition.org) licenses used for non-software material ranging from datasets to videos. Note that CC-BY-4.0 and CC-BY-SA-4.0 should [not be used for software](https://creativecommons.org/faq/#can-i-apply-a-creative-commons-license-to-software).
+[CC0-1.0](/licenses/cc0-1.0/), [CC-BY-4.0](/licenses/cc-by-4.0/), and [CC-BY-SA-4.0](/licenses/cc-by-sa-4.0/) are [open](https://opendefinition.org) licenses used for non-software material ranging from datasets to videos. Note that CC-BY-4.0 and CC-BY-SA-4.0 should [not be used for software](https://creativecommons.org/faq/#can-i-apply-a-creative-commons-license-to-software).
 
 ### Documentation
 

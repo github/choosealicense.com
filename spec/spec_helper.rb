@@ -116,7 +116,7 @@ end
 
 def od_approved_licenses
   SpecHelper.od_approved_licenses ||= begin
-    url = 'http://licenses.opendefinition.org/licenses/groups/od.json'
+    url = 'https://licenses.opendefinition.org/licenses/groups/od.json'
     data = OpenURI.open_uri(url).read
     data = JSON.parse(data)
     licenses = {}
