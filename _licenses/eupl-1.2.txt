@@ -1,7 +1,7 @@
 ---
 title: European Union Public License 1.2
 spdx-id: EUPL-1.2
-source: http://eur-lex.europa.eu/legal-content/TXT/?uri=CELEX%3A32017D0863
+source: https://eur-lex.europa.eu/legal-content/TXT/?uri=CELEX%3A32017D0863
 
 description: The European Union Public Licence (EUPL) is a copyleft free/open source software license created on the initiative of and approved by the European Commission in 22 official languages of the European Union.
 
@@ -127,7 +127,7 @@ limitations thereto.
 
 The grant of the rights mentioned above is subject to some restrictions and
 obligations imposed on the Licensee. Those obligations are the following:
- 
+
 Attribution right: The Licensee shall keep intact all copyright, patent or
 trademarks notices and all notices that refer to the Licence and to the
 disclaimer of warranties. The Licensee must include a copy of such notices and
