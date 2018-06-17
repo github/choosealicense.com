@@ -1,7 +1,7 @@
 ---
 title: The Unlicense
 spdx-id: Unlicense
-source: http://unlicense.org/UNLICENSE
+source: https://unlicense.org/UNLICENSE
 hidden: false
 
 description: A license with no conditions whatsoever which dedicates works to the public domain. Unlicensed works, modifications, and larger works may be distributed under different terms and without source code.
@@ -10,8 +10,8 @@ how: Create a text file (typically named UNLICENSE or UNLICENSE.txt) in the root
 
 using:
   - youtube-dl: https://github.com/rg3/youtube-dl/blob/master/LICENSE
-  - stacktrace.js: https://github.com/stacktracejs/stacktrace.js/blob/master/LICENSE
   - kakoune: https://github.com/mawww/kakoune/blob/master/UNLICENSE
+  - RDF.rb: https://github.com/ruby-rdf/rdf/blob/master/UNLICENSE
 
 permissions:
   - private-use

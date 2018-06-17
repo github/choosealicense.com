@@ -5,7 +5,12 @@ script: "./script/cibuild"
 #environment
 language: ruby
 rvm:
-  - 2.3.3
+  - 2.4.2
+
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
 
 branches:
   only:
