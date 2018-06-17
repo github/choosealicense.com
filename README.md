@@ -1,8 +1,31 @@
-**[ChooseALicense.com](http://choosealicense.com)** aims to provide **accurate**, **non-judgmental**, and **understandable** information about **open source licenses** in order to **help people make informed decisions** about the projects they start, maintain, contribute to, and use.
+**[ChooseALicense.com](https://choosealicense.com)** aims to provide **accurate**, **non-judgmental**, and **understandable** information about **open source licenses** in order to **help people make informed decisions** about the projects they start, maintain, contribute to, and use.
 
 [![Build Status](https://travis-ci.org/github/choosealicense.com.svg?branch=gh-pages)](https://travis-ci.org/github/choosealicense.com)
 
-We catalog [select](CONTRIBUTING.md#adding-a-license) open source licenses with a [Jekyll collection](https://jekyllrb.com/docs/collections/) (in `_licenses`). The catalog is used to render [ChooseALicense.com](http://choosealicense.com) and is regularly vendored into [Licensee](https://github.com/benbalter/licensee), which GitHub uses to provide a [license chooser and license detection](https://help.github.com/articles/adding-a-license-to-a-repository/), a [licenses API](https://developer.github.com/v3/licenses/), and to [display license descriptions and metadata](https://github.com/blog/2335-open-source-license-descriptions-and-metadata).
+We catalog [select](CONTRIBUTING.md#adding-a-license) open source licenses with a [Jekyll collection](https://jekyllrb.com/docs/collections/) (in `_licenses`). The catalog is used to render [ChooseALicense.com](https://choosealicense.com) and is regularly vendored into [Licensee](https://github.com/benbalter/licensee), which GitHub uses to provide a [license chooser and license detection](https://help.github.com/articles/adding-a-license-to-a-repository/), a [licenses API](https://developer.github.com/v3/licenses/), and to [display license descriptions and metadata](https://github.com/blog/2335-open-source-license-descriptions-and-metadata).
+
+## Goals
+
+* Be accurate, non-judgmental, and understandable. Our goal is to help you find a license that meets *your* goals.
+* The homepage should have just enough to help most folks make a decision about what license to use for a project they contribute to.
+* For the rest, the site will contain additional information about licenses common to specific communities and situations.
+* Collaborate with and reinforce other licensing best practices and standards projects.
+* Not comprehensive. Seems like an odd goal, but there are a bajillion licenses out there. We're going to have to filter that down to a small list of those that matter.
+
+## Run It On Your Machine
+
+```bash
+git clone https://github.com/github/choosealicense.com.git
+cd choosealicense.com
+script/bootstrap
+script/server
+```
+
+Open `http://localhost:4000` in your favorite browser.
+
+## Adding a license
+
+For information on adding a license, see [the CONTRIBUTING file](https://github.com/github/choosealicense.com/blob/gh-pages/CONTRIBUTING.md#adding-a-license).
 
 ## License metadata
 
