@@ -125,6 +125,10 @@ strong {
   width: 220px;
 }
 
+.situations .patents {
+  margin-top: 16px;
+}
+
 .situations .whatever {
   margin-top: 16px;
 }
@@ -143,9 +147,9 @@ strong {
   display: inline-block;
 }
 
-.three-arrows { background-position: 0 0;      width: 72px; height: 57px; }
-.lightbulb    { background-position: 0 -57px;  width: 43px; height: 72px; }
-.circular     { background-position: 0 -129px; width: 72px; height: 69px; }
+.three-arrows { background-position: 0 0;      width: 72px; height: 56px; }
+.lightbulb    { background-position: 0 -57px;  width: 72px; height: 56px; }
+.circular     { background-position: 0 -115px; width: 72px; height: 68px; }
 
 
 .license-overview {
@@ -441,9 +445,9 @@ strong {
   .lightbulb,
   .circular {
     background-image: url(../img/home-sprite@2x.png);
-    -webkit-background-size: 72px 198px;
-    -moz-background-size: 72px 198px;
-    background-size: 72px 198px;
+    -webkit-background-size: 72px 182px;
+    -moz-background-size: 72px 182px;
+    background-size: 72px 182px;
   }
 
   .license-sprite {
