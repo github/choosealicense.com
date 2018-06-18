@@ -125,7 +125,7 @@ strong {
   width: 220px;
 }
 
-.situations .patents {
+.situations .existing {
   margin-top: 16px;
 }
 
@@ -148,7 +148,7 @@ strong {
 }
 
 .three-arrows { background-position: 0 0;      width: 72px; height: 56px; }
-.lightbulb    { background-position: 0 -57px;  width: 72px; height: 56px; }
+.community    { background-position: 0 -57px;  width: 72px; height: 56px; }
 .circular     { background-position: 0 -115px; width: 72px; height: 68px; }
 
 
@@ -442,7 +442,7 @@ strong {
  only screen and (-o-min-device-pixel-ratio: 200/100),
  only screen and (min-device-pixel-ratio: 2.0) {
   .three-arrows,
-  .lightbulb,
+  .community,
   .circular {
     background-image: url(../img/home-sprite@2x.png);
     -webkit-background-size: 72px 182px;
