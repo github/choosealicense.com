@@ -16,7 +16,7 @@ end
 
 group :test do
   gem 'html-proofer', '~> 3.0'
-  gem 'nokogiri'
+  gem 'licensee'
   gem 'rake'
   gem 'rspec'
   gem 'rubocop'

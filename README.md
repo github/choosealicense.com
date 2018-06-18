@@ -8,7 +8,7 @@ Like a Choose Your Own Adventure site, but only much less interesting.
 
 A lot of repositories on GitHub.com don't have a license. GitHub provides a license chooser, but if you don't know anything about licenses, how are you supposed to make an informed decision?
 
-[ChooseALicense.com](http://www.choosealicense.com "Choose A Licence website") is designed to help people make an informed decision about licenses by demystifying license choices through non-judgmental guidance.
+[ChooseALicense.com](https://www.choosealicense.com "Choose A Licence website") is designed to help people make an informed decision about licenses by demystifying license choices through non-judgmental guidance.
 
 ## Immediate Goals
 
@@ -39,8 +39,8 @@ Licenses sit in the `/_licenses` folder. Each license has YAML front matter desc
 
 #### Required fields
 
-* `title` - The license full name specified by http://spdx.org/licenses/
-* `spdx-id` - Short identifier specified by http://spdx.org/licenses/
+* `title` - The license full name specified by https://spdx.org/licenses/
+* `spdx-id` - Short identifier specified by https://spdx.org/licenses/
 * `source` - The URL to the license source text
 * `description` - A human-readable description of the license
 * `how` - Instructions on how to implement the license
@@ -52,7 +52,7 @@ Licenses sit in the `/_licenses` folder. Each license has YAML front matter desc
 #### Optional fields
 
 * `featured` - Whether the license should be featured on the main page (defaults to false)
-* `hidden` - Whether the license is neither [popular](https://opensource.org/licenses) nor fills out the [spectrum of licenses](http://choosealicense.com/licenses/) from strongly conditional to unconditional (defaults to true)
+* `hidden` - Whether the license is neither [popular](https://opensource.org/licenses) nor fills out the [spectrum of licenses](https://choosealicense.com/licenses/) from strongly conditional to unconditional (defaults to true)
 * `nickname` - Customary short name if applicable (e.g, GPLv3)
 * `note` - Additional information about the licenses
 * `redirect_from` - Relative path(s) to redirect to the license from, to prevent breaking old URLs
@@ -69,6 +69,7 @@ The licenses on choosealicense.com are regularly imported to GitHub.com to be us
 * `project` - The repository name
 * `description` - The description of the repository
 * `year` - The current year
+* `projecturl` - The repository URL or other project website
 
 ## License properties
 
@@ -103,4 +104,4 @@ The license properties (rules) are stored as a bulleted list within the licenses
 
 ## License
 
-The content of this project itself is licensed under the [Creative Commons Attribution 3.0 license](http://creativecommons.org/licenses/by/3.0/us/deed.en_US), and the underlying source code used to format and display that content is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).
+The content of this project itself is licensed under the [Creative Commons Attribution 3.0 license](https://creativecommons.org/licenses/by/3.0/us/deed.en_US), and the underlying source code used to format and display that content is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php).
