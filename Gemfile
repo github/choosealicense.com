@@ -8,6 +8,8 @@ versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 
 gem 'github-pages', versions['github-pages']
 
+gem "jekyll-github-metadata"
+
 group :development do
   gem 'colored'
   gem 'fuzzy_match'
