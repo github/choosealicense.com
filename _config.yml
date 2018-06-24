@@ -40,7 +40,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-coffeescript
-  - jekyll-github-metadata
+  - jekyll-github-metadata # For 'Improve this page' links
 
 
 sass:
