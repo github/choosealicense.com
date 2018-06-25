@@ -42,7 +42,6 @@ plugins:
   - jekyll-coffeescript
   - jekyll-github-metadata # For 'Improve this page' links
 
-
 sass:
     style: :compressed
 
