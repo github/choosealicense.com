@@ -10,7 +10,7 @@ how: To use it, say that it is The PostgreSQL License, and then substitute the c
 using:
   - pgBadger: https://github.com/dalibo/pgbadger/blob/master/LICENSE
   - pgAdmin: https://github.com/postgres/pgadmin4/blob/master/LICENSE
-  - .NET Access to PostgreSQL: https://github.com/npgsql/npgsql/blob/dev/LICENSE.txt
+  - .NET Access to PostgreSQL: https://github.com/npgsql/npgsql/blob/dev/LICENSE
 
 permissions:
   - commercial-use
