@@ -12,7 +12,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 using:
   - Eclipse Ditto: https://github.com/eclipse/ditto/blob/master/LICENSE
   - Eclipse SmartHome: https://github.com/eclipse/smarthome/blob/master/LICENSE
-  - SUMO: https://github.com/DLR-TS/sumo/blob/master/COPYING
+  - SUMO: https://github.com/eclipse/sumo/blob/master/LICENSE
 
 permissions:
   - commercial-use
