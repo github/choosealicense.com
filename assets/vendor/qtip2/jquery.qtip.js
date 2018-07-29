@@ -2521,7 +2521,7 @@ $.extend(Tip.prototype, {
 			!((shift.x && shift.y) || (newCorner.x === CENTER && shift.y) || (newCorner.y === CENTER && shift.x))
 		);
 
-		// Adjust position to accomodate tip dimensions
+		// Adjust position to accommodate tip dimensions
 		pos.left -= offset.left.charAt ? offset.user : 
 			horizontal !== SHIFT || shift.top || !shift.left && !shift.top ? offset.left + this.border : 0;
 		pos.top -= offset.top.charAt ? offset.user : 
