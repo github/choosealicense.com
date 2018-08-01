@@ -34,6 +34,7 @@ exclude:
   - tests
   - assets/vendor/selectivizr/tests
   - assets/vendor/clipboard/test
+  - assets/vendor/*/README.*
 
 plugins:
   - jekyll-sitemap
