@@ -8,7 +8,7 @@ description: This commercially-friendly copyleft license provides the ability to
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
 using:
-  - Eclipse Che: https://github.com/eclipse/che/blob/master/LICENSE
+  - Eclipse hawkBit: https://github.com/eclipse/hawkbit/blob/master/LICENSE
   - JUnit: https://github.com/junit-team/junit4/blob/master/LICENSE-junit.txt
   - openHAB: https://github.com/openhab/openhab-distro/blob/master/LICENSE
 
