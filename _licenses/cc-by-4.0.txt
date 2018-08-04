@@ -1,7 +1,6 @@
 ---
 title: Creative Commons Attribution 4.0 International
 spdx-id: CC-BY-4.0
-source: https://creativecommons.org/licenses/by/4.0/legalcode.txt
 
 description: Permits almost any use subject to providing credit and license notice. Frequently used for media assets and educational materials. The most common license for Open Access scientific publications. Not recommended for software.
 
