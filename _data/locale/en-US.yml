@@ -23,6 +23,6 @@ license_overview:
 footer:
   about: About
   table_of_contents: Table of Contents
-  licenses: 'The content of this site is licensed under the <a href="https://creativecommons.org/licenses/by/3.0/">
-  Creative Commons Attribution 3.0 Unported License</a>
-  with_love: Curated with &lt;3 by <a href="https://github.com">GitHub, Inc.</a> and <a href="https://github.com/github/choosealicense.com">You!</a>'
+  licenses: 'The content of this site is licensed under the <a href="https://creativecommons.org/licenses/by/3.0/"> Creative Commons Attribution 3.0 Unported License</a>'
+  with_love: 'Curated with &lt;3 by <a href="https://github.com">GitHub, Inc.</a> and <a href="https://github.com/github/choosealicense.com">You!</a>'
+  help_improve: Help improve this page
