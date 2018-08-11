@@ -14,11 +14,11 @@ config = Jekyll.configuration('source' => site_path)
 site = Jekyll::Site.new(config)
 site.read
 site.collections['licenses'].docs.each do |license|
-  puts "Updating the #{license.data['title']}..."
-  text_file = File.join(text_dir, "#{license.data['spdx-id']}.txt")
-  spdx_text = File.read(text_file)
-
   license_key = license.data['spdx-id'].downcase
+  puts "Updating the #{license_key}..."
+  only = (license_key.include? 'gpl') ? '-only' : ''
+  text_file = File.join(text_dir, "#{license.data['spdx-id']}#{only}.txt")
+  spdx_text = File.read(text_file)
 
   if license_key == 'afl-3.0'
     # https://github.com/spdx/license-list/pull/20
