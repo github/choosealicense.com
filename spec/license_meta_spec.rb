@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'licensee'
 require 'spec_helper'
 
 describe 'license meta' do
@@ -49,28 +48,17 @@ describe 'license meta' do
       end
 
       context 'licensee detects using examples' do
-        module Licensee
-          class License
-            class << self
-              def license_dir
-                dir = ::File.dirname(__FILE__)
-                ::File.expand_path '../_licenses', dir
-              end
-            end
-          end
-        end
-
         slug = license['slug']
 
         examples.each do |example|
           example_url = example.values[0]
 
           context "the #{example_url} URL" do
-            let(:content)  { open(example_url).read }
+            let(:content)  { OpenURI.open_uri(example_url).read }
             let(:detected) { Licensee::ProjectFiles::LicenseFile.new(content, 'LICENSE').license }
 
             if example_url.start_with?('https://github.com/')
-              example_url.gsub!(%r{\Ahttps://github.com/([\w-]+/[\w-]+)/blob/([\w-]+/\S+)\z}, 'https://raw.githubusercontent.com/\1/\2')
+              example_url.gsub!(%r{\Ahttps://github.com/([\w-]+/[\w\.-]+)/blob/([\w-]+/\S+)\z}, 'https://raw.githubusercontent.com/\1/\2')
             elsif example_url.start_with?('https://git.savannah.gnu.org/', 'https://git.gnome.org/')
               example_url.gsub!(%r{/tree/}, '/plain/')
             elsif example_url.start_with?('https://bitbucket.org/')
