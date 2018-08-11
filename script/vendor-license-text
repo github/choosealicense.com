@@ -20,10 +20,7 @@ site.collections['licenses'].docs.each do |license|
   text_file = File.join(text_dir, "#{license.data['spdx-id']}#{only}.txt")
   spdx_text = File.read(text_file)
 
-  if license_key == 'afl-3.0'
-    # https://github.com/spdx/license-list/pull/20
-    spdx_text = spdx_text.gsub(/^ 4\)/, '4)')
-  elsif ['bsd-2-clause', 'bsd-3-clause'].include? license_key
+  if ['bsd-2-clause', 'bsd-3-clause'].include? license_key
     spdx_text = spdx_text.gsub(/<year>/, '[year]')
     spdx_text = spdx_text.gsub(/<owner>/, '[fullname]')
   elsif license_key == 'bsd-3-clause-clear'
