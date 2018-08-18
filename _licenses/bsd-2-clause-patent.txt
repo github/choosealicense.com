@@ -3,7 +3,7 @@ title: BSD 2-Clause + Patent
 spdx-id: BSD-2-Clause-Patent
 source: https://opensource.org/licenses/BSDplusPatent
 
-description: This license is designed to provide: a) a simple permissive license; b) that is compatible with the GNU GPL-2.0; and c) which also has an express patent grant included.
+description: "This license is designed to provide: a) a simple permissive license; b) that is compatible with the GNU GPL-2.0; and c) which also has an express patent grant included."
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
