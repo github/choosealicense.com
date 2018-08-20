@@ -10,7 +10,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 using:
   - d3: https://github.com/d3/d3/blob/master/LICENSE
   - LevelDB: https://github.com/google/leveldb/blob/master/LICENSE
-  - Scala: https://github.com/scala/scala/blob/2.13.x/LICENSE
+  - Quill: https://github.com/quilljs/quill/blob/develop/LICENSE
 
 permissions:
   - commercial-use
