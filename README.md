@@ -35,7 +35,6 @@ Licenses sit in the `/_licenses` folder. Each license has YAML front matter desc
 
 * `title` - The license full name specified by https://spdx.org/licenses/
 * `spdx-id` - Short identifier specified by https://spdx.org/licenses/
-* `source` - The URL to the license source text
 * `description` - A human-readable description of the license
 * `how` - Instructions on how to implement the license
 * `using` - A list of 3 notable projects using the license with straightforward LICENSE files which serve as examples newcomers can follow and that can be detected by [licensee](https://github.com/benbalter/licensee) in the form of `project_name: license_file_url`
