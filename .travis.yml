@@ -12,9 +12,6 @@ addons:
     packages:
     - libcurl4-openssl-dev
 
-before_install:
-  - gem install bundler --version 1.16.2
-
 branches:
   only:
     - gh-pages
