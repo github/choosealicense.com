@@ -1,7 +1,6 @@
 ---
 title: zlib License
 spdx-id: Zlib
-source: https://opensource.org/licenses/Zlib
 
 description: A short permissive license, compatible with GPL. Requires altered source versions to be documented as such.
 

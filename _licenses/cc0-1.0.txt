@@ -2,7 +2,6 @@
 title: Creative Commons Zero v1.0 Universal
 spdx-id: CC0-1.0
 redirect_from: /licenses/cc0/
-source: https://creativecommons.org/publicdomain/zero/1.0/
 
 description: The <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0 Public Domain Dedication</a> waives copyright interest in a work you've created and dedicates it to the world-wide public domain. Use CC0 to opt out of copyright entirely and ensure your work has the widest reach. As with the Unlicense and typical software licenses, CC0 disclaims warranties. CC0 is very similar to the Unlicense.
 

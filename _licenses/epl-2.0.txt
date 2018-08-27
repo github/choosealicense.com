@@ -2,7 +2,6 @@
 title: Eclipse Public License 2.0
 spdx-id: EPL-2.0
 redirect_from: /licenses/eclipse/
-source: https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.txt
 hidden: false
 
 description: This commercially-friendly copyleft license provides the ability to commercially license binaries; a modern royalty-free patent license grant; and the ability for linked works to use other licenses, including commercial ones.

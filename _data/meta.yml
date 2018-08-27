@@ -9,10 +9,6 @@
   description: Short identifier specified by https://spdx.org/licenses/
   required: true
 
-- name: source
-  description: The URL to the license source text
-  required: true
-
 - name: description
   description: A human-readable description of the license
   required: true

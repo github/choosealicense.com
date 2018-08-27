@@ -2,7 +2,6 @@
 title: SIL Open Font License 1.1
 spdx-id: OFL-1.1
 redirect_from: /licenses/ofl/
-source: http://scripts.sil.org/OFL_web
 
 description: The Open Font License (OFL) is maintained by SIL International. It attempts to be a compromise between the values of the free software and typeface design communities. It is used for almost all open source font projects, including those by Adobe, Google and Mozilla.
 

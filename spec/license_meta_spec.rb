@@ -26,8 +26,6 @@ describe 'license meta' do
           'afl-3.0',
           'agpl-3.0',
           'artistic-2.0',
-          'bsd-2-clause',
-          'bsd-3-clause',
           'bsd-3-clause-clear',
           'bsl-1.0',
           'cc0-1.0',
