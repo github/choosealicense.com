@@ -1,7 +1,6 @@
 ---
 title: MIT License
 spdx-id: MIT
-source: https://opensource.org/licenses/MIT
 featured: true
 hidden: false
 

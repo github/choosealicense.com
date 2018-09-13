@@ -5,7 +5,7 @@ script: "./script/cibuild"
 #environment
 language: ruby
 rvm:
-  - 2.4.2
+  - 2.5.1
 
 addons:
   apt:
