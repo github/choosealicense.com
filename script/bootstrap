@@ -3,7 +3,7 @@
 set -e
 
 echo "bundling installin'"
-gem install bundler --version 1.16.2
+gem install bundler
 bundle install
 
 echo
