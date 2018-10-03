@@ -2,7 +2,6 @@
 title: University of Illinois/NCSA Open Source License
 spdx-id: NCSA
 nickname: UIUC/NCSA
-source: https://opensource.org/licenses/NCSA
 
 description: The University of Illinois/NCSA Open Source License, or UIUC license, is a permissive free software license, based on the <a href="/licenses/mit/">MIT/X11 license</a>  and the <a href="/licenses/bsd-3-clause/">BSD 3-clause License</a>. Its conditions include requiring the preservation of copyright and license notices both in source and in binary distributions and the prohibition of using the names of the authors or the project organization to promote or endorse derived products.
 
