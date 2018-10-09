@@ -31,6 +31,7 @@ class Choosealicense
   constructor: ->
     @initTooltips()
     @initClipboard()
+    @initAutocomplete()
 
   # Init tooltip action
   initTooltips: ->
@@ -71,5 +72,25 @@ class Choosealicense
   clipboardComplete: (client, args) ->
     @textContent = "Copied!"
 
+  # Initializes JavaScript-autoComplete plugin
+  initAutocomplete: ->
+    new autoComplete {
+      selector: "#reposiory-search",
+      delay: 300,
+      source: (term, response) ->
+        $.getJSON "https://api.github.com/search/repositories", {q: term}, (data) ->
+          if data and data.total_count > 0
+            response (data.items
+              .filter (item) -> item.archived == false && !item.license
+              .map (item) -> item.full_name)
+          else
+            response([])
+      onSelect: (event, repository, item) ->
+        licenseId = event.target.getAttribute("data-license-id")
+        if licenseId
+          window.open 'https://github.com/'+repository+'/community/license/new?template='+licenseId
+        else
+          window.open 'https://github.com/'+repository+'/community/license/new'
+    }
 $ ->
   new Choosealicense()
