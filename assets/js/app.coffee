@@ -86,7 +86,7 @@ class Choosealicense
           else
             response([])
       onSelect: (event, repository, item) ->
-        licenseId = event.target.getAttribute("data-license-id")
+        licenseId = document.getElementById("reposiory-search").getAttribute("data-license-id")
         if licenseId
           window.open 'https://github.com/'+repository+'/community/license/new?template='+licenseId
         else
