@@ -1,0 +1,45 @@
+{
+  "name": "javascript-auto-complete",
+  "description": "An extremely lightweight vanilla JavaScript completion suggester.",
+  "version": "1.0.4",
+  "homepage": "https://github.com/Pixabay/JavaScript-autoComplete",
+  "authors": [
+    {
+      "name": "Simon Steinberger",
+      "url": "https://pixabay.com/users/Simon/",
+      "email": "simon@pixabay.com"
+    }
+  ],
+  "keywords": [
+    "autocomplete",
+    "autosuggest",
+    "autosuggester",
+    "suggest",
+    "suggester",
+    "completer",
+    "select",
+    "dropdown",
+    "ajax"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "ignore": [
+    "bower.json",
+    "demo.html",
+    "readme.md"
+  ],
+  "_release": "1.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.4",
+    "commit": "eda3201210a86f7fcfb7f496f4b2ca419ff423e8"
+  },
+  "_source": "https://github.com/Pixabay/JavaScript-autoComplete.git",
+  "_target": "^1.0.4",
+  "_originalSource": "javascript-auto-complete",
+  "_direct": true
+}
