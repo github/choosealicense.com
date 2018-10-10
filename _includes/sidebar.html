@@ -17,14 +17,12 @@
     <p class="note"><strong>Optional: </strong> Add <strong><code>{{ page.spdx-id }}{% if xgpl %}-or-later{% endif %}</code></strong>{% if xgpl %} (or <strong><code>{{ page.spdx-id }}-only</code></strong> to disallow future versions){% endif %} to your project's package description, if applicable (e.g., <a href="https://docs.npmjs.com/files/package.json#license">Node.js</a>, <a href="https://guides.rubygems.org/specification-reference/#license=">Ruby</a>, and <a href="https://doc.rust-lang.org/cargo/reference/manifest.html#package-metadata">Rust</a>). This will ensure the license is displayed in package directories.</p>
   </div>
 
-  {% if page.source %}
   <div class="source">
     <a href="https://spdx.org/licenses/{{ page.spdx-id }}.html">
       <span class="license-sprite"></span>
       Source
     </a>
   </div>
-  {% endif %}
 
   {% if page.using %}
   <div class="projects-with-license">
