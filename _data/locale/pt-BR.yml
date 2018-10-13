@@ -1,0 +1,28 @@
+breadcrumb:
+  home: Início
+  licenses: Licenças
+
+sidebar:
+  clipboard: Copiar texto da licença para a área de transferência
+  how_to_apply: Como aplicar esta licença
+  note: Nota
+  optional: Opcional
+  add: Adicionar
+  or: ou
+  disallow: para não permitir versões futuras
+  package: para a descrição do pacote do seu projeto, se aplicável
+  exempli_gratia: e.x.
+  and: e
+  ensure: Isso garantirá que a licença seja exibida nos diretórios de pacotes.
+  source: Fonte
+  projects_with_license: Quem está usando esta licença?
+
+license_overview:
+  view_full: Visualização completa
+
+footer:
+  about: Sobre
+  table_of_contents: Índice
+  licenses: 'O conteúdo deste site está licenciado sob a <a href="https://creativecommons.org/licenses/by/3.0/"> Licença Creative Commons Attribution 3.0 Unported</a>'
+  with_love: 'Curado com &lt;3 por <a href="https://github.com">GitHub, Inc.</a> e <a href="https://github.com/github/choosealicense.com">Você!</a>'
+  help_improve: Ajude a melhorar esta página

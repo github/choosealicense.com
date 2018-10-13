@@ -5,6 +5,13 @@ relative_permalinks: false
 markdown: kramdown
 url: "https://choosealicense.com"
 
+# See: docs/translations.md
+locale: en-US
+translations:
+  en-US:
+    name: English (US)
+    url: https://choosealicense.com
+
 collections:
   licenses:
     output: true

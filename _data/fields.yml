@@ -4,6 +4,9 @@
 # variables from the repository. These can be used to create accurate copyright
 # notices. The available variables are:
 
+- locale:
+  type: String
+
 - name: fullname
   description: The full name or username of the repository owner
 
