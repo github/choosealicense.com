@@ -2,7 +2,10 @@
 
   <a href="#" data-clipboard-target="#license-text" data-proofer-ignore="true" class="js-clipboard-button button">Copy license text to clipboard</a>
   <h3>Suggest this license</h3>
-  <input type="text" data-license-id="{{ page.spdx-id }}" placeholder="Type a project name" id="reposiory-search" />
+  <div class="repository-suggestion">
+    <input type="text" data-license-id="{{ page.spdx-id }}" placeholder="Type a repository URL" id="repository-url" title="status" />
+    <div class="status-indicator"></div>
+  </div>
 
   <div class="how-to-apply">
     <h3>How to apply this license</h3>
