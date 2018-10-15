@@ -121,8 +121,9 @@ class LicenseSuggestion
             license = repositoryInfo.license
             @setStatus "Error", @repositoryLicense repositoryFullName, license
           else # The repository is unlicensed
-            window.location.href =
-              "https://github.com/#{repositoryFullName}/community/license/new?template=#{@licenseId}"                
+            licenseUrl = encodeURIComponent "https://github.com/#{repositoryFullName}/community/license/new?template=#{@licenseId}"
+            # Provide the chance to the user log-in, since the URL to suggest a license is restricted
+            window.location.href = "https://github.com/login?return_to=#{licenseUrl}"
             @setStatus ""
             @inputEl.val("")
 
