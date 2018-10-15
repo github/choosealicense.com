@@ -121,7 +121,8 @@ class LicenseSuggestion
             license = repositoryInfo.license
             @setStatus "Error", @repositoryLicense repositoryFullName, license
           else # The repository is unlicensed
-            window.open "https://github.com/#{repositoryFullName}/community/license/new?template=#{@licenseId}"                
+            window.location.href =
+              "https://github.com/#{repositoryFullName}/community/license/new?template=#{@licenseId}"                
             @setStatus ""
             @inputEl.val("")
 
