@@ -301,11 +301,11 @@ strong {
   margin-right: 12px;
 }
 
-.repository-suggestion {
+.input-wrapper {
   position: relative;
 }
 
-.repository-suggestion .status-indicator {
+.input-wrapper .status-indicator {
   position: absolute;
   right: 5px;
   top: 6px;
@@ -317,12 +317,12 @@ strong {
   border: 4px solid #ddd;  
 }
 
-.repository-suggestion .status-indicator.fetching {  
+.input-wrapper .status-indicator.fetching {  
   border-right-color: transparent;
   animation: rotate 0.8s infinite linear;
 }
 
-.repository-suggestion .status-indicator.error {  
+.input-wrapper .status-indicator.error {  
   border: 4px solid #c6403d;  
 }
 
