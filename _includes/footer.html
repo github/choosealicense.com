@@ -21,6 +21,7 @@
     <script src="/assets/vendor/clipboard/dist/clipboard.min.js"></script>
     <script>
       window.annotations = {{ site.data.rules | jsonify }};
+      {% if page.collection == "licenses" %}
       window.licenses = [
         {% for license in site.licenses %}        
           {
@@ -29,6 +30,7 @@
           }{% unless forloop.last %},{% endunless %}
         {% endfor %}
       ];
+      {% endif %}
     </script>
     <script src="/assets/js/app.js"></script>
     {% endif %}

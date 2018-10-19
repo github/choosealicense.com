@@ -120,7 +120,7 @@ class LicenseSuggestion
           if repositoryInfo.license # The repository already has a license
             license = repositoryInfo.license
             @setStatus "Error", @repositoryLicense repositoryFullName, license
-          else # The repository is unlicensed
+          else # The repository is not licensed
             licenseUrl = encodeURIComponent "https://github.com/#{repositoryFullName}/community/license/new?template=#{@licenseId}"
             # Provide the chance to the user log-in, since the URL to suggest a license is restricted
             window.location.href = "https://github.com/login?return_to=#{licenseUrl}"
