@@ -31,10 +31,19 @@
                         {% for rule_obj in rules %}
                           {% assign req = rule_obj.tag %}
                           {% if page[type] contains req %}
-                            <li class="{{ req }}">
+                            <li class="{{type}} {{ req }}">
                               <span class="license-sprite"></span>
                               {{ rule_obj.label }}
                             </li>
+                          {% else %}
+                            {% for rule in page[type] %}
+                              {% if rule.tag == req %}
+                                <li class="{{type}} {{ req }} annotated-rule" data-rule-ranges="{{ rule.ranges | join: "," }}">
+                                  <span class="license-sprite"></span>
+                                  {{ rule_obj.label }}
+                                </li>
+                              {% endif %}
+                            {% endfor %}
                           {% endif %}
                         {% endfor %}
                       </ul>

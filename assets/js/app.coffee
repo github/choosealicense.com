@@ -32,6 +32,7 @@ class Choosealicense
     @initTooltips()
     @initClipboard()
     @initLicenseSuggestion()
+    @initAnnotationHighlighter()
 
   # Init tooltip action
   initTooltips: ->
@@ -78,6 +79,11 @@ class Choosealicense
     licenseId = inputEl.attr("data-license-id")
     statusIndicator = $(".status-indicator")
     new LicenseSuggestion(inputEl, licenseId, statusIndicator)
+  
+  initAnnotationHighlighter: ->
+    rulesElements = $(".license-rules li")
+    licenseTextElement = $("#license-text")
+    new AnnotationHighlighter(rulesElements, licenseTextElement)
 
 class LicenseSuggestion
   constructor: (@inputEl, @licenseId, @statusIndicator) ->
@@ -176,6 +182,95 @@ class LicenseSuggestion
         <a href='/licenses/#{foundLicense.spdx_id.toLowerCase()}'><b>#{foundLicense.title}</b></a>."
     else
       "The repository <b> #{repositoryFullName}</b> is already licensed."
+
+class AnnotationHighlighter
+  constructor: (@ruleElements, @licenseTextElement) ->
+    @activeRuleElement = null    
+    @translateJQueryObjects()
+    if (@browserIsSupported)
+      ranges = @extractRanges()
+      @bindEvents(ranges)
+    else # browser not supported, don't break user expectations
+      @removeAnnotationSupport()
+
+  # translate jQuery objects to the native ones
+  translateJQueryObjects: =>
+    @ruleElements = if Array.isArray(@ruleElements) then @ruleElements else @ruleElements.toArray()
+    @licenseTextElement = if @licenseTextElement instanceof Element then @licenseTextElement else @licenseTextElement.get()[0]
+  
+  removeAnnotationSupport: =>
+    @ruleElements.forEach (element) -> element.classList.remove("annotated-rule")
+  
+  browserIsSupported: =>
+    return document.createRange != undefined
+  
+  # @todo: deal with possible overlapping ranges associated with the same ruleElement
+  extractRanges: =>
+    rangeRegexp = /([0-9]+)\-([0-9]+)/
+    return @ruleElements.reduce (ranges, ruleElement) =>
+      try
+        ruleElement
+          .getAttribute "data-rule-ranges"
+          .split ","
+          .map (value) =>
+            try
+              return rangeRegexp.exec value
+                .map (part) => parseInt part
+            catch
+              return null
+          .filter (range) => range != null
+          .forEach ([_, start, end]) =>
+            [start, end] = if start > end then [end, start] else [start, end]
+            ranges.push {start, end, ruleElement}
+      catch
+        return ranges
+      return ranges
+    , []
+  
+  bindEvents: (ranges) =>
+    annotatedRuleElements = @ruleElements
+      .filter (ruleElement) => ruleElement.classList.contains('annotated-rule')
+
+    @ruleElements.forEach (ruleElement) =>
+      if (annotatedRuleElements.find (el) => el == ruleElement)
+        rangesOfRule = ranges.filter (range) => range.ruleElement == ruleElement
+        $(ruleElement).on "click", (e) => 
+          e.stopPropagation()
+          if @activeRuleElement != ruleElement
+            @clearActiveRuleElement()
+            @highlightRanges(rangesOfRule, ruleElement)
+            @setActiveRuleElement(ruleElement)
+          else
+            @clearActiveRuleElement()
     
+    $('body').on 'click', @clearActiveRuleElement
+
+  clearActiveRuleElement: =>
+    @restoreLicenseOriginalFormatting()
+    @ruleElements.forEach (el) => el.classList.remove('active')
+    @activeRuleElement = null
+
+  setActiveRuleElement: (ruleElement) =>
+    ruleElement.classList.add('active')
+    @activeRuleElement = ruleElement
+
+  restoreLicenseOriginalFormatting: =>
+    @licenseTextElement.innerHTML = @licenseTextElement.textContent;
+  
+  highlightRanges: (rangesOfRule, ruleElement) =>
+    @restoreLicenseOriginalFormatting()
+    rangesOfRule
+      # create an array of DOM Range objects
+      .map ({start, end}) =>
+        range = document.createRange()
+        range.setStart(@licenseTextElement.childNodes[0], start)
+        range.setEnd(@licenseTextElement.childNodes[0], end)
+        return range; 
+      # do the highlight by surrounding the ranges of text with a <dfn> tag
+      .forEach (range) =>
+        dfnTag = document.createElement("dfn")
+        dfnTag.classList.add(ruleElement.classList[0])
+        range.surroundContents(dfnTag);
+  
 $ ->
   new Choosealicense()

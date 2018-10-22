@@ -240,6 +240,10 @@ strong {
   margin-bottom: 5px;
 }
 
+.license-rules li.annotated-rule {
+  cursor: pointer;
+}
+
 .license-rules li:hover {
   color: #444;
 }
@@ -430,6 +434,12 @@ strong {
   line-height: 1.3;
 }
 
+#license-text dfn {
+  font-style: inherit;
+}
+
+.license-rules li.conditions.active,
+dfn.conditions,
 .qtip-conditions {
   background-color: #d0ebf6;
   border-color: #149ad4;
@@ -441,6 +451,8 @@ strong {
   color: #fff;
 }
 
+.license-rules li.permissions.active,
+dfn.permissions,
 .qtip-fetching,
 .qtip-permissions {
   background-color: #d8f4d7;
@@ -454,6 +466,8 @@ strong {
   color: #fff;
 }
 
+.license-rules li.limitations.active,
+dfn.limitations,
 .qtip-error,
 .qtip-limitations {
   background-color: #f4d9d8;
