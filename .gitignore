@@ -12,3 +12,4 @@ assets/vendor/qtip2/basic
 /tmp
 Gemfile.lock
 .jekyll-metadata
+CNAME
