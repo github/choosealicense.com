@@ -106,6 +106,7 @@ def fsf_approved_licenses
     licenses = {}
     object['licenses'].each_value do |meta|
       next unless (meta.include? 'identifiers') && (meta['identifiers'].include? 'spdx') && (meta.include? 'tags') && (meta['tags'].include? 'libre')
+
       meta['identifiers']['spdx'].each do |identifier|
         licenses[identifier.downcase] = meta['name']
       end
