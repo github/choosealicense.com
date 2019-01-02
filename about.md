@@ -20,8 +20,6 @@ See our [appendix](/appendix/) for a table of all of the licenses cataloged in t
 
 * Open Source Initiative's FAQ on [Which Open Source license should I choose to release my software under?](https://opensource.org/faq#which-license)
 * Free Software Foundation's [advice on how to choose a license](https://www.gnu.org/licenses/license-recommendations.en.html)
-* [License differentiator](http://www.oss-watch.ac.uk/apps/licdiff/) ([source](https://github.com/ox-it/licdiff)) from [OSS Watch](http://www.oss-watch.ac.uk/)
-* [Free/Libre/Open Source license selection wizard](http://vrici.lojban.org/~cowan/floss/) by John Cowan
 * [The Legal Side of Open Source](https://opensource.guide/legal/), an Open Source Guide covering licensing and related issues
 
 ## Help us improve it
