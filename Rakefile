@@ -14,7 +14,6 @@ task :test do
   Rake::Task['spec'].invoke
   HTMLProofer.check_directory('./_site',
                               check_html: true,
-                              enforce_https: true,
                               validation: { ignore_script_embeds: true },
                               url_swap: { %r{https://choosealicense.com} => '' },
                               hydra: { max_concurrency: 10 },
