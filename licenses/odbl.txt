@@ -1,6 +1,7 @@
 ---
 layout: license
 permalink: /licenses/odbl/
+hidden: true
 title: Open Database License
 
 source: http://opendatacommons.org/licenses/odbl/1.0/
