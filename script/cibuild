@@ -2,8 +2,6 @@
 
 set -e
 
-echo "compiling javascript..."
-./node_modules/.bin/coffee -c _includes/js/app.coffee
-
 echo "building the site..."
 bundle exec rake test
+bundle exec rubocop -D -S

@@ -2,31 +2,44 @@
         <nav>
           <a href="/about/">About</a>
           <a href="/terms-of-service/">Terms of Service</a>
+          {% github_edit_link "Help improve this page" %}
         </nav>
         <p>
-          If you have questions or issues, it is always best to consult a legal professional.<br>
-          This site is licensed under the <a href="http://creativecommons.org/licenses/by/3.0/">
+          The content of this site is licensed under the <a href="https://creativecommons.org/licenses/by/3.0/">
           Creative Commons Attribution 3.0 Unported License</a>.
         </p>
         <div class="with-love">
-          Demystified with &lt;3 by <a href="http://github.com">GitHub, Inc.</a>
+          Curated with &lt;3 by <a href="https://github.com">GitHub, Inc.</a> and <a href="https://github.com/github/choosealicense.com">You!</a>
         </div>
       </footer>
 
     </div> <!-- /container -->
 
-    {% if page.layout == "license" or page.class == "license-types" %}
+    {% if page.collection == "licenses" or page.class == "license-types" %}
     <script src="/assets/vendor/jquery/jquery.min.js"></script>
     <script src="/assets/vendor/qtip2/jquery.qtip.min.js"></script>
-    <script src="/assets/vendor/zeroclipboard/ZeroClipboard.min.js"></script>
-    <script src="/assets/js/javascript.js"></script>
+    <script src="/assets/vendor/clipboard/dist/clipboard.min.js"></script>
+    <script>
+      window.annotations = {{ site.data.rules | jsonify }};
+      {% if page.collection == "licenses" %}
+      window.licenses = [
+        {% for license in site.licenses %}        
+          {
+            "title": "{{ license.title | escape  }}",
+            "spdx_id": "{{ license.spdx-id | escape  }}"
+          }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ];
+      {% endif %}
+    </script>
+    <script src="/assets/js/app.js"></script>
     {% endif %}
 
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      !function(L,I,C,e,N,S,E){L.GoogleAnalyticsObject=N,L[N]=L[N]||function(){
+      (L[N].q=L[N].q||[]).push(arguments)},L[N].l=+new Date,S=I.createElement(C),
+      E=I.getElementsByTagName(C)[0],S.src=e,E.parentNode.insertBefore(S,E)
+      }(window,document,"script","//www.google-analytics.com/analytics.js","ga");
 
       ga('create', 'UA-3769691-24', 'choosealicense.com');
       ga('send', 'pageview');

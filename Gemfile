@@ -1,9 +1,23 @@
-source "https://rubygems.org"
-ruby File.read(".ruby-version").strip
+# frozen_string_literal: true
 
-gem "github-pages"
+source 'https://rubygems.org'
+
+require 'json'
+require 'open-uri'
+versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+
+gem 'github-pages', versions['github-pages']
+
+group :development do
+  gem 'colored'
+  gem 'fuzzy_match'
+  gem 'terminal-table'
+end
 
 group :test do
-  gem "html-proofer"
-  gem "rake"
+  gem 'html-proofer', '~> 3.0'
+  gem 'licensee'
+  gem 'rake'
+  gem 'rspec'
+  gem 'rubocop'
 end
