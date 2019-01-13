@@ -23,6 +23,10 @@ conditions:
   - attribution
   - share-alike
   - keep open
+  
+limitations:
+  - liability
+  - warranty
 
 ---
 
