@@ -1,5 +1,5 @@
 ---
-title: ODC Open Database License v1.0
+title: Open Database License
 spdx-id:  ODbL-1.0
 nickname: ODbL v1
 redirect_from: /licenses/odbl/
@@ -12,6 +12,9 @@ description: The Open Database License (ODbL) is a license agreement intended to
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the  into the file.
 
 using: 
+  - OpenStreetMap: https://wiki.openstreetmap.org/wiki/Open_Database_License
+  - ProtonDB: https://github.com/bdefore/protondb-data
+  - Open Food Facts: https://world.openfoodfacts.org/data
   
 permissions:
   - commercial-use
