@@ -21,8 +21,8 @@ Choosealicense.com is intended to demystify license choices, not present or cata
    * [List of OSI approved licenses](https://opensource.org/licenses/alphabetical)
    * [GNU's list of free licenses](https://www.gnu.org/licenses/license-list.en.html) (*note: the license must be listed in one of the three "free" categories*)
    * [Open Definition's list of conformant licenses](https://opendefinition.org/licenses/) (non-code)
-3. A [GitHub code search](https://github.com/search?q=MIT+filename%3ALICENSE&type=Code) must reveal at least *1,000* public repositories using the license
-4. Identification of 3 notable projects using the license with straightforward LICENSE files which serve as examples newcomers can follow and that could be detected by [licensee](https://github.com/benbalter/licensee) if it knew about the license
+3. A [GitHub code search](https://github.com/search?q=MIT+filename%3ALICENSE&type=Code) must reveal at least *1,000* public repositories using the license.
+4. 3 notable projects using the license must be identified. These must have straightforward LICENSE files which serve as examples newcomers can follow and that could be detected by [licensee](https://github.com/benbalter/licensee) if it knew about the license.
 
 If your proposed license meets the above criteria, here's a few other things to keep in mind as you propose the license's addition:
 
@@ -32,7 +32,7 @@ If your proposed license meets the above criteria, here's a few other things to 
 * Each license has both [required and optional metadata](https://github.com/github/choosealicense.com#license-metadata) that should be included.
 * The text of the license should be wrapped to a 78 character width.
 * The text of the license should match the corresponding text found at https://spdx.org/licenses/
-* The body of the file should be the text of the license in plain text.
+* The body of the file should be the text of the license in plain text. Further, this text should be the same as the plain text version of the license in [spdx/license-list-data](https://github.com/spdx/license-list-data/blob/master/text/). If there are errors there, please fix them in [spdx/license-list-XML](https://github.com/spdx/license-list-XML) (from which the plain text version is generated) so as to minimize license text variation and make it easier for choosealicense.com to eventually consume license texts directly from SPDX.
 
 ## Making Changes
 
