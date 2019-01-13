@@ -31,8 +31,8 @@ If your proposed license meets the above criteria, here's a few other things to 
 * The license files should be in the format of `_licenses/[lowercased-spdx-id].txt` (e.g., `_licenses/mit.txt`)
 * Each license has both [required and optional metadata](https://github.com/github/choosealicense.com#license-metadata) that should be included.
 * The text of the license should be wrapped to a 78 character width.
-* The text of the license should match the corresponding text found at https://spdx.org/licenses/
-* The body of the file should be the text of the license in plain text. Further, this text should be the same as the plain text version of the license in [spdx/license-list-data](https://github.com/spdx/license-list-data/blob/master/text/). If there are errors there, please fix them in [spdx/license-list-XML](https://github.com/spdx/license-list-XML) (from which the plain text version is generated) so as to minimize license text variation and make it easier for choosealicense.com to eventually consume license texts directly from SPDX.
+* The text of the license should match the corresponding text found in [spdx/license-list-data](https://github.com/spdx/license-list-data/blob/master/text/). If there are errors there, please fix them in [spdx/license-list-XML](https://github.com/spdx/license-list-XML) (from which the plain text version is generated) so as to minimize license text variation and make it easier for choosealicense.com to eventually consume license texts directly from SPDX.
+* The body of the file should be the text of the license in plain text.
 
 ## Making Changes
 
