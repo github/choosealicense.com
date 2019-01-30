@@ -1,5 +1,5 @@
 ---
-title: "Do What The F*ck You Want To Public License"
+title: "Do What The Fuck You Want To Public License"
 spdx-id: WTFPL
 
 description: The easiest license out there. It gives the user permissions to do whatever they want with your code.
