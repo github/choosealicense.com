@@ -125,6 +125,10 @@ strong {
   width: 220px;
 }
 
+.situations .existing {
+  margin-top: 16px;
+}
+
 .situations .whatever {
   margin-top: 16px;
 }
@@ -143,9 +147,9 @@ strong {
   display: inline-block;
 }
 
-.three-arrows { background-position: 0 0;      width: 72px; height: 57px; }
-.lightbulb    { background-position: 0 -57px;  width: 43px; height: 72px; }
-.circular     { background-position: 0 -129px; width: 72px; height: 69px; }
+.three-arrows { background-position: 0 0;      width: 72px; height: 56px; }
+.community    { background-position: 0 -57px;  width: 72px; height: 56px; }
+.circular     { background-position: 0 -115px; width: 72px; height: 68px; }
 
 
 .license-overview {
@@ -290,6 +294,43 @@ strong {
   width: 100%;
 }
 
+.sidebar input#repository-url {
+  width: 100%;
+  padding: 5px 20px 5px 10px;
+  box-sizing: border-box;
+  margin-right: 12px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper .status-indicator {
+  position: absolute;
+  right: 5px;
+  top: 6px;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #fff;
+  animation: none;
+  border: 4px solid #ddd;  
+}
+
+.input-wrapper .status-indicator.fetching {  
+  border-right-color: transparent;
+  animation: rotate 0.8s infinite linear;
+}
+
+.input-wrapper .status-indicator.error {  
+  border: 4px solid #c6403d;  
+}
+
+@keyframes rotate {
+  0%    { transform: rotate(0deg); }
+  100%  { transform: rotate(360deg); }
+}
+
 .note {
   color: #687072;
 }
@@ -382,7 +423,9 @@ strong {
 
 .qtip-conditions,
 .qtip-permissions,
-.qtip-limitations {
+.qtip-limitations,
+.qtip-fetching,
+.qtip-error {
   font-size: 12px;
   line-height: 1.3;
 }
@@ -398,23 +441,27 @@ strong {
   color: #fff;
 }
 
+.qtip-fetching,
 .qtip-permissions {
   background-color: #d8f4d7;
   border-color: #3dc637;
   color: #298625;
 }
 
+.qtip-fetching .qtip-titlebar,
 .qtip-permissions .qtip-titlebar {
   background-color: #3dc637;
   color: #fff;
 }
 
+.qtip-error,
 .qtip-limitations {
   background-color: #f4d9d8;
   border-color: #c6403d;
   color: #812a28;
 }
 
+.qtip-error .qtip-titlebar,
 .qtip-limitations .qtip-titlebar {
   background-color: #c6403d;
   color: #fff;
@@ -438,12 +485,12 @@ strong {
  only screen and (-o-min-device-pixel-ratio: 200/100),
  only screen and (min-device-pixel-ratio: 2.0) {
   .three-arrows,
-  .lightbulb,
+  .community,
   .circular {
     background-image: url(../img/home-sprite@2x.png);
-    -webkit-background-size: 72px 198px;
-    -moz-background-size: 72px 198px;
-    background-size: 72px 198px;
+    -webkit-background-size: 72px 182px;
+    -moz-background-size: 72px 182px;
+    background-size: 72px 182px;
   }
 
   .license-sprite {

@@ -1,21 +1,15 @@
-# Choosealicense.com
+**[ChooseALicense.com](https://choosealicense.com)** aims to provide **accurate**, **non-judgmental**, and **understandable** information about popular **open source licenses** in order to **help people make informed decisions** about the projects they start, maintain, contribute to, and use.
 
 [![Build Status](https://travis-ci.org/github/choosealicense.com.svg?branch=gh-pages)](https://travis-ci.org/github/choosealicense.com)
 
-Like a Choose Your Own Adventure site, but only much less interesting.
+We catalog [select](CONTRIBUTING.md#adding-a-license) open source licenses with a [Jekyll collection](https://jekyllrb.com/docs/collections/) (in `_licenses`). The catalog is used to render [ChooseALicense.com](https://choosealicense.com) and is regularly vendored into [Licensee](https://github.com/benbalter/licensee), which GitHub uses to provide a [license chooser and license detection](https://help.github.com/articles/adding-a-license-to-a-repository/), a [licenses API](https://developer.github.com/v3/licenses/), and to [display license descriptions and metadata](https://github.com/blog/2335-open-source-license-descriptions-and-metadata).
 
-## Intro
+## Goals
 
-A lot of repositories on GitHub.com don't have a license. GitHub provides a license chooser, but if you don't know anything about licenses, how are you supposed to make an informed decision?
-
-[ChooseALicense.com](http://www.choosealicense.com "Choose A Licence website") is designed to help people make an informed decision about licenses by demystifying license choices through non-judgmental guidance.
-
-## Immediate Goals
-
-* Non-judgmental. Our goal is to help you find a license that meets *your* goals.
-* Well designed, but that goes without saying.
-* The homepage should have just enough to help 99% of folks make a decision.
-* For the 1%, the site will contain a list of licenses common to specific communities and situations.
+* Be accurate, non-judgmental, and understandable. Our goal is to help you find a license that meets *your* goals.
+* The homepage should have just enough to help most folks make a decision about what license to use for a project they contribute to.
+* For the rest, the site will contain additional information about licenses common to specific communities and situations.
+* Collaborate with and reinforce other licensing best practices and standards projects.
 * Not comprehensive. Seems like an odd goal, but there are a bajillion licenses out there. We're going to have to filter that down to a small list of those that matter.
 
 ## Run It On Your Machine
@@ -39,9 +33,8 @@ Licenses sit in the `/_licenses` folder. Each license has YAML front matter desc
 
 #### Required fields
 
-* `title` - The license full name specified by http://spdx.org/licenses/
-* `spdx-id` - Short identifier specified by http://spdx.org/licenses/
-* `source` - The URL to the license source text
+* `title` - The license full name specified by https://spdx.org/licenses/
+* `spdx-id` - Short identifier specified by https://spdx.org/licenses/
 * `description` - A human-readable description of the license
 * `how` - Instructions on how to implement the license
 * `using` - A list of 3 notable projects using the license with straightforward LICENSE files which serve as examples newcomers can follow and that can be detected by [licensee](https://github.com/benbalter/licensee) in the form of `project_name: license_file_url`
@@ -52,7 +45,7 @@ Licenses sit in the `/_licenses` folder. Each license has YAML front matter desc
 #### Optional fields
 
 * `featured` - Whether the license should be featured on the main page (defaults to false)
-* `hidden` - Whether the license is neither [popular](https://opensource.org/licenses) nor fills out the [spectrum of licenses](http://choosealicense.com/licenses/) from strongly conditional to unconditional (defaults to true)
+* `hidden` - Whether the license is neither [popular](https://opensource.org/licenses) nor fills out the [spectrum of licenses](https://choosealicense.com/licenses/) from strongly conditional to unconditional (defaults to true)
 * `nickname` - Customary short name if applicable (e.g, GPLv3)
 * `note` - Additional information about the licenses
 * `redirect_from` - Relative path(s) to redirect to the license from, to prevent breaking old URLs
@@ -69,6 +62,7 @@ The licenses on choosealicense.com are regularly imported to GitHub.com to be us
 * `project` - The repository name
 * `description` - The description of the repository
 * `year` - The current year
+* `projecturl` - The repository URL or other project website
 
 ## License properties
 
@@ -103,4 +97,4 @@ The license properties (rules) are stored as a bulleted list within the licenses
 
 ## License
 
-The content of this project itself is licensed under the [Creative Commons Attribution 3.0 license](http://creativecommons.org/licenses/by/3.0/us/deed.en_US), and the underlying source code used to format and display that content is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).
+The content of this project itself is licensed under the [Creative Commons Attribution 3.0 Unported license](https://creativecommons.org/licenses/by/3.0/), and the underlying source code used to format and display that content is licensed under the [MIT license](LICENSE.md).

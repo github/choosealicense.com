@@ -1,16 +1,13 @@
 ---
 title: Eclipse Public License 1.0
 spdx-id: EPL-1.0
-redirect_from: /licenses/eclipse/
-source: https://www.eclipse.org/legal/epl-v10.html
-hidden: false
 
 description: This commercially-friendly copyleft license provides the ability to commercially license binaries; a modern royalty-free patent license grant; and the ability for linked works to use other licenses, including commercial ones.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
 using:
-  - Eclipse Che: https://github.com/eclipse/che/blob/master/LICENSE
+  - Eclipse hawkBit: https://github.com/eclipse/hawkbit/blob/master/LICENSE
   - JUnit: https://github.com/junit-team/junit4/blob/master/LICENSE-junit.txt
   - openHAB: https://github.com/openhab/openhab-distro/blob/master/LICENSE
 

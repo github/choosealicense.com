@@ -11,9 +11,7 @@ require 'colored'
 require 'fuzzy_match'
 
 # Display usage instructions
-if ARGV.count != 1
-  puts File.open(__FILE__).read.scan(/^# .*/)[0...3].join("\n").gsub(/^# /, '')
-end
+puts File.open(__FILE__).read.scan(/^# .*/)[0...3].join("\n").gsub(/^# /, '') if ARGV.count != 1
 
 class TrueClass
   def to_s
@@ -52,6 +50,7 @@ approvals.each do |approver, licenses|
   rows << ["#{approver} approved", licenses.include?(license)]
 end
 
+license_ids = licenses.map { |l| l['id'] }
 current = license_ids.include?(license)
 rows << ['Current license', current]
 

@@ -2,7 +2,6 @@
 title: European Union Public License 1.1
 spdx-id: EUPL-1.1
 redirect_from: /licenses/eupl-v1.1/
-source: https://joinup.ec.europa.eu/page/eupl-text-11-12
 
 description: The “European Union Public Licence” (EUPL) is a copyleft free/open source software license created on the initiative of and approved by the European Commission in 22 official languages of the European Union.
 

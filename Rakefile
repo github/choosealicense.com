@@ -16,6 +16,7 @@ task :test do
                               check_html: true,
                               validation: { ignore_script_embeds: true },
                               url_swap: { %r{https://choosealicense.com} => '' },
+                              hydra: { max_concurrency: 10 },
                               check_img_http: true).run
 end
 
