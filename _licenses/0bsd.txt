@@ -4,7 +4,7 @@ spdx-id: 0BSD
 
 description: The Zero Clause BSD license goes further than the BSD 2-Clause license to allow you unlimited freedom with the software _without_ the requirements to include the copyright notice, license text, or disclaimer in either source or binary forms.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.  Replace [year] with the current year and [fullname] [email] with the name and contact email address of each copyright holder. You may take the additional step of removing the copyright notice, license text, or disclaimer.
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.  Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. You may take the additional step of removing the copyright notice.
 
 using:
   - Toybox: https://github.com/landley/toybox/blob/master/LICENSE
@@ -27,7 +27,7 @@ limitations:
 
 Zero Clause BSD
 
-Copyright (C) [year] by [fullname] <[email]>
+Copyright (c) [year] [fullname]
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted.
