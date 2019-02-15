@@ -2,7 +2,7 @@
 title: BSD Zero Clause License
 spdx-id: 0BSD
 
-description: The BSD Zero Clause license goes further than the BSD 2-Clause license to allow you unlimited freedom with the software _without_ the requirements to include the copyright notice, license text, or disclaimer in either source or binary forms.
+description: The BSD Zero Clause license goes further than the BSD 2-Clause license to allow you unlimited freedom with the software without requirements to include the copyright notice, license text, or disclaimer in either source or binary forms.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.  Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. You may take the additional step of removing the copyright notice.
 
