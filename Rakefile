@@ -17,6 +17,7 @@ task :test do
                               enforce_https: true,
                               validation: { ignore_script_embeds: true },
                               url_swap: { %r{https://choosealicense.com} => '' },
+                              url_ignore: [%r{https://github.com/github/choosealicense.com/edit/gh-pages/_licenses/}],
                               hydra: { max_concurrency: 10 },
                               check_img_http: true).run
 end
