@@ -1,7 +1,6 @@
 ---
 title: CeCILL Free Software License Agreement v2.1
 spdx-id: CECILL-2.1
-source: http://www.cecill.info/licences/Licence_CeCILL_V2.1-fr.txt
 
 description: French open-source license made by the CEA, INRIA and CNRS, compatible with the GNU GPL v2.0 and v3.0
 
