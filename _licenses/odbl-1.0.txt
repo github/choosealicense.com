@@ -8,9 +8,10 @@ description: The Open Database License (ODbL) is a license agreement intended to
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
 using:
-  - Open Food Facts: https://world.openfoodfacts.org/data
-  - OpenStreetMap: https://wiki.openstreetmap.org/wiki/Open_Database_License
-  - ProtonDB: https://github.com/bdefore/protondb-data
+  - Open Food Facts: https://openfoodfacts.org/
+  - OpenCorporates: https://opencorporates.com/
+  - OpenStreetMap: https://openstreetmap.org/
+  - RATP (Paris region transit authority): https://data.ratp.fr/
 
 permissions:
   - commercial-use
