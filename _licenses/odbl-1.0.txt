@@ -15,9 +15,9 @@ using:
 
 permissions:
   - commercial-use
-  - private-use
-  - modifications
   - distribution
+  - modifications
+  - private-use
 
 conditions:
   - attribution
