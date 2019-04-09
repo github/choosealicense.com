@@ -5,7 +5,7 @@ nickname: ODbL
 
 description: The Open Database License (ODbL) is a license agreement intended to allow users to freely share, modify, and use a database while maintaining this same freedom for others.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the  into the file.
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
 using:
   - Open Food Facts: https://world.openfoodfacts.org/data
