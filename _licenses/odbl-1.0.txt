@@ -1,5 +1,5 @@
 ---
-title: Open Database License
+title: ODC Open Database License v1.0
 spdx-id:  ODbL-1.0
 nickname: ODbL v1
 redirect_from: /licenses/odbl/
