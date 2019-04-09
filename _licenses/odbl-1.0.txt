@@ -2,10 +2,6 @@
 title: ODC Open Database License v1.0
 spdx-id:  ODbL-1.0
 nickname: ODbL v1
-redirect_from: /licenses/odbl/
-hidden: true
-
-source: http://opendatacommons.org/licenses/odbl/1.0/
 
 description: The Open Database License (ODbL) is a license agreement intended to allow users to freely share, modify, and use this Database while maintaining this same freedom for others.
 
