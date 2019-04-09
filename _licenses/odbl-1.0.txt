@@ -3,7 +3,7 @@ title: ODC Open Database License v1.0
 spdx-id:  ODbL-1.0
 nickname: ODbL
 
-description: The Open Database License (ODbL) is a license agreement intended to allow users to freely share, modify, and use this Database while maintaining this same freedom for others.
+description: The Open Database License (ODbL) is a license agreement intended to allow users to freely share, modify, and use a database while maintaining this same freedom for others.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the  into the file.
 
