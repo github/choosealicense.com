@@ -20,9 +20,9 @@ permissions:
   - private-use
 
 conditions:
-  - attribution
-  - share-alike
-  - keep open
+  - disclose-source
+  - include-copyright
+  - same-license
 
 limitations:
   - liability
