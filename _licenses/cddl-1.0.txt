@@ -1,5 +1,5 @@
 ---
-title: COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0
+title: Common Development and Distribution License 1.0
 spdx-id: CDDL-1.0
 
 description:
