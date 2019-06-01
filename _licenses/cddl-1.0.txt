@@ -15,6 +15,9 @@ permissions:
 
 
 conditions:
+  - disclose-source
+  - include-copyright
+  - same-license--file
 
 
 limitations:
