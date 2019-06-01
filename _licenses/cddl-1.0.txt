@@ -2,7 +2,7 @@
 title: Common Development and Distribution License 1.0
 spdx-id: CDDL-1.0
 
-description:
+description: A weak copyleft license used by Sun Microsystems based on the Mozilla Public License. Files licensed under the CDDL can be combined with files licensed under other licenses, both open source and proprietary, so long as any code under the CDDL is made available.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
