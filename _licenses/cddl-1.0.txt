@@ -18,6 +18,9 @@ conditions:
 
 
 limitations:
+  - liability
+  - trademark-use
+  - warranty
 
 
 ---
