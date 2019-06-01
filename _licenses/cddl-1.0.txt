@@ -12,6 +12,11 @@ using:
   - GlassFish: https://github.com/eclipse-ee4j/glassfish
 
 permissions:
+  - commercial-use
+  - modifications
+  - distribution
+  - patent-use
+  - private-use
 
 
 conditions:
