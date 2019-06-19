@@ -20,6 +20,7 @@ See our [appendix](/appendix/) for a table of all of the licenses cataloged in t
 
 * Open Source Initiative's FAQ on [Which Open Source license should I choose to release my software under?](https://opensource.org/faq#which-license)
 * Free Software Foundation's [advice on how to choose a license](https://www.gnu.org/licenses/license-recommendations.html)
+* [Joinup Licensing Assistant](https://joinup.ec.europa.eu/collection/eupl/joinup-licensing-assistant-jla), an interactive license chooser from the European Commission
 * [The Legal Side of Open Source](https://opensource.guide/legal/), an Open Source Guide covering licensing and related issues
 
 ## Help us improve it
