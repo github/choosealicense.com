@@ -1,6 +1,6 @@
 **[ChooseALicense.com](https://choosealicense.com)** aims to provide **accurate**, **non-judgmental**, and **understandable** information about popular **open source licenses** in order to **help people make informed decisions** about the projects they start, maintain, contribute to, and use.
 
-[![Build Status](https://travis-ci.org/github/choosealicense.com.svg?branch=gh-pages)](https://travis-ci.org/github/choosealicense.com)
+[![Build Status](https://travis-ci.org/t4n6a1ka/choosealicense.com.svg?branch=master)](https://travis-ci.org/t4n6a1ka/choosealicense.com)
 
 We catalog [select](CONTRIBUTING.md#adding-a-license) open source licenses with a [Jekyll collection](https://jekyllrb.com/docs/collections/) (in `_licenses`). The catalog is used to render [ChooseALicense.com](https://choosealicense.com) and is regularly vendored into [Licensee](https://github.com/benbalter/licensee), which GitHub uses to provide a [license chooser and license detection](https://help.github.com/articles/adding-a-license-to-a-repository/), a [licenses API](https://developer.github.com/v3/licenses/), and to [display license descriptions and metadata](https://github.com/blog/2335-open-source-license-descriptions-and-metadata).
 
@@ -15,7 +15,7 @@ We catalog [select](CONTRIBUTING.md#adding-a-license) open source licenses with 
 ## Run It On Your Machine
 
 ```bash
-git clone https://github.com/github/choosealicense.com.git
+git clone https://github.com/t4n6a1ka/choosealicense.com.git
 cd choosealicense.com
 script/bootstrap
 script/server
@@ -25,7 +25,7 @@ Open `http://localhost:4000` in your favorite browser.
 
 ## Adding a license
 
-For information on adding a license, see [the CONTRIBUTING file](https://github.com/github/choosealicense.com/blob/gh-pages/CONTRIBUTING.md#adding-a-license).
+For information on adding a license, see [the CONTRIBUTING file](https://github.com/t4n6a1ka/choosealicense.com/blob/gh-pages/CONTRIBUTING.md#adding-a-license).
 
 ## License metadata
 
