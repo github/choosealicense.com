@@ -1,1 +1,7 @@
+master
+https://travis-ci.org/t4n6a1ka/choosealicense.com/builds/550862115?utm_source=github_status&utm_medium=notification
 
+#bootstrap and build before_script: "./script/bootstrap" script: "./script/cibuild"  #environment language: ruby rvm:   - 2.5.3  addons:   apt:     packages:     - libcurl4-openssl-dev  before_install:   - gem update --system  branches:   only:     - master     - /.*/  notifications:   email: true  env:   global:     - NOKOGIRI_USE_SYSTEM_LIBRARIES=default  sudo: default cache: bundler
+======
+
+>>>>>> t4n6a1ka
