@@ -25,7 +25,7 @@ Open `http://localhost:4000` in your favorite browser.
 
 ## Adding a license
 
-For information on adding a license, see [the CONTRIBUTING file](https://github.com/t4n6a1ka/choosealicense.com/blob/gh-pages/CONTRIBUTING.md#adding-a-license).
+For information on adding a license, see [the CONTRIBUTING file](https://github.com/t4n6a1ka/choosealicense.com/blob/master/CONTRIBUTING.md#adding-a-license).
 
 ## License metadata
 
