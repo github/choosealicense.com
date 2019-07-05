@@ -26,7 +26,7 @@ limitations:
 
 ---
 
-PostgreSQL Licence
+PostgreSQL License
 
 Copyright (c) [year], [fullname]
 

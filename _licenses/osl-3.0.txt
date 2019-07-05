@@ -34,7 +34,7 @@ limitations:
 
 ---
 
-Open Software License ("OSL") v 3.0
+Open Software License ("OSL") v. 3.0
 
 This Open Software License (the "License") applies to any original work of
 authorship (the "Original Work") whose owner (the "Licensor") has placed the
