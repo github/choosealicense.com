@@ -24,9 +24,7 @@ limitations:
 
 ---
 
-The Clear BSD License
-
-Copyright (c) [year] [fullname]
+The Clear BSD License Copyright (c) [year] [fullname]
 
 All rights reserved.
 
