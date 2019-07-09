@@ -11,9 +11,7 @@ require 'colored'
 require 'fuzzy_match'
 
 # Display usage instructions
-if ARGV.count != 1
-  puts File.open(__FILE__).read.scan(/^# .*/)[0...3].join("\n").gsub(/^# /, '')
-end
+puts File.open(__FILE__).read.scan(/^# .*/)[0...3].join("\n").gsub(/^# /, '') if ARGV.count != 1
 
 class TrueClass
   def to_s
