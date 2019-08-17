@@ -21,7 +21,6 @@ conditions:
   - include-copyright
   - document-changes
   - same-license
-  - same-license--file
 
 limitations:
   - liability
