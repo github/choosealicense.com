@@ -4,7 +4,7 @@ spdx-id: LAL-1.3
 
 description: This license is written in consideration of both French law and the Berne Convention for the Protection of Literary and Artistic Works. Frequently used for media assets such as logos. When incorporated into larger works, the larger work is expected to be either publicly accessable or similarly licensed.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. It is also acceptable to solely supply a link to a copy of the license, usually to the <a href='http://artlibre.org/'>canonical URL for the license</a>.
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. It is also acceptable to solely supply a link to a copy of the license, usually to the <a href='https://artlibre.org/'>canonical URL for the license</a>.
 
 using:
   - GNU Bash: https://github.com/odb/official-bash-logo/blob/master/assets/LICENSE
