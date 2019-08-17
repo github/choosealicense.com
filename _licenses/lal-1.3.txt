@@ -7,9 +7,9 @@ description: This license is written in consideration of both French law and the
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. It is also acceptable to solely supply a link to a copy of the license, usually to the <a href='https://artlibre.org/'>canonical URL for the license</a>.
 
 using:
-  - GNU Bash: https://github.com/odb/official-bash-logo/blob/master/assets/LICENSE
-  - Libre Objet: https://github.com/libreobjet/sncbench/blob/master/LICENSE.txt
-  - Wallabag: https://github.com/wallabag/logo/blob/master/LICENSE.md
+  - Open Source Publishing: https://github.com/osp/osp.workshop.flatland/blob/master/licences/lal.txt
+  - linuxfr.org: https://github.com/mjourdan/linuxfr-design/blob/master/LICENCE.md
+  - Oak: https://github.com/Debetux/Oak/blob/master/template/default/LICENCE
 
 permissions:
   - commercial-use
