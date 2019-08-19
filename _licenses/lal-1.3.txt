@@ -22,8 +22,7 @@ conditions:
   - document-changes
   - same-license
 
-limitations:
-  - liability
+limitations: []
 
 ---
 
