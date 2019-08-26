@@ -2,7 +2,7 @@
 title: CeCILL Free Software License Agreement v2.1
 spdx-id: CECILL-2.1
 
-description: French open-source license made by the CEA, INRIA and CNRS, compatible with the GNU GPL v2.0 and v3.0
+description: Strong copyleft license made by three French public research organisations, CEA, CNRS, and Inria, compatible with AGPL-3.0, EUPL-1.1, and GPL-2.0, or later versions of those licenses.
 
 how: Create a text file (typically named LICENSE or LICENCE) in the root of your source code and copy the text of the license into the file. 
 
