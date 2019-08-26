@@ -8,7 +8,7 @@ how: Create a text file (typically named LICENSE or LICENCE) in the root of your
 
 using:
   - VITAM: https://github.com/ProgrammeVitam/vitam/blob/master_0.15.x/Licence_CeCILL_V2.1-fr.txt
-  - Test-Compta-Demat: https://github.com/DGFiP/Test-Compta-Demat/blob/master/src/testeur/Licence_CeCILL_V2.1-fr.txt
+  - Taxe foncière: https://github.com/etalab/taxe-fonciere/blob/master/LICENSE
   - BMC-Tools: https://github.com/ANSSI-FR/bmc-tools/blob/master/LICENCE.txt
 
 permissions:
