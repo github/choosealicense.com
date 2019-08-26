@@ -10,7 +10,7 @@ If you already know what you're doing and have a license you prefer to use, that
 
 ## Not comprehensive
 
-This site is not a comprehensive directory of open source licenses. On the [homepage](/), we break it down into just two licenses — the [MIT License](https://choosealicense.com/licenses/mit/) and the [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/). The vast majority of projects will likely be perfectly safe choosing from one of these two. Just in case you have specific needs not covered by these, we also highlight a [few other licenses to consider](/licenses/) and have a page about [licenses for non-software projects](/non-software/).
+This site is not a comprehensive directory of open source licenses. The vast majority of projects will likely be well served by one of the three options highlighted on the [homepage](/) — choosing the license [preferred](/community/) by projects similar to yours, or the most popular permissive license ([MIT](/licenses/mit/)), or the most popular copyleft license ([GNU GPLv3](/licenses/gpl-3.0/)). Just in case you have specific needs not covered by these, we also highlight a [few other licenses to consider](/licenses/) and have a page about [licenses for non-software projects](/non-software/).
 
 See our [appendix](/appendix/) for a table of every license cataloged in the [choosealicense.com repository](https://github.com/github/choosealicense.com) and the links below for *even more* licenses that you **do not** need to learn about to still choose a great license for your project.
 

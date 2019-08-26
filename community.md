@@ -5,7 +5,7 @@ redirect_from: /existing/
 title: Existing projects and communities
 ---
 
-If you're contributing to or extending an existing project, it's almost always easiest to continue using that project's license. To find its license, look for a file called `LICENSE` or `COPYING`, or skim the project's `README`. If you can't find a license, [ask the maintainers](/no-permission/#for-users).
+If you're contributing to or extending an existing project, it's almost always easiest to continue using that project's license. To find its license, look for a file called `LICENSE` or `COPYING`, and skim the project's `README`. If you can't find a license, [ask the maintainers](/no-permission/#for-users).
 
 Depending on the original project's license, using the same license might be a requirement, not just the easiest thing to do. (See the "same license" condition of [some licenses](/licenses/).)
 
@@ -21,4 +21,4 @@ Some communities have strong preferences for particular licenses. If you want to
 * [Rust](https://rust-lang-nursery.github.io/api-guidelines/necessities.html#crate-and-its-dependencies-have-a-permissive-license-c-permissive) crates are overwhelmingly licensed under both [MIT](/licenses/mit/) and [Apache License 2.0](/licenses/apache-2.0/)
 * [WordPress](https://wordpress.org/about/license/) plugins and themes must be [GNU GPLv2](/licenses/gpl-2.0/) (or later)
 
-Communities come in all shapes and sizes, and using more than one license might be pertinent (e.g., [your company](https://opensource.guide/legal/#what-does-my-companys-legal-team-need-to-know)). The examples above are *very* well established. If the community you're building a project for doesn't have set-in-stone licensing traditions, or you don't see your project as part of any particular community, that's fine: [make your own choice of an open source license](/).
+Communities come in all shapes and sizes, and more than one community might be pertinent (e.g., keep in mind [your company](https://opensource.guide/legal/#what-does-my-companys-legal-team-need-to-know) if you work for one). The examples above are *very* well established. If the community you're building a project for doesn't have set-in-stone licensing traditions, or you don't see your project as part of any particular community, that's fine: [make your own choice of an open source license](/).
