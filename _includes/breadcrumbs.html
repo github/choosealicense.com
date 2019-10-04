@@ -3,6 +3,8 @@
     <li>
       {% if page.layout == "license" %}
         <a href="/">Home</a> / <a href="/licenses/">Licenses</a>
+      {% else if page.layout == "community" %}
+        <a href="/">Home</a> / <a href="/community/">Community</a>
       {% else %}
         <a href="/">Home</a>
       {% endif %}
