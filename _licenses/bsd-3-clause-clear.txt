@@ -1,6 +1,7 @@
 ---
 title: BSD 3-Clause Clear License
 spdx-id: BSD-3-Clause-Clear
+nickname: Clear BSD
 
 description: A variant of the <a href="/licenses/bsd-3-clause/">BSD 3-Clause License</a> that explicitly does not grant any patent rights.
 
