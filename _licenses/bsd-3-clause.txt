@@ -11,6 +11,7 @@ using:
   - d3: https://github.com/d3/d3/blob/master/LICENSE
   - LevelDB: https://github.com/google/leveldb/blob/master/LICENSE
   - Quill: https://github.com/quilljs/quill/blob/develop/LICENSE
+  - Tor: https://gitweb.torproject.org/tor.git/tree/LICENSE
 
 permissions:
   - commercial-use
