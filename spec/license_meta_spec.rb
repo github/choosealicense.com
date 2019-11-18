@@ -27,7 +27,6 @@ describe 'license meta' do
           'agpl-3.0',
           'artistic-2.0',
           'bsd-3-clause-clear',
-          'bsl-1.0',
           'cc0-1.0',
           'cc-by-4.0',
           'cc-by-sa-4.0',
@@ -38,8 +37,7 @@ describe 'license meta' do
           'ms-pl',
           'ms-rl',
           'ofl-1.1',
-          'wtfpl',
-          'zlib'
+          'wtfpl'
         ]
         skip 'added before 3 using examples required' if legacy.include?(license['slug'])
         expect(examples.length).to eq(3)
