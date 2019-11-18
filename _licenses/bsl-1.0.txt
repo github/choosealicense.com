@@ -17,7 +17,7 @@ permissions:
   - private-use
 
 conditions:
-  - include-copyright
+  - include-copyright--source
 
 limitations:
   - liability
