@@ -28,16 +28,12 @@ describe 'license meta' do
           'artistic-2.0',
           'bsd-3-clause-clear',
           'bsl-1.0',
-          'cc0-1.0',
-          'cc-by-4.0',
-          'cc-by-sa-4.0',
           'eupl-1.1',
           'lgpl-2.1',
           'lgpl-3.0',
           'lppl-1.3c',
           'ms-pl',
           'ms-rl',
-          'ofl-1.1',
           'wtfpl',
           'zlib'
         ]
