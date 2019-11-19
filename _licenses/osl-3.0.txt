@@ -1,13 +1,12 @@
 ---
 title: Open Software License 3.0
 spdx-id: OSL-3.0
-source: https://opensource.org/licenses/OSL-3.0
 
 description: OSL 3.0 is a copyleft license that does not require reciprocal licensing on linked works. It also provides an express grant of patent rights from contributors to users, with a termination clause triggered if a user files a patent infringement lawsuit.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Files licensed under OSL 3.0 must also include the notice "Licensed under the Open Software License version 3.0" adjacent to the copyright notice.
 
-note: OSL 3.0's author has <a href="http://rosenlaw.com/OSL3.0-explained.htm">provided an explanation</a> behind the creation of the license.
+note: OSL 3.0's author has <a href="https://rosenlaw.com/OSL3.0-explained.htm">provided an explanation</a> behind the creation of the license.
 
 using:
   - appserver.io: https://github.com/appserver-io/appserver/blob/master/LICENSE.txt
@@ -35,7 +34,7 @@ limitations:
 
 ---
 
-Open Software License ("OSL") v 3.0
+Open Software License ("OSL") v. 3.0
 
 This Open Software License (the "License") applies to any original work of
 authorship (the "Original Work") whose owner (the "Licensor") has placed the
