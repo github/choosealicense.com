@@ -17,8 +17,8 @@ We catalog [select](CONTRIBUTING.md#adding-a-license) open source licenses with 
 ```bash
 git clone https://github.com/github/choosealicense.com.git
 cd choosealicense.com
-script/bootstrap
-script/server
+./script/bootstrap
+./script/server
 ```
 
 Open `http://localhost:4000` in your favorite browser.
