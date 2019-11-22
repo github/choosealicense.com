@@ -19,6 +19,9 @@ conditions:
 - description: A copy of the license and copyright notice must be included with the software.
   label: License and copyright notice
   tag: include-copyright
+- description: A copy of the license and copyright notice must be included with the software in source form, but is not required for binaries.
+  label: License and copyright notice for source
+  tag: include-copyright--source
 - description: Changes made to the code must be documented.
   label: State changes
   tag: document-changes
