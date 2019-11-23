@@ -1,9 +1,8 @@
 ---
 title: BSD 4-Clause "Original" or "Old" License
 spdx-id: BSD-4-Clause
-hidden: true
 
-description: A permissive license similar to the <a href="/licenses/bsd-3-clause/">BSD 3-Clause License</a>, but with a 4th clause (known as the "advertising clause") that requires an acknowledgment of the original source in all advertising material.
+description: A permissive license similar to the <a href="/licenses/bsd-3-clause/">BSD 3-Clause License</a>, but with an "advertising clause" that requires an acknowledgment of the original source in all advertising material.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Replace [project] with the project organization, if any, that sponsors this work.
 
