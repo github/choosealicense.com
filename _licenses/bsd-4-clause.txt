@@ -10,7 +10,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 using:
   - Yosemite Blockchain: https://github.com/YosemiteLabs/yosemite-public-blockchain/blob/master/LICENSE
   - querybuilder: https://github.com/pwolfgang/querybuilder/blob/master/LICENSE
-  - PMSPAUR-public: https://github.com/ArthurGodet/PMSPAUR-public/blob/88b6d0fd172950a7e5e1cc595d180565cfaa5462/LICENSE
+  - PMSPAUR-public: https://github.com/ArthurGodet/PMSPAUR-public/blob/master/LICENSE
 
 permissions:
   - commercial-use
