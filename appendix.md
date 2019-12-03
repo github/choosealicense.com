@@ -42,7 +42,12 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
         {% for r in license[t] %}
           {% if r contains req %}
             <td class="license-{{ t }}" style="text-align:center">
-              <span class="{{ r }}">
+              {% if r contains "--" %}
+                {% assign lite = " lite" %}
+              {% else %}
+                {% assign lite = "" %}
+              {% endif %}
+              <span class="{{ r | append: lite }}">
                 <span class="license-sprite {{ r }}"></span>
               </span>
             </td>
