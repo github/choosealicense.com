@@ -1,0 +1,44 @@
+---
+title: SolderPad Hardware License, Version 0.51
+spdx-id: SHL-0.51
+featured: false
+hidden: false
+
+description: A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
+
+note: The FOSSi Foundation recommends taking the additional step of adding a boilerplate notice to the header of each source file. You can find the notice at the very end of the license in the appendix.
+
+using:
+  - Microbit's Reference Design: https://github.com/microbit-foundation/microbit-reference-design/blob/master/LICENSE
+  - LowRISC's socip: https://github.com/lowRISC/socip/blob/master/LICENSE
+  - BaseJump STL: https://github.com/bespoke-silicon-group/basejump_stl/blob/master/LICENSE
+
+permissions:
+  - commercial-use
+  - modifications
+  - distribution
+  - patent-use
+  - private-use
+
+conditions:
+  - include-copyright
+  - document-changes
+
+limitations:
+  - trademark-use
+  - liability
+  - warranty
+
+---
+Copyright [yyyy] [name of copyright owner]
+
+Copyright and related rights are licensed under the Solderpad Hardware
+License, Version 0.51 (the “License”); you may not use this file except in
+compliance with the License. You may obtain a copy of the License at
+http://solderpad.org/licenses/SHL-0.51. Unless required by applicable law
+or agreed to in writing, software, hardware and materials distributed under
+this License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND, either express or implied. See the License for the
+specific language governing permissions and limitations under the License.
