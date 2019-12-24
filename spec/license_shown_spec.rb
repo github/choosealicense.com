@@ -15,14 +15,14 @@ describe 'shown licenses' do
     gpl-2.0
     gpl-3.0
     lgpl-2.1
-    lgpl-3.0
     mit
     mpl-2.0
     unlicense
   ].freeze
 
   it 'has the expected number of shown licenses' do
-    expect(shown_licenses.count).to eql(13)
+    expect(shown_licenses.count).to eql(12)
+    expect(SHOWN_LICENSES.count).to eql(shown_licenses.count)
   end
 
   shown_licenses.each do |license|
