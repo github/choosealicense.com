@@ -1,9 +1,9 @@
 {% include header.html %}
 
       <div class="clearfix">
-      
+
         <div class="license-body">
-        
+
             {% if page.nickname %}
             <p class="license-nickname">
                 {{ page.nickname }}
@@ -13,9 +13,9 @@
             <p>
                 {{ page.description }}
             </p>
-            
+
             <div class="license-page-details">
-            
+
               <table class="license-rules">
                 <tr>
                 {% assign types = "permissions|conditions|limitations" | split: "|" %}
@@ -42,11 +42,11 @@
                   {% endfor %}
                 </tr>
               </table>
-              
+
             </div>
 
             <pre id="license-text">{{ content | replace:"<", "&lt;" | replace:">", "&gt;" }}</pre>
-          
+
         </div> <!-- /license-body -->
 
 {% include sidebar.html %}

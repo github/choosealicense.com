@@ -4,7 +4,7 @@ spdx-id: CECILL-2.1
 
 description: Strong copyleft license made by three French public research organisations, CEA, CNRS, and Inria, compatible with AGPL-3.0, EUPL-1.1, and GPL-2.0, or later versions of those licenses.
 
-how: Create a text file (typically named LICENSE or LICENCE) in the root of your source code and copy the text of the license into the file. 
+how: Create a text file (typically named LICENSE or LICENCE) in the root of your source code and copy the text of the license into the file.
 
 using:
   - BMC-Tools: https://github.com/ANSSI-FR/bmc-tools/blob/master/LICENCE.txt
@@ -22,7 +22,7 @@ conditions:
   - include-copyright
   - disclose-source
   - same-license
-  
+
 limitations:
   - liability
   - warranty
@@ -102,7 +102,7 @@ titulaire des droits patrimoniaux décide de soumettre l'exploitation aux
 dispositions qu'il contient.
 
 Une liste de questions fréquemment posées se trouve sur le site web
-officiel de la famille des licences CeCILL 
+officiel de la famille des licences CeCILL
 (http://www.cecill.info/index.fr.html) pour toute clarification qui
 serait nécessaire.
 
