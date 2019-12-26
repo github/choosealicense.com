@@ -23,7 +23,7 @@
       window.annotations = {{ site.data.rules | jsonify }};
       {% if page.collection == "licenses" %}
       window.licenses = [
-        {% for license in site.licenses %}        
+        {% for license in site.licenses %}
           {
             "title": "{{ license.title | escape  }}",
             "spdx_id": "{{ license.spdx-id | escape  }}"

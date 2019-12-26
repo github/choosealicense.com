@@ -2,7 +2,7 @@
 title: PostgreSQL License
 spdx-id: PostgreSQL
 
-description: A very short, BSD-style license, used specifically for PostgreSQL.  
+description: A very short, BSD-style license, used specifically for PostgreSQL.
 
 how: To use it, say that it is The PostgreSQL License, and then substitute the copyright year and name of the copyright holder into the body of the license. Then put the license into a prominent file ("COPYRIGHT", "LICENSE" or "COPYING" are common names for this file) in your software distribution.
 
