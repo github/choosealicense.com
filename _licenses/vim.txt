@@ -1,8 +1,6 @@
 ---
-title: VIM LICENSE
+title: Vim License
 spdx-id: Vim
-featured: false
-hidden: false
 
 description: There are no restrictions on using or distributing an unmodified copy of the software. Parts of the software may also be distributed, but the license text must always be included. For modified versions a few restrictions apply. The license is GPL compatible, you may compile the software with GPL libraries and distribute it.
 
