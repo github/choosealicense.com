@@ -23,8 +23,7 @@ conditions:
   - disclose-source
   - same-license
 
-limitations:
-  - liability
+limitations: []
 
 ---
 
