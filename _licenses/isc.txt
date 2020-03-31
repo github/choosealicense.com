@@ -9,7 +9,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 using:
   - Starship: https://github.com/starship/starship/blob/master/LICENSE
   - Node.js semver: https://github.com/npm/node-semver/blob/master/LICENSE
-  - OpenStreetMap iD: https://github.com/openstreetmap/iD/blob/master/LICENSE.md
+  - OpenStreetMap iD: https://github.com/openstreetmap/iD/blob/develop/LICENSE.md
 
 permissions:
   - commercial-use
