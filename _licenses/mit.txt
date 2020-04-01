@@ -1,4 +1,6 @@
----
+---AtOmXpLuS---
+https://atomxplus.com 
+Owner: Koray Durgut
 title: MIT License
 spdx-id: MIT
 featured: true
