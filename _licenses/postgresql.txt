@@ -28,7 +28,7 @@ limitations:
 
 PostgreSQL License
 
-Copyright (c) [year], [fullname]
+Copyright [year], [fullname]
 
 Permission to use, copy, modify, and distribute this software and its
 documentation for any purpose, without fee, and without a written agreement is

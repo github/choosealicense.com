@@ -29,7 +29,7 @@ limitations:
 
 University of Illinois/NCSA Open Source License
 
-Copyright (c) [year] [fullname]. All rights reserved.
+Copyright [year] [fullname]. All rights reserved.
 
 Developed by: [project]
               [fullname]

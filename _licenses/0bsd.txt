@@ -25,7 +25,7 @@ limitations:
 
 ---
 
-Copyright (c) [year] [fullname]
+Copyright [year] [fullname]
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted.

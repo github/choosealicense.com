@@ -30,7 +30,7 @@ limitations:
 
 BSD 2-Clause License
 
-Copyright (c) [year], [fullname]
+Copyright [year], [fullname]
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
