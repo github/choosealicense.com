@@ -58,7 +58,7 @@ describe 'license meta' do
             end
 
             it "is a #{slug} license" do
-              skip 'NCSA and PostgreSQL licenses hard to detect' if %(ncsa postgresql).include?(slug)
+              skip 'hard to detect licenses' if %(ncsa postgresql vim).include?(slug) && detected.key == 'other'
               expect(detected.key).to eq(slug)
             end
           end

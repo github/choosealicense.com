@@ -11,7 +11,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 note: Creative Commons recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be <a href="https://wiki.creativecommons.org/wiki/CC0_FAQ#May_I_apply_CC0_to_computer_software.3F_If_so.2C_is_there_a_recommended_implementation.3F">found on their website</a>.
 
 using:
-  - Awesome: https://github.com/sindresorhus/awesome/blob/master/license
+  - Awesome: https://github.com/sindresorhus/awesome/blob/main/license
   - Shields.io: https://github.com/badges/shields/blob/master/LICENSE
   - psdash: https://github.com/Jahaja/psdash/blob/master/LICENSE
 
