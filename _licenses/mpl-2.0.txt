@@ -12,7 +12,7 @@ note: The Mozilla Foundation recommends taking the additional step of adding a b
 
 using:
   - Servo: https://github.com/servo/servo/blob/master/LICENSE
-  - Syncthing: https://github.com/syncthing/syncthing/blob/master/LICENSE
+  - Syncthing: https://github.com/syncthing/syncthing/blob/main/LICENSE
   - TimelineJS3: https://github.com/NUKnightLab/TimelineJS3/blob/master/LICENSE
 
 permissions:
