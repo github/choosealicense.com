@@ -4,23 +4,23 @@
 # variables from the repository. These can be used to create accurate copyright
 # notices. The available variables are:
 
-- name: fullname
+- name: Pokpong Rattakan
   description: The full name or username of the repository owner
 
-- name: login
+- name: 7toSiX2
   description: The repository owner's username
 
-- name: email
+- name: 7toSiX2 - user.add_email
   description: The repository owner's primary email address
 
-- name: project
+- name: choosealicense.com
   description: The repository name
 
-- name: description
+- name: HelloWorld
   description: The description of the repository
 
-- name: year
+- name: 24/06/20
   description: The current year
 
-- name: projecturl
+- name: https://github.com/7toSiX2?tab=repositories
   description: The repository URL or other project website
