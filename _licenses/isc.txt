@@ -1,16 +1,15 @@
 ---
 title: ISC License
 spdx-id: ISC
-source: https://opensource.org/licenses/isc-license
 
 description: A permissive license lets people do anything with your code with proper attribution and without warranty. The ISC license is functionally equivalent to the <a href="/licenses/bsd-2-clause/">BSD 2-Clause</a> and <a href="/licenses/mit/">MIT</a> licenses, removing some language that is no longer necessary.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
 using:
-  - Helix: https://github.com/tildeio/helix/blob/master/LICENSE
+  - Starship: https://github.com/starship/starship/blob/master/LICENSE
   - Node.js semver: https://github.com/npm/node-semver/blob/master/LICENSE
-  - OpenStreetMap iD: https://github.com/openstreetmap/iD/blob/master/LICENSE.md
+  - OpenStreetMap iD: https://github.com/openstreetmap/iD/blob/develop/LICENSE.md
 
 permissions:
   - commercial-use

@@ -2,7 +2,6 @@
 title: Eclipse Public License 2.0
 spdx-id: EPL-2.0
 redirect_from: /licenses/eclipse/
-source: https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.txt
 hidden: false
 
 description: This commercially-friendly copyleft license provides the ability to commercially license binaries; a modern royalty-free patent license grant; and the ability for linked works to use other licenses, including commercial ones.
@@ -10,9 +9,9 @@ description: This commercially-friendly copyleft license provides the ability to
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
 using:
-  - Eclipse Ditto: https://github.com/eclipse/ditto/blob/master/LICENSE
   - Eclipse SmartHome: https://github.com/eclipse/smarthome/blob/master/LICENSE
-  - SUMO: https://github.com/DLR-TS/sumo/blob/master/COPYING
+  - openHAB: https://github.com/openhab/openhab-distro/blob/master/LICENSE
+  - SUMO: https://github.com/eclipse/sumo/blob/master/LICENSE
 
 permissions:
   - commercial-use
@@ -295,8 +294,8 @@ No third-party beneficiary rights are created under this Agreement.
 
 Exhibit A - Form of Secondary Licenses Notice
 
-"This Source Code may also be made available under the following 
-Secondary Licenses when the conditions for such availability set forth 
+"This Source Code may also be made available under the following
+Secondary Licenses when the conditions for such availability set forth
 in the Eclipse Public License, v. 2.0 are satisfied: {name license(s),
 version(s), and exceptions or additional permissions here}."
 

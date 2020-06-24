@@ -2,7 +2,6 @@
 title: Apache License 2.0
 spdx-id: Apache-2.0
 redirect_from: /licenses/apache/
-source: https://www.apache.org/licenses/LICENSE-2.0.html
 featured: true
 hidden: false
 
@@ -10,11 +9,11 @@ description: A permissive license whose main conditions require preservation of 
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
-note: The Apache Foundation recommends taking the additional step of adding a boilerplate notice to the header of each source file. You can find the notice at the very end of the license in the appendix.
+note: The Apache Foundation recommends taking the additional step of adding a boilerplate notice to the header of each source file. You can find the notice in the appendix at the very end of the license text.
 
 using:
-  - Elasticsearch: https://github.com/elastic/elasticsearch/blob/master/LICENSE.txt
   - Kubernetes: https://github.com/kubernetes/kubernetes/blob/master/LICENSE
+  - PDF.js: https://github.com/mozilla/pdf.js/blob/master/LICENSE
   - Swift: https://github.com/apple/swift/blob/master/LICENSE.txt
 
 permissions:
