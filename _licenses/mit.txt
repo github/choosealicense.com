@@ -12,6 +12,8 @@ using:
   - Babel: https://github.com/babel/babel/blob/master/LICENSE
   - .NET Core: https://github.com/dotnet/runtime/blob/master/LICENSE.TXT
   - Rails: https://github.com/rails/rails/blob/master/MIT-LICENSE
+  - Symfony: https://github.com/symfony/symfony/blob/master/LICENSE
+  - Sylius: https://github.com/sylius/sylius/blob/master/LICENSE
 
 permissions:
   - commercial-use
