@@ -105,7 +105,7 @@ def fsf_approved_licenses
     object = JSON.parse(OpenURI.open_uri(url).read)
     licenses = {}
     object['licenses'].each_value do |meta|
-      next unless (meta.include? 'identifiers') && (meta['identifiers'].include? 'spdx') && (meta.include? 'tags') && (meta['tags'].include? 'libre')
+      next unless meta.dig('identifiers', 'spdx') && (meta.include? 'tags') && (meta['tags'].include? 'libre')
 
       meta['identifiers']['spdx'].each do |identifier|
         licenses[identifier.downcase] = meta['name']
