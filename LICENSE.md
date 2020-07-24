@@ -1,4 +1,4 @@
-Copyright (c) 2013-2018 GitHub, Inc. and contributors
+Copyright (c) 2013-2018 GitHub,Inc.  by Koray Durgut 2018-2068 [AtOmXpLuS](https://atomxplus.com) and contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
