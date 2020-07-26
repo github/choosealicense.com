@@ -1,14 +1,14 @@
 permissions:
-- description: Licensed material and derivatives may be used for commercial purposes.
+- description: The licensed material and derivatives may be used for commercial purposes.
   label: Commercial use
   tag: commercial-use
-- description: Licensed material may be modified.
+- description: The licensed material may be modified.
   label: Modification
   tag: modifications
-- description: Licensed material may be distributed.
+- description: The licensed material may be distributed.
   label: Distribution
   tag: distribution
-- description: Licensed material may be used and modified in private.
+- description: The licensed material may be used and modified in private.
   label: Private use
   tag: private-use
 - description: This license provides an express grant of patent rights from contributors.
@@ -16,28 +16,28 @@ permissions:
   tag: patent-use
 
 conditions:
-- description: A copy of the license and copyright notice must be included with licensed material.
+- description: A copy of the license and copyright notice must be included with the licensed material.
   label: License and copyright notice
   tag: include-copyright
-- description: A copy of the license and copyright notice must be included with licensed material in source form, but is not required for binaries.
+- description: A copy of the license and copyright notice must be included with the licensed material in source form, but is not required for binaries.
   label: License and copyright notice for source
   tag: include-copyright--source
-- description: Changes made to licended material must be documented.
+- description: Changes made to the licended material must be documented.
   label: State changes
   tag: document-changes
-- description: Source code must be made available when licensed material is distributed.
+- description: Source code must be made available when the licensed material is distributed.
   label: Disclose source
   tag: disclose-source
-- description: Users who interact with licensed material via network are given the right to receive a copy of source code.
+- description: Users who interact with the licensed material via network are given the right to receive a copy of the source code.
   label: Network use is distribution
   tag: network-use-disclose
-- description: Modifications must be released under the same license when distributing licensed material. In some cases a similar or related license may be used.
+- description: Modifications must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used.
   label: Same license
   tag: same-license
-- description: Modifications of existing files must be released under the same license when distributing licensed material. In some cases a similar or related license may be used.
+- description: Modifications of existing files must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used.
   label: Same license (file)
   tag: same-license--file
-- description: Modifications must be released under the same license when distributing licensed material. In some cases a similar or related license may be used, or this condition may not apply to works that use licensed material as a library.
+- description: Modifications must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used, or this condition may not apply to works that use the licensed material as a library.
   label: Same license (library)
   tag: same-license--library
 
@@ -51,6 +51,6 @@ limitations:
 - description: This license explicitly states that it does NOT grant any rights in the patents of contributors.
   label: Patent use
   tag: patent-use
-- description: The license explicitly states that it does NOT provide any warranty.
+- description: This license explicitly states that it does NOT provide any warranty.
   label: Warranty
   tag: warranty
