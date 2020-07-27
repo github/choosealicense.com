@@ -7,9 +7,9 @@ description: A permissive license similar to the <a href="/licenses/bsd-3-clause
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Replace [project] with the project organization, if any, that sponsors this work.
 
 using:
-  - Yosemite Blockchain: https://github.com/YosemiteLabs/yosemite-public-blockchain/blob/master/LICENSE
-  - querybuilder: https://github.com/pwolfgang/querybuilder/blob/master/LICENSE
+  - Choco-solver: https://github.com/chocoteam/choco-solver/blob/master/LICENSE
   - PMSPAUR-public: https://github.com/ArthurGodet/PMSPAUR-public/blob/master/LICENSE
+  - Switchblade: https://github.com/SwitchbladeBot/switchblade/blob/dev/LICENSE
 
 permissions:
   - commercial-use

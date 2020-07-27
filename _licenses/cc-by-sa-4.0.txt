@@ -8,8 +8,8 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 
 using:
   - Flight rules for Git: https://github.com/k88hudson/git-flight-rules/blob/master/LICENSE
-  - GitHub-Dark: https://github.com/StylishThemes/GitHub-Dark/blob/master/LICENSE
   - Material Design Iconic Font: https://github.com/zavoloklom/material-design-iconic-font/blob/master/License.md
+  - OWASP MSTG: https://github.com/OWASP/owasp-mstg/blob/master/License.md
 
 permissions:
   - commercial-use

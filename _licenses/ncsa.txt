@@ -8,9 +8,9 @@ description: The University of Illinois/NCSA Open Source License, or UIUC licens
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Replace [project] with the project organization, if any, that sponsors this work.
 
 using:
- - LLDB: https://github.com/llvm-mirror/lldb/blob/master/LICENSE.TXT
  - ROCR-Runtime: https://github.com/RadeonOpenCompute/ROCR-Runtime/blob/master/LICENSE.txt
  - RLTK: https://github.com/chriswailes/RLTK/blob/master/LICENSE
+ - ToaruOS: https://github.com/klange/toaruos/blob/master/LICENSE
 
 permissions:
   - commercial-use
