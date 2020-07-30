@@ -7,8 +7,8 @@ require 'open-uri'
 
 module SpecHelper
   class << self
-    attr_accessor :config, :licenses, :site, :spdx
-    attr_accessor :osi_approved_licenses, :fsf_approved_licenses, :od_approved_licenses
+    attr_accessor :config, :licenses, :site, :spdx,
+                  :osi_approved_licenses, :fsf_approved_licenses, :od_approved_licenses
   end
 end
 
