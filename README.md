@@ -16,20 +16,20 @@ We catalog [select](CONTRIBUTING.md#adding-a-license) open source licenses with 
 
 ### Managing Dependencies
 
-It may be the case that your system doesn't have the required dependencies. You will need 'cmake' and 'make' installed on your computer. 
+It may be the case that your system doesn't have the required dependencies. You will need `cmake` and `make` installed on your computer. 
 
-* For MacOS, use Homebrew to update your dependencies (install Homebrew from <https://brew.sh/>):
+For MacOS, use Homebrew to update your dependencies (install Homebrew from <https://brew.sh/>):
 ```bash
 brew install make cmake
 ```
-* For Linux/Ubuntu, use the apt-get tool to install the dependencies:
+For Linux/Ubuntu, use the `apt-get` tool to install the dependencies:
 ```bash
 sudo apt-get install make cmake
 ```
 
 ### Installing and Running the tool
 
-Note that the third command (`./script/bootstrap`) may require you to use 'sudo' access for installation. Add 'sudo' right before the third command, if need be, but don't use root access.
+Note that the third command (`./script/bootstrap`) may require you to use `sudo` access for installation. Add `sudo` right before the third command, if need be, but don't use root access.
 
 ```bash
 git clone https://github.com/github/choosealicense.com.git
