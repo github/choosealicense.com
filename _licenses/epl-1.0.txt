@@ -8,7 +8,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 
 using:
   - Eclipse hawkBit: https://github.com/eclipse/hawkbit/blob/master/LICENSE
-  - JUnit: https://github.com/junit-team/junit4/blob/master/LICENSE-junit.txt
+  - JUnit: https://github.com/junit-team/junit4/blob/main/LICENSE-junit.txt
   - Quil: https://github.com/quil/quil/blob/master/LICENSE
 
 permissions:

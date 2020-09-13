@@ -7,8 +7,8 @@ require 'open-uri'
 
 module SpecHelper
   class << self
-    attr_accessor :config, :licenses, :site, :spdx
-    attr_accessor :osi_approved_licenses, :fsf_approved_licenses, :od_approved_licenses
+    attr_accessor :config, :licenses, :site, :spdx,
+                  :osi_approved_licenses, :fsf_approved_licenses, :od_approved_licenses
   end
 end
 
@@ -105,7 +105,7 @@ def fsf_approved_licenses
     object = JSON.parse(OpenURI.open_uri(url).read)
     licenses = {}
     object['licenses'].each_value do |meta|
-      next unless (meta.include? 'identifiers') && (meta['identifiers'].include? 'spdx') && (meta.include? 'tags') && (meta['tags'].include? 'libre')
+      next unless meta.dig('identifiers', 'spdx') && (meta.include? 'tags') && (meta['tags'].include? 'libre')
 
       meta['identifiers']['spdx'].each do |identifier|
         licenses[identifier.downcase] = meta['name']
