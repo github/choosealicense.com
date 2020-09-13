@@ -1,17 +1,13 @@
 ---
 title: MIT No Attribution
 spdx-id: MIT-0
-featured: true
-hidden: false
 
 description: A short and simple permissive license with no conditions, not even requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
 using:
-  - AWS: https://github.com/aws/mit-0/blob/master/MIT-0
-  - AWS User Guides: https://github.com/awsdocs/amazon-ec2-user-guide/blob/master/LICENSE-SAMPLECODE
-  - AWS Docs: https://github.com/awsdocs/aws-cloud9-user-guide/blob/master/LICENSE-SAMPLECODE
+  - SOIL2: https://github.com/SpartanJ/SOIL2/blob/master/LICENSE
 
 permissions:
   - commercial-use
