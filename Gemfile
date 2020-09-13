@@ -16,7 +16,7 @@ end
 
 group :test do
   gem 'html-proofer', '~> 3.0'
-  gem 'licensee'
+  gem 'licensee', git: 'https://github.com/licensee/licensee.git', branch: 'master'
   gem 'rake'
   gem 'rspec'
   gem 'rubocop'

@@ -1,0 +1,22 @@
+name: Build and Test
+
+on: [push, pull_request]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7.1
+
+    - name: Install dependencies
+      run: ./script/bootstrap
+
+    - name: Run tests
+      run: ./script/cibuild

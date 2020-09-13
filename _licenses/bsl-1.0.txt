@@ -1,6 +1,7 @@
 ---
 title: Boost Software License 1.0
 spdx-id: BSL-1.0
+hidden: false
 
 description: A simple permissive license only requiring preservation of copyright and license notices for source (and not binary) distribution. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
@@ -9,6 +10,9 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 note: Boost recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the [Boost Software License FAQ](https://www.boost.org/users/license.html#FAQ).
 
 using:
+  - Boost: https://github.com/boostorg/boost/blob/master/LICENSE_1_0.txt
+  - Catch2: https://github.com/catchorg/Catch2/blob/master/LICENSE.txt
+  - DMD: https://github.com/dlang/dmd/blob/master/LICENSE.txt
 
 permissions:
   - commercial-use
@@ -17,7 +21,7 @@ permissions:
   - private-use
 
 conditions:
-  - include-copyright
+  - include-copyright--source
 
 limitations:
   - liability

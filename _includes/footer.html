@@ -9,7 +9,7 @@
           Creative Commons Attribution 3.0 Unported License</a>.
         </p>
         <div class="with-love">
-          Curated with &lt;3 by <a href="https://github.com">GitHub, Inc.</a> and <a href="https://github.com/github/choosealicense.com">You!</a>
+          Curated with ❤️ by <a href="https://github.com">GitHub, Inc.</a> and <a href="https://github.com/github/choosealicense.com">You!</a>
         </div>
       </footer>
 
@@ -23,7 +23,7 @@
       window.annotations = {{ site.data.rules | jsonify }};
       {% if page.collection == "licenses" %}
       window.licenses = [
-        {% for license in site.licenses %}        
+        {% for license in site.licenses %}
           {
             "title": "{{ license.title | escape  }}",
             "spdx_id": "{{ license.spdx-id | escape  }}"

@@ -71,7 +71,7 @@ class Choosealicense
   # Post-copy user feedback callback
   clipboardComplete: (client, args) ->
     @textContent = "Copied!"
-  
+
   # Initializes the repository suggestion feature
   initLicenseSuggestion: ->
     inputEl = $("#repository-url")
@@ -83,7 +83,7 @@ class LicenseSuggestion
   constructor: (@inputEl, @licenseId, @statusIndicator) ->
     @setupTooltips()
     @bindEventHandlers()
-  
+
   # Initializes tooltips on the input element
   setupTooltips: =>
     @inputEl.qtip
@@ -98,12 +98,12 @@ class LicenseSuggestion
         at: "bottom center"
       style:
         classes: "qtip-shadow"
-  
+
   # Main event handlers for user input
-  bindEventHandlers: =>    
+  bindEventHandlers: =>
     @inputEl.on "input", (event) =>
       @setStatus ""
-    .on "keyup", (event) =>            
+    .on "keyup", (event) =>
       if event.keyCode == 13 and event.target.value
         # Validate the user input first
         try
@@ -111,8 +111,8 @@ class LicenseSuggestion
         catch
           @setStatus "Error", "Invalid URL."
           return
-        
-        @setStatus "Fetching"        
+
+        @setStatus "Fetching"
         @fetchInfoFromGithubAPI repositoryFullName, (err, repositoryInfo=null) =>
           if (err)
             @setStatus "Error", err.message
@@ -137,7 +137,7 @@ class LicenseSuggestion
       .slice 0, 1
       .join ""
     return username + '/' + project
-  
+
   # Displays an indicator and tooltips to the user about the current status
   setStatus: (status="", message="") =>
     statusClass = status.toLowerCase()
@@ -157,25 +157,25 @@ class LicenseSuggestion
       else
         @inputEl.qtip("api").hide()
         @statusIndicator.removeClass('fetching error')
-  
+
   # Fetches information about a repository from the Github API
   fetchInfoFromGithubAPI: (repositoryFullName, callback) ->
     $.getJSON "https://api.github.com/repos/"+repositoryFullName, (info) ->
       callback null, info
-    .fail (e) -> 
+    .fail (e) ->
       if e.status == 404
         callback new Error "Repository <b>#{repositoryFullName}</b> not found."
       else
         callback new Error "Network error when trying to get information about <b>#{repositoryFullName}</b>."
-  
+
   # Generates a message showing that a repository is already licensed
   repositoryLicense: (repositoryFullName, license) ->
     foundLicense = window.licenses.find (lic) -> lic.spdx_id == license.spdx_id
     if foundLicense # Links the license to its page on this site
-      "The repository <b> #{repositoryFullName}</b> is already licensed under the 
+      "The repository <b> #{repositoryFullName}</b> is already licensed under the
         <a href='/licenses/#{foundLicense.spdx_id.toLowerCase()}'><b>#{foundLicense.title}</b></a>."
     else
       "The repository <b> #{repositoryFullName}</b> is already licensed."
-    
+
 $ ->
   new Choosealicense()
