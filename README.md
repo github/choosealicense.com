@@ -1,5 +1,7 @@
 **[ChooseALicense.com](https://choosealicense.com)** aims to provide **accurate**, **non-judgmental**, and **understandable** information about popular **open source licenses** in order to **help people make informed decisions** about the projects they start, maintain, contribute to, and use.
 
+[![](https://github.com/github/choosealicense.com/workflows/test/badge.svg)](https://github.com/github/choosealicense.com/actions?query=workflow%3Atest)
+
 We catalog [select](CONTRIBUTING.md#adding-a-license) open source licenses with a [Jekyll collection](https://jekyllrb.com/docs/collections/) (in `_licenses`). The catalog is used to render [ChooseALicense.com](https://choosealicense.com) and is regularly vendored into [Licensee](https://github.com/licensee/licensee), which GitHub uses to provide a [license chooser and license detection](https://help.github.com/articles/adding-a-license-to-a-repository/), a [licenses API](https://developer.github.com/v3/licenses/), and to [display license descriptions and metadata](https://github.com/blog/2335-open-source-license-descriptions-and-metadata).
 
 ## Goals
