@@ -45,9 +45,7 @@
     <h3>Who's using this license?</h3>
     <ul>
       {% for using in page.using %}
-        {% for hash in using %}
-          <li><a href="{{ hash[1] }}" target="_blank">{{ hash[0] }}</a></li>
-        {% endfor %}
+        <li><a href="{{ using[1] }}" target="_blank">{{ using[0] }}</a></li>
       {% endfor %}
     </ul>
   </div>
