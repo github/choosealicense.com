@@ -9,7 +9,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 using:
   pgBadger: https://github.com/darold/pgbadger/blob/master/LICENSE
   pgAdmin: https://github.com/postgres/pgadmin4/blob/master/LICENSE
-  .NET Access to PostgreSQL: https://github.com/npgsql/npgsql/blob/dev/LICENSE
+  .NET Access to PostgreSQL: https://github.com/npgsql/npgsql/blob/main/LICENSE
 
 permissions:
   - commercial-use
