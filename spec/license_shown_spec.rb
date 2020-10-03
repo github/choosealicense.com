@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-# Whitelist of popular licenses that are shown (non-hidden)
+# Popular licenses that are shown (non-hidden)
 # Note: most new licenses that are added should be hidden by default
 SHOWN_LICENSES = %w[
   agpl-3.0
