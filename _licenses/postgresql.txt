@@ -7,9 +7,9 @@ description: A very short, BSD-style license, used specifically for PostgreSQL.
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
 using:
-  - pgBadger: https://github.com/darold/pgbadger/blob/master/LICENSE
-  - pgAdmin: https://github.com/postgres/pgadmin4/blob/master/LICENSE
-  - .NET Access to PostgreSQL: https://github.com/npgsql/npgsql/blob/dev/LICENSE
+  pgBadger: https://github.com/darold/pgbadger/blob/master/LICENSE
+  pgAdmin: https://github.com/postgres/pgadmin4/blob/master/LICENSE
+  .NET Access to PostgreSQL: https://github.com/npgsql/npgsql/blob/dev/LICENSE
 
 permissions:
   - commercial-use

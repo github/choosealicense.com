@@ -19,7 +19,7 @@ describe 'license meta' do
         expect(missing).to be_empty
       end
 
-      examples = raw_fields['using'] || []
+      examples = raw_fields['using'] || {}
 
       it 'using contains 3 examples' do
         legacy = [
@@ -42,9 +42,7 @@ describe 'license meta' do
       context 'licensee detects using examples' do
         slug = license['slug']
 
-        examples.each do |example|
-          example_url = example.values[0]
-
+        examples.each_value do |example_url|
           context "the #{example_url} URL" do
             let(:content)  { OpenURI.open_uri(example_url).read }
             let(:detected) { Licensee::ProjectFiles::LicenseFile.new(content, 'LICENSE').license }

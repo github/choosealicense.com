@@ -7,9 +7,9 @@ description: The BSD Zero Clause license goes further than the BSD 2-Clause lice
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.  Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. You may take the additional step of removing the copyright notice.
 
 using:
-  - PickMeUp: https://github.com/nazar-pc/PickMeUp/blob/master/copying.md
-  - smoltcp: https://github.com/m-labs/smoltcp/blob/master/LICENSE-0BSD.txt
-  - Toybox: https://github.com/landley/toybox/blob/master/LICENSE
+  PickMeUp: https://github.com/nazar-pc/PickMeUp/blob/master/copying.md
+  smoltcp: https://github.com/m-labs/smoltcp/blob/master/LICENSE-0BSD.txt
+  Toybox: https://github.com/landley/toybox/blob/master/LICENSE
 
 permissions:
   - commercial-use

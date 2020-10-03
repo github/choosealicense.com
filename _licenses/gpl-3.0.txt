@@ -13,9 +13,9 @@ how: Create a text file (typically named COPYING, as per GNU conventions) in the
 note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
 
 using:
-  - Ansible: https://github.com/ansible/ansible/blob/devel/COPYING
-  - Bash: https://git.savannah.gnu.org/cgit/bash.git/tree/COPYING
-  - GIMP: https://git.gnome.org/browse/gimp/tree/COPYING
+  Ansible: https://github.com/ansible/ansible/blob/devel/COPYING
+  Bash: https://git.savannah.gnu.org/cgit/bash.git/tree/COPYING
+  GIMP: https://git.gnome.org/browse/gimp/tree/COPYING
 
 permissions:
   - commercial-use
