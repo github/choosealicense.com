@@ -8,9 +8,9 @@ description: A permissive license similar to the <a href="/licenses/bsd-2-clause
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
 using:
-  - d3: https://github.com/d3/d3/blob/master/LICENSE
-  - LevelDB: https://github.com/google/leveldb/blob/master/LICENSE
-  - Quill: https://github.com/quilljs/quill/blob/develop/LICENSE
+  d3: https://github.com/d3/d3/blob/master/LICENSE
+  LevelDB: https://github.com/google/leveldb/blob/master/LICENSE
+  Quill: https://github.com/quilljs/quill/blob/develop/LICENSE
 
 permissions:
   - commercial-use
