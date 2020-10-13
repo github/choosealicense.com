@@ -10,7 +10,7 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 So you want to contribute to ChooseALicense. Great! We welcome any help we can
 get. But first, please make sure you understand what
-[this site is all about](https://choosealicense.com/about). It’s not a comprehensive list of all possible licenses.
+[this site is all about](https://choosealicense.com/about). It's not a comprehensive list of all possible licenses.
 
 ## Adding a license
 
@@ -43,7 +43,7 @@ Note what issue/issues your patch fixes in the commit message.
 For example, to [change this file](/CONTRIBUTING.md),
 find it in the GitHub repository. Then click the `Edit` button. Make your
 changes, type in a commit message, and click the `Propose File Change` button.
-That’s it!
+That's it!
 
 For more advanced changes, check out [the bootstrap instructions](https://github.com/github/choosealicense.com#run-it-on-your-machine) in the [project's readme](/README.md).
 
