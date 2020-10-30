@@ -11,7 +11,7 @@ note: Boost recommends taking the additional step of adding a boilerplate notice
 
 using:
   Boost: https://github.com/boostorg/boost/blob/master/LICENSE_1_0.txt
-  Catch2: https://github.com/catchorg/Catch2/blob/master/LICENSE.txt
+  Catch2: https://github.com/catchorg/Catch2/blob/devel/LICENSE.txt
   DMD: https://github.com/dlang/dmd/blob/master/LICENSE.txt
 
 permissions:
