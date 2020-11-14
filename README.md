@@ -12,7 +12,7 @@ We catalog [select](CONTRIBUTING.md#adding-a-license) open source licenses with 
 * Collaborate with and reinforce other licensing best practices and standards projects.
 * Not comprehensive. Seems like an odd goal, but there are a bajillion licenses out there. We're going to have to filter that down to a small list of those that matter.
 
-## Run It On Your Machine
+## Run it on your machine
 
 ### Managing Dependencies
 
