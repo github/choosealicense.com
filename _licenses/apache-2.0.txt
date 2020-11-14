@@ -14,7 +14,7 @@ note: The Apache Foundation recommends taking the additional step of adding a bo
 using:
   Kubernetes: https://github.com/kubernetes/kubernetes/blob/master/LICENSE
   PDF.js: https://github.com/mozilla/pdf.js/blob/master/LICENSE
-  Swift: https://github.com/apple/swift/blob/master/LICENSE.txt
+  Swift: https://github.com/apple/swift/blob/main/LICENSE.txt
 
 permissions:
   - commercial-use
