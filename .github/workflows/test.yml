@@ -20,8 +20,5 @@ jobs:
         ruby-version: 2.7.1
         bundler-cache: true
 
-    - name: Install dependencies
-      run: ./script/bootstrap
-
     - name: Run tests
       run: ./script/cibuild
