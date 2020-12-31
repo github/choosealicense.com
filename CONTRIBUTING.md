@@ -20,6 +20,7 @@ Choosealicense.com is intended to demystify license choices, not present or cata
 2. The license must be listed on one of the following approved lists of licenses:
    * [List of OSI approved licenses](https://opensource.org/licenses/alphabetical)
    * [GNU's list of free licenses](https://www.gnu.org/licenses/license-list.en.html) (*note: the license must be listed in one of the three "free" categories*)
+   * [The Ethical Source Movement](https://ethicalsource.dev/) 
    * [Open Definition's list of conformant licenses](https://opendefinition.org/licenses/) (non-code)
 3. The license must be used in at least *1,000* public repositories. This may be documented, for example, with a [GitHub code search](https://github.com/search?q=MIT+filename%3ALICENSE&type=Code).
 4. 3 notable projects using the license must be identified. These must have straightforward LICENSE files which serve as examples newcomers can follow and that could be detected by [licensee](https://github.com/licensee/licensee) if it knew about the license.
