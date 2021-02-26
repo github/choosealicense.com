@@ -1,6 +1,10 @@
 name: Build and Test
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [gh-pages]
+  pull_request:
+    branches: [gh-pages]
 
 jobs:
   test:
@@ -14,9 +18,7 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.7.1
-
-    - name: Install dependencies
-      run: ./script/bootstrap
+        bundler-cache: true
 
     - name: Run tests
       run: ./script/cibuild

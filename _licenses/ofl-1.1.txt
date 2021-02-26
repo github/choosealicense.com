@@ -10,9 +10,9 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 note: This license doesn't require source provision, but recommends it. All files derived from OFL files must remain licensed under the OFL.
 
 using:
-  - FiraCode: https://github.com/tonsky/FiraCode/blob/master/LICENSE
-  - Noto fonts: https://github.com/googlefonts/noto-fonts/blob/master/LICENSE
-  - Fantasque Sans Mono: https://github.com/belluzj/fantasque-sans/blob/master/LICENSE.txt
+  FiraCode: https://github.com/tonsky/FiraCode/blob/master/LICENSE
+  Noto fonts: https://github.com/googlefonts/noto-fonts/blob/master/LICENSE
+  Fantasque Sans Mono: https://github.com/belluzj/fantasque-sans/blob/master/LICENSE.txt
 
 permissions:
   - private-use

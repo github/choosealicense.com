@@ -7,9 +7,9 @@ description: Similar to <a href='/licenses/cc-by-4.0/'>CC-BY-4.0</a> but require
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. It is also acceptable to solely supply a link to a copy of the license, usually to the <a href='https://creativecommons.org/licenses/by-sa/4.0/'>canonical URL for the license</a>.
 
 using:
-  - Flight rules for Git: https://github.com/k88hudson/git-flight-rules/blob/master/LICENSE
-  - Material Design Iconic Font: https://github.com/zavoloklom/material-design-iconic-font/blob/master/License.md
-  - OWASP MSTG: https://github.com/OWASP/owasp-mstg/blob/master/License.md
+  Flight rules for Git: https://github.com/k88hudson/git-flight-rules/blob/master/LICENSE
+  Material Design Iconic Font: https://github.com/zavoloklom/material-design-iconic-font/blob/master/License.md
+  OWASP MSTG: https://github.com/OWASP/owasp-mstg/blob/master/License.md
 
 permissions:
   - commercial-use

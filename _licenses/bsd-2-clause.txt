@@ -9,9 +9,9 @@ description: A permissive license that comes in two variants, the <a href="/lice
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
 using:
-  - go-redis: https://github.com/go-redis/redis/blob/master/LICENSE
-  - Homebrew: https://github.com/Homebrew/brew/blob/master/LICENSE.txt
-  - Pony: https://github.com/ponylang/ponyc/blob/master/LICENSE
+  go-redis: https://github.com/go-redis/redis/blob/master/LICENSE
+  Homebrew: https://github.com/Homebrew/brew/blob/master/LICENSE.txt
+  Pony: https://github.com/ponylang/ponyc/blob/master/LICENSE
 
 permissions:
   - commercial-use
