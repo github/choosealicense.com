@@ -7,9 +7,9 @@ description: A short and simple permissive license with no conditions, not even 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
 using:
-  - rssfs: https://github.com/dertuxmalwieder/rssfs/blob/master/LICENSE
-  - SOIL2: https://github.com/SpartanJ/SOIL2/blob/master/LICENSE
-  - Units.NET: https://github.com/angularsen/UnitsNet/blob/master/LICENSE
+  rssfs: https://github.com/dertuxmalwieder/rssfs/blob/master/LICENSE
+  SOIL2: https://github.com/SpartanJ/SOIL2/blob/master/LICENSE
+  Units.NET: https://github.com/angularsen/UnitsNet/blob/master/LICENSE
 
 permissions:
   - commercial-use
