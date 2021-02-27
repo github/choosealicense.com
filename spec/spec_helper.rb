@@ -139,6 +139,9 @@ module Licensee
         dir = ::File.dirname(__FILE__)
         ::File.expand_path '../_licenses', dir
       end
+      def spdx_dir
+        ::File.expand_path '../license-list-XML/src', __dir__
+      end
     end
   end
 end
