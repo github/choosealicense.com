@@ -8,7 +8,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 
 using:
   caniuse: https://github.com/Fyrd/caniuse/blob/master/LICENSE
-  WHATWG HTML standard: https://github.com/whatwg/html/blob/master/LICENSE
+  FiveThirtyEight data: https://github.com/fivethirtyeight/data/blob/master/LICENSE
   Kubernetes documentation: https://github.com/kubernetes/website/blob/master/LICENSE
 
 permissions:

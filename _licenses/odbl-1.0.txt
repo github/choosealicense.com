@@ -1,5 +1,5 @@
 ---
-title: ODC Open Database License v1.0
+title: Open Data Commons Open Database License v1.0
 spdx-id: ODbL-1.0
 nickname: ODbL
 
