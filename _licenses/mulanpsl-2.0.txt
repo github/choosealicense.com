@@ -158,8 +158,8 @@ Contribution, where such patent license is only limited to the patent claims
 owned or controlled by such Contributor now or in future which will be 
 necessarily infringed by its Contribution alone, or by combination of the 
 Contribution with the Software to which the Contribution was contributed. 
-The patent license shall not apply to any modification of the Contribution, and 
-any other combination which includes the Contribution. If you or your 
+The patent license shall not apply to any modification of the Contribution, 
+and any other combination which includes the Contribution. If you or your 
 Affiliates directly or indirectly institute patent litigation (including a 
 cross claim or counterclaim in a litigation) or other patent enforcement 
 activities against any individual or entity by alleging that the Software or 
@@ -199,8 +199,8 @@ SHALL PREVAIL.
 
 END OF THE TERMS AND CONDITIONS
 
-How to Apply the Mulan Permissive Software License，Version 2 (Mulan PSL v2) 
-to Your Software
+How to Apply the Mulan Permissive Software License，Version 2 
+(Mulan PSL v2) to Your Software
 
 To apply the Mulan PSL v2 to your work, for easy identification by 
 recipients, you are suggested to complete following three steps:
