@@ -105,8 +105,9 @@ You can use this software according to the terms and conditions of the Mulan
 PSL v2.
 You may obtain a copy of Mulan PSL v2 at:
          http://license.coscl.org.cn/MulanPSL2
-THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
-EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
+THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY 
+KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO 
+NON-INFRINGEMENT,
 MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
 See the Mulan PSL v2 for more details.
 
@@ -116,9 +117,9 @@ Mulan Permissive Software License，Version 2 (Mulan PSL v2)
 
 January 2020 http://license.coscl.org.cn/MulanPSL2
 
-Your reproduction, use, modification and distribution of the Software shall b
-e subject to Mulan PSL v2 (this License) with the following terms and conditi
-ons:
+Your reproduction, use, modification and distribution of the Software shall 
+be subject to Mulan PSL v2 (this License) with the following terms and 
+conditions:
 
 0. Definition
 
@@ -156,8 +157,8 @@ make, have made, use, offer for sale, sell, import or otherwise transfer its
 Contribution, where such patent license is only limited to the patent claims 
 owned or controlled by such Contributor now or in future which will be 
 necessarily infringed by its Contribution alone, or by combination of the 
-Contribution with the Software to which the Contribution was contributed. The 
-patent license shall not apply to any modification of the Contribution, and 
+Contribution with the Software to which the Contribution was contributed. 
+The patent license shall not apply to any modification of the Contribution, and 
 any other combination which includes the Contribution. If you or your 
 Affiliates directly or indirectly institute patent litigation (including a 
 cross claim or counterclaim in a litigation) or other patent enforcement 
@@ -183,9 +184,9 @@ disclaimer statements in the Software.
 
 THE SOFTWARE AND CONTRIBUTION IN IT ARE PROVIDED WITHOUT WARRANTIES OF ANY 
 KIND, EITHER EXPRESS OR IMPLIED. IN NO EVENT SHALL ANY CONTRIBUTOR OR 
-COPYRIGHT HOLDER BE LIABLE TO YOU FOR ANY DAMAGES, INCLUDING, BUT NOT LIMITED 
-TO ANY DIRECT, OR INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING FROM 
-YOUR USE OR INABILITY TO USE THE SOFTWARE OR THE CONTRIBUTION IN IT, NO 
+COPYRIGHT HOLDER BE LIABLE TO YOU FOR ANY DAMAGES, INCLUDING, BUT NOT 
+LIMITED TO ANY DIRECT, OR INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING 
+FROM YOUR USE OR INABILITY TO USE THE SOFTWARE OR THE CONTRIBUTION IN IT, NO 
 MATTER HOW IT’S CAUSED OR BASED ON WHICH LEGAL THEORY, EVEN IF ADVISED OF 
 THE POSSIBILITY OF SUCH DAMAGES.
 
@@ -214,11 +215,12 @@ beginning of each source file.
 
 Copyright (c) [Year] [name of copyright holder]
 [Software Name] is licensed under Mulan PSL v2.
-You can use this software according to the terms and conditions of the Mulan PSL 
-v2.
+You can use this software according to the terms and conditions of the Mulan 
+PSL v2.
 You may obtain a copy of Mulan PSL v2 at:
          http://license.coscl.org.cn/MulanPSL2
-THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
-EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
+THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY 
+KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO 
+NON-INFRINGEMENT
 MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
 See the Mulan PSL v2 for more details.
