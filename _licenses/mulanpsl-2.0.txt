@@ -1,5 +1,5 @@
 ---
-title: Mulan Permissive Software License，Version 2
+title: Mulan Permissive Software License, Version 2
 spdx-id: MulanPSL-2.0
 
 description: A permissive license similar to the <a href="/licenses/apache-2.0/">Apache License</a>, but explicitly states that it does not grant trademark rights. Mulan Permissive Software License is the first open source license in both Chinese and English approved by OSI.
