@@ -9,7 +9,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 note: It's suggested to take the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
 
 using:
-  openGauss Server: https://github.com/opengauss-mirror/openGauss-server/blob/master/LICENSE
+  openGauss Server: https://github.com/opengauss-mirror/openGauss-server/blob/master/License
   OSCPU NutShell: https://github.com/OSCPU/NutShell/blob/master/LICENSE
   Android CN OAID: https://github.com/gzu-liyujiang/Android_CN_OAID/blob/master/LICENSE
 
