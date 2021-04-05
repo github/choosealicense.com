@@ -6,7 +6,7 @@ require 'spec_helper'
 require 'yaml'
 
 describe 'ruby version' do
-  pages_versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+  pages_versions = JSON.parse(URI.open('https://pages.github.com/versions.json').read)
   pages_ruby_version = pages_versions['ruby']
 
   ci_config_file = '.github/workflows/test.yml'
