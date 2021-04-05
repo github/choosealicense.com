@@ -10,7 +10,7 @@ note: It's suggested to take the additional step of adding a boilerplate notice 
 
 using:
   openGauss Server: https://github.com/opengauss-mirror/openGauss-server/blob/master/License
-  OSCPU NutShell: https://github.com/OSCPU/NutShell/blob/master/LICENSE
+  Huawei LiteOS security function library: https://github.com/LiteOS/LiteOS/blob/master/lib/libsec/LICENSE
   Android CN OAID: https://github.com/gzu-liyujiang/Android_CN_OAID/blob/master/LICENSE
 
 permissions:
