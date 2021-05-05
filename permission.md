@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: no-permission/
+permalink: permission/
 redirect_from:
   - /Open-source/
   - /licenses/Open-source/
