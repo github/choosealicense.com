@@ -2,8 +2,8 @@
 layout: default
 permalink: no-permission/
 redirect_from:
-  - /Open source/
-  - /licenses/Open source/
+  - /Open-source/
+  - /licenses/Open-source/
 title: No License
 description: "You're under no obligation to choose a license and it's your right not to include one with your code or project. But please note that opting out of open source licenses doesn't mean you're opting out of copyright law."
 ---
