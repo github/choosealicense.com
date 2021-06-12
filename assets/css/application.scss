@@ -10,6 +10,29 @@ body {
   font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #212121;
+    color: #d0c8c1;
+  }
+  
+  h1, h2, h3, h5 {
+    color: #dadada;
+  }
+  
+  .site-footer {
+    color: #ccc; 
+  }
+  
+  .site-footer a {
+    color: #ddd; 
+  }
+  
+  .home h2 {
+    color: #b6bcbd;
+  }
+}
+
 a {
   color: #149ad4;
   font-weight: bold;
