@@ -16,9 +16,9 @@
     </div> <!-- /container -->
 
     {% if page.collection == "licenses" or page.class == "license-types" %}
-    <script src="/assets/vendor/jquery/jquery.min.js"></script>
-    <script src="/assets/vendor/qtip2/jquery.qtip.min.js"></script>
-    <script src="/assets/vendor/clipboard/dist/clipboard.min.js"></script>
+    <script src="{{ 'assets/vendor/jquery/jquery.min.js' | relative_url }}"></script>
+    <script src="{{ 'assets/vendor/qtip2/jquery.qtip.min.js' | relative_url }}"></script>
+    <script src="{{ 'assets/vendor/clipboard/dist/clipboard.min.js' | relative_url }}"></script>
     <script>
       window.annotations = {{ site.data.rules | jsonify }};
       {% if page.collection == "licenses" %}
@@ -32,7 +32,7 @@
       ];
       {% endif %}
     </script>
-    <script src="/assets/js/app.js"></script>
+    <script src="{{ 'assets/js/app.js' | relative_url }}"></script>
     {% endif %}
   </body>
 </html>
