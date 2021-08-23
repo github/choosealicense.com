@@ -18,6 +18,14 @@ Any open source software license or open license for media (see [above](#data-me
 
 The [SIL Open Font License 1.1](/licenses/ofl-1.1/) keeps fonts open, allowing them to be freely used in other works.
 
+### Hardware
+
+There are the CERN Open Hardware family of licenses: [CERN-OHL-P-2.0](/licenses/cern-ohl-p-2.0/) (Permissive, [MIT](/licenses/mit/)-like), [CERN-OHL-W-2.0](/licenses/cern-ohl-w-2.0/) (Weakly reciprocal, [MPL](/licenses/mpl-2.0/)-like), and [cern-ohl-s-2.0](/licenses/cern-ohl-s-2.0/) (Strongly reciprocal, [GPL](/licenses/gpl-3.0/)-like).  The CERN OHL family is also applicable to HDL source code and programmable hardware such as FPGA bitstreams.
+
+[CC-BY-4.0](/licenses/cc-by-4.0/) and [CC-BY-SA-4.0](/licenses/cc-by-sa-4.0/) are also commonly used for hardware; however they do not grant patent rights which restricts usage of patent-encumbered hardware licensed under them.
+
+If your hardware has accompanying software then be sure to specify a license for the software portion as well as the hardware portion.
+
 ### Mixed projects
 
 If your project contains a mix of software and other material, you can include multiple licenses, as long as you are explicit about which license applies to each part of the project. See [the license notice for this site](https://github.com/github/choosealicense.com#license) as an example.
