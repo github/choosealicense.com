@@ -33,20 +33,20 @@ body {
   }
   
   .license-body pre {
-	background-color: #131313 !important;
-	border: 1px solid #3e3e3e !important;
+    background-color: #131313 !important;
+    border: 1px solid #3e3e3e !important;
   }
   
   .note {
-	color: #9fa5a6 !important;
+    color: #9fa5a6 !important;
   }
   
   strong {
-	color: #bdbdbd !important;
+    color: #bdbdbd !important;
   }
   
   button, input, optgroup, select, textarea {
-	color: black !important;
+    color: black !important;
   }
 }
 
@@ -133,7 +133,7 @@ strong {
 }
 
 .home h2 span {
-  color: #f1f1f1;
+  color: rgba(127,127,127,10%);
   font-size: 70px;
   padding: 0 5px;
   position: relative;
