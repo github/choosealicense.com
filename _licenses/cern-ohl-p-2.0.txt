@@ -66,8 +66,8 @@ their designs nor does it imply any involvement by CERN in their development.
       processing of Covered Source.
 
   1.5 'Make' means to create or configure something, whether by manufacture,
-      assembly, compiling, loading or applying Covered Source or another Product
-      or otherwise.
+      assembly, compiling, loading or applying Covered Source or another
+      Product or otherwise.
 
   1.6 'Notice' means copyright, acknowledgement and trademark notices,
       references to the location of any Notices, modification notices
