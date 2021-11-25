@@ -7,7 +7,7 @@ hidden: false
 
 description: A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Consider adding a NOTICE text file with explicit Copyright Notice as well. More information about the license application is available in Apache Foundations [Assembling LICENSE and NOTICE files](https://infra.apache.org/licensing-howto.html) document.
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Consider adding a NOTICE text file with an explicit copyright notice as well. More information about the license application is available in Apache Foundation's [Assembling LICENSE and NOTICE files](https://infra.apache.org/licensing-howto.html) document.
 
 note: The Apache Foundation recommends taking the additional step of adding a boilerplate notice to the header of each source file. You can find the notice in the appendix at the very end of the license text.
 
