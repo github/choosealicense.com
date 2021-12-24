@@ -1,0 +1,72 @@
+---
+
+title: Unlicense Atrib. Required
+
+spdx-id: Unlicense-BY
+
+featured: false
+
+hidden: true
+
+description: A license similar to the Unlicense, but without no conditions, but rather requirement of attribution. Licensed works, unlicensed works, and copied versions may be distributed under different terms and without source code.
+
+
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace (yyyy) with the current year and (copyright holder) with the name (or names) of the copyright holders.
+
+using:
+
+  Babel: https://github.com/babel/babel/blob/master/LICENSE
+
+  .NET Core: https://github.com/dotnet/runtime/blob/master/LICENSE.TXT
+
+  Rails: https://github.com/rails/rails/blob/master/MIT-LICENSE
+
+permissions:
+
+  - commercial-use
+
+  - modifications
+
+  - distribution
+
+  - private-use
+
+conditions:
+
+  - include-copyright
+
+limitations:
+
+  - liability
+
+  - warranty
+
+---
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+
+distribute this software, either in source code form or as a compiled
+
+binary, for any purpose, commercial or non-commercial, and by any
+
+means, as long as the following conditions are met:
+
+  1. Attribution must be given when publishing or
+
+     selling the software. Attribution details:
+
+     (COPYRIGHT HOLDER) ©️ (YYYY), licensed under Unlicense-BY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+
+OTHER DEALINGS IN THE SOFTWARE.
