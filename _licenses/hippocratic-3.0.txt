@@ -1,6 +1,6 @@
 ---
 title: Hippocratic License 3.0
-spdx-identifier: Hippocratic-3.0
+spdx-id: Hippocratic-3.0
 description: A GPL-compatible, permissive license for open source, similar to Apache-2.0 that allows almost any use subject to license and copyright notice. Contributors grant an express grant of patent rights.
 permissions:
   - commercial-use
@@ -15,7 +15,7 @@ limitations:
   - liability
   - trademark-use
   - warranty
-how: Create a file (typically named LICENSE or LICENSE.txt) in the root folder of your repository.
+how: Create a file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 ---
 HIPPOCRATIC LICENSE
 
