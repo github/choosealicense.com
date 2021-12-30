@@ -4,13 +4,13 @@ spdx-identifier: Hippocratic-3.0
 description: A GPL-compatible, permissive license for open source, similar to Apache-2.0 that allows almost any use subject to license and copyright notice. Contributors grant an express grant of patent rights.
 permissions:
   - commercial-use
-  - modification
+  - modifications
   - distribution
   - patent-use
   - private-use
 conditions:
   - include-copyright
-  - state-changes
+  - document-changes
 limitations:
   - liability
   - trademark-use
