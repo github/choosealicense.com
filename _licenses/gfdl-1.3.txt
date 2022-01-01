@@ -19,6 +19,9 @@ conditions:
   - disclose-source
   - same-license
   - document-changes
+limitations:
+  - liability
+  - warranty
 ---
 
                 GNU Free Documentation License
