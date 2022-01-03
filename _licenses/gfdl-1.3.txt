@@ -6,7 +6,7 @@ spdx-id: GFDL-1.3
 description: A free but copyleft license for software documentation that allows almost any use.
 how: Create a text file (typically named COPYING, as per GNU conventions) in the root of your source code and copy the text of the license into the file.
 
-note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
+note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the "addendum" part of the license.
 
 permissions:
   - commercial-use
