@@ -9,7 +9,7 @@ how: Insert the license or a link to it along with a copyright notice into your 
 note: It is recommended to add a link to the license and copyright notice at the top of each source file, example text can be found at https://oss.oracle.com/licenses/upl/.
 
 using:
-  Oracle Product Images for Docker: https://github.com/oracle/docker-images/blob/master/LICENSE
+  Oracle Product Images for Docker: https://github.com/oracle/docker-images/blob/main/LICENSE.txt
   Skater: https://github.com/oracle/Skater/blob/master/LICENSE
   Soufflé: https://github.com/souffle-lang/souffle/blob/master/LICENSE
 
