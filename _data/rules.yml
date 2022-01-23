@@ -20,13 +20,13 @@ conditions:
   label: License and copyright notice
   tag: include-copyright
 - description: A copy of the license and copyright notice must be included with the licensed material in source form, but is not required for binaries.
-  label: License and copyright notice for source
+  label: License and copyright notice (source)
   tag: include-copyright--source
 - description: Changes made to the licensed material must be documented.
-  label: State changes
+  label: Documentation of changes
   tag: document-changes
 - description: Source code must be made available when the licensed material is distributed.
-  label: Disclose source
+  label: Source code
   tag: disclose-source
 - description: Users who interact with the licensed material via network are given the right to receive a copy of the source code.
   label: Network use is distribution
@@ -48,9 +48,9 @@ limitations:
 - description: This license includes a limitation of liability.
   label: Liability
   tag: liability
-- description: This license explicitly states that it does NOT grant any rights in the patents of contributors.
+- description: This license explicitly states that it does NOT grant any rights in the patents of contributors. Be careful using software under licenses that limit this, since the copyright holder may have set up a trap for you if this is limited.
   label: Patent use
   tag: patent-use
-- description: This license explicitly states that it does NOT provide any warranty.
+- description: This license does NOT provide any warranty.
   label: Warranty
   tag: warranty
