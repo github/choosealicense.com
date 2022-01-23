@@ -54,3 +54,6 @@ limitations:
 - description: This license explicitly states that it does NOT provide any warranty.
   label: Warranty
   tag: warranty
+- description: This license explicitly states that you may not claim you own the licensed material.
+  label: Copyright claims against the holder
+  tag: claims
