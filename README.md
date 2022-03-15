@@ -12,7 +12,7 @@ We catalog [select](CONTRIBUTING.md#adding-a-license) open source licenses with 
 * Collaborate with and reinforce other licensing best practices and standards projects.
 * Not comprehensive. Seems like an odd goal, but there are a bajillion licenses out there. We're going to have to filter that down to a small list of those that matter.
 
-## Run It On Your Machine
+## Run it on your machine
 
 ### Managing Dependencies
 
@@ -54,7 +54,7 @@ Licenses sit in the `/_licenses` folder. Each license has YAML front matter desc
 * `spdx-id` - Short identifier specified by https://spdx.org/licenses/
 * `description` - A human-readable description of the license
 * `how` - Instructions on how to implement the license
-* `using` - A list of 3 notable projects using the license with straightforward LICENSE files which serve as examples newcomers can follow and that can be detected by [licensee](https://github.com/licensee/licensee) in the form of `project_name: license_file_url`
+* `using` - A map of 3 notable projects using the license with straightforward LICENSE files which serve as examples newcomers can follow and that can be detected by [licensee](https://github.com/licensee/licensee) in the form of `project_name: license_file_url`
 * `permissions` - Bulleted list of permission rules
 * `conditions` - Bulleted list of condition rules
 * `limitations` - Bulleted list of limitation rules

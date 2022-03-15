@@ -16,8 +16,8 @@ Any open source software license or open license for media (see [above](#data-me
 
 ### Fonts
 
-The [SIL Open Font License 1.1](/licenses/ofl-1.1/) keeps fonts open but allows them to be freely used in other works.
+The [SIL Open Font License 1.1](/licenses/ofl-1.1/) keeps fonts open, allowing them to be freely used in other works.
 
-### Mixed Projects
+### Mixed projects
 
 If your project contains a mix of software and other material, you can include multiple licenses, as long as you are explicit about which license applies to each part of the project. See [the license notice for this site](https://github.com/github/choosealicense.com#license) as an example.

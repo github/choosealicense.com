@@ -7,9 +7,9 @@ description: There are no restrictions on using or distributing an unmodified co
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [project] with the project name.
 
 using:
-  - Vim: https://github.com/vim/vim/blob/master/LICENSE
-  - Pathogen: https://github.com/tpope/vim-pathogen/blob/master/LICENSE
-  - vim-license-gen: https://github.com/othree/vim-license/blob/master/LICENSE
+  Vim: https://github.com/vim/vim/blob/master/LICENSE
+  Pathogen: https://github.com/tpope/vim-pathogen/blob/master/LICENSE
+  vim-license-gen: https://github.com/othree/vim-license/blob/master/LICENSE
 
 permissions:
   - commercial-use

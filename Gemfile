@@ -3,10 +3,13 @@
 source 'https://rubygems.org'
 
 require 'json'
-require 'open-uri'
-versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+require 'net/http'
+versions = JSON.parse(Net::HTTP.get(URI('https://pages.github.com/versions.json')))
 
 gem 'github-pages', versions['github-pages']
+
+# https://github.com/jekyll/jekyll/issues/8523
+gem 'webrick', '~> 1.7'
 
 group :development do
   gem 'colored'

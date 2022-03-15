@@ -33,11 +33,9 @@ def config
 end
 
 def licenses
-  SpecHelper.licenses ||= begin
-    site.collections['licenses'].docs.map do |license|
-      spdx_lcase = File.basename(license.basename, '.txt')
-      license.to_liquid.merge('spdx-lcase' => spdx_lcase)
-    end
+  SpecHelper.licenses ||= site.collections['licenses'].docs.map do |license|
+    spdx_lcase = File.basename(license.basename, '.txt')
+    license.to_liquid.merge('spdx-lcase' => spdx_lcase)
   end
 end
 
@@ -138,6 +136,10 @@ module Licensee
       def license_dir
         dir = ::File.dirname(__FILE__)
         ::File.expand_path '../_licenses', dir
+      end
+
+      def spdx_dir
+        ::File.expand_path '../license-list-XML/src', __dir__
       end
     end
   end

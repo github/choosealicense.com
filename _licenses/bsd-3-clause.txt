@@ -3,14 +3,14 @@ title: BSD 3-Clause "New" or "Revised" License
 spdx-id: BSD-3-Clause
 hidden: false
 
-description: A permissive license similar to the <a href="/licenses/bsd-2-clause/">BSD 2-Clause License</a>, but with a 3rd clause that prohibits others from using the name of the project or its contributors to promote derived products without written consent.
+description: A permissive license similar to the <a href="/licenses/bsd-2-clause/">BSD 2-Clause License</a>, but with a 3rd clause that prohibits others from using the name of the copyright holder or its contributors to promote derived products without written consent.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
 using:
-  - d3: https://github.com/d3/d3/blob/master/LICENSE
-  - LevelDB: https://github.com/google/leveldb/blob/master/LICENSE
-  - Quill: https://github.com/quilljs/quill/blob/develop/LICENSE
+  Flutter: https://github.com/flutter/flutter/blob/master/LICENSE
+  LevelDB: https://github.com/google/leveldb/blob/master/LICENSE
+  Quill: https://github.com/quilljs/quill/blob/develop/LICENSE
 
 permissions:
   - commercial-use
@@ -30,7 +30,6 @@ limitations:
 BSD 3-Clause License
 
 Copyright (c) [year], [fullname]
-All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
