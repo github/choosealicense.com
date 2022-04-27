@@ -28,7 +28,7 @@ describe 'licenses' do
 
       context 'industry approval' do
         it 'should be approved by OSI or FSF or OD' do
-          expect(approved_licenses).to include(spdx_lcase), 'See https://github.com/github/choosealicense.com/blob/master/CONTRIBUTING.md#adding-new-licenses.'
+          expect(approved_licenses).to include(spdx_lcase), 'See https://github.com/github/choosealicense.com/blob/gh-pages/CONTRIBUTING.md#adding-new-licenses.'
         end
       end
 
