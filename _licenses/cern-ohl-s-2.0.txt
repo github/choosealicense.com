@@ -3,7 +3,7 @@ title: CERN Open Hardware Licence Version 2 - Strongly Reciprocal
 spdx-id: CERN-OHL-S-2.0
 nickname: CERN OHL v2 Strongly Reciprocal
 
-description: The CERN OHL was drafted with hardware in mind.  On top of licensing copyright like software and documentation licenses, it also licenses patents.  This “Strongly Reciprocal” variant applies virally, and if a CERN-OHL-S-2.0 file is used in a project then the full project must be released under the CERN-OHL-S-2.0 (or a compatible license).
+description: The CERN OHL was drafted with hardware in mind.  On top of licensing copyright like software and documentation licenses, it also licenses patents.  This “Strongly Reciprocal” variant applies to a complete design, and if a CERN-OHL-S-2.0 file is used in a project then the full project must be released under the CERN-OHL-S-2.0 (or a compatible license).
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
