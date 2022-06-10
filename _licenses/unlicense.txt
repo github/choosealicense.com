@@ -8,9 +8,9 @@ description: A license with no conditions whatsoever which dedicates works to th
 how: Create a text file (typically named UNLICENSE or UNLICENSE.txt) in the root of your source code and copy the text of the license disclaimer into the file.
 
 using:
-  scoop: https://github.com/lukesampson/scoop/blob/master/LICENSE
   kakoune: https://github.com/mawww/kakoune/blob/master/UNLICENSE
   RDF.rb: https://github.com/ruby-rdf/rdf/blob/master/UNLICENSE
+  react-use: https://github.com/streamich/react-use/blob/master/LICENSE
 
 permissions:
   - private-use
