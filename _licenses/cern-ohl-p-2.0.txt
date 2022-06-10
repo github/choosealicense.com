@@ -10,9 +10,9 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 note: CERN recommends adding a license header and copyright notice to the README and source files.  CERN provides a <a href="https://ohwr.org/project/cernohl/wikis/uploads/8a6b5d01f71c207c49493e4d114d61e6/cern_ohl_p_v2_howto.pdf">User's Guide</a> containing a recommended license header.
 
 using:
-  Castor & Pollux: https://github.com/wntrblm/Castor_and_Pollux/blob/main/hardware/mainboard/LICENSE
+  tedium: https://github.com/jboone/tedium/blob/master/LICENSE-CERN-OHL-P-v2
   LEDEAF: https://github.com/adamgreig/ledeaf/blob/master/LICENSE_CERN_OHL_P_v2.txt
-  ProtoCentral ECG Breakout: https://github.com/Protocentral/protocentral_max86150_ecg_ppg/blob/master/LICENSE.md#hardware
+  Open source controller board for ventilators: https://github.com/CV19CO/open_controller_for_ventilator/master/LICENSE
 
 permissions:
   - commercial-use

@@ -12,7 +12,7 @@ note: CERN recommends adding a license header and copyright notice to the README
 using:
   USB Armory: https://github.com/f-secure-foundry/usbarmory/blob/master/hardware/mark-two/LICENSE
   waffling60: https://github.com/4pplet/waffling60/blob/master/LICENCE.md
-  Duet 3 Mainboard 6HC: https://github.com/Duet3D/Duet3-Mainboard-6HC/blob/master/LICENSE
+  plt-docs PLT Demo Board: https://github.com/bcdevices/plt-docs/blob/main/PLT-DEMOv2/LICENSE
 
 permissions:
   - commercial-use
