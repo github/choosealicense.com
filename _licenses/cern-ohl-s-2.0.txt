@@ -13,7 +13,7 @@ note:
 using:
   USB Armory: https://github.com/f-secure-foundry/usbarmory/blob/master/hardware/mark-two/LICENSE
   waffling60: https://github.com/4pplet/waffling60/blob/master/LICENCE.md
-  Passport Electronics https://github.com/Foundation-Devices/passport-electronics/blob/master/LICENSE.txt
+  Passport Electronics: https://github.com/Foundation-Devices/passport-electronics/blob/master/LICENSE.txt
 
 permissions:
   - commercial-use
