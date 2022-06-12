@@ -13,7 +13,7 @@ note:
 using:
   tedium: https://github.com/jboone/tedium/blob/master/LICENSE-CERN-OHL-P-v2
   LEDEAF: https://github.com/adamgreig/ledeaf/blob/master/LICENSE_CERN_OHL_P_v2.txt
-  Open source controller board for ventilators: https://github.com/CV19CO/open_controller_for_ventilator/master/LICENSE
+  Open source controller board for ventilators: https://github.com/CV19CO/open_controller_for_ventilator/blob/master/LICENSE
 
 permissions:
   - commercial-use
