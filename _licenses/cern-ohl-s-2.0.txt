@@ -12,7 +12,7 @@ note: CERN <a href="https://ohwr.org/project/cernohl/wikis/uploads/cf37727497ca2
 using:
   USB Armory: https://github.com/f-secure-foundry/usbarmory/blob/master/hardware/mark-two/LICENSE
   waffling60: https://github.com/4pplet/waffling60/blob/master/LICENCE.md
-  plt-docs PLT Demo Board: https://github.com/bcdevices/plt-docs/blob/main/PLT-DEMOv2/LICENSE
+  Passport Electronics https://github.com/Foundation-Devices/passport-electronics/blob/master/LICENSE.txt
 
 permissions:
   - commercial-use
