@@ -12,6 +12,7 @@ using:
   go-redis: https://github.com/go-redis/redis/blob/master/LICENSE
   Homebrew: https://github.com/Homebrew/brew/blob/master/LICENSE.txt
   Pony: https://github.com/ponylang/ponyc/blob/master/LICENSE
+  SerenityOS: https://github.com/SerenityOS/serenity/blob/master/LICENSE
 
 permissions:
   - commercial-use
