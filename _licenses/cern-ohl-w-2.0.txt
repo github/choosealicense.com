@@ -3,7 +3,7 @@ title: CERN Open Hardware Licence Version 2 - Weakly Reciprocal
 spdx-id: CERN-OHL-W-2.0
 nickname: CERN OHL v2 Weakly Reciprocal
 
-description: The CERN OHL was drafted with hardware in mind.  On top of licensing copyright like software and documentation licenses, it also licenses patents.  This “Weakly Reciprocal” variant applies to individual designs but does not spread to the entire project it is included in.
+description: Permissions of this weakly-reciprocal license are conditioned on making available complete sources of licensed works and modifications under the same license. Notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work through interfaces provided by the licensed work may be distributed under different terms and without sources for the larger work.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
