@@ -14,7 +14,7 @@ Some communities have strong preferences for particular licenses. If you want to
 {: .bullets}
 
 * [Apache](https://www.apache.org/licenses/) requires [Apache License 2.0](/licenses/apache-2.0/)
-* [Cloud Native Computing Foundation](https://github.com/cncf/toc/blob/main/process/project_proposals.md) dictates [Apache License 2.0](/licenses/apache-2.0/) by default
+* [Cloud Native Computing Foundation](https://github.com/cncf/foundation/blob/main/charter.md#11-ip-policy) requires [Apache License 2.0](/licenses/apache-2.0/)
 * [GNU](https://www.gnu.org/licenses/license-recommendations.html) recommends [GNU GPLv3](/licenses/gpl-3.0/) for most programs
 * [npm packages](https://libraries.io/search?platforms=npm) overwhelmingly use the [MIT](/licenses/mit/) or the very similar [ISC](/licenses/isc) licenses
 * [OpenBSD](https://www.openbsd.org/policy.html) prefers the [ISC License](/licenses/isc/)
