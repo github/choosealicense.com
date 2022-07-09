@@ -7,8 +7,7 @@ description: Permissions of this weakly-reciprocal license are conditioned on ma
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
-note:
-    CERN <a href="https://ohwr.org/project/cernohl/wikis/uploads/c2e5e9d297949b5c2d324a6cbf6adda0/cern_ohl_w_v2_howto.pdf">recommends</a> adding the following information in the source files: copyright and license notice, a disclaimer of warranties and a source location. You can also include the source location in a part of the design which will be visible in the end product.
+note: 'CERN <a href="https://ohwr.org/project/cernohl/wikis/uploads/c2e5e9d297949b5c2d324a6cbf6adda0/cern_ohl_w_v2_howto.pdf">recommends</a> adding the following information in the source files: copyright and license notice, a disclaimer of warranties and a source location. You can also include the source location in a part of the design which will be visible in the end product.'
 
 using:
   Simple PCIe FMC carrier: https://ohwr.org/project/spec/blob/master/LICENSES/CERN-OHL-W-2.0.txt

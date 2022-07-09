@@ -15,13 +15,13 @@
   <div class="how-to-apply">
     <h3 id="how-to-apply">How to apply this license</h3>
     <p>
-      {{ page.how | markdownify | remove: '<p>' | remove: '</p>' }}
+      {{ page.how }}
     </p>
     <div class="note">
     <h4 id="optional-steps">Optional steps</h4>
     {% if page.note %}
     <p>
-      {{ page.note | markdownify | remove: '<p>' | remove: '</p>' }}
+      {{ page.note }}
     </p>
     {% endif %}
     {% assign xgpl = false %}

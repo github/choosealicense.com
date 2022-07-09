@@ -7,8 +7,7 @@ description: A permissive license for hardware designs, with conditions only req
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
-note:
-    CERN <a href="https://ohwr.org/project/cernohl/wikis/uploads/8a6b5d01f71c207c49493e4d114d61e6/cern_ohl_p_v2_howto.pdf">recommends</a> adding the following information in the source files: copyright and license notice, a disclaimer of warranties and a source location. You can also include the source location in a part of the design which will be visible in the end product.
+note: 'CERN <a href="https://ohwr.org/project/cernohl/wikis/uploads/8a6b5d01f71c207c49493e4d114d61e6/cern_ohl_p_v2_howto.pdf">recommends</a> adding the following information in the source files: copyright and license notice, a disclaimer of warranties and a source location. You can also include the source location in a part of the design which will be visible in the end product.'
 
 using:
   tedium: https://github.com/jboone/tedium/blob/master/LICENSE-CERN-OHL-P-v2
