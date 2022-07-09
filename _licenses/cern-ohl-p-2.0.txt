@@ -3,7 +3,7 @@ title: CERN Open Hardware Licence Version 2 - Permissive
 spdx-id: CERN-OHL-P-2.0
 nickname: CERN OHL v2 Permissive
 
-description: A permissive license for hardware designs,  with conditions only requiring preservation of notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without sources.
+description: A permissive license for hardware designs, with conditions only requiring preservation of notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without sources.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
