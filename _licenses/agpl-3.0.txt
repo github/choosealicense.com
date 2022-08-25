@@ -13,6 +13,8 @@ note: The Free Software Foundation recommends taking the additional step of addi
 
 using:
   Grafana: https://github.com/grafana/grafana/blob/main/LICENSE
+  Mastodon: https://github.com/mastodon/mastodon/blob/main/LICENSE
+  Nextcloud Server: https://github.com/nextcloud/server/blob/master/COPYING
 
 permissions:
   - commercial-use
