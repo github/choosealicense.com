@@ -1,13 +1,53 @@
 ---
 ---
 
-@import "/assets/vendor/normalize-css/normalize.css";
-@import "/assets/vendor/qtip2/jquery.qtip.min.css";
+@import "../vendor/normalize-css/normalize.css";
+@import "../vendor/qtip2/jquery.qtip.min.css";
 
 body {
   background: #fafafa;
   color: #5c5855;
-  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 0.875rem/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #212121;
+    color: #d0c8c1;
+  }
+  
+  h1, h2, h3, h5 {
+    color: #dadada !important;
+  }
+  
+  .site-footer {
+    color: #ccc !important; 
+  }
+  
+  .site-footer a {
+    color: #ddd !important; 
+  }
+  
+  .home h2 {
+    color: #c7cdce !important;
+  }
+  
+  .license-body pre {
+    background-color: #131313 !important;
+    border: 1px solid #3e3e3e !important;
+  }
+  
+  .note {
+    color: #9fa5a6 !important;
+  }
+  
+  strong {
+    color: #bdbdbd !important;
+  }
+  
+  button, input, optgroup, select, textarea {
+    color: black !important;
+  }
 }
 
 a {
@@ -28,7 +68,7 @@ h1, h2, h3, h5 {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 2.1875rem;
   margin-bottom: 25px;
 }
 
@@ -38,19 +78,19 @@ h1 {
 
 h2 {
   opacity: 0.8;
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-top: 24px;
   margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 15px;
+  font-size: 0.9375rem;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
 h5 {
-  font-size: 14px;
+  font-size: 0.875rem;
   margin-bottom: 15px;
 }
 
@@ -68,6 +108,7 @@ strong {
 
 :target {
   background-color: yellow;
+  color: #444 !important;
 }
 
 .container {
@@ -80,12 +121,12 @@ strong {
 }
 
 .home h1 {
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 
 .home h2 {
   color: #687072;
-  font-size: 27px;
+  font-size: 1.6875rem;
   line-height: 70px;
   margin-bottom: 45px;
   vertical-align: middle;
@@ -93,8 +134,8 @@ strong {
 }
 
 .home h2 span {
-  color: #f1f1f1;
-  font-size: 70px;
+  color: rgba(127,127,127,10%);
+  font-size: 4.375rem;
   padding: 0 5px;
   position: relative;
   top: 10px;
@@ -120,7 +161,7 @@ strong {
 }
 
 .triptych h3 {
-  font-size: 22px;
+  font-size: 1.375rem;
   margin: 0 auto 20px auto;
   width: 220px;
 }
@@ -178,7 +219,7 @@ strong {
 }
 
 .license-overview-name {
-  font-size: 28px;
+  font-size: 1.75rem;
   margin-top: 5px;
 }
 
@@ -188,7 +229,7 @@ strong {
 
 .license-rules {
   border-bottom: solid 1px #ddd;
-  font-size: 13px;
+  font-size: 0.8125rem;
   line-height: 1.3;
   margin-bottom: 12px;
   width: 100%;
@@ -200,7 +241,7 @@ strong {
 }
 
 .license-rules th {
-  font-size: 15px;
+  font-size: 0.9375rem;
   padding: 5px 10px 5px 0;
   vertical-align: bottom;
 }
@@ -219,11 +260,11 @@ strong {
 }
 
 .license-rules .name a {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 .license-rules .name small a {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .license-rules td {
@@ -262,14 +303,14 @@ strong {
 }
 
 .license-body {
-  font-size: 15px;
+  font-size: 0.9375rem;
   float: left;
   width: 700px;
 }
 
 .license-body pre {
   font-family: Consolas, Monaco, Courier, monospace;
-  font-size: 14px;
+  font-size: 0.875rem;
   background-color: #fff;
   border: 1px solid #eee;
   -webkit-border-radius: 3px;
@@ -287,7 +328,7 @@ strong {
 .sidebar {
   float: right;
   width: 220px;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .sidebar a.button {
@@ -358,7 +399,7 @@ strong {
   background-image: -o-linear-gradient(#eee, #ddd);
   background-image: linear-gradient(#eee, #ddd);
   display: inline-block;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: normal;
   padding: 5px 10px;
   text-align: center;
@@ -383,7 +424,7 @@ strong {
   margin-top: 30px;
   padding-top: 20px;
   color: #555;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-align: left;
   line-height: 1.5;
 }
@@ -427,7 +468,7 @@ strong {
 .qtip-limitations,
 .qtip-fetching,
 .qtip-error {
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.3;
 }
 
