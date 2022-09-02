@@ -24,7 +24,6 @@ describe 'license meta' do
       it 'using contains 3 examples' do
         legacy = [
           'afl-3.0',
-          'agpl-3.0',
           'artistic-2.0',
           'bsd-3-clause-clear',
           'eupl-1.1',
@@ -53,6 +52,8 @@ describe 'license meta' do
               example_url.gsub!(%r{/tree/}, '/plain/')
             elsif example_url.start_with?('https://bitbucket.org/')
               example_url.gsub!(%r{/src/}, '/raw/')
+            elsif example_url.start_with?('https://ohwr.org/')
+              example_url.gsub!(%r{/blob/}, '/raw/')
             end
 
             it "is a #{slug} license" do

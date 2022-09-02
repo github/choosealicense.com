@@ -7,7 +7,7 @@ description: The “European Union Public Licence” (EUPL) is a copyleft free/o
 
 how: Create a text file (typically named COPYING or LICENCE.txt) in the root of your source code and copy the text of the license into the file.
 
-note: The European Commission recommends taking the additional step of adding a [boilerplate notice](https://joinup.ec.europa.eu/sites/default/files/inline-files/EUPL%201_1%20Guidelines%20EN%20Joinup.pdf#page=17) to the top of each file.
+note: The European Commission recommends taking the additional step of adding a <a href="https://joinup.ec.europa.eu/sites/default/files/inline-files/EUPL%201_1%20Guidelines%20EN%20Joinup.pdf#page=17">boilerplate notice</a> to the top of each file.
 
 using:
 
