@@ -11,8 +11,8 @@ note: The Free Software Foundation recommends taking the additional step of addi
 
 using:
   GNU LilyPond (Documentation): https://git.savannah.gnu.org/cgit/lilypond.git/tree/COPYING.FDL
-  GNU nano (Documentation): https://git.savannah.gnu.org/cgit/nano.git/tree/COPYING.DOC
   GNU Scientific Library (Documentation): https://git.savannah.gnu.org/cgit/gsl.git/tree/doc/_static/fdl.txt
+  Qt (Documentation): https://code.qt.io/cgit/qt/qt.git/tree/LICENSE.FDL
   
 permissions:
   - commercial-use
