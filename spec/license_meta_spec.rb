@@ -48,7 +48,7 @@ describe 'license meta' do
 
             if example_url.start_with?('https://github.com/')
               example_url.gsub!(%r{\Ahttps://github.com/([\w-]+/[\w.-]+)/blob/(\S+)\z}, 'https://raw.githubusercontent.com/\1/\2')
-            elsif example_url.start_with?('https://git.savannah.gnu.org/', 'https://git.gnome.org/')
+            elsif example_url.start_with?('https://git.savannah.gnu.org/', 'https://git.gnome.org/', 'https://code.qt.io')
               example_url.gsub!(%r{/tree/}, '/plain/')
             elsif example_url.start_with?('https://bitbucket.org/')
               example_url.gsub!(%r{/src/}, '/raw/')

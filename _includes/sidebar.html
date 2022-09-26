@@ -24,11 +24,12 @@
       {{ page.note }}
     </p>
     {% endif %}
-    {% assign xgpl = false %}
-    {% if page.spdx-id contains 'GPL' %}{% assign xgpl = true %}{% endif %}
+    {% assign lateronly = false %}
+    {% if page.spdx-id contains 'GPL' %}{% assign lateronly = true %}
+    {% elsif page.spdx-id contains 'GFDL' %}{% assign lateronly = true %}{% endif %}
     {% assign ofl = false %}
     {% if page.spdx-id contains 'OFL-1' %}{% assign ofl = true %}{% endif %}
-    <p id="package-metadata">Add <strong><code>{{ page.spdx-id }}{% if xgpl %}-or-later{% endif %}{% if ofl %}-no-RFN{% endif %}</code></strong>{% if xgpl %} (or <strong><code>{{ page.spdx-id }}-only</code></strong> to disallow future versions){% endif %}{% if ofl %} (or <strong><code>{{ page.spdx-id }}-RFN</code></strong> if a Reserved Font Name is specified after the copyright statement){% endif %} to your project’s package description, if applicable (e.g., <a href="https://docs.npmjs.com/cli/v7/configuring-npm/package-json#license">Node.js</a>, <a href="https://guides.rubygems.org/specification-reference/#license=">Ruby</a>, and <a href="https://doc.rust-lang.org/cargo/reference/manifest.html#the-license-and-license-file-fields">Rust</a>). This will ensure the license is displayed in package directories.</p>
+    <p id="package-metadata">Add <strong><code>{{ page.spdx-id }}{% if lateronly %}-or-later{% endif %}{% if ofl %}-no-RFN{% endif %}</code></strong>{% if lateronly %} (or <strong><code>{{ page.spdx-id }}-only</code></strong> to disallow future versions){% endif %}{% if ofl %} (or <strong><code>{{ page.spdx-id }}-RFN</code></strong> if a Reserved Font Name is specified after the copyright statement){% endif %} to your project’s package description, if applicable (e.g., <a href="https://docs.npmjs.com/cli/v7/configuring-npm/package-json#license">Node.js</a>, <a href="https://guides.rubygems.org/specification-reference/#license=">Ruby</a>, and <a href="https://doc.rust-lang.org/cargo/reference/manifest.html#the-license-and-license-file-fields">Rust</a>). This will ensure the license is displayed in package directories.</p>
     {% if page.spdx-id contains 'GPL-2' %}
     <p id="gplcc">If you would like your project to adopt the GPL-3.0’s cure provision, add the <a href="https://github.com/gplcc/gplcc/blob/master/Project/COMMITMENT">text</a> of the <a href="https://gplcc.github.io/gplcc/">GPL Cooperation Commitment</a> to a file named <code>COMMITMENT</code> in the same directory as your {{ page.spdx-id }} license file.</p>
     {% endif %}
@@ -36,7 +37,7 @@
   </div>
 
   <div class="source">
-    <a href="https://spdx.org/licenses/{{ page.spdx-id }}{% if xgpl %}-or-later{% endif %}.html">
+    <a href="https://spdx.org/licenses/{{ page.spdx-id }}{% if lateronly %}-or-later{% endif %}.html">
       <span class="license-sprite"></span>
       Source
     </a>
