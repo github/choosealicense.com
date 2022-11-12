@@ -40,6 +40,8 @@ cd choosealicense.com
 
 Open `http://localhost:4000` in your favorite browser.
 
+If the instructions above aren't clear enough, here's a [quick video](https://replayable.io/replay/636f0d8a3375f200634902d5/?share=LEhOR05GQonJetpVUdhXw).
+
 ## Adding a license
 
 For information on adding a license, see [the CONTRIBUTING file](https://github.com/github/choosealicense.com/blob/gh-pages/CONTRIBUTING.md#adding-a-license).
