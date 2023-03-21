@@ -5,7 +5,7 @@ title: Appendix
 class: license-types
 ---
 
-For reference, here is a table of every license described in the [choosealicense.com repository](https://github.com/github/choosealicense.com).
+For reference, here is a table of every license described in the [choosealicense.com repository](https://github.com/github/choosealicense.com). 
 
 If you're here to choose a license, **[start from the home page](/)** to see a few licenses that will work for most cases.
 
