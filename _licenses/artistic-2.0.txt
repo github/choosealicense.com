@@ -5,7 +5,7 @@ redirect_from: /licenses/artistic/
 
 description: Heavily favored by the Perl community, the Artistic license requires that modified versions of the software do not prevent users from running the standard version.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code, and copy the text of the license into the file. Do not replace the copyright notice (year, author), which refers to the license itself, not the licensed project.
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Do not replace the copyright notice (year, author), which refers to the license itself, not the licensed project.
 
 using:
 

@@ -6,12 +6,12 @@ require 'spec_helper'
 require 'yaml'
 
 describe 'ruby version' do
-  pages_versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+  pages_versions = JSON.parse(URI.open('https://pages.github.com/versions.json').read)
   pages_ruby_version = pages_versions['ruby']
 
-  ci_config_file = '.travis.yml'
+  ci_config_file = '.github/workflows/test.yml'
   ci_config = YAML.load_file(ci_config_file)
-  ci_ruby_version = ci_config['rvm'][0]
+  ci_ruby_version = ci_config['jobs']['test']['steps'][1]['with']['ruby-version']
 
   context "in #{ci_config_file} and pages ruby version" do
     it 'match' do

@@ -6,12 +6,12 @@ description: The Educational Community License version 2.0 ("ECL") consists of t
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
-note: The Apereo Foundation recommends taking the additional step of adding a boilerplate notice to the header of each source file. You can find the notice at the very end of the license in the appendix.
+note: The Apereo Foundation recommends taking the additional step of adding a boilerplate notice to the header of each source file. You can find the notice in the appendix at the very end of the license text.
 
 using:
-  - Sakai: https://github.com/sakaiproject/sakai/blob/master/LICENSE
-  - OAE: https://github.com/oaeproject/Hilary/blob/master/LICENSE
-  - Opencast: https://github.com/opencast/opencast/blob/develop/LICENSE
+  Sakai: https://github.com/sakaiproject/sakai/blob/master/LICENSE
+  OAE: https://github.com/oaeproject/Hilary/blob/master/LICENSE
+  Opencast: https://github.com/opencast/opencast/blob/develop/LICENSE
 
 permissions:
   - commercial-use

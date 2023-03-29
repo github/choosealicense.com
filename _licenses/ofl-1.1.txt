@@ -5,11 +5,14 @@ redirect_from: /licenses/ofl/
 
 description: The Open Font License (OFL) is maintained by SIL International. It attempts to be a compromise between the values of the free software and typeface design communities. It is used for almost all open source font projects, including those by Adobe, Google and Mozilla.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your font source and copy the text of the license into the file. Replace [year] with the current year and [fullname] ([email]) with the name and contact email address of each copyright holder. You may take the additional step of appending a Reserved Font Name notice. This option requires anyone making modifications to change the font's name, and is not ideal for web fonts (which all users will modify by changing formats and subsetting for their own needs.)
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your font's source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] ([email]) with the name and contact email address of each copyright holder. You may take the additional step of appending a Reserved Font Name notice. This option requires anyone making modifications to change the font's name, and is not ideal for web fonts (which all users will modify by changing formats and subsetting for their own needs.)
 
 note: This license doesn't require source provision, but recommends it. All files derived from OFL files must remain licensed under the OFL.
 
 using:
+  FiraCode: https://github.com/tonsky/FiraCode/blob/master/LICENSE
+  Noto fonts: https://github.com/googlefonts/noto-fonts/blob/master/LICENSE
+  Fantasque Sans Mono: https://github.com/belluzj/fantasque-sans/blob/master/LICENSE.txt
 
 permissions:
   - private-use

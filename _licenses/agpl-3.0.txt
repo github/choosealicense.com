@@ -12,6 +12,9 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
 
 using:
+  Grafana: https://github.com/grafana/grafana/blob/main/LICENSE
+  Mastodon: https://github.com/mastodon/mastodon/blob/main/LICENSE
+  Nextcloud Server: https://github.com/nextcloud/server/blob/master/COPYING
 
 permissions:
   - commercial-use

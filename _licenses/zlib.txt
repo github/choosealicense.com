@@ -7,6 +7,9 @@ description: A short permissive license, compatible with GPL. Requires altered s
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
 using:
+  GLFW: https://github.com/glfw/glfw/blob/master/LICENSE.md
+  Portainer: https://github.com/portainer/portainer/blob/develop/LICENSE
+  TinyXML-2: https://github.com/leethomason/tinyxml2/blob/master/LICENSE.txt
 
 permissions:
   - commercial-use
@@ -15,7 +18,7 @@ permissions:
   - private-use
 
 conditions:
-  - include-copyright
+  - include-copyright--source
   - document-changes
 
 limitations:

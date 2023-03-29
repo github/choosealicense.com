@@ -2,14 +2,14 @@
 title: PostgreSQL License
 spdx-id: PostgreSQL
 
-description: A very short, BSD-style license, used specifically for PostgreSQL.  
+description: A very short, BSD-style license, used specifically for PostgreSQL.
 
-how: To use it, say that it is The PostgreSQL License, and then substitute the copyright year and name of the copyright holder into the body of the license. Then put the license into a prominent file ("COPYRIGHT", "LICENSE" or "COPYING" are common names for this file) in your software distribution.
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
 using:
-  - pgBadger: https://github.com/darold/pgbadger/blob/master/LICENSE
-  - pgAdmin: https://github.com/postgres/pgadmin4/blob/master/LICENSE
-  - .NET Access to PostgreSQL: https://github.com/npgsql/npgsql/blob/dev/LICENSE
+  pgBadger: https://github.com/darold/pgbadger/blob/master/LICENSE
+  pgAdmin: https://github.com/postgres/pgadmin4/blob/master/LICENSE
+  .NET Access to PostgreSQL: https://github.com/npgsql/npgsql/blob/main/LICENSE
 
 permissions:
   - commercial-use

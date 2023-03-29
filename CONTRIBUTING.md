@@ -1,4 +1,4 @@
-# How to Contribute
+# How to contribute
 
 We love Pull Requests! Your contributions help make ChooseALicense.com great.
 
@@ -6,7 +6,7 @@ Contributions to this project are [released](https://help.github.com/articles/gi
 
 Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
-## Getting Started
+## Getting started
 
 So you want to contribute to ChooseALicense. Great! We welcome any help we can
 get. But first, please make sure you understand what
@@ -21,8 +21,8 @@ Choosealicense.com is intended to demystify license choices, not present or cata
    * [List of OSI approved licenses](https://opensource.org/licenses/alphabetical)
    * [GNU's list of free licenses](https://www.gnu.org/licenses/license-list.en.html) (*note: the license must be listed in one of the three "free" categories*)
    * [Open Definition's list of conformant licenses](https://opendefinition.org/licenses/) (non-code)
-3. A [GitHub code search](https://github.com/search?q=MIT+filename%3ALICENSE&type=Code) must reveal at least *1,000* public repositories using the license.
-4. 3 notable projects using the license must be identified. These must have straightforward LICENSE files which serve as examples newcomers can follow and that could be detected by [licensee](https://github.com/benbalter/licensee) if it knew about the license.
+3. The license must be used in at least *1,000* public repositories. This may be documented, for example, with a [GitHub code search](https://github.com/search?q=MIT+filename%3ALICENSE&type=Code).
+4. 3 notable projects using the license must be identified. These must have straightforward LICENSE files which serve as examples newcomers can follow and that could be detected by [licensee](https://github.com/licensee/licensee) if it knew about the license.
 
 If your proposed license meets the above criteria, here's a few other things to keep in mind as you propose the license's addition:
 
@@ -34,7 +34,7 @@ If your proposed license meets the above criteria, here's a few other things to 
 * The text of the license should match the corresponding text found in [spdx/license-list-data](https://github.com/spdx/license-list-data/blob/master/text/). If there are errors there, please fix them in [spdx/license-list-XML](https://github.com/spdx/license-list-XML) (from which the plain text version is generated) so as to minimize license text variation and make it easier for choosealicense.com to eventually consume license texts directly from SPDX.
 * The body of the file should be the text of the license in plain text.
 
-## Making Changes
+## Making changes
 
 The easiest way to make a change is to simply edit a file from your browser.
 When you click the edit button, it will fork the repository under your account.

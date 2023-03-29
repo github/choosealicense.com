@@ -8,14 +8,14 @@ hidden: false
 
 description: Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.
 
-how: Create a text file in the root of your source code, typically named COPYING (a GNU convention), LICENSE or LICENSE.txt. Then copy the text of the license into that file.
+how: Create a text file (typically named COPYING, as per GNU conventions) in the root of your source code and copy the text of the license into the file.
 
 note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
 
 using:
-  - Ansible: https://github.com/ansible/ansible/blob/devel/COPYING
-  - Bash: https://git.savannah.gnu.org/cgit/bash.git/tree/COPYING
-  - GIMP: https://git.gnome.org/browse/gimp/tree/COPYING
+  Ansible: https://github.com/ansible/ansible/blob/devel/COPYING
+  Bash: https://git.savannah.gnu.org/cgit/bash.git/tree/COPYING
+  GIMP: https://git.gnome.org/browse/gimp/tree/COPYING
 
 permissions:
   - commercial-use

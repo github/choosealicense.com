@@ -11,9 +11,9 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 note: The Mozilla Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license (Exhibit A).
 
 using:
-  - Servo: https://github.com/servo/servo/blob/master/LICENSE
-  - Syncthing: https://github.com/syncthing/syncthing/blob/master/LICENSE
-  - TimelineJS3: https://github.com/NUKnightLab/TimelineJS3/blob/master/LICENSE
+  Servo: https://github.com/servo/servo/blob/master/LICENSE
+  Syncthing: https://github.com/syncthing/syncthing/blob/main/LICENSE
+  TimelineJS3: https://github.com/NUKnightLab/TimelineJS3/blob/master/LICENSE
 
 permissions:
   - commercial-use
