@@ -9,8 +9,8 @@ how: Insert the license or a link to it along with a copyright notice into your 
 note: It is recommended to add a link to the license and copyright notice at the top of each source file, example text can be found at https://oss.oracle.com/licenses/upl/.
 
 using:
-  Oracle Product Images for Docker: https://github.com/oracle/docker-images/blob/main/LICENSE.txt
-  Skater: https://github.com/oracle/Skater/blob/master/LICENSE
+  Roc: https://github.com/roc-lang/roc/blob/main/LICENSE
+  Skater: https://github.com/oracle/skater/blob/main/LICENSE.txt
   Soufflé: https://github.com/souffle-lang/souffle/blob/master/LICENSE
 
 permissions:
@@ -43,7 +43,7 @@ Works (as defined below), to deal in both
 
 (a) the Software, and
 (b) any piece of software and/or hardware listed in the lrgrwrks.txt file if
-one is included with the Software (each a “Larger Work” to which the Software
+one is included with the Software (each a "Larger Work" to which the Software
 is contributed by such licensors),
 
 without restriction, including without limitation the rights to copy, create
