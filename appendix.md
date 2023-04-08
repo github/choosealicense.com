@@ -12,7 +12,7 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
 <table border style="font-size: xx-small; position: relative">
 {% assign types = "permissions|conditions|limitations" | split: "|" %}
 <tr>
-  <th scope="col" style="text-align: center, background-color: inherit; position: sticky; top :0">License</th>
+  <th scope="col" style="text-align: center; background-color: inherit; position: sticky; top: 0;">License</th>
   {% assign seen_tags = '' %}
   {% for type in types %}
     {% assign rules = site.data.rules[type] | sort: "label" %}
