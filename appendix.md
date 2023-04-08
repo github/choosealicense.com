@@ -9,9 +9,9 @@ For reference, here is a table of every license described in the [choosealicense
 
 If you're here to choose a license, **[start from the home page](/)** to see a few licenses that will work for most cases.
 
-<table border style="font-size: xx-small">
+<table border style="font-size: xx-small; position: relative">
 {% assign types = "permissions|conditions|limitations" | split: "|" %}
-<tr>
+<tr style="position: sticky; top: 0">
   <th scope="col" style="text-align: center">License</th>
   {% assign seen_tags = '' %}
   {% for type in types %}
