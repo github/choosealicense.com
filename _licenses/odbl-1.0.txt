@@ -10,7 +10,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 using:
   World Countries: https://github.com/mledoze/countries/blob/master/LICENSE
   OpenFlights: https://github.com/jpatokal/openflights/blob/master/data/LICENSE
-  Public Zone Database: https://github.com/zonedb/zonedb/blob/main/LICENSE.md
+  Public Zone Database: https://github.com/zonedb/zonedb/blob/main/LICENSE-DATA.md
 
 permissions:
   - commercial-use

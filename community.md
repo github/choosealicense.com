@@ -20,5 +20,6 @@ Some communities have strong preferences for particular licenses. If you want to
 * [OpenBSD](https://www.openbsd.org/policy.html) prefers the [ISC License](/licenses/isc/)
 * [Rust](https://rust-lang.github.io/api-guidelines/necessities.html#crate-and-its-dependencies-have-a-permissive-license-c-permissive) crates are overwhelmingly licensed under both [MIT](/licenses/mit/) and [Apache License 2.0](/licenses/apache-2.0/)
 * [WordPress](https://wordpress.org/about/license/) plugins and themes must be [GNU GPLv2](/licenses/gpl-2.0/) (or later)
+* [Joomla](https://tm.joomla.org/joomla-license-faq.html#can-i-release-an-extension-under-a-non-gpl-license) extensions and templates must be [GNU GPLv2](/licenses/gpl-2.0/) for the PHP code.
 
 Communities come in all shapes and sizes, and more than one community might be pertinent (e.g., keep in mind [your company](https://opensource.guide/legal/#what-does-my-companys-legal-team-need-to-know) if you work for one). The examples above are *very* well established. If the community you're building a project for doesn't have set-in-stone licensing traditions, or you don't see your project as part of any particular community, that's fine: [make your own choice of an open source license](/).
