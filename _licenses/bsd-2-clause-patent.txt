@@ -1,7 +1,6 @@
 ---
 title: BSD-2-Clause Plus Patent License
 spdx-id: BSD-2-Clause-Patent
-source: https://opensource.org/licenses/BSDplusPatent
 
 description: "This license is designed to provide: a) a simple permissive license; b) that is compatible with the GNU GPL-2.0; and c) which also has an express patent grant included."
 
