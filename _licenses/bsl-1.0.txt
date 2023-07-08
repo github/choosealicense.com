@@ -7,7 +7,7 @@ description: A simple permissive license only requiring preservation of copyrigh
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
-note: Boost recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the [Boost Software License FAQ](https://www.boost.org/users/license.html#FAQ).
+note: Boost recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the <a href="https://www.boost.org/users/license.html#FAQ">Boost Software License FAQ</a>.
 
 using:
   Boost: https://github.com/boostorg/boost/blob/master/LICENSE_1_0.txt
