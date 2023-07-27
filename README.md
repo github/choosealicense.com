@@ -29,8 +29,6 @@ sudo apt-get install make cmake
 
 ### Installing and Running the tool
 
-Note that the third command (`./script/bootstrap`) may require you to use `sudo` access for installation. Add `sudo` right before the third command if needed, but don't run the script as root.
-
 ```bash
 git clone https://github.com/github/choosealicense.com.git
 cd choosealicense.com
@@ -39,6 +37,8 @@ cd choosealicense.com
 ```
 
 Open `http://localhost:4000` in your favorite browser.
+
+If you encounter any issues with the above steps, please refer to the official [Jekyll](https://jekyllrb.com/docs/) documentation and this [guide on running Jekyll as a non-superuser](https://jekyllrb.com/docs/troubleshooting/#no-sudo) for more detailed installation instructions.
 
 ## Adding a license
 
