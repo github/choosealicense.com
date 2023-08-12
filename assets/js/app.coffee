@@ -20,7 +20,7 @@ class Choosealicense
   qtip_position:
     my: "top center"
     at: "bottom center"
-    viewport: $(window)
+
   # Annotation rule types as defined in `_config.yml`
   ruletypes:
     permissions: "Permission"

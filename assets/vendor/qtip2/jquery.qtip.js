@@ -1924,7 +1924,7 @@ QTIP.defaults = {
 			mouse: TRUE,
 			scroll: TRUE,
 			resize: TRUE,
-			method: 'shift shift'
+			method: 'flipinvert flipinvert'
 		},
 		effect: function(api, pos, viewport) {
 			$(this).animate(pos, {
