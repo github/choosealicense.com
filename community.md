@@ -18,7 +18,7 @@ Some communities have strong preferences for particular licenses. If you want to
 * [GNU](https://www.gnu.org/licenses/license-recommendations.html) recommends [GNU GPLv3](/licenses/gpl-3.0/) for most programs
 * [npm packages](https://libraries.io/search?platforms=npm) overwhelmingly use the [MIT](/licenses/mit/) or the very similar [ISC](/licenses/isc) licenses
 * [OpenBSD](https://www.openbsd.org/policy.html) prefers the [ISC License](/licenses/isc/)
-* [Rust](https://rust-lang.github.io/api-guidelines/necessities.html#crate-and-its-dependencies-have-a-permissive-license-c-permissive) crates are overwhelmingly dual-licensed under both [MIT](/licenses/mit/) and [Apache License 2.0](/licenses/apache-2.0/) at the crate user's option
+* [Rust](https://rust-lang.github.io/api-guidelines/necessities.html#crate-and-its-dependencies-have-a-permissive-license-c-permissive) crates are overwhelmingly licensed [MIT](/licenses/mit/) `[OR](https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/#d42-disjunctive-or-operator)` [Apache License 2.0](/licenses/apache-2.0/)
 * [WordPress](https://wordpress.org/about/license/) plugins and themes must be [GNU GPLv2](/licenses/gpl-2.0/) (or later)
 * [Joomla](https://tm.joomla.org/joomla-license-faq.html#can-i-release-an-extension-under-a-non-gpl-license) extensions and templates must be [GNU GPLv2](/licenses/gpl-2.0/) for the PHP code.
 
