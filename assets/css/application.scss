@@ -466,6 +466,10 @@ strong {
   display: block;
 }
 
+// Selecting all the tooltip bodies to increase their font-size
+[class*="hint--"][aria-label]:after {
+  font-size: 0.80rem;
+}
 
 /* For modern browsers */
 .clearfix:before,
