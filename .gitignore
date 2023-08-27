@@ -5,7 +5,6 @@
 assets/vendor/clipboard/src
 assets/vendor/clipboard/test
 assets/vendor/selectivizr/tests
-assets/vendor/qtip2/basic
 /vendor
 /.sass-cache
 .ruby-version
