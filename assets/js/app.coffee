@@ -76,23 +76,10 @@ class Choosealicense
 
 class LicenseSuggestion
   constructor: (@inputEl, @licenseId, @statusIndicator) ->
-    @setupTooltips()
     @bindEventHandlers()
 
-  # Initializes tooltips on the input element
-  setupTooltips: =>
-    @inputEl.qtip
-      content:
-        text: false
-        title:
-          text: "message"
-      show: false
-      hide: false
-      position:
-        my: "top center"
-        at: "bottom center"
-      style:
-        classes: "qtip-shadow"
+  inputWraper: $('.input-wrapper')
+  tooltipErrorClasses: 'hint--bottom hint--error hint--always'
 
   # Main event handlers for user input
   bindEventHandlers: =>
@@ -136,22 +123,19 @@ class LicenseSuggestion
   # Displays an indicator and tooltips to the user about the current status
   setStatus: (status="", message="") =>
     statusClass = status.toLowerCase()
-    displayQtip = (status, message) =>
-      @inputEl.qtip("api")
-        .set("content.text", message)
-        .set("content.title", status)
-        .set("style.classes", "qtip-shadow qtip-#{statusClass}")
-        .show()
+    displayTooltip = (status, message) =>
+      @inputWraper.attr('aria-label', "#{status}: #{message}")
+      @inputWraper.addClass(@tooltipErrorClasses)
 
     switch status
       when "Fetching"
-        @statusIndicator.removeClass('error').addClass(statusClass)
+        @statusIndicator.removeClass("error #{@tooltipErrorClasses}").addClass(statusClass)
       when "Error"
         @statusIndicator.removeClass('fetching').addClass(statusClass)
-        displayQtip status, message
+        displayTooltip status, message
       else
-        @inputEl.qtip("api").hide()
         @statusIndicator.removeClass('fetching error')
+        @inputWraper.removeClass(@tooltipErrorClasses)
 
   # Fetches information about a repository from the Github API
   fetchInfoFromGithubAPI: (repositoryFullName, callback) ->
@@ -167,10 +151,9 @@ class LicenseSuggestion
   repositoryLicense: (repositoryFullName, license) ->
     foundLicense = window.licenses.find (lic) -> lic.spdx_id == license.spdx_id
     if foundLicense # Links the license to its page on this site
-      "The repository <b> #{repositoryFullName}</b> is already licensed under the
-        <a href='/licenses/#{foundLicense.spdx_id.toLowerCase()}'><b>#{foundLicense.title}</b></a>."
+      "The repository #{repositoryFullName} is already licensed under the #{foundLicense.title}."
     else
-      "The repository <b> #{repositoryFullName}</b> is already licensed."
+      "The repository #{repositoryFullName} is already licensed."
 
 $ ->
   new Choosealicense()
