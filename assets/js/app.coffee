@@ -16,18 +16,17 @@ class Choosealicense
       selection.removeAllRanges()
       selection.addRange(range)
 
-  # Qtip position attributes for tooltips
-  qtip_position:
-    my: "top center"
-    at: "bottom center"
-    viewport: $(window)
-    adjust:
-      method: 'shift shift'
-  # Annotation rule types as defined in `_config.yml`
-  ruletypes:
-    permissions: "Permission"
-    conditions: "Condition"
-    limitations: "Limitation"
+  tooltipAttributesMapperByRuleType:
+    permissions:
+      heading: 'Permissions'
+      color: 'hint--success'
+    conditions:
+      heading: 'Conditions'
+      color: 'hint--info'
+    limitations:
+      heading: 'Limitations'
+      color: 'hint--error'
+
 
   # fire on document.ready
   constructor: ->
@@ -41,20 +40,14 @@ class Choosealicense
     # Dynamically add annotations as title attribute to rule list items
     for ruletype, rules of window.annotations
       for rule in rules
-        $(".license-#{ruletype} .#{rule["tag"]}").attr "title", rule["description"]
-
-    # Init tooltips on all rule list items
-    for ruletype, label of @ruletypes
-      $(".license-#{ruletype} li, .license-#{ruletype} .license-sprite").qtip
-        content:
-          text: false
-          title:
-            text: label
-        position: @qtip_position
-        style:
-          classes: "qtip-shadow qtip-#{ruletype}"
-
-    false
+        licenseLiElement = $(".license-#{ruletype} .#{rule["tag"]}")
+        tooltipAttr = @tooltipAttributesMapperByRuleType[ruletype]
+        licenseLiElement.attr "aria-label", "#{tooltipAttr.heading}: #{rule.description}"
+        licenseLiElement.addClass("hint--bottom
+                                   hint--large
+                                   hint--no-animate
+                                   #{tooltipAttr.color}
+                                   orverride-hint-inline")
 
   # Initializes Clipboard.js
   initClipboard: ->

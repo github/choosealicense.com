@@ -2,7 +2,7 @@
 ---
 
 @import "../vendor/normalize-css/normalize.css";
-@import "../vendor/qtip2/jquery.qtip.min.css";
+@import "../vendor/hint.css/hint.min.css";
 
 body {
   background: #fafafa;
@@ -461,53 +461,11 @@ strong {
 }
 
 
-/* Qtip styles */
-
-.qtip-conditions,
-.qtip-permissions,
-.qtip-limitations,
-.qtip-fetching,
-.qtip-error {
-  font-size: 0.75rem;
-  line-height: 1.3;
+/* Hint.css Overide */
+.orverride-hint-inline {
+  display: block;
 }
 
-.qtip-conditions {
-  background-color: #d0ebf6;
-  border-color: #149ad4;
-  color: #0d648a;
-}
-
-.qtip-conditions .qtip-titlebar {
-  background-color: #149ad4;
-  color: #fff;
-}
-
-.qtip-fetching,
-.qtip-permissions {
-  background-color: #d8f4d7;
-  border-color: #3dc637;
-  color: #298625;
-}
-
-.qtip-fetching .qtip-titlebar,
-.qtip-permissions .qtip-titlebar {
-  background-color: #3dc637;
-  color: #fff;
-}
-
-.qtip-error,
-.qtip-limitations {
-  background-color: #f4d9d8;
-  border-color: #c6403d;
-  color: #812a28;
-}
-
-.qtip-error .qtip-titlebar,
-.qtip-limitations .qtip-titlebar {
-  background-color: #c6403d;
-  color: #fff;
-}
 
 /* For modern browsers */
 .clearfix:before,
