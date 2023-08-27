@@ -1,0 +1,52 @@
+/**
+ * source: hint-color-types.scss
+ *
+ * Contains tooltips of various types based on color differences.
+ *
+ * Classes added:
+ * 	1) hint--error
+ * 	2) hint--warning
+ * 	3) hint--info
+ * 	4) hint--success
+ *
+ */
+
+
+// mixin to generate different color style tooltips
+@mixin hint-type($color) {
+	&:after {
+		background-color: $color;
+		text-shadow: 0 -1px 0px darken($color, $hintTextShadowDarkenAmount);
+	}
+
+	// generate arrow color style
+	@include arrow-border-color($color);
+}
+
+/**
+ * Error
+ */
+.#{$hintPrefix}error {
+	@include hint-type($hintErrorColor);
+}
+
+/**
+ * Warning
+ */
+.#{$hintPrefix}warning {
+	@include hint-type($hintWarningColor)
+}
+
+/**
+ * Info
+ */
+.#{$hintPrefix}info {
+	@include hint-type($hintInfoColor)
+}
+
+/**
+ * Success
+ */
+.#{$hintPrefix}success {
+	@include hint-type($hintSuccessColor)
+}

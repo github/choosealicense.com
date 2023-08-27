@@ -1,0 +1,42 @@
+/**
+ * source: hint-effects.scss
+ *
+ * Defines various transition effects for the tooltips.
+ *
+ * Classes added:
+ * 	1) hint--no-animate
+ * 	2) hint--bounce
+ *
+ */
+
+// Remove animation from tooltips.
+.#{$hintPrefix}no-animate {
+	&:before, &:after {
+		@include vendor('transition-duration', 0ms);
+	}
+}
+
+// Bounce effect in tooltips.
+.#{$hintPrefix}bounce {
+	&:before, &:after {
+		-webkit-transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s cubic-bezier(.71,1.7,.77,1.24);
+		-moz-transition: opacity 0.3s ease, visibility 0.3s ease, -moz-transform 0.3s cubic-bezier(.71,1.7,.77,1.24);
+		transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(.71,1.7,.77,1.24);
+	}
+}
+
+// Remove shadows from tooltips.
+.#{$hintPrefix}no-shadow {
+	&:before, &:after {
+		text-shadow: initial;
+		box-shadow: initial;
+	}
+}
+
+// Remove shadows from tooltips.
+.#{$hintPrefix}no-arrow {
+	&:before {
+		display: none;
+	}
+}
+

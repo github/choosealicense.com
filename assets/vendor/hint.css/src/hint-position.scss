@@ -1,0 +1,138 @@
+/**
+ * source: hint-position.scss
+ *
+ * Defines the positoning logic for the tooltips.
+ *
+ * Classes added:
+ * 	1) hint--top
+ * 	2) hint--bottom
+ * 	3) hint--left
+ * 	4) hint--right
+ */
+
+@mixin vertical-positioned-tooltip($propertyY, $transitionDirection, $xDirection:0) {
+	&:before {
+		// bring arrow inside so that it animates to normal position when shown.
+		// HACK: +1px to avoid the 1 px white space between arrow and body during transition.
+		margin-#{$propertyY}: -2 * $hintArrowBorderWidth + 1px;
+	}
+
+	&:before, &:after {
+		#{$propertyY}: 100%;
+		left: 50%; // get top-left corner in center
+	}
+
+	&:before {
+		left: calc(50% - #{$hintArrowBorderWidth}); // get arrow center aligned with content
+	}
+
+	$translateX: -50%;
+	@if $xDirection == -1 {
+		$translateX: -100%;
+	} @else if $xDirection == 1 {
+		$translateX: 0;
+	}
+
+	&:after {
+		@include vendor('transform', translateX($translateX));
+	}
+
+	&:after {
+		@if $xDirection != 0 {
+			// bring back the tooltip by some offset so that arrow doesn't stick at end
+			margin-left: -$xDirection * $hintArrowOffsetX;
+		}
+	}
+
+	&:hover {
+		@include set-margin('translateY', $transitionDirection, $translateX);
+	}
+}
+
+@mixin horizontal-positioned-tooltip($propertyX, $transitionDirection) {
+	&:before {
+		// bring arrow inside so that it animates to normal position when shown
+		// HACK: +1px to avoid the 1 px white space between arrow and body during transition.
+		margin-#{$propertyX}: -2 * $hintArrowBorderWidth + 1px;
+		// bring back to center vertically
+		margin-bottom: -1 * $hintArrowBorderWidth;
+	}
+
+	&:after {
+		// bring back to center
+		margin-bottom: -1 * floor($hintTooltipHeight / 2);
+	}
+
+	&:before, &:after {
+		#{$propertyX}: 100%;
+		bottom: 50%;
+	}
+
+	&:hover {
+		@include set-margin('translateX', $transitionDirection);
+	}
+}
+
+
+/**
+ * set default color for tooltip arrows
+ */
+@include arrow-border-color($hintDefaultColor);
+
+/**
+ * top tooltip
+ */
+.#{$hintPrefix}top {
+	@include vertical-positioned-tooltip('bottom', -1);
+}
+
+/**
+ * bottom tooltip
+ */
+.#{$hintPrefix}bottom {
+	@include vertical-positioned-tooltip('top', 1);
+}
+
+/**
+ * right tooltip
+ */
+.#{$hintPrefix}right {
+	@include horizontal-positioned-tooltip('left', 1);
+}
+
+/**
+ * left tooltip
+ */
+.#{$hintPrefix}left {
+	@include horizontal-positioned-tooltip('right', -1);
+}
+
+/**
+ * top-left tooltip
+ */
+.#{$hintPrefix}top-left {
+	@include vertical-positioned-tooltip('bottom', -1, -1);
+}
+
+
+/**
+ * top-right tooltip
+ */
+.#{$hintPrefix}top-right {
+	@include vertical-positioned-tooltip('bottom', -1, 1);
+}
+
+/**
+ * bottom-left tooltip
+ */
+.#{$hintPrefix}bottom-left {
+	@include vertical-positioned-tooltip('top', 1, -1);
+}
+
+
+/**
+ * bottom-right tooltip
+ */
+.#{$hintPrefix}bottom-right {
+	@include vertical-positioned-tooltip('top', 1, 1);
+}

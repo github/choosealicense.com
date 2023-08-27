@@ -1,0 +1,46 @@
+/**
+ * source: hint-always.scss
+ *
+ * Defines a persisted tooltip which shows always.
+ *
+ * Classes added:
+ * 	1) hint--always
+ *
+ */
+
+.#{$hintPrefix}always {
+	&:after, &:before {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&.#{$hintPrefix}top {
+		@include set-margin('translateY', -1, -50%);
+
+		&-left {
+			@include set-margin('translateY', -1, -100%);
+		}
+		&-right {
+			@include set-margin('translateY', -1, 0);
+		}
+	}
+
+	&.#{$hintPrefix}bottom {
+		@include set-margin('translateY', 1, -50%);
+		&-left {
+			@include set-margin('translateY', 1, -100%);
+		}
+		&-right {
+			@include set-margin('translateY', 1, 0);
+		}
+	}
+
+	&.#{$hintPrefix}left {
+		@include set-margin('translateX', -1);
+	}
+
+	&.#{$hintPrefix}right {
+		@include set-margin('translateX', 1);
+	}
+}
+

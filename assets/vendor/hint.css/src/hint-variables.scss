@@ -1,0 +1,64 @@
+// hint-variables.scss
+//
+// Declares some variables used within the library.
+
+// Prefix for all classes. By default, BEM naming convention is used
+$hintPrefix: 'hint--' !default;
+
+// font size
+$hintFontSize: 12px !default;
+
+// default font family
+$hintFontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+
+// paddings
+$hintVerticalPadding: 8px !default;
+$hintHorizontalPadding: 10px !default;
+
+// default tooltip height
+$hintTooltipHeight: $hintFontSize + 2 * $hintVerticalPadding !default;
+
+// border-width for tooltip arrow
+$hintArrowBorderWidth: 6px !default;
+
+// horizontal arrow offset
+$hintArrowOffsetX: 2 * $hintArrowBorderWidth !default;
+
+// text-shadow darken percentage
+$hintTextShadowDarkenAmount: 25% !default;
+
+// transition distance
+$hintTransitionDistance: 8px !default;
+
+// Transition Duration
+$hintTransitionDuration: 0.3s !default;
+
+// Delay in showing the tooltips.
+$hintShowDelay: 100ms !default;
+
+// Delay in hiding the tooltips.
+$hintHideDelay: 0ms !default;
+
+// z-index for tooltips
+$hintZIndex: 1000000 !default;
+
+// Size options
+$hintSizeSmall: 80px !default;
+$hintSizeMedium: 150px !default;
+$hintSizeLarge: 300px !default;
+
+// Various colors
+// Default color is blackish
+$hintDefaultColor: hsl(0, 0%, 22%) !default;
+
+// Error color
+$hintErrorColor: hsl(1, 40%, 50%) !default;
+
+// Warning color
+$hintWarningColor: hsl(38, 46%, 54%) !default;
+
+// Info Color
+$hintInfoColor: hsl(200, 50%, 45%) !default;
+
+// Success Color
+$hintSuccessColor: hsl(121, 32%, 40%) !default;
