@@ -47,7 +47,7 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
               {% else %}
                 {% assign lite = "" %}
               {% endif %}
-              <span class="{{ r | append: lite }}">
+              <span class="{{ r | append: lite }}" style="margin: auto;">
                 <span class="license-sprite {{ r }}"></span>
               </span>
             </td>
