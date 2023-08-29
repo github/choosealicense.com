@@ -30,7 +30,7 @@ sudo apt-get install make cmake
 ### Installing and Running the tool
 
 ```bash
-git clone https://github.com/github/choosealicense.com.git
+git clone https://github.com/github/choosealicense.com.git --recursive
 cd choosealicense.com
 ./script/bootstrap
 ./script/server
