@@ -10,8 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "jquery": "~1.11.0",
-    "qtip2": "~2.2.0",
     "normalize-css": "~3.0.0",
-    "clipboard": "~1.4.3"
+    "clipboard": "~1.4.3",
+    "hint.css": "^2.7.0"
   }
 }

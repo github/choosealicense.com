@@ -16,18 +16,17 @@ class Choosealicense
       selection.removeAllRanges()
       selection.addRange(range)
 
-  # Qtip position attributes for tooltips
-  qtip_position:
-    my: "top center"
-    at: "bottom center"
-    viewport: $(window)
-    adjust:
-      method: 'shift shift'
-  # Annotation rule types as defined in `_config.yml`
-  ruletypes:
-    permissions: "Permission"
-    conditions: "Condition"
-    limitations: "Limitation"
+  tooltipAttributesMapperByRuleType:
+    permissions:
+      heading: 'Permission'
+      color: 'tooltip--permissions'
+    conditions:
+      heading: 'Condition'
+      color: 'tooltip--conditions'
+    limitations:
+      heading: 'Limitation'
+      color: 'tooltip--limitations'
+
 
   # fire on document.ready
   constructor: ->
@@ -41,20 +40,14 @@ class Choosealicense
     # Dynamically add annotations as title attribute to rule list items
     for ruletype, rules of window.annotations
       for rule in rules
-        $(".license-#{ruletype} .#{rule["tag"]}").attr "title", rule["description"]
-
-    # Init tooltips on all rule list items
-    for ruletype, label of @ruletypes
-      $(".license-#{ruletype} li, .license-#{ruletype} .license-sprite").qtip
-        content:
-          text: false
-          title:
-            text: label
-        position: @qtip_position
-        style:
-          classes: "qtip-shadow qtip-#{ruletype}"
-
-    false
+        licenseLiElement = $(".license-#{ruletype} .#{rule["tag"]}")
+        tooltipAttr = @tooltipAttributesMapperByRuleType[ruletype]
+        licenseLiElement.attr "aria-label", "#{tooltipAttr.heading}: #{rule.description}"
+        licenseLiElement.addClass("hint--bottom
+                                   hint--large
+                                   hint--no-animate
+                                   #{tooltipAttr.color}
+                                   orverride-hint-inline")
 
   # Initializes Clipboard.js
   initClipboard: ->
@@ -83,23 +76,10 @@ class Choosealicense
 
 class LicenseSuggestion
   constructor: (@inputEl, @licenseId, @statusIndicator) ->
-    @setupTooltips()
     @bindEventHandlers()
 
-  # Initializes tooltips on the input element
-  setupTooltips: =>
-    @inputEl.qtip
-      content:
-        text: false
-        title:
-          text: "message"
-      show: false
-      hide: false
-      position:
-        my: "top center"
-        at: "bottom center"
-      style:
-        classes: "qtip-shadow"
+  inputWraper: $('.input-wrapper')
+  tooltipErrorClasses: 'hint--bottom tooltip--error hint--always'
 
   # Main event handlers for user input
   bindEventHandlers: =>
@@ -143,22 +123,19 @@ class LicenseSuggestion
   # Displays an indicator and tooltips to the user about the current status
   setStatus: (status="", message="") =>
     statusClass = status.toLowerCase()
-    displayQtip = (status, message) =>
-      @inputEl.qtip("api")
-        .set("content.text", message)
-        .set("content.title", status)
-        .set("style.classes", "qtip-shadow qtip-#{statusClass}")
-        .show()
+    displayTooltip = (status, message) =>
+      @inputWraper.attr('aria-label', "#{status}: #{message}")
+      @inputWraper.addClass(@tooltipErrorClasses)
 
     switch status
       when "Fetching"
-        @statusIndicator.removeClass('error').addClass(statusClass)
+        @statusIndicator.removeClass("error #{@tooltipErrorClasses}").addClass(statusClass)
       when "Error"
         @statusIndicator.removeClass('fetching').addClass(statusClass)
-        displayQtip status, message
+        displayTooltip status, message
       else
-        @inputEl.qtip("api").hide()
         @statusIndicator.removeClass('fetching error')
+        @inputWraper.removeClass(@tooltipErrorClasses)
 
   # Fetches information about a repository from the Github API
   fetchInfoFromGithubAPI: (repositoryFullName, callback) ->
@@ -174,10 +151,9 @@ class LicenseSuggestion
   repositoryLicense: (repositoryFullName, license) ->
     foundLicense = window.licenses.find (lic) -> lic.spdx_id == license.spdx_id
     if foundLicense # Links the license to its page on this site
-      "The repository <b> #{repositoryFullName}</b> is already licensed under the
-        <a href='/licenses/#{foundLicense.spdx_id.toLowerCase()}'><b>#{foundLicense.title}</b></a>."
+      "The repository #{repositoryFullName} is already licensed under the #{foundLicense.title}."
     else
-      "The repository <b> #{repositoryFullName}</b> is already licensed."
+      "The repository #{repositoryFullName} is already licensed."
 
 $ ->
   new Choosealicense()
