@@ -5,6 +5,7 @@
 assets/vendor/clipboard/src
 assets/vendor/clipboard/test
 assets/vendor/selectivizr/tests
+assets/vendor/hint.css/src
 /vendor
 /.sass-cache
 .ruby-version
