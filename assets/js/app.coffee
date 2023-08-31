@@ -79,7 +79,7 @@ class LicenseSuggestion
     @bindEventHandlers()
 
   inputWraper: $('.input-wrapper')
-  tooltipErrorClasses: 'hint--bottom hint--error hint--always'
+  tooltipErrorClasses: 'hint--bottom tooltip--error hint--always'
 
   # Main event handlers for user input
   bindEventHandlers: =>
