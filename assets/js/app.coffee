@@ -18,13 +18,13 @@ class Choosealicense
 
   tooltipAttributesMapperByRuleType:
     permissions:
-      heading: 'Permissions'
+      heading: 'Permission'
       color: 'hint--success'
     conditions:
-      heading: 'Conditions'
+      heading: 'Condition'
       color: 'hint--info'
     limitations:
-      heading: 'Limitations'
+      heading: 'Limitation'
       color: 'hint--error'
 
 
