@@ -473,6 +473,18 @@ strong {
 }
 
 // Tooltips
+.tooltip--permissions.hint--bottom:before{
+  border-bottom-color: #298625;
+}
+
+.tooltip--conditions.hint--bottom:before{
+  border-bottom-color: #0d648a;
+}
+
+.tooltip--limitations.hint--bottom:before{
+  border-bottom-color: #812a28;
+}
+
 .tooltip--permissions:after{
   background-color: #d8f4d7;
   color: #298625;
