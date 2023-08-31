@@ -472,19 +472,20 @@ strong {
   font-weight: lighter;
 }
 
-.hint--success:after{
+// Tooltips
+.tooltip--permissions:after{
   background-color: #d8f4d7;
   color: #298625;
   border-color: #3dc637;
 }
 
-.hint--info:after{
+.tooltip--conditions:after{
   background-color: #d0ebf6;
   border-color: #149ad4;
   color: #0d648a;
 }
 
-.hint--error:after{
+.tooltip--limitations:after{
   background-color: #f4d9d8;
   border-color: #c6403d;
   color: #812a28;

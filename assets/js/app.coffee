@@ -19,13 +19,13 @@ class Choosealicense
   tooltipAttributesMapperByRuleType:
     permissions:
       heading: 'Permission'
-      color: 'hint--success'
+      color: 'tooltip--permissions'
     conditions:
       heading: 'Condition'
-      color: 'hint--info'
+      color: 'tooltip--conditions'
     limitations:
       heading: 'Limitation'
-      color: 'hint--error'
+      color: 'tooltip--limitations'
 
 
   # fire on document.ready
