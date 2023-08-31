@@ -468,8 +468,8 @@ strong {
 
 // Selecting all the tooltip bodies to increase their font-size
 [class*="hint--"][aria-label]:after {
-  font-size: 0.75rem;
-  font-weight: lighter;
+  font-size: 0.80rem;
+  text-shadow: none;
 }
 
 // Tooltips
