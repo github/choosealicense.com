@@ -19,10 +19,13 @@ We catalog [select](CONTRIBUTING.md#adding-a-license) open source licenses with 
 It may be the case that your system doesn't have the required dependencies. You will need `cmake` and `make` installed on your computer.
 
 For MacOS, use Homebrew to update your dependencies (install Homebrew from <https://brew.sh/>):
+
 ```bash
 brew install make cmake
 ```
+
 For Linux/Ubuntu, use the `apt-get` tool to install the dependencies:
+
 ```bash
 sudo apt-get install make cmake
 ```
@@ -50,8 +53,8 @@ Licenses sit in the `/_licenses` folder. Each license has YAML front matter desc
 
 #### Required fields
 
-* `title` - The license full name specified by https://spdx.org/licenses/
-* `spdx-id` - Short identifier specified by https://spdx.org/licenses/
+* `title` - The license full name specified by <https://spdx.org/licenses/>
+* `spdx-id` - Short identifier specified by <https://spdx.org/licenses/>
 * `description` - A human-readable description of the license
 * `how` - Instructions on how to implement the license
 * `using` - A map of 3 notable projects using the license with straightforward LICENSE files which serve as examples newcomers can follow and that can be detected by [licensee](https://github.com/licensee/licensee) in the form of `project_name: license_file_url`
