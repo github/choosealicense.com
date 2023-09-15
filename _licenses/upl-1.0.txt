@@ -9,8 +9,8 @@ how: Insert the license or a link to it along with a copyright notice into your 
 note: It is recommended to add a link to the license and copyright notice at the top of each source file, example text can be found at https://oss.oracle.com/licenses/upl/.
 
 using:
+  graaljs: https://github.com/oracle/graaljs/blob/master/LICENSE
   Roc: https://github.com/roc-lang/roc/blob/main/LICENSE
-  Skater: https://github.com/oracle/skater/blob/main/LICENSE.txt
   Soufflé: https://github.com/souffle-lang/souffle/blob/master/LICENSE
 
 permissions:

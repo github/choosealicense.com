@@ -9,9 +9,9 @@ description: This commercially-friendly copyleft license provides the ability to
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
 using:
-  Eclipse SmartHome: https://github.com/eclipse/smarthome/blob/master/LICENSE
-  openHAB: https://github.com/openhab/openhab-distro/blob/master/LICENSE
-  SUMO: https://github.com/eclipse/sumo/blob/master/LICENSE
+  hawkBit: https://github.com/eclipse/hawkbit/blob/master/LICENSE
+  openHAB: https://github.com/openhab/openhab-distro/blob/main/LICENSE
+  SUMO: https://github.com/eclipse-sumo/sumo/blob/main/LICENSE
 
 permissions:
   - commercial-use
