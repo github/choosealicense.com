@@ -4,7 +4,7 @@ spdx-id: W3C-20230101
 
 description: This license is used by W3C working groups and community groups for licensing software and documents related to web standards and specifications.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Alternatively, you can have the LICENSE file link to the URL: https://www.w3.org/copyright/software-license-2023/
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Alternatively, you can have the LICENSE file link to https://www.w3.org/copyright/software-license-2023/
 
 using:
   ActivityStreams: https://github.com/w3c/activitystreams
