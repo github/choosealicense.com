@@ -55,7 +55,7 @@ current = license_ids.include?(license)
 rows << ['Current license', current]
 
 rows << :separator
-eligible = (!current && spdx && approved_licenses.include?(license))
+eligible = !current && spdx && approved_licenses.include?(license)
 rows << ['Eligible', eligible]
 
 puts Terminal::Table.new title: "License: #{license}", rows: rows
