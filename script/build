@@ -4,5 +4,5 @@ mkdir _site/raw -p
 
 for file in _licenses/*.txt; do
 	echo "$file"
-	cp "$file" "_site/raw/$(basename "$file" .txt)"
+	awk '/^---$/ {if (++count == 2) {p=1; next}} p' "$file" | tail -n +2 > "_site/raw/$(basename "$file" .txt)"
 done
