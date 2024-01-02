@@ -2,11 +2,6 @@
 
 set -e
 
-echo "copy licenses"
-
-mkdir raw
-for file in _licenses/*.txt; do cp "$file" "raw/$(basename "$file" .txt)"; done
-
 echo "bundling installin'"
 gem install bundler
 bundle install

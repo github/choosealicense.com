@@ -1,0 +1,5 @@
+echo "copy licenses"
+
+mkdir $1/raw
+
+for file in _licenses/*.txt; do cp "$file" "$1/raw/$(basename "$file" .txt)"; done
