@@ -41,8 +41,7 @@ jobs:
           JEKYLL_ENV: production
       - name: Build static licenses
         run: |
-          mkdir "${{ steps.pages.outputs.base_path }}"/raw -p
-          cp -r ./_licenses/ "${{ steps.pages.outputs.base_path }}"/raw 
+          cp ./_licenses/* "${{ steps.pages.outputs.base_path }}"
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
