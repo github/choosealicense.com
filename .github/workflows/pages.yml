@@ -42,7 +42,7 @@ jobs:
       - name: Build static licenses
         uses: actions/upload-artifact@v2
         with:
-          name: licenses
+          name: github-pages/licenses
           path: _licenses
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
