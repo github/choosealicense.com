@@ -20,6 +20,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      PAGES_REPO_NWO: Dlurak/choosealicense.com
     steps:
       - name: Checkout
         uses: actions/checkout@v4
