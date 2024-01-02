@@ -42,6 +42,7 @@ jobs:
       - name: Print pwd
         run: |
           pwd
+          ls
       - name: Build static licenses
         run: |
           chmod +x ./script/build.sh
