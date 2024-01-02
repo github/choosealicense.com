@@ -1,6 +1,5 @@
 echo "copy licenses"
 
-echo "$1"
-mkdir $1/raw -p
+mkdir _site/raw -p
 
-for file in _licenses/*.txt; do cp "$file" "$1/raw/$(basename "$file" .txt)"; done
+for file in _licenses/*.txt; do cp "$file" "_site/raw/$(basename "$file" .txt)"; done
