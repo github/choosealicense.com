@@ -42,8 +42,11 @@ jobs:
       - name: Build static licenses
         uses: actions/upload-artifact@v2
         with:
-          name: github-pages/licenses
+          name: licenses
           path: _licenses
+      - name: Copy licenses into ./_site
+        run: |
+          cp _licenses/* _site/
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
