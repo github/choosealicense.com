@@ -1,5 +1,5 @@
 ---
-title: Blue Oak Model License
+title: Blue Oak Model License 1.0.0
 spdx-id: BlueOak-1.0.0
 
 description: A permissive license whose main conditions require providing notice of the license. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
