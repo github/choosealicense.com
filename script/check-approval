@@ -5,14 +5,16 @@
 # See https://github.com/github/choosealicense.com/blob/gh-pages/CONTRIBUTING.md#adding-a-license
 # Usage: script/check-approval [SPDX LICENSE ID]
 
+# Import necessary libraries
 require_relative '../spec/spec_helper'
 require 'terminal-table'
 require 'colored'
 require 'fuzzy_match'
 
-# Display usage instructions
+# Display usage instructions if argument count is incorrect
 puts File.read(__FILE__).scan(/^# .*/)[0...3].join("\n").gsub(/^# /, '') if ARGV.count != 1
 
+# Monkey patching to customize string representation of true and false classes
 class TrueClass
   def to_s
     'Yes'.green
@@ -25,16 +27,21 @@ class FalseClass
   end
 end
 
+# Extract license from command line argument
 license = ARGV[0].downcase.strip
+
+# Define approvals hash
 approvals = {
   'OSI' => osi_approved_licenses,
   'FSF' => fsf_approved_licenses,
   'OD' => od_approved_licenses
 }
 
+# Find SPDX ID and associated information for the given license
 id, spdx = find_spdx(license)
 rows = []
 
+# Populate rows with SPDX ID and name
 if spdx.nil?
   id = 'Invalid'.red
   name = 'None'.red
@@ -42,31 +49,38 @@ else
   id = id.green
   name = spdx['name'].green
 end
-
 rows << ['SPDX ID', id]
 rows << ['SPDX Name', name]
 
+# Check if the license is approved by different organizations
 approvals.each do |approver, licenses|
   rows << ["#{approver} approved", licenses.include?(license)]
 end
 
+# Check if the license is the current one
 license_ids = licenses.map { |l| l['id'] }
 current = license_ids.include?(license)
 rows << ['Current license', current]
 
 rows << :separator
+
+# Check if the license is eligible
 eligible = !current && spdx && approved_licenses.include?(license)
 rows << ['Eligible', eligible]
 
+# Display license information in a table
 puts Terminal::Table.new title: "License: #{license}", rows: rows
 puts
 puts "Code search: https://github.com/search?q=#{license}+filename%3ALICENSE&type=Code"
 
+# Display possible matches if SPDX ID not found
 if spdx.nil?
   puts
   puts 'SPDX ID not found. Some possible matches:'
   puts
 
+  # Perform fuzzy matching
+  spdx_ids = licenses.map { |l| l['id'] }
   fm = FuzzyMatch.new(spdx_ids)
   matches = fm.find_all_with_score(license)
   matches = matches[0...5].map { |record, _dice, _levin| record }
