@@ -8,6 +8,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 
 using:
   EDK II: https://github.com/tianocore/edk2/blob/master/License.txt
+  Manubot: https://github.com/manubot/manubot/blob/main/LICENSE.md
 
 permissions:
   - commercial-use
