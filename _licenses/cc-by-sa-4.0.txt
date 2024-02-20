@@ -2,7 +2,7 @@
 title: Creative Commons Attribution Share Alike 4.0 International
 spdx-id: CC-BY-SA-4.0
 
-description: Similar to <a href='/licenses/cc-by-4.0/'>CC-BY-4.0</a> but requires derivatives be distributed under the same or a similar, <a href="https://creativecommons.org/compatiblelicenses/">compatible</a> license. Frequently used for media assets and educational materials. A previous version is the default license for Wikipedia and other Wikimedia projects. Not recommended for software.
+description: Similar to <a href='/licenses/cc-by-4.0/'>CC-BY-4.0</a> but requires derivatives be distributed under the same or a similar, <a href="https://creativecommons.org/compatiblelicenses">compatible</a> license. Frequently used for media assets and educational materials. A previous version is the default license for Wikipedia and other Wikimedia projects. Not recommended for software.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. It is also acceptable to solely supply a link to a copy of the license, usually to the <a href='https://creativecommons.org/licenses/by-sa/4.0/'>canonical URL for the license</a>.
 

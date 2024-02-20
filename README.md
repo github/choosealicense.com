@@ -16,7 +16,7 @@ We catalog [select](CONTRIBUTING.md#adding-a-license) open source licenses with 
 
 ### Managing Dependencies
 
-It may be the case that your system doesn't have the required dependencies. You will need `cmake` and `make` installed on your computer. 
+It may be the case that your system doesn't have the required dependencies. You will need `cmake` and `make` installed on your computer.
 
 For MacOS, use Homebrew to update your dependencies (install Homebrew from <https://brew.sh/>):
 ```bash
@@ -29,16 +29,16 @@ sudo apt-get install make cmake
 
 ### Installing and Running the tool
 
-Note that the third command (`./script/bootstrap`) may require you to use `sudo` access for installation. Add `sudo` right before the third command, if need be, but don't use root access.
-
 ```bash
-git clone https://github.com/github/choosealicense.com.git
+git clone https://github.com/github/choosealicense.com.git --recursive
 cd choosealicense.com
 ./script/bootstrap
 ./script/server
 ```
 
 Open `http://localhost:4000` in your favorite browser.
+
+If you encounter any issues with the above steps, please refer to the official [Jekyll](https://jekyllrb.com/docs/) documentation and this [guide on running Jekyll as a non-superuser](https://jekyllrb.com/docs/troubleshooting/#no-sudo) for more detailed installation instructions.
 
 ## Adding a license
 

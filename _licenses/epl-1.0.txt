@@ -7,7 +7,7 @@ description: This commercially-friendly copyleft license provides the ability to
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
 using:
-  Eclipse hawkBit: https://github.com/eclipse/hawkbit/blob/master/LICENSE
+  ClojureScript: https://github.com/clojure/clojurescript/blob/master/LICENSE
   JUnit: https://github.com/junit-team/junit4/blob/main/LICENSE-junit.txt
   Quil: https://github.com/quil/quil/blob/master/LICENSE
 

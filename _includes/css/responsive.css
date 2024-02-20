@@ -46,6 +46,10 @@
   .license-body {
     width: calc(100% - 250px);
   }
+
+  .hint--large::after{
+    width: 150px;
+  }
 }
 
 /* iPads (portrait) ----------- */
@@ -161,6 +165,10 @@
   }
   .license-rules:not(.license-rules-sidebar) .license-limitations span {
     background-position: -14px 0;
+  }
+
+  .hint--large::after{
+    width: 80px;
   }
 }
 

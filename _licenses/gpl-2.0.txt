@@ -14,7 +14,7 @@ note: The Free Software Foundation recommends taking the additional step of addi
 using:
   AliSQL: https://github.com/alibaba/AliSQL/blob/master/COPYING
   Discourse: https://github.com/discourse/discourse/blob/master/LICENSE.txt
-  Joomla!: https://github.com/joomla/joomla-cms/blob/staging/LICENSE.txt
+  Jellyfin: https://github.com/jellyfin/jellyfin/blob/master/LICENSE
 
 permissions:
   - commercial-use
