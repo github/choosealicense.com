@@ -8,6 +8,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 
 using:
   Manubot: https://github.com/manubot/manubot/blob/main/LICENSE.md
+  obonet: https://github.com/dhimmel/obonet/blob/main/LICENSE.md
   Preprint Similarity Search: https://github.com/greenelab/preprint-similarity-search/blob/master/LICENSE.md
 
 permissions:
