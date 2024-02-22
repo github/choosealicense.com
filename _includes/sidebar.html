@@ -1,6 +1,8 @@
 <div class="sidebar">
 
   <a href="#" data-clipboard-target="#license-text" data-proofer-ignore="true" class="js-clipboard-button button">Copy license text to clipboard</a>
+  <pre>https://choosealicense.com/raw/{{ page.spdx-id | downcase }}</pre>
+
   {% unless page.spdx-id == 'LGPL-3.0' %}
   <h3 id="suggest-this-license">Suggest this license</h3>
   <div class="repository-suggestion">
