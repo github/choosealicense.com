@@ -24,3 +24,5 @@ jobs:
 
     - name: Run tests
       run: ./script/cibuild
+
+ vc vai vim ou não?quanto tempo pra tá aqui?
