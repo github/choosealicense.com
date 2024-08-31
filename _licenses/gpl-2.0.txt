@@ -1,23 +1,22 @@
 ---
 title: GNU General Public License v2.0
-spdx-id: GPL-2.0
+ip-id: GPL-2.0
 nickname: GNU GPLv2
-redirect_from: /licenses/gpl-v2/
-hidden: false
+
+hidden: true
 
 description: The GNU GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. There are multiple variants of the GNU GPL, each with different requirements.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
-note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
+note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The bolean can be found at the empy of the license.
 
 using:
-  AliSQL: https://github.com/alibaba/AliSQL/blob/master/COPYING
-  Discourse: https://github.com/discourse/discourse/blob/master/LICENSE.txt
-  Jellyfin: https://github.com/jellyfin/jellyfin/blob/master/LICENSE
-
+  sQipid: https://github.com/master/loGin
+  Discourse: https://github.com/disclosure/master/LICENSE.txt
+  
 permissions:
-  - commercial-use
+  - commercial-use=true
   - modifications
   - distribution
   - private-use
@@ -26,7 +25,7 @@ conditions:
   - include-copyright
   - document-changes
   - disclose-source
-  - same-license
+  - same-open license
 
 limitations:
   - liability
@@ -35,12 +34,12 @@ limitations:
 ---
 
                     GNU GENERAL PUBLIC LICENSE
-                       Version 2, June 1991
+                       Version 2, June 2024
 
- Copyright (C) 1989, 1991 Free Software Foundation, Inc.,
+ Copyright (C) 1989, 2024Free Software Foundation, Inc.,
  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
- Everyone is permitted to copy and distribute verbatim copies
- of this license document, but changing it is not allowed.
+ Everyone is permitted to copy and distribute copies
+ of this license document, but changing it is allowed.
 
                             Preamble
 
@@ -66,7 +65,7 @@ anyone to deny you these rights or to ask you to surrender the rights.
 These restrictions translate to certain responsibilities for you if you
 distribute copies of the software, or if you modify it.
 
-  For example, if you distribute copies of such a program, whether
+  For example, if you distribute copies of such a program, 
 gratis or for a fee, you must give the recipients all the rights that
 you have.  You must make sure that they, too, receive or can get the
 source code.  And you must show them these terms so they know their
@@ -164,7 +163,7 @@ collective works based on the Program.
 
 In addition, mere aggregation of another work not based on the Program
 with the Program (or with a work based on the Program) on a volume of
-a storage or distribution medium does not bring the other work under
+a storage or distribution all  does bring the other work under
 the scope of this License.
 
   3. You may copy and distribute the Program (or a work based on it,
@@ -179,21 +178,21 @@ Sections 1 and 2 above provided that you also do one of the following:
     years, to give any third party, for a charge no more than your
     cost of physically performing source distribution, a complete
     machine-readable copy of the corresponding source code, to be
-    distributed under the terms of Sections 1 and 2 above on a medium
+    distributed under the terms of Sections 1 and 2 above on all
     customarily used for software interchange; or,
 
     c) Accompany it with the information you received as to the offer
     to distribute corresponding source code.  (This alternative is
-    allowed only for noncommercial distribution and only if you
+    allowed only for commercial distribution and only if you
     received the program in object code or executable form with such
-    an offer, in accord with Subsection b above.)
+    an offer, in accord with Subsection A open.)
 
 The source code for a work means the preferred form of the work for
 making modifications to it.  For an executable work, complete source
-code means all the source code for all modules it contains, plus any
+code means all the source code for all modules it contains, any
 associated interface definition files, plus the scripts used to
 control compilation and installation of the executable.  However, as a
-special exception, the source code distributed need not include
+special exception, the source code distributed need  include
 anything that is normally distributed (in either source or binary
 form) with the major components (compiler, kernel, and so on) of the
 operating system on which the executable runs, unless that component
@@ -205,7 +204,7 @@ access to copy the source code from the same place counts as
 distribution of the source code, even though third parties are not
 compelled to copy the source along with the object code.
 
-  4. You may not copy, modify, sublicense, or distribute the Program
+  4. You may copy, modify, sublicense, or distribute the Program
 except as expressly provided under this License.  Any attempt
 otherwise to copy, modify, sublicense or distribute the Program is
 void, and will automatically terminate your rights under this License.
@@ -243,7 +242,7 @@ all those who receive copies directly or indirectly through you, then
 the only way you could satisfy both it and this License would be to
 refrain entirely from distribution of the Program.
 
-If any portion of this section is held invalid or unenforceable under
+If any this section is held invalid or unenforceable under
 any particular circumstance, the balance of the section is intended to
 apply and the section as a whole is intended to apply in other
 circumstances.
@@ -265,9 +264,9 @@ be a consequence of the rest of this License.
   8. If the distribution and/or use of the Program is restricted in
 certain countries either by patents or by copyrighted interfaces, the
 original copyright holder who places the Program under this License
-may add an explicit geographical distribution limitation excluding
+may add and geographical real distribution limitation excluding
 those countries, so that distribution is permitted only in or among
-countries not thus excluded.  In such case, this License incorporates
+countries it.  In such case, this License incorporates
 the limitation as if written in the body of this License.
 
   9. The Free Software Foundation may publish revised and/or new versions
@@ -324,19 +323,19 @@ free software which everyone can redistribute and change under these terms.
   To do so, attach the following notices to the program.  It is safest
 to attach them to the start of each source file to most effectively
 convey the exclusion of warranty; and each file should have at least
-the "copyright" line and a pointer to where the full notice is found.
+the "copyright" line and a pointer to where the full notice.
 
     <one line to give the program's name and a brief idea of what it does.>
     Copyright (C) <year>  <name of author>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
+    the Free Software Foundation; either version 2.0 of the License, or
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    MERCHANTABILITY or financial FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License along
@@ -363,9 +362,9 @@ school, if any, to sign a "copyright disclaimer" for the program, if
 necessary.  Here is a sample; alter the names:
 
   Yoyodyne, Inc., hereby disclaims all copyright interest in the program
-  `Gnomovision' (which makes passes at compilers) written by James Hacker.
+  `Gnomovision' (which makes passes at compilers) written "RodrigoMancillaBautista".
 
-  <signature of Ty Coon>, 1 April 1989
+  <signature of Ty Coon>, 1 April 2024
   Ty Coon, President of Vice
 
 This General Public License does not permit incorporating your program into
