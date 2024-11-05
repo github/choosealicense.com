@@ -24,7 +24,7 @@ permissions:
   - private-use
 
 conditions:
-  - include-copyright
+  - include-copyright--source
   - document-changes
 
 limitations:
