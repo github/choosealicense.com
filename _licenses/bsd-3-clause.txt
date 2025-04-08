@@ -12,6 +12,7 @@ using:
   Flutter: https://github.com/flutter/flutter/blob/master/LICENSE
   LevelDB: https://github.com/google/leveldb/blob/master/LICENSE
   Quill: https://github.com/quilljs/quill/blob/develop/LICENSE
+  Chyrp Lite: https://chyrplite.net/
 
 permissions:
   - commercial-use
