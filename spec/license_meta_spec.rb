@@ -52,7 +52,7 @@ describe 'license meta' do
               example_url.gsub!(%r{/tree/}, '/plain/')
             elsif example_url.start_with?('https://bitbucket.org/')
               example_url.gsub!(%r{/src/}, '/raw/')
-            elsif example_url.start_with?('https://ohwr.org/')
+            elsif example_url.start_with?('https://gitlab.com/')
               example_url.gsub!(%r{/blob/}, '/raw/')
             end
 
