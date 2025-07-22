@@ -1,3 +1,4 @@
+tab
 **[ChooseALicense.com](https://choosealicense.com)** aims to provide **accurate**, **non-judgmental**, and **understandable** information about popular **open source licenses** in order to **help people make informed decisions** about the projects they start, maintain, contribute to, and use.
 
 [![](https://github.com/github/choosealicense.com/workflows/Build%20and%20Test/badge.svg)](https://github.com/github/choosealicense.com/actions?query=workflow%3ABuild%20and%20Test)
@@ -66,7 +67,7 @@ Licenses sit in the `/_licenses` folder. Each license has YAML front matter desc
 * `nickname` - Customary short name if applicable (e.g, GPLv3)
 * `note` - Additional information about the licenses
 * `redirect_from` - Relative path(s) to redirect to the license from, to prevent breaking old URLs
-
+esc
 ### Auto-populated fields
 
 The licenses on choosealicense.com are regularly imported to GitHub.com to be used as the list of licenses available when creating a repository. When we create a repository, we will replace certain strings in the license with variables from the repository. These can be used to create accurate copyright notices. The available variables are:
@@ -84,7 +85,7 @@ The licenses on choosealicense.com are regularly imported to GitHub.com to be us
 ## License properties
 
 The license properties (rules) are stored as a bulleted list within the licenses YAML front matter. Each rule has a name e.g., `include-copyright`, a human-readable label, e.g., `Copyright inclusion`, and a description `Include the original copyright with the code`. To add a new rule, simply add it to `_data/rules.yml` and reference it in the appropriate license.
-
+tab
 ### Rules
 
 #### Permissions
