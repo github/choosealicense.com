@@ -1,3 +1,4 @@
+tab
 **[ChooseALicense.com](https://choosealicense.com)** aims to provide **accurate**, **non-judgmental**, and **understandable** information about popular **open source licenses** in order to **help people make informed decisions** about the projects they start, maintain, contribute to, and use.
 
 [![](https://github.com/github/choosealicense.com/workflows/Build%20and%20Test/badge.svg)](https://github.com/github/choosealicense.com/actions?query=workflow%3ABuild%20and%20Test)
@@ -35,7 +36,7 @@ cd choosealicense.com
 ./script/bootstrap
 ./script/server
 ```
-
+esc
 Open `http://localhost:4000` in your favorite browser.
 
 If you encounter any issues with the above steps, please refer to the official [Jekyll](https://jekyllrb.com/docs/) documentation and this [guide on running Jekyll as a non-superuser](https://jekyllrb.com/docs/troubleshooting/#no-sudo) for more detailed installation instructions.
@@ -80,7 +81,7 @@ The licenses on choosealicense.com are regularly imported to GitHub.com to be us
 * `description` - The description of the repository
 * `year` - The current year
 * `projecturl` - The repository URL or other project website
-
+tab
 ## License properties
 
 The license properties (rules) are stored as a bulleted list within the licenses YAML front matter. Each rule has a name e.g., `include-copyright`, a human-readable label, e.g., `Copyright inclusion`, and a description `Include the original copyright with the code`. To add a new rule, simply add it to `_data/rules.yml` and reference it in the appropriate license.
