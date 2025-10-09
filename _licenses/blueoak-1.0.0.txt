@@ -8,8 +8,8 @@ how: Create a text file (typically named LICENSE.md) in the root of your source 
 
 using:
   drone-gc: https://github.com/drone/drone-gc/blob/master/LICENSE.md
+  Lil Scan: https://github.com/judofyr/lil-scan/blob/main/LICENSE.md
   oh-my-git: https://github.com/git-learning-game/oh-my-git/blob/main/LICENSE.md
-  punct: https://github.com/otherjoel/punct/blob/main/LICENSE.md 
 
 permissions:
   - commercial-use

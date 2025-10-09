@@ -2,7 +2,7 @@
 title: Open Software License 3.0
 spdx-id: OSL-3.0
 
-description: OSL 3.0 is a copyleft license that does not require reciprocal licensing on linked works. It also provides an express grant of patent rights from contributors to users, with a termination clause triggered if a user files a patent infringement lawsuit.
+description: Permissions of this copyleft license are conditioned on distributing source code of licensed works and modifications under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. Using the work or modifications to provide services to external users is treated as distribution and also requires making source code available. Works that merely link to a licensed work are considered collective works and are not subject to the license's reciprocity requirements.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Files licensed under OSL 3.0 must also include the notice "Licensed under the Open Software License version 3.0" adjacent to the copyright notice.
 
