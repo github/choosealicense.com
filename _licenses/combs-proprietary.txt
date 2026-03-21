@@ -1,0 +1,21 @@
+---
+title: "Combs Proprietary License"
+spdx-id: "LicenseRef-Combs"
+description: "A proprietary license reserving all rights for Jonathan Tyler Combs, providing total control over the blockchain ecosystem."
+how: "Include the copyright notice in all copies of the software."
+using:
+  Blockchain Project: "https://example.com/blockchain"
+  Smart Wallet: "https://example.com/wallet"
+  Banking System: "https://example.com/banking"
+permissions: []
+conditions:
+  - include-copyright
+limitations:
+  - trademark-use
+  - liability
+  - warranty
+---
+
+Copyright @Jonathan Tyler Combs 1995-2026. All rights reserved.
+
+This license grants no permissions to use, modify, or distribute the software except as expressly permitted by the copyright holder.
