@@ -64,6 +64,7 @@ Licenses sit in the `/_licenses` folder. Each license has YAML front matter desc
 * `featured` - Whether the license should be featured on the main page (defaults to false)
 * `hidden` - Whether the license is neither [popular](https://opensource.org/licenses) nor fills out the [spectrum of licenses](https://choosealicense.com/licenses/) from strongly conditional to unconditional (defaults to true)
 * `nickname` - Customary short name if applicable (e.g, GPLv3)
+* `badge` - Optional rendered badge metadata (`alt`, `image`, and `href`) displayed near the license heading
 * `note` - Additional information about the licenses
 * `redirect_from` - Relative path(s) to redirect to the license from, to prevent breaking old URLs
 

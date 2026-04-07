@@ -10,6 +10,14 @@
             </p>
             {% endif %}
 
+            {% if page.badge %}
+            <p class="license-badge">
+                <a href="{{ page.badge.href }}">
+                    <img src="{{ page.badge.image }}" alt="{{ page.badge.alt }}">
+                </a>
+            </p>
+            {% endif %}
+
             <p>
                 {{ page.description }}
             </p>
