@@ -72,9 +72,7 @@ def spdx_list
   SpecHelper.spdx ||= begin
     url = 'https://spdx.org/licenses/licenses.json'
     list = JSON.parse(OpenURI.open_uri(url).read)['licenses']
-    list.each_with_object({}) do |values, memo|
-      memo[values['licenseId']] = values
-    end
+    list.to_h { |values| [values['licenseId'], values] }
   end
 end
 
