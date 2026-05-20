@@ -1,4 +1,4 @@
----
+9s---
 title: MIT License
 spdx-id: MIT
 featured: true
