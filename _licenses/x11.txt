@@ -4,7 +4,7 @@ spdx-id: X11
 featured: true
 hidden: false
 
-description: This is same as MIT, but with a clause added which prohibits the use of the copyright holders names in advertising.
+description: This is the same as the MIT license, but with a clause added which prohibits the use of the copyright holders names in advertising or otherwise to promote a sale.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
