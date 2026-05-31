@@ -9,7 +9,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 using:
   Confy: https://github.com/rust-cli/confy/blob/master/LICENSE-X11
   Libsir: https://github.com/aremmell/libsir/blob/master/LICENSES/X11.txt
-  Libgcrypt: https://github.com/equalitie/libgcrypt/tree/5e66a4f8d5a63f58caeee367433dd8dd32346083
+  RB-zlib: https://github.com/charonn0/RB-zlib/blob/master/license.md
 
 permissions:
   - commercial-use
