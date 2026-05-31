@@ -9,7 +9,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 using:
   Confy: https://github.com/rust-cli/confy/blob/master/LICENSE-X11
   Libsir: https://github.com/aremmell/libsir/blob/master/LICENSES/X11.txt
-  Rails: https://github.com/rails/rails/blob/master/MIT-LICENSE
+  Rails: https://github.com/rails/rails/blob/main/MIT-LICENSE
 
 permissions:
   - commercial-use
