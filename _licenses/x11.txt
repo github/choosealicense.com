@@ -2,9 +2,9 @@
 title: X11 License
 spdx-id: X11
 
-description: This is the same as the MIT license, but with a clause added which prohibits the use of the copyright holders names in advertising or otherwise to promote a sale.
+description: This is the same as the MIT license, but with a clause added which prohibits the use of the copyright holders names in advertising.
 
-how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace <date> with the current year and <copyright holders> with the name (or names) of the copyright holders.
 
 using:
   Confy: https://github.com/rust-cli/confy/blob/master/LICENSE-X11
