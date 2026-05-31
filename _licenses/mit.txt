@@ -1,5 +1,5 @@
 ---
-title: MIT License
+title: MIT Expat License
 spdx-id: MIT
 featured: true
 hidden: false
