@@ -1,6 +1,6 @@
 ---
-title: MIT License
-spdx-id: MIT
+title: X11 License
+spdx-id: X11
 featured: true
 hidden: false
 
