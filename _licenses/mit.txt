@@ -11,7 +11,7 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 using:
   Babel: https://github.com/babel/babel/blob/master/LICENSE
   .NET: https://github.com/dotnet/runtime/blob/main/LICENSE.TXT
-  Rails: https://github.com/rails/rails/blob/master/MIT-LICENSE
+  Rails: https://github.com/rails/rails/blob/main/MIT-LICENSE
 
 permissions:
   - commercial-use
