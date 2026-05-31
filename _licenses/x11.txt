@@ -2,7 +2,8 @@
 title: X11 License
 spdx-id: X11
 
-description: This is the same as the MIT license, but with a clause added which prohibits the use of the copyright holders names in advertising.
+description: 
+Like the MIT Expat license, it's a short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code. But unlike it, it adds a clause which prohibits the use of the copyright holders names in advertising.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.
 
