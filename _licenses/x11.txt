@@ -1,8 +1,8 @@
 ---
 title: X11 License
 spdx-id: X11
-featured: true
-hidden: false
+featured: false
+hidden: true
 
 description: This is the same as the MIT license, but with a clause added which prohibits the use of the copyright holders names in advertising or otherwise to promote a sale.
 
