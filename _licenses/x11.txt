@@ -1,5 +1,5 @@
 ---
-title: X11 License
+title: MIT X11 License
 spdx-id: X11
 
 description: This is the same as the MIT license, but with a clause added which prohibits the use of the copyright holders names in advertising.
