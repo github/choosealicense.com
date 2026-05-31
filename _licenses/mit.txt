@@ -28,7 +28,7 @@ limitations:
 
 ---
 
-MIT Expat License
+MIT (Expat) License
 
 Copyright (c) [year] [fullname]
 
