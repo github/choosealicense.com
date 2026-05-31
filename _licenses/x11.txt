@@ -1,5 +1,5 @@
 ---
-title: MIT X11 License
+title: X11 License
 spdx-id: X11
 
 description: 
