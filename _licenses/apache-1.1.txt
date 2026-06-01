@@ -2,11 +2,9 @@
 title: Apache License 1.1
 spdx-id: Apache-1.1
 
-description: A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+description: A permissive license whose main conditions require preservation of copyright and license notices.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
-
-note: The Apache Software Foundation <a href="https://apache.org/foundation/license-faq.html#Apply-My-Software">recommends</a> taking the additional step of adding a boilerplate notice to the header of each source file. You can find the notice in the appendix at the very end of the license text.
 
 using:
   Kubernetes: https://github.com/kubernetes/kubernetes/blob/master/LICENSE
@@ -17,14 +15,13 @@ permissions:
   - commercial-use
   - modifications
   - distribution
-  - patent-use
   - private-use
 
 conditions:
   - include-copyright
-  - document-changes
 
 limitations:
+  - patent-use
   - trademark-use
   - liability
   - warranty
