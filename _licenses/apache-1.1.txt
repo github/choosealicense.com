@@ -7,7 +7,7 @@ description: A permissive license whose main conditions require preservation of 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
 using:
-  Kubernetes: https://github.com/kubernetes/kubernetes/blob/master/LICENSE
+  s2struts: https://github.com/seasarorg/s2struts/blob/7a6e90586a193734eeebfd644a12e56e12a1c398/s2struts-example/license/Apache_Software_License_1.1.txt
   PDF.js: https://github.com/mozilla/pdf.js/blob/master/LICENSE
   Swift: https://github.com/apple/swift/blob/main/LICENSE.txt
 
