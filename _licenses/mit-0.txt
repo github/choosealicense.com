@@ -1,5 +1,5 @@
 ---
-title: MIT (Expat) No Attribution
+title: MIT Expat No Attribution
 spdx-id: MIT-0
 
 description: A short and simple permissive license with no conditions, not even requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
@@ -25,7 +25,7 @@ limitations:
 
 ---
 
-MIT (Expat) No Attribution
+MIT Expat No Attribution
 
 Copyright [year] [fullname]
 
