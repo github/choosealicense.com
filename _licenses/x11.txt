@@ -1,5 +1,5 @@
 ---
-title: MIT (X11) License
+title: MIT X11 License
 spdx-id: X11
 
 description: This is the similar to the MIT Expat license, but adds a clause which prohibits the use of the copyright holders names in advertising.
@@ -26,7 +26,7 @@ limitations:
 
 ---
 
-MIT (X11) License
+MIT X11 License
 
 Copyright (C) [year] [fullname]
 
