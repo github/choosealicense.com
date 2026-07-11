@@ -1,6 +1,12 @@
 <div class="sidebar">
 
   <a href="#" data-clipboard-target="#license-text" data-proofer-ignore="true" class="js-clipboard-button button">Copy license text to clipboard</a>
+  {% assign raw_slug = page.url | remove: '/licenses/' | remove: '/' %}
+  <p class="license-raw-url">
+    <strong>Plain text URL:</strong>
+    <a href="/licenses/{{ raw_slug }}.txt"><code>/licenses/{{ raw_slug }}.txt</code></a>
+    <span class="note">— e.g. <code>curl https://choosealicense.com/licenses/{{ raw_slug }}.txt &gt; LICENSE</code></span>
+  </p>
   {% unless page.spdx-id == 'LGPL-3.0' %}
   <h3 id="suggest-this-license">Suggest this license</h3>
   <div class="repository-suggestion">

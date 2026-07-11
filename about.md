@@ -27,6 +27,12 @@ See our [appendix](/appendix/) for a table of every license cataloged in the [ch
 
 Choosealicense.com isn't just about open source; the site itself is open source as well. See something you think could be done better? Feel free to [fork the project](https://github.com/github/choosealicense.com) on GitHub and submit a pull request. We welcome your improvements.
 
+
+## Official domain
+
+The only official GitHub site for this project is **[choosealicense.com](https://choosealicense.com/)**. The hostname **choosealicence.com** (British spelling) is a common typo and is **not** operated by GitHub for this project; do not enter credentials or treat it as official. TLS or redirect fixes for typo domains must be handled outside this repository.
+
+
 ## Disclaimer
 
 We are not lawyers. Well, most of us anyway. It is not the goal of this site to provide legal advice. The goal of this site is to provide a starting point to help you make an informed choice by providing information on popular open source licenses in a simplified fashion. If you have any questions regarding the best license for your code or any other legal issues relating to it, it's your responsibility to do further research or consult with a professional.
