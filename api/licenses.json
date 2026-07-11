@@ -1,0 +1,1182 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/licenses.jsonld",
+  "licenses": {
+    "0bsd": {
+      "name": "BSD Zero Clause License",
+      "identifiers": {
+        "spdx": [
+          "0BSD"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "liability",
+        "modifications",
+        "private-use",
+        "warranty"
+      ]
+    },
+    "afl-3.0": {
+      "name": "Academic Free License v3.0",
+      "identifiers": {
+        "spdx": [
+          "AFL-3.0"
+        ],
+        "FSF": [
+          "AcademicFreeLicense3.0"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "trademark-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#AcademicFreeLicense",
+        "http://directory.fsf.org/wiki/License:AFLv3"
+      ]
+    },
+    "agpl-3.0": {
+      "name": "GNU Affero General Public License v3.0",
+      "identifiers": {
+        "spdx": [
+          "AGPL-3.0"
+        ],
+        "FSF": [
+          "AGPLv3.0"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "disclose-source",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "network-use-disclose",
+        "patent-use",
+        "private-use",
+        "same-license",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#AGPLv3.0",
+        "https://www.gnu.org/licenses/agpl.html"
+      ]
+    },
+    "apache-2.0": {
+      "name": "Apache License 2.0",
+      "identifiers": {
+        "spdx": [
+          "Apache-2.0"
+        ],
+        "FSF": [
+          "apache2"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "trademark-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#apache2",
+        "http://directory.fsf.org/wiki/License:Apache2.0"
+      ]
+    },
+    "artistic-2.0": {
+      "name": "Artistic License 2.0",
+      "identifiers": {
+        "spdx": [
+          "Artistic-2.0"
+        ],
+        "FSF": [
+          "ArtisticLicense2"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "trademark-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#ArtisticLicense2",
+        "http://directory.fsf.org/wiki/License:ArtisticLicense2.0"
+      ]
+    },
+    "blueoak-1.0.0": {
+      "name": "Blue Oak Model License 1.0.0",
+      "identifiers": {
+        "spdx": [
+          "BlueOak-1.0.0"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "include-copyright",
+        "liability",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "warranty"
+      ]
+    },
+    "bsd-2-clause-patent": {
+      "name": "BSD-2-Clause Plus Patent License",
+      "identifiers": {
+        "spdx": [
+          "BSD-2-Clause-Patent"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "include-copyright",
+        "liability",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "warranty"
+      ]
+    },
+    "bsd-2-clause": {
+      "name": "BSD 2-Clause \"Simplified\" License",
+      "identifiers": {
+        "spdx": [
+          "BSD-2-Clause"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "include-copyright",
+        "liability",
+        "modifications",
+        "private-use",
+        "warranty"
+      ]
+    },
+    "bsd-3-clause-clear": {
+      "name": "BSD 3-Clause Clear License",
+      "identifiers": {
+        "spdx": [
+          "BSD-3-Clause-Clear"
+        ],
+        "FSF": [
+          "clearbsd"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#clearbsd",
+        "http://directory.fsf.org/wiki/License:ClearBSD"
+      ]
+    },
+    "bsd-3-clause": {
+      "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+      "identifiers": {
+        "spdx": [
+          "BSD-3-Clause"
+        ],
+        "FSF": [
+          "ModifiedBSD"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "private-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#ModifiedBSD",
+        "http://directory.fsf.org/wiki/License:BSD_3Clause"
+      ]
+    },
+    "bsd-4-clause": {
+      "name": "BSD 4-Clause \"Original\" or \"Old\" License",
+      "identifiers": {
+        "spdx": [
+          "BSD-4-Clause"
+        ],
+        "FSF": [
+          "OriginalBSD"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "private-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#OriginalBSD",
+        "http://directory.fsf.org/wiki/License:BSD_4Clause"
+      ]
+    },
+    "bsl-1.0": {
+      "name": "Boost Software License 1.0",
+      "identifiers": {
+        "spdx": [
+          "BSL-1.0"
+        ],
+        "FSF": [
+          "boost"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "include-copyright--source",
+        "liability",
+        "libre",
+        "modifications",
+        "private-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#boost",
+        "http://directory.fsf.org/wiki/License:Boost1.0"
+      ]
+    },
+    "cc-by-4.0": {
+      "name": "Creative Commons Attribution 4.0 International",
+      "identifiers": {
+        "spdx": [
+          "CC-BY-4.0"
+        ],
+        "FSF": [
+          "ccby"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "trademark-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#ccby",
+        "http://creativecommons.org/licenses/by/4.0/legalcode"
+      ]
+    },
+    "cc-by-sa-4.0": {
+      "name": "Creative Commons Attribution Share Alike 4.0 International",
+      "identifiers": {
+        "spdx": [
+          "CC-BY-SA-4.0"
+        ],
+        "FSF": [
+          "ccbysa"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "same-license",
+        "trademark-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#ccbysa",
+        "http://creativecommons.org/licenses/by-sa/4.0/legalcode"
+      ]
+    },
+    "cc0-1.0": {
+      "name": "Creative Commons Zero v1.0 Universal",
+      "identifiers": {
+        "spdx": [
+          "CC0-1.0"
+        ],
+        "FSF": [
+          "CC0"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "liability",
+        "libre",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "trademark-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#CC0",
+        "http://directory.fsf.org/wiki/License:CC0"
+      ]
+    },
+    "cecill-2.1": {
+      "name": "CeCILL Free Software License Agreement v2.1",
+      "identifiers": {
+        "spdx": [
+          "CECILL-2.1"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "disclose-source",
+        "distribution",
+        "include-copyright",
+        "liability",
+        "modifications",
+        "network-use-disclose",
+        "patent-use",
+        "private-use",
+        "same-license",
+        "warranty"
+      ]
+    },
+    "cern-ohl-p-2.0": {
+      "name": "CERN Open Hardware Licence Version 2 - Permissive",
+      "identifiers": {
+        "spdx": [
+          "CERN-OHL-P-2.0"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "liability",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "warranty"
+      ]
+    },
+    "cern-ohl-s-2.0": {
+      "name": "CERN Open Hardware Licence Version 2 - Strongly Reciprocal",
+      "identifiers": {
+        "spdx": [
+          "CERN-OHL-S-2.0"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "disclose-source",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "liability",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "same-license",
+        "warranty"
+      ]
+    },
+    "cern-ohl-w-2.0": {
+      "name": "CERN Open Hardware Licence Version 2 - Weakly Reciprocal",
+      "identifiers": {
+        "spdx": [
+          "CERN-OHL-W-2.0"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "disclose-source",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "liability",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "same-license--library",
+        "warranty"
+      ]
+    },
+    "ecl-2.0": {
+      "name": "Educational Community License v2.0",
+      "identifiers": {
+        "spdx": [
+          "ECL-2.0"
+        ],
+        "FSF": [
+          "ECL2.0"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "trademark-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#ECL2.0",
+        "http://directory.fsf.org/wiki/License:ECL2.0"
+      ]
+    },
+    "epl-1.0": {
+      "name": "Eclipse Public License 1.0",
+      "identifiers": {
+        "spdx": [
+          "EPL-1.0"
+        ],
+        "FSF": [
+          "EPL"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "disclose-source",
+        "distribution",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "same-license",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#EPL",
+        "http://directory.fsf.org/wiki/License:EPLv1.0"
+      ]
+    },
+    "epl-2.0": {
+      "name": "Eclipse Public License 2.0",
+      "identifiers": {
+        "spdx": [
+          "EPL-2.0"
+        ],
+        "FSF": [
+          "EPL2"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "disclose-source",
+        "distribution",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "same-license",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#EPL2",
+        "http://directory.fsf.org/wiki/License:EPLv2.0"
+      ]
+    },
+    "eupl-1.1": {
+      "name": "European Union Public License 1.1",
+      "identifiers": {
+        "spdx": [
+          "EUPL-1.1"
+        ],
+        "FSF": [
+          "EUPL-1.1"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "disclose-source",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "network-use-disclose",
+        "patent-use",
+        "private-use",
+        "same-license",
+        "trademark-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#EUPL-1.1",
+        "http://directory.fsf.org/wiki/License:EUPLv1.1"
+      ]
+    },
+    "eupl-1.2": {
+      "name": "European Union Public License 1.2",
+      "identifiers": {
+        "spdx": [
+          "EUPL-1.2"
+        ],
+        "FSF": [
+          "EUPL-1.2"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "disclose-source",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "network-use-disclose",
+        "patent-use",
+        "private-use",
+        "same-license",
+        "trademark-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#EUPL-1.2",
+        "http://directory.fsf.org/wiki/License:EUPLv1.2"
+      ]
+    },
+    "gfdl-1.3": {
+      "name": "GNU Free Documentation License v1.3",
+      "identifiers": {
+        "spdx": [
+          "GFDL-1.3"
+        ],
+        "FSF": [
+          "FDLv1.3"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "disclose-source",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "private-use",
+        "same-license",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#FDL",
+        "https://www.gnu.org/licenses/fdl.html",
+        "https://www.gnu.org/licenses/license-list.html#FDLOther"
+      ]
+    },
+    "gpl-2.0": {
+      "name": "GNU General Public License v2.0",
+      "identifiers": {
+        "spdx": [
+          "GPL-2.0"
+        ],
+        "FSF": [
+          "GPLv2"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "disclose-source",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "private-use",
+        "same-license",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#GPLv2",
+        "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
+      ]
+    },
+    "gpl-3.0": {
+      "name": "GNU General Public License v3.0",
+      "identifiers": {
+        "spdx": [
+          "GPL-3.0"
+        ],
+        "FSF": [
+          "GNUGPLv3"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "disclose-source",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "same-license",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#GNUGPLv3",
+        "https://www.gnu.org/licenses/gpl.html"
+      ]
+    },
+    "isc": {
+      "name": "ISC License",
+      "identifiers": {
+        "spdx": [
+          "ISC"
+        ],
+        "FSF": [
+          "ISC"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "private-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#ISC",
+        "http://directory.fsf.org/wiki/License:ISC"
+      ]
+    },
+    "lgpl-2.1": {
+      "name": "GNU Lesser General Public License v2.1",
+      "identifiers": {
+        "spdx": [
+          "LGPL-2.1"
+        ],
+        "FSF": [
+          "LGPLv2.1"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "disclose-source",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "private-use",
+        "same-license--library",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#LGPLv2.1",
+        "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+      ]
+    },
+    "lgpl-3.0": {
+      "name": "GNU Lesser General Public License v3.0",
+      "identifiers": {
+        "spdx": [
+          "LGPL-3.0"
+        ],
+        "FSF": [
+          "LGPLv3"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "disclose-source",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "same-license--library",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#LGPLv3",
+        "https://www.gnu.org/licenses/lgpl.html"
+      ]
+    },
+    "lppl-1.3c": {
+      "name": "LaTeX Project Public License v1.3c",
+      "identifiers": {
+        "spdx": [
+          "LPPL-1.3c"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "disclose-source",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "liability",
+        "modifications",
+        "private-use",
+        "warranty"
+      ]
+    },
+    "mit-0": {
+      "name": "MIT No Attribution",
+      "identifiers": {
+        "spdx": [
+          "MIT-0"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "liability",
+        "modifications",
+        "private-use",
+        "warranty"
+      ]
+    },
+    "mit": {
+      "name": "MIT License",
+      "identifiers": {
+        "spdx": [
+          "MIT"
+        ],
+        "FSF": [
+          "Expat"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "private-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#Expat",
+        "http://directory.fsf.org/wiki/License:Expat"
+      ]
+    },
+    "mpl-2.0": {
+      "name": "Mozilla Public License 2.0",
+      "identifiers": {
+        "spdx": [
+          "MPL-2.0"
+        ],
+        "FSF": [
+          "MPL-2.0"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "disclose-source",
+        "distribution",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "same-license--file",
+        "trademark-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#MPL-2.0",
+        "http://directory.fsf.org/wiki/License:MPLv2.0"
+      ]
+    },
+    "ms-pl": {
+      "name": "Microsoft Public License",
+      "identifiers": {
+        "spdx": [
+          "MS-PL"
+        ],
+        "FSF": [
+          "ms-pl"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "include-copyright",
+        "libre",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "trademark-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#ms-pl",
+        "http://directory.fsf.org/wiki/License:MsPL"
+      ]
+    },
+    "ms-rl": {
+      "name": "Microsoft Reciprocal License",
+      "identifiers": {
+        "spdx": [
+          "MS-RL"
+        ],
+        "FSF": [
+          "ms-rl"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "disclose-source",
+        "distribution",
+        "include-copyright",
+        "libre",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "same-license--file",
+        "trademark-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#ms-rl",
+        "http://directory.fsf.org/wiki/License:MsRL"
+      ]
+    },
+    "mulanpsl-2.0": {
+      "name": "Mulan Permissive Software License, Version 2",
+      "identifiers": {
+        "spdx": [
+          "MulanPSL-2.0"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "include-copyright",
+        "liability",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "trademark-use",
+        "warranty"
+      ]
+    },
+    "ncsa": {
+      "name": "University of Illinois/NCSA Open Source License",
+      "identifiers": {
+        "spdx": [
+          "NCSA"
+        ],
+        "FSF": [
+          "NCSA"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "private-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#NCSA",
+        "http://directory.fsf.org/wiki/License:IllinoisNCSA"
+      ]
+    },
+    "odbl-1.0": {
+      "name": "Open Data Commons Open Database License v1.0",
+      "identifiers": {
+        "spdx": [
+          "ODbL-1.0"
+        ],
+        "FSF": [
+          "ODbl"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "disclose-source",
+        "distribution",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "same-license",
+        "trademark-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#ODbl",
+        "http://directory.fsf.org/wiki/License:ODbl"
+      ]
+    },
+    "ofl-1.1": {
+      "name": "SIL Open Font License 1.1",
+      "identifiers": {
+        "spdx": [
+          "OFL-1.1"
+        ],
+        "FSF": [
+          "SILOFL-1.1"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "private-use",
+        "same-license",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#SILOFL",
+        "http://directory.fsf.org/wiki/SIL_Open_Font_License_1.1"
+      ]
+    },
+    "osl-3.0": {
+      "name": "Open Software License 3.0",
+      "identifiers": {
+        "spdx": [
+          "OSL-3.0"
+        ],
+        "FSF": [
+          "OSL-3.0"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "disclose-source",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "network-use-disclose",
+        "patent-use",
+        "private-use",
+        "same-license",
+        "trademark-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#OSL",
+        "http://directory.fsf.org/wiki/License:OSLv3.0"
+      ]
+    },
+    "postgresql": {
+      "name": "PostgreSQL License",
+      "identifiers": {
+        "spdx": [
+          "PostgreSQL"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "include-copyright",
+        "liability",
+        "modifications",
+        "private-use",
+        "warranty"
+      ]
+    },
+    "unlicense": {
+      "name": "The Unlicense",
+      "identifiers": {
+        "spdx": [
+          "Unlicense"
+        ],
+        "FSF": [
+          "Unlicense"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "liability",
+        "libre",
+        "modifications",
+        "private-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#Unlicense",
+        "http://directory.fsf.org/wiki/License:TheUnlicense"
+      ]
+    },
+    "upl-1.0": {
+      "name": "Universal Permissive License v1.0",
+      "identifiers": {
+        "spdx": [
+          "UPL-1.0"
+        ],
+        "FSF": [
+          "UPL"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "include-copyright",
+        "liability",
+        "libre",
+        "modifications",
+        "patent-use",
+        "private-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#UPL",
+        "http://directory.fsf.org/wiki/License:Universal_Permissive_License"
+      ]
+    },
+    "vim": {
+      "name": "Vim License",
+      "identifiers": {
+        "spdx": [
+          "Vim"
+        ],
+        "FSF": [
+          "Vim"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "disclose-source",
+        "distribution",
+        "document-changes",
+        "include-copyright",
+        "libre",
+        "modifications",
+        "private-use",
+        "same-license"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#Vim",
+        "http://directory.fsf.org/wiki/License:Vim7.2"
+      ]
+    },
+    "wtfpl": {
+      "name": "Do What The F*ck You Want To Public License",
+      "identifiers": {
+        "spdx": [
+          "WTFPL"
+        ],
+        "FSF": [
+          "WTFPL"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "libre",
+        "modifications",
+        "private-use"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#WTFPL",
+        "http://sam.zoy.org/wtfpl/COPYING"
+      ]
+    },
+    "zlib": {
+      "name": "zlib License",
+      "identifiers": {
+        "spdx": [
+          "Zlib"
+        ],
+        "FSF": [
+          "ZLib"
+        ]
+      },
+      "tags": [
+        "commercial-use",
+        "distribution",
+        "document-changes",
+        "include-copyright--source",
+        "liability",
+        "libre",
+        "modifications",
+        "private-use",
+        "warranty"
+      ],
+      "uris": [
+        "https://www.gnu.org/licenses/license-list.html#ZLib",
+        "http://directory.fsf.org/wiki/License:Zlib"
+      ]
+    }
+  }
+}
