@@ -36,3 +36,18 @@ task :approved_licenses do
   puts "#{potential.count} potential additions:"
   puts potential.join(', ')
 end
+
+namespace :licenses do
+  desc 'Report licenses whose optional source: does not match SPDX canonical URLs'
+  task :source_report do
+    require 'yaml'
+    Dir['_licenses/*.txt'].each do |path|
+      raw = YAML.safe_load_file(path, permitted_classes: [Date, Time], aliases: true)
+      next unless raw['source']
+
+      spdx = raw['spdx-id']
+      expected = %r{\Ahttps://spdx\.org/licenses/#{Regexp.escape(spdx)}(?:-or-later|-only)?\.html\z}
+      puts "Mismatch: #{path} -> #{raw['source']}" unless raw['source'].match?(expected)
+    end
+  end
+end
