@@ -27,6 +27,9 @@
           }{% unless forloop.last %},{% endunless %}
         {% endfor %}
       ];
+      {% if page.annotations %}
+      window.ruleAnnotations = {{ page.annotations | jsonify }};
+      {% endif %}
       {% endif %}
     </script>
     <script src="{{ 'assets/js/app.js' | relative_url }}"></script>

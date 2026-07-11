@@ -26,6 +26,14 @@ limitations:
   - liability
   - warranty
 
+annotations:
+  include-copyright:
+    - "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software."
+  liability:
+    - "IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE"
+  warranty:
+    - "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND"
+
 ---
 
 MIT License

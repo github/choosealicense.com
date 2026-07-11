@@ -45,6 +45,14 @@
 
             </div>
 
+            {% if page.annotations %}
+            <p class="license-annotations-toggle">
+              <button type="button" id="toggle-rule-annotations" class="button" aria-pressed="false">
+                Highlight license rules in text
+              </button>
+            </p>
+            {% endif %}
+
             <pre id="license-text">{{ content | replace:"<", "&lt;" | replace:">", "&gt;" }}</pre>
 
         </div> <!-- /license-body -->
