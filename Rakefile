@@ -3,13 +3,15 @@
 require 'html-proofer'
 require 'rspec/core/rake_task'
 
+Dir.glob('lib/tasks/*.rake').each { |rake| load rake }
+
 desc 'Run specs'
 RSpec::Core::RakeTask.new do |t|
   t.pattern = 'spec/**/*_spec.rb'
   t.rspec_opts = ['--order', 'rand', '--color']
 end
 
-task :test do
+task test: 'licenses:raw' do
   sh 'bundle exec jekyll build'
   Rake::Task['spec'].invoke
   HTMLProofer.check_directory('./_site',
