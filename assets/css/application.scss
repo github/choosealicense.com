@@ -568,6 +568,67 @@ strong {
 
 .with-love { float: right; clear: right; }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.site-search {
+  position: relative;
+  margin: 0 0 1.25rem;
+  max-width: 36rem;
+}
+
+.site-search input[type="search"] {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.site-search-results {
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  margin: 0.25rem 0 0;
+  padding: 0;
+  list-style: none;
+  background: var(--backgroundColor);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  max-height: 18rem;
+  overflow-y: auto;
+}
+
+.site-search-results a {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0.75rem;
+  font-weight: normal;
+}
+
+.site-search-results li.is-active a,
+.site-search-results a:hover {
+  background: rgba(20, 154, 212, 0.12);
+}
+
+.site-search-meta {
+  font-size: 0.75rem;
+  color: #888;
+  font-weight: normal;
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2.0),
  only screen and (min--moz-device-pixel-ratio: 2.0),
  only screen and (-o-min-device-pixel-ratio: 200/100),

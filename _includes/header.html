@@ -15,6 +15,8 @@
 
       {% include breadcrumbs.html %}
 
+      {% include site-search.html %}
+
       {% if page.title %}
         <h1>{{ page.title | markdownify | strip_html | strip_newlines }}</h1>
       {% endif %}

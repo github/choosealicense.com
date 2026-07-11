@@ -15,20 +15,25 @@
 
     </div> <!-- /container -->
 
-    {% if page.collection == "licenses" or page.class == "license-types" %}
     <script>
       window.annotations = {{ site.data.rules | jsonify }};
-      {% if page.collection == "licenses" %}
-      window.licenses = [
+      window.licenseCatalog = [
         {% for license in site.licenses %}
-          {
-            "title": "{{ license.title | escape  }}",
-            "spdx_id": "{{ license.spdx-id | escape  }}"
-          }{% unless forloop.last %},{% endunless %}
+        {
+          "title": {{ license.title | jsonify }},
+          "spdx_id": {{ license.spdx-id | jsonify }},
+          "url": {{ license.url | relative_url | jsonify }},
+          "description": {{ license.description | strip_html | jsonify }},
+          "tags": {{ license.permissions | concat: license.conditions | concat: license.limitations | jsonify }}
+        }{% unless forloop.last %},{% endunless %}
         {% endfor %}
       ];
+      {% if page.collection == "licenses" %}
+      window.licenses = window.licenseCatalog.map(({ title, spdx_id }) => ({ title, spdx_id }));
       {% endif %}
     </script>
+    <script src="{{ 'assets/js/search.js' | relative_url }}"></script>
+    {% if page.collection == "licenses" or page.class == "license-types" %}
     <script src="{{ 'assets/js/app.js' | relative_url }}"></script>
     {% endif %}
   </body>
