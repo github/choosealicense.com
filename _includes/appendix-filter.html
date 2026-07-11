@@ -1,0 +1,29 @@
+<div id="appendix-filter" class="appendix-filter" aria-label="Filter licenses by rules">
+  <p><strong>Explore by rules</strong> — select attributes, then choose how non-matching licenses appear:</p>
+  <div class="appendix-filter-mode">
+    <label><input type="radio" name="appendix-filter-mode" value="hide" checked /> Hide non-matching</label>
+    <label><input type="radio" name="appendix-filter-mode" value="prioritize" /> Prioritize matches (dim others)</label>
+  </div>
+  <div class="appendix-filter-groups">
+    {% assign types = "permissions|conditions|limitations" | split: "|" %}
+    {% assign seen_tags = '' %}
+    {% for type in types %}
+      <fieldset class="appendix-filter-group">
+        <legend>{{ type | capitalize }}</legend>
+        {% assign rules = site.data.rules[type] | sort: "label" %}
+        {% for rule_obj in rules %}
+          {% if seen_tags contains rule_obj.tag or rule_obj.tag contains '--' %}
+            {% continue %}
+          {% endif %}
+          {% capture seen_tags %}{{ seen_tags | append:rule_obj.tag }}{% endcapture %}
+          <label class="appendix-filter-chip">
+            <input type="checkbox" value="{{ rule_obj.tag }}" data-rule-type="{{ type }}" />
+            {{ rule_obj.label }}
+          </label>
+        {% endfor %}
+      </fieldset>
+    {% endfor %}
+  </div>
+  <button type="button" id="appendix-filter-clear" class="appendix-filter-clear">Clear selection</button>
+  <p id="appendix-filter-status" class="appendix-filter-status" aria-live="polite"></p>
+</div>

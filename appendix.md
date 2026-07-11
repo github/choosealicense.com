@@ -9,8 +9,12 @@ For reference, here is a table of every license described in the [choosealicense
 
 If you're here to choose a license, **[start from the home page](/)** to see a few licenses that will work for most cases.
 
-<table border style="font-size: xx-small; position: relative">
+{% include appendix-filter.html %}
+
+<div class="appendix-table-wrapper">
+<table class="appendix-table" border style="font-size: xx-small; position: relative">
 {% assign types = "permissions|conditions|limitations" | split: "|" %}
+<thead>
 <tr style="position: sticky; top: 0; z-index: 1000001; background: color-mix(in srgb, var(--backgroundColor) 70%, transparent);">
   <th scope="col" style="text-align: center">License</th>
   {% assign seen_tags = '' %}
@@ -25,9 +29,12 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
     {% endfor %}
   {% endfor %}
 </tr>
+</thead>
+<tbody>
 {% assign licenses = site.licenses | sort: "path" %}
 {% for license in licenses %}
-  <tr style="height: 3em"><th scope="row"><a href="{{ license.id }}">{{ license.title }}</a></th>
+  {% capture rule_tags %}{% for t in types %}{% for r in license[t] %}{{ r }},{% endfor %}{% endfor %}{% endcapture %}
+  <tr style="height: 3em" data-rules="{{ rule_tags | strip }}"><th scope="row"><a href="{{ license.url }}">{{ license.title }}</a></th>
   {% assign seen_tags = '' %}
   {% for type in types %}
     {% assign rules = site.data.rules[type] | sort: "label" %}
@@ -62,7 +69,9 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
   {% endfor %}
   </tr>
 {% endfor %}
+</tbody>
 </table>
+</div>
 
 ## Legend
 
@@ -93,3 +102,5 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
   {% endfor %}
   </dl>
 {% endfor %}
+
+<script src="{{ '/assets/js/appendix-explorer.js' | relative_url }}"></script>
