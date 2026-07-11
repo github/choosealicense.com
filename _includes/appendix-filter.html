@@ -1,0 +1,25 @@
+<div id="appendix-filter" class="appendix-filter" aria-label="Filter licenses by rules">
+  <p><strong>Filter by rules</strong> — show only licenses that match <em>every</em> selected attribute:</p>
+  <div class="appendix-filter-groups">
+    {% assign types = "permissions|conditions|limitations" | split: "|" %}
+    {% assign seen_tags = '' %}
+    {% for type in types %}
+      <fieldset class="appendix-filter-group">
+        <legend>{{ type | capitalize }}</legend>
+        {% assign rules = site.data.rules[type] | sort: "label" %}
+        {% for rule_obj in rules %}
+          {% if seen_tags contains rule_obj.tag or rule_obj.tag contains '--' %}
+            {% continue %}
+          {% endif %}
+          {% capture seen_tags %}{{ seen_tags | append:rule_obj.tag }}{% endcapture %}
+          <label class="appendix-filter-chip">
+            <input type="checkbox" value="{{ rule_obj.tag }}" data-rule-type="{{ type }}" />
+            {{ rule_obj.label }}
+          </label>
+        {% endfor %}
+      </fieldset>
+    {% endfor %}
+  </div>
+  <button type="button" id="appendix-filter-clear" class="appendix-filter-clear">Clear filters</button>
+  <p id="appendix-filter-status" class="appendix-filter-status" aria-live="polite"></p>
+</div>
