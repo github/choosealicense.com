@@ -11,6 +11,11 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 
 note: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license.
 
+related:
+  - gpl-3.0
+  - agpl-3.0
+  - eupl-1.2
+
 using:
   Discourse: https://github.com/discourse/discourse/blob/master/LICENSE.txt
   Jellyfin: https://github.com/jellyfin/jellyfin/blob/master/LICENSE
