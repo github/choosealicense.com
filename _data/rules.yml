@@ -31,13 +31,13 @@ conditions:
 - description: Users who interact with the licensed material via network are given the right to receive a copy of the source code.
   label: Network use is distribution
   tag: network-use-disclose
-- description: Modifications must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used.
+- description: Modifications must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used. This applies to derivative works based on the licensed material; it does not require a particular license for a clean-room reimplementation that does not incorporate the licensed work.
   label: Same license
   tag: same-license
-- description: Modifications of existing files must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used.
+- description: Modifications must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used. This applies to derivative works based on the licensed material; it does not require a particular license for a clean-room reimplementation that does not incorporate the licensed work.
   label: Same license (file)
   tag: same-license--file
-- description: Modifications must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used, or this condition may not apply to works that use the licensed material as a library.
+- description: Modifications must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used. This applies to derivative works based on the licensed material; it does not require a particular license for a clean-room reimplementation that does not incorporate the licensed work.
   label: Same license (library)
   tag: same-license--library
 
