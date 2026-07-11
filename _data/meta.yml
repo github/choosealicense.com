@@ -54,3 +54,7 @@
 - name: redirect_from
   description: Relative path(s) to redirect to the license from, to prevent breaking old URLs
   required: false
+
+- name: annotations
+  description: Map of rule tags to excerpt strings that appear in the license body (enables in-text rule highlighting)
+  required: false

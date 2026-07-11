@@ -568,6 +568,21 @@ strong {
 
 .with-love { float: right; clear: right; }
 
+.rule-annotation {
+  background: rgba(20, 154, 212, 0.2);
+  border-radius: 2px;
+}
+
+.rule-annotation.is-focused {
+  background: rgba(61, 198, 55, 0.35);
+  outline: 1px solid #3dc637;
+}
+
+.license-annotations-toggle .button {
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2.0),
  only screen and (min--moz-device-pixel-ratio: 2.0),
  only screen and (-o-min-device-pixel-ratio: 200/100),

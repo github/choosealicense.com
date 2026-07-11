@@ -19,6 +19,7 @@ class Choosealicense {
     this.initTooltips();
     this.initClipboard();
     this.initLicenseSuggestion();
+    this.initRuleAnnotations();
   }
 
   // Selects the content of a given element
@@ -137,6 +138,50 @@ class Choosealicense {
 
     const licenseId = inputEl.getAttribute('data-license-id');
     new LicenseSuggestion(inputEl, licenseId, statusIndicator);
+  }
+
+  initRuleAnnotations() {
+    const mapping = window.ruleAnnotations;
+    const pre = document.querySelector('#license-text');
+    const toggle = document.querySelector('#toggle-rule-annotations');
+    if (!mapping || !pre || !toggle) return;
+
+    const original = pre.textContent;
+    let active = false;
+
+    const applyHighlights = () => {
+      let html = original.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      Object.entries(mapping).forEach(([tag, excerpts]) => {
+        excerpts.forEach((excerpt) => {
+          const escaped = excerpt.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+          const mark = `<mark class="rule-annotation rule-annotation-${tag}" data-rule="${tag}">${escaped}</mark>`;
+          html = html.replace(escaped, mark);
+        });
+      });
+      pre.innerHTML = html;
+    };
+
+    const clearHighlights = () => {
+      pre.textContent = original;
+    };
+
+    toggle.addEventListener('click', () => {
+      active = !active;
+      toggle.setAttribute('aria-pressed', String(active));
+      toggle.textContent = active ? 'Hide rule highlights' : 'Highlight license rules in text';
+      if (active) applyHighlights();
+      else clearHighlights();
+    });
+
+    document.querySelectorAll('.license-rules li').forEach((item) => {
+      item.addEventListener('mouseenter', () => {
+        if (!active) return;
+        const tag = Array.from(item.classList).find((className) => mapping[className]);
+        if (!tag) return;
+        pre.querySelectorAll('.rule-annotation').forEach((el) => el.classList.remove('is-focused'));
+        pre.querySelectorAll(`.rule-annotation-${tag}`).forEach((el) => el.classList.add('is-focused'));
+      });
+    });
   }
 }
 
