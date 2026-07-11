@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /appendix/
-title: Appendix
+title: All licenses
 class: license-types
 ---
 
