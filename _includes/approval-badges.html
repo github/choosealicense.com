@@ -1,0 +1,20 @@
+{% assign approval = site.data.approvals[page.slug] %}
+{% if approval %}
+  <div class="approval-badges">
+    <h3 id="approval-badges">Approval</h3>
+    <ul class="approval-badge-list">
+      {% if approval.osi %}
+        <li><a href="https://opensource.org/licenses">OSI approved</a></li>
+      {% endif %}
+      {% if approval.fsf %}
+        <li><a href="https://www.gnu.org/licenses/license-list.html">FSF libre</a></li>
+      {% endif %}
+      {% if approval.od %}
+        <li><a href="https://opendefinition.org/licenses/">Open Definition conformant</a></li>
+      {% endif %}
+      {% unless approval.osi or approval.fsf or approval.od %}
+        <li>Not listed on OSI, FSF libre, or Open Definition catalogs used here.</li>
+      {% endunless %}
+    </ul>
+  </div>
+{% endif %}

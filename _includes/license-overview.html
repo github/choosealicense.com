@@ -13,6 +13,15 @@
       </a>
     </h3>
 
+    {% assign overview_approval = site.data.approvals[include.license-id] %}
+    {% if overview_approval %}
+      <p class="approval-badges-inline">
+        {% if overview_approval.osi %}<span class="badge">OSI</span>{% endif %}
+        {% if overview_approval.fsf %}<span class="badge">FSF</span>{% endif %}
+        {% if overview_approval.od %}<span class="badge">OD</span>{% endif %}
+      </p>
+    {% endif %}
+
     <p class="license-overview-description">{{ license.description }}</p>
   </div>
 
