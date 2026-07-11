@@ -1,0 +1,235 @@
+0bsd:
+  spdx-id: 0BSD
+  osi: true
+  fsf: false
+  od: false
+afl-3.0:
+  spdx-id: AFL-3.0
+  osi: true
+  fsf: true
+  od: false
+agpl-3.0:
+  spdx-id: AGPL-3.0
+  osi: true
+  fsf: true
+  od: false
+apache-2.0:
+  spdx-id: Apache-2.0
+  osi: true
+  fsf: true
+  od: false
+artistic-2.0:
+  spdx-id: Artistic-2.0
+  osi: true
+  fsf: true
+  od: false
+blueoak-1.0.0:
+  spdx-id: BlueOak-1.0.0
+  osi: true
+  fsf: false
+  od: false
+bsd-2-clause-patent:
+  spdx-id: BSD-2-Clause-Patent
+  osi: true
+  fsf: false
+  od: false
+bsd-2-clause:
+  spdx-id: BSD-2-Clause
+  osi: true
+  fsf: false
+  od: false
+bsd-3-clause-clear:
+  spdx-id: BSD-3-Clause-Clear
+  osi: false
+  fsf: true
+  od: false
+bsd-3-clause:
+  spdx-id: BSD-3-Clause
+  osi: true
+  fsf: true
+  od: false
+bsd-4-clause:
+  spdx-id: BSD-4-Clause
+  osi: false
+  fsf: true
+  od: false
+bsl-1.0:
+  spdx-id: BSL-1.0
+  osi: true
+  fsf: true
+  od: false
+cc-by-4.0:
+  spdx-id: CC-BY-4.0
+  osi: false
+  fsf: true
+  od: true
+cc-by-sa-4.0:
+  spdx-id: CC-BY-SA-4.0
+  osi: false
+  fsf: true
+  od: true
+cc0-1.0:
+  spdx-id: CC0-1.0
+  osi: false
+  fsf: true
+  od: true
+cecill-2.1:
+  spdx-id: CECILL-2.1
+  osi: true
+  fsf: false
+  od: false
+cern-ohl-p-2.0:
+  spdx-id: CERN-OHL-P-2.0
+  osi: true
+  fsf: false
+  od: false
+cern-ohl-s-2.0:
+  spdx-id: CERN-OHL-S-2.0
+  osi: true
+  fsf: false
+  od: false
+cern-ohl-w-2.0:
+  spdx-id: CERN-OHL-W-2.0
+  osi: true
+  fsf: false
+  od: false
+ecl-2.0:
+  spdx-id: ECL-2.0
+  osi: true
+  fsf: true
+  od: false
+epl-1.0:
+  spdx-id: EPL-1.0
+  osi: true
+  fsf: true
+  od: false
+epl-2.0:
+  spdx-id: EPL-2.0
+  osi: true
+  fsf: true
+  od: false
+eupl-1.1:
+  spdx-id: EUPL-1.1
+  osi: true
+  fsf: true
+  od: false
+eupl-1.2:
+  spdx-id: EUPL-1.2
+  osi: true
+  fsf: true
+  od: false
+gfdl-1.3:
+  spdx-id: GFDL-1.3
+  osi: false
+  fsf: true
+  od: false
+gpl-2.0:
+  spdx-id: GPL-2.0
+  osi: true
+  fsf: true
+  od: false
+gpl-3.0:
+  spdx-id: GPL-3.0
+  osi: true
+  fsf: true
+  od: false
+isc:
+  spdx-id: ISC
+  osi: true
+  fsf: true
+  od: false
+lgpl-2.1:
+  spdx-id: LGPL-2.1
+  osi: true
+  fsf: true
+  od: false
+lgpl-3.0:
+  spdx-id: LGPL-3.0
+  osi: true
+  fsf: true
+  od: false
+lppl-1.3c:
+  spdx-id: LPPL-1.3c
+  osi: true
+  fsf: false
+  od: false
+mit-0:
+  spdx-id: MIT-0
+  osi: true
+  fsf: false
+  od: false
+mit:
+  spdx-id: MIT
+  osi: true
+  fsf: true
+  od: false
+mpl-2.0:
+  spdx-id: MPL-2.0
+  osi: true
+  fsf: true
+  od: false
+ms-pl:
+  spdx-id: MS-PL
+  osi: true
+  fsf: true
+  od: false
+ms-rl:
+  spdx-id: MS-RL
+  osi: true
+  fsf: true
+  od: false
+mulanpsl-2.0:
+  spdx-id: MulanPSL-2.0
+  osi: true
+  fsf: false
+  od: false
+ncsa:
+  spdx-id: NCSA
+  osi: true
+  fsf: true
+  od: false
+odbl-1.0:
+  spdx-id: ODbL-1.0
+  osi: false
+  fsf: true
+  od: true
+ofl-1.1:
+  spdx-id: OFL-1.1
+  osi: true
+  fsf: true
+  od: false
+osl-3.0:
+  spdx-id: OSL-3.0
+  osi: true
+  fsf: true
+  od: false
+postgresql:
+  spdx-id: PostgreSQL
+  osi: true
+  fsf: false
+  od: false
+unlicense:
+  spdx-id: Unlicense
+  osi: true
+  fsf: true
+  od: false
+upl-1.0:
+  spdx-id: UPL-1.0
+  osi: true
+  fsf: true
+  od: false
+vim:
+  spdx-id: Vim
+  osi: false
+  fsf: true
+  od: false
+wtfpl:
+  spdx-id: WTFPL
+  osi: false
+  fsf: true
+  od: false
+zlib:
+  spdx-id: Zlib
+  osi: true
+  fsf: true
+  od: false
