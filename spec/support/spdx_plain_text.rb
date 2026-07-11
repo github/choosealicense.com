@@ -14,6 +14,10 @@ SPDX_PLAIN_TEXT_ALIASES = {
 
 SPDX_PLAIN_TEXT_BASE = 'https://raw.githubusercontent.com/spdx/license-list-data/master/text'
 
+# Appended translations after this separator are excluded from SPDX comparison.
+# See https://github.com/github/choosealicense.com/issues/1126
+SPDX_PLAIN_TEXT_TRANSLATION_SEPARATOR = "\n\n----------------------------------------------------------------------\n\n"
+
 # Licenses verified to match SPDX plain text byte-for-byte (see spec/spdx_plain_text_spec.rb).
 SPDX_PLAIN_TEXT_MATCHING = %w[
   BlueOak-1.0.0
@@ -26,6 +30,15 @@ def license_plain_text(path)
   raise "Missing YAML front matter in #{path}" if parts.length < 3
 
   parts[2].strip
+end
+
+def license_plain_text_for_spdx(path)
+  text = license_plain_text(path)
+  if text.include?(SPDX_PLAIN_TEXT_TRANSLATION_SEPARATOR)
+    text.split(SPDX_PLAIN_TEXT_TRANSLATION_SEPARATOR, 2).first
+  else
+    text
+  end
 end
 
 def spdx_plain_text_filename(spdx_id)
