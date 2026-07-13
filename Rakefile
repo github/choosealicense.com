@@ -20,7 +20,8 @@ task :test do
                               url_ignore: [%r{https://github.com/github/choosealicense.com/edit/gh-pages/_licenses/},
                                            %r{https://help.github.com},
                                            %r{https://opensource.org},
-                                           %r{https://git.savannah.gnu.org}],
+                                           %r{https://git.savannah.gnu.org},
+                                           %r{\Ahttps://www\.gnu\.org/licenses/license-recommendations\.html\z}],
                               hydra: { max_concurrency: 10 },
                               check_img_http: true).run
 end
