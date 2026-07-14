@@ -53,6 +53,16 @@ Open `http://localhost:4000` in your favorite browser.
 
 If you encounter any issues with the above steps, please refer to the official [Jekyll](https://jekyllrb.com/docs/) documentation and this [guide on running Jekyll as a non-superuser](https://jekyllrb.com/docs/troubleshooting/#no-sudo) for more detailed installation instructions.
 
+## FSF API compatible metadata
+
+The site publishes [`api/licenses.json`](api/licenses.json) at `/api/licenses.json` after build. Regenerate it with:
+
+```bash
+script/generate_fsf_api.rb
+```
+
+The JSON follows the [FSF License Metadata API](https://wking.github.io/fsf-api/licenses-full.json) shape (`@context` + `licenses`), combining choosealicense.com rule tags with FSF identifiers where available.
+
 ## Adding a license
 
 For information on adding a license, see [the CONTRIBUTING file](https://github.com/github/choosealicense.com/blob/gh-pages/CONTRIBUTING.md#adding-a-license).
