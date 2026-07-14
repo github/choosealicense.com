@@ -51,6 +51,10 @@
   description: Additional information about the licenses
   required: false
 
+- name: source
+  description: Optional URL for non-SPDX license text sources; when present, prefer matching the SPDX license page at https://spdx.org/licenses/
+  required: false
+
 - name: redirect_from
   description: Relative path(s) to redirect to the license from, to prevent breaking old URLs
   required: false
