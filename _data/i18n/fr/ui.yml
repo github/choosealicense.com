@@ -37,6 +37,7 @@ tooltip_cat_limitations: "Limitation"
 # --- Barre latérale des pages de licence ------------------------------------
 sidebar_copy: "Copier le texte de la licence"
 sidebar_copied: "Copié !"
+sidebar_continue_reading: "Continuer la lecture"
 sidebar_suggest_heading: "Suggérer cette licence"
 sidebar_suggest_body_md: |-
   Ouvrez une pull request pour suggérer cette licence à un projet qui n’est [pas sous licence](/no-permission/). Restez courtois : vérifiez qu’une licence n’a pas déjà été suggérée, essayez d’en proposer une adaptée à la [communauté](/community/) du projet, et gardez des échanges cordiaux avec les mainteneurs.

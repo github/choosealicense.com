@@ -37,6 +37,7 @@ tooltip_cat_limitations: "Limitación"
 # --- Barra lateral de las páginas de licencia --------------------------------
 sidebar_copy: "Copiar el texto de la licencia al portapapeles"
 sidebar_copied: "¡Copiado!"
+sidebar_continue_reading: "Continuar leyendo"
 sidebar_suggest_heading: "Sugerir esta licencia"
 sidebar_suggest_body_md: |-
   Abre una pull request para sugerir esta licencia a un proyecto que [no tenga licencia](/no-permission/). Sé cortés: comprueba si ya se ha sugerido una licencia, intenta proponer una adecuada para la [comunidad](/community/) del proyecto y mantén una comunicación amable con los mantenedores.

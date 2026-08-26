@@ -37,6 +37,7 @@ tooltip_cat_limitations: "Limitação"
 # --- Barra lateral das páginas de licença ------------------------------------
 sidebar_copy: "Copiar o texto da licença para a área de transferência"
 sidebar_copied: "Copiado!"
+sidebar_continue_reading: "Continuar lendo"
 sidebar_suggest_heading: "Sugerir esta licença"
 sidebar_suggest_body_md: |-
   Abra um pull request para sugerir esta licença a um projeto que [não tem licença](/no-permission/). Seja gentil: verifique se uma licença já foi sugerida, tente sugerir uma adequada à [comunidade](/community/) do projeto e mantenha uma comunicação cordial com as pessoas que mantêm o projeto.

@@ -43,6 +43,7 @@ tooltip_cat_limitations: "limitation"
 # --- License page sidebar ----------------------------------------------------
 sidebar_copy: "Copy license text to clipboard"
 sidebar_copied: "Copied!"
+sidebar_continue_reading: "Continue reading"
 sidebar_suggest_heading: "Suggest this license"
 sidebar_suggest_body_md: |-
   Make a pull request to suggest this license for a project that is [not licensed](/no-permission/). Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s [community](/community/), and keep your communication with project maintainers friendly.

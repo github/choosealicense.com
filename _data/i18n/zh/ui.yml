@@ -36,6 +36,7 @@ tooltip_cat_limitations: "限制"
 # --- 许可证页面侧边栏 --------------------------------------------------------
 sidebar_copy: "将许可证文本复制到剪贴板"
 sidebar_copied: "已复制！"
+sidebar_continue_reading: "继续阅读"
 sidebar_suggest_heading: "推荐此许可证"
 sidebar_suggest_body_md: |-
   提交一个 pull request，为某个[尚未授权](/no-permission/)的项目推荐此许可证。请保持礼貌：先看看是否已经有人推荐过许可证，尽量推荐适合该项目[社区](/community/)的许可证，并与项目维护者保持友好沟通。

@@ -37,6 +37,7 @@ tooltip_cat_limitations: "제한"
 # --- 라이선스 페이지 사이드바 ------------------------------------------------
 sidebar_copy: "라이선스 텍스트를 클립보드에 복사"
 sidebar_copied: "복사됨!"
+sidebar_continue_reading: "계속 읽기"
 sidebar_suggest_heading: "이 라이선스 제안하기"
 sidebar_suggest_body_md: |-
   [라이선스가 없는](/no-permission/) 프로젝트에 이 라이선스를 제안하려면 풀 리퀘스트를 보내세요. 정중하게 진행해 주세요. 이미 라이선스가 제안되었는지 확인하고, 프로젝트의 [커뮤니티](/community/)에 맞는 라이선스를 제안하려고 노력하며, 프로젝트 메인테이너와 우호적으로 소통하세요.

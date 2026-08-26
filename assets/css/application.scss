@@ -55,7 +55,7 @@ body {
     color: #c7cdce !important;
   }
 
-  .license-body pre {
+  .license-box pre {
     background-color: #131313 !important;
     border: 1px solid #3e3e3e !important;
   }
@@ -358,7 +358,7 @@ strong {
   width: 700px;
 }
 
-.license-body pre {
+.license-box pre {
   font-family: Consolas, Monaco, Courier, monospace;
   font-size: 0.875rem;
   background-color: #fff;
@@ -369,6 +369,7 @@ strong {
   -o-border-radius: 3px;
   border-radius: 3px;
   padding: 20px;
+  margin: 0;
   white-space: pre-wrap;
   overflow-wrap: break-word;
 }
@@ -786,5 +787,66 @@ strong {
   direction: ltr;
   text-align: left;
 }
+
+.license-read-more-input {
+  display: none;
+}
+
+.license-text {
+  max-height: 30em;
+  overflow: hidden;
+}
+
+.license-read-more-transition {
+  --overlayHeight: 4em;
+
+  width: 100%;
+  background-image: -webkit-linear-gradient(transparent, var(--backgroundColor));
+  background-image: -moz-linear-gradient(transparent, var(--backgroundColor));
+  background-image: -o-linear-gradient(transparent, var(--backgroundColor));
+  background-image: linear-gradient(transparent, var(--backgroundColor));
+  height: var(--overlayHeight);
+  margin-top: calc(var(--overlayHeight) * -1);
+}
+
+.license-read-more-overlay {
+  width: 100%;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.continue-reading-button {
+  display: inline-block;
+  color: #149ad4;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+.license-read-more-input:checked ~ .license-text {
+  max-height: unset;
+}
+
+.license-read-more-input:checked ~ .license-read-more-overlay {
+  display: none;
+}
+
 
 {% include css/responsive.css %}

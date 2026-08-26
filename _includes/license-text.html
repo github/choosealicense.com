@@ -1,0 +1,14 @@
+<div class="license-box">
+    <input type="checkbox" id="read-more-toggle" class="license-read-more-input">
+
+    <pre class="license-text" dir="ltr">
+        {{include.content}}
+    </pre>
+    <div class="license-read-more-overlay">
+        <div class="license-read-more-transition"></div>
+        <label for="read-more-toggle" class="continue-reading-button">
+            {% include t.html key="sidebar_continue_reading" %}
+        </label>
+    </div>
+
+</div>

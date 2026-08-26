@@ -32,7 +32,8 @@
 
             </div>
 
-            <pre id="license-text" dir="ltr">{{ content | replace:"<", "&lt;" | replace:">", "&gt;" }}</pre>
+            {% capture safe_content %}{{ content | escape }}{% endcapture %}
+            {% include license-text.html content=safe_content %}
 
         </div> <!-- /license-body -->
 
