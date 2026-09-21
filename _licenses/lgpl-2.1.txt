@@ -5,7 +5,7 @@ nickname: GNU LGPLv2.1
 redirect_from: /licenses/lgpl-v2.1/
 hidden: false
 
-description: Primarily used for software libraries, the GNU LGPL requires that derived works be licensed under the same license, but works that only link to it do not fall under this restriction. There are two commonly used versions of the GNU LGPL.
+description: Primarily used for software libraries, the GNU LGPL requires that derived works be licensed under the same license, but works that only link to it do not fall under this restriction. There are multiple versions of the GNU LGPL, including the older <a href="/licenses/lgpl-2.0/">GNU LGPLv2</a> and the commonly used GNU LGPLv2.1.
 
 how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.
 
