@@ -26,6 +26,20 @@ See our [appendix](/appendix/) for a table of every license cataloged in the [ch
 
 Choosealicense.com isn’t just about open source; the site itself is open source as well. See something you think could be done better? Feel free to [fork the project](https://github.com/github/choosealicense.com) on GitHub and submit a pull request. We welcome your improvements.
 
+
+## HTTPS and HSTS preload
+
+[choosealicense.com](https://choosealicense.com/) is served over HTTPS via [GitHub Pages](https://pages.github.com/). GitHub manages TLS certificates and response headers for the default `*.github.io` and custom-domain setup; this repository **cannot** set `Strict-Transport-Security` or submit the site to the [HSTS preload list](https://hstspreload.org/) directly from Jekyll content.
+
+Maintainers who control the hosting front door (for example a CDN or reverse proxy in front of GitHub Pages) should:
+
+1. Confirm the apex and `www` hostnames redirect to HTTPS only.
+2. Serve a suitable `Strict-Transport-Security` header with a long `max-age` and `includeSubDomains` when policy allows.
+3. Follow the [hstspreload.org inclusion requirements](https://hstspreload.org/#deployment-recommendations) before requesting preload.
+
+Document any infrastructure changes in the GitHub organization’s runbooks rather than in this static site repo.
+
+
 ## Disclaimer
 
 We are not lawyers. Well, most of us anyway. It is not the goal of this site to provide legal advice. The goal of this site is to provide a starting point to help you make an informed choice by providing information on popular open source licenses in a simplified fashion. If you have any questions regarding the best license for your code or any other legal issues relating to it, it’s your responsibility to do further research or consult with a professional.
