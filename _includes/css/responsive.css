@@ -170,3 +170,32 @@
     padding: 0 10px;
   }
 }
+
+/* Large / high-resolution displays (#1342) */
+@media only screen and (min-width: 2300px) {
+  body {
+    font-size: 1.75rem;
+    line-height: 1.45;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .container {
+    max-width: 2100px;
+    margin: 0 auto;
+  }
+
+  .license-types table {
+    font-size: small !important;
+  }
+
+  .license-body pre {
+    font-size: 1rem;
+  }
+
+  .triptych h3 {
+    font-size: 1.5rem;
+  }
+}
