@@ -23,6 +23,9 @@
     <p>
       {{ loc.how | default: page.how | replace: 'href="/', bu_href }}
     </p>
+    <p>
+      If your repository uses <strong>more than one license</strong> (for example, code and documentation, or per-package licenses in a monorepo), see <a href="/multiple-licenses/">multiple licenses in one project</a> for naming files, SPDX expressions, and README guidance.
+    </p>
     <div class="note">
     <h4 id="optional-steps">{% include t.html key="sidebar_optional_heading" %}</h4>
     {% if page.note %}
