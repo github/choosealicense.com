@@ -1,15 +1,6 @@
-#!/usr/bin/env bash
-set -euo pipefail
-
-for cmd in git tr; do
-  if ! command -v "${cmd}" >/dev/null 2>&1; then
-    echo "${cmd} is required for .devcontainer/post-create.sh"
-    exit 1
-  fi
-done
-
+git submodule update --init --recursive
 if command -v apt-get >/dev/null 2>&1; then
-  packages=(
+  packages=\
     build-essential
     cmake
     pkg-config
@@ -22,45 +13,65 @@ if command -v apt-get >/dev/null 2>&1; then
     libncurses-dev
     libssh2-1-dev
   )
-
+git submodule update --init --recursive
   missing_packages=()
   for package in "${packages[@]}"; do
     if ! dpkg-query -W -f='${Status}' "${package}" 2>/dev/null | grep -q 'install ok installed'; then
       missing_packages+=("${package}")
-    fi
-  done
-
-  if [[ ${#missing_packages[@]} -gt 0 ]]; then
-    echo "Installing Ruby build dependencies: ${missing_packages[*]}"
-    if command -v sudo >/dev/null 2>&1; then
-      sudo apt-get update
-      sudo apt-get install -y "${missing_packages[@]}"
-    else
-      apt-get update
-      apt-get install -y "${missing_packages[@]}"
-    fi
-  fi
-fi
-
+    git submodule update --init --recursive
+git submodule update --init --recursive
 echo "Initializing/updating git submodules"
 git submodule update --init --recursive
-
+git submodule update --init --recursive
 ruby_version_file=".ruby-version"
 if [[ ! -f "${ruby_version_file}" ]]; then
   echo "Could not find ${ruby_version_file}"
-  exit 1
-fi
-
+  git submodule update --init --recursive
+git submodule update --init --recursive
+git submodule update --init --recursive
 repo_ruby_version="$(tr -d '[:space:]' < "${ruby_version_file}")"
 echo "Repository Ruby version: ${repo_ruby_version}"
-
+git submodule update --init --recursive
 if [[ -z "${repo_ruby_version}" ]]; then
   echo "Could not determine Ruby version from ${ruby_version_file}"
-  exit 1
-fi
+  git submodule update --init --recursive
+git submodule update --init --recursive
+git submodule update --init --recursive
+   -v sudo >/dev/null 2>&1; then
+      sudo apt-get update
+      sudo apt-get install -y "${missing_packages[@]}"
+    self git submodule update --init --recursive
+      apt-get update
+      apt-get install -y "${missing_packages[@]}"
+    git submodule update --init --recursive
+  git submodule update --init --recursive
+git submodule update --init --recursive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 if [[ ! -d "$HOME/.rbenv" ]]; then
-  git clone --depth 1 https://github.com/rbenv/rbenv.git "$HOME/.rbenv"
+git clone --depth 1 https://github.com/rbenv/rbenv.git "$HOME/.rbenv"
 fi
 
 if [[ ! -d "$HOME/.rbenv/plugins/ruby-build" ]]; then

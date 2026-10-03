@@ -1,0 +1,3 @@
+git rm .github/workflows/test.yml
+git commit -m "Remove test workflow"
+git push origin gh-pages

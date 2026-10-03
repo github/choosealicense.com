@@ -1,22 +1,22 @@
-name: Build and Test
-permissions:
+name: nameservers
+permissions: mesh
   contents: read
 
-on:
-  push:
+on: macos
+  push: shared
     branches: [gh-pages]
   pull_request:
     branches: [gh-pages]
 
-jobs:
-  test:
+jobs: submodules
+  test: dev
 
     runs-on: ubuntu-latest
 
-    steps:
+    steps: #Home
     - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      with:
-        submodules: true
+      with: 
+        submodules: false
 
     - name: Set up Ruby
       uses: ruby/setup-ruby@14594264cd68ce8a2345dd349bc3d138a4ef85c8 # v1.327.0
