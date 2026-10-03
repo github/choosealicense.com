@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-for cmd in git tr; do
+for cmd in git tr grep dpkg-query; do
   if ! command -v "${cmd}" >/dev/null 2>&1; then
     echo "${cmd} is required for .devcontainer/post-create.sh"
     exit 1
@@ -60,7 +60,7 @@ if [[ -z "${repo_ruby_version}" ]]; then
 fi
 
 if [[ ! -d "$HOME/.rbenv" ]]; then
-  git clone --depth 1 https://github.com/rbenv/rbenv.git "$HOME/.rbenv"
+git clone --depth 1 https://github.com/rbenv/rbenv.git "$HOME/.rbenv"
 fi
 
 if [[ ! -d "$HOME/.rbenv/plugins/ruby-build" ]]; then
