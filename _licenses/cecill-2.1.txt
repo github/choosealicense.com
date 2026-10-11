@@ -20,7 +20,6 @@ permissions:
 
 conditions:
   - include-copyright
-  - network-use-disclose
   - disclose-source
   - same-license
 
