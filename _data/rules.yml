@@ -22,7 +22,11 @@ conditions:
 - description: A copy of the license and copyright notice must be included with the licensed material in source form, but is not required for binaries.
   label: License and copyright notice for source
   tag: include-copyright--source
-- description: Changes made to the licensed material must be documented.
+- description: >-
+    When you distribute modified material, you must document what you changed—typically
+    in changelogs, release notes, or notices shipped with the work. This does not
+    require publishing a line-by-line diff, but recipients should be able to tell
+    the work was modified and find a summary of significant changes.
   label: State changes
   tag: document-changes
 - description: Source code must be made available when the licensed material is distributed.
