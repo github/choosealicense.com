@@ -88,6 +88,14 @@ lgpl-2.1:
   note: |-
     La Free Software Foundation recomienda dar el paso adicional de añadir un aviso modelo al principio de cada archivo. Ese aviso modelo se encuentra al final de la licencia.
 
+lgpl-3.0:
+  description: |-
+    Los permisos de esta licencia copyleft están condicionados a poner a disposición el código fuente completo de las obras licenciadas y sus modificaciones bajo esta misma licencia o la GNU GPLv3. Deben conservarse los avisos de derechos de autor y de licencia. Quienes contribuyen conceden expresamente derechos de patente. No obstante, una obra más amplia que utilice la obra licenciada a través de las interfaces que esta proporciona puede distribuirse bajo condiciones distintas y sin publicar el código fuente de esa obra más amplia.
+  how: |-
+    Esta licencia es un conjunto de permisos adicionales a la licencia <a href="/licenses/gpl-3.0">GNU GPLv3</a>. Sigue las instrucciones para aplicar la GNU GPLv3 en la raíz de tu código fuente. Después, añade otro archivo llamado COPYING.LESSER y copia en él el texto de la licencia.
+  note: |-
+    La Free Software Foundation recomienda dar el paso adicional de añadir un aviso modelo al principio de cada archivo. Ese aviso se encuentra al final de la <a href="/licenses/gpl-3.0">licencia GNU GPLv3</a>. Inserta la palabra «Lesser» antes de «General» en los tres lugares del aviso modelo para asegurarte de que haces referencia a la GNU LGPLv3 y no a la GNU GPLv3.
+
 mit:
   # Nombre corto usado en la frase «quién la usa» de la página de inicio («la MIT»).
   # Solo esa frase lee loc.nickname; el título de la licencia sigue siendo "MIT License" en el resto.
