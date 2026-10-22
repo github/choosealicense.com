@@ -19,7 +19,7 @@ permissions:
   - private-use
 
 conditions:
-  - include-copyright
+  - include-license
 
 limitations:
   - liability
