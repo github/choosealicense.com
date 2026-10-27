@@ -24,6 +24,16 @@ describe 'ruby version' do
     end
   end
 
+  describe 'deployment dependencies' do
+    deploy_config = YAML.safe_load_file('.github/workflows/deploy.yml')
+
+    it 'excludes development and test groups from the build' do
+      excluded_groups = deploy_config.dig('jobs', 'build', 'env', 'BUNDLE_WITHOUT').to_s.split(':')
+
+      expect(excluded_groups).to include('development', 'test')
+    end
+  end
+
   rubocop_config_file = '.rubocop.yml'
   rubocop_config = YAML.safe_load_file(rubocop_config_file)
   rubocop_ruby_version = rubocop_config.dig('AllCops', 'TargetRubyVersion').to_s
