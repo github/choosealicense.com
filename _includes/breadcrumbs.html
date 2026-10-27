@@ -20,21 +20,21 @@
       "position": 1,
       "item": {
         "@id": "{{ site.github.url }}/",
-        "name": {{ bc_home | strip | jsonify }}
+        "name": {{ bc_home | strip | jsonify | replace: '<', '\u003c' }}
       }
     },{% if page.layout == "license" %}{
       "@type": "ListItem",
       "position": 2,
       "item": {
         "@id": "{{ site.github.url }}/licenses",
-        "name": {{ bc_licenses | strip | jsonify }}
+        "name": {{ bc_licenses | strip | jsonify | replace: '<', '\u003c' }}
       }
     },{% endif %}{
       "@type": "ListItem",
       "position": {% if page.layout == "license" %}3{% else %}2{% endif %},
       "item": {
         "@id": "{{ site.github.url }}{{ page.url }}",
-        "name": {{ bc_page | strip | jsonify }}
+        "name": {{ bc_page | strip | jsonify | replace: '<', '\u003c' }}
       }
     }]
   }
