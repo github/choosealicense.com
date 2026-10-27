@@ -26,7 +26,9 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    env:
+      BUNDLE_WITHOUT: development:test
     steps:
       - name: Checkout
         # Pinned SHA kept in sync with .github/workflows/test.yml (actions/checkout v7.0.0).
