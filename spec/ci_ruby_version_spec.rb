@@ -26,11 +26,16 @@ describe 'ruby version' do
 
   describe 'deployment dependencies' do
     deploy_config = YAML.safe_load_file('.github/workflows/deploy.yml')
+    test_config = YAML.safe_load_file('.github/workflows/test.yml')
 
     it 'excludes development and test groups from the build' do
       excluded_groups = deploy_config.dig('jobs', 'build', 'env', 'BUNDLE_WITHOUT').to_s.split(':')
 
       expect(excluded_groups).to include('development', 'test')
+    end
+
+    it 'uses the same runner as the test workflow' do
+      expect(deploy_config.dig('jobs', 'build', 'runs-on')).to eql(test_config.dig('jobs', 'test', 'runs-on'))
     end
   end
 
