@@ -66,7 +66,7 @@
     <h3>{% include t.html key="sidebar_using_heading" %}</h3>
     <ul>
       {% for using in page.using %}
-        <li><a href="{{ using[1] }}" target="_blank">{{ using[0] }}</a></li>
+        <li><a href="{{ using[1] }}" target="_blank" rel="noopener noreferrer">{{ using[0] }}</a></li>
       {% endfor %}
     </ul>
   </div>
