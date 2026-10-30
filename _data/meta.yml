@@ -51,6 +51,11 @@
   description: Additional information about the licenses
   required: false
 
+
+- name: related
+  description: Optional list of related license slugs (lowercase SPDX-derived filenames without .txt) shown in the sidebar
+  required: false
+
 - name: redirect_from
   description: Relative path(s) to redirect to the license from, to prevent breaking old URLs
   required: false
