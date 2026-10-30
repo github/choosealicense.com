@@ -1,0 +1,8 @@
+{% assign eupl = site.data.eupl-translations[page.spdx-id] %}
+{% if eupl %}
+  <div class="eupl-translations">
+    <h3 id="eupl-translations">Official translations</h3>
+    <p>{{ eupl.note }}</p>
+    <p><a href="{{ eupl.official_translations }}">EU translations on Joinup</a></p>
+  </div>
+{% endif %}
