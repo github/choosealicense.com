@@ -1,0 +1,516 @@
+---
+layout: default
+title: License Advisor
+permalink: /advisor/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #starterScreen,
+        #wizard {
+            background-color: #303030;
+            border-radius: 20px;
+            padding-top: 0px !important;
+            padding: 20px;
+            margin: auto;
+            min-height: 320px;
+            display: none;
+            flex-direction: column;
+            height: 100%; /* Make sure it fills the parent's height or set a fixed height */
+            text-align: left;
+            justify-content: flex-start; /* Aligns children at the start of the flex container */
+            align-items: stretch; /* Stretches the children to fit the width of the container */
+        }
+
+        .content-container {
+            flex-grow: 1; /* Takes up all available space */
+            display: flex;
+            flex-direction: column;
+            overflow: auto; /* Adds scrolling to this container if content overflows */
+        }
+
+        .button-container {
+            display: flex;
+            gap: 10px; /* This adds space between the buttons */
+        }
+
+        #starterScreen.active,
+        #wizard.active {
+            display: block;
+        }
+
+        #indicators {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        #indicators .indicator {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #1b1b1b;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        #indicators .active {
+            background-color: #007bff;
+        }
+
+        #starterScreen.active,
+        #wizard.active {
+            display: flex; /* Ensure it keeps flex settings */
+        }
+
+        #buttons button, #starterScreen button, #toggleFiltersBtn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+            outline: none;
+            transition: background-color 0.3s;
+        }
+
+        #buttons button.active {
+            background-color: #3cc636 !important; /* Green */
+        }
+
+        #buttons #backBtn,
+        #buttons #nextBtn,
+        #startBtn,
+        #toggleFiltersBtn {
+            background-color: #0098d7;
+            /* Blue */
+        }
+
+        #buttons #yesBtn, #buttons #noBtn {
+            background-color: #c7403c;
+            /* Red */
+        }
+
+        .filtersDiv {
+            display: none;
+        }
+
+        .filters {
+            display: flex;
+            background: #303030;
+            padding: 10px;
+            border-radius: 20px;
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+        }
+
+        .filter-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .filter-item {
+            margin-top: 5px; /* Space between items */
+            display: flex;
+            justify-content: space-between; /* Aligns label and select to the opposite sides */
+        }
+
+        .filter-item label {
+            margin-right: 10px; /* Space between label and select */
+            white-space: nowrap; /* Keeps label text on one line */
+            color: white;
+        }
+
+        select {
+            width: 50%; /* Adjust width as necessary */
+            padding: 3px;
+            border-radius: 8px;
+            border: 1px solid #4a4a4a;
+            background-color: #202120;
+            color: rgb(185, 185, 185) !important;
+            cursor: pointer;
+        }
+
+        select:hover {
+            border-color: #666;
+        }
+
+        select:focus {
+            border-color: #0098d7; /* Highlight border on focus, similar to your button focus */
+            box-shadow: 0 0 5px rgba(0, 152, 215, 0.5); /* Soft glow for focus */
+        }
+
+        .tooltip-icon {
+            display: inline-block;
+            margin-left: 5px;
+            color: #999;
+            cursor: help;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>This wizard is designed to help beginner developers identify the most suitable open source license for their project.</p>
+    <div id="starterScreen" class="active">
+        <h2>License selecting Wizard</h2>
+        <p><b>If you are working in a community or on a project, please don't choose any license.</b> Just use that project's license.<br>To find out what is a community and where to find their license, <a href='/choosealicense.com/community'>Read more about community</a> <br><br> Follow the wizard to narrow down your options based on your requirements or wishes. You can skip questions if you are not sure. To see a table of all licenses, visit <a href='/choosealicense.com/appendix'>appendix</a> page. Read more <a href='/choosealicense.com/about'>about the purpose</a> of this site.<br><br>All open source licenses grant to the public <span class='license-permissions'><span class='license-sprite'></span></span> <b>permissions</b> to do things with licensed works which copyright or other IP laws might disallow.<br>Most open source licenses' grants of permissions are subject to compliance with <span class='license-conditions'><span class='license-sprite'></span></span> <b>conditions</b>.<br>Most open source licenses have <span class='license-limitations'><span class='license-sprite'></span></span> <b>limitations</b> that disclaim warranty and liability, or exclude patents or trademarks from licenses' grants. <br><br></p>        <div class="button-container">
+            <button class="toggleFiltersBtn"><b>Toggle Filters</b></button>
+            <button id="startBtn"><b>Start</b></button>
+        </div>
+
+    </div>
+    <div id="wizard">
+        <div class="content-container">
+            <div id="indicators"></div>
+            <div id="questionBox">
+                <h2 id="questionTitle"></h2>
+            </div>
+            <div>
+                <p id="questionDetail"></p>
+            </div>
+        </div>
+        <div id="buttons">
+            <button class="toggleFiltersBtn"><b>Toggle Filters</b></button>
+            <button id="backBtn"><b>↤ Back</b></button>
+            <button id="yesBtn"><b>Yes</b></button>
+            <button id="noBtn"><b>No</b></button>
+            <button id="nextBtn"><b>Next ↦</b></button>
+        </div>
+    </div>
+    <br>
+    <div id="filtersDiv" class="filtersDiv">
+        <h1>Filters</h1>
+        <p>If you understand what all these clauses mean, then use these filters and skip the wizard.</p>
+        <div class="filters" id="quiz">
+            <div class="filter-column">
+                <h3>Conditions</h3>
+                <div class="filter-item">
+                    <label for="same-license-filter"><span class='license-conditions'><span class='license-sprite'></span></span>  Same license<span class="tooltip-icon" title="Modifications must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used."> ⓘ</span></label>
+                    <select id="same-license-filter" onchange="updateFilters()">
+                        <option value="all">Any</option>
+                        <option value="include">Include same license</option>
+                        <option value="exclude">Exclude same license</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="network-use-disclose-filter"><span class='license-conditions'><span class='license-sprite'></span></span>  Network use<span class="tooltip-icon" title="Users who interact with the licensed material via network are given the right to receive a copy of the source code."> ⓘ</span></label>
+                    <select id="network-use-disclose-filter" onchange="updateFilters()">
+                        <option value="all">Any</option>
+                        <option value="include">Include network use</option>
+                        <option value="exclude">Exclude network use</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="document-changes-filter"><span class='license-conditions'><span class='license-sprite'></span></span>  State Changes<span class="tooltip-icon" title="Changes made to the licensed material must be documented."> ⓘ</span></label>
+                    <select id="document-changes-filter" onchange="updateFilters()">
+                        <option value="all">Any</option>
+                        <option value="include">Include state changes</option>
+                        <option value="exclude">Exclude state changes</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="include-copyright-filter"><span class='license-conditions'><span class='license-sprite'></span></span>  Copyright notice<span class="tooltip-icon" title=" A copy of the license and copyright notice must be included with the licensed material."> ⓘ</span></label>
+                    <select id="include-copyright-filter" onchange="updateFilters()">
+                        <option value="all">Any</option>
+                        <option value="include">Include copyright notice</option>
+                        <option value="exclude">Exclude copyright notice</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-column">
+                <h3>Permissions and Limitations</h3>
+                <div class="filter-item">
+                    <label for="patent-use-filter"><span class='license-permissions'><span class='license-sprite'></span></span>  Patent Use<span class="tooltip-icon" title=" This license provides an express grant of patent rights from contributors. Or this license explicitly states that it does NOT grant any rights in the patents of contributors."> ⓘ</span></label>
+                    <select id="patent-use-filter" onchange="updateFilters()">
+                        <option value="all">Any</option>
+                        <option value="include">Include patent use</option>
+                        <option value="exclude">Exclude patent use</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="liability-filter"><span class='license-limitations'><span class='license-sprite'></span></span> Liability<span class="tooltip-icon" title="This license includes a limitation of liability."> ⓘ</span></label>
+                    <select id="liability-filter" onchange="updateFilters()">
+                        <option value="all">Any</option>
+                        <option value="include">Include liability</option>
+                        <option value="exclude">Exclude liability</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="warranty-filter"><span class='license-limitations'><span class='license-sprite'></span></span>  Warranty<span class="tooltip-icon" title="This license explicitly states that it does NOT provide any warranty."> ⓘ</span></label>
+                    <select id="warranty-filter" onchange="updateFilters()">
+                        <option value="all">Any</option>
+                        <option value="include">Include warranty</option>
+                        <option value="exclude">Exclude warranty</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="trademark-use-filter"><span class='license-limitations'><span class='license-sprite'></span></span>  Trademark<span class="tooltip-icon" title="This license explicitly states that it does NOT grant trademark rights, even though licenses without such a statement probably do not grant any implicit trademark rights."> ⓘ</span></label>
+                    <select id="trademark-use-filter" onchange="updateFilters()">
+                        <option value="all">Any</option>
+                        <option value="include">Include trademark use</option>
+                        <option value="exclude">Exclude trademark use</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <h2>Below is a list of licenses that match your filters:</h2>
+
+    <div class="license">{% include license-overview.html license-id="0bsd" %}</div>
+    <div class="license">{% include license-overview.html license-id="afl-3.0" %}</div>
+    <div class="license">{% include license-overview.html license-id="apache-2.0" %}</div>
+    <div class="license">{% include license-overview.html license-id="artistic-2.0" %}</div>
+    <div class="license">{% include license-overview.html license-id="blueoak-1.0.0" %}</div>
+    <div class="license">{% include license-overview.html license-id="bsd-2-clause" %}</div>
+    <div class="license">{% include license-overview.html license-id="bsd-2-clause-patent" %}</div>
+    <div class="license">{% include license-overview.html license-id="bsd-3-clause" %}</div>
+    <div class="license">{% include license-overview.html license-id="bsd-3-clause-clear" %}</div>
+    <div class="license">{% include license-overview.html license-id="bsd-4-clause" %}</div>
+    <div class="license">{% include license-overview.html license-id="bsl-1.0" %}</div>
+    <div class="license">{% include license-overview.html license-id="cecill-2.1" %}</div>
+    <div class="license">{% include license-overview.html license-id="ecl-2.0" %}</div>
+    <div class="license">{% include license-overview.html license-id="epl-1.0" %}</div>
+    <div class="license">{% include license-overview.html license-id="epl-2.0" %}</div>
+    <div class="license">{% include license-overview.html license-id="eupl-1.2" %}</div>
+    <div class="license">{% include license-overview.html license-id="agpl-3.0" %}</div>
+    <div class="license">{% include license-overview.html license-id="gpl-2.0" %}</div>
+    <div class="license">{% include license-overview.html license-id="gpl-3.0" %}</div>
+    <div class="license">{% include license-overview.html license-id="lgpl-2.1" %}</div>
+    <div class="license">{% include license-overview.html license-id="lgpl-3.0" %}</div>
+    <div class="license">{% include license-overview.html license-id="isc" %}</div>
+    <div class="license">{% include license-overview.html license-id="lppl-1.3c" %}</div>
+    <div class="license">{% include license-overview.html license-id="mit" %}</div>
+    <div class="license">{% include license-overview.html license-id="mit-0" %}</div>
+    <div class="license">{% include license-overview.html license-id="mpl-2.0" %}</div>
+    <div class="license">{% include license-overview.html license-id="ms-pl" %}</div>
+    <div class="license">{% include license-overview.html license-id="ms-rl" %}</div>
+    <div class="license">{% include license-overview.html license-id="mulanpsl-2.0" %}</div>
+    <div class="license">{% include license-overview.html license-id="ncsa" %}</div>
+    <div class="license">{% include license-overview.html license-id="unlicense" %}</div>
+    <div class="license">{% include license-overview.html license-id="zlib" %}</div>
+    <div class="license">{% include license-overview.html license-id="postgresql" %}</div>
+    <div class="license">{% include license-overview.html license-id="osl-3.0" %}</div>
+    <div class="license">{% include license-overview.html license-id="wtfpl" %}</div>
+    <div class="license">{% include license-overview.html license-id="odbl-1.0" %}</div>
+    <div class="license">{% include license-overview.html license-id="upl-1.0" %}</div>
+    <div class="license">{% include license-overview.html license-id="vim" %}</div>
+
+    <p><b>If there are no licenses below, please edit your answers or filters, for example, remove some of the conditions</b></p>
+
+<footer>
+    <p>Check out the <a href=https://github.com/TGRRRR/choosealicense.com>source code of this site</a></p>
+</footer>
+
+    <script>
+        let currentScreen = "start";
+        const questions = [
+            {
+                title: " 1/8 Do you prefer copyleft licenses over permissive licenses?",
+                detail: "It will affect how restrictive the licensing is regarding how others can redistribute your code. Copyleft license only allows users to use your code with copyleft license as well, which means all modifications will also remain free and open source and no commercial or closed source fork is allowed. Permissive license has no restrictions, so anyone can take your code and use it in their project, commercial or open source. <br><br>  If you are using code that is under a copyleft license, your project also has to be licensed under the same or similar license to comply with licenses conditions. <b>If use use copyleft code or libraries, you are required to press YES</b>",
+                filter: "same-license-filter"
+            },
+            {
+                title: "2/8 Do you want to specify state of patent license for users?",
+                detail: "Clarifying the patent rights clause can clearly allow or prohibit users to use a patented tech from your project in their projects. Allowing it can protect your users from potential lawsuits from you or contributors of your project.",
+                filter: "patent-use-filter"
+            },
+            {
+                title: "3/8 If you develop a web copyleft project, do you want to make giving online users access to source code mandatory?",
+                detail: "This clause prohibits users of your code from modifying it and then using it online as a closed source web project, as even remote users should have access to the source code, preserving the open nature of the software.",
+                filter: "network-use-disclose-filter"
+            },
+            {
+                title: "4/8 Do you want to force users to document the changes they made in your code?",
+                detail: "If you want any change (by users who modify and redistribute your work) in your work to be documented (so that is clear where is your original code is and where the user changes are) you can choose a license with this requirement.",
+                filter: "document-changes-filter"
+            },
+
+            {
+                title: "5/8 Do you require the inclusion of a copyright notice and license with the distributed code?",
+                detail: "A copy of the license and copyright notice must be included with the licensed material. This requirement ensures that all recipients of the software or code are informed of their rights under the license terms and the origin of the content.",
+                filter: "include-copyright-filter"
+            },
+            {
+                title: "6/8 Do you want to protect yourself by clearly having a limitation of liability?",
+                detail: "Basically, you will not be liable for any potential issues caused by your code. Including a limitation of liability clause can protect you from lawsuits for damages caused by the use of your software. This clause is important when users rely on your software for critical functions, as it specifies that you are not liable for any resulting issues.",
+                filter: "liability-filter"
+            },
+            {
+                title: "7/8 Do you want to protect yourself by clearly not providing any warranty?",
+                detail: "Basically, you will not promise users of your code anything about its performance, quality, or suitability. Stating that you do not provide any warranty with your software is crucial to manage user expectations and legal risks. This clause informs users that they are using the software at their own risk and that you do not guarantee its performance, quality, or suitability.",
+                filter: "warranty-filter"
+            },
+            {
+                title: "8/8 Do you want to protect your IP by clearly prohibiting use of Trademark?",
+                detail: "Basically, people who modify and distribute your application are not allowed to use your app name, logo, slogan, etc. Prohibiting the use of your trademark by others is important to protect your brand identity and intellectual property. This clause helps prevent confusion and misuse of your trademark, ensuring that only authorized use associated with your direct products is allowed.",
+                filter: "trademark-use-filter"
+            }
+        ];
+        let currentQuestion = 0;
+        let answers = new Array(questions.length).fill(null);
+
+        function showScreen(screenId) {
+            document.querySelectorAll('.active').forEach(el => el.classList.remove('active'));
+            document.getElementById(screenId).classList.add('active');
+            currentScreen = screenId === 'starterScreen' ? 'start' : 'quiz';
+        }
+
+        function updateWizard() {
+            document.getElementById("questionTitle").innerHTML = questions[currentQuestion].title;
+            document.getElementById("questionDetail").innerHTML = questions[currentQuestion].detail;
+            document.querySelectorAll('#indicators .indicator').forEach((ind, index) => {
+                ind.classList.toggle('active', index === currentQuestion);
+            });
+
+            // Update button visibility
+            const nextBtn = document.getElementById("nextBtn");
+            if (currentQuestion === questions.length - 1) {
+                nextBtn.style.display = 'none'; // Hide the Next button on the last question
+            } else {
+                nextBtn.style.display = 'inline-block'; // Show the Next button if not the last question
+            }
+
+            updateButtonStyles();
+            linkAnswersToFilters();
+        }
+
+        function createIndicators() {
+            const container = document.getElementById("indicators");
+            container.innerHTML = ''; // Clear previous indicators
+            questions.forEach((_, index) => {
+                const indicator = document.createElement("div");
+                indicator.className = "indicator";
+                indicator.onclick = () => { currentQuestion = index; updateWizard(); };
+                container.appendChild(indicator);
+            });
+        }
+
+        function updateButtonStyles() {
+            console.log("Updating button styles for question:", currentQuestion, "Answer:", answers[currentQuestion]);
+            const yesBtn = document.getElementById("yesBtn");
+            const noBtn = document.getElementById("noBtn");
+            yesBtn.classList.remove("active");
+            noBtn.classList.remove("active");
+            if (answers[currentQuestion] === 'Yes') {
+                yesBtn.classList.add("active");
+            } else if (answers[currentQuestion] === 'No') {
+                noBtn.classList.add("active");
+            }
+}
+
+        function linkAnswersToFilters() {
+            let filterElement = document.getElementById(questions[currentQuestion].filter);
+            if (filterElement) {
+                if (answers[currentQuestion] === 'Yes') {
+                    filterElement.value = 'include';
+                } else if (answers[currentQuestion] === 'No') {
+                    filterElement.value = 'exclude';
+                } else {
+                    filterElement.value = 'all';  // Set to 'Any' if answer is reset
+                }
+                updateFilters();  // Apply changes to the visible licenses
+            }
+        }
+
+        document.querySelectorAll('select').forEach(select => {
+            select.addEventListener('change', (event) => {
+                // Synchronize answers with select changes manually.
+                const question = questions.find(q => q.filter === event.target.id);
+                if (question) {
+                    const questionIndex = questions.indexOf(question);
+                    answers[questionIndex] = event.target.value === 'include' ? 'Yes' : 'No';
+                    updateButtonStyles(); // Update button styles based on the new answers.
+                }
+            });
+        });
+
+        document.getElementById("yesBtn").onclick = () => {
+            if (answers[currentQuestion] === 'Yes') {
+                answers[currentQuestion] = null;  // Reset the answer if it's already 'Yes'
+            } else {
+                answers[currentQuestion] = 'Yes';
+            }
+            linkAnswersToFilters();  // Update filter linkage based on new answer
+            updateButtonStyles();  // Update visual styles after changing the answer
+        };
+
+        document.getElementById("noBtn").onclick = () => {
+            if (answers[currentQuestion] === 'No') {
+                answers[currentQuestion] = null;  // Reset the answer if it's already 'No'
+            } else {
+                answers[currentQuestion] = 'No';
+            }
+            linkAnswersToFilters();  // Update filter linkage based on new answer
+            updateButtonStyles();  // Update visual styles after changing the answer
+        };
+        document.getElementById("startBtn").onclick = () => {
+            showScreen('wizard');
+            createIndicators();
+            updateWizard();
+        };
+
+        document.getElementById("backBtn").onclick = () => {
+            if (currentQuestion > 0) {
+                currentQuestion--;
+                updateWizard();
+            } else if (currentQuestion === 0 && currentScreen === "quiz") {
+                showScreen('starterScreen');
+            }
+        };
+
+        document.getElementById("nextBtn").onclick = () => {
+            if (currentQuestion < questions.length - 1) {
+                currentQuestion++;
+                updateWizard();
+            }
+        };
+
+        document.querySelectorAll('.toggleFiltersBtn').forEach(button => {
+            button.onclick = function() {
+                var filtersDiv = document.getElementById("filtersDiv");
+                if (filtersDiv.style.display === "none" || filtersDiv.style.display === "") {
+                    filtersDiv.style.display = "block";
+                } else {
+                    filtersDiv.style.display = "none";
+                }
+            };
+        });
+
+
+        function updateFilters(filterId, value) {
+            const filterElement = document.getElementById(filterId);
+            if (filterElement) {
+                filterElement.value = value;
+                updateFilters();
+            }
+            const licenses = document.querySelectorAll('.license');
+            licenses.forEach(license => {
+                let isDisplayed = true;
+
+                // Handle general filters
+                document.querySelectorAll('select').forEach(select => {
+                    const value = select.value; // "include", "exclude", or "all"
+                    const filterName = select.id.replace('-filter', ''); // e.g., "trademark", "liability"
+                    const conditions = Array.from(license.querySelectorAll('.' + filterName)).map(li => li.textContent.trim().toLowerCase());
+                    if (value === 'include' && !conditions.length) {
+                        isDisplayed = false;
+                    } else if (value === 'exclude' && conditions.length) {
+                        isDisplayed = false;
+                    }
+                });
+                license.style.display = isDisplayed ? 'block' : 'none';
+            });
+        }
+        document.addEventListener('DOMContentLoaded', updateFilters);
+        showScreen('starterScreen'); // Initially show the starter screen
+        
+    </script>
+</body>
+</html>
