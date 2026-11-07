@@ -15,7 +15,7 @@ title: "المشاريع والمجتمعات القائمة"
 * [Apache](https://www.apache.org/licenses/) تتطلب [Apache License 2.0](/licenses/apache-2.0/)
 * [Cloud Native Computing Foundation](https://github.com/cncf/foundation/blob/main/charter.md#11-ip-policy) تتطلب [Apache License 2.0](/licenses/apache-2.0/)
 * [GNU](https://www.gnu.org/licenses/license-recommendations.html) توصي بـ[GNU GPLv3](/licenses/gpl-3.0/) لمعظم البرامج
-* [حزم npm](https://libraries.io/search?platforms=npm) تستخدم على نحو ساحق ترخيص [MIT](/licenses/mit/) أو ترخيص [ISC](/licenses/isc) المماثل جدًا
+* [حزم npm](https://redmonk.com/sogrady/2026/03/25/open-source-licensing-2026/#:~:text=License%20Distribution%20by%20Package%20Ecosystem) تستخدم على نحو ساحق ترخيص [MIT](/licenses/mit/) أو ترخيص [ISC](/licenses/isc) المماثل جدًا
 * [OpenBSD](https://www.openbsd.org/policy.html) يفضّل [ترخيص ISC](/licenses/isc/)
 * صناديق [Rust](https://rust-lang.github.io/api-guidelines/necessities.html#crate-and-its-dependencies-have-a-permissive-license-c-permissive) مرخّصة على نحو ساحق بـ[MIT](/licenses/mit/) [`OR`](https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/#d42-disjunctive-or-operator) [Apache License 2.0](/licenses/apache-2.0/)
 * إضافات وقوالب [WordPress](https://wordpress.org/about/license/) يجب أن تكون بترخيص [GNU GPLv2](/licenses/gpl-2.0/) (أو أحدث)

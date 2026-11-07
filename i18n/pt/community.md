@@ -15,7 +15,7 @@ Algumas comunidades têm fortes preferências por licenças específicas. Se voc
 * [Apache](https://www.apache.org/licenses/) exige a [Apache License 2.0](/licenses/apache-2.0/)
 * A [Cloud Native Computing Foundation](https://github.com/cncf/foundation/blob/main/charter.md#11-ip-policy) exige a [Apache License 2.0](/licenses/apache-2.0/)
 * A [GNU](https://www.gnu.org/licenses/license-recommendations.html) recomenda a [GNU GPLv3](/licenses/gpl-3.0/) para a maioria dos programas
-* Os [pacotes npm](https://libraries.io/search?platforms=npm) usam de forma esmagadora as licenças [MIT](/licenses/mit/) ou a muito semelhante [ISC](/licenses/isc)
+* Os [pacotes npm](https://redmonk.com/sogrady/2026/03/25/open-source-licensing-2026/#:~:text=License%20Distribution%20by%20Package%20Ecosystem) usam de forma esmagadora as licenças [MIT](/licenses/mit/) ou a muito semelhante [ISC](/licenses/isc)
 * O [OpenBSD](https://www.openbsd.org/policy.html) prefere a [Licença ISC](/licenses/isc/)
 * As crates [Rust](https://rust-lang.github.io/api-guidelines/necessities.html#crate-and-its-dependencies-have-a-permissive-license-c-permissive) são licenciadas de forma esmagadora sob [MIT](/licenses/mit/) [`OR`](https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/#d42-disjunctive-or-operator) [Apache License 2.0](/licenses/apache-2.0/)
 * Os plugins e temas do [WordPress](https://wordpress.org/about/license/) devem ser [GNU GPLv2](/licenses/gpl-2.0/) (ou posterior)
