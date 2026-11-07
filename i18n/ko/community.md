@@ -15,7 +15,7 @@ title: "기존 프로젝트 및 커뮤니티"
 * [Apache](https://www.apache.org/licenses/)는 [Apache License 2.0](/licenses/apache-2.0/)을 요구합니다
 * [Cloud Native Computing Foundation](https://github.com/cncf/foundation/blob/main/charter.md#11-ip-policy)은 [Apache License 2.0](/licenses/apache-2.0/)을 요구합니다
 * [GNU](https://www.gnu.org/licenses/license-recommendations.html)는 대부분의 프로그램에 [GNU GPLv3](/licenses/gpl-3.0/)을 권장합니다
-* [npm 패키지](https://libraries.io/search?platforms=npm)는 압도적으로 [MIT](/licenses/mit/) 또는 매우 유사한 [ISC](/licenses/isc) 라이선스를 사용합니다
+* [npm 패키지](https://redmonk.com/sogrady/2026/03/25/open-source-licensing-2026/#:~:text=License%20Distribution%20by%20Package%20Ecosystem)는 압도적으로 [MIT](/licenses/mit/) 또는 매우 유사한 [ISC](/licenses/isc) 라이선스를 사용합니다
 * [OpenBSD](https://www.openbsd.org/policy.html)는 [ISC License](/licenses/isc/)를 선호합니다
 * [Rust](https://rust-lang.github.io/api-guidelines/necessities.html#crate-and-its-dependencies-have-a-permissive-license-c-permissive) 크레이트는 압도적으로 [MIT](/licenses/mit/) [`OR`](https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/#d42-disjunctive-or-operator) [Apache License 2.0](/licenses/apache-2.0/)으로 라이선스됩니다
 * [WordPress](https://wordpress.org/about/license/) 플러그인과 테마는 [GNU GPLv2](/licenses/gpl-2.0/)(또는 이후 버전)여야 합니다
