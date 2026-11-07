@@ -31,13 +31,13 @@ jobs:
       BUNDLE_WITHOUT: development:test
     steps:
       - name: Checkout
-        # Pinned SHA kept in sync with .github/workflows/test.yml (actions/checkout v7.0.0).
+        # Pinned SHA kept in sync with .github/workflows/test.yml
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           submodules: true
 
       - name: Set up Ruby
-        # Pinned SHA kept in sync with .github/workflows/test.yml (ruby/setup-ruby v1.316.0).
+        # Pinned SHA kept in sync with .github/workflows/test.yml
         uses: ruby/setup-ruby@de492cf36cbab201753d720ce4f4e336cd688c94 # v1.336.0
         with:
           ruby-version: 4.0.5
