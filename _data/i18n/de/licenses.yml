@@ -94,7 +94,7 @@ cc-by-4.0:
 
 cc-by-sa-4.0:
   description: |-
-    Ähnlich wie <a href='/licenses/cc-by-4.0/'>CC-BY-4.0</a>, aber abgeleitete Werke müssen unter derselben oder einer ähnlichen, <a href="https://creativecommons.org/compatiblelicenses">kompatiblen</a> Lizenz weitergegeben werden. Wird oft für Medien und Lehrmaterial verwendet. Eine frühere Version ist die Standardlizenz der Wikipedia und anderer Wikimedia-Projekte. Für Software nicht zu empfehlen.
+    Ähnlich wie <a href="/licenses/cc-by-4.0/">CC-BY-4.0</a>, aber abgeleitete Werke müssen unter derselben oder einer ähnlichen, <a href="https://creativecommons.org/compatiblelicenses">kompatiblen</a> Lizenz weitergegeben werden. Wird oft für Medien und Lehrmaterial verwendet. Eine frühere Version ist die Standardlizenz der Wikipedia und anderer Wikimedia-Projekte. Für Software nicht zu empfehlen.
   how: |-
     Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Es reicht auch, nur auf eine Kopie der Lizenz zu verlinken, in der Regel auf die <a href='https://creativecommons.org/licenses/by-sa/4.0/'>offizielle URL der Lizenz</a>.
 
