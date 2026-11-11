@@ -1,0 +1,135 @@
+# インターフェース文字列とページ本文の日本語訳。
+# ここにないキーは自動的に英語（_data/i18n/en/ui.yml）にフォールバックします。
+# _html で終わるキーは生の HTML を保持し、それ以外の複数行の値は Markdown です。
+# ライセンスの概要は licenses.yml に、ルールのラベルは rules.yml にあります。
+# ライセンスの法的な本文は決して翻訳しません。
+
+# --- 言語メタデータ ----------------------------------------------------------
+language_name: "日本語"
+language_selector_label: "言語"
+
+# --- ナビゲーションとフッター ------------------------------------------------
+nav_about: "このサイトについて"
+nav_terms: "利用規約"
+nav_improve: "このページの改善に協力する"
+footer_license_notice_html: |-
+  このサイトのコンテンツは <a href="https://creativecommons.org/licenses/by/3.0/">クリエイティブ・コモンズ 表示 3.0 非移植 ライセンス</a>の下で提供されています。
+footer_curated_html: |-
+  <a href="https://github.com">GitHub, Inc.</a> と<a href="https://github.com/github/choosealicense.com">あなた</a>が ❤️ を込めて作成しています。
+
+# --- パンくずリスト ----------------------------------------------------------
+breadcrumb_home: "ホーム"
+breadcrumb_licenses: "ライセンス"
+
+# --- ルールグループの見出し（付録の凡例の見出しにも使用） --------------------
+rules_permissions: "許可"
+rules_conditions: "条件"
+rules_limitations: "制限"
+
+# --- ルールのツールチップ（assets/js/app.js で組み立て） ---------------------
+# 並べ替え可能な書式: %label%、%category%、%description% がルールごとに埋め込まれます。
+# 日本語では種別を先に置きます: 「許可「商用利用」：説明」。
+tooltip_format: "%category%「%label%」：%description%"
+tooltip_cat_permissions: "許可"
+tooltip_cat_conditions: "条件"
+tooltip_cat_limitations: "制限"
+
+# --- ライセンスページのサイドバー --------------------------------------------
+sidebar_copy: "ライセンス本文をクリップボードにコピー"
+sidebar_copied: "コピーしました！"
+sidebar_suggest_heading: "このライセンスを提案する"
+sidebar_suggest_body_md: |-
+  [ライセンスが設定されていない](/no-permission/)プロジェクトにこのライセンスを提案するには、プルリクエストを送ってください。礼儀を守りましょう。すでにライセンスが提案されていないか確認し、プロジェクトの[コミュニティ](/community/)に合ったライセンスを提案するよう心がけ、プロジェクトのメンテナーとは友好的にやり取りしてください。
+sidebar_repo_placeholder: "GitHub リポジトリの URL を入力"
+sidebar_how_heading: "このライセンスの適用方法"
+sidebar_optional_heading: "任意の手順"
+sidebar_source: "出典"
+sidebar_using_heading: "このライセンスを使っているのは？"
+# パッケージマネージャーに関する注記。%id%（SPDX 識別子、<code>）、%languages%（言語へのリンク）、
+# %clauses%（任意の括弧書き）は翻訳せずにそのまま埋め込まれます。
+# 周囲の文章だけを翻訳します。
+sidebar_pkg_html: |-
+  該当する場合は、プロジェクトのパッケージ記述に %id%%clauses% を追加してください（例: %languages%）。これにより、パッケージディレクトリにライセンスが表示されるようになります。
+sidebar_pkg_only_html: "（将来のバージョンを認めない場合は %id%）"
+sidebar_pkg_ofl_html: "（著作権表示の後に予約フォント名を指定する場合は %id%）"
+sidebar_gplcc_html: |-
+  プロジェクトで GPL-3.0 の是正条項を採用したい場合は、<a href="https://gplcc.github.io/gplcc/">GPL Cooperation Commitment</a> の<a href="https://github.com/gplcc/gplcc/blob/master/Project/COMMITMENT">本文</a>を、%id% のライセンスファイルと同じディレクトリにある <code>COMMITMENT</code> という名前のファイルに追加してください。
+
+# --- ライセンス概要カード（/licenses/） --------------------------------------
+overview_view_full: "%title% の全文を見る »"
+
+# --- 「誰が使っているか」の文（ホームページ） --------------------------------
+# プロジェクト一覧の区切り文字。日本語では読点「、」で区切ります。
+using_separator: "、"
+using_last_separator: "、"
+using_sentence_plural: "%projects% は %license% を使用しています。"
+using_sentence_singular: "%projects% は %license% を使用しています。"
+
+# --- ページタイトル ----------------------------------------------------------
+page_title_home: "オープンソースライセンスを選ぼう"
+page_title_licenses: "ライセンス"
+page_title_appendix: "付録"
+page_title_404: "404 ページが見つかりません"
+
+# --- ホームページ ------------------------------------------------------------
+home_intro: |-
+  オープンソースライセンスはコントリビューターと利用者を守ります。企業や経験豊富な開発者は、この保護のないプロジェクトには手を出しません。
+home_situations_question: "あなたの状況に最も近いのはどれですか？"
+home_community_title: "コミュニティの中で活動する必要がある。"
+home_community_content: |-
+  あなたが貢献している、あるいは依存している[コミュニティで好まれているライセンス](community/)を使いましょう。あなたのプロジェクトはすんなりと溶け込むはずです。
+
+  ライセンスのない依存関係がある場合は、そのメンテナーに[ライセンスを追加する](no-permission/#for-users)よう依頼しましょう。
+home_permissive_title: "シンプルで制約の少ないものがいい。"
+home_permissive_content: |-
+  [MIT License](licenses/mit/) は短く要点を押さえたライセンスです。クローズドソース版を作って配布することも含め、あなたのプロジェクトをほぼ自由に利用できるようにします。
+home_copyleft_title: "改良が共有されることを重視する。"
+home_copyleft_content: |-
+  [GNU GPLv3](licenses/gpl-3.0/) もあなたのプロジェクトをほぼ自由に利用できるようにしますが、クローズドソース版を配布することだけは*例外*です。
+home_more_question: "どれも当てはまらない場合は？"
+home_nonsoftware_title: "プロジェクトがソフトウェアではない。"
+home_nonsoftware_content: |-
+  [そのためのライセンスがあります](non-software/)。
+home_morechoices_title: "もっと多くの選択肢がほしい。"
+home_morechoices_content: |-
+  [ほかにもライセンスがあります](licenses/)。
+home_nolicense_title: "ライセンスを選びたくない。"
+home_nolicense_content: |-
+  [選ばなかった場合にどうなるかはこちら](no-permission/)。
+
+# --- ライセンスページ（/licenses/） ------------------------------------------
+licenses_intro_html: |-
+  オープンソースライセンスは、ソフトウェアの出自と開放性を守るための条件のもとで、ライセンスされたソフトウェアを誰でも、どのような目的でも、使用・改変・共有できるよう許可するものです。以下のライセンスは、条件の多いもの（GNU AGPLv3）から条件のないもの（Unlicense）まで、条件の数の順に並んでいます。<a href="/">ホームページ</a>で紹介している人気のライセンス（GNU GPLv3 と MIT）も、この範囲の中に収まっていることに注目してください。
+licenses_appendix_note_html: |-
+  choosealicense.com にあるすべてのライセンスの一覧表をお探しの場合は、<a href="/appendix">付録</a>をご覧ください。
+licenses_outro_html: |-
+  上記のライセンスは、強い保護を与えるものから無条件のものまで、オープンソースライセンスの全範囲を代表しています。新しいオープンソースプロジェクトのほとんどには、このうちのどれかが適しているはずです。上記のライセンスの旧バージョンやよく似た代替ライセンスなど、ほかにも多くのオープンソースライセンスが存在します。さらに詳しく知りたい場合は、<a href="/about/">このサイトについて</a>のページに掲載している資料をご覧ください。
+
+  すでに知識があり、使いたいライセンスが決まっているなら、それで構いません！考えを変えてもらうためにこのサイトがあるわけではありません。でも、選択肢の多さに戸惑っているなら、きっとお役に立てるはずです。
+
+# --- 付録（/appendix/） ------------------------------------------------------
+appendix_intro: |-
+  参考として、[choosealicense.com リポジトリ](https://github.com/github/choosealicense.com)で説明されているすべてのライセンスの一覧表を掲載します。
+
+  ライセンスを選ぶためにここへ来たのなら、**[ホームページから始めましょう](/)**。ほとんどの場合に適した、いくつかのライセンスを紹介しています。
+appendix_col_license: "ライセンス"
+appendix_legend_heading: "凡例"
+appendix_legend_permissions_html: |-
+  オープンソースライセンスは、著作権法やその他の「知的財産」に関する法律によって本来は禁じられている可能性のある行為を、ライセンスされた著作物に対して行うための <span class="license-permissions"><span class="license-marker">✓</span></span> <b>許可</b>を公衆に与えます。
+appendix_legend_conditions_html: |-
+  ほとんどのオープンソースライセンスによる許可は、<span class="license-conditions"><span class="license-marker">ⓘ</span></span> <b>条件</b>を守ることを前提としています。
+appendix_legend_limitations_html: |-
+  ほとんどのオープンソースライセンスには、<span class="license-limitations"><span class="license-marker">✕</span></span> <b>制限</b>もあります。通常は保証と責任を否認するもので、特許や商標をライセンスの許諾対象から明示的に除外することもあります。
+
+# --- 404 ページ --------------------------------------------------------------
+notfound_p1: |-
+  申し訳ありません！お探しのページが見つかりませんでした。
+notfound_p2: |-
+  ライセンスをご覧になりたい場合は、[ライセンス](/licenses)のページへどうぞ。
+
+# --- JavaScript の言語提案バナー（assets/js/i18n.js） ------------------------
+# banner_switch の %language% は提案された言語の名前です。banner_suggest は名前を
+# 直接含むので、各言語が文法や表記を自由に決められます。
+banner_suggest: "このページは**日本語**でもご覧いただけます。"
+banner_switch: "**日本語**に切り替える"
+banner_dismiss: "閉じる"
