@@ -10,7 +10,9 @@ url: "https://choosealicense.com"
 # language is generated under its own prefix (e.g. /fr/licenses/mit/) from the
 # same single source files — no per-language duplication of pages or license texts.
 # Adding a language = add its code below and a _data/i18n/<code>/ directory.
-languages: ["en", "fr", "es", "pt", "zh", "ko", "ar"]
+# Default language first, then the rest alphabetically by code. This order is also
+# the order of the language selector.
+languages: ["en", "ar", "de", "es", "fr", "ko", "pt", "zh"]
 default_lang: "en"
 # Paths served once at the site root and never prefixed per language (assets, etc.),
 # so links to them keep working on translated pages.
