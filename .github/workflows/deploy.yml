@@ -38,7 +38,7 @@ jobs:
 
       - name: Set up Ruby
         # Pinned SHA kept in sync with .github/workflows/test.yml
-        uses: ruby/setup-ruby@de492cf36cbab201753d720ce4f4e336cd688c94 # v1.336.0
+        uses: ruby/setup-ruby@a5612086821ed5ff914a94f49c9e4e6ee039fb72 # v1.337.0
         with:
           ruby-version: 4.0.5
           bundler-cache: true
@@ -48,7 +48,7 @@ jobs:
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
 
       - name: Build with Jekyll
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build --disable-disk-cache --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
           # Lets jekyll-github-metadata resolve repository data non-interactively.

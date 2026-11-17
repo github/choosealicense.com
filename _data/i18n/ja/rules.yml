@@ -1,0 +1,61 @@
+# ルール（許可 / 条件 / 制限）の日本語ラベルと説明。
+# 正となる情報源は _data/rules.yml（英語）です。順序と識別子はそちらから取得し、
+# ここにない項目は英語にフォールバックします。
+# 構造: <グループ> → <tag> → { label, description }。
+
+permissions:
+  commercial-use:
+    label: "商用利用"
+    description: "ライセンスされた素材とその派生物を商用目的で利用できます。"
+  modifications:
+    label: "改変"
+    description: "ライセンスされた素材を改変できます。"
+  distribution:
+    label: "配布"
+    description: "ライセンスされた素材を配布できます。"
+  private-use:
+    label: "私的利用"
+    description: "ライセンスされた素材を私的に利用・改変できます。"
+  patent-use:
+    label: "特許の利用"
+    description: "このライセンスは、コントリビューターからの特許権の明示的な許諾を定めています。"
+
+conditions:
+  include-copyright:
+    label: "ライセンスと著作権の表示"
+    description: "ライセンスされた素材には、ライセンスと著作権表示の写しを含める必要があります。"
+  include-copyright--source:
+    label: "ソースへのライセンスと著作権の表示"
+    description: "ソース形式のライセンスされた素材には、ライセンスと著作権表示の写しを含める必要がありますが、バイナリには必要ありません。"
+  document-changes:
+    label: "変更点の明示"
+    description: "ライセンスされた素材に加えた変更を文書化する必要があります。"
+  disclose-source:
+    label: "ソースの開示"
+    description: "ライセンスされた素材を配布する際には、ソースコードを入手可能にする必要があります。"
+  network-use-disclose:
+    label: "ネットワーク利用は配布とみなす"
+    description: "ネットワーク経由でライセンスされた素材とやり取りする利用者には、ソースコードの写しを受け取る権利が与えられます。"
+  same-license:
+    label: "同一ライセンス"
+    description: "ライセンスされた素材を配布する際は、改変部分を同じライセンスで公開する必要があります。場合によっては、類似または関連するライセンスを使用できることもあります。"
+  same-license--file:
+    label: "同一ライセンス（ファイル）"
+    description: "ライセンスされた素材を配布する際は、既存ファイルへの改変を同じライセンスで公開する必要があります。場合によっては、類似または関連するライセンスを使用できることもあります。"
+  same-license--library:
+    label: "同一ライセンス（ライブラリ）"
+    description: "ライセンスされた素材を配布する際は、改変部分を同じライセンスで公開する必要があります。場合によっては類似または関連するライセンスを使用できることもあり、ライセンスされた素材をライブラリとして利用する著作物にはこの条件が適用されないこともあります。"
+
+limitations:
+  trademark-use:
+    label: "商標の利用"
+    description: "このライセンスは、商標権を許諾しないことを明示しています。ただし、そのような記述のないライセンスであっても、黙示的に商標権を許諾していることはおそらくありません。"
+  liability:
+    label: "責任"
+    description: "このライセンスには責任の制限が含まれています。"
+  patent-use:
+    label: "特許の利用"
+    description: "このライセンスは、コントリビューターの特許に関するいかなる権利も許諾しないことを明示しています。"
+  warranty:
+    label: "保証"
+    description: "このライセンスは、いかなる保証も提供しないことを明示しています。"
