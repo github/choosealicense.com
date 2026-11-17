@@ -1,0 +1,339 @@
+# Deutsche Zusammenfassungen der Lizenzen (OHNE rechtliche Wirkung). Schlüssel =
+# SPDX-ID in Kleinbuchstaben. Übersetzt werden nur die beschreibenden Felder; jedes
+# fehlende Feld fällt auf das englische Front Matter in _licenses/<id>.txt zurück.
+# Der eigentliche LIZENZTEXT wird nie übersetzt.
+#
+# Platzhalter wie [year], [fullname], [project] und [email] stehen so im
+# Lizenztext und bleiben deshalb englisch.
+
+0bsd:
+  description: |-
+    Die BSD Zero Clause License geht noch einen Schritt weiter als die BSD 2-Clause License: Du darfst mit der Software uneingeschränkt alles machen und musst weder im Quellcode noch in Binärdateien den Copyright-Hinweis, den Lizenztext oder den Haftungsausschluss mitliefern.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Ersetze [year] durch das aktuelle Jahr und [fullname] durch den Namen (oder die Namen) der Rechteinhaber. Wenn du willst, kannst du den Copyright-Hinweis auch ganz entfernen.
+
+afl-3.0:
+  description: |-
+    Die Academic Free License ist eine Variante der Open Software License, bei der der Quellcode abgeleiteter Werke nicht offengelegt werden muss. Sie räumt ausdrücklich Urheber- und Patentrechte ein und behält die Markenrechte dem Urheber vor.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Dateien unter der AFL 3.0 müssen außerdem direkt neben dem Copyright-Hinweis den Vermerk "Licensed under the Academic Free License version 3.0" enthalten.
+
+agpl-3.0:
+  description: |-
+    Die Rechte aus dieser Lizenz mit dem stärksten Copyleft gelten nur, wenn der vollständige Quellcode lizenzierter Werke und ihrer Änderungen unter derselben Lizenz zugänglich gemacht wird. Das gilt auch für größere Werke, die ein lizenziertes Werk verwenden. Copyright- und Lizenzhinweise müssen erhalten bleiben. Die Mitwirkenden räumen ausdrücklich Patentrechte ein. Wird eine veränderte Version genutzt, um einen Dienst über ein Netzwerk anzubieten, muss ihr vollständiger Quellcode ebenfalls zugänglich sein.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein.
+  note: |-
+    Die Free Software Foundation empfiehlt, zusätzlich einen kurzen Standardhinweis an den Anfang jeder Datei zu setzen. Den Hinweis findest du am Ende der Lizenz.
+
+apache-2.0:
+  description: |-
+    Eine permissive Lizenz, deren wichtigste Bedingung ist, dass Copyright- und Lizenzhinweise erhalten bleiben. Die Mitwirkenden räumen ausdrücklich Patentrechte ein. Lizenzierte Werke, Änderungen daran und größere Werke, die sie enthalten, dürfen unter anderen Bedingungen und ohne Quellcode weitergegeben werden.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein.
+  note: |-
+    Die Apache Software Foundation <a href="https://apache.org/foundation/license-faq.html#Apply-My-Software">empfiehlt</a>, zusätzlich einen kurzen Standardhinweis in den Kopf jeder Quelldatei zu schreiben. Den Hinweis findest du im Anhang ganz am Ende des Lizenztexts.
+
+artistic-2.0:
+  description: |-
+    Die Artistic License ist vor allem in der Perl-Community beliebt. Sie verlangt, dass veränderte Versionen der Software niemanden daran hindern, die Standardversion zu nutzen.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Lass den Copyright-Hinweis (Jahr, Autor) unverändert. Er bezieht sich auf die Lizenz selbst, nicht auf dein Projekt.
+
+blueoak-1.0.0:
+  description: |-
+    Eine permissive Lizenz, deren wichtigste Bedingung ist, auf die Lizenz hinzuweisen. Die Mitwirkenden räumen ausdrücklich Patentrechte ein. Lizenzierte Werke, Änderungen daran und größere Werke, die sie enthalten, dürfen unter anderen Bedingungen und ohne Quellcode weitergegeben werden.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE.md) und kopiere den Lizenztext hinein.
+
+bsd-2-clause-patent:
+  description: |-
+    Diese Lizenz soll drei Dinge vereinen: a) eine einfache permissive Lizenz, b) Kompatibilität mit der GNU GPL-2.0 und c) eine ausdrückliche Einräumung von Patentrechten.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Ersetze [year] durch das aktuelle Jahr und [fullname] durch den Namen (oder die Namen) der Rechteinhaber.
+
+bsd-2-clause:
+  description: |-
+    Eine permissive Lizenz, die es in zwei Varianten gibt: <a href="/licenses/bsd-2-clause/">BSD 2-Clause</a> und <a href="/licenses/bsd-3-clause/">BSD 3-Clause</a>. Beide unterscheiden sich nur minimal von der MIT-Lizenz.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Ersetze [year] durch das aktuelle Jahr und [fullname] durch den Namen (oder die Namen) der Rechteinhaber.
+
+bsd-3-clause-clear:
+  description: |-
+    Eine Variante der <a href="/licenses/bsd-3-clause/">BSD 3-Clause License</a>, die ausdrücklich keine Patentrechte einräumt.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Ersetze [year] durch das aktuelle Jahr und [fullname] durch den Namen (oder die Namen) der Rechteinhaber.
+
+bsd-3-clause:
+  nickname: |-
+    Modifizierte BSD-Lizenz
+  description: |-
+    Eine permissive Lizenz, ähnlich wie die <a href="/licenses/bsd-2-clause/">BSD 2-Clause License</a>, aber mit einer dritten Klausel: Ohne schriftliche Zustimmung darf niemand den Namen der Rechteinhaber oder der Mitwirkenden nutzen, um für abgeleitete Produkte zu werben.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Ersetze [year] durch das aktuelle Jahr und [fullname] durch den Namen (oder die Namen) der Rechteinhaber.
+
+bsd-4-clause:
+  description: |-
+    Eine permissive Lizenz, ähnlich wie die <a href="/licenses/bsd-3-clause/">BSD 3-Clause License</a>, aber mit einer „Werbeklausel“: In allen Werbematerialien muss auf die ursprüngliche Quelle hingewiesen werden.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Ersetze [year] durch das aktuelle Jahr und [fullname] durch den Namen (oder die Namen) der Rechteinhaber. Ersetze [project] durch die Organisation, die das Projekt trägt, falls es eine gibt.
+
+bsl-1.0:
+  description: |-
+    Eine einfache permissive Lizenz. Copyright- und Lizenzhinweise müssen nur bei der Weitergabe von Quellcode erhalten bleiben, nicht bei Binärdateien. Lizenzierte Werke, Änderungen daran und größere Werke, die sie enthalten, dürfen unter anderen Bedingungen und ohne Quellcode weitergegeben werden.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein.
+  note: |-
+    Boost empfiehlt, zusätzlich einen kurzen Standardhinweis an den Anfang jeder Datei zu setzen. Den Hinweis findest du in den <a href="https://www.boost.org/users/license.html#FAQ">FAQ zur Boost Software License</a>.
+
+cc-by-4.0:
+  description: |-
+    Erlaubt fast jede Nutzung, solange die Urheber genannt werden und auf die Lizenz hingewiesen wird. Wird oft für Medien und Lehrmaterial verwendet und ist die verbreitetste Lizenz für Open-Access-Veröffentlichungen in der Wissenschaft. Für Software nicht zu empfehlen.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Es reicht auch, nur auf eine Kopie der Lizenz zu verlinken, in der Regel auf die <a href='https://creativecommons.org/licenses/by/4.0/'>offizielle URL der Lizenz</a>.
+
+cc-by-sa-4.0:
+  description: |-
+    Ähnlich wie <a href="/licenses/cc-by-4.0/">CC-BY-4.0</a>, aber abgeleitete Werke müssen unter derselben oder einer ähnlichen, <a href="https://creativecommons.org/compatiblelicenses">kompatiblen</a> Lizenz weitergegeben werden. Wird oft für Medien und Lehrmaterial verwendet. Eine frühere Version ist die Standardlizenz der Wikipedia und anderer Wikimedia-Projekte. Für Software nicht zu empfehlen.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Es reicht auch, nur auf eine Kopie der Lizenz zu verlinken, in der Regel auf die <a href='https://creativecommons.org/licenses/by-sa/4.0/'>offizielle URL der Lizenz</a>.
+
+cc0-1.0:
+  description: |-
+    Mit der <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0 Public Domain Dedication</a> verzichtest du auf deine Urheberrechte an einem Werk und gibst es weltweit in die Gemeinfreiheit. Mit CC0 steigst du komplett aus dem Urheberrecht aus und sorgst dafür, dass dein Werk möglichst weit verbreitet werden kann. Wie die Unlicense und die üblichen Softwarelizenzen schließt CC0 jede Gewährleistung aus. CC0 ist der Unlicense sehr ähnlich.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein.
+  note: |-
+    Creative Commons empfiehlt, zusätzlich einen kurzen Standardhinweis an den Anfang jeder Datei zu setzen. Den Hinweis <a href="https://wiki.creativecommons.org/wiki/CC0_FAQ#May_I_apply_CC0_to_computer_software.3F_If_so.2C_is_there_a_recommended_implementation.3F">findest du auf der Website von Creative Commons</a>.
+
+cecill-2.1:
+  description: |-
+    Eine Lizenz mit starkem Copyleft, entwickelt von drei französischen Forschungseinrichtungen (CEA, CNRS und Inria). Sie ist kompatibel mit der AGPL-3.0, der EUPL-1.1 und der GPL-2.0 sowie mit späteren Versionen dieser Lizenzen.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENCE) und kopiere den Lizenztext hinein.
+
+cern-ohl-p-2.0:
+  nickname: |-
+    CERN OHL v2 permissiv
+  description: |-
+    Eine permissive Lizenz für Hardware-Designs. Die einzige Bedingung ist, dass Hinweise erhalten bleiben. Die Mitwirkenden räumen ausdrücklich Patentrechte ein. Lizenzierte Werke, Änderungen daran und größere Werke, die sie enthalten, dürfen unter anderen Bedingungen und ohne Quellen weitergegeben werden.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein.
+  note: |-
+    Das CERN <a href="https://gitlab.com/ohwr/project/cernohl/-/wikis/uploads/8a6b5d01f71c207c49493e4d114d61e6/cern_ohl_p_v2_howto.pdf">empfiehlt</a>, folgende Angaben in die Quelldateien aufzunehmen: Copyright- und Lizenzhinweis, einen Gewährleistungsausschluss und den Ort, an dem die Quellen zu finden sind. Diesen Ort kannst du auch auf einem Teil des Designs angeben, der am fertigen Produkt sichtbar ist.
+
+cern-ohl-s-2.0:
+  nickname: |-
+    CERN OHL v2 stark reziprok
+  description: |-
+    Die Rechte aus dieser stark reziproken Lizenz für Hardware-Designs gelten nur, wenn die vollständigen Quellen lizenzierter Werke und ihrer Änderungen unter derselben Lizenz zugänglich gemacht werden. Das gilt auch für größere Werke, die ein lizenziertes Werk verwenden. Hinweise müssen erhalten bleiben. Die Mitwirkenden räumen ausdrücklich Patentrechte ein.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein.
+  note: |-
+    Das CERN <a href="https://gitlab.com/ohwr/project/cernohl/-/wikis/uploads/cf37727497ca2b5295a7ab83a40fcf5a/cern_ohl_s_v2_user_guide.pdf">empfiehlt</a>, folgende Angaben in die Quelldateien aufzunehmen: Copyright- und Lizenzhinweis, einen Gewährleistungsausschluss und den Ort, an dem die Quellen zu finden sind. Diesen Ort kannst du auch auf einem Teil des Designs angeben, der am fertigen Produkt sichtbar ist.
+
+cern-ohl-w-2.0:
+  nickname: |-
+    CERN OHL v2 schwach reziprok
+  description: |-
+    Die Rechte aus dieser schwach reziproken Lizenz gelten nur, wenn die vollständigen Quellen lizenzierter Werke und ihrer Änderungen unter derselben Lizenz zugänglich gemacht werden. Hinweise müssen erhalten bleiben. Die Mitwirkenden räumen ausdrücklich Patentrechte ein. Ein größeres Werk, das das lizenzierte Werk nur über dessen Schnittstellen nutzt, darf dagegen unter anderen Bedingungen und ohne die eigenen Quellen weitergegeben werden.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein.
+  note: |-
+    Das CERN <a href="https://gitlab.com/ohwr/project/cernohl/-/wikis/uploads/c2e5e9d297949b5c2d324a6cbf6adda0/cern_ohl_w_v2_howto.pdf">empfiehlt</a>, folgende Angaben in die Quelldateien aufzunehmen: Copyright- und Lizenzhinweis, einen Gewährleistungsausschluss und den Ort, an dem die Quellen zu finden sind. Diesen Ort kannst du auch auf einem Teil des Designs angeben, der am fertigen Produkt sichtbar ist.
+
+ecl-2.0:
+  description: |-
+    Die Educational Community License Version 2.0 („ECL“) ist die Apache License 2.0 mit einer Änderung: Der Umfang der Patentlizenz in Abschnitt 3 ist auf die Bedürfnisse der Bildungseinrichtungen zugeschnitten, die diese Lizenz nutzen.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein.
+  note: |-
+    Die Apereo Foundation empfiehlt, zusätzlich einen kurzen Standardhinweis in den Kopf jeder Quelldatei zu schreiben. Den Hinweis findest du im Anhang ganz am Ende des Lizenztexts.
+
+epl-1.0:
+  description: |-
+    Eine Copyleft-Lizenz, die sich gut mit kommerzieller Nutzung verträgt: Binärdateien dürfen kommerziell lizenziert werden, es gibt eine moderne, gebührenfreie Patentlizenz, und verlinkte Werke dürfen andere Lizenzen nutzen, auch kommerzielle.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein.
+
+epl-2.0:
+  description: |-
+    Eine Copyleft-Lizenz, die sich gut mit kommerzieller Nutzung verträgt: Binärdateien dürfen kommerziell lizenziert werden, es gibt eine moderne, gebührenfreie Patentlizenz, und verlinkte Werke dürfen andere Lizenzen nutzen, auch kommerzielle.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein.
+
+eupl-1.1:
+  description: |-
+    Die „Europäische Union Public Licence“ (EUPL) ist eine Copyleft-Lizenz für freie und Open-Source-Software. Sie entstand auf Initiative der Europäischen Kommission, die sie in 22 Amtssprachen der Europäischen Union genehmigt hat.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist COPYING oder LICENCE.txt) und kopiere den Lizenztext hinein.
+  note: |-
+    Die Europäische Kommission empfiehlt, zusätzlich einen kurzen <a href="https://joinup.ec.europa.eu/sites/default/files/inline-files/EUPL%201_1%20Guidelines%20EN%20Joinup.pdf#page=17">Standardhinweis</a> an den Anfang jeder Datei zu setzen.
+
+eupl-1.2:
+  description: |-
+    Die Europäische Union Public Licence (EUPL) ist eine Copyleft-Lizenz für freie und Open-Source-Software. Sie entstand auf Initiative der Europäischen Kommission, die sie in <a href="https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12">23 Amtssprachen</a> der Europäischen Union genehmigt hat.
+  how: |-
+    Schreib „Lizenziert unter der EUPL“ hinter den Copyright-Hinweis deines Quellcodes, zum Beispiel in eine README-Datei oder als Kommentar direkt in eine Quelldatei.
+
+gfdl-1.3:
+  description: |-
+    Eine Copyleft-Lizenz für Softwaredokumentation.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (nach GNU-Konvention meist COPYING) und kopiere den Lizenztext hinein.
+  note: |-
+    Die Free Software Foundation empfiehlt, zusätzlich einen kurzen Standardhinweis direkt hinter den Titel des lizenzierten Dokuments zu setzen. Den Hinweis findest du im Abschnitt „Addendum“ der Lizenz.
+
+gpl-2.0:
+  description: |-
+    Die GNU GPL ist die meistgenutzte Lizenz für freie Software und hat ein starkes Copyleft. Wer abgeleitete Werke weitergibt, muss deren Quellcode unter derselben Lizenz zugänglich machen. Es gibt mehrere Varianten der GNU GPL, jede mit eigenen Anforderungen.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein.
+  note: |-
+    Die Free Software Foundation empfiehlt, zusätzlich einen kurzen Standardhinweis an den Anfang jeder Datei zu setzen. Den Hinweis findest du am Ende der Lizenz.
+
+gpl-3.0:
+  description: |-
+    Die Rechte aus dieser Lizenz mit starkem Copyleft gelten nur, wenn der vollständige Quellcode lizenzierter Werke und ihrer Änderungen unter derselben Lizenz zugänglich gemacht wird. Das gilt auch für größere Werke, die ein lizenziertes Werk verwenden. Copyright- und Lizenzhinweise müssen erhalten bleiben. Die Mitwirkenden räumen ausdrücklich Patentrechte ein.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (nach GNU-Konvention meist COPYING) und kopiere den Lizenztext hinein.
+  note: |-
+    Die Free Software Foundation empfiehlt, zusätzlich einen kurzen Standardhinweis an den Anfang jeder Datei zu setzen. Den Hinweis findest du am Ende der Lizenz.
+
+isc:
+  description: |-
+    Eine permissive Lizenz: Andere dürfen mit deinem Code alles machen, solange sie dich als Urheber nennen. Eine Gewährleistung gibt es nicht. Die ISC-Lizenz entspricht in ihrer Wirkung der <a href="/licenses/bsd-2-clause/">BSD 2-Clause</a>- und der <a href="/licenses/mit/">MIT</a>-Lizenz, verzichtet aber auf einige Formulierungen, die heute nicht mehr nötig sind.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Ersetze [year] durch das aktuelle Jahr und [fullname] durch den Namen (oder die Namen) der Rechteinhaber.
+
+lgpl-2.1:
+  description: |-
+    Die GNU LGPL wird vor allem für Softwarebibliotheken verwendet. Abgeleitete Werke müssen unter derselben Lizenz stehen, Werke, die nur gegen die Bibliothek linken, aber nicht. Von der GNU LGPL sind zwei Versionen verbreitet.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein.
+  note: |-
+    Die Free Software Foundation empfiehlt, zusätzlich einen kurzen Standardhinweis an den Anfang jeder Datei zu setzen. Den Hinweis findest du am Ende der Lizenz.
+
+lgpl-3.0:
+  description: |-
+    Die Rechte aus dieser Copyleft-Lizenz gelten nur, wenn der vollständige Quellcode lizenzierter Werke und ihrer Änderungen unter derselben Lizenz oder unter der GNU GPLv3 zugänglich gemacht wird. Copyright- und Lizenzhinweise müssen erhalten bleiben. Die Mitwirkenden räumen ausdrücklich Patentrechte ein. Ein größeres Werk, das das lizenzierte Werk nur über dessen Schnittstellen nutzt, darf dagegen unter anderen Bedingungen und ohne den eigenen Quellcode weitergegeben werden.
+  how: |-
+    Diese Lizenz ergänzt die <a href="/licenses/gpl-3.0">GNU GPLv3</a> um zusätzliche Rechte. Folge also zuerst der Anleitung für die GNU GPLv3 im Hauptverzeichnis deines Quellcodes. Leg dann eine weitere Datei namens COPYING.LESSER an und kopiere den Text hinein.
+  note: |-
+    Die Free Software Foundation empfiehlt, zusätzlich einen kurzen Standardhinweis an den Anfang jeder Datei zu setzen. Den Hinweis findest du am Ende der <a href="/licenses/gpl-3.0">GNU GPLv3</a>. Setz dort an allen drei Stellen das Wort „Lesser“ vor „General“, damit sich der Hinweis auf die GNU LGPLv3 bezieht und nicht auf die GNU GPLv3.
+
+lppl-1.3c:
+  description: |-
+    Die LaTeX Project Public License (LPPL) ist die wichtigste Lizenz, unter der der LaTeX-Kernel und die LaTeX-Basispakete verbreitet werden.
+  how: |-
+    Füg in jede Komponente deines Werks einen ausdrücklichen Copyright-Hinweis mit deinem Namen und dem Jahr ein, in dem das Werk entstanden ist oder zuletzt wesentlich geändert wurde. Ergänze außerdem den Hinweis, dass für Weitergabe und Änderung dieser Komponente die Bedingungen dieser Lizenz gelten.
+  note: |-
+    Einen Beispielhinweis und weitere Informationen zur Anwendung der Lizenz findest du am Ende der Lizenz.
+
+mit-0:
+  description: |-
+    Eine kurze, einfache permissive Lizenz ganz ohne Bedingungen. Nicht einmal Copyright- und Lizenzhinweise müssen erhalten bleiben. Lizenzierte Werke, Änderungen daran und größere Werke, die sie enthalten, dürfen unter anderen Bedingungen und ohne Quellcode weitergegeben werden.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Ersetze [year] durch das aktuelle Jahr und [fullname] durch den Namen (oder die Namen) der Rechteinhaber.
+
+mit:
+  # Kurzname für den Satz „… nutzen die MIT-Lizenz.“ auf der Startseite.
+  nickname: "MIT-Lizenz"
+  description: |-
+    Eine kurze, einfache permissive Lizenz. Die einzige Bedingung ist, dass Copyright- und Lizenzhinweise erhalten bleiben. Lizenzierte Werke, Änderungen daran und größere Werke, die sie enthalten, dürfen unter anderen Bedingungen und ohne Quellcode weitergegeben werden.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Ersetze [year] durch das aktuelle Jahr und [fullname] durch den Namen (oder die Namen) der Rechteinhaber.
+
+mpl-2.0:
+  description: |-
+    Die Rechte aus dieser Lizenz mit schwachem Copyleft gelten nur, wenn der Quellcode lizenzierter Dateien und der Änderungen an diesen Dateien unter derselben Lizenz zugänglich gemacht wird (in bestimmten Fällen auch unter einer der GNU-Lizenzen). Copyright- und Lizenzhinweise müssen erhalten bleiben. Die Mitwirkenden räumen ausdrücklich Patentrechte ein. Ein größeres Werk, das das lizenzierte Werk verwendet, darf dagegen unter anderen Bedingungen weitergegeben werden, und für neu hinzugefügte Dateien muss kein Quellcode mitgeliefert werden.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein.
+  note: |-
+    Die Mozilla Foundation empfiehlt, zusätzlich einen kurzen Standardhinweis an den Anfang jeder Datei zu setzen. Den Hinweis findest du am Ende der Lizenz (Exhibit A).
+
+ms-pl:
+  description: |-
+    Eine Open-Source-Lizenz mit Patentlizenz.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein.
+
+ms-rl:
+  description: |-
+    Eine Open-Source-Lizenz mit Patentlizenz, ähnlich wie die <a href="/licenses/ms-pl/">Microsoft Public License</a>. Zusätzlich muss der Quellcode jeder abgeleiteten Datei unter dieser Lizenz bereitgestellt werden.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein.
+
+mulanpsl-2.0:
+  description: |-
+    Eine permissive Lizenz, ähnlich wie die <a href="/licenses/apache-2.0/">Apache License</a>, die aber ausdrücklich keine Markenrechte gewährt. Die Mulan Permissive Software License ist die erste Open-Source-Lizenz auf Chinesisch und Englisch, die von der OSI anerkannt wurde.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein.
+  note: |-
+    Es wird empfohlen, zusätzlich einen kurzen Standardhinweis an den Anfang jeder Datei zu setzen. Den Hinweis findest du am Ende der Lizenz.
+
+ncsa:
+  description: |-
+    Die University of Illinois/NCSA Open Source License, kurz UIUC-Lizenz, ist eine permissive Lizenz für freie Software. Sie basiert auf der <a href="/licenses/mit/">MIT/X11-Lizenz</a> und der <a href="/licenses/bsd-3-clause/">BSD 3-Clause License</a>. Copyright- und Lizenzhinweise müssen sowohl im Quellcode als auch in Binärdateien erhalten bleiben, und die Namen der Autoren oder der Projektorganisation dürfen nicht genutzt werden, um für abgeleitete Produkte zu werben oder sie zu empfehlen.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Ersetze [year] durch das aktuelle Jahr und [fullname] durch den Namen (oder die Namen) der Rechteinhaber. Ersetze [project] durch die Organisation, die das Projekt trägt, falls es eine gibt.
+
+odbl-1.0:
+  description: |-
+    Die Open Database License (ODbL) erlaubt es, eine Datenbank frei zu teilen, zu verändern und zu nutzen, und sorgt dafür, dass diese Freiheit auch für alle anderen erhalten bleibt.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein.
+
+ofl-1.1:
+  description: |-
+    Die Open Font License (OFL) wird von SIL International gepflegt. Sie versucht, die Werte der Freie-Software-Szene mit denen der Schriftgestaltung zu vereinen. Fast alle Open-Source-Schriftprojekte nutzen sie, auch die von Adobe, Google und Mozilla.
+  how: |-
+    Lege im Hauptverzeichnis des Quellcodes deiner Schrift eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Ersetze [year] durch das aktuelle Jahr und [fullname] ([email]) durch Name und E-Mail-Adresse jedes Rechteinhabers. Optional kannst du einen Hinweis auf einen Reserved Font Name anhängen. Dann muss jeder, der die Schrift verändert, ihr einen anderen Namen geben. Für Webfonts ist das eher ungünstig, weil dort ohnehin alle die Schrift verändern, indem sie das Format umwandeln oder nur die benötigten Zeichen einbinden.
+  note: |-
+    Die Lizenz verlangt nicht, dass Quelldateien mitgeliefert werden, empfiehlt es aber. Alle Dateien, die von OFL-Dateien abgeleitet sind, müssen weiterhin unter der OFL stehen.
+
+osl-3.0:
+  description: |-
+    Die Rechte aus dieser Copyleft-Lizenz gelten nur, wenn der Quellcode lizenzierter Werke und ihrer Änderungen unter derselben Lizenz weitergegeben wird. Copyright- und Lizenzhinweise müssen erhalten bleiben. Die Mitwirkenden räumen ausdrücklich Patentrechte ein. Wer das Werk oder Änderungen daran nutzt, um Dienste für externe Nutzer anzubieten, gibt es damit im Sinne der Lizenz weiter und muss ebenfalls den Quellcode zugänglich machen. Werke, die nur gegen ein lizenziertes Werk linken, gelten als Sammelwerke und fallen nicht unter die Gegenseitigkeitspflicht der Lizenz.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Dateien unter der OSL 3.0 müssen außerdem direkt neben dem Copyright-Hinweis den Vermerk "Licensed under the Open Software License version 3.0" enthalten.
+  note: |-
+    Der Autor der OSL 3.0 hat <a href="https://rosenlaw.com/OSL3.0-explained.htm">erklärt</a>, warum er die Lizenz geschrieben hat.
+
+postgresql:
+  description: |-
+    Eine sehr kurze Lizenz im BSD-Stil, die speziell für PostgreSQL verwendet wird.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Ersetze [year] durch das aktuelle Jahr und [fullname] durch den Namen (oder die Namen) der Rechteinhaber.
+
+unlicense:
+  description: |-
+    Eine Lizenz ganz ohne Bedingungen, mit der Werke in die Gemeinfreiheit entlassen werden. Werke unter der Unlicense, Änderungen daran und größere Werke, die sie enthalten, dürfen unter anderen Bedingungen und ohne Quellcode weitergegeben werden.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist UNLICENSE oder UNLICENSE.txt) und kopiere den Text der Lizenzerklärung hinein.
+
+upl-1.0:
+  description: |-
+    Eine permissive, von OSI und FSF anerkannte und GPL-kompatible Lizenz. Für die Namensnennung reichen ausdrücklich ein Copyright-Hinweis und ein kurzer Link, der vollständige Lizenztext muss nicht beiliegen. Die Lizenz räumt ausdrücklich Patentrechte ein. Lizenzierte Werke und Änderungen daran dürfen unter anderen Bedingungen und ohne Quellcode weitergegeben werden. Die Patentlizenz lässt sich optional auf größere Werke ausweiten, sodass die Lizenz auch als Contributor License Agreement dienen kann.
+  how: |-
+    Füg die Lizenz oder einen Link darauf zusammen mit einem Copyright-Hinweis in deine Quelldatei(en) ein und/oder lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Ersetze dabei [year] durch das aktuelle Jahr und [fullname] durch den Namen (oder die Namen) der Rechteinhaber.
+  note: |-
+    Es wird empfohlen, an den Anfang jeder Quelldatei einen Link auf die Lizenz und einen Copyright-Hinweis zu setzen. Einen Beispieltext findest du unter https://oss.oracle.com/licenses/upl/.
+
+vim:
+  description: |-
+    Eine unveränderte Kopie der Software darf ohne Einschränkungen genutzt und weitergegeben werden. Auch Teile der Software dürfen weitergegeben werden, der Lizenztext muss dann aber immer dabei sein. Für veränderte Versionen gelten ein paar Einschränkungen. Die Lizenz ist GPL-kompatibel: Du darfst die Software mit GPL-Bibliotheken kompilieren und weitergeben.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Ersetze [project] durch den Namen des Projekts.
+
+wtfpl:
+  description: |-
+    Einfacher geht's nicht. Jeder darf mit deinem Code machen, was er will.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein.
+
+zlib:
+  description: |-
+    Eine kurze permissive Lizenz, kompatibel mit der GPL. Veränderte Versionen des Quellcodes müssen als solche gekennzeichnet werden.
+  how: |-
+    Lege im Hauptverzeichnis deines Quellcodes eine Textdatei an (meist LICENSE oder LICENSE.txt) und kopiere den Lizenztext hinein. Ersetze [year] durch das aktuelle Jahr und [fullname] durch den Namen (oder die Namen) der Rechteinhaber.

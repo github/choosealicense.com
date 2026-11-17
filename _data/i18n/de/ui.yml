@@ -1,0 +1,133 @@
+# Deutsche Übersetzung der Oberfläche und der Seitentexte.
+# Fehlende Schlüssel fallen automatisch auf Englisch zurück (_data/i18n/en/ui.yml).
+# Schlüssel mit _html enthalten rohes HTML, alle anderen mehrzeiligen Werte sind
+# Markdown. Lizenz-Zusammenfassungen stehen in licenses.yml, Regel-Bezeichnungen in
+# rules.yml. Die Lizenztexte selbst werden nie übersetzt.
+#
+# Stil: Anrede mit "du". Git-/GitHub-Begriffe (Pull Request, Repository, Fork,
+# Issue, Maintainer) bleiben englisch; "Copyright" steht für den Vermerk,
+# "Urheberrecht" für das Gesetz.
+
+# --- Sprache -------------------------------------------------------------------
+language_name: "Deutsch"
+language_selector_label: "Sprache"
+
+# --- Navigation & Fußzeile -----------------------------------------------------
+nav_about: "Über uns"
+nav_terms: "Nutzungsbedingungen"
+nav_improve: "Hilf mit, diese Seite zu verbessern"
+footer_license_notice_html: |-
+  Die Inhalte dieser Website stehen unter der Lizenz <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Namensnennung 3.0 Unported</a>.
+footer_curated_html: |-
+  Mit ❤️ gepflegt von <a href="https://github.com">GitHub, Inc.</a> und <a href="https://github.com/github/choosealicense.com">dir!</a>
+
+# --- Brotkrümelnavigation ------------------------------------------------------
+breadcrumb_home: "Start"
+breadcrumb_licenses: "Lizenzen"
+
+# --- Überschriften der Regelgruppen --------------------------------------------
+rules_permissions: "Rechte"
+rules_conditions: "Bedingungen"
+rules_limitations: "Einschränkungen"
+
+# --- Tooltips der Regeln (zusammengesetzt in assets/js/app.js) -----------------
+tooltip_format: "%label% (%category%): %description%"
+tooltip_cat_permissions: "Recht"
+tooltip_cat_conditions: "Bedingung"
+tooltip_cat_limitations: "Einschränkung"
+
+# --- Seitenleiste der Lizenzseiten ---------------------------------------------
+sidebar_copy: "Lizenztext in die Zwischenablage kopieren"
+sidebar_copied: "Kopiert!"
+sidebar_suggest_heading: "Diese Lizenz vorschlagen"
+sidebar_suggest_body_md: |-
+  Schlag diese Lizenz per Pull Request für ein Projekt vor, das [noch keine Lizenz hat](/no-permission/). Bleib dabei bitte höflich: Schau erst nach, ob schon jemand eine Lizenz vorgeschlagen hat, such eine aus, die zur [Community](/community/) des Projekts passt, und geh freundlich mit den Maintainern um.
+sidebar_repo_placeholder: "URL des GitHub-Repositorys eingeben"
+sidebar_how_heading: "So verwendest du diese Lizenz"
+sidebar_optional_heading: "Optionale Schritte"
+sidebar_source: "Quelle"
+sidebar_using_heading: "Wer nutzt diese Lizenz?"
+# %id%, %languages% und %clauses% werden von der Seite eingesetzt und bleiben stehen.
+sidebar_pkg_html: |-
+  Trag %id%%clauses% in die Paketbeschreibung deines Projekts ein, falls es eine gibt (z.&nbsp;B. %languages%). Dann wird die Lizenz auch in Paketverzeichnissen angezeigt.
+sidebar_pkg_only_html: " (oder %id%, wenn spätere Versionen ausgeschlossen sein sollen)"
+sidebar_pkg_ofl_html: " (oder %id%, wenn nach dem Copyright-Vermerk ein Reserved Font Name angegeben ist)"
+sidebar_gplcc_html: |-
+  Wenn für dein Projekt die Heilungsregelung der GPL-3.0 gelten soll, leg den <a href="https://github.com/gplcc/gplcc/blob/master/Project/COMMITMENT">Text</a> des <a href="https://gplcc.github.io/gplcc/">GPL Cooperation Commitment</a> in einer Datei namens <code>COMMITMENT</code> ab, und zwar im selben Verzeichnis wie deine %id%-Lizenzdatei.
+
+# --- Lizenzkarten (/licenses/) -------------------------------------------------
+overview_view_full: "%title% vollständig ansehen »"
+
+# --- Satz „Wer nutzt sie?“ (Startseite) ----------------------------------------
+# Im Deutschen kein Komma vor „und“.
+using_separator: ", "
+using_last_separator: " und "
+using_sentence_plural: "%projects% nutzen die %license%."
+using_sentence_singular: "%projects% nutzt die %license%."
+
+# --- Seitentitel ---------------------------------------------------------------
+page_title_home: "Wähle eine Open-Source-Lizenz"
+page_title_licenses: "Lizenzen"
+page_title_appendix: "Anhang"
+page_title_404: "404 – Seite nicht gefunden"
+
+# --- Startseite ----------------------------------------------------------------
+home_intro: |-
+  Eine Open-Source-Lizenz schützt alle, die an einem Projekt mitarbeiten oder es nutzen. Firmen und erfahrene Entwickler lassen von Projekten ohne diesen Schutz die Finger.
+home_situations_question: "Was trifft am ehesten auf dich zu?"
+home_community_title: "Ich bin Teil einer Community."
+home_community_content: |-
+  Nimm die [Lizenz, die in deiner Community üblich ist](community/), also dort, wo du mitarbeitest oder wovon dein Projekt abhängt. Dann passt dein Projekt einfach dazu.
+
+  Falls eine deiner Abhängigkeiten keine Lizenz hat, bitte die Maintainer, [eine hinzuzufügen](no-permission/#for-users).
+home_permissive_title: "Es soll einfach und permissiv sein."
+home_permissive_content: |-
+  Die [MIT-Lizenz](licenses/mit/) ist kurz und kommt direkt auf den Punkt. Andere dürfen mit deinem Projekt so gut wie alles machen, auch Closed-Source-Versionen davon bauen und verbreiten.
+home_copyleft_title: "Verbesserungen sollen geteilt werden."
+home_copyleft_content: |-
+  Auch mit der [GNU GPLv3](licenses/gpl-3.0/) dürfen andere so gut wie alles mit deinem Projekt machen, *nur* keine Closed-Source-Versionen davon verbreiten.
+home_more_question: "Und wenn nichts davon passt?"
+home_nonsoftware_title: "Mein Projekt ist keine Software."
+home_nonsoftware_content: |-
+  [Auch dafür gibt es Lizenzen](non-software/).
+home_morechoices_title: "Ich hätte gern mehr Auswahl."
+home_morechoices_content: |-
+  [Hier findest du weitere Lizenzen](licenses/).
+home_nolicense_title: "Ich will gar keine Lizenz auswählen."
+home_nolicense_content: |-
+  [Das passiert, wenn du keine auswählst](no-permission/).
+
+# --- Lizenzübersicht (/licenses/) ----------------------------------------------
+licenses_intro_html: |-
+  Open-Source-Lizenzen erlauben allen, lizenzierte Software für jeden Zweck zu nutzen, zu verändern und weiterzugeben. Dafür gelten Bedingungen, die sicherstellen, dass die Herkunft der Software erkennbar und die Software offen bleibt. Die folgenden Lizenzen sind nach der Zahl ihrer Bedingungen sortiert: von den meisten (GNU AGPLv3) bis zu gar keinen (Unlicense). Die beiden bekannten Lizenzen von der <a href="/">Startseite</a>, GNU GPLv3 und MIT, liegen irgendwo dazwischen.
+licenses_appendix_note_html: |-
+  Eine Tabelle mit allen Lizenzen auf choosealicense.com findest du im <a href="/appendix">Anhang</a>.
+licenses_outro_html: |-
+  Diese Lizenzen decken das ganze Spektrum ab, von sehr schützend bis völlig bedingungslos. Für die meisten neuen Open-Source-Projekte sollte eine davon passen. Es gibt noch viele weitere Open-Source-Lizenzen, etwa ältere Versionen der oben genannten oder Lizenzen, die ihnen sehr ähnlich sind. Wenn du mehr darüber lesen willst, schau dir die Links auf unserer <a href="/about/">Über-uns-Seite</a> an.
+
+  Wenn du dich schon auskennst und eine Lizenz hast, die du gern verwendest: prima! Wir wollen dich nicht umstimmen. Falls dich die vielen Möglichkeiten aber eher erschlagen, können wir dir vielleicht helfen.
+
+# --- Anhang (/appendix/) -------------------------------------------------------
+appendix_intro: |-
+  Zum Nachschlagen findest du hier eine Tabelle mit allen Lizenzen, die im [choosealicense.com-Repository](https://github.com/github/choosealicense.com) beschrieben sind.
+
+  Wenn du gerade eine Lizenz auswählen willst, **[fang am besten auf der Startseite an](/)**. Dort stehen ein paar Lizenzen, die für die meisten Fälle passen.
+appendix_col_license: "Lizenz"
+appendix_legend_heading: "Legende"
+appendix_legend_permissions_html: |-
+  Open-Source-Lizenzen räumen der Allgemeinheit <span class="license-permissions"><span class="license-marker">✓</span></span> <b>Rechte</b> ein, mit den lizenzierten Werken Dinge zu tun, die das Urheberrecht oder andere Gesetze zum sogenannten „geistigen Eigentum“ sonst verbieten würden.
+appendix_legend_conditions_html: |-
+  Bei den meisten Open-Source-Lizenzen gelten diese Rechte nur, wenn bestimmte <span class="license-conditions"><span class="license-marker">ⓘ</span></span> <b>Bedingungen</b> eingehalten werden.
+appendix_legend_limitations_html: |-
+  Außerdem haben die meisten Open-Source-Lizenzen <span class="license-limitations"><span class="license-marker">✕</span></span> <b>Einschränkungen</b>. In der Regel schließen sie Gewährleistung und Haftung aus, manchmal nehmen sie auch Patente oder Marken ausdrücklich von den eingeräumten Rechten aus.
+
+# --- 404-Seite -----------------------------------------------------------------
+notfound_p1: |-
+  Tut uns leid! Die Seite, die du suchst, gibt es hier nicht.
+notfound_p2: |-
+  Falls du eine Lizenz suchst, schau bei den [Lizenzen](/licenses) nach.
+
+# --- Sprachhinweis-Banner (assets/js/i18n.js) ----------------------------------
+banner_suggest: "Diese Seite gibt es auch auf **Deutsch**."
+banner_switch: "Auf **Deutsch** ansehen"
+banner_dismiss: "Schließen"

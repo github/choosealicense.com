@@ -1,0 +1,61 @@
+# Deutsche Bezeichnungen und Beschreibungen der Regeln (Rechte / Bedingungen /
+# Einschränkungen). Maßgeblich bleibt _data/rules.yml (Englisch): Reihenfolge und
+# IDs kommen von dort, fehlende Einträge fallen auf Englisch zurück.
+# Aufbau: <Gruppe> → <Tag> → { label, description }.
+
+permissions:
+  commercial-use:
+    label: "Kommerzielle Nutzung"
+    description: "Das lizenzierte Material und davon abgeleitete Werke dürfen kommerziell genutzt werden."
+  modifications:
+    label: "Veränderung"
+    description: "Das lizenzierte Material darf verändert werden."
+  distribution:
+    label: "Weitergabe"
+    description: "Das lizenzierte Material darf weitergegeben werden."
+  private-use:
+    label: "Private Nutzung"
+    description: "Das lizenzierte Material darf privat genutzt und verändert werden."
+  patent-use:
+    label: "Patentnutzung"
+    description: "Die Mitwirkenden räumen mit dieser Lizenz ausdrücklich Patentrechte ein."
+
+conditions:
+  include-copyright:
+    label: "Lizenz- und Copyright-Hinweis"
+    description: "Dem lizenzierten Material müssen der Lizenztext und der Copyright-Hinweis beiliegen."
+  include-copyright--source:
+    label: "Lizenz- und Copyright-Hinweis im Quellcode"
+    description: "Dem lizenzierten Material in Quellcodeform müssen der Lizenztext und der Copyright-Hinweis beiliegen. Bei Binärdateien ist das nicht nötig."
+  document-changes:
+    label: "Änderungen kennzeichnen"
+    description: "Änderungen am lizenzierten Material müssen dokumentiert werden."
+  disclose-source:
+    label: "Quellcode offenlegen"
+    description: "Wer das lizenzierte Material weitergibt, muss auch den Quellcode zugänglich machen."
+  network-use-disclose:
+    label: "Netzwerknutzung gilt als Weitergabe"
+    description: "Wer über ein Netzwerk mit dem lizenzierten Material arbeitet, hat Anspruch auf eine Kopie des Quellcodes."
+  same-license:
+    label: "Gleiche Lizenz"
+    description: "Wer das lizenzierte Material weitergibt, muss Änderungen unter derselben Lizenz veröffentlichen. In manchen Fällen ist auch eine ähnliche oder verwandte Lizenz erlaubt."
+  same-license--file:
+    label: "Gleiche Lizenz (Datei)"
+    description: "Wer das lizenzierte Material weitergibt, muss Änderungen an bestehenden Dateien unter derselben Lizenz veröffentlichen. In manchen Fällen ist auch eine ähnliche oder verwandte Lizenz erlaubt."
+  same-license--library:
+    label: "Gleiche Lizenz (Bibliothek)"
+    description: "Wer das lizenzierte Material weitergibt, muss Änderungen unter derselben Lizenz veröffentlichen. In manchen Fällen ist auch eine ähnliche oder verwandte Lizenz erlaubt. Für Werke, die das lizenzierte Material nur als Bibliothek einbinden, gilt diese Bedingung unter Umständen nicht."
+
+limitations:
+  trademark-use:
+    label: "Markennutzung"
+    description: "Diese Lizenz stellt ausdrücklich klar, dass sie KEINE Markenrechte gewährt. Lizenzen ohne einen solchen Hinweis gewähren aber vermutlich auch keine stillschweigenden Markenrechte."
+  liability:
+    label: "Haftung"
+    description: "Diese Lizenz enthält eine Haftungsbeschränkung."
+  patent-use:
+    label: "Patentnutzung"
+    description: "Diese Lizenz stellt ausdrücklich klar, dass sie KEINE Rechte an Patenten der Mitwirkenden gewährt."
+  warranty:
+    label: "Gewährleistung"
+    description: "Diese Lizenz stellt ausdrücklich klar, dass sie KEINERLEI Gewährleistung bietet."
