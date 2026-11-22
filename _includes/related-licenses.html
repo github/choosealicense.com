@@ -1,0 +1,18 @@
+{% if page.related and page.related.size > 0 %}
+  <div class="related-licenses">
+    <h3 id="related-licenses">Related licenses</h3>
+    <ul>
+      {% for rel in page.related %}
+        {% assign rel_doc = site.licenses | where: "spdx-lcase", rel | first %}
+        {% if rel_doc == nil %}
+          {% assign rel_doc = site.licenses | where_exp: "item", "item.spdx-lcase == rel" | first %}
+        {% endif %}
+        {% if rel_doc %}
+          <li><a href="{{ rel_doc.url | relative_url }}">{{ rel_doc.title }}</a></li>
+        {% else %}
+          <li><a href="{{ '/licenses/' | append: rel | append: '/' | relative_url }}">{{ rel }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
